@@ -1346,8 +1346,8 @@ endif::[]
       <td>{urú}</td>
       <td>
         <ul>
-          <li>líon na n-áiteanna breátha</li>
-          <li>costas na n-oibreacha</li>
+          <li>líon na n&#x2011;áiteanna breátha</li>
+          <li>costas na n&#x2011;oibreacha</li>
           <li>líon na nAlbanach</li>
         </ul>
       </td>

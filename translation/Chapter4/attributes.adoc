@@ -28,7 +28,7 @@
 :4-2-1-p-sample3_ga: Bhí sciorta, cóta agus scaif *ghorm* uirthi.
 :4-2-1-p-sample3_en: She had a *blue* skirt, coat and scarf on.
 
-:4-2-1-p-sample4_ga: Tá cait *mhóra fhiáine* i ngairdín na n-ainmhithe.
+:4-2-1-p-sample4_ga: Tá cait *mhóra fhiáine* i ngairdín na n&#x2011;ainmhithe.
 :4-2-1-p-sample4_en: There are *big, wild* cats in the zoo.
 
 :4-2-2-a-p_ga: San uimhir uatha --
@@ -139,7 +139,7 @@
 :4-3-2-b-sample1_ga: Foilsíonn an t&#x2011;údarás *áitiúil* tuarascáil gach bliain.
 :4-3-2-b-sample1_en: The *local* authority publishes a report every year.
 
-:4-3-2-b-sample2_ga: Foilsíodh tuarascálacha na n-údarás *áitiúil*.
+:4-3-2-b-sample2_ga: Foilsíodh tuarascálacha na n&#x2011;údarás *áitiúil*.
 :4-3-2-b-sample2_en: The reports of the *local* authorities were published.
 
 :4-3-3-a-p_ga: Ní shéimhítear ná ní infhilltear aidiacht sa ghairmeach firinscneach más ainm ceana nó brí mheafarach atá i gceist.
@@ -316,7 +316,7 @@
 :4-4-2-title_ga: Foirm an Ghairmigh Uatha
 :4-4-2-title_en: Form of the Vocative Singular
 
-:4-4-2-p_ga: Is ionann foirm don ghairmeach uatha agus don ainmneach uatha, ach amháin i gcás aidiachtaí a gcaolaítear a gconsan deiridh sa ghinideach uatha firinscneach. I gcás na n-aidiachtaí sin, is gnách gurb ionann foirm an ghairmigh uatha fhirinscnigh agus foirm an ghinidigh uatha fhirinscnigh, e.g., _a fhir mhóir_; _cóta an fhir mhóir_.
+:4-4-2-p_ga: Is ionann foirm don ghairmeach uatha agus don ainmneach uatha, ach amháin i gcás aidiachtaí a gcaolaítear a gconsan deiridh sa ghinideach uatha firinscneach. I gcás na n&#x2011;aidiachtaí sin, is gnách gurb ionann foirm an ghairmigh uatha fhirinscnigh agus foirm an ghinidigh uatha fhirinscnigh, e.g., _a fhir mhóir_; _cóta an fhir mhóir_.
 :4-4-2-p_en: The form of the vocative singular is the same as the nominative singular, except when adjectives whose final consonant is palatalized in the masculine genitive singular. With such adjectives, the form of the masculine vocative singular is usually the same as the form of the masculine genitive singular, e.g., _a fhir mhóir_; _cóta an fhir mhóir_.
 
 :4-4-3-title_ga: Foirm an Iolra -- Gach Tuiseal
@@ -516,10 +516,10 @@
 :4-8-3-title_ga: Foirmeacha ar lorg _dá_ agus _a_
 :4-8-3-title_en: Forms following _dá_ and _a_
 
-:4-8-3-a-p_ga: I ndiaidh _dá_ agus _a_, is cuma feidhm réamhthagrach nó feidhm iarthagrach a bheith acu, is gnách go n-úsáidtear foirm is ionann agus foirm na breischéime den aidiacht nó foirm a dhíorthaíonn ón mbreischéim nó ón mbunchéim agus a chríochnaíonn ar _-cht_.
+:4-8-3-a-p_ga: I ndiaidh _dá_ agus _a_, is cuma feidhm réamhthagrach nó feidhm iarthagrach a bheith acu, is gnách go n&#x2011;úsáidtear foirm is ionann agus foirm na breischéime den aidiacht nó foirm a dhíorthaíonn ón mbreischéim nó ón mbunchéim agus a chríochnaíonn ar _-cht_.
 :4-8-3-a-p_en: After _dá_ and _a_, regardless of whether they have a proleptic or anaphoric function, a form that is the same as the comparative form of the adjective or a form that derives from the comparative or the base form and ends in _-cht_ is usually used.
 
-:4-8-3-b-p_ga: Ní úsáidtear ach foirm amháin i gcás na n-aidiachtaí seo a leanas: _dócha_, _dóichí_; _dona_, _donacht_; _furasta_, _fusacht_; _gearr_, _giorracht_; agus i gcás na leaganacha neamhrialta seo: _beag_, _laghad_; _fada_, _fad_; _iomaí_, _liacht_; _maith_, _feabhas_; _mór_, _méad/méid_; _olc_, _olcas_; _tiubh_, _tiús_.
+:4-8-3-b-p_ga: Ní úsáidtear ach foirm amháin i gcás na n&#x2011;aidiachtaí seo a leanas: _dócha_, _dóichí_; _dona_, _donacht_; _furasta_, _fusacht_; _gearr_, _giorracht_; agus i gcás na leaganacha neamhrialta seo: _beag_, _laghad_; _fada_, _fad_; _iomaí_, _liacht_; _maith_, _feabhas_; _mór_, _méad/méid_; _olc_, _olcas_; _tiubh_, _tiús_.
 :4-8-3-b-p_en: Only one form is used for the following adjectives: _dócha_, _dóichí_; _dona_, _donacht_; _furasta_, _fusacht_; _gearr_, _giorracht_; and for these irregular forms: _beag_, _laghad_; _fada_, _fad_; _iomaí_, _liacht_; _maith_, _feabhas_; _mór_, _méad/méid_; _olc_, _olcas_; _tiubh_, _tiús_. (_Translation note_: These are abstract nouns. e.g., _beag_ (_small_) → _laghad_ (_smallness_))
 
 :4-8-3-c-p_ga: Úsáidtear _méid_ seachas _méad_ i gcásanna áirithe, e.g., _dá mhéad airgead a bhí aici_ ach _a mhéid is indéanta le réasún_; _a mhéid is gá_.

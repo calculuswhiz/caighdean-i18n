@@ -157,7 +157,7 @@
 :row25-term_ga: iartheachtaí
 :row25-term_en: subsequent
 
-:row25-definition_ga: forainmneach, lena n-áirítear aidiacht shealbhach, lena dtagraítear siar don réamhtheachtaí i gclásal coibhneasta indíreach, e.g., _sin é an fear a bhfuil an carr **aige**_
+:row25-definition_ga: forainmneach, lena n&#x2011;áirítear aidiacht shealbhach, lena dtagraítear siar don réamhtheachtaí i gclásal coibhneasta indíreach, e.g., _sin é an fear a bhfuil an carr **aige**_
 :row25-definition_en: a pronominal, including a possessive adjective, that refers back to the the proleptic in an indirect relative clause, e.g., _sin é an fear a bhfuil an carr **aige**_
 
 :row26-term_ga: infhilleadh

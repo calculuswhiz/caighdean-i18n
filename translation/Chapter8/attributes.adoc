@@ -160,8 +160,8 @@
 :8-3-title_ga: Na hAidiachtaí Sealbhacha
 :8-3-title_en: The Possessive Adjectives
 
-:8-3-1-p_ga: Sa tábla thíos, léirítear na haidiachtaí sealbhacha agus na hathruithe tosaigh a leanann iad. Is iad na leaganacha treise, agus ainmfhocail ag gabháil leo, atá leagtha amach sa tábla. Cuirtear fleiscín idir dhá _s_, e.g., _mo phas-sa_, agus idir dhá _n_, e.g., _ár n-arán-na_. Mura mbíonn treise i gceist, fágtar na hiarmhíreanna _-sa_ (_-se_), _-san_ (_-sean_), _-na_ (_-ne_) ar lár.
-:8-3-1-p_en: In the table below, the possessive adjectives and their initial mutations are listed. These are the emphatic forms, and they are followed by nouns. A hyphen is placed between two _s_'s, e.g., _mo phas-sa_, and between two _n_'s, e.g., _ár n-arán-na_. If there is no lenition, the possessive endings _-sa_ (_-se_), _-san_ (_-sean_), _-na_ (_-ne_) are left in the middle.
+:8-3-1-p_ga: Sa tábla thíos, léirítear na haidiachtaí sealbhacha agus na hathruithe tosaigh a leanann iad. Is iad na leaganacha treise, agus ainmfhocail ag gabháil leo, atá leagtha amach sa tábla. Cuirtear fleiscín idir dhá _s_, e.g., _mo phas-sa_, agus idir dhá _n_, e.g., _ár n&#x2011;arán-na_. Mura mbíonn treise i gceist, fágtar na hiarmhíreanna _-sa_ (_-se_), _-san_ (_-sean_), _-na_ (_-ne_) ar lár.
+:8-3-1-p_en: In the table below, the possessive adjectives and their initial mutations are listed. These are the emphatic forms, and they are followed by nouns. A hyphen is placed between two _s_'s, e.g., _mo phas-sa_, and between two _n_'s, e.g., _ár n&#x2011;arán-na_. If there is no lenition, the possessive endings _-sa_ (_-se_), _-san_ (_-sean_), _-na_ (_-ne_) are left in the middle.
 
 :8B-caption_ga: Na hAidiachtaí Sealbhacha
 :8B-caption_en: The Possessive Adjectives
@@ -208,7 +208,7 @@
 :8-3-3-sample2_ga: Thit sí ar *a dhá glúin*. (_bain._)
 :8-3-3-sample2_en: She fell on *her two knees*. (_fem._)
 
-:8-3-3-sample3_ga: Ar dhíol siad *a dhá n-árasán*? (_iol._)
+:8-3-3-sample3_ga: Ar dhíol siad *a dhá n&#x2011;árasán*? (_iol._)
 :8-3-3-sample3_en: Did they sell *their two flats*? (_pl._)
 
 :8-3-4-p_ga: Chun feidhm forainmnigh shealbhaigh a chomhlíonadh --
@@ -307,13 +307,13 @@
 :8-3-7-sample5_ga: Thug sí *dá hathair* é. (_bain._)
 :8-3-7-sample5_en: She gave it *to her father*. (_fem._)
 
-:8-3-7-sample6_ga: Thug siad *dá n-athair* é. (_iol._)
+:8-3-7-sample6_ga: Thug siad *dá n&#x2011;athair* é. (_iol._)
 :8-3-7-sample6_en: They gave it *to their father*. (_pl._)
 
 :8-3-7-sample7_ga: Scaoileamar *dár ngreim*.
 :8-3-7-sample7_en: We released *our grip*.
 
-:8-3-7-sample8_ga: Thugamar *dár n-aintíní* iad.
+:8-3-7-sample8_ga: Thugamar *dár n&#x2011;aintíní* iad.
 :8-3-7-sample8_en: We gave them *to our aunts*.
 
 :8-3-8-p_ga: Cuirtear _n_ idir na réamhfhocail _faoi_, _i_, _le_, _ó_ agus _trí_ agus an aidiacht shealbhach nó an mhír _a_ sna cásanna seo a leanas:
@@ -526,7 +526,7 @@
 :8-6-1-d-p_ga: le feidhm dhobhriathair, e.g., _chomh híseal seo_ (_sin_, _siúd_); _chomh mór seo_ (_sin_, _siúd_).
 :8-6-1-d-p_en: with an adverbial function, e.g., _chomh híseal seo_ (_sin_, _siúd_); _chomh mór seo_ (_sin_, _siúd_).
 
-:8-6-2-p_ga: Is minic a úsáidtear na foirmeacha _eo_, _in_ agus _iúd_ in ionad _seo_, _sin_ agus _siúd_ ar lorg na copaile. Tabhair faoi deara nach n-úsáidtear na leaganacha _eo_, _in_ ná _iúd_ tar éis _is_.
+:8-6-2-p_ga: Is minic a úsáidtear na foirmeacha _eo_, _in_ agus _iúd_ in ionad _seo_, _sin_ agus _siúd_ ar lorg na copaile. Tabhair faoi deara nach n&#x2011;úsáidtear na leaganacha _eo_, _in_ ná _iúd_ tar éis _is_.
 :8-6-2-p_en: The forms _eo_, _in_ and _iúd_ are often used instead of _seo_, _sin_ and _siúd_ in the copula. Note that the forms _eo_, _in_ and _iúd_ are not used after _is_. (*TL Note*: _eo_, _in_, and _iúd_ are secondary forms in dialectical Irish according to https://en.wikisource.org/wiki/Graim%C3%A9ar_na_Gaedhilge/Part_II_Chapter_IV[Graiméar na Gaedhilge, Part II Chapter IV]. These entries are not found in FGB.)
 
 :8-6-2-sample1_ga: B'*eo* an áit.

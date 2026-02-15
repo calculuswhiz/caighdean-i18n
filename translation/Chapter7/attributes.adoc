@@ -639,7 +639,7 @@
 :Table7N-caption_ga: Forainmnigh Cheisteacha i gcumasc leis an gCopail &mdash; An Aimsir Chaite, an Aimsir Ghnáthchaite agus an Modh Coinníollach
 :Table7N-caption_en: Interrogative Pronominals composed with the Copula &mdash; The Past Tense, Past Habitual Tense and Conditional Mood
 
-:7-3-1-p_ga: Tabhair faoi deara nach n-úsáidtear an cumasc _cérbh_ ach roimh _é_, _í_, _eisean_, _ise_, _iad_ agus _iadsan_. Ní dhéantar cumasc idir _cé_ agus na foirmeacha _ab_ nó _ba_ den chopail nuair nach forainmneach pearsanta a leanann _cé_: _cérbh é_; ach _cé ab fhearr_?; _cé ba chaptaen oraibh_?
+:7-3-1-p_ga: Tabhair faoi deara nach n&#x2011;úsáidtear an cumasc _cérbh_ ach roimh _é_, _í_, _eisean_, _ise_, _iad_ agus _iadsan_. Ní dhéantar cumasc idir _cé_ agus na foirmeacha _ab_ nó _ba_ den chopail nuair nach forainmneach pearsanta a leanann _cé_: _cérbh é_; ach _cé ab fhearr_?; _cé ba chaptaen oraibh_?
 :7-3-1-p_en: Note that the compound _cérbh_ is only used before _é_, _í_, _eisean_, _ise_, _iad_ and _iadsan_. _cé_ does not merge with the _ab_ or _ba_ forms of the copula when _cé_ is not followed by a personal pronominal: _cérbh é_; but _cé ab fhearr_?; _cé ba chaptaen oraibh_?
 
 :7-3-2-title_ga: Réamhfhocail i gcumasc leis an gCopail

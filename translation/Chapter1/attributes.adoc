@@ -1,8 +1,8 @@
 :teidealNaCaibidle_ga: An tAlt
 :teidealNaCaibidle_en: The Article
 
-:1-1-1-p_ga: Alt amháin atá sa Ghaeilge -- an t&#x2011;alt cinnte. Deirtear gur _ainmfhocal cinnte_ ainmfhocal atá faoi réir ag an alt. Tá dhá fhoirm den alt ann: _an_ agus _na_. Is roimh an ainmfhocal a chuirtear an t&#x2011;alt, e.g., _an baile_; _an mhír_; _na caoirigh_; _teach na cúirte_; nó roimh cibé focal a chuirtear roimh an ainmfhocal lena cháiliú, e.g., _an uile dhuine_; _scéal mhadra na n-ocht gcos_; _tús na chéad seachtaine_. Is féidir an t&#x2011;alt a chur in ionad na haidiachta sealbhaí, e.g., _Tá an croí ag cur air_; _Bhí an ghrian ag baint na súl asam_.
-:1-1-1-p_en: There is one article in the Irish language -- the definite article. The subject of the article is called the _definite noun_. The article has two forms: _an_ and _na_. The article is placed before the noun, e.g., _an baile_; _an mhír_; _na caoirigh_; _teach na cúirte_; or before whatever word is put before the noun to qualify it, e.g., _an uile dhuine_; _scéal mhadra na n-ocht gcos_; _tús na chéad seachtaine_. It is possible to replace the article with the possessive adjective e.g., _Tá an croí ag cur air_; _Bhí an ghrian ag baint na súl asam_.
+:1-1-1-p_ga: Alt amháin atá sa Ghaeilge -- an t&#x2011;alt cinnte. Deirtear gur _ainmfhocal cinnte_ ainmfhocal atá faoi réir ag an alt. Tá dhá fhoirm den alt ann: _an_ agus _na_. Is roimh an ainmfhocal a chuirtear an t&#x2011;alt, e.g., _an baile_; _an mhír_; _na caoirigh_; _teach na cúirte_; nó roimh cibé focal a chuirtear roimh an ainmfhocal lena cháiliú, e.g., _an uile dhuine_; _scéal mhadra na n&#x2011;ocht gcos_; _tús na chéad seachtaine_. Is féidir an t&#x2011;alt a chur in ionad na haidiachta sealbhaí, e.g., _Tá an croí ag cur air_; _Bhí an ghrian ag baint na súl asam_.
+:1-1-1-p_en: There is one article in the Irish language -- the definite article. The subject of the article is called the _definite noun_. The article has two forms: _an_ and _na_. The article is placed before the noun, e.g., _an baile_; _an mhír_; _na caoirigh_; _teach na cúirte_; or before whatever word is put before the noun to qualify it, e.g., _an uile dhuine_; _scéal mhadra na n&#x2011;ocht gcos_; _tús na chéad seachtaine_. It is possible to replace the article with the possessive adjective e.g., _Tá an croí ag cur air_; _Bhí an ghrian ag baint na súl asam_.
 
 :1-1-2-p_ga: Is litir bheag a bhíonn ar an alt i lár abairte, e.g., _Nach raibh tú ag an Oireachtas i mbliana?_; _Bhí aithne mhaith agam ar an Seabhac_; ach amháin i gcásanna áirithe amhail teidil foilseachán, e.g., _Cé a scríobh An tOileánach?_
 :1-1-2-p_en: The article is written with a small letter in the middle of sentences, e.g., _Nach raibh tú ag an Oireachtas i mbliana?_; _Bhí aithne mhaith agam ar an Seabhac_; except in certain contexts such as publication titles e.g., _Cé a scríobh An tOileánach?_
@@ -79,7 +79,7 @@
 :1-1-5-d-sample3_ga: Rinne mé *an Carghas* ar an ól.
 :1-1-5-d-sample3_en: I gave up drinking for *Lent*. 
 
-:1-1-5-d-p2_ga: Tabhair faoi deara nach n-úsáidtear an t&#x2011;alt i leaganacha dobhriathartha áirithe, e.g., _faoi Cháisc_, _um Nollaig_, _faoi Bhealtaine_.
+:1-1-5-d-p2_ga: Tabhair faoi deara nach n&#x2011;úsáidtear an t&#x2011;alt i leaganacha dobhriathartha áirithe, e.g., _faoi Cháisc_, _um Nollaig_, _faoi Bhealtaine_.
 :1-1-5-d-p2_en: Note that the article is not used in certain adverbial forms, e.g., _faoi Cháisc_, _um Nollaig_, _faoi Bhealtaine_.
 
 :1-1-5-e-p1_ga: *Laethanta na seachtaine*, e.g., _an Luan_, _an Mháirt_, _an Chéadaoin_.
@@ -94,7 +94,7 @@
 :1-1-5-e-sample3_ga: Inniu *an Chéadaoin*.
 :1-1-5-e-sample3_en: Today *is a Wednesday*.
 
-:1-1-5-e-p2_ga: Tabhair faoi deara go n-úsáidtear an dobhriathar ama _Dé_ in ionad an ailt nuair atáthar ag tagairt do lá áirithe, e.g., _Bhí mé ag caint leis Dé Céadaoin seo caite_.
+:1-1-5-e-p2_ga: Tabhair faoi deara go n&#x2011;úsáidtear an dobhriathar ama _Dé_ in ionad an ailt nuair atáthar ag tagairt do lá áirithe, e.g., _Bhí mé ag caint leis Dé Céadaoin seo caite_.
 :1-1-5-e-p2_en: Note that the adverb _Dé_ is used in place of the article when referring to a particular day, e.g., _Bhí mé ag caint leis Dé Céadaoin seo caite_.
 
 :1-1-5-e-p3_ga: Má tá réamhfhocal á úsáid roimh lá áirithe, déantar an t&#x2011;alt a chumasc leis an réamhfhocal, e.g., _Ní mór na hiarratais a bheith faighte faoin Aoine, an 16 Bealtaine_.
@@ -148,7 +148,7 @@
 :1-1-5-h-ii_ga: Cnoic agus sléibhte áirithe, e.g., _na hAindéis_, _na hAlpa_, _an Bhograch_, _an Chearc_, _na Comaraigh_, _an Earagail_, _na Himiléithe_, _an Mhucais_.
 :1-1-5-h-ii_en: Certain mountains and cities, e.g., _na hAindéis_, _na hAlpa_, _an Bhograch_ _an Chearc_, _na Comaraigh_, _an Earagail_, _na Himiléithe_, _an Mhucais_.
 
-:1-1-5-h-iii_ga: Formhór na n-aibhneacha, e.g., _an Bhóinn_, _an Danóib_, _an Life_, _an Phó_, _an Réin_, _an Róin_, _an tSéin_, _an tSionainn_, _an Tibir_.
+:1-1-5-h-iii_ga: Formhór na n&#x2011;aibhneacha, e.g., _an Bhóinn_, _an Danóib_, _an Life_, _an Phó_, _an Réin_, _an Róin_, _an tSéin_, _an tSionainn_, _an Tibir_.
 :1-1-5-h-iii_en: Most rivers e.g., _an Bhóinn_, _an Danóib_, _an Life_, _an Phó_, _an Réin_, _an Róin_, _an tSéin_, _an tSionainn_, _an Tibir_.
 
 :1-1-5-h-sample1_ga: Rinne mé *an Mhucais* a shiúl inné.
@@ -463,7 +463,7 @@
 :1-5-1-e-sample2_ga: Rinne siad achomharc *chun na cúirte*.
 :1-5-1-e-sample2_en: They made an appeal *to the court*.
 
-:1-5-1-p2_ga: Féach link:./chapter3.html#sec_3_3[3.3] le haghaidh cásanna ina n-úsáidtear foirm an ainmnigh in ionad an ghinidigh.
+:1-5-1-p2_ga: Féach link:./chapter3.html#sec_3_3[3.3] le haghaidh cásanna ina n&#x2011;úsáidtear foirm an ainmnigh in ionad an ghinidigh.
 :1-5-1-p2_en: See link:./chapter3.html#sec_3_3[3.3] for contexts where the nominative form is used instead of the genitive.
 
 :1-5-2-p_ga: Sa tábla thíos, léirítear an tionchar a bhíonn ag an alt ar an ainmfhocal sa tuiseal ginideach uatha.

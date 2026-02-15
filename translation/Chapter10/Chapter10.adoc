@@ -2814,7 +2814,7 @@ endif::[]
     </tr>
     <tr>
       <td>{Table10B-noun-rule-2}</td>
-      <td>ár n-athair; bhur bpáistí; a gcótaí; ár dhá gcapall; bhur dhá dteach</td>
+      <td>ár n&#x2011;athair; bhur bpáistí; a gcótaí; ár dhá gcapall; bhur dhá dteach</td>
     </tr>
     <tr>
       <td>{Table10B-noun-rule-3}</td>
@@ -2835,7 +2835,7 @@ endif::[]
     <tr>
       <td>{Table10B-adjective-rule-1}</td>
       <td>
-        i gceithre leabhar; ar an gcúigiú duine; a dtríú hiarracht (<em>{ThirdPersonPl}</em>); scéal mhadra na n-ocht gcos
+        i gceithre leabhar; ar an gcúigiú duine; a dtríú hiarracht (<em>{ThirdPersonPl}</em>); scéal mhadra na n&#x2011;ocht gcos
       </td>
     </tr>
     <tr>
@@ -2844,11 +2844,11 @@ endif::[]
     </tr>
     <tr>
       <td>{Table10B-verb-rule-1}</td>
-      <td>an bhean a dtagann a páistí ar scoil; an bainne nach n-óltar; tá a dteastódh uait acu; an leabhar dá dtagraítear</td>
+      <td>an bhean a dtagann a páistí ar scoil; an bainne nach n&#x2011;óltar; tá a dteastódh uait acu; an leabhar dá dtagraítear</td>
     </tr>
     <tr>
       <td>{Table10B-verb-rule-2}</td>
-      <td>an mbeidh; dá mbeadh; mura ndéanfaidh; Nach n-ólann sé bainne?; ní bhfuair; ní bhfaighidh sé; ní bhfaighfeá</td>
+      <td>an mbeidh; dá mbeadh; mura ndéanfaidh; Nach n&#x2011;ólann sé bainne?; ní bhfuair; ní bhfaighidh sé; ní bhfaighfeá</td>
     </tr>
   </tbody>
 </table>

@@ -289,22 +289,22 @@ h| 16 | sé bhairille dhéag +
 sé ábhar déag
 
 h| 7 | seacht mbairille +
-seacht n-oíche
+seacht n&#x2011;oíche
 h| 17 | seacht mbairille dhéag +
-seacht n-oíche déag
+seacht n&#x2011;oíche déag
 
 h| 8 | ocht mbairille +
-ocht n-oíche
+ocht n&#x2011;oíche
 h| 18 | ocht mbád déag +
-ocht n-oíche déag
+ocht n&#x2011;oíche déag
 
 h| 9 | naoi mbairille +
-naoi n-oíche
+naoi n&#x2011;oíche
 h| 19 | naoi mbairille dhéag +
-naoi n-oíche dhéag
+naoi n&#x2011;oíche dhéag
 
 h| 10 | deich mbairille +
-deich n-oíche
+deich n&#x2011;oíche
 ||
 
 |===
@@ -333,7 +333,7 @@ h| fiche | fhichead | fichid | bhfichid
 h| pingin | phingin | pingine | bpingine
 h| trian | thrian | treana | dtreana
 h| troigh | throigh | troithe | dtroithe
-h| uair (_sa bhrí_ babhta) | uair | huaire | n-uaire
+h| uair (_sa bhrí_ babhta) | uair | huaire | n&#x2011;uaire
 
 |===
 
@@ -424,7 +424,7 @@ h| 8 | ocht leabhar mhóra
 h| 18 | ocht bhfuinneog déag mhóra
 
 h| 9 | naoi bhfuinneog mhóra
-h| 19 | naoi n-oíche dhéag fhuara
+h| 19 | naoi n&#x2011;oíche dhéag fhuara
 
 h| 10 | deich leabhar mhóra | |
 
@@ -562,8 +562,8 @@ h| 16 | gaois na sé cloigne déag maola
 h| 7 | ualach na seacht gcapall mhóra
 h| 17 | géaga na seacht gcrann déag dhuilleacha
 
-h| 8 | seolta na n-ocht mbád bheaga
-h| 18 | achar na n-ocht bpáirc déag mhóra
+h| 8 | seolta na n&#x2011;ocht mbád bheaga
+h| 18 | achar na n&#x2011;ocht bpáirc déag mhóra
 
 h| 9 | leithead na naoi gcinn dheasa
 h| 19 | deireadh na naoi seachtaine déag fada
@@ -767,7 +767,7 @@ h| 22
 | 22 bád mór
 
 h| 37 
-| 37 n-ábhar shuimiúla
+| 37 n&#x2011;ábhar shuimiúla
 | 37 ábhar suimiúil
 
 h| 44 
@@ -779,7 +779,7 @@ h| 53
 | 53 bó mhór
 
 h| 68 
-| 68 n-oíche ghaofara
+| 68 n&#x2011;oíche ghaofara
 | 68 oíche ghaofar
 
 h| 76 
@@ -1334,10 +1334,10 @@ h| 6/50 | sé chaogadú
 
 h| 4/7 | ceithre sheachtú
 h| 7/16 | seacht sédéagú
-h| 9/80 | naoi n-ochtódú
+h| 9/80 | naoi n&#x2011;ochtódú
 
 h| 8/9 | ocht naoú
-h| 9/18 | naoi n-ochtdéagú
+h| 9/18 | naoi n&#x2011;ochtdéagú
 h| 9/100 | naoi gcéadú
 
 h| 9/10 | naoi ndeichiú
@@ -1463,7 +1463,7 @@ a| . tús na haon bhileoige glaine amháin
 . dath an dá chrann éagsúla
 . costas na seacht gcinn dhearga
 . bádóirí na gcúig bhád déag bheaga
-. fuacht na n-ocht gcloigne maola
+. fuacht na n&#x2011;ocht gcloigne maola
 a| . 1 bhileog ghlan
 . 2 chupán ghlasa
 . 3 cinn dhearga
@@ -1475,19 +1475,19 @@ a| . beirt bhan mhisniúla
 . an ceathrar feirmeoirí gnóthacha
 . an t&#x2011;ochtar aisteoirí maithe
 . trí fheirmeoir déag Éireannacha
-. na seacht n-oibrí dhéag ghnóthacha
+. na seacht n&#x2011;oibrí dhéag ghnóthacha
 a| . ainmneacha na beirte ban mhisniúla
 . muintir an cheathrair
 . muintir an cheathrar feirmeoirí gnóthacha
 . róil an ochtair
 . róil an ochtar aisteoirí maithe
 . cumas na dtrí fheirmeoir déag Éireannacha
-. tuarastail na seacht n-oibrí dhéag ghnóthacha
+. tuarastail na seacht n&#x2011;oibrí dhéag ghnóthacha
 a| . 1 oibrí cáilithe
 . 3 fheisire shinsearacha
-. 8 n-údar fhoilsithe
+. 8 n&#x2011;údar fhoilsithe
 . 13 fheirmeoir Éireannacha
-. 17 n-oibrí ghnóthacha
+. 17 n&#x2011;oibrí ghnóthacha
 
 h| {Table9EE-Row3} 
 a| . an chéad fhear cróga

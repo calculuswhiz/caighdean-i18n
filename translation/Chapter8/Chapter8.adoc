@@ -264,9 +264,9 @@ endif::[]
         <td>
             <ul>
                 <li>ár mbádna</li>
-                <li>ár n-arán-na</li>
+                <li>ár n&#x2011;arán-na</li>
                 <li>ár bpáircne</li>
-                <li>ár n-earraíne</li>
+                <li>ár n&#x2011;earraíne</li>
             </ul>
         </td>
     </tr>
@@ -283,9 +283,9 @@ endif::[]
         <td>
             <ul>
                 <li>bhur mbádsa</li>
-                <li>bhur n-aránsa</li>
+                <li>bhur n&#x2011;aránsa</li>
                 <li>bhur bpáircse</li>
-                <li>bhur n-earraíse</li>
+                <li>bhur n&#x2011;earraíse</li>
             </ul>
         </td>
     </tr>
@@ -302,9 +302,9 @@ endif::[]
         <td rowspan=2 class="align-middle">
             <ul>
                 <li>a mbádnasan</li>
-                <li>a n-aránsan</li>
+                <li>a n&#x2011;aránsan</li>
                 <li>a bpáircnsan</li>
-                <li>a n-earráinsan</li>
+                <li>a n&#x2011;earráinsan</li>
             </ul>
         </td>
     </tr>
@@ -398,7 +398,7 @@ endif::[]
         <td>
             <ul>
                 <li>ár dhá gcarr</li>
-                <li>ár dhá n-úll</li>
+                <li>ár dhá n&#x2011;úll</li>
                 <li>ár dhá bhfeirm</li>
             </ul>
         </td>
@@ -415,7 +415,7 @@ endif::[]
         <td>
             <ul>
                 <li>bhur dhá gcarr</li>
-                <li>bhur dhá n-úll</li>
+                <li>bhur dhá n&#x2011;úll</li>
                 <li>bhur dhá bhfeirm</li>
             </ul>
         </td>
@@ -432,7 +432,7 @@ endif::[]
         <td rowspan=2 class="align-middle">
             <ul>
                 <li>a dhá gcarr</li>
-                <li>a dhá n-úll</li>
+                <li>a dhá n&#x2011;úll</li>
                 <li>a dhá bhfeirm</li>
             </ul>
         </td>
@@ -573,21 +573,21 @@ endif::[]
     <tr>
         <td>{TheFirstPerson}</td>
         <td>do m'ainmniú</td>
-        <td>dár n-ainmniú</td>
+        <td>dár n&#x2011;ainmniú</td>
         <td>do mo thástáil</td>
         <td>dár dtástáil</td>
     </tr>
     <tr>
         <td>{TheSecondPerson}</td>
         <td>do d'ainmniú</td>
-        <td>do bhur n-ainmniú</td>
+        <td>do bhur n&#x2011;ainmniú</td>
         <td>do do thástáil</td>
         <td>do bhur dtástáil</td>
     </tr>
     <tr>
         <td>{TheThirdPersonMasc}</td>
         <td>á ainmniú</td>
-        <td rowspan="2" class="align-middle">á n-ainmniú</td>
+        <td rowspan="2" class="align-middle">á n&#x2011;ainmniú</td>
         <td>á thástáil</td>
         <td rowspan="2" class="align-middle">á dtástáil</td>
     </tr>

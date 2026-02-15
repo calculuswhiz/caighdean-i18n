@@ -22,7 +22,7 @@
 :11-1-4-sample-2_ga: Eagraíodh cóisir *dóibh siúd* a chríochnaigh inniu.
 :11-1-4-sample-2_en: A party was organized *for those* who finished today.
 
-:11-1-5-p_ga: Is _iartheachtaí_ a thugtar ar fhorainmneach (lena n-áirítear aidiacht shealbhach) lena dtagraítear siar don réamhtheachtaí i gclásail choibhneasta indíreacha.
+:11-1-5-p_ga: Is _iartheachtaí_ a thugtar ar fhorainmneach (lena n&#x2011;áirítear aidiacht shealbhach) lena dtagraítear siar don réamhtheachtaí i gclásail choibhneasta indíreacha.
 :11-1-5-p_en: Pronominals (including possessive adjectives) that refer back to the antecedent in indirect relative clauses are called _subsequents_.
 
 :11-1-5-sample-1_ga: Tabhair sin don bhuachaill a bhfuil slaghdán *air*.
@@ -301,10 +301,10 @@
 :11-3-1-e-p_ga: má dhéantar tagairt don réamhtheachtaí i gclásal briathartha ar clásal briathartha é atá faoi réir ag an mbriathar sa chlásal coibhneasta:
 :11-3-1-e-p_en: if the antecedent is referred to in a verbal clause that is subordinate to the verb in the relative clause:
 
-:11-3-1-e-sample-1a_ga: Cheap mé nach n-inseodh an duine sin an fhírinne choíche.
+:11-3-1-e-sample-1a_ga: Cheap mé nach n&#x2011;inseodh an duine sin an fhírinne choíche.
 :11-3-1-e-sample-1a_en: I thought that that person would never tell the truth.
 
-:11-3-1-e-sample-1b_ga: Ba dhuine é *ar cheap* mé nach n-inseodh *sé* an fhírinne choíche.
+:11-3-1-e-sample-1b_ga: Ba dhuine é *ar cheap* mé nach n&#x2011;inseodh *sé* an fhírinne choíche.
 :11-3-1-e-sample-1b_en: He was that person *whom* I *thought* would never tell the truth.
 
 :11-3-1-e-sample-2a_ga: Sílim go bhfaca mé iníon na mná sin ar an teilifís aréir.
@@ -410,8 +410,8 @@
 :11-4-2-p_ga: Briathra a úsáidtear chun tuairim nó caint a chur in iúl, e.g., _abair_, _ceap_, _maígh_, _síl_, etc., is mó a bhíonn i gclásail idiraisnéiseacha.
 :11-4-2-p_en: Verbs used to express opinion or speech, e.g., _abair_, _ceap_, _maígh_, _síl_, etc., are most commonly found in parenthetical clauses.
 
-:11-4-2-note-p_ga: Féach freisin link:#sec_11_3_1_e[11.3.1(e)] le haghaidh míniú ar chásanna ina ndéantar tagairt don réamhtheachtaí i gclásal briathartha atá faoi réir ag an mbriathar sa chlásal coibhneasta, e.g., _Ba dhuine é ar cheap mé nach n-inseodh sé an fhírinne choíche_.
-:11-4-2-note-p_en: See also link:#sec_11_3_1_e[11.3.1(e)] for an explanation of contexts where the antecedent is referred to in a verbal clause that is subordinate to the verb in the relative clause, e.g., _Ba dhuine é ar cheap mé nach n-inseodh sé an fhírinne choíche_.
+:11-4-2-note-p_ga: Féach freisin link:#sec_11_3_1_e[11.3.1(e)] le haghaidh míniú ar chásanna ina ndéantar tagairt don réamhtheachtaí i gclásal briathartha atá faoi réir ag an mbriathar sa chlásal coibhneasta, e.g., _Ba dhuine é ar cheap mé nach n&#x2011;inseodh sé an fhírinne choíche_.
+:11-4-2-note-p_en: See also link:#sec_11_3_1_e[11.3.1(e)] for an explanation of contexts where the antecedent is referred to in a verbal clause that is subordinate to the verb in the relative clause, e.g., _Ba dhuine é ar cheap mé nach n&#x2011;inseodh sé an fhírinne choíche_.
 
 :11-4-3-p_ga: Is clásal díreach an clásal idiraisnéiseach, ach féadfaidh an clásal ar a lorg a bheith díreach nó indíreach ag brath ar mhúnla na habairte.
 :11-4-3-p_en: The parenthetical clause is a direct clause, but the clause it refers to can be either direct or indirect depending on the structure of the sentence.
@@ -479,7 +479,7 @@
 :Table11B-row2-col1_ga: Ba é an rud *ba mhó* é a theastaigh uaithi. 
 :Table11B-row2-col1_en: It was the thing that she wanted *most*.
 
-:Table11B-row2-col2_ga: Cá háit *is fusa* a n-eagrófar an cheolchoirm?
+:Table11B-row2-col2_ga: Cá háit *is fusa* a n&#x2011;eagrófar an cheolchoirm?
 :Table11B-row2-col2_en: Where is it *easiest* to organize the concert?
 
 :Table11B-row3-col1_ga: Sin (é) an t&#x2011;amhrán *is fearr* a thaitin liom. 
@@ -536,7 +536,7 @@
 :11-6-1-a-ii-p_ga: Déantar cumasc idir an mhír choibhneasta _a_ agus an fhoirm neamhspleách láithreach den bhriathar _bí_ chun na foirmeacha _atá_, _atáim_, _atáimid_ a chruthú.
 :11-6-1-a-ii-p_en: A compound is made between the relative particle _a_ and the independent present tense form of the verb _bí_ to create the forms _atá_, _atáim_, _atáimid_.
 
-:11-6-1-a-ii-sample-1_ga: Sin iad na leabhair *atá* á n-iarraidh agam.
+:11-6-1-a-ii-sample-1_ga: Sin iad na leabhair *atá* á n&#x2011;iarraidh agam.
 :11-6-1-a-ii-sample-1_en: Those are the books *that* I am asking for.
 
 :11-6-1-a-ii-sample-2_ga: Seo iad na héadaí *atáim* a cheannach.
@@ -668,7 +668,7 @@
 :11-6-2-a-i-sample-5_ga: Sin é an fear *nach* gceannaínn aon earraí uaidh.
 :11-6-2-a-i-sample-5_en: That is the man *who* would *not* buy any goods from him.
 
-:11-6-2-a-i-sample-6_ga: An í sin an cháis *nach* n-íosfadh an fear?
+:11-6-2-a-i-sample-6_ga: An í sin an cháis *nach* n&#x2011;íosfadh an fear?
 :11-6-2-a-i-sample-6_en: Is that the case *that* the man would *not* accept?
 
 :11-6-2-a-i-sample-7_ga: Sin í an bhean *nach* dtagann a mac abhaile gach bliain.
@@ -773,7 +773,7 @@
 :11-7-2-b-p_ga: Uraítear an fhoirm spleách den bhriathar i ndiaidh na míre coibhneasta _a_.
 :11-7-2-b-p_en: The dependent form of the verb is eclipsed after the relative particle _a_.
 
-:11-7-2-b-sample-1_ga: Sin é an ríomhaire *a n-úsáideann* an bhean é le haghaidh na hoibre.
+:11-7-2-b-sample-1_ga: Sin é an ríomhaire *a n&#x2011;úsáideann* an bhean é le haghaidh na hoibre.
 :11-7-2-b-sample-1_en: That is the computer *that* the woman *uses* for work.
 
 :11-7-2-b-sample-2_ga: Sin í an bhean *a gceannóidh* an buachaill a carr.
