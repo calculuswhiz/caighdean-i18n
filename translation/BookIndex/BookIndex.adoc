@@ -26,830 +26,640 @@ ifeval::["{docLang}" == "ga"]
 
 == A
 
-* acrainm:
-link:./chapter3.html#sec_3_2[3.2]
-** feidhm aidiachtach
-link:./chapter3.html#sec_3_2_3_b[3.2.3.b]
-** gan an t&#x2011;alt
-link:./chapter3.html#sec_3_2_2_A[3.2.2A]
-** iolra
-link:./chapter3.html#sec_3_2_3_c[3.2.3.c]
-** leis an alt
-link:./chapter3.html#sec_3_2_2_A[3.2.2A]
+* acrainm: {acrainm_links}
+** feidhm aidiachtach {acrainm_feidhm_aidiachtach_links}
+** gan an t&#x2011;alt {acrainm_gan_an_talt_links}
+** iolra {acrainm_iolra_links}
+** leis an alt {acrainm_leis_an_alt_links}
 
-* aidiacht:
-link:./chapter4.html[4]
-** achoimre
-link:./chapter4.html#sec_4_7[4.7]
-** aidiachtaí aonsiollacha
-link:./chapter4.html#sec_4_4_1_a_ii[4.4.1.a.ii]
-link:./chapter4.html#sec_4_4_1_a_iv[4.4.1.a.iv]
-link:./chapter4.html#sec_4_4_1_a_v[4.4.1.a.v]
-** aidiacht cháilíochta
-link:./chapter3.html#sec_3_3_9[3.3.9]
-link:./chapter3.html#sec_3_3_10[3.3.10]
-link:./chapter3.html#sec_3_3_11[3.3.11]
-link:./chapter4.html#sec_4_1[4.1]
-link:./chapter4.html#sec_4_2[4.2]
-link:./chapter4.html#sec_4_12_1[4.12.1]
-link:./chapter10.html#sec_10_3_1[10.3.1]
-** aidiacht rannach
-link:./chapter10.html#sec_10_2_3_b[10.2.3.b]
-link:./chapter10.html#sec_10_16[10.16] 
-** aidiacht shealbhach
-link:chapter1.html#sec_1_1_1[1.1.1]
-link:./chapter3.html#sec_3_1_2_c[3.1.2.c]
-link:./chapter3.html#sec_3_3_1_a_iii[3.3.1.a.iii]
-link:./chapter3.html#sec_3_3_1_b_ii[3.3.1.b.ii]
-link:./chapter3.html#sec_3_3_11[3.3.11]
-link:./chapter4.html#sec_4_9[4.9]
-link:./chapter8.html#sec_8_3[8.3]
-link:./chapter8.html#sec_8_5_5[8.5.5]
-link:./chapter9.html#sec_9_5_1_b_iii[9.5.1.b.iii]
-link:./chapter9.html#sec_9_5_2_c[9.5.2.c]
-link:./chapter10.html#sec_10_2_4_b[10.2.4.b]
-link:./chapter10.html#sec_10_3_2_a[10.3.2.a]
-link:./chapter10.html#sec_10_6_2[10.6.2]
-link:./chapter10.html#sec_10_7_a[10.7.a]
-link:./chapter10.html#sec_10_11_7[10.11.7]
-link:./chapter10.html#sec_10_16[10.16]
-link:./chapter11.html#sec_11_1_5[11.1.5]
-link:./chapter11.html#sec_11_2_1_c[11.2.1.c]
-** aidiacht thaispeántach
-link:./chapter4.html#sec_4_10[4.10]
-** ainmneach
-link:./chapter4.html#sec_4_2_4[4.2.4]
-link:./chapter4.html#sec_4_3_1[4.3.1]
-link:./chapter4.html#sec_4_3_2[4.3.2]
-link:./chapter4.html#sec_4_3_4[4.3.4]
-link:./chapter4.html#sec_4_4_2[4.4.2]
-link:./chapter4.html#sec_4_4_4[4.4.4]
-link:./chapter4.html#sec_4_6_2[4.6.2]
-link:./chapter4.html#sec_4_7[4.7]
-link:./chapter9.html#sec_9_4_2_c_i[9.4.2.c.i]
-link:./chapter9.html#sec_9_4_2_d_i[9.4.2.d.i]
-** an chéad díochlaonadh
-link:./chapter4.html#sec_4_4[4.4]
-link:./chapter4.html#sec_4_7[4.7]
-** an dara díochlaonadh
-link:./chapter4.html#sec_4_5[4.5]
-** an tríú díochlaonadh
-link:./chapter4.html#sec_4_6[4.6]
-** baininscneach
-link:./chapter4.html#sec_4_2_2_b[4.2.2.b]
-link:./chapter4.html#sec_4_2_4[4.2.4]
-link:./chapter4.html#sec_4_3_3_b[4.3.3.b]
-link:./chapter4.html#sec_4_4_1_b[4.4.1.b]
-link:./chapter4.html#sec_4_4_4[4.4.4]
-link:./chapter4.html#sec_4_5_1_b[4.5.1.b]
-link:./chapter4.html#sec_4_5_2_a[4.5.2.a]
-link:./chapter4.html#sec_4_6_2[4.6.2]
-link:./chapter4.html#sec_4_7[4.7]
-link:./chapter4.html#sec_4_8_1[4.8.1]
-** breischéim
-link:./chapter4.html#sec_4_8_1[4.8.1]
-link:./chapter4.html#sec_4_8_3_a[4.8.3.a]
-link:./chapter7.html#sec_7_1_1_e[7.1.1.e]
-** coimriú
-link:./chapter4.html#sec_4_4_4[4.4.4]
-link:./chapter4.html#sec_4_5_2_b[4.5.2.b]
-** consan caol
-link:./chapter4.html#sec_4_2_5[4.2.5]
-link:./chapter4.html#sec_4_4_1_a_iii[4.4.1.a.iii]
-link:./chapter4.html#sec_4_4_3[4.4.3]
-** consan leathan
-link:./chapter4.html#sec_4_2_5[4.2.5]
-link:./chapter4.html#sec_4_4_1_a_i[4.4.1.a.i]
-link:./chapter4.html#sec_4_4_3[4.4.3]
-link:./chapter9.html#sec_9_3_6_b[9.3.6.b]
-** Córas an tSéimhithe
-link:./chapter1.html#sec_1_7[1.7]
-link:./chapter4.html#sec_4_2_2_a_ii[4.2.2.a.ii]
-link:./chapter10.html#sec_10_3_1_e[10.3.1.e]
-link:./chapter10.html#sec_10_16[10.16]
-** dobhriathra
-link:./chapter4.html#sec_4_3_5[4.3.5]
-link:./chapter6.html#sec_6_1_1_k[6.1.1.k]
-link:./chapter7.html#sec_7_2_1_B_b_iv[7.2.1.B.b.iv]
-link:./chapter7.html#sec_7_2_1_B_c_iv[7.2.1.B.c.iv]
-link:./chapter7.html#sec_7_2_2_A_b_iv[7.2.2.A.b.iv]
-link:./chapter7.html#sec_7_2_2_A_c_ii[7.2.2.A.c.ii]
-link:./chapter7.html#sec_7_2_2_B_b_ii[7.2.2.B.b.ii]
-link:./chapter7.html#sec_7_2_2_B_b_iii[7.2.2.B.b.iii]
-** firinscneach
-link:./chapter4.html#sec_4_2_2_a[4.2.2.a]
-link:./chapter4.html#sec_4_2_4[4.2.4]
-link:./chapter4.html#sec_4_3_3[4.3.3]
-link:./chapter4.html#sec_4_4_1_a[4.4.1.a]
-link:./chapter4.html#sec_4_4_2[4.4.2]
-link:./chapter4.html#sec_4_5_1_a[4.5.1.a]
-link:./chapter4.html#sec_4_7[4.7]
-** foirmeacha neamhrialta
-link:./chapter4.html#sec_4_8_2[4.8.2]
-link:./chapter4.html#sec_4_8_3[4.8.3]
-** gairmeach
-link:./chapter4.html#sec_4_2_2_a_i[4.2.2.a.i]
-link:./chapter4.html#sec_4_3_3_a[4.3.3.a]
-link:./chapter4.html#sec_4_4_2[4.4.2]
-link:./chapter10.html#sec_10_3_1_a[10.3.1.a]
-link:./chapter10.html#sec_10_3_1_b[10.3.1.b]
-** ginideach
-link:./chapter4.html#sec_4_2_2[4.2.2]
-link:./chapter4.html#sec_4_2_4[4.2.4]
-link:./chapter4.html#sec_4_3_2[4.3.2]
-link:./chapter4.html#sec_4_4_1_a_ii[4.4.1.a.ii]
-link:./chapter4.html#sec_4_4_1_a_iv[4.4.1.a.iv]
-link:./chapter4.html#sec_4_4_1_a_v[4.4.1.a.v]
-link:./chapter4.html#sec_4_4_2[4.4.2]
-link:./chapter4.html#sec_4_4_3[4.4.3]
-link:./chapter4.html#sec_4_4_4[4.4.4]
-link:./chapter4.html#sec_4_5_2[4.5.2]
-link:./chapter4.html#sec_4_6_2[4.6.2]
-link:./chapter4.html#sec_4_7[4.7]
-link:./chapter9.html#sec_9_3_6[9.3.6]
-link:./chapter9.html#sec_9_3_7[9.3.7]
-link:./chapter9.html#sec_9_4_3_c_ii[9.4.3.c.ii]
-link:./chapter9.html#sec_9_4_3_c_iii[9.4.3.c.iii]
-link:./chapter9.html#sec_9_4_3_c_iv[9.4.3.c.iv]
-** inscne
-link:./chapter4.html#sec_4_1_3[4.1.3]
-link:./chapter4.html#sec_4_2[4.2]
-link:./chapter9.html#sec_9_3_3_a[9.3.3.a]
-link:./chapter9.html#sec_9_3_4_a[9.3.4.a]
-link:./chapter9.html#sec_9_3_9_b[9.3.9.b]
-link:./chapter9.html#sec_9_3_10_b_ii[9.3.10.b.ii]
-link:./chapter9.html#sec_9_3_10_c_i[9.3.10.c.i]
-** iolra
-link:./chapter4.html#sec_4_2_5[4.2.5]
-link:./chapter4.html#sec_4_3_1[4.3.1]
-link:./chapter4.html#sec_4_3_2[4.3.2]
-link:./chapter4.html#sec_4_4_3[4.4.3]
-link:./chapter4.html#sec_4_4_4[4.4.4]
-link:./chapter4.html#sec_4_5_2[4.5.2]
-link:./chapter4.html#sec_4_6_2[4.6.2]
-link:./chapter4.html#table4f[Tábla 4F]
-link:./chapter4.html#table4g[Tábla 4G]
-link:./chapter9.html#sec_9_3_4[9.3.4]
-link:./chapter9.html#sec_9_3_5[9.3.5]
-link:./chapter9.html#sec_9_4_3_c[9.4.3.c]
-** mír/réimír threise
-link:./chapter4.html#sec_4_6_3[4.6.3]
-** séimhiú
-link:./chapter4.html#sec_4_2_2_a_ii[4.2.2.a.ii]
-link:./chapter4.html#sec_4_2_4[4.2.4]
-link:./chapter4.html#sec_4_2_5[4.2.5]
-link:./chapter4.html#sec_4_3_3[4.3.3]
-link:./chapter4.html#sec_4_3_7[4.3.7]
-link:./chapter4.html#sec_4_11[4.11]
-link:./chapter9.html#sec_9_3_3_b[9.3.3.b]
-link:./chapter9.html#sec_9_3_4_b[9.3.4.b]
-link:./chapter9.html#sec_9_3_6_b[9.3.6.b]
-link:./chapter9.html#sec_9_3_10_b_ii[9.3.10.b.ii]
-link:./chapter9.html#sec_9_3_10_c_i[9.3.10.c.i]
-link:./chapter9.html#sec_9_4_2_c[9.4.2.c]
-link:./chapter9.html#sec_9_4_2_d_i[9.4.2.d.i]
-link:./chapter10.html#sec_10_3[10.3]
-** tuiseal
-link:./chapter4.html#sec_4_1_3[4.1.3]
-link:./chapter4.html#sec_4_2[4.2]
-link:./chapter4.html#sec_4_4_3[4.4.3]
-link:./chapter4.html#sec_4_4_4[4.4.4]
-** uatha
-link:./chapter4.html#sec_4_2_2[4.2.2]
-link:./chapter4.html#sec_4_2_4[4.2.4]
-link:./chapter4.html#sec_4_3_1[4.3.1]
-link:./chapter4.html#sec_4_3_2_b[4.3.2.b]
-link:./chapter4.html#sec_4_3_8[4.3.8]
-link:./chapter4.html#sec_4_4_1[4.4.1]
-link:./chapter4.html#sec_4_4_2[4.4.2]
-link:./chapter4.html#sec_4_4_4[4.4.4]
-link:./chapter4.html#sec_4_5_1[4.5.1]
-link:./chapter4.html#sec_4_5_2[4.5.2]
-link:./chapter4.html#sec_4_6_2[4.6.2]
-link:./chapter4.html#table4d[Table&nbsp;4D]
-link:./chapter9.html#sec_9_3_4_a[9.3.4.a]
-link:./chapter9.html#sec_9_3_5_a[9.3.5.a]
-link:./chapter9.html#sec_9_4_2_c_ii[9.4.2.c.ii]
-link:./chapter9.html#sec_9_4_2_d_i[9.4.2.d.i]
-link:./chapter10.html#sec_10_3_1_a[10.3.1.a]
-link:./chapter10.html#sec_10_3_1_b[10.3.1.b]
-link:./chapter10.html#sec_10_3_1_d_ii[10.3.1.d.ii]
-link:./chapter10.html#sec_10_3_1_e[10.3.1.e]
-** uimhir
-link:./chapter9.html#sec_9_3_3[9.3.3]
-link:./chapter9.html#sec_9_3_4[9.3.4]
-link:./chapter9.html#sec_9_3_5[9.3.5]
-link:./chapter9.html#sec_9_3_6[9.3.6]
-link:./chapter9.html#sec_9_3_7[9.3.7]
-link:./chapter9.html#sec_9_3_10[9.3.10]
-link:./chapter9.html#sec_9_3_10[9.3.10]
-link:./chapter9.html#sec_9_3_11[9.3.11]
-link:./chapter9.html#sec_9_3_12[9.3.12]
-link:./chapter9.html#sec_9_4_2_c[9.4.2.c]
-link:./chapter9.html#sec_9_4_2_d[9.4.2.d]
-link:./chapter9.html#sec_9_4_3[9.4.3]
-link:./chapter9.html#sec_9_4_3_c[9.4.3.c]
-link:./chapter9.html#sec_9_5_5[9.5.5]
-link:./chapter10.html#sec_10_3_1_d[10.3.1.d]
-** urú
-link:./chapter10.html#sec_10_7[10.7]
+* aidiacht: {aidiacht_links}
+** achoimre {aidiacht_achoimre_links}
+** aidiachtaí aonsiollacha {aidiacht_aidiachtaí_aonsiollacha_links}
+** aidiacht cháilíochta {aidiacht_aidiacht_cháilíochta_links}
+** aidiacht rannach {aidiacht_aidiacht_rannach_links}
+** aidiacht shealbhach {aidiacht_aidiacht_shealbhach_links}
+** aidiacht thaispeántach {aidiacht_aidiacht_thaispeántach_links}
+** ainmneach {aidiacht_ainmneach_links}
+** an chéad díochlaonadh {aidiacht_an_chéad_díochlaonadh_links}
+** an dara díochlaonadh {aidiacht_an_dara_díochlaonadh_links}
+** an tríú díochlaonadh {aidiacht_an_tríú_díochlaonadh_links}
+** baininscneach {aidiacht_baininscneach_links}
+** breischéim {aidiacht_breischéim_links}
+** coimriú {aidiacht_coimriú_links}
+** consan caol {aidiacht_consan_caol_links}
+** consan leathan {aidiacht_consan_leathan_links}
+** Córas an tSéimhithe {aidiacht_Córas_an_tSéimhithe_links}
+** dobhriathra {aidiacht_dobhriathra_links}
+** firinscneach {aidiacht_firinscneach_links}
+** foirmeacha neamhrialta {aidiacht_foirmeacha_neamhrialta_links}
+** gairmeach {aidiacht_gairmeach_links}
+** ginideach {aidiacht_ginideach_links}
+** inscne {aidiacht_inscne_links}
+** iolra {aidiacht_iolra_links}
+** mír/réimír threise {aidiacht_mír_réimír_threise_links}
+** séimhiú {aidiacht_séimhiú_links}
+** tuiseal {aidiacht_tuiseal_links}
+** uatha {aidiacht_uatha_links}
+** uimhir {aidiacht_uimhir_links}
+** urú {aidiacht_urú_links}
 
-* ainm briathartha:
-link:./chapter1.html#sec_1_3_3[1.3.3]
-link:./chapter1.html#sec_1_5_1_b[1.5.1.b]
-link:./chapter3.html#sec_3_3_1[3.3.1]
-link:./chapter3.html#sec_3_3_2_a[3.3.2.a]
-link:./chapter3.html#sec_3_3_3[3.3.3]
-link:./chapter3.html#sec_3_3_4[3.3.4]
-link:./chapter3.html#sec_3_3_5[3.3.5]
-link:./chapter3.html#sec_3_3_8_a[3.3.8.a]
-link:./chapter3.html#sec_3_3_9[3.3.9]
-link:./chapter3.html#sec_3_3_13[3.3.13]
-link:./chapter5.html#sec_5_5[5.5]
-link:./chapter5.html#sec_5_6[5.6]
-link:./chapter7.html#sec_7_2_2_A_b_v[7.2.2.A.b.v]
-link:./chapter8.html#sec_8_3_5[8.3.5]
-link:./chapter8.html#sec_8_3_9[8.3.9]
-link:./chapter9.html#sec_9_4_2_c_iv[9.4.2.c.iv]
-link:./chapter9.html#sec_9_4_3_a_iii[9.4.3.a.iii]
-link:./chapter9.html#sec_9_4_3_c_iii[9.4.3.c.iii]
-link:./chapter10.html#sec_10_2_5_b[10.2.5.b]
-link:./chapter10.html#sec_10_2_5_c[10.2.5.c]
-link:./chapter10.html#sec_10_2_7_h[10.2.7.h]
-link:./chapter10.html#sec_10_2_7_i[10.2.7.i]
-link:./chapter10.html#sec_10_2_10_c[10.2.10.c]
-link:./chapter11.html#sec_11_2_1_c[11.2.1.c]
-link:./chapter11.html#sec_11_3_1_b[11.3.1.b]
-** an chéad réimniú
-link:./chapter5.html#sec_5_5_1[5.5.1]
-** an dara réimniú
-link:./chapter5.html#sec_5_5_2[5.5.2]
-** díochlaonadh
-link:./chapter5.html#sec_5_6[5.6]
-** feidhm aidiachta
-link:./chapter5.html#sec_5_6_1_c_ii[5.6.1.c.ii]
-** feidhm ainmfhocail
-link:./chapter3.html#sec_3_3_3[3.3.3]
-link:./chapter5.html#sec_5_6_1_c_ii[5.6.1.c.ii]
-** ginideach
-link:./chapter5.html#sec_5_6_1[5.6.1]
-** iolra
-link:./chapter5.html#sec_5_6_2[5.6.2]
+* ainm briathartha: {ainm_briathartha_links}
+** an chéad réimniú {ainm_briathartha_an_chéad_réimniú_links}
+** an dara réimniú {ainm_briathartha_an_dara_réimniú_links}
+** díochlaonadh {ainm_briathartha_díochlaonadh_links}
+** feidhm aidiachta {ainm_briathartha_feidhm_aidiachta_links}
+** feidhm ainmfhocail {ainm_briathartha_feidhm_ainmfhocail_links}
+** ginideach {ainm_briathartha_ginideach_links}
+** iolra {ainm_briathartha_iolra_links}
 
-* ainmfhocal:
-link:./chapter1.html#sec_1_1_1[1.1.1]
-link:./chapter1.html#sec_1_1_5_i[1.1.5.i]
-link:./chapter1.html#sec_1_1_5_l[1.1.5.l]
-link:./chapter1.html#sec_1_1_5[1.1.5]
-link:./chapter1.html#sec_1_2[1.2]
-link:./chapter1.html#sec_1_3_1[1.3.1]
-link:./chapter1.html#sec_1_3_3[1.3.3]
-link:./chapter1.html#sec_1_4_3[1.4.3]
-link:./chapter1.html#sec_1_4_4[1.4.4]
-link:./chapter1.html#sec_1_5[1.5]
-link:./chapter1.html#sec_1_6[1.6]
-link:./chapter1.html#sec_1_7[1.7]
-link:./chapter2.html#sec_2[2]
-link:./chapter3.html#sec_3[3]
-link:./chapter7.html#sec_7_1_1_d[7.1.1.d]
-link:./chapter7.html#sec_7_1_1_e[7.1.1.e]
-link:./chapter10.html#sec_10_1[10.1]
-link:./chapter10.html#sec_10_2[10.2]
-link:./chapter10.html#sec_10_6[10.6]
-link:./chapter10.html#sec_10_7[10.7]
-link:./chapter10.html#sec_10_11[10.11]
-** ainm dílis
-link:./chapter1.html#sec_1_1_5_c[1.1.5.c]
-link:./chapter3.html#sec_3_1_2_a[3.1.2.a]
-link:./chapter3.html#sec_3_1_3[3.1.3]
-link:./chapter3.html#sec_3_3_1_a_i[3.3.1.a.i]
-link:./chapter10.html#sec_10_2_5_c[10.2.5.c]
-** ainmfhocail neamhrialta
-link:./chapter2.html#table2a[Tábla 2A]
-link:./chapter2.html#table2d[Tábla 2D]
-link:./chapter2.html#sec_2_7[2.7]
-** ainmneacha ceana
-link:./chapter2.html#sec_2_2_3_b_ii[2.2.3.b.ii]
-link:./chapter4.html#sec_4_3_3_a[4.3.3.a]
-** an ceathrú díochlaonadh
-link:./chapter2.html#table2a[Tábla 2A]
-link:./chapter2.html#sec_2_1_3_b_iii[2.1.3.b.iii]
-link:./chapter2.html#sec_2_1_8[2.1.8]
-link:./chapter2.html#sec_2_5[2.5]
-** an chéad díochlaonadh
-link:./chapter2.html#table2a[Tábla 2A]
-link:./chapter2.html#sec_2_1_3_b_iii[2.1.3.b.iii]
-link:./chapter2.html#sec_2_1_8[2.1.8]
-link:./chapter2.html#sec_2_2[2.2]
-** an cúigiú díochlaonadh
-link:./chapter2.html#table2a[Tábla 2A]
-link:./chapter2.html#sec_2_1_3_b_iii[2.1.3.b.iii]
-link:./chapter2.html#sec_2_1_8[2.1.8]
-link:./chapter2.html#sec_2_6[2.6]
-** an dara díochlaonadh
-link:./chapter2.html#table2a[Tábla 2A]
-link:./chapter2.html#sec_2_1_3_b_ii[2.1.3.b.ii]
-link:./chapter2.html#sec_2_1_8[2.1.8]
-link:./chapter2.html#sec_2_3[2.3]
-** an tríú díochlaonadh
-link:./chapter2.html#table2a[Tábla 2A]
-link:./chapter2.html#sec_2_1_3_b_ii[2.1.3.b.ii]
-link:./chapter2.html#sec_2_1_3_b_iii[2.1.3.b.iii]
-link:./chapter2.html#sec_2_1_8[2.1.8]
-link:./chapter2.html#sec_2_4[2.4]
-** baininscneach
-link:./chapter1.html#sec_1_1_5_i_A[1.1.5.i.A]
-link:./chapter1.html#sec_1_2[1.2]
-link:./chapter1.html#sec_1_4[1.4]
-link:./chapter1.html#sec_1_5_2[1.5.2]
-link:./chapter1.html#sec_1_6[1.6]
-link:./chapter1.html#sec_1_7[1.7]
-link:./chapter2.html#sec_2_1_8[2.1.8]
-link:./chapter2.html#sec_2_3_1[2.3.1]
-link:./chapter2.html#table2J[Tábla 2J]
-link:./chapter2.html#sec_2_5_1_c[2.5.1.c]
-link:./chapter2.html#sec_2_5_2_b[2.5.2.b]
-link:./chapter2.html#sec_2_6_1_a[2.6.1.a]
-link:./chapter2.html#sec_2_6_2_a[2.6.2.a]
-link:./chapter4.html#sec_4_2_2_b[4.2.2.b]
-link:./chapter4.html#sec_4_2_4[4.2.4]
-link:./chapter4.html#sec_4_3_3_b[4.3.3.b]
-link:./chapter8.html#sec_8_2_6[8.2.6]
-link:./chapter9.html#sec_9_3_7_a_ii[9.3.7.a.ii]
-link:./chapter10.html#sec_10_1[10.1]
-link:./chapter10.html#sec_10_2_1_a[10.2.1.a]
-link:./chapter10.html#sec_10_2_1_c[10.2.1.c]
-link:./chapter10.html#sec_10_2_7[10.2.7]
-link:./chapter10.html#sec_10_3_1_a[10.3.1.a]
-link:./chapter10.html#sec_10_3_1_d_ii[10.3.1.d.ii]
-link:./chapter10.html#sec_10_6_1[10.6.1]
-link:./chapter10.html#sec_10_11_1_a[10.11.1.a]
-link:./chapter10.html#table10A[Tábla 10A]
-link:./chapter10.html#table10B[Tábla 10B]
-link:./chapter10.html#table10D[Tábla 10D]
-link:./chapter10.html#table10E[Tábla 10E]
-** blianta
-link:./chapter3.html#sec_3_1_8[3.1.8]
-** caolú
-link:./chapter2.html#sec_2_1_4[2.1.4]
-link:./chapter2.html#sec_2_2_2_a[2.2.2.a]
-link:./chapter2.html#sec_2_2_2_b[2.2.2.b]
-link:./chapter2.html#sec_2_2_4[2.2.4]
-link:./chapter2.html#sec_2_3_1[2.3.1]
-link:./chapter2.html#sec_2_3_2_a[2.3.2.a]
-link:./chapter2.html#sec_2_3_2_c[2.3.2.c]
-link:./chapter2.html#sec_2_3_4[2.3.4]
-** cinnte
-link:./chapter1.html#sec_1_1_1[1.1.1]
-link:./chapter3.html#sec_3_1_2[3.1.2]
-link:./chapter3.html#sec_3_1_6[3.1.6]
-link:./chapter3.html#sec_3_1_7[3.1.7]
-link:./chapter3.html#sec_3_1_9_a[3.1.9.a]
-link:./chapter3.html#sec_3_1_9_c[3.1.9.c]
-link:./chapter3.html#sec_3_1_10[3.1.10]
-link:./chapter3.html#sec_3_1_11[3.1.11]
-link:./chapter3.html#sec_3_2_2_A_a[3.2.2.A.a]
-link:./chapter3.html#sec_3_2_2_B_a[3.2.2.B.a]
-link:./chapter3.html#sec_3_2_2_B_b[3.2.2.B.b]
-link:./chapter3.html#sec_3_3_1[3.3.1]
-link:./chapter3.html#sec_3_3_2[3.3.2]
-link:./chapter3.html#sec_3_3_4_b[3.3.4.b]
-link:./chapter3.html#sec_3_3_4_c[3.3.4.c]
-link:./chapter3.html#sec_3_3_13[3.3.13]
-link:./chapter10.html#sec_10_2_6[10.2.6]
-link:./chapter10.html#sec_10_2_10[10.2.10]
-link:./chapter10.html#table10A[Tábla 10A]
-** coimriú
-link:./chapter2.html#sec_2_1_3_b_ii[2.1.3.b.ii]
-link:./chapter2.html#sec_2_1_6[2.1.6]
-link:./chapter2.html#sec_2_3_4_a[2.3.4.a]
-link:./chapter2.html#sec_2_4_3_a[2.4.3.a]
-link:./chapter2.html#sec_2_6_2_a[2.6.2.a]
-** comhfhocal
-link:./chapter2.html#sec_2_1_7[2.1.7]
-link:./chapter10.html#sec_10_2_12[10.2.12]
-link:./chapter10.html#table10A[Tábla 10A]
-** éiginnte
-link:./chapter3.html#sec_3_1_1[3.1.1]
-link:./chapter3.html#sec_3_1_6[3.1.6]
-link:./chapter3.html#sec_3_1_7[3.1.7]
-link:./chapter3.html#sec_3_1_9_b[3.1.9.b]
-link:./chapter3.html#sec_3_1_10[3.1.10]
-link:./chapter3.html#sec_3_3_2[3.3.2]
-link:./chapter3.html#sec_3_3_3[3.3.3]
-link:./chapter3.html#sec_3_3_4[3.3.4]
-link:./chapter3.html#sec_3_3_5[3.3.5]
-link:./chapter3.html#sec_3_3_6[3.3.6]
-link:./chapter3.html#sec_3_3_7[3.3.7]
-link:./chapter3.html#sec_3_3_8[3.3.8]
-link:./chapter3.html#sec_3_3_9[3.3.9]
-link:./chapter3.html#sec_3_3_10[3.3.10]
-link:./chapter3.html#sec_3_3_11[3.3.11]
-link:./chapter3.html#sec_3_3_12[3.3.12]
-link:./chapter3.html#sec_3_3_13[3.3.13]
-link:./chapter10.html#sec_10_1[10.1]
-link:./chapter10.html#sec_10_2_5_e[10.2.5.e]
-link:./chapter10.html#sec_10_2_7_d[10.2.7.d]
-link:./chapter10.html#sec_10_2_7_h[10.2.7.h]
-link:./chapter10.html#sec_10_2_7_i[10.2.7.i]
-link:./chapter10.html#sec_10_2_8[10.2.8]
-link:./chapter10.html#sec_10_2_9[10.2.9]
-** firinscneach
-link:./chapter1.html#sec_1_1_5_i_B[1.1.5.i.B]
-link:./chapter1.html#sec_1_2[1.2]
-link:./chapter1.html#sec_1_4[1.4]
-link:./chapter1.html#sec_1_5_2[1.5.2]
-link:./chapter1.html#sec_1_6[1.6]
-link:./chapter1.html#sec_1_7[1.7]
-link:./chapter2.html#sec_2_1_8[2.1.8]
-link:./chapter2.html#sec_2_2_1[2.2.1]
-link:./chapter2.html#sec_2_4_3_a[2.4.3.a]
-link:./chapter2.html#sec_2_5_1_a[2.5.1.a]
-link:./chapter2.html#sec_2_5_1_b[2.5.1.b]
-link:./chapter2.html#sec_2_5_2_b[2.5.2.b]
-link:./chapter2.html#sec_2_6_2_a[2.6.2.a]
-link:./chapter3.html#sec_3_2_2_A_b[3.2.2.A.b]
-link:./chapter3.html#sec_3_2_2_B_c[3.2.2.B.c]
-link:./chapter4.html#sec_4_2_2_a[4.2.2.a]
-link:./chapter4.html#sec_4_2_4[4.2.4]
-link:./chapter4.html#sec_4_3_3_a[4.3.3.a]
-link:./chapter4.html#sec_4_4_1_a[4.4.1.a]
-link:./chapter4.html#table4D[Tábla 4D]
-link:./chapter4.html#table4F[Tábla 4F]
-link:./chapter9.html#sec_9_3_7_a_iii[9.3.7.a.iii]
-link:./chapter9.html#sec_9_3_9_e[9.3.9.e]
-link:./chapter9.html#sec_9_4_2_b_i[9.4.2.b.i]
-link:./chapter9.html#sec_9_4_3_b_i[9.4.3.b.i]
-link:./chapter9.html#sec_9_5_1_b_ii[9.5.1.b.ii]
-link:./chapter9.html#sec_9_5_4_d[9.5.4.d]
-link:./chapter10.html#sec_10_2_1_b[10.2.1.b]
-link:./chapter10.html#sec_10_2_1_c[10.2.1.c]
-link:./chapter10.html#sec_10_2_2[10.2.2]
-link:./chapter10.html#sec_10_2_3_a[10.2.3.a]
-link:./chapter10.html#sec_10_3_1_b[10.3.1.b]
-link:./chapter10.html#sec_10_3_1_e[10.3.1.e]
-link:./chapter10.html#sec_10_3_2_b[10.3.2.b]
-link:./chapter10.html#sec_10_6_1[10.6.1]
-link:./chapter10.html#sec_10_9_1_a[10.9.1.a]
-link:./chapter10.html#sec_10_16[10.16]
-link:./chapter11.html#sec_11_9[11.9]
-** lagiolraí
-link:./chapter2.html#sec_2_1_3[2.1.3]
-link:./chapter2.html#sec_2_1_3_b[2.1.3.b]
-link:./chapter2.html#sec_2_2_4[2.2.4]
-link:./chapter2.html#sec_2_2_4_b[2.2.4.b]
-link:./chapter2.html#sec_2_3_4[2.3.4]
-link:./chapter2.html#sec_2_3_4_b[2.3.4.b]
-link:./chapter2.html#sec_2_4_3[2.4.3]
-link:./chapter2.html#sec_2_4_3_b[2.4.3.b]
-** iolra
-link:./chapter2.html#sec_2_1_3[2.1.3]
-link:./chapter2.html#sec_2_2_2_c[2.2.2.c]
-link:./chapter2.html#sec_2_2_4[2.2.4]
-link:./chapter2.html#sec_2_3_4[2.3.4]
-link:./chapter2.html#sec_2_4_3[2.4.3]
-link:./chapter2.html#sec_2_5_2_c[2.5.2.c]
-link:./chapter2.html#sec_2_5_3[2.5.3]
-** leathnú
-link:./chapter2.html#sec_2_1_3_b_ii[2.1.3.b.ii]
-link:./chapter2.html#sec_2_1_5[2.1.5]
-link:./chapter2.html#sec_2_3_4_a[2.3.4.a]
-link:./chapter2.html#sec_2_3_4_b[2.3.4.b]
-link:./chapter2.html#sec_2_4_1_b[2.4.1.b]
-link:./chapter2.html#sec_2_4_3[2.4.3]
-link:./chapter2.html#sec_2_4_3_a[2.4.3.a]
-link:./chapter2.html#sec_2_6_2_a[2.6.2.a]
-** malartú
-link:./chapter2.html#sec_2_1_3_b_ii[2.1.3.b.ii]
-link:./chapter2.html#sec_2_3_4_a[2.3.4.a]
-link:./chapter2.html#sec_2_4_3_a[2.4.3.a]
-** séimhiú
-link:./chapter1.html#sec_1_2[1.2]
-link:./chapter1.html#sec_1_4_1[1.4.1]
-link:./chapter1.html#sec_1_4_4[1.4.4]
-link:./chapter1.html#sec_1_5_2[1.5.2]
-link:./chapter1.html#sec_1_7_3[1.7.3]
-link:./chapter1.html#sec_1_7_4[1.7.4]
-link:./chapter1.html#sec_1_7_5[1.7.5]
-link:./chapter1.html#sec_1_7_6[1.7.6]
-link:./chapter2.html#sec_2_1_2_d[2.1.2.d]
-link:./chapter2.html#sec_2_1_7[2.1.7]
-link:./chapter2.html#sec_2_1_7_f[2.1.7.f]
-link:./chapter3.html#sec_3_3_6_a[3.3.6.a]
-link:./chapter9.html#sec_9_4_3_a_i[9.4.3.a.i]
-link:./chapter9.html#sec_9_4_3_a_ii[9.4.3.a.ii]
-link:./chapter9.html#sec_9_4_3_a_iii[9.4.3.a.iii]
-link:./chapter9.html#sec_9_4_3_b_ii[9.4.3.b.ii]
-link:./chapter9.html#sec_9_4_3_b_iii[9.4.3.b.iii]
-link:./chapter9.html#sec_9_4_3_c_i[9.4.3.c.i]
-link:./chapter9.html#sec_9_4_3_c_ii[9.4.3.c.ii]
-link:./chapter9.html#sec_9_4_3_c_iii[9.4.3.c.iii]
-link:./chapter10.html#sec_10_1[10.1]
-link:./chapter10.html#sec_10_2[10.2]
-** tréaniolraí
-link:./chapter2.html#sec_2_1_3[2.1.3]
-link:./chapter2.html#sec_2_1_3_a[2.1.3.a]
-link:./chapter2.html#sec_2_2_4[2.2.4]
-link:./chapter2.html#sec_2_2_4_a[2.2.4.a]
-link:./chapter2.html#sec_2_3_4[2.3.4]
-link:./chapter2.html#sec_2_3_4_a[2.3.4.a]
-link:./chapter2.html#sec_2_4_3[2.4.3]
-link:./chapter2.html#sec_2_4_3_a[2.4.3.a]
-link:./chapter2.html#sec_2_5_3[2.5.3]
-link:./chapter2.html#sec_2_5_3_a[2.5.3.a]
-link:./chapter2.html#sec_2_6_2[2.6.2]
-link:./chapter2.html#sec_2_6_2_a[2.6.2.a]
+* ainmfhocal: {ainmfhocal_links}
+** ainm dílis {ainmfhocal_ainm_dílis_links}
+** ainmfhocail neamhrialta {ainmfhocal_ainmfhocail_neamhrialta_links}
+** ainmneacha ceana {ainmfhocal_ainmneacha_ceana_links}
+** an ceathrú díochlaonadh {ainmfhocal_an_ceathrú_díochlaonadh_links}
+** an chéad díochlaonadh {ainmfhocal_an_chéad_díochlaonadh_links}
+** an cúigiú díochlaonadh {ainmfhocal_an_cúigiú_díochlaonadh_links}
+** an dara díochlaonadh {ainmfhocal_an_dara_díochlaonadh_links}
+** an tríú díochlaonadh {ainmfhocal_an_tríú_díochlaonadh_links}
+** baininscneach {ainmfhocal_baininscneach_links}
+** blianta {ainmfhocal_blianta_links}
+** caolú {ainmfhocal_caolú_links}
+** cinnte {ainmfhocal_cinnte_links}
+** coimriú {ainmfhocal_coimriú_links}
+** comhfhocal {ainmfhocal_comhfhocal_links}
+** éiginnte {ainmfhocal_éiginnte_links}
+** firinscneach {ainmfhocal_firinscneach_links}
+** lagiolraí {ainmfhocal_lagiolraí_links}
+** iolra {ainmfhocal_iolra_links}
+** leathnú {ainmfhocal_leathnú_links}
+** malartú {ainmfhocal_malartú_links}
+** séimhiú {ainmfhocal_séimhiú_links}
+** tréaniolraí {ainmfhocal_tréaniolraí_links}
 
-* ainmfhocal san iolra a chríochnaíonn ar chonsan caol:
-link:./chapter4.html#sec_4_2_5[4.2.5]
-link:./chapter10.html#sec_10_1[10.1]
-link:./chapter10.html#sec_10_2_8[10.2.8]
-link:./chapter10.html#sec_10_3_1_c[10.3.1.c]
-link:./chapter10.html#sec_10_16[10.16]
+* ainmfhocal san iolra a chríochnaíonn ar chonsan caol: {ainmfhocal_san_iolra_a_chríochnaíonn_ar_chonsan_caol_links}
 
-* ainmneach:
-link:./chapter1.html#sec_1_2[1.2]
-link:./chapter1.html#sec_1_3_2[1.3.2]
-link:./chapter9.html#sec_9_3_7_d[9.3.7.d]
-link:./chapter9.html#sec_9_4_3_a_i[9.4.3.a.i]
-link:./chapter9.html#sec_9_4_3_c[9.4.3.c]
-link:./chapter9.html#sec_9_5_1_d[9.5.1.d]
-link:./chapter10.html#sec_10_3_1_a[10.3.1.a]
-link:./chapter10.html#sec_10_3_1_c[10.3.1.c]
-link:./chapter10.html#sec_10_16[10.16]
-** ainmneach iolra
-link:./chapter1.html#sec_1_6_1[1.6.1]
-link:./chapter2.html#sec_2_1_3_b[2.1.3.b]
-link:./chapter2.html#sec_2_1_8[2.1.8]
-link:./chapter2.html#sec_2_2_4[2.2.4]
-link:./chapter2.html#sec_2_2_4[2.2.4]
-link:./chapter4.html#sec_4_3_2_a[4.3.2.a]
-link:./chapter9.html#sec_9_3_2[9.3.2]
-link:./chapter9.html#sec_9_4_2_c_i[9.4.2.c.i]
-link:./chapter10.html#sec_10_3_1_c[10.3.1.c]
-link:./chapter10.html#sec_10_11_1_b[10.11.1.b]
-link:./chapter10.html#sec_Tábla_10A[Tábla 10A]
-link:./chapter10.html#sec_Tábla_10E[Tábla 10E]
-** ainmneach uatha
-link:./chapter2.html#sec_2_1_2_a[2.1.2.a]
-link:./chapter2.html#sec_2_1_3_b[2.1.3.b]
-link:./chapter2.html#sec_2_1_8[2.1.8]
-link:./chapter2.html#sec_2_2_1[2.2.1]
-link:./chapter2.html#sec_2_2_4_a[2.2.4.a]
-link:./chapter2.html#sec_2_2_4_b[2.2.4.b]
-link:./chapter2.html#sec_2_3_4_a[2.3.4.a]
-link:./chapter2.html#sec_2_3_4_b[2.3.4.b]
-link:./chapter2.html#sec_2_4_1_b[2.4.1.b]
-link:./chapter2.html#sec_2_4_3_a[2.4.3.a]
-link:./chapter2.html#sec_2_4_3_b[2.4.3.b]
-link:./chapter2.html#sec_2_6_1_b[2.6.1.b]
-link:./chapter2.html#sec_2_6_2_a[2.6.2.a]
-link:./chapter4.html#sec_4_3_2_b[4.3.2.b]
-link:./chapter4.html#sec_4_4_2[4.4.2]
-link:./chapter9.html#sec_9_3_2[9.3.2]
-link:./chapter9.html#sec_9_3_9[9.3.9]
-link:./chapter9.html#sec_9_4_2_d_i[9.4.2.d.i]
-link:./chapter10.html#sec_10_2_1_a[10.2.1.a]
-link:./chapter10.html#sec_10_9_1[10.9.1]
-link:./chapter10.html#sec_Tábla_10A[Tábla 10A]
-link:./chapter10.html#sec_Tábla_10C[Tábla 10C]
+* ainmneach: {ainmneach_links}
+** ainmneach iolra {ainmneach_iolra_links}
+** ainmneach uatha {ainmneach_uatha_links}
 
-* ainmneach in ionad an ghinidigh:
-** achoimre
-** aidiacht cháilíochta
-** aidiacht éiginnte
-** ainm briathartha
-** ainm cláir
-** ainm comhlachta
-** ainm cumainn
-** ainmfhocal cinnte
-** ainmfhocal éiginnte cáilithe
-** ainmfhocal i gcáil aidiachta
-** cáilitheoir
-** cainníocht chinnte
-** cainníocht éiginnte
-** chun
-** clásal coibhneasta
-** frásaí ilfhoclacha áirithe
-** ginideach rannaíoch
-** réamhfhocal comhshuite
-** réimír threise
+* ainmneach in ionad an ghinidigh: {ainmneach_in_ionad_an_ghinidigh_links}
+** achoimre {ainmneach_in_ionad_an_ghinidigh_achoimre_links}
+** aidiacht cháilíochta {ainmneach_in_ionad_an_ghinidigh_aidiacht_cháilíochta_links}
+** aidiacht éiginnte {ainmneach_in_ionad_an_ghinidigh_aidiacht_éiginnte_links}
+** ainm briathartha {ainmneach_in_ionad_an_ghinidigh_ainm_briathartha_links}
+** ainm cláir {ainmneach_in_ionad_an_ghinidigh_ainm_cláir_links}
+** ainm comhlachta {ainmneach_in_ionad_an_ghinidigh_ainm_comhlachta_links}
+** ainm cumainn {ainmneach_in_ionad_an_ghinidigh_ainm_cumainn_links}
+** ainmfhocal cinnte {ainmneach_in_ionad_an_ghinidigh_ainmfhocal_cinnte_links}
+** ainmfhocal éiginnte cáilithe {ainmneach_in_ionad_an_ghinidigh_ainmfhocal_éiginnte_cáilithe_links}
+** ainmfhocal i gcáil aidiachta {ainmneach_in_ionad_an_ghinidigh_ainmfhocal_i_gcáil_aidiachta_links}
+** cáilitheoir {ainmneach_in_ionad_an_ghinidigh_cáilitheoir_links}
+** cainníocht chinnte {ainmneach_in_ionad_an_ghinidigh_cainníocht_chinnte_links}
+** cainníocht éiginnte {ainmneach_in_ionad_an_ghinidigh_cainníocht_éiginnte_links}
+** chun {ainmneach_in_ionad_an_ghinidigh_chun_links}
+** clásal coibhneasta {ainmneach_in_ionad_an_ghinidigh_clásal_coibhneasta_links}
+** frásaí ilfhoclacha áirithe {ainmneach_in_ionad_an_ghinidigh_frásaí_ilfhoclacha_áirithe_links}
+** ginideach rannaíoch {ainmneach_in_ionad_an_ghinidigh_ginideach_rannaíoch_links}
+** réamhfhocal comhshuite {ainmneach_in_ionad_an_ghinidigh_réamhfhocal_comhshuite_links}
+** réimír threise {ainmneach_in_ionad_an_ghinidigh_réimír_threise_links}
 
-* an t-alt:
-** aibhneacha
-** ainmfhocal cinnte
-** bailte
-** brí choincheapúil
-** brí theibí
-** dátaí
-** féilte
-** foirm
-** laethanta na seachtaine
-** míonna na bliana
-** paidreacha
-** réigiúin
-** roisc chatha
-** sléibhte
-** teangacha
-** teideal duine
-** teidil oifige
-** teidil ranna rialtais
-** tinnis
-** tíortha
-** úsáid dháileach
+* an t-alt: {an_t_alt_links}
+** aibhneacha {an_t_alt_aibhneacha_links}
+** ainmfhocal cinnte {an_t_alt_ainmfhocal_cinnte_links}
+** bailte {an_t_alt_bailte_links}
+** brí choincheapúil {an_t_alt_brí_choincheapúil_links}
+** brí theibí {an_t_alt_brí_theibí_links}
+** dátaí {an_t_alt_dátaí_links}
+** féilte {an_t_alt_féilte_links}
+** foirm {an_t_alt_foirm_links}
+** laethanta na seachtaine {an_t_alt_laethanta_na_seachtaine_links}
+** míonna na bliana {an_t_alt_míonna_na_bliana_links}
+** paidreacha {an_t_alt_paidreacha_links}
+** réigiúin {an_t_alt_réigiúin_links}
+** roisc chatha {an_t_alt_roisc_chatha_links}
+** sléibhte {an_t_alt_sléibhte_links}
+** teangacha {an_t_alt_teangacha_links}
+** teideal duine {an_t_alt_teideal_duine_links}
+** teidil oifige {an_t_alt_teidil_oifige_links}
+** teidil ranna rialtais {an_t_alt_teidil_ranna_rialtais_links}
+** tinnis {an_t_alt_tinnis_links}
+** tíortha {an_t_alt_tíortha_links}
+** úsáid dháileach {an_t_alt_úsáid_dháileach_links}
 
-* an chopail:
-** athruithe tosaigh
-** clásal coibhneasta díreach
-** clásal coibhneasta indíreach
-** cónaisc
-** dá
-** feidhmeanna
-** foirmeacha cumaisc
-** foirmeacha simplí
-** forainmneach ceisteach
-** i ndiaidh ní
-** má
-** modh foshuiteach
-** réamhfhocail
-** séimhiú
+* an chopail: {an_chopail_links}
+** athruithe tosaigh {an_chopail_athruithe_tosaigh_links}
+** clásal coibhneasta díreach {an_chopail_clásal_coibhneasta_díreach_links}
+** clásal coibhneasta indíreach {an_chopail_clásal_coibhneasta_indíreach_links}
+** cónaisc {an_chopail_cónaisc_links}
+** dá {an_chopail_dá_links}
+** feidhmeanna {an_chopail_feidhmeanna_links}
+** foirmeacha cumaisc {an_chopail_foirmeacha_cumaisc_links}
+** foirmeacha simplí {an_chopail_foirmeacha_simplí_links}
+** forainmneach ceisteach {an_chopail_forainmneach_ceisteach_links}
+** i ndiaidh ní {an_chopail_i_ndiaidh_ní_links}
+** má {an_chopail_má_links}
+** modh foshuiteach {an_chopail_modh_foshuiteach_links}
+** réamhfhocail {an_chopail_réamhfhocail_links}
+** séimhiú {an_chopail_séimhiú_links}
 
-* an clásal coibhneasta:
-** an fhoirm choibhneasta
-** an fhoirm neamhspleách
-** an fhoirm spleách
-** an mhír choibhneasta
-** clásal breischéime
-** clásal coibhneasta díreach
-** clásal coibhneasta indíreach
-** clásal idiraisnéiseach
-** dobhriathar
-** fochlásal
-** foirmeacha cumaisc
-** iartheachtaí
-** príomhchlásal
-** réamhfhocail
-** réamhtheachtaí
+* an clásal coibhneasta: {an_clásal_coibhneasta_links}
+** an fhoirm choibhneasta {an_clásal_coibhneasta_an_fhoirm_choibhneasta_links}
+** an fhoirm neamhspleách {an_clásal_coibhneasta_an_fhoirm_neamhspleách_links}
+** an fhoirm spleách {an_clásal_coibhneasta_an_fhoirm_spleách_links}
+** an mhír choibhneasta {an_clásal_coibhneasta_an_mhír_choibhneasta_links}
+** clásal breischéime {an_clásal_coibhneasta_clásal_breischéime_links}
+** clásal coibhneasta díreach {an_clásal_coibhneasta_clásal_coibhneasta_díreach_links}
+** clásal coibhneasta indíreach {an_clásal_coibhneasta_clásal_coibhneasta_indíreach_links}
+** clásal idiraisnéiseach {an_clásal_coibhneasta_clásal_idiraisnéiseach_links}
+** dobhriathar {an_clásal_coibhneasta_dobhriathar_links}
+** fochlásal {an_clásal_coibhneasta_fochlásal_links}
+** foirmeacha cumaisc {an_clásal_coibhneasta_foirmeacha_cumaisc_links}
+** iartheachtaí {an_clásal_coibhneasta_iartheachtaí_links}
+** príomhchlásal {an_clásal_coibhneasta_príomhchlásal_links}
+** réamhfhocail {an_clásal_coibhneasta_réamhfhocail_links}
+** réamhtheachtaí {an_clásal_coibhneasta_réamhtheachtaí_links}
 
-* athruithe tosaigh:
-** achoimre
+* athruithe tosaigh: {athruithe_tosaigh_links}
+** achoimre {athruithe_tosaigh_achoimre_links}
 
 == B
 
-* briathar:
-** aidiacht bhriathartha
-** ainm briathartha
-** an chéad réimniú
-** an dara réimniú
-** an mhír dhiúltach
-** an modh foshuiteach
-** coimriú
-** fréamhacha aonsiollacha
-** fréamhacha ilsiollacha
-** má agus nuair
-** muid
-** ná
-** neamhrialta
-** neamhspleách
-** séimhiú
-** spleách
-** urú
+* briathar: {briathar_links}
+** aidiacht bhriathartha {briathar_aidiacht_bhriathartha_links}
+** ainm briathartha {briathar_ainm_briathartha_links}
+** an chéad réimniú {briathar_an_chéad_réimniú_links}
+** an dara réimniú {briathar_an_dara_réimniú_links}
+** an mhír dhiúltach {briathar_an_mhír_dhiúltach_links}
+** an modh foshuiteach {briathar_an_modh_foshuiteach_links}
+** coimriú {briathar_coimriú_links}
+** fréamhacha aonsiollacha {briathar_fréamhacha_aonsiollacha_links}
+** fréamhacha ilsiollacha {briathar_fréamhacha_ilsiollacha_links}
+** má agus nuair {briathar_má_agus_nuair_links}
+** muid {briathar_muid_links}
+** ná {briathar_ná_links}
+** neamhrialta {briathar_neamhrialta_links}
+** neamhspleách {briathar_neamhspleách_links}
+** séimhiú {briathar_séimhiú_links}
+** spleách {briathar_spleách_links}
+** urú {briathar_urú_links}
 
 == C
 
-* consan caol:
-** aidiacht
-** ainmneach iolra
-** ginideach uatha
+* consan caol: {consan_caol_links}
+** aidiacht {consan_caol_aidiacht_links}
+** ainmneach iolra {consan_caol_ainmneach_iolra_links}
+** ginideach uatha {consan_caol_ginideach_uatha_links}
 
-* consan inséimhithe:
+* consan inséimhithe: {consan_inséimhithe_links}
 
-* consan inuraithe:
+* consan inuraithe: {consan_inuraithe_links}
 
-* cuspóireach:
+* cuspóireach: {cuspóireach_links}
 
 == D
 
-* de chuid:
+* de chuid: {de_chuid_links}
 
-* dobhriathar:
-** aidiacht
-** ainmfhocal
-** airde an chompáis
-** dobhriathar áite
-** dobhriathar ama
-** dobhriathar a úsáid go
-** haidiachtach
-** dobhriathar breischéime
-** dobhriathar cainníochta
-** dobhriathar ceisteach
-** dobhriathar minicíochta
-** dobhriathar modha
-** dobhriathar treise
-** dobhriathar treo
-** i gcúrsaí tomhais
+* dobhriathar: {dobhriathar_links}
+** aidiacht {dobhriathar_aidiacht_links}
+** ainmfhocal {dobhriathar_ainmfhocal_links}
+** airde an chompáis {dobhriathar_airde_an_chompáis_links}
+** dobhriathar áite {dobhriathar_dobhriathar_áite_links}
+** dobhriathar ama {dobhriathar_dobhriathar_ama_links}
+** dobhriathar a úsáid go {dobhriathar_dobhriathar_a_úsáid_go_links}
+** haidiachtach {dobhriathar_haidiachtach_links}
+** dobhriathar breischéime {dobhriathar_dobhriathar_breischéime_links}
+** dobhriathar cainníochta {dobhriathar_dobhriathar_cainníochta_links}
+** dobhriathar ceisteach {dobhriathar_dobhriathar_ceisteach_links}
+** dobhriathar minicíochta {dobhriathar_dobhriathar_minicíochta_links}
+** dobhriathar modha {dobhriathar_dobhriathar_modha_links}
+** dobhriathar treise {dobhriathar_dobhriathar_treise_links}
+** dobhriathar treo {dobhriathar_dobhriathar_treo_links}
+** i gcúrsaí tomhais {dobhriathar_i_gcúrsaí_tomhais_links}
 
 == F
 
-* fleiscín:
+* fleiscín: {fleiscín_links}
 
-* forainmneach:
-** aidiacht shealbhach
-** arna
-** cuspóir ainm bhriathartha
-** dhá
-** firinscneach uatha
-** foirm threise
-** forainmneach ceisteach
-** forainmneach pearsanta
-** forainmneach réamhfhoclach
-** forainmneach réamhthagrach
-** forainmneach taispeántach
-** i gcumasc
-** réamhfhocal
-** thú
+* forainmneach: {forainmneach_links}
+** aidiacht shealbhach {forainmneach_aidiacht_shealbhach_links}
+** arna {forainmneach_arna_links}
+** cuspóir ainm bhriathartha {forainmneach_cuspóir_ainm_bhriathartha_links}
+** dhá {forainmneach_dhá_links}
+** firinscneach uatha {forainmneach_firinscneach_uatha_links}
+** foirm threise {forainmneach_foirm_threise_links}
+** forainmneach ceisteach {forainmneach_forainmneach_ceisteach_links}
+** forainmneach pearsanta {forainmneach_forainmneach_pearsanta_links}
+** forainmneach réamhfhoclach {forainmneach_forainmneach_réamhfhoclach_links}
+** forainmneach réamhthagrach {forainmneach_forainmneach_réamhthagrach_links}
+** forainmneach taispeántach {forainmneach_forainmneach_taispeántach_links}
+** i gcumasc {forainmneach_i_gcumasc_links}
+** réamhfhocal {forainmneach_réamhfhocal_links}
+** thú {forainmneach_thú_links}
 
 == G
 
-* gach:
+* gach: {gach_links}
 
-* gairmeach:
-** an mhír ghairmeach
-** gairmeach iolra
-** gairmeach uatha
+* gairmeach: {gairmeach_links}
+** an mhír ghairmeach {gairmeach_an_mhír_ghairmeach_links}
+** gairmeach iolra {gairmeach_gairmeach_iolra_links}
+** gairmeach uatha {gairmeach_gairmeach_uatha_links}
 
-* ginideach:
-** baininscneach
-** cáilitheoir
-** chun
-** firinscneach
-** lagiolraí
-** tréaniolraí
+* ginideach: {ginideach_links}
+** baininscneach {ginideach_baininscneach_links}
+** cáilitheoir {ginideach_cáilitheoir_links}
+** chun {ginideach_chun_links}
+** firinscneach {ginideach_firinscneach_links}
+** lagiolraí {ginideach_lagiolraí_links}
+** tréaniolraí {ginideach_tréaniolraí_links}
 
-* giorrúchán:
-** feidhm aidiachtach
-** gan an t-alt
-** iolra
-** leis an alt
+* giorrúchán: {giorrúchán_links}
+** feidhm aidiachtach {giorrúchán_feidhm_aidiachtach_links}
+** gan an t-alt {giorrúchán_gan_an_t-alt_links}
+** iolra {giorrúchán_iolra_links}
+** leis an alt {giorrúchán_leis_an_alt_links}
 
 == L
 
-* logainmneacha:
-** aibhneacha
-** bailte
-** Éire
-** réigiúin
-** sléibhte
-** tíortha
+* logainmneacha: {logainmneacha_links}
+** aibhneacha {logainmneacha_aibhneacha_links}
+** bailte {logainmneacha_bailte_links}
+** Éire {logainmneacha_Éire_links}
+** réigiúin {logainmneacha_réigiúin_links}
+** sléibhte {logainmneacha_sléibhte_links}
+** tíortha {logainmneacha_tíortha_links}
 
-* lúibíní: 183
+* lúibíní: {lúibíní_links}
 
 == R
 
-* réamhfhocal:
-** fochlásal réamhfhoclach
-** i gcumasc
-** réamhfhocal comhshuite
-** séimhiú
-** urú
+* réamhfhocal: {réamhfhocal_links}
+** fochlásal réamhfhoclach {réamhfhocal_fochlásal_réamhfhoclach_links}
+** i gcumasc {réamhfhocal_i_gcumasc_links}
+** réamhfhocal comhshuite {réamhfhocal_réamhfhocal_comhshuite_links}
+** séimhiú {réamhfhocal_séimhiú_links}
+** urú {réamhfhocal_urú_links}
 
 == S
 
-* séimhiú i ndiaidh ainmfhocal baininscneach:
-* séimhiú i ndiaidh ainmfhocal san iolra a chríochnaíonn ar chonsan caol:
-* sloinnte:
+* séimhiú i ndiaidh ainmfhocal baininscneach: {séimhiú_i_ndiaidh_ainmfhocal_baininscneach_links}
+
+* séimhiú i ndiaidh ainmfhocal san iolra a chríochnaíonn ar chonsan caol: {séimhiú_i_ndiaidh_ainmfhocal_baininscneach_séimhiú_i_ndiaidh_ainmfhocal_san_iolra_a_chríochnaíonn_ar_chonsan_caol_links}
+
+* sloinnte: {séimhiú_i_ndiaidh_ainmfhocal_baininscneach_sloinnte_links}
 
 == T
 
-* tabharthach:
-** an Córas Lárnach
-** Córas an tSéimhithe
-** tabharthach rannaíoch
+* tabharthach: {tabharthach_links}
+** an Córas Lárnach {tabharthach_an_Córas_Lárnach_links}
+** Córas an tSéimhithe {tabharthach_Córas_an_tSéimhithe_links}
+** tabharthach rannaíoch {tabharthach_tabharthach_rannaíoch_links}
 
 == U
 
-* uimhir:
-** achoimre
-** aidiacht
-** an t-alt
-** bunuimhir
-** codán
-** córas seanbhunaithe
-** córas simplithe
-** déag
-** deicheanna
-** figiúirí
-** ginideach
-** leaganacha iolra
-** maoluimhir
-** orduimhir
-** séimhiú
-** uimhir dheachúlach
-** uimhir phearsanta
-** urú
+* uimhir: {uimhir_links}
+** achoimre {uimhir_achoimre_links}
+** aidiacht {uimhir_aidiacht_links}
+** an t-alt {uimhir_an_t-alt_links}
+** bunuimhir {uimhir_bunuimhir_links}
+** codán {uimhir_codán_links}
+** córas seanbhunaithe {uimhir_córas_seanbhunaithe_links}
+** córas simplithe {uimhir_córas_simplithe_links}
+** déag {uimhir_déag_links}
+** deicheanna {uimhir_deicheanna_links}
+** figiúirí {uimhir_figiúirí_links}
+** ginideach {uimhir_ginideach_links}
+** leaganacha iolra {uimhir_leaganacha_iolra_links}
+** maoluimhir {uimhir_maoluimhir_links}
+** orduimhir {uimhir_orduimhir_links}
+** séimhiú {uimhir_séimhiú_links}
+** uimhir dheachúlach {uimhir_uimhir_dheachúlach_links}
+** uimhir phearsanta {uimhir_uimhir_phearsanta_links}
+** urú {uimhir_urú_links}
 
 endif::[]
 
 ifeval::["{docLang}" == "en"]
+
+== A
+
+* abbreviation: {giorrúchán_links}
+** adjectival function {giorrúchán_feidhm_aidiachtach_links}
+** plural {giorrúchán_iolra_links}
+** with the article {giorrúchán_leis_an_alt_links}
+** without the article {giorrúchán_gan_an_t-alt_links}
+
+* accusative case: {cuspóireach_links}
+
+* acronym: {acrainm_links}
+** adjectival function {acrainm_feidhm_aidiachtach_links}
+** plural {acrainm_iolra_links}
+** with the article {acrainm_leis_an_alt_links}
+** without the article {acrainm_gan_an_talt_links}
+
+* adjective: {aidiacht_links}
+** adverbial {aidiacht_dobhriathra_links}
+** broad consonant {aidiacht_consan_leathan_links}
+** case {aidiacht_tuiseal_links}
+** comparative degree {aidiacht_breischéim_links}
+** demonstrative adjectives {aidiacht_aidiacht_thaispeántach_links}
+** eclipsis {aidiacht_urú_links}
+** emphatic particle {aidiacht_mír_réimír_threise_links}
+** feminine {aidiacht_baininscneach_links}
+** first declension {aidiacht_an_chéad_díochlaonadh_links}
+** gender {aidiacht_inscne_links}
+** genitive {aidiacht_ginideach_links}
+** irregular forms {aidiacht_foirmeacha_neamhrialta_links}
+** lenition {aidiacht_séimhiú_links}
+** Lenition System {aidiacht_Córas_an_tSéimhithe_links}
+** masculine {aidiacht_firinscneach_links}
+** monosyllabic adjectives {aidiacht_aidiachtaí_aonsiollacha_links}
+** nominative {aidiacht_ainmneach_links}
+** number {aidiacht_uimhir_links}
+** partitive adjectives {aidiacht_aidiacht_rannach_links}
+** plural {aidiacht_iolra_links}
+** possessive {aidiacht_uatha_links}
+** possessive adjectives {aidiacht_aidiacht_shealbhach_links}
+** qualitative adjectives {aidiacht_aidiacht_cháilíochta_links}
+** second declension {aidiacht_an_dara_díochlaonadh_links}
+** slender consonant {aidiacht_consan_caol_links}
+** summary {aidiacht_achoimre_links}
+** syncope {aidiacht_coimriú_links}
+** third declension {aidiacht_an_tríú_díochlaonadh_links}
+** vocative {aidiacht_gairmeach_links}
+
+* adverb: {dobhriathar_links}
+** adjectival {dobhriathar_haidiachtach_links}
+** adjective {dobhriathar_aidiacht_links}
+** adverbs in measurement contexts {dobhriathar_i_gcúrsaí_tomhais_links}
+** comparative adverbs {dobhriathar_dobhriathar_breischéime_links}
+** compass points {dobhriathar_airde_an_chompáis_links}
+** directional adverbs {dobhriathar_dobhriathar_treo_links}
+** frequency adverbs {dobhriathar_dobhriathar_minicíochta_links}
+** intensifying adverbs {dobhriathar_dobhriathar_treise_links}
+** interrogative adverbs {dobhriathar_dobhriathar_ceisteach_links}
+** manner adverbs {dobhriathar_dobhriathar_a_úsáid_go_links}
+** modal adverbs {dobhriathar_dobhriathar_modha_links}
+** noun {dobhriathar_ainmfhocal_links}
+** place adverbs {dobhriathar_dobhriathar_áite_links}
+** quantitative adverbs {dobhriathar_dobhriathar_cainníochta_links}
+** time adverbs {dobhriathar_dobhriathar_ama_links}
+
+* the article: {an_t_alt_links}
+** abstract meaning {an_t_alt_brí_theibí_links}
+** battle cries {an_t_alt_roisc_chatha_links}
+** conceptual meaning {an_t_alt_brí_choincheapúil_links}
+** countries {an_t_alt_tíortha_links}
+** dates {an_t_alt_dátaí_links}
+** days of the week {an_t_alt_laethanta_na_seachtaine_links}
+** definite noun {an_t_alt_ainmfhocal_cinnte_links}
+** diseases {an_t_alt_tinnis_links}
+** distributive use {an_t_alt_úsáid_dháileach_links}
+** festivals {an_t_alt_féilte_links}
+** form {an_t_alt_foirm_links}
+** government department titles {an_t_alt_teidil_ranna_rialtais_links}
+** languages {an_t_alt_teangacha_links}
+** months of the year {an_t_alt_míonna_na_bliana_links}
+** mountains {an_t_alt_sléibhte_links}
+** official titles {an_t_alt_teidil_oifige_links}
+** person's title {an_t_alt_teideal_duine_links}
+** prayers {an_t_alt_paidreacha_links}
+** regions {an_t_alt_réigiúin_links}
+** rivers {an_t_alt_aibhneacha_links}
+** towns {an_t_alt_bailte_links}
+
+== B
+
+* brackets: {lúibíní_links}
+
+== C
+
+* the copula: {an_chopail_links}
+** _dá_ (two) {an_chopail_dá_links}
+** _má_ (if) {an_chopail_má_links}
+** after _ní_ {an_chopail_i_ndiaidh_ní_links}
+** compound forms {an_chopail_foirmeacha_cumaisc_links}
+** conjunctions {an_chopail_cónaisc_links}
+** direct relative clause {an_chopail_clásal_coibhneasta_díreach_links}
+** functions {an_chopail_feidhmeanna_links}
+** indirect relative clause {an_chopail_clásal_coibhneasta_indíreach_links}
+** initial mutations {an_chopail_athruithe_tosaigh_links}
+** interrogative pronoun {an_chopail_forainmneach_ceisteach_links}
+** lenition {an_chopail_séimhiú_links}
+** prepositions {an_chopail_réamhfhocail_links}
+** simple forms {an_chopail_foirmeacha_simplí_links}
+** subjunctive mood {an_chopail_modh_foshuiteach_links}
+
+== D
+
+* _de chuid_: {de_chuid_links}
+
+* dative: {tabharthach_links}
+** Core System {tabharthach_an_Córas_Lárnach_links}
+** Lenition System {tabharthach_Córas_an_tSéimhithe_links}
+** partitive dative {tabharthach_tabharthach_rannaíoch_links}
+
+== E
+
+* eclipsable consonants: {consan_inuraithe_links}
+
+== G
+
+* _gach_: {gach_links}
+
+* genitive: {ginideach_links}
+** feminine {ginideach_baininscneach_links}
+** qualifier {ginideach_cáilitheoir_links}
+** _chun_ {ginideach_chun_links}
+** masculine {ginideach_firinscneach_links}
+** weak plurals {ginideach_lagiolraí_links}
+** strong plurals {ginideach_tréaniolraí_links}
+
+== H
+
+* hyphen: {fleiscín_links}
+
+== I
+
+* initial mutations: {athruithe_tosaigh_links}
+** summary {athruithe_tosaigh_achoimre_links}
+
+== L
+
+* lenitable consonants: {consan_inséimhithe_links}
+
+* lenition following feminine noun: {séimhiú_i_ndiaidh_ainmfhocal_baininscneach_links}
+
+* lenition following noun in the plural that ends in a slender consonant: {séimhiú_i_ndiaidh_ainmfhocal_baininscneach_séimhiú_i_ndiaidh_ainmfhocal_san_iolra_a_chríochnaíonn_ar_chonsan_caol_links}
+
+== N
+
+* nominative: {ainmneach_links}
+** nominative plural {ainmneach_iolra_links}
+** nominative singular {ainmneach_uatha_links}
+
+* nominative in place of the genitive: {ainmneach_in_ionad_an_ghinidigh_links}
+** association names {ainmneach_in_ionad_an_ghinidigh_ainm_cumainn_links}
+** chun (for) {ainmneach_in_ionad_an_ghinidigh_chun_links}
+** company names {ainmneach_in_ionad_an_ghinidigh_ainm_comhlachta_links}
+** compound preposition {ainmneach_in_ionad_an_ghinidigh_réamhfhocal_comhshuite_links}
+** definite noun {ainmneach_in_ionad_an_ghinidigh_ainmfhocal_cinnte_links}
+** definite quantity {ainmneach_in_ionad_an_ghinidigh_cainníocht_chinnte_links}
+** emphatic particle {ainmneach_in_ionad_an_ghinidigh_réimír_threise_links}
+** indefinite adjective {ainmneach_in_ionad_an_ghinidigh_aidiacht_éiginnte_links}
+** indefinite quantity {ainmneach_in_ionad_an_ghinidigh_cainníocht_éiginnte_links}
+** noun in adjective form {ainmneach_in_ionad_an_ghinidigh_ainmfhocal_i_gcáil_aidiachta_links}
+** partitive genitive {ainmneach_in_ionad_an_ghinidigh_ginideach_rannaíoch_links}
+** program names {ainmneach_in_ionad_an_ghinidigh_ainm_cláir_links}
+** qualified indefinite noun {ainmneach_in_ionad_an_ghinidigh_ainmfhocal_éiginnte_cáilithe_links}
+** qualifier {ainmneach_in_ionad_an_ghinidigh_cáilitheoir_links}
+** qualitative adjective {ainmneach_in_ionad_an_ghinidigh_aidiacht_cháilíochta_links}
+** relative clause {ainmneach_in_ionad_an_ghinidigh_clásal_coibhneasta_links}
+** specific multi-word phrases {ainmneach_in_ionad_an_ghinidigh_frásaí_ilfhoclacha_áirithe_links}
+** summary {ainmneach_in_ionad_an_ghinidigh_achoimre_links}
+** verbal noun {ainmneach_in_ionad_an_ghinidigh_ainm_briathartha_links}
+
+* noun: {ainmfhocal_links}
+** broadening {ainmfhocal_leathnú_links}
+** common nouns {ainmfhocal_ainmneacha_ceana_links}
+** compound {ainmfhocal_comhfhocal_links}
+** definite {ainmfhocal_cinnte_links}
+** exchange {ainmfhocal_malartú_links}
+** feminine {ainmfhocal_baininscneach_links}
+** fifth declension {ainmfhocal_an_cúigiú_díochlaonadh_links}
+** first declension {ainmfhocal_an_chéad_díochlaonadh_links}
+** fourth declension {ainmfhocal_an_ceathrú_díochlaonadh_links}
+** indefinite {ainmfhocal_éiginnte_links}
+** irregular nouns {ainmfhocal_ainmfhocail_neamhrialta_links}
+** lenition {ainmfhocal_séimhiú_links}
+** masculine {ainmfhocal_firinscneach_links}
+** narrowing {ainmfhocal_caolú_links}
+** plural {ainmfhocal_iolra_links}
+** proper noun {ainmfhocal_ainm_dílis_links}
+** second declension {ainmfhocal_an_dara_díochlaonadh_links}
+** strong plurals {ainmfhocal_tréaniolraí_links}
+** syncope {ainmfhocal_coimriú_links}
+** third declension {ainmfhocal_an_tríú_díochlaonadh_links}
+** weak plurals {ainmfhocal_lagiolraí_links}
+** years {ainmfhocal_blianta_links}
+
+* noun in the plural that ends in a slender consonant: {ainmfhocal_san_iolra_a_chríochnaíonn_ar_chonsan_caol_links}
+
+* number: {uimhir_links}
+** _déag_ {uimhir_déag_links}
+** adjective {uimhir_aidiacht_links}
+** bare number {uimhir_maoluimhir_links}
+** cardinal number {uimhir_bunuimhir_links}
+** decimal number {uimhir_uimhir_dheachúlach_links}
+** eclipsis {uimhir_urú_links}
+** established system {uimhir_córas_seanbhunaithe_links}
+** figures {uimhir_figiúirí_links}
+** fraction {uimhir_codán_links}
+** genitive {uimhir_ginideach_links}
+** lenition {uimhir_séimhiú_links}
+** ordinal number {uimhir_orduimhir_links}
+** personal number {uimhir_uimhir_phearsanta_links}
+** plural forms {uimhir_leaganacha_iolra_links}
+** simplified system {uimhir_córas_simplithe_links}
+** summary {uimhir_achoimre_links}
+** tens {uimhir_deicheanna_links}
+** the article {uimhir_an_t-alt_links}
+
+== P
+
+* place names: {logainmneacha_links}
+** countries {logainmneacha_tíortha_links}
+** Ireland {logainmneacha_Éire_links}
+** mountains {logainmneacha_sléibhte_links}
+** regions {logainmneacha_réigiúin_links}
+** rivers {logainmneacha_aibhneacha_links}
+** towns {logainmneacha_bailte_links}
+
+* preposition: {réamhfhocal_links}
+** compound preposition {réamhfhocal_réamhfhocal_comhshuite_links}
+** eclipsis {réamhfhocal_urú_links}
+** in a compound {réamhfhocal_i_gcumasc_links}
+** lenition {réamhfhocal_séimhiú_links}
+** prepositional subordinate clause {réamhfhocal_fochlásal_réamhfhoclach_links}
+
+* pronominal: {forainmneach_links}
+** _arna_ {forainmneach_arna_links}
+** _dhá_ {forainmneach_dhá_links}
+** _thú_ {forainmneach_thú_links}
+** demonstrative pronoun {forainmneach_forainmneach_taispeántach_links}
+** in a compound {forainmneach_i_gcumasc_links}
+** interrogative pronoun {forainmneach_forainmneach_ceisteach_links}
+** masculine singular {forainmneach_firinscneach_uatha_links}
+** object of the verbal noun {forainmneach_cuspóir_ainm_bhriathartha_links}
+** personal pronoun {forainmneach_forainmneach_pearsanta_links}
+** possessive adjective {forainmneach_aidiacht_shealbhach_links}
+** preposition {forainmneach_réamhfhocal_links}
+** prepositional pronoun {forainmneach_forainmneach_réamhfhoclach_links}
+** prepositional pronoun {forainmneach_forainmneach_réamhthagrach_links}
+** strong form {forainmneach_foirm_threise_links}
+
+== R
+
+* relative clause: {an_clásal_coibhneasta_links}
+** adverb {an_clásal_coibhneasta_dobhriathar_links}
+** antecedents {an_clásal_coibhneasta_réamhtheachtaí_links}
+** compound forms {an_clásal_coibhneasta_foirmeacha_cumaisc_links}
+** dependent form {an_clásal_coibhneasta_an_fhoirm_spleách_links}
+** direct relative clause {an_clásal_coibhneasta_clásal_coibhneasta_díreach_links}
+** independent form {an_clásal_coibhneasta_an_fhoirm_neamhspleách_links}
+** indirect relative clause {an_clásal_coibhneasta_clásal_coibhneasta_indíreach_links}
+** main clause {an_clásal_coibhneasta_príomhchlásal_links}
+** parenthetical clause {an_clásal_coibhneasta_clásal_idiraisnéiseach_links}
+** prepositions {an_clásal_coibhneasta_réamhfhocail_links}
+** relative form {an_clásal_coibhneasta_an_fhoirm_choibhneasta_links}
+** relative particle {an_clásal_coibhneasta_an_mhír_choibhneasta_links}
+** subordinate clause {an_clásal_coibhneasta_clásal_breischéime_links}
+** subordinate clause {an_clásal_coibhneasta_fochlásal_links}
+** successor {an_clásal_coibhneasta_iartheachtaí_links}
+
+== S
+
+* slender consonant: {consan_caol_links}
+** adjective {consan_caol_aidiacht_links}
+** genitive singular {consan_caol_ginideach_uatha_links}
+** nominative plural {consan_caol_ainmneach_iolra_links}
+
+* surnames: {séimhiú_i_ndiaidh_ainmfhocal_baininscneach_sloinnte_links}
+
+== V
+
+* verb: {briathar_links}
+** _má_ and _nuair_ {briathar_má_agus_nuair_links}
+** _muid_ {briathar_muid_links}
+** _ná_ {briathar_ná_links}
+** dependent {briathar_spleách_links}
+** eclipsis {briathar_urú_links}
+** first conjugation {briathar_an_chéad_réimniú_links}
+** independent {briathar_neamhspleách_links}
+** irregular {briathar_neamhrialta_links}
+** lenition {briathar_séimhiú_links}
+** monosyllabic roots {briathar_fréamhacha_aonsiollacha_links}
+** negative particle {briathar_an_mhír_dhiúltach_links}
+** polysyllabic roots {briathar_fréamhacha_ilsiollacha_links}
+** second conjugation {briathar_an_dara_réimniú_links}
+** subjunctive mood {briathar_an_modh_foshuiteach_links}
+** syncope {briathar_coimriú_links}
+** verbal adjective {briathar_aidiacht_bhriathartha_links}
+** verbal noun {briathar_ainm_bhriathartha_links}
+
+* verbal noun: {ainm_briathartha_links}
+** adjectival function {ainm_briathartha_feidhm_aidiachta_links}
+** declension {ainm_briathartha_díochlaonadh_links}
+** genitive {ainm_briathartha_ginideach_links}
+** nominal function {ainm_briathartha_feidhm_ainmfhocail_links}
+** plural {ainm_briathartha_iolra_links}
+** the first conjugation {ainm_briathartha_an_chéad_réimniú_links}
+** the second conjugation {ainm_briathartha_an_dara_réimniú_links}
+
+* vocative: {gairmeach_links}
+** vocative particle {gairmeach_an_mhír_ghairmeach_links}
+** vocative plural {gairmeach_gairmeach_iolra_links}
+** vocative singular {gairmeach_gairmeach_uatha_links}
 
 endif::[]
