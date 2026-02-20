@@ -529,7 +529,7 @@
 :7-2-5-A-a-iii-p_en: the negative interrogative form _nach_, e.g., _Nach buachaill atá ann?_
 
 :7-2-5-A-b-p_ga: Cuirtear _h_ roimh ghuta i ndiaidh an leagain dhiúltaigh den chopail _ní_:
-:7-2-5-A-b-p_en: _h_ is placed before a vowel after the negative version of copula _ní_:
+:7-2-5-A-b-p_en: _h_ is placed before a vowel after the negative form of the copula _ní_:
 
 :7-2-5-A-b-i-p_ga: ar na forainmnigh _é_, _í_, _ea_, _iad_, _eo_, _in_ agus _iúd_, e.g., _Ní hiad a ghoid do mhála_; _Ní hin é mo theachsa_;
 :7-2-5-A-b-i-p_en: on the pronominals _é_, _í_, _ea_, _iad_, _eo_, _in_ and _iúd_, e.g., _Ní hiad a ghoid do mhála_; _Ní hin é mo theachsa_;
@@ -550,7 +550,7 @@
 :7-2-5-A-b-vi-p_en: in an odd proverb, e.g., _Ní heolas go haontíos_; _Ní haithne go haontíos_.
 
 :7-2-5-A-c-p_ga: Ní chuirtear _h_ roimh ghuta i ndiaidh an leagain dhiúltaigh den chopail _ní_:
-:7-2-5-A-c-p_en: _h_ is not placed before a vowel after the negative version of copula _ní_:
+:7-2-5-A-c-p_en: _h_ is not placed before a vowel after the negative form of the copula _ní_:
 
 :7-2-5-A-c-i-p_ga: ar ainmfhocail i gcoitinne, e.g., _Ní eagrán nua den pháipéar atá á léamh agat_;
 :7-2-5-A-c-i-p_en: on nouns in general, e.g., _Ní eagrán nua den pháipéar atá á léamh agat_;

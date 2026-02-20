@@ -170,7 +170,7 @@
 :4-3-4-p_en: The adjective following a female baptismal name is not inflected, e.g., _Máire Mhór_, _teach Mháire Mhór_.
 
 :4-3-5-p_ga: Ní infhilltear an aidiacht ná ní dhéantar athrú tosaigh uirthi ar lorg dobhriathra nó aidiachtaí a úsáidtear mar dhobhriathra amhail _cuibheasach_, _sách_, _measartha_, _réasúnta_, etc.
-:4-3-5-p_en: The adjective is neither inflected nor does it undergo an initial mutation after adverbs or adjectives used as adjectives _cuibheasach_, _sách_, _measartha_, _réasúnta_, etc.
+:4-3-5-p_en: The adjective is neither inflected nor does it undergo an initial mutation after adverbs or adjectives used as adverbs such as _cuibheasach_, _sách_, _measartha_, _réasúnta_, etc.
 
 :4-3-5-p-sample1_ga: Is bean *measartha saibhir* í.
 :4-3-5-p-sample1_en: She is a *moderately wealthy* woman.

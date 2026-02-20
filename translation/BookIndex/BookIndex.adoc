@@ -13,7 +13,6 @@
 
       & a {
         font-weight: normal;
-
         margin-left: 1em;
       }
     }
@@ -23,6 +22,8 @@
 
 // Segregate by language. This is an alphabetized index, so the order will not match.
 ifeval::["{docLang}" == "ga"]
+
+// Note: Differs from the book in that the definite article is ignored for main headings.
 
 == A
 
@@ -146,6 +147,32 @@ ifeval::["{docLang}" == "ga"]
 ** tíortha {an_t_alt_tíortha_links}
 ** úsáid dháileach {an_t_alt_úsáid_dháileach_links}
 
+* athruithe tosaigh: {athruithe_tosaigh_links}
+** achoimre {athruithe_tosaigh_achoimre_links}
+
+== B
+
+* briathar: {briathar_links}
+** aidiacht bhriathartha {briathar_aidiacht_bhriathartha_links}
+** ainm briathartha {briathar_ainm_briathartha_links}
+** an chéad réimniú {briathar_an_chéad_réimniú_links}
+** an dara réimniú {briathar_an_dara_réimniú_links}
+** an mhír dhiúltach {briathar_an_mhír_dhiúltach_links}
+** an modh foshuiteach {briathar_an_modh_foshuiteach_links}
+** coimriú {briathar_coimriú_links}
+** fréamhacha aonsiollacha {briathar_fréamhacha_aonsiollacha_links}
+** fréamhacha ilsiollacha {briathar_fréamhacha_ilsiollacha_links}
+** má agus nuair {briathar_má_agus_nuair_links}
+** muid {briathar_muid_links}
+** ná {briathar_ná_links}
+** neamhrialta {briathar_neamhrialta_links}
+** neamhspleách {briathar_neamhspleách_links}
+** séimhiú {briathar_séimhiú_links}
+** spleách {briathar_spleách_links}
+** urú {briathar_urú_links}
+
+== C
+
 * an chopail: {an_chopail_links}
 ** athruithe tosaigh {an_chopail_athruithe_tosaigh_links}
 ** clásal coibhneasta díreach {an_chopail_clásal_coibhneasta_díreach_links}
@@ -178,32 +205,6 @@ ifeval::["{docLang}" == "ga"]
 ** príomhchlásal {an_clásal_coibhneasta_príomhchlásal_links}
 ** réamhfhocail {an_clásal_coibhneasta_réamhfhocail_links}
 ** réamhtheachtaí {an_clásal_coibhneasta_réamhtheachtaí_links}
-
-* athruithe tosaigh: {athruithe_tosaigh_links}
-** achoimre {athruithe_tosaigh_achoimre_links}
-
-== B
-
-* briathar: {briathar_links}
-** aidiacht bhriathartha {briathar_aidiacht_bhriathartha_links}
-** ainm briathartha {briathar_ainm_briathartha_links}
-** an chéad réimniú {briathar_an_chéad_réimniú_links}
-** an dara réimniú {briathar_an_dara_réimniú_links}
-** an mhír dhiúltach {briathar_an_mhír_dhiúltach_links}
-** an modh foshuiteach {briathar_an_modh_foshuiteach_links}
-** coimriú {briathar_coimriú_links}
-** fréamhacha aonsiollacha {briathar_fréamhacha_aonsiollacha_links}
-** fréamhacha ilsiollacha {briathar_fréamhacha_ilsiollacha_links}
-** má agus nuair {briathar_má_agus_nuair_links}
-** muid {briathar_muid_links}
-** ná {briathar_ná_links}
-** neamhrialta {briathar_neamhrialta_links}
-** neamhspleách {briathar_neamhspleách_links}
-** séimhiú {briathar_séimhiú_links}
-** spleách {briathar_spleách_links}
-** urú {briathar_urú_links}
-
-== C
 
 * consan caol: {consan_caol_links}
 ** aidiacht {consan_caol_aidiacht_links}
@@ -392,19 +393,19 @@ ifeval::["{docLang}" == "en"]
 * adverb: {dobhriathar_links}
 ** adjectival {dobhriathar_haidiachtach_links}
 ** adjective {dobhriathar_aidiacht_links}
-** adverbs in measurement contexts {dobhriathar_i_gcúrsaí_tomhais_links}
-** comparative adverbs {dobhriathar_dobhriathar_breischéime_links}
+** adverb in measurement contexts {dobhriathar_i_gcúrsaí_tomhais_links}
+** comparative adverb {dobhriathar_dobhriathar_breischéime_links}
 ** compass points {dobhriathar_airde_an_chompáis_links}
-** directional adverbs {dobhriathar_dobhriathar_treo_links}
-** frequency adverbs {dobhriathar_dobhriathar_minicíochta_links}
-** intensifying adverbs {dobhriathar_dobhriathar_treise_links}
-** interrogative adverbs {dobhriathar_dobhriathar_ceisteach_links}
-** manner adverbs {dobhriathar_dobhriathar_a_úsáid_go_links}
-** modal adverbs {dobhriathar_dobhriathar_modha_links}
+** directional adverb {dobhriathar_dobhriathar_treo_links}
+** frequency adverb {dobhriathar_dobhriathar_minicíochta_links}
+** intensifying adverb {dobhriathar_dobhriathar_treise_links}
+** interrogative adverb {dobhriathar_dobhriathar_ceisteach_links}
+** adverb used as adjective {dobhriathar_dobhriathar_a_úsáid_go_haidiachtach_links}
+** modal adverb {dobhriathar_dobhriathar_modha_links}
 ** noun {dobhriathar_ainmfhocal_links}
-** place adverbs {dobhriathar_dobhriathar_áite_links}
-** quantitative adverbs {dobhriathar_dobhriathar_cainníochta_links}
-** time adverbs {dobhriathar_dobhriathar_ama_links}
+** place adverb {dobhriathar_dobhriathar_áite_links}
+** quantitative adverb {dobhriathar_dobhriathar_cainníochta_links}
+** temporal adverb/adverb of time {dobhriathar_dobhriathar_ama_links}
 
 * the article: {an_t_alt_links}
 ** abstract meaning {an_t_alt_brí_theibí_links}
