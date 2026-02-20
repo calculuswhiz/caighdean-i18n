@@ -1,9 +1,9 @@
 const input = `
-3.1.2.d
-3.3.1.iv
-9.5.2.c
-10.3.2.b.ii
-Tábla 11G
+3.3.4.c
+3.3.8.a
+3.3.10
+3.3.12
+3.3.13
 `;
 
 const outBuffer: string[] = [];

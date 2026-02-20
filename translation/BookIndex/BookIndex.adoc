@@ -470,12 +470,12 @@ ifeval::["{docLang}" == "en"]
 * _gach_: {gach_links}
 
 * genitive: {ginideach_links}
-** feminine {ginideach_baininscneach_links}
-** qualifier {ginideach_cáilitheoir_links}
 ** _chun_ {ginideach_chun_links}
+** feminine {ginideach_baininscneach_links}
 ** masculine {ginideach_firinscneach_links}
-** weak plurals {ginideach_lagiolraí_links}
+** qualifier {ginideach_cáilitheoir_links}
 ** strong plurals {ginideach_tréaniolraí_links}
+** weak plurals {ginideach_lagiolraí_links}
 
 == H
 
