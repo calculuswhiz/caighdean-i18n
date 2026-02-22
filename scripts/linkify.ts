@@ -1,9 +1,8 @@
 const input = `
-3.3.4.c
-3.3.8.a
-3.3.10
-3.3.12
-3.3.13
+1.1.5.h
+1.1.5.i
+3.1.3
+10.6.4.a.iii
 `;
 
 const outBuffer: string[] = [];
@@ -27,7 +26,7 @@ for (const line of input.split("\n")) {
     );
   } else if (line.includes("Roghanna")) {
     outBuffer.push(
-      `link:./tableOfOptions.html[Tábla&nbsp;na&nbsp;Roghanna]`
+      `link:./tableOfOptions.html[Tábla na Roghanna]`
     );
   }
 }
