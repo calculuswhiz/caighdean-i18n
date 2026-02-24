@@ -1,8 +1,5 @@
 const input = `
-1.1.5.h
-1.1.5.i
-3.1.3
-10.6.4.a.iii
+8.2.2
 `;
 
 const outBuffer: string[] = [];
@@ -11,7 +8,7 @@ for (const line of input.split("\n")) {
   if (line.trim() === "")
     continue;
 
-  if (line.includes('.')) {
+  if (line.includes('.') || /^\d+$/.test(line)) {
     const parts = line.split(".");
     const chapterNum = parts[0];
 
@@ -20,7 +17,7 @@ for (const line of input.split("\n")) {
     );
   } else if (line.includes("Tábla")) {
     const tableKey = line.split(" ")[1];
-    const chapterNum = tableKey[0];
+    const chapterNum = tableKey.slice(0, -1);
     outBuffer.push(
       `link:./chapter${chapterNum}.html#table${tableKey}[${line}]`
     );
