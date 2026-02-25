@@ -362,14 +362,17 @@ ifeval::["{docLang}" == "en"]
 
 * adjective: {aidiacht_links}
 ** adverbial {aidiacht_dobhriathra_links}
-** broad consonant {aidiacht_consan_leathan_links}
 ** case {aidiacht_tuiseal_links}
 ** comparative degree {aidiacht_breischéim_links}
+** consonant, broad {aidiacht_consan_leathan_links}
+** consonant, slender {aidiacht_consan_caol_links}
+** declension, first {aidiacht_an_chéad_díochlaonadh_links}
+** declension, second {aidiacht_an_dara_díochlaonadh_links}
+** declension, third {aidiacht_an_tríú_díochlaonadh_links}
 ** demonstrative adjectives {aidiacht_aidiacht_thaispeántach_links}
 ** eclipsis {aidiacht_urú_links}
 ** emphatic particle {aidiacht_mír_réimír_threise_links}
 ** feminine {aidiacht_baininscneach_links}
-** first declension {aidiacht_an_chéad_díochlaonadh_links}
 ** gender {aidiacht_inscne_links}
 ** genitive {aidiacht_ginideach_links}
 ** irregular forms {aidiacht_foirmeacha_neamhrialta_links}
@@ -384,11 +387,8 @@ ifeval::["{docLang}" == "en"]
 ** possessive {aidiacht_uatha_links}
 ** possessive adjectives {aidiacht_aidiacht_shealbhach_links}
 ** qualitative adjectives {aidiacht_aidiacht_cháilíochta_links}
-** second declension {aidiacht_an_dara_díochlaonadh_links}
-** slender consonant {aidiacht_consan_caol_links}
 ** summary {aidiacht_achoimre_links}
 ** syncope {aidiacht_coimriú_links}
-** third declension {aidiacht_an_tríú_díochlaonadh_links}
 ** vocative {aidiacht_gairmeach_links}
 
 * adverb: {dobhriathar_links}
@@ -408,7 +408,7 @@ ifeval::["{docLang}" == "en"]
 ** quantitative adverb {dobhriathar_dobhriathar_cainníochta_links}
 ** temporal adverb/adverb of time {dobhriathar_dobhriathar_ama_links}
 
-* the article: {an_t_alt_links}
+* article: {an_t_alt_links}
 ** abstract meaning {an_t_alt_brí_theibí_links}
 ** battle cries {an_t_alt_roisc_chatha_links}
 ** conceptual meaning {an_t_alt_brí_choincheapúil_links}
@@ -437,7 +437,7 @@ ifeval::["{docLang}" == "en"]
 
 == C
 
-* the copula: {an_chopail_links}
+* copula: {an_chopail_links}
 ** _dá_ (two) {an_chopail_dá_links}
 ** _má_ (if) {an_chopail_má_links}
 ** after _ní_ {an_chopail_i_ndiaidh_ní_links}
@@ -447,7 +447,7 @@ ifeval::["{docLang}" == "en"]
 ** functions {an_chopail_feidhmeanna_links}
 ** indirect relative clause {an_chopail_clásal_coibhneasta_indíreach_links}
 ** initial mutations {an_chopail_athruithe_tosaigh_links}
-** interrogative pronoun {an_chopail_forainmneach_ceisteach_links}
+** interrogative pronominal {an_chopail_forainmneach_ceisteach_links}
 ** lenition {an_chopail_séimhiú_links}
 ** prepositions {an_chopail_réamhfhocail_links}
 ** simple forms {an_chopail_foirmeacha_simplí_links}
@@ -475,8 +475,8 @@ ifeval::["{docLang}" == "en"]
 ** feminine {ginideach_baininscneach_links}
 ** masculine {ginideach_firinscneach_links}
 ** qualifier {ginideach_cáilitheoir_links}
-** strong plurals {ginideach_tréaniolraí_links}
-** weak plurals {ginideach_lagiolraí_links}
+** plurals, strong {ginideach_tréaniolraí_links}
+** plurals, weak {ginideach_lagiolraí_links}
 
 == H
 
@@ -502,8 +502,8 @@ ifeval::["{docLang}" == "en"]
 ** nominative singular {ainmneach_uatha_links}
 
 * nominative in place of the genitive: {ainmneach_in_ionad_an_ghinidigh_links}
+** _chun_ (for) {ainmneach_in_ionad_an_ghinidigh_chun_links}
 ** association names {ainmneach_in_ionad_an_ghinidigh_ainm_cumainn_links}
-** chun (for) {ainmneach_in_ionad_an_ghinidigh_chun_links}
 ** company names {ainmneach_in_ionad_an_ghinidigh_ainm_comhlachta_links}
 ** compound preposition {ainmneach_in_ionad_an_ghinidigh_réamhfhocal_comhshuite_links}
 ** definite noun {ainmneach_in_ionad_an_ghinidigh_ainmfhocal_cinnte_links}
@@ -526,24 +526,24 @@ ifeval::["{docLang}" == "en"]
 ** broadening {ainmfhocal_leathnú_links}
 ** common nouns {ainmfhocal_ainmneacha_ceana_links}
 ** compound {ainmfhocal_comhfhocal_links}
+** declension, fifth {ainmfhocal_an_cúigiú_díochlaonadh_links}
+** declension, first {ainmfhocal_an_chéad_díochlaonadh_links}
+** declension, fourth {ainmfhocal_an_ceathrú_díochlaonadh_links}
+** declension, second {ainmfhocal_an_dara_díochlaonadh_links}
+** declension, third {ainmfhocal_an_tríú_díochlaonadh_links}
 ** definite {ainmfhocal_cinnte_links}
 ** exchange {ainmfhocal_malartú_links}
 ** feminine {ainmfhocal_baininscneach_links}
-** fifth declension {ainmfhocal_an_cúigiú_díochlaonadh_links}
-** first declension {ainmfhocal_an_chéad_díochlaonadh_links}
-** fourth declension {ainmfhocal_an_ceathrú_díochlaonadh_links}
 ** indefinite {ainmfhocal_éiginnte_links}
 ** irregular nouns {ainmfhocal_ainmfhocail_neamhrialta_links}
 ** lenition {ainmfhocal_séimhiú_links}
 ** masculine {ainmfhocal_firinscneach_links}
 ** narrowing {ainmfhocal_caolú_links}
 ** plural {ainmfhocal_iolra_links}
+** plurals, strong {ainmfhocal_tréaniolraí_links}
+** plurals, weak {ainmfhocal_lagiolraí_links}
 ** proper noun {ainmfhocal_ainm_dílis_links}
-** second declension {ainmfhocal_an_dara_díochlaonadh_links}
-** strong plurals {ainmfhocal_tréaniolraí_links}
 ** syncope {ainmfhocal_coimriú_links}
-** third declension {ainmfhocal_an_tríú_díochlaonadh_links}
-** weak plurals {ainmfhocal_lagiolraí_links}
 ** years {ainmfhocal_blianta_links}
 
 * noun in the plural that ends in a slender consonant: {ainmfhocal_san_iolra_a_chríochnaíonn_ar_chonsan_caol_links}
@@ -551,6 +551,7 @@ ifeval::["{docLang}" == "en"]
 * number: {uimhir_links}
 ** _déag_ {uimhir_déag_links}
 ** adjective {uimhir_aidiacht_links}
+** article {uimhir_an_t-alt_links}
 ** bare number {uimhir_maoluimhir_links}
 ** cardinal number {uimhir_bunuimhir_links}
 ** decimal number {uimhir_uimhir_dheachúlach_links}
@@ -566,7 +567,6 @@ ifeval::["{docLang}" == "en"]
 ** simplified system {uimhir_córas_simplithe_links}
 ** summary {uimhir_achoimre_links}
 ** tens {uimhir_deicheanna_links}
-** the article {uimhir_an_t-alt_links}
 
 == P
 
@@ -581,7 +581,7 @@ ifeval::["{docLang}" == "en"]
 * preposition: {réamhfhocal_links}
 ** compound preposition {réamhfhocal_réamhfhocal_comhshuite_links}
 ** eclipsis {réamhfhocal_urú_links}
-** in a compound {réamhfhocal_i_gcumasc_links}
+** compound {réamhfhocal_i_gcumasc_links}
 ** lenition {réamhfhocal_séimhiú_links}
 ** prepositional subordinate clause {réamhfhocal_fochlásal_réamhfhoclach_links}
 
@@ -589,16 +589,16 @@ ifeval::["{docLang}" == "en"]
 ** _arna_ {forainmneach_arna_links}
 ** _dhá_ {forainmneach_dhá_links}
 ** _thú_ {forainmneach_thú_links}
-** demonstrative pronoun {forainmneach_forainmneach_taispeántach_links}
-** in a compound {forainmneach_i_gcumasc_links}
-** interrogative pronoun {forainmneach_forainmneach_ceisteach_links}
+** compound {forainmneach_i_gcumasc_links}
+** demonstrative pronominal {forainmneach_forainmneach_taispeántach_links}
+** interrogative pronominal {forainmneach_forainmneach_ceisteach_links}
 ** masculine singular {forainmneach_firinscneach_uatha_links}
 ** object of the verbal noun {forainmneach_cuspóir_ainm_bhriathartha_links}
-** personal pronoun {forainmneach_forainmneach_pearsanta_links}
+** personal pronominal {forainmneach_forainmneach_pearsanta_links}
 ** possessive adjective {forainmneach_aidiacht_shealbhach_links}
 ** preposition {forainmneach_réamhfhocal_links}
-** prepositional pronoun {forainmneach_forainmneach_réamhfhoclach_links}
-** prepositional pronoun {forainmneach_forainmneach_réamhthagrach_links}
+** prepositional pronominal {forainmneach_forainmneach_réamhfhoclach_links}
+** proleptic pronominal {forainmneach_forainmneach_réamhthagrach_links}
 ** strong form {forainmneach_foirm_threise_links}
 
 == R
@@ -606,6 +606,7 @@ ifeval::["{docLang}" == "en"]
 * relative clause: {an_clásal_coibhneasta_links}
 ** adverb {an_clásal_coibhneasta_dobhriathar_links}
 ** antecedents {an_clásal_coibhneasta_réamhtheachtaí_links}
+** comparative clause {an_clásal_coibhneasta_clásal_breischéime_links}
 ** compound forms {an_clásal_coibhneasta_foirmeacha_cumaisc_links}
 ** dependent form {an_clásal_coibhneasta_an_fhoirm_spleách_links}
 ** direct relative clause {an_clásal_coibhneasta_clásal_coibhneasta_díreach_links}
@@ -616,7 +617,6 @@ ifeval::["{docLang}" == "en"]
 ** prepositions {an_clásal_coibhneasta_réamhfhocail_links}
 ** relative form {an_clásal_coibhneasta_an_fhoirm_choibhneasta_links}
 ** relative particle {an_clásal_coibhneasta_an_mhír_choibhneasta_links}
-** subordinate clause {an_clásal_coibhneasta_clásal_breischéime_links}
 ** subordinate clause {an_clásal_coibhneasta_fochlásal_links}
 ** successor {an_clásal_coibhneasta_iartheachtaí_links}
 
@@ -627,7 +627,7 @@ ifeval::["{docLang}" == "en"]
 ** genitive singular {consan_caol_ginideach_uatha_links}
 ** nominative plural {consan_caol_ainmneach_iolra_links}
 
-* surnames: {séimhiú_i_ndiaidh_ainmfhocal_baininscneach_sloinnte_links}
+* surnames: {sloinnte_links}
 
 == V
 
@@ -635,29 +635,29 @@ ifeval::["{docLang}" == "en"]
 ** _má_ and _nuair_ {briathar_má_agus_nuair_links}
 ** _muid_ {briathar_muid_links}
 ** _ná_ {briathar_ná_links}
+** conjugation, first {briathar_an_chéad_réimniú_links}
+** conjugation, second {briathar_an_dara_réimniú_links}
 ** dependent {briathar_spleách_links}
 ** eclipsis {briathar_urú_links}
-** first conjugation {briathar_an_chéad_réimniú_links}
 ** independent {briathar_neamhspleách_links}
 ** irregular {briathar_neamhrialta_links}
 ** lenition {briathar_séimhiú_links}
 ** monosyllabic roots {briathar_fréamhacha_aonsiollacha_links}
 ** negative particle {briathar_an_mhír_dhiúltach_links}
 ** polysyllabic roots {briathar_fréamhacha_ilsiollacha_links}
-** second conjugation {briathar_an_dara_réimniú_links}
 ** subjunctive mood {briathar_an_modh_foshuiteach_links}
 ** syncope {briathar_coimriú_links}
 ** verbal adjective {briathar_aidiacht_bhriathartha_links}
-** verbal noun {briathar_ainm_bhriathartha_links}
+** verbal noun {briathar_ainm_briathartha_links}
 
 * verbal noun: {ainm_briathartha_links}
 ** adjectival function {ainm_briathartha_feidhm_aidiachta_links}
+** conjugation, first {ainm_briathartha_an_chéad_réimniú_links}
+** conjugation, second {ainm_briathartha_an_dara_réimniú_links}
 ** declension {ainm_briathartha_díochlaonadh_links}
 ** genitive {ainm_briathartha_ginideach_links}
 ** nominal function {ainm_briathartha_feidhm_ainmfhocail_links}
 ** plural {ainm_briathartha_iolra_links}
-** the first conjugation {ainm_briathartha_an_chéad_réimniú_links}
-** the second conjugation {ainm_briathartha_an_dara_réimniú_links}
 
 * vocative: {gairmeach_links}
 ** vocative particle {gairmeach_an_mhír_ghairmeach_links}
