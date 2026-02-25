@@ -1,5 +1,6 @@
 const input = `
-8.2.2
+11.7.2
+11.7.3
 `;
 
 const outBuffer: string[] = [];
