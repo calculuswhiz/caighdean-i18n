@@ -20,7 +20,7 @@
 :3-1-2-a-sample2_en: They live in *America*.
 
 :3-1-2-b_ga: ainmfhocal a bhfuil an t&#x2011;alt roimhe, e.g., _an tAcht_, _an obair_, _an fhadhb_:
-:3-1-2-b_en: a noun that is preceded by the article, e.g., _an tAcht_, _an obair_, _an fhadhb_:
+:3-1-2-b_en: a noun that is preceded by the article, e.g., _an tAcht_ (*EN*: _the Act_), _an obair_ (*EN*: _the work_), _an fhadhb_ (*EN*: _the problem_):
 
 :3-1-2-b-sample1_ga: An bhfaca tú *an t&#x2011;eitleán* mór sin?
 :3-1-2-b-sample1_en: Did you see *that* big *airplane*?
@@ -32,7 +32,7 @@
 :3-1-2-b-sample3_en: Was *the* taxi *driver* at the meeting?
 
 :3-1-2-c_ga: ainmfhocal a bhfuil aidiacht shealbhach roimhe, e.g., _mo mhac_, _a hathair_, _a ngluaisteán_:
-:3-1-2-c_en: a noun that is preceded by a possessive adjective, e.g., _mo mhac_, _a hathair_, _a ngluaisteán_:
+:3-1-2-c_en: a noun that is preceded by a possessive adjective, e.g., _mo mhac_ (*EN*: _my son_), _a hathair_ (*EN*: _her father_), _a ngluaisteán_ (*EN*: _their car_):
 
 :3-1-2-c-sample1_ga: Ar bhuail tú le *mo dheartháir*?
 :3-1-2-c-sample1_en: Have you met *my brother*?
@@ -47,7 +47,7 @@
 :3-1-2-c-sample4_en: He went for *his cup* of tea. (_sg._)
 
 :3-1-2-d_ga: ainmfhocal a bhfuil _gach_, _gach aon_ nó _gach uile_ roimhe:
-:3-1-2-d_en: a noun that is preceded by _gach_, _gach aon_ or _gach uile_:
+:3-1-2-d_en: a noun that is preceded by _gach_ (*EN*: _every_), _gach aon_ (*EN*: _every single_) or _gach uile_ (*EN*: _all_):
 
 :3-1-2-d-sample1_ga: Bhí *gach duine* den teaghlach i láthair.
 :3-1-2-d-sample1_en: *Every person* in the family was present. 
@@ -59,7 +59,7 @@
 :3-1-2-d-sample3_en: The amended act applies to *all* mechanical *vehicles*.
 
 :3-1-2-e_ga: ainmfhocal a bhfuil uimhir nó litir ar a lorg, e.g., _Cuid III_, _riail a sé_, _Bus 16_, _mír (b)_:
-:3-1-2-e_en: a noun that has a number or letter following it, e.g., _Cuid III_, _riail a sé_, _Bus 16_, _mír (b)_:
+:3-1-2-e_en: a noun that has a number or letter following it, e.g., _Cuid III_ (*EN*: _Part III_), _riail a sé_ (*EN*: _Rule Six_), _Bus 16_ (*EN*: _Bus 16_), _mír (b)_ (*EN*: _item (b)_):
 
 :3-1-2-e-sample1_ga: Bain triail as *ceist a ceathair*.
 :3-1-2-e-sample1_en: Try *question four*.
@@ -68,7 +68,7 @@
 :3-1-2-e-sample2_en: Did you check *Appendix A*?
 
 :3-1-2-f_ga: ainmfhocal a bhfuil ainmfhocal cinnte ar a lorg, e.g., _oifig Áine_, _óráid an Aire_, _teach mo mhic_, _tús gach bliana_, _sonraí mhír (b)_:
-:3-1-2-f_en: a noun that has a definite noun following it, e.g., _oifig Áine_, _óráid an Aire_, _teach mo mhic_, _tús gach bliana_, _sonraí mhír (b)_:
+:3-1-2-f_en: a noun that has a definite noun following it, e.g., _oifig Áine_ (*EN*: _Áine's office_), _óráid an Aire_ (*EN*: _the Minister's speech_), _teach mo mhic_ (*EN*: _my son's house_), _tús gach bliana_ (*EN*: _the beginning of each year_), _sonraí mhír (b)_ (*EN*: _details of item (b)_):
 
 :3-1-2-f-sample1_ga: Tá an fhéile á heagrú i gcomhar le *muintir Thamhlachta*.
 :3-1-2-f-sample1_en: The festival is being organized in collaboration with *the people of Tallaght*.
@@ -89,7 +89,7 @@
 :3-1-2-f-sample6_en: The *Bus 16 Team* was highly commended.
 
 :3-1-2-g_ga: ainmfhocal sa tuiseal gairmeach, e.g., _a bhean_, _a dhuine uasail_:
-:3-1-2-g_en: a noun in the vocative case, e.g., _a bhean_, _a dhuine uasail_:
+:3-1-2-g_en: a noun in the vocative case, e.g., _a bhean_ (*EN*: _woman_), _a dhuine uasail_ (*EN*: _noble person_):
 
 :3-1-2-g-sample1_ga: Céard atá á dhéanamh agat ansin, *a mhic*?
 :3-1-2-g-sample1_en: What are you doing there, *son*?
@@ -98,7 +98,7 @@
 :3-1-2-g-sample2_en: You would not believe it, *dear*.
 
 :3-1-3-p1_ga: Is minic an t&#x2011;alt ina chuid d'ainm dílis (go háirithe i gcás logainmneacha) agus ní mór an t&#x2011;alt a úsáid sna cásanna sin, e.g., _an Ísiltír_, _an tSionainn_, _an Longfort_, _an Streoillín_, _an Earagail_, _An tOileánach_ (nuair is é an leabhar atá i gceist), _na Cruacha Dubha_.
-:3-1-3-p1_en: The article is often a part of the proper name (especially for place names), and the article must be used in these contexts, e.g., _an Ísiltír_ (*EN*: the Netherlands), _an tSionainn_ (*EN*: the Seine), _an Longfort_ (*EN*: Longford), _an Streoillín_ (*EN*: the Streelin), _an Earagail_ (*EN*: the Erigail), _An tOileánach_ (when it comes to the book) (*EN*: The Islander), _na Cruacha Dubha_ (*EN*: the Black Stacks).
+:3-1-3-p1_en: The article is often a part of the proper name (especially for place names), and the article must be used in these contexts, e.g., _an Ísiltír_ (*EN*: _the Netherlands_), _an tSionainn_ (*EN*: _the Seine_), _an Longfort_ (*EN*: _Longford_), _an Streoillín_ (*EN*: _the Streelin_), _an Earagail_ (*EN*: _the Erigail_), _An tOileánach_ (when it comes to the book) (*EN*: _The Islander_), _na Cruacha Dubha_ (*EN*: _the Black Stacks_).
 
 :3-1-3-sample1_ga: Bhí mé ar *an Earagail* inné.
 :3-1-3-sample1_en: I was on *the Erigail* yesterday.
@@ -110,7 +110,7 @@
 :3-1-3-p2_en: Note, in contexts where it is usual to use the article with a proper name, the article is not put in if the proper name is functioning as an adjective, e.g., _an Nollaig_ vs _cárta Nollag_; _an Ardteist_ vs _scrúdú Ardteiste_; _an Cháisc_ vs _ubh Chásca_.
 
 :3-1-4-p1_ga: Úsáidtear an t&#x2011;alt roimh ghinideach _Éire_, _Albain_, _Gaillimh_, e.g., _oileán na hÉireann_, _foireann na hAlban_, _cathair na Gaillimhe_ (féach link:./chapter1.html#sec_1_1_5_i_A[1.1.5(i)A]).
-:3-1-4-p1_en: The article is used before genitive _Éire_, _Albain_, _Gaillimh_, e.g., _oileán na hÉireann_, _foireann na hAlban_, _cathair na Gaillimhe_ (see link:./chapter1.html#sec_1_1_5_i_A[1.1.5(i)A]).
+:3-1-4-p1_en: The article is used before genitive _Éire_ (*EN*: _Ireland_), _Albain_ (*EN*: _Scotland_), _Gaillimh_ (*EN*: _Galway_), e.g., _oileán na hÉireann_ (*EN*: _the island of Ireland_), _foireann na hAlban_ (*EN*: _the team of Scotland_), _cathair na Gaillimhe_ (*EN*: _the city of Galway_) (see link:./chapter1.html#sec_1_1_5_i_A[1.1.5(i)A]).
 
 :3-1-4-p1-sample1_ga: Tá an-eolas aici ar litríocht *na hÉireann*.
 :3-1-4-p1-sample1_en: She knows a lot about *the* literature *of Ireland*.
@@ -119,7 +119,7 @@
 :3-1-4-p1-sample2_en: Her speech has *the* flavor of *Galway*.
 
 :3-1-4-p2_ga: Fágtar an t&#x2011;alt ar lár roimh _Éireann_ i roinnt leaganacha oifigiúla, áfach, e.g., _Dáil Éireann_, _Seanad Éireann_, _Iarnród Éireann_, _Bus Éireann_, agus i roinnt seanleaganacha agus leaganacha fileata, e.g., _plúr ban Éireann_, _bánchnoic Éireann_.
-:3-1-4-p2_en: The article is left out before _Éireann_ in some official forms, however, e.g., _Dáil Éireann_, _Seanad Éireann_, _Iarnród Éireann_, _Bus Éireann_, and in some old forms and poetic forms, e.g., _plúr ban Éireann_, _bánchnoic Éireann_.
+:3-1-4-p2_en: The article is left out before _Éireann_ (*EN*: gen. _Ireland_) in some official forms, however, e.g., _Dáil Éireann_ (*EN*: _the Irish Parliament_), _Seanad Éireann_ (*EN*: _the Irish Senate_), _Iarnród Éireann_ (*EN*: _Irish Rail_), _Bus Éireann_ (*EN*: _Irish Bus_), and in some old forms and poetic forms, e.g., _plúr ban Éireann_ (*EN*: _white flour of Ireland_), _bánchnoic Éireann_ (*EN*: _white hills of Ireland_).
 
 :3-1-4-p2-sample1_ga: Is clár de chuid *Raidió Teilifís Éireann* é.
 :3-1-4-p2-sample1_en: It is a program from *Raidió Teilifís Éireann*.
@@ -128,7 +128,7 @@
 :3-1-4-p2-sample2_en: It is the *choice of Irish women*.
 
 :3-1-5-p_ga: Is féidir an t&#x2011;alt a úsáid le hainmneacha trádála nuair atá feidhm aidiachtach acu, e.g., _an buidéal Coca Cola_; _sa mhála Supervalu_; _laistigh den doiciméad Word_; _ar an ríomhaire Apple_.
-:3-1-5-p_en: The article can be used with trade names when they have an adjectival function, e.g., _an buidéal Coca Cola_; _sa mhála Supervalu_; _laistigh den doiciméad Word_; _ar an ríomhaire Apple_.
+:3-1-5-p_en: The article can be used with trade names when they have an adjectival function, e.g., _an buidéal Coca Cola_ (*EN*: _the Coca Cola bottle_); _sa mhála Supervalu_ (*EN*: _in the Supervalu bag_); _laistigh den doiciméad Word_ (*EN*: _inside the Word document_); _ar an ríomhaire Apple_ (*EN*: _on the Apple computer_).
 
 :3-1-5-p-sample1_ga: Is é sin *an t&#x2011;inneall fuála Singer* a cheannaigh mo sheanmháthair.
 :3-1-5-p-sample1_en: This is *the Singer sewing machine* that my grandmother bought.
@@ -251,7 +251,7 @@
 :3-2-1-title_en: General
 
 :3-2-1-a-p_ga: Ní dhéantar infhilleadh ná athrú tosaigh ar ghiorrúchán nó ar acrainm riamh. (_SAM -- Stáit Aontaithe Mheiriceá_; _OÉ -- Ollscoil na hÉireann_.)
-:3-2-1-a-p_en: An abbreviation or acronym is never inflected or given an initial mutation. (_SAM -- Stáit Aontaithe Mheiriceá_; _OÉ -- Ollscoil na hÉireann_.)
+:3-2-1-a-p_en: An abbreviation or acronym is never inflected or given an initial mutation. (_SAM -- Stáit Aontaithe Mheiriceá_ (*EN*: _United States of America_); _OÉ -- Ollscoil na hÉireann_ (*EN*: _National University of Ireland_).)
 
 :3-2-1-a-p-sample1_ga: Scríobh sé leabhar *faoi SAM*.
 :3-2-1-a-p-sample1_en: He wrote a book *about the USA*.<br />(_EN: United States of America_)
@@ -260,7 +260,7 @@
 :3-2-1-a-p-sample2_en: He has an interview *with NUI* Galway.<br />(_EN: National University of Ireland_)
 
 :3-2-1-b-p_ga: Is é _in_ (seachas _i_) an fhoirm den réamhfhocal _i_ a úsáidtear roimh ghiorrúchán nó acrainm. (_RTÉ -- Raidió Teilifís Éireann_; _CSE -- Ciste Sóisialta na hEorpa_.)
-:3-2-1-b-p_en: _in_ (rather than _i_) is the form of the preposition _i_ used before an abbreviation or acronym. (_RTÉ -- Raidió Teilifís Éireann_; _CSE -- Ciste Sóisialta na hEorpa_.)
+:3-2-1-b-p_en: _in_ (rather than _i_) is the form of the preposition _i_ used before an abbreviation or acronym. (_RTÉ -- Raidió Teilifís Éireann_ (*EN*: _Irish Radio and Television_); _CSE -- Ciste Sóisialta na hEorpa_ (*EN*: _European Social Fund_).)
 
 :3-2-1-b-p-sample1_ga: Tá sí ag obair *in RTÉ*.
 :3-2-1-b-p-sample1_en: She works *at RTÉ*.
@@ -269,7 +269,7 @@
 :3-2-1-b-p-sample2_en: There are millions of euros *in the ESF*.<br />(_EN: European Social Fund_)
 
 :3-2-1-c-p1_ga: Ní chiorraítear na réamhfhocail _de_ agus _do_ go _d'_ roimh ghiorrúchán nó acrainm a thosaíonn ar ghuta. (_OLAF -- an Oifig Eorpach Frith-Chalaoise_; _ÍMAT -- Íoc mar a Thuillir_.)
-:3-2-1-c-p1_en: The preposition _de_ and _do_ are not shortened to _d'_ before abbreviations and acronyms starting with a vowel. (_OLAF -- an Oifig Eorpach Frith-Chalaoise_; _ÍMAT -- Íoc mar a Thuillir_.)
+:3-2-1-c-p1_en: The preposition _de_ and _do_ are not shortened to _d'_ before abbreviations and acronyms starting with a vowel. (_OLAF -- an Oifig Eorpach Frith-Chalaoise_ (*EN*: _European Anti-Fraud Office_); _ÍMAT -- Íoc mar a Thuillir_ (*EN*: _Pay As You Earn_).)
 
 :3-2-1-c-p1-sample1_ga: Is ag cruinnithe *de OLAF* a pléadh an cheist.
 :3-2-1-c-p1-sample1_en: The issue was discussed *at OLAF* meetings.
@@ -323,7 +323,7 @@
 :3-2-2-B-p_en: In the system with the article, the article is used before abbreviations or before acronyms as appropriate. The use of the article is subject to the structure of the words the abbreviations or the acronym are based, as follows --
 
 :3-2-2-B-a-p_ga: ní chuirtear an t&#x2011;alt roimh ghiorrúcháin nó roimh acrainmneacha má tá siad bunaithe ar ainmfhocail chinnte nach gcuirtear an t&#x2011;alt leo, e.g., _Stáit Aontaithe Mheiriceá_, _Raidió Teilifís Éireann_, nó má tá an t&#x2011;alt i lár na bhfocal ar a bhfuil na giorrúcháin nó na hacrainmneacha bunaithe, e.g., _Feidhmeannacht na Seirbhíse Sláinte_, _Ollscoil na hÉireann_:
-:3-2-2-B-a-p_en: the article is not used before abbreviations or acronyms if they are based on a definite noun that do not have the article, e.g., _Stáit Aontaithe Mheiriceá_, _Raidió Teilifís Éireann_, or if the article is in the middle of the words on which the abbreviations or the acronyms are based, e.g., _Feidhmeannacht na Seirbhíse Sláinte_, _Ollscoil na hÉireann_:
+:3-2-2-B-a-p_en: the article is not used before abbreviations or acronyms if they are based on a definite noun that do not have the article, e.g., _Stáit Aontaithe Mheiriceá_ (*EN*: _United States of America_), _Raidió Teilifís Éireann_ (*EN*: _Irish Radio and Television_), or if the article is in the middle of the words on which the abbreviations or the acronyms are based, e.g., _Feidhmeannacht na Seirbhíse Sláinte_ (*EN*: _The Health Service Executive_), _Ollscoil na hÉireann_ (*EN*: _University of Ireland_):
 
 :3-2-2-B-a-p-sample1_ga: Tá *SAM* ina bhall den Chomhairle Slándála.
 :3-2-2-B-a-p-sample1_en: The *USA* is a member of the Security Council.
@@ -344,13 +344,13 @@
 :3-2-2-B-b-p-sample3_en: She is working in collaboration with an Investigation Team of *the UN*.
 
 :3-2-2-B-c-p_ga: is mar ainmfhocal firinscneach uatha a dhéantar tagairt do ghiorrúchán nó d'acrainm gan beann ar uimhir ná inscne na bhfocal ar a bhfuil sé bunaithe. (_an IEA -- an Ionstraim Eorpach Aonair_.)
-:3-2-2-B-c-p_en: an abbreviation or acronym is referred to as a singular masculine noun regardless of the number or gender of the words on which it is based (_an IEA -- an Ionstraim Eorpach Aonair_.)
+:3-2-2-B-c-p_en: an abbreviation or acronym is referred to as a singular masculine noun regardless of the number or gender of the words on which it is based (_an IEA -- an Ionstraim Eorpach Aonair_ (*EN*: _the European Single Instrument_).)
 
 :3-2-3-title_ga: Nithe Iomadúla
 :3-2-3-title_en: Multiple Things
 
 :3-2-3-a-p_ga: Má bhaineann giorrúchán nó acrainm le nithe iomadúla (nithe a bhfuil níos mó ná ceann amháin acu ann), is féidir an t&#x2011;alt a chur roimhe ar mhaithe lena idirdhealú ó nithe eile den chineál céanna. (_CIN -- Corparáid Ilnáisiúnta_; _PO -- Príomhoifigeach_.)
-:3-2-3-a-p_en: If an abbreviation or acronym refers to multiple things (things that have more than one item in them), the article can be placed in front of it in order to distinguish it from other things of the same kind. (_CIN -- Corparáid Ilnáisiúnta_; _PO -- Príomhoifigeach_.)
+:3-2-3-a-p_en: If an abbreviation or acronym refers to multiple things (things that have more than one item in them), the article can be placed in front of it in order to distinguish it from other things of the same kind. (_CIN -- Corparáid Ilnáisiúnta_ (*EN*: _Multi-National Corporation_); _PO -- Príomhoifigeach_ (*EN*: _Principal Officer_))
 
 :3-2-3-a-p-sample1_ga: Is fostaí de chuid *CIN* rannpháirteach í.
 :3-2-3-a-p-sample1_en: She is *a* participating *MNC* employee.<br />(_EN: multinational corporation_)
@@ -359,22 +359,22 @@
 :3-2-3-a-p-sample2_en: - _but_ She is an employee of *that participating MNC*.
 
 :3-2-3-a-p-sample3_ga: Úsáidtear an seomra mar oifig *PO*.
-:3-2-3-a-p-sample3_en: The room is used as *a PO* office.<br />(_EN: principal officer_)
+:3-2-3-a-p-sample3_en: The room is used as *a PO* office.
 
 :3-2-3-a-p-sample4_ga: - _ach_ Úsáidtear an seomra mar oifig *an PO sin*.
 :3-2-3-a-p-sample4_en: - _but_ The room is used as *that PO office*.
 
 :3-2-3-b-p_ga: Is féidir an t&#x2011;alt a úsáid le hainmfhocal atá á cháiliú le giorrúchán nó le hacrainm a bhfuil feidhm aidiachtach leis ar mhaithe le rud sonrach as measc nithe iomadúla a aithint. (_uimhir PSP -- uimhir Phearsanta Seirbhíse Poiblí_; _CBL -- Cáin Bhreisluacha_; _DART -- Dublin Area Rapid Transit_.)
-:3-2-3-b-p_en: The article can be used with a noun that is qualified by an abbreviation or an acronym which has an adjectival function in order to identify something specific from many things. (_uimhir PSP -- uimhir Phearsanta Seirbhíse Poiblí_; _CBL -- Cáin Bhreisluacha_; _DART -- Dublin Area Rapid Transit_.)
+:3-2-3-b-p_en: The article can be used with a noun that is qualified by an abbreviation or an acronym which has an adjectival function in order to identify something specific from many things. (_uimhir PSP -- uimhir Phearsanta Seirbhíse Poiblí_ (*EN*: _Personal Public Service Number_); _CBL -- Cáin Bhreisluacha_ (*EN*: _Value Added Tax_); _DART -- Dublin Area Rapid Transit_)
 
 :3-2-3-b-p-sample1_ga: Tabharfar *uimhir PSP* duit.
-:3-2-3-b-p-sample1_en: You will be given *a PPS number*.<br />(_EN: Personal Public Service_)
+:3-2-3-b-p-sample1_en: You will be given *a PPS number*.
 
 :3-2-3-b-p-sample2_ga: - _ach_ Cá bhfuil *an uimhir PSP* a tugadh duit?
 :3-2-3-b-p-sample2_en: - _but_ Where is *the PPS number* that was given to you?
 
 :3-2-3-b-p-sample3_ga: Tá *ráta ard CBL* i bhfeidhm.
-:3-2-3-b-p-sample3_en: *A high VAT rate* is in effect.<br />(_EN: Value Added Tax_)
+:3-2-3-b-p-sample3_en: *A high VAT rate* is in effect.
 
 :3-2-3-b-p-sample4_ga: - _ach_ Tá *an ráta céanna CBL* i bhfeidhm le fada.
 :3-2-3-b-p-sample4_en: - _but_ *The same VAT rate* has been in effect for a long time.
@@ -413,7 +413,7 @@
 :3-3-1-a-iii-p_en: a noun with a possessive adjective:
 
 :3-3-1-a-iv-p_ga: ainmfhocal a bhfuil _gach_, _gach aon_, nó _gach uile_ roimhe:
-:3-3-1-a-iv-p_en: a noun that has _gach_, _gach aon_, or _gach uile_ before it:
+:3-3-1-a-iv-p_en: a noun that has _gach_ (*EN*: _each_), _gach aon_ (*EN*: _each one_), or _gach uile_ (*EN*: _all_) before it:
 
 :3-3-1-a-v-p_ga: ainmfhocal a bhfuil uimhir nó litir ar a lorg:
 :3-3-1-a-v-p_en: a noun that has a number or letter following it:
@@ -422,13 +422,13 @@
 :3-3-1-a-vi-p_en: a noun that has a definite noun following:
 
 :3-3-1-a-p2_ga: *Ach*, más ainm briathartha an t&#x2011;ainmfhocal a bhfuil ainmfhocal cinnte ar a lorg, déantar athrú an ghinidigh air má thagann ainmfhocal eile roimhe, e.g., _cosaint_, _madra cosanta na monarchan_; _fuascailt_, _bean fuascailte na ceiste_; _cealgadh_, _beach cealgtha an pháiste_; _bualadh_, _innill buailte an arbhair_; _bailiú_, _seachtain bailithe na rátaí_.
-:3-3-1-a-p2_en: *But*, if the noun that has a definite noun following it is a verbal noun, the genitive change is done to it if another noun precedes it, e.g., _cosaint_, _madra cosanta na monarchan_; _fuascailt_, _bean fuascailte na ceiste_; _cealgadh_, _beach cealgtha an pháiste_; _bualadh_, _innill buailte an arbhair_; _bailiú_, _seachtain bailithe na rátaí_.
+:3-3-1-a-p2_en: *But*, if the noun that has a definite noun following it is a verbal noun, the genitive change is done to it if another noun precedes it, e.g., _cosaint_ (*EN*: _protection_), _madra cosanta na monarchan_ (*EN*: _the protected dog of the factory_); _fuascailt_ (*EN*: _release_), _bean fuascailte na ceiste_ (*EN*: _the released woman of the question_); _cealgadh_ (*EN*: _trickery_), _beach cealgtha an pháiste_ (*EN*: _the tricked bee of the child_); _bualadh_ (*EN*: _striking_), _innill buailte an arbhair_ (*EN*: _the struck machines of the grain_); _bailiú_ (*EN*: _collection_), _seachtain bailithe na rátaí_ (*EN*: _the collected week of the rates_).
 
 :3-3-1-b-p_ga: I gcás ainm briathartha a bheith ina dhlúthchuid d'aonad áirithe, e.g., _cur chun cinn_; _cur chuige_; _teacht i bhfeidhm_; atá faoi réir ag ainmfhocal eile nó ag leagan a leanann an ginideach é:
-:3-3-1-b-p_en: When a verbal noun is an integral part of a particular unit, e.g., _cur chun cinn_; _cur chuige_; _teacht i bhfeidhm_; which is subject to another noun or to a form followed by the genitive:
+:3-3-1-b-p_en: When a verbal noun is an integral part of a particular unit, e.g., _cur chun cinn_ (*EN*: _progress_); _cur chuige_ (*EN*: _approach_); _teacht i bhfeidhm_ (*EN*: _come into operation_); which is subject to another noun or to a form followed by the genitive:
 
 :3-3-1-b-i-p_ga: má tá an t&#x2011;alt roimh an ainm briathartha sin, is é an t&#x2011;alt firinscneach uatha a bhíonn roimhe i ngach tuiseal agus ní dhéantar an t&#x2011;ainm briathartha a infhilleadh, e.g., _luas an dul chun cinn_; _ag moladh an teacht i bhfeidhm_; _le linn an tabhairt amach_; _i bhfianaise an tabhairt suas_; _faoi réir an leagan amach_. Imríonn an t&#x2011;alt ar thúslitir an ainm bhriathartha, áfach, mar a d'imreodh ar ainmfhocal firinscneach uatha sa ghinideach, e.g., _fad an chur síos_; _castacht an chur chuige_; _ag cáineadh an éirí in airde_; _ag comóradh an éirí amach_; _de dheasca an tsracfhéachaint ar gcúl_; _d'ainneoin an chéim ar gcúl_ (féach link:#sec_3_3_3_c[3.3.3(c)]):
-:3-3-1-b-i-p_en: if the article precedes that verbal noun, it is the singular masculine that precedes it in every case and the verbal noun is not inflected, e.g., _luas an dul chun cinn_; _ag moladh an teacht i bhfeidhm_; _le linn an tabhairt amach_; _i bhfianaise an tabhairt suas_; _faoi réir an leagan amach_. The article applies to the initial letter of the verbal noun, however, as it would apply on a singular masculine noun in the genitive, e.g., _fad an chur síos_; _castacht an chur chuige_; _ag cáineadh an éirí in airde_; _ag comóradh an éirí amach_; _de dheasca an tsracfhéachaint ar gcúl_; _d'ainneoin an chéim ar gcúl_ (see link:#sec_3_3_3_c[3.3.3(c)]):
+:3-3-1-b-i-p_en: if the article precedes that verbal noun, it is the singular masculine that precedes it in every case and the verbal noun is not inflected, e.g., _luas an dul chun cinn_ (*EN*: _the speed of progress_); _ag moladh an teacht i bhfeidhm_ (*EN*: _praising the implementation_); _le linn an tabhairt amach_ (*EN*: _during the display_); _i bhfianaise an tabhairt suas_ (*EN*: _in light of the surrender_); _faoi réir an leagan amach_ (*EN*: _according to the arrangement_). The article applies to the initial letter of the verbal noun, however, as it would apply on a singular masculine noun in the genitive, e.g., _fad an chur síos_ (*EN*: _the length of the description_); _castacht an chur chuige_ (*EN*: _the rigidity of the approach_); _ag cáineadh an éirí in airde_ (*EN*: _criticizing the high spirits_); _ag comóradh an éirí amach_ (*EN*: _commemorating the outing_); _de dheasca an tsracfhéachaint ar gcúl_ (*EN*: _due to the backward glance_); _d'ainneoin an chéim ar gcúl_ (*EN*: _despite the step back_) (see link:#sec_3_3_3_c[3.3.3(c)]):
 
 :3-3-1-b-i-p-sample1_ga: Tá an t&#x2011;iniúchóir *ag fiosrú an chur i gcéill* sin faoi láthair.
 :3-3-1-b-i-p-sample1_en: The auditor *is currently investigating* this allegation.
@@ -437,7 +437,7 @@
 :3-3-1-b-i-p-sample2_en: She was *giving the presentation* when the computer failed.
 
 :3-3-1-b-ii-p_ga: má tá aidiacht shealbhach roimh an ainm briathartha, déantar a thúschonsan a shéimhiú nó a urú, de réir mar is cuí, ach fágtar é gan infhilleadh, e.g., _i bhfianaise mo chur chuige_; _luas ár ndul chun cinn_; _ag moladh a gcur chuige_ (iol.):
-:3-3-1-b-ii-p_en: if there is a possessive adjective before a verbal noun, the initial consonant is lenited or eclipsed, as appropriate, but is left without inflection, e.g., _i bhfianaise mo chur chuige_; _luas ár ndul chun cinn_; _ag moladh a gcur chuige_ (pl.):
+:3-3-1-b-ii-p_en: if there is a possessive adjective before a verbal noun, the initial consonant is lenited or eclipsed, as appropriate, but is left without inflection, e.g., _i bhfianaise mo chur chuige_ (*EN*: _in light of my approach_); _luas ár ndul chun cinn_ (*EN*: _the speed of our progress_); _ag moladh a gcur chuige_ (*EN*: _praising their approach_) (pl.):
 
 :3-3-1-b-ii-p-sample1_ga: Tá siad *ag moladh a chur chuige* ó mhínigh sé dóibh é.
 :3-3-1-b-ii-p-sample1_en: They *have been praising his approach* since he explained it to them.
@@ -486,7 +486,7 @@
 :3-3-2-b-p2-sample2_en: She fell on *her head*.
 
 :3-3-2-c-p1_ga: Nuair a úsáidtear aon ainmfhocal coiteann amháin gan an t&#x2011;alt leis mar ainm comhlachta, cumainn nó cláir, ní dhéantar infhilleadh ná athrú tosaigh ar an ainmfhocal, e.g., _buaicphointe Múscailt_, _ceannáras Muintearas_, _ceardlanna Síolta_, _gníomhairí Bóthar_.
-:3-3-2-c-p1_en: When using a single common noun without the article as the name of a company, association or program, no inflection or initial mutation is made to the noun, e.g., _buaicphointe Múscailt_, _ceannáras Muintearas_, _ceardlanna Síolta_, _gníomhairí Bóthar_.
+:3-3-2-c-p1_en: When using a single common noun without the article as the name of a company, association or program, no inflection or initial mutation is made to the noun, e.g., _buaicphointe Múscailt_ (*EN*: _Múscailt's highlight_), _ceannáras Muintearas_ (*EN*: _Muintearas headquarters_), _ceardlanna Síolta_ (*EN*: _Síolta workshops_), _gníomhairí Bóthar_ (*EN*: _Bóthar agents_).
 
 :3-3-2-c-p1-sample1_ga: Bhuail mé le *Príomhfheidhmeannach Trócaire* ann.
 :3-3-2-c-p1-sample1_en: I met the *Chief Executive of Trócaire* there.
@@ -498,7 +498,7 @@
 :3-3-3-title_en: The Indefinite Noun -- The Verbal Noun
 
 :3-3-3-p_ga: Is é is ainm briathartha ann focal a bhfuil feidhm ainmfhocail agus feidhm bhriathair araon aige. Is féidir focail amhail _eitilt_, _foghlaim_, _snámh_, etc. a úsáid mar ainmfhocal, e.g., _deireadh na heitilte_; _foghlaim a fháil_; _snámh féileacáin_, agus mar ainm briathartha, e.g., _ag eitilt sa spéir_; _ag foghlaim teanga_; _ag snámh in aghaidh easa_. Déantar cur síos anseo ar chásanna ina n&#x2011;úsáidtear foirm an ainmnigh den ainm briathartha in ionad fhoirm an ghinidigh de.
-:3-3-3-p_en: A verbal noun is a word that has both the function of a noun and a verb. It is possible to use words like _eitilt_, _foghlaim_, _snámh_, etc. like nouns, e.g., _deireadh na heitilte_; _foghlaim a fháil_; _snámh féileacáin_, and as a verbal noun, e.g., _ag eitilt sa spéir_; _ag foghlaim teanga_; _ag snámh in aghaidh easa_. This section describes cases where the nominative form of the verbal noun is used in place of the genitive form.
+:3-3-3-p_en: A verbal noun is a word that has both the function of a noun and a verb. It is possible to use words like _eitilt_ (*EN*: _flight_), _foghlaim_ (*EN*: _learning_), _snámh_ (*EN*: _swimming_), etc. like nouns, e.g., _deireadh na heitilte_ (*EN*: _end of the flight_); _foghlaim a fháil_ (*EN*: _to get learning_); _snámh féileacáin_ (*EN*: _butterfly swimming_), and as a verbal noun, e.g., _ag eitilt sa spéir_ (*EN*: _flying in the sky_); _ag foghlaim teanga_ (*EN*: _learning a language_); _ag snámh in aghaidh easa_ (*EN*: _swimming against the current_). This section describes cases where the nominative form of the verbal noun is used in place of the genitive form.
 
 :3-3-3-a-p_ga: Ní dhéantar athrú an ghinidigh ar ainm briathartha nuair atá an forainmneach réamhthagrach _a_ roimhe.
 :3-3-3-a-p_en: The genitive change is not made to the verbal noun when the prepositional pronoun _a_ precedes it.
@@ -512,7 +512,7 @@
 :3-3-3-a-p-sample2_en: He *is trying to confirm* that everything is going to be all right.
 
 :3-3-3-b-p1_ga: Má tá ainm briathartha sa struchtúr _chun_ + _ainm briathartha_ á úsáid chun gníomh atá le teacht a chur in iúl, ní dhéantar athrú an ghinidigh air.
-:3-3-3-b-p1_en: If there is a verbal noun in the structure _chun_ + _ainm briathartha_ used to express an upcoming action, the genitive change is not made to it.
+:3-3-3-b-p1_en: If there is a verbal noun in the structure _chun_ + _verbal noun_ used to express an upcoming action, the genitive change is not made to it.
 
 :3-3-3-b-p1-sample1_ga: An bhfuil sé *chun iomáint* le Corcaigh?
 :3-3-3-b-p1-sample1_en: Is he *going to play hurling* with Cork?
@@ -536,10 +536,10 @@
 :3-3-3-b-p1-sample7_en: He is *going to play*.
 
 :3-3-3-b-p2_ga: *Ach*, más í an bhrí _le haghaidh_ atá ag _chun_, úsáidtear an ginideach.
-:3-3-3-b-p2_en: *But*, if the meaning of _chun_ is _le haghaidh (for)_, the genitive is used.
+:3-3-3-b-p2_en: *But*, if the meaning of _chun_ is _le haghaidh_ (*EN*: _for_), the genitive is used.
 
 :3-3-3-c-p_ga: I gcás ainm briathartha a bheith ina dhlúthchuid d'aonad áirithe, e.g., _cur chun cinn_; _cur chuige_; atá faoi réir ag ainmfhocal eile nó ag leagan a leanann an ginideach é, má tá sé éiginnte fágtar an t&#x2011;ainm briathartha gan infhilleadh agus ní dhéantar a thúschonsan a shéimhiú, e.g., _fad cur síos_; _i gcás cur i gcéill_; _ag ullmhú cur i láthair_; _i bhfianaise teacht i bhfeidhm_ (féach link:#sec_3_3_1_b[3.3.1(b)]):
-:3-3-3-c-p_en: When the verbal noun is an integral part of a particular unit, e.g., _cur chun cinn_; _cur chuige_; subject to another noun or a form followed by a genitive, if it is indefinite, the verbal noun is left uninflected and the initial consonant is not lenited, e.g., _fad cur síos_; _i gcás cur i gcéill_; _ag ullmhú cur i láthair_; _i bhfianaise teacht i bhfeidhm_ (see link:#sec_3_3_1_b[3.3.1(b)]):
+:3-3-3-c-p_en: When the verbal noun is an integral part of a particular unit, e.g., _cur chun cinn_ (*EN*: _promotion_); _cur chuige_ (*EN*: _approach_); subject to another noun or a form followed by a genitive, if it is indefinite, the verbal noun is left uninflected and the initial consonant is not lenited, e.g., _fad cur síos_ (*EN*: _during a description_); _i gcás cur i gcéill_ (*EN*: _in case of acting sensibly_); _ag ullmhú cur i láthair_ (*EN*: _preparing a presentation_); _i bhfianaise teacht i bhfeidhm_ (*EN*: _in light of coming into effect_) (see link:#sec_3_3_1_b[3.3.1(b)]):
 
 :3-3-3-c-p-sample1_ga: Cén *cineál cur chuige* a d'úsáid siad?
 :3-3-3-c-p-sample1_en: What *kind of approach* did they use?
@@ -701,7 +701,7 @@
 :3-3-6-title_en: The Indefinite Noun -- Specific Terms
 
 :3-3-6-a-p_ga: Má tá frásaí ilfhoclacha áirithe a bhfuil brí ar leith leo, e.g., _bolg le gréin_; _buail isteach_; _buaileam sciath_; _cos ar bolg_; _cúl le rath_; _uisce faoi thalamh_; etc. faoi réir ag focal nó ag leagan a leanann an ginideach é, ní infhilltear an chéad ainmfhocal sa fhrása ilfhoclach ná ní chuirtear séimhiú air.
-:3-3-6-a-p_en: If there are certain multi-word phrases that have a specific meaning, e.g., _bolg le gréin_; _buail isteach_; _buaileam sciath_; _cos ar bolg_; _cúl le rath_; _uisce faoi thalamh_; etc. subject to a word or a form followed by a genitive, the first noun in the multi-word phrase is neither inflected nor lenited.
+:3-3-6-a-p_en: If there are certain multi-word phrases that have a specific meaning, e.g., _bolg le gréin_ (*EN*: _sunbathing_); _buail isteach_ (*EN*: _drop-in_); _buaileam sciath_ (*EN*: _shield strike_); _cos ar bolg_ (*EN*: _foot on belly_); _cúl le rath_ (*EN*: _back to success_); _uisce faoi thalamh_ (*EN*: _groundwater_); etc. subject to a word or a form followed by a genitive, the first noun in the multi-word phrase is neither inflected nor lenited.
 
 // As best I can tell, "beir leat" is an adjective here.
 :3-3-6-a-p-sample1_ga: Gheobhaidh mé bia *beir leat* ar mo shlí abhaile dom.
@@ -716,7 +716,7 @@
 :3-3-6-a-p-sample3_en: They have a *drop-in* center in the middle of the city.
 
 :3-3-6-b-p_ga: I gcás aonad dhá ainmfhocal éiginnte arb é _tús_, _lár_ nó _deiradh_ (san uatha) an chéad ainmfhocal den aonad sin, fágtar an chéad ainmfhocal sa tuiseal ainmneach nuair atá sé faoi réir ag focal nó ag leagan a leanann an ginideach é.
-:3-3-6-b-p_en: Where a unit of two indefinite nouns in which the first noun of that unit is _tús_, _lár_ or _deiradh_ (in the singular), the first noun is left in the nominative case when it is subject to a word or a form followed by the genitive.
+:3-3-6-b-p_en: Where a unit of two indefinite nouns in which the first noun of that unit is _tús_ (*EN*: _beginning_), _lár_ (*EN*: _middle_) or _deiradh_ (*EN*: _end_) (in the singular), the first noun is left in the nominative case when it is subject to a word or a form followed by the genitive.
 
 :3-3-6-b-p-sample1_ga: Tá gach rud eagraithe don chruinniú *tús* bliana.
 :3-3-6-b-p-sample1_en: Everything is organized for the *beginning* of the year meeting.
@@ -804,7 +804,7 @@
 :3-3-10-title_en: Qualified Indefinite Noun subject to a Compound Preposition
 
 :3-3-10-p1_ga: Nuair atá ainmfhocal éiginnte atá faoi réir ag réamhfhocal comhshuite (nó _cois_, _dála_, _fearacht_, _timpeall_, _trasna_) cáilithe leis na cáilitheoirí a liostaítear anseo thíos, ní dhéantar athrú an ghinidigh ar an ainmfhocal éiginnte (ná ar an aidiacht a ghabhann leis).
-:3-3-10-p1_en: When an indefinite noun that is subject to a compound preposition (or _cois_, _dála_, _fearacht_, _timpeall_, _trasna_) qualified with one of the qualifiers shown below, the genitive change is not made to the indefinite noun (or the adjective accompanying it).
+:3-3-10-p1_en: When an indefinite noun that is subject to a compound preposition (or _cois_ (*EN*: _beside_), _dála_ (*EN*: _like_), _fearacht_ (*EN*: _opposite_), _timpeall_ (*EN*: _around_), _trasna_ (*EN*: _across_)) qualified with one of the qualifiers shown below, the genitive change is not made to the indefinite noun (or the adjective accompanying it).
 
 // Shares headers with 3B
 
@@ -815,16 +815,16 @@
 :Table3C-Row3_en: Prepositional dependent clause, e.g., _ar an mBille_, _faoin mbord_, _sa phóstaer_, etc., or prepositional pronominal, e.g., _air_, _fúithi_, _uainn_, etc., if it has a adjectival function
 
 :Table3C-Row5_ga: An aidiacht éiginnte _aon_
-:Table3C-Row5_en: The indefinite adjective _aon_
+:Table3C-Row5_en: The indefinite adjective _aon_ (*EN*: _any_)
 
 :3-3-10-p2_ga: Tabhair faoi deara gur frása réamhfhoclach a bhfuil brí faoi leith aige é réamhfhocal comhshuite, e.g., _i gcás_ sa bhrí _más rud é_. _Réamhfhocal simplí + ainmfhocal_ is múnla dó. Níl feidhm ag link:#table3c[tábla 3C] má tá ainmfhocal éiginnte faoi réir ag réamhfhocal agus ainmfhocal nach réamhfhocal comhshuite, e.g., _i gcas_ sa bhrí _in imeachtaí dlí_, _i mála_.
-:3-3-10-p2_en: Note that a prepositional phrase with a specific meaning is a compound preposition, e.g., _i gcás_ meaning _más rud é_ (_if_). _Simple preposition + noun_ is the model for this. link:#table3c[Table 3C] does not apply if an indefinite noun is present that is subject to a preposition and a noun that is not a compound preposition, e.g., _i gcas_ meaning _in imeachtaí dlí_ (_EN: in a legal proceeding_), _i mála_ (_EN: in a bag_).
+:3-3-10-p2_en: Note that a prepositional phrase with a specific meaning is a compound preposition, e.g., _i gcás_ meaning _más rud é_ (*EN*: _if_). _Simple preposition + noun_ is the model for this. link:#table3c[Table 3C] does not apply if an indefinite noun is present that is subject to a preposition and a noun that is not a compound preposition, e.g., _i gcas_ meaning _in imeachtaí dlí_ (*EN*: _in a legal proceeding_), _i mála_ (*EN*: _in a bag_).
 
 :3-3-11-title_ga: Ainmfhocal Éiginnte Cáilithe atá faoi réir ag Cainníocht Éiginnte
 :3-3-11-title_en: A Qualified Indefinite Noun subject to An Indefinite Quantity
 
 :3-3-11-p1_ga: Nuair atá ainmfhocal éiginnte atá faoi réir ag focal nó frása lena gcuirtear cainníocht éiginnte in iúl, e.g., _barraíocht_, _breis_, _easpa_, _go leor_, _iomarca_, _níos mó_, _roinnt_, cáilithe leis na cáilitheoirí a liostaítear anseo thíos, ní dhéantar athrú an ghinidigh ar an ainmfhocal éiginnte (ná ar an aidiacht a ghabhann leis).
-:3-3-11-p1_en: When an indefinite noun is subject to a word or phrase expressing an indefinite quantity, e.g., _barraíocht_, _breis_, _easpa_, _go leor_, _iomarca_, _níos mó_, _roinnt_, qualified with one a qualifier in the table below, the genitive change is not made to the indefinite noun (or the adjective accompanying it).
+:3-3-11-p1_en: When an indefinite noun is subject to a word or phrase expressing an indefinite quantity, e.g., _barraíocht_ (*EN*: _excess_), _breis_ (*EN*: _more_), _easpa_ (*EN*: _lack_), _go leor_ (*EN*: _enough_), _iomarca_ (*EN*: _too much_), _níos mó_ (*EN*: _more_), _roinnt_ (*EN*: _some_), qualified with one a qualifier in the table below, the genitive change is not made to the indefinite noun (or the adjective accompanying it).
 
 // Shares headers with 3B
 
@@ -832,7 +832,7 @@
 :Table3D-Caption_en: Qualifiers -- Indefinite Noun subject to an Indefinite Quantity
 
 :3-3-11-p2_ga: Tabhair faoi deara go mbreathnaítear ar chainníocht éiginnte mar chainníocht chinnte nuair a chuirtear aidiacht shealbhach roimpi agus sa chás sin go ndéantar athrú an ghinidigh ar an ainmfhocal a thagann ina dhiaidh (agus ar an aidiacht a ghabhann leis), e.g., _a chuid gruaige fada_; _a dóthain bia the_; _a ndóthain saineolais theicniúil_; _ár gcuid oibre baile_.
-:3-3-11-p2_en: Note that an indefinite quantity is observed as a definite quantity when a possessive adjective precedes it, and in this context the genitive change is made to the noun that follows it (and the adjective accompanying it), e.g., _a chuid gruaige fada_; _a dóthain bia the_; _a ndóthain saineolais theicniúil_; _ár gcuid oibre baile_.
+:3-3-11-p2_en: Note that an indefinite quantity is observed as a definite quantity when a possessive adjective precedes it, and in this context the genitive change is made to the noun that follows it (and the adjective accompanying it), e.g., _a chuid gruaige fada_ (*EN*: _his long hair_); _a dóthain bia the_ (*EN*: _her share of hot food_); _a ndóthain saineolais theicniúil_ (*EN*: _their share of technical knowledge_); _ár gcuid oibre baile_ (*EN*: _our share of homework_).
 
 :3-3-12-title_ga: Foirm an Ghinidigh
 :3-3-12-title_en: Form of the Genitive
