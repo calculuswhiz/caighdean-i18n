@@ -1101,7 +1101,7 @@ endif::[]
 a. {4-8-3-a-p}
 b. {4-8-3-b-p}
 c. {4-8-3-c-p}
-+
+
 [.samplebox]
 ifndef::isGa[]
 [cols="1,1"]

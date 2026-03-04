@@ -17,7 +17,7 @@
 :4-2-title_en: Gender, Case and Number of the Attributive Adjective
 
 :4-2-1-p_ga: Réitíonn an aidiacht cháilíochta leis an ainmfhocal ó thaobh inscne, tuisil agus uimhreach. I gcás sraith ainmfhocal, réitíonn an aidiacht leis an ainmfhocal deiridh, e.g., _mná agus fir ghnaíúla_; _peann, páipéar agus bileog ghorm_. I gcás sraith aidiachtaí i ndiaidh ainmfhocal amháin, réitíonn gach aidiacht leis an ainmfhocal, e.g., _ailt shuimiúla thábhachtacha fhada_.
-:4-2-1-p_en: The qualifying adjective agrees with the noun in gender, case and number. When there is a series of nouns, the adjective agrees with the final noun, e.g., _mná agus fir ghnaíúla_; _peann, páipéar agus bileog ghorm_. When a series of adjectives follows a single noun, every adjective agrees with the noun, e.g., _ailt shuimiúla thábhachtacha fhada_.
+:4-2-1-p_en: The qualifying adjective agrees with the noun in gender, case and number. When there is a series of nouns, the adjective agrees with the final noun, e.g., _mná agus fir ghnaíúla_; _peann, páipéar agus bileog ghorm_ (*EN*: _blue pen, paper and sheet_). When a series of adjectives follows a single noun, every adjective agrees with the noun, e.g., _ailt shuimiúla thábhachtacha fhada_ (*EN*: _interesting, important, long articles_).
 
 :4-2-1-p-sample1_ga: Tháinig na mná agus na fir *ghnaíúla* isteach.
 :4-2-1-p-sample1_en: The *lovely* women and men came in.
@@ -35,13 +35,13 @@
 :4-2-2-a-p_en: In the singular --
 
 :4-2-2-a-i-p_ga: i gcás ainmfhocal firinscneach, ní shéimhítear an aidiacht atá á cháiliú, e.g., _an fear beag_; _ag an bhfear beag_; ach amháin sa tuiseal gairmeach agus sa tuiseal ginideach e.g., _a fhir bhig_; _hata an fhir bhig_;
-:4-2-2-a-i-p_en: when there is a masculine noun, the adjective that qualifies it is not lenited, e.g., _an fear beag_; _ag an bhfear beag_; except in the vocative case and in the genitive case e.g., _a fhir bhig_; _hata an fhir bhig_;
+:4-2-2-a-i-p_en: when there is a masculine noun, the adjective that qualifies it is not lenited, e.g., _an fear beag_ (*EN*: _the small man_); _ag an bhfear beag_ (*EN*: _at the small man_); except in the vocative case and in the genitive case e.g., _a fhir bhig_ (*EN*: _O small man_); _hata an fhir bhig_ (*EN*: _the hat of the small man_).
 
 :4-2-2-a-ii-p_ga: má tá Córas an tSéimhithe (féach link:./chapter1.html#sec_1_7[1.7]) in úsáid, séimhítear an aidiacht a cháilíonn ainmfhocal firinscneach sa tuiseal tabharthach má ghabhann an t&#x2011;alt leis an ainmfhocal sin, e.g., _ag an fhear bheag_.
-:4-2-2-a-ii-p_en: if the Lenition System (see link:./chapter1.html#sec_1_7[1.7]) is in use, the adjective that qualifies the masculine noun is lenited in the dative case if the article goes with that noun, e.g., _ag an fhear bheag_.
+:4-2-2-a-ii-p_en: if the Lenition System (see link:./chapter1.html#sec_1_7[1.7]) is in use, the adjective that qualifies the masculine noun is lenited in the dative case if the article goes with that noun, e.g., _ag an fhear bheag_ (*EN*: _at the small man_).
 
 :4-2-2-b-p_ga: San uimhir uatha, i gcás ainmfhocal baininscneach, séimhítear an aidiacht atá á cháiliú sna tuisil go léir, e.g., _an bhean bheag_; _a bhean bheag_; _ag an mbean bheag_; ach amháin sa tuiseal ginideach, e.g., _hata na mná bige_.
-:4-2-2-b-p_en: In the singular, when there is a feminine noun, the adjective that qualifies it is lenited in all the cases, e.g., _an bhean bheag_; _a bhean bheag_; _ag an mbean bheag_; except in the genitive case, e.g., _hata na mná bige_.
+:4-2-2-b-p_en: In the singular, when there is a feminine noun, the adjective that qualifies it is lenited in all the cases, e.g., _an bhean bheag_ (*EN*: _the small woman_); _a bhean bheag_ (*EN*: _O small woman_); _ag an mbean bheag_ (*EN*: _at the small woman_); except in the genitive case, e.g., _hata na mná bige_ (*EN*: _the hat of the small woman_).
 
 :4-2-3-p_ga: Tugtar léiriú i link:./chapter9.html[Caibidil 9] ar an aidiacht cháilíochta nuair atá uimhir roimh an ainmfhocal atá á cháiliú.
 :4-2-3-p_en: link:./chapter9.html[Chapter 9] provides an illustration of the attributive adjective when a number precedes the noun being qualified.
@@ -167,10 +167,10 @@
 :4-3-3-b-p-sample2_en: *Little* mother, your work will never end.
 
 :4-3-4-p_ga: Ní infhilltear an aidiacht i ndiaidh ainmneacha baiste ban, e.g., _Máire Mhór_, _teach Mháire Mhór_.
-:4-3-4-p_en: The adjective following a female baptismal name is not inflected, e.g., _Máire Mhór_, _teach Mháire Mhór_.
+:4-3-4-p_en: The adjective following a female baptismal name is not inflected, e.g., _Máire Mhór_ (*EN*: _Big Mary_), _teach Mháire Mhór_ (*EN*: _Big Mary's house_).
 
 :4-3-5-p_ga: Ní infhilltear an aidiacht ná ní dhéantar athrú tosaigh uirthi ar lorg dobhriathra nó aidiachtaí a úsáidtear mar dhobhriathra amhail _cuibheasach_, _sách_, _measartha_, _réasúnta_, etc.
-:4-3-5-p_en: The adjective is neither inflected nor does it undergo an initial mutation after adverbs or adjectives used as adverbs such as _cuibheasach_, _sách_, _measartha_, _réasúnta_, etc.
+:4-3-5-p_en: The adjective is neither inflected nor does it undergo an initial mutation after adverbs or adjectives used as adverbs such as _cuibheasach_ (*EN*: _fairly_), _sách_ (*EN*: _quite_), _measartha_ (*EN*: _moderately_), _réasúnta_ (*EN*: _relatively_), etc.
 
 :4-3-5-p-sample1_ga: Is bean *measartha saibhir* í.
 :4-3-5-p-sample1_en: She is a *moderately wealthy* woman.
@@ -203,7 +203,7 @@
 :4-3-6-p-sample3_en: They are not *very quiet* children.
 
 :4-3-7-p_ga: Ní infhilltear an aidiacht ná ní chuirtear séimhiú uirthi más cuid de fhrása aidiachtach ilfhoclach í, e.g., _athnuachan saor in aisce_; _tuarascáil cothrom le dáta_.
-:4-3-7-p_en: The adjective is neither inflected nor lenited if it is part of a multi-word adjectival phrase, e.g., _athnuachan saor in aisce_; _tuarascáil cothrom le dáta_.
+:4-3-7-p_en: The adjective is neither inflected nor lenited if it is part of a multi-word adjectival phrase, e.g., _athnuachan saor in aisce_ (*EN*: _free renewal_); _tuarascáil cothrom le dáta_ (*EN*: _up-to-date report_).
 
 :4-3-7-p-sample1_ga: Is bean *mór le rá* í i réimse na heolaíochta.
 :4-3-7-p-sample1_en: She is a *prominent* woman in the field of science.
@@ -239,7 +239,7 @@
 :4-4-1-a-i-p-sample3_en: He read the *renowned* player's book when it was published.
 
 :4-4-1-a-ii-p_ga: Ní dhéantar infhilleadh sa ghinideach uatha firinscneach ar aidiachtaí aonsiollacha a chríochnaíonn ar _-ch(t)_ (ach amháin _bocht_), e.g., _beacht_, _caoch_, _déach_, _fliuch_, _lách_, _moch_, _nocht_.
-:4-4-1-a-ii-p_en: Inflection is not done in the genitive singular masculine on monosyllabic adjectives ending in _-ch(t)_ (except _bocht_), e.g., _beacht_, _caoch_, _déach_, _fliuch_, _lách_, _moch_, _nocht_.
+:4-4-1-a-ii-p_en: Inflection is not done in the genitive singular masculine on monosyllabic adjectives ending in _-ch(t)_ (except _bocht_), e.g., _beacht_ (*EN*: _exact_), _caoch_ (*EN*: _blind_), _déach_ (*EN*: _dual_), _fliuch_ (*EN*: _wet_), _lách_ (*EN*: _pleasant_), _moch_ (*EN*: _early_), _nocht_ (*EN*: _naked_).
 
 :4-4-1-a-ii-p-sample1_ga: Bhí orthu an fhéile a chur ar siúl ag deireadh an tsamhraidh *fhliuch*.
 :4-4-1-a-ii-p-sample1_en: They had to hold the festival at the end of the *wet* summer.
@@ -260,7 +260,7 @@
 :4-4-1-a-iii-p-sample2_en: Everyone was in favor of the *industrial* campaign.
 
 :4-4-1-a-iv-p_ga: Ní dhéantar infhilleadh sa ghinideach uatha firinscneach ar aidiachtaí aonsiollacha a chríochnaíonn ar chonsan dúbailte (ach amháin _dall_, _donn_, _fionn_), e.g., _cearr_, _corr_, _gann_, _gearr_, _mall_, _teann_, _toll_.
-:4-4-1-a-iv-p_en: Inflection is not done in the genitive singular masculine on monosyllabic adjectives ending in double consonants (except _dall_, _donn_, _fionn_), e.g., _cearr_, _corr_, _gann_, _gearr_, _mall_, _teann_, _toll_.
+:4-4-1-a-iv-p_en: Inflection is not done in the genitive singular masculine on monosyllabic adjectives ending in double consonants (except _dall_ (*EN*: _blind_), _donn_ (*EN*: _brown_), _fionn_ (*EN*: _fair_)), e.g., _cearr_ (*EN*: _wrong_), _corr_ (*EN*: _odd_), _gann_ (*EN*: _scarce_), _gearr_ (*EN*: _short_), _mall_ (*EN*: _slow_), _teann_ (*EN*: _tight_), _toll_ (*EN*: _hollow_).
 
 :4-4-1-a-iv-p-sample1_ga: Tá praghas an bhia *ghann* ag ardú gach lá.
 :4-4-1-a-iv-p-sample1_en: The price of *scarce* food is rising every day.
@@ -272,7 +272,7 @@
 :4-4-1-a-iv-p-sample3_en: The smell of *brown* bread was all over the house.
 
 :4-4-1-a-v-p_ga: Ní dhéantar infhilleadh sa ghinideach uatha firinscneach ar na haidiachtaí aonsiollacha seo a leanas: _amh_, _cúng_, _deas_ (sa bhrí _cineálta_), _leamh_, _mear_, _seang_, _searbh_, _tearc_, _tiubh_, _trom_, _tur_.
-:4-4-1-a-v-p_en: Inflection is not done in the genitive singular masculine in these following monosyllabic adjectives: _amh_, _cúng_, _deas_ (meaning _cineálta_), _leamh_, _mear_, _seang_, _searbh_, _tearc_, _tiubh_, _trom_, _tur_.
+:4-4-1-a-v-p_en: Inflection is not done in the genitive singular masculine in these following monosyllabic adjectives: _amh_ (*EN*: _raw_), _cúng_ (*EN*: _narrow_), _deas_ (meaning _cineálta_ (*EN*: _kind/nice_)), _leamh_ (*EN*: _weak_), _mear_ (*EN*: _quick_), _seang_ (*EN*: _slim_), _searbh_ (*EN*: _bitter/sour_), _tearc_ (*EN*: _rare_), _tiubh_ (*EN*: _thick_), _trom_ (*EN*: _heavy_), _tur_ (*EN*: _dry_).
 
 :4-4-1-a-v-p-sample1_ga: Chuir sí ola ar dhoras an bhealaigh *chúng*.
 :4-4-1-a-v-p-sample1_en: She put oil on the door of the *narrow* way.
@@ -389,7 +389,7 @@
 :4-5-2-a-p-sample2_en: I read the *interesting* poems yesterday.
 
 :4-5-2-b-p_ga: Coimrítear _deacair_, _deacra_; _socair_, _socra_ sa ghinideach uatha agus san uimhir iolra.
-:4-5-2-b-p_en: _deacair_, _deacra_; _socair_, _socra_ are syncopated in the genitive singular and in the plural.
+:4-5-2-b-p_en: _deacair_ (*EN*: _difficult_), _deacra_ (*EN*: _difficult_); _socair_ (*EN*: _calm_), _socra_ (*EN*: _calm_) are syncopated in the genitive singular and in the plural.
 
 :4-6-title_ga: An Tríú Díochlaonadh
 :4-6-title_en: The Third Declension
@@ -501,8 +501,8 @@
 :4-8-1-b-p-sample3_ga: Cuirfear an córas is *uathoibríche* i bhfeidhm.
 :4-8-1-b-p-sample3_en: The most *automated* system will be put in place.
 
-:4-8-2-p_ga: Tá foirmeacha neamhrialta ar roinnt aidiachtaí, e.g., _eag_, _lú_; _dócha_, _dóichí_; _fada_, _faide (sia)_; _fogas_, _foisce_; _furasta_, _fusa_; _gearr_, _giorra_; _iomaí_, _lia_; _maith_, _fearr_; _mór_, _mó_; _olc_, _measa_; _te_, _teo_.
-:4-8-2-p_en: Some adjectives have irregular forms, e.g., _eag_, _lú_; _dócha_, _dóichí_; _fada_, _faide (sia)_; _fogas_, _foisce_; _furasta_, _fusa_; _gearr_, _giorra_; _iomaí_, _lia_; _maith_, _fearr_; _mór_, _mó_; _olc_, _measa_; _te_, _teo_.
+:4-8-2-p_ga: Tá foirmeacha neamhrialta ar roinnt aidiachtaí, e.g., _beag_, _lú_; _dócha_, _dóichí_; _fada_, _faide (sia)_; _fogas_, _foisce_; _furasta_, _fusa_; _gearr_, _giorra_; _iomaí_, _lia_; _maith_, _fearr_; _mór_, _mó_; _olc_, _measa_; _te_, _teo_.
+:4-8-2-p_en: Some adjectives have irregular forms, e.g., _beag_, _lú_ (*EN*: _small_, _smaller_); _dócha_, _dóichí_ (*EN*: _likely_, _more likely_); _fada_, _faide (sia)_ (*EN*: _long_, _longer_); _fogas_, _foisce_ (*EN*: _near_, _nearer_); _furasta_, _fusa_ (*EN*: _easy_, _easier_); _gearr_, _giorra_ (*EN*: _short_, _shorter_); _iomaí_, _lia_ (*EN*: _many_, _more_); _maith_, _fearr_ (*EN*: _good_, _better_); _mór_, _mó_ (*EN*: _big_, _bigger_); _olc_, _measa_ (*EN*: _bad_, _worse_); _te_, _teo_ (*EN*: _hot_, _hotter_).
 
 :4-8-2-p-sample1_ga: Is é Rónán an duine is *fearr* sa rang.
 :4-8-2-p-sample1_en: Rónán is the *best* person in the class.
@@ -517,10 +517,11 @@
 :4-8-3-title_en: Forms following _dá_ and _a_
 
 :4-8-3-a-p_ga: I ndiaidh _dá_ agus _a_, is cuma feidhm réamhthagrach nó feidhm iarthagrach a bheith acu, is gnách go n&#x2011;úsáidtear foirm is ionann agus foirm na breischéime den aidiacht nó foirm a dhíorthaíonn ón mbreischéim nó ón mbunchéim agus a chríochnaíonn ar _-cht_.
-:4-8-3-a-p_en: After _dá_ and _a_, regardless of whether they have a proleptic or anaphoric function, a form that is the same as the comparative form of the adjective or a form that derives from the comparative or the base form and ends in _-cht_ is usually used.
+:4-8-3-a-p_en: After _dá_ (*EN*: _however_) and _a_ (*EN*: _how_), regardless of whether they have a proleptic or anaphoric function, a form that is the same as the comparative form of the adjective or a form that derives from the comparative or the base form and ends in _-cht_ is usually used.
 
 :4-8-3-b-p_ga: Ní úsáidtear ach foirm amháin i gcás na n&#x2011;aidiachtaí seo a leanas: _dócha_, _dóichí_; _dona_, _donacht_; _furasta_, _fusacht_; _gearr_, _giorracht_; agus i gcás na leaganacha neamhrialta seo: _beag_, _laghad_; _fada_, _fad_; _iomaí_, _liacht_; _maith_, _feabhas_; _mór_, _méad/méid_; _olc_, _olcas_; _tiubh_, _tiús_.
-:4-8-3-b-p_en: Only one form is used for the following adjectives: _dócha_, _dóichí_; _dona_, _donacht_; _furasta_, _fusacht_; _gearr_, _giorracht_; and for these irregular forms: _beag_, _laghad_; _fada_, _fad_; _iomaí_, _liacht_; _maith_, _feabhas_; _mór_, _méad/méid_; _olc_, _olcas_; _tiubh_, _tiús_. (_Translation note_: These are abstract nouns. e.g., _beag_ (_small_) → _laghad_ (_smallness_))
+// Only one translation since they are preceded by "how/however"
+:4-8-3-b-p_en: Only one form is used for the following adjectives: _dócha_, _dóichí_ (*EN*: _likely_); _dona_, _donacht_ (*EN*: _bad_); _furasta_, _fusacht_ (*EN*: _easy_); _gearr_, _giorracht_ (*EN*: _short_); and for these irregular forms: _beag_, _laghad_ (*EN*: _small_); _fada_, _fad_ (*EN*: _long_); _iomaí_, _liacht_ (*EN*: _many_); _maith_, _feabhas_ (*EN*: _good_); _mór_, _méad/méid_ (*EN*: _big_); _olc_, _olcas_ (*EN*: _bad_); _tiubh_, _tiús_ (*EN*: _thick_).
 
 :4-8-3-c-p_ga: Úsáidtear _méid_ seachas _méad_ i gcásanna áirithe, e.g., _dá mhéad airgead a bhí aici_ ach _a mhéid is indéanta le réasún_; _a mhéid is gá_.
 :4-8-3-c-p_en: _méid_ is used instead of _méad_ in certain contexts, e.g., _dá mhéad airgead a bhí aici_ but _a mhéid is indéanta le réasún_; _a mhéid is gá_.
@@ -547,13 +548,13 @@
 :4-9-title_en: The Possessive Adjective
 
 :4-9-p_ga: De bhrí go bhfeidhmíonn na haidiachtaí sealbhacha, _mo_, _do_, _a_ (firinscneach agus baininscneach uatha), _ár_, _bhur_ agus _a_ (iolra) mar fhorainmneacha sa ghinideach, déantar trácht orthu i link:./chapter8.html[gCaibidil 8].
-:4-9-p_en: Because the possessive adjectives, _mo_, _do_, _a_ (masculine and feminine singular), _ár_, _bhur_ and _a_ (plural) function as pronominals in the genitive, they are discussed in link:./chapter8.html[Chapter 8].
+:4-9-p_en: Because the possessive adjectives, _mo_ (*EN*: _my_), _do_ (*EN*: _your_), _a_ (masculine and feminine singular) (*EN*: _his/her_), _ár_ (*EN*: _our_), _bhur_ (*EN*: _your_), and _a_ (plural) (*EN*: _their_) function as pronominals in the genitive, they are discussed in link:./chapter8.html[Chapter 8].
 
 :4-10-title_ga: An Aidiacht Thaispeántach
 :4-10-title_en: The Demonstrative Adjective
 
 :4-10-p_ga: Is iad _seo_, _sin_, _siúd_ agus _úd_ na haidiachtaí taispeántacha. (Cé gur forainmnigh thaispeántacha iad _seo_, _sin_ agus _siúd_, is minic a dhéantar tagairt dóibh mar aidiachtaí taispeántacha.)
-:4-10-p_en: The demonstrative adjectives are _seo_, _sin_, _siúd_ and _úd_. (Although _seo_, _sin_ and _siúd_ are demonstrative pronominals, they are often referred to as demonstrative adjectives.)
+:4-10-p_en: The demonstrative adjectives are _seo_ (*EN*: _this_), _sin_ (*EN*: _that_), _siúd_ (*EN*: _that over there_) and _úd_ (*EN*: _that over there_). (Although _seo_, _sin_ and _siúd_ are demonstrative pronominals, they are often referred to as demonstrative adjectives.)
 
 :4-10-p-sample1_ga: Tá an fear *seo* tinn.
 :4-10-p-sample1_en: *This* man is sick.
@@ -583,7 +584,7 @@
 :4-11-title_en: The Predicative Adjective
 
 :4-11-p_ga: Is aidiacht fhaisnéiseach aidiacht atá ag cáiliú an ainmní mar fhaisnéis nó mar chuid den fhaisnéis, e.g., _Nach deas é?_; _Tá an aimsir fuar_. Ní dhéantar an aidiacht fhaisnéiseach a infhilleadh ná ní chuirtear séimhiú uirthi.
-:4-11-p_en: An predicative adjective is an adjective that qualifies the noun as predicate or as part of a predicate, e.g., _Nach deas é?_; _Tá an aimsir fuar_. The predicative adjective is not inflected or lenited.
+:4-11-p_en: An predicative adjective is an adjective that qualifies the noun as predicate or as part of a predicate, e.g., _Nach deas é?_ (*EN*: _Isn't it nice?_) ; _Tá an aimsir fuar_ (*EN*: _The weather is cold_). The predicative adjective is not inflected or lenited.
 
 :4-11-p-sample1_ga: Bhí an traein *folamh*.
 :4-11-p-sample1_en: The train was *empty*.
@@ -604,13 +605,13 @@
 :4-12-1-p_en: The verbal adjective functions as a regular adjective. The verbal adjective is used --
 
 :4-12-1-a-p_ga: mar aidiacht cháilíochta, e.g., _Is bean phósta í_;
-:4-12-1-a-p_en: as a qualifying adjective, e.g., _Is bean phósta í_;
+:4-12-1-a-p_en: as a qualifying adjective, e.g., _Is bean phósta í_ (*EN*: _She is a married woman_);
 
 :4-12-1-b-p_ga: mar aidiacht fhaisnéiseach ar lorg na copaile, e.g., _Ní briste atá sé_;
-:4-12-1-b-p_en: as a predicative adjective following the copula, e.g., _Ní briste atá sé_;
+:4-12-1-b-p_en: as a predicative adjective following the copula, e.g., _Ní briste atá sé_ (*EN*: _It is not broken_);
 
 :4-12-1-c-p_ga: mar aidiacht fhaisnéiseach ar lorg an bhriathair _bí_ ag léiriú staid an chuspóra tar éis an ghnímh, e.g., _Is í atá tugtha don obair_;
-:4-12-1-c-p_en: as a predicative adjective following the verb _bí_ indicating the state of the object after the action, e.g., _Is í atá tugtha don obair_;
+:4-12-1-c-p_en: as a predicative adjective following the verb _bí_ indicating the state of the object after the action, e.g., _Is í atá tugtha don obair_ (*EN*: _It is what has been given to the work_);
 
 :4-12-1-d-p_ga: mar aidiacht fhaisnéiseach ar lorg an bhriathair _bí_ ag léiriú staid an ghníomhaí tar éis an ghnímh, e.g., _Táimid beirthe go maith leis an socrú sin_.
-:4-12-1-d-p_en: as a predicative adjective following the verb _bí_ indicating the state of the agent after the action, e.g., _Táimid beirthe go maith leis an socrú sin_.
+:4-12-1-d-p_en: as a predicative adjective following the verb _bí_ indicating the state of the agent after the action, e.g., _Táimid beirthe go maith leis an socrú sin_ (*EN*: _We have succeeded well with that arrangement_).
