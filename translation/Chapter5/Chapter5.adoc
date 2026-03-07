@@ -136,7 +136,8 @@ fágaimis
   </caption>
   <tbody>
     <tr>
-      <th class="primary-header">Mol</th>
+ifdef::isGa[<th class="primary-header">Mol</th>]
+ifndef::isGa[<th class="primary-header">Mol ({briathar-Mol})</th>]
     </tr>
     <tr>
       <td>
@@ -296,7 +297,8 @@ fágaimis
   </caption>
   <tbody>
     <tr>
-      <th class="primary-header">Bris</th>
+ifdef::isGa[<th class="primary-header">Bris</th>]
+ifndef::isGa[<th class="primary-header">Bris ({briathar-Bris})</th>]
     </tr>
     <tr>
       <td>
@@ -535,7 +537,8 @@ fágaimis
   </caption>
   <tbody>
     <tr>
-      <th class="primary-header">Sábháil</th>
+ifdef::isGa[<th class="primary-header">Sábháil</th>]
+ifndef::isGa[<th class="primary-header">Sábháil ({briathar-Sábháil})</th>]
     </tr>
     <tr>
       <td>
@@ -634,7 +637,8 @@ fágaimis
   </caption>
   <tbody>
     <tr>
-      <th class="primary-header">Tíolaic</th>
+ifdef::isGa[<th class="primary-header">Tíolaic</th>]
+ifndef::isGa[<th class="primary-header">Tíolaic ({briathar-Tíolaic})</th>]
     </tr>
     <tr>
       <td>
@@ -734,6 +738,7 @@ fágaimis
     <th>{5-2-2-tables-col2}</th>
     <th>{5-2-2-tables-col3}</th>
     <th>{5-2-2-tables-col4}</th>
+ifndef::isGa[<th>{SaBhrí-title}</th>]
   </tr></thead>
 <tbody>
   <tr>
@@ -741,24 +746,28 @@ fágaimis
     <td>bácálaim</td>
     <td>bácáil</td>
     <td>bácáilte</td>
+ifndef::isGa[<td>{briathar-bácáil}</td>]
   </tr>
   <tr>
     <td>cóipeáil</td>
     <td>cóipeálaim</td>
     <td>cóipeáil</td>
     <td>cóipeáilte</td>
+ifndef::isGa[<td>{briathar-cóipeáil}</td>]
   </tr>
   <tr>
     <td>nótáil</td>
     <td>nótálaim</td>
     <td>nótáil</td>
     <td>nótáilte</td>
+ifndef::isGa[<td>{briathar-nótáil}</td>]
   </tr>
   <tr>
     <td>péinteáil</td>
     <td>péinteálaim</td>
     <td>péinteáil</td>
     <td>péinteáilte</td>
+ifndef::isGa[<td>{briathar-péinteáil}</td>]
   </tr>
 </tbody>
 </table>
@@ -774,6 +783,7 @@ fágaimis
     <th>{5-2-2-tables-col2}</th>
     <th>{5-2-2-tables-col3}</th>
     <th>{5-2-2-tables-col4}</th>
+ifndef::isGa[<th>{SaBhrí-title}</th>]
   </tr></thead>
 <tbody>
   <tr>
@@ -781,30 +791,35 @@ fágaimis
     <td>adhraim</td>
     <td>adhradh</td>
     <td>adhartha</td>
+ifndef::isGa[<td>{briathar-adhair}</td>]
   </tr>
   <tr>
     <td>adhlaic</td>
     <td>adhlacaim</td>
     <td>adhlacadh</td>
     <td>adhlactha</td>
+ifndef::isGa[<td>{briathar-adhlaic}</td>]
   </tr>
   <tr>
     <td>ceiliúir</td>
     <td>ceiliúraim</td>
     <td>ceiliúradh</td>
     <td>ceiliúrtha</td>
+ifndef::isGa[<td>{briathar-ceiliúir}</td>]
   </tr>
   <tr>
     <td>seachaid</td>
     <td>seachadaim</td>
     <td>seachadadh</td>
     <td>seachadta</td>
+ifndef::isGa[<td>{briathar-seachaid}</td>]
   </tr>
   <tr>
     <td>tionóil</td>
     <td>tionólaim</td>
     <td>tionól</td>
     <td>tionólta</td>
+ifndef::isGa[<td>{briathar-tionóil}</td>]
   </tr>
 </tbody>
 </table>
@@ -820,6 +835,7 @@ fágaimis
     <th>{5-2-2-tables-col2}</th>
     <th>{5-2-2-tables-col3}</th>
     <th>{5-2-2-tables-col4}</th>
+ifndef::isGa[<th>{SaBhrí-title}</th>]
   </tr></thead>
 <tbody>
   <tr>
@@ -827,12 +843,14 @@ fágaimis
     <td>toirmiscim</td> 
     <td>toirmeasc</td> 
     <td>toirmiscthe</td>
+ifndef::isGa[<td>{briathar-toirmisc}</td>]
   </tr>
   <tr>
     <td>tiomáin</td> 
     <td>tiomáinim</td> 
     <td>tiomáint</td> 
     <td>tiomáinte</td>
+ifndef::isGa[<td>{briathar-tiomáin}</td>]
   </tr>
 </tbody>
 </table>
@@ -848,6 +866,7 @@ fágaimis
     <th>{5-2-2-tables-col2}</th>
     <th>{5-2-2-tables-col3}</th>
     <th>{5-2-2-tables-col4}</th>
+ifndef::isGa[<th>{SaBhrí-title}</th>]
   </tr></thead>
 <tbody>
   <tr>
@@ -855,12 +874,14 @@ fágaimis
     <td>coimeádaim</td> 
     <td>coimeád</td> 
     <td>coimeádta</td>
+ifndef::isGa[<td>{briathar-coimeád}</td>]
   </tr>
   <tr>
     <td>gearán</td> 
     <td>gearánaim</td> 
     <td>gearán</td> 
     <td>gearánta</td>
+ifndef::isGa[<td>{briathar-gearán}</td>]
   </tr>
 </tbody>
 </table>
@@ -881,7 +902,8 @@ fágaimis
   </caption>
   <tbody>
     <tr>
-      <th class="primary-header">Cráigh</th>
+ifdef::isGa[<th class="primary-header">Cráigh</th>]
+ifndef::isGa[<th class="primary-header">Cráigh ({briathar-Cráigh})</th>]
     </tr>
     <tr>
       <td>
@@ -980,7 +1002,8 @@ fágaimis
   </caption>
   <tbody>
     <tr>
-      <th class="primary-header">Dóigh</th>
+ifdef::isGa[<th class="primary-header">Dóigh</th>]
+ifndef::isGa[<th class="primary-header">Dóigh ({briathar-Dóigh})</th>]
     </tr>
     <tr>
       <td>
@@ -1080,22 +1103,65 @@ fágaimis
     <th>{5-2-2-tables-col2}</th>
     <th>{5-2-2-tables-col3}</th>
     <th>{5-2-2-tables-col4}</th>
+ifndef::isGa[<th>{SaBhrí-title}</th>]
   </tr></thead>
 <tbody>
-  <tr><td>báigh</td><td>báim</td><td>bá</td><td>báite</td></tr>
-  <tr><td>cneáigh</td><td>cneáim</td><td>cneá</td><td>cneáite</td></tr>
-  <tr><td>meáigh</td><td>meáim</td><td>meá</td><td>meáite</td></tr>
-  <tr><td>leáigh</td><td>leáim</td><td>leá</td><td>leáite</td></tr>
-  <tr><td>clóigh</td><td>clóim</td><td>cló</td><td>clóite</td></tr>
-  <tr><td>breoigh</td><td>breoim</td><td>breo</td><td>breoite</td></tr>
-  <tr><td>dreoigh</td><td>dreoim</td><td>dreo</td><td>dreoite</td></tr>
-  <tr><td>feoigh</td><td>feoim</td><td>feo</td><td>feoite</td></tr>
-  <tr><td>reoigh</td><td>reoim</td><td>reo</td><td>reoite</td></tr>
-  <tr><td>brúigh</td><td>brúim</td><td>brú</td><td>brúite</td></tr>
-  <tr><td>crúigh</td><td>crúim</td><td>crú</td><td>crúite</td></tr>
-  <tr><td>liúigh</td><td>liúim</td><td>liú</td><td>liúite</td></tr>
-  <tr><td>súigh</td><td>súim</td><td>sú</td><td>súite</td></tr>
-  <tr><td>luaigh</td><td>luaim</td><td>lua</td><td>luaite</td></tr>
+  <tr>
+    <td>báigh</td><td>báim</td><td>bá</td><td>báite</td>
+ifndef::isGa[<td>{briathar-báigh}</td>]
+  </tr>
+  <tr>
+    <td>cneáigh</td><td>cneáim</td><td>cneá</td><td>cneáite</td>
+ifndef::isGa[<td>{briathar-cneáigh}</td>]
+  </tr>
+  <tr>
+    <td>meáigh</td><td>meáim</td><td>meá</td><td>meáite</td>
+ifndef::isGa[<td>{briathar-meáigh}</td>]
+  </tr>
+  <tr>
+    <td>leáigh</td><td>leáim</td><td>leá</td><td>leáite</td>
+ifndef::isGa[<td>{briathar-leáigh}</td>]
+  </tr>
+  <tr>
+    <td>clóigh</td><td>clóim</td><td>cló</td><td>clóite</td>
+ifndef::isGa[<td>{briathar-clóigh}</td>]
+  </tr>
+  <tr>
+    <td>breoigh</td><td>breoim</td><td>breo</td><td>breoite</td>
+ifndef::isGa[<td>{briathar-breoigh}</td>]
+  </tr>
+  <tr>
+    <td>dreoigh</td><td>dreoim</td><td>dreo</td><td>dreoite</td>
+ifndef::isGa[<td>{briathar-dreoigh}</td>]
+  </tr>
+  <tr>
+    <td>feoigh</td><td>feoim</td><td>feo</td><td>feoite</td>
+ifndef::isGa[<td>{briathar-feoigh}</td>]
+  </tr>
+  <tr>
+    <td>reoigh</td><td>reoim</td><td>reo</td><td>reoite</td>
+ifndef::isGa[<td>{briathar-reoigh}</td>]
+  </tr>
+  <tr>
+    <td>brúigh</td><td>brúim</td><td>brú</td><td>brúite</td>
+ifndef::isGa[<td>{briathar-brúigh}</td>]
+  </tr>
+  <tr>
+    <td>crúigh</td><td>crúim</td><td>crú</td><td>crúite</td>
+ifndef::isGa[<td>{briathar-crúigh}</td>]
+  </tr>
+  <tr>
+    <td>liúigh</td><td>liúim</td><td>liú</td><td>liúite</td>
+ifndef::isGa[<td>{briathar-liúigh}</td>]
+  </tr>
+  <tr>
+    <td>súigh</td><td>súim</td><td>sú</td><td>súite</td>
+ifndef::isGa[<td>{briathar-súigh}</td>]
+  </tr>
+  <tr>
+    <td>luaigh</td><td>luaim</td><td>lua</td><td>luaite</td>
+ifndef::isGa[<td>{briathar-luaigh}</td>]
+  </tr>
 </tbody>
 </table>
 ++++
@@ -1110,14 +1176,33 @@ fágaimis
     <th>{5-2-2-tables-col2}</th>
     <th>{5-2-2-tables-col3}</th>
     <th>{5-2-2-tables-col4}</th>
+ifndef::isGa[<th>{SaBhrí-title}</th>]
   </tr></thead>
 <tbody>
-  <tr><td>beoigh</td><td>beoim</td><td>beochan</td><td>beoite</td></tr>
-  <tr><td>buaigh</td><td>buaim</td><td>buachan</td><td>buaite</td></tr>
-  <tr><td>cruaigh</td><td>cruaim</td><td>cruachan</td><td>cruaite</td></tr>
-  <tr><td>fuaigh</td><td>fuaim</td><td>fuáil</td><td>fuaite</td></tr>
-  <tr><td>glaoigh</td><td>glaoim</td><td>glaoch</td><td>glaoite</td></tr>
-  <tr><td>iaigh</td><td>iaim</td><td>iamh</td><td>iata</td></tr>
+  <tr>
+    <td>beoigh</td><td>beoim</td><td>beochan</td><td>beoite</td>
+ifndef::isGa[<td>{briathar-beoigh}</td>]
+  </tr>
+  <tr>
+    <td>buaigh</td><td>buaim</td><td>buachan</td><td>buaite</td>
+ifndef::isGa[<td>{briathar-buaigh}</td>]
+  </tr>
+  <tr>
+    <td>cruaigh</td><td>cruaim</td><td>cruachan</td><td>cruaite</td>
+ifndef::isGa[<td>{briathar-cruaigh}</td>]
+  </tr>
+  <tr>
+    <td>fuaigh</td><td>fuaim</td><td>fuáil</td><td>fuaite</td>
+ifndef::isGa[<td>{briathar-fuaigh}</td>]
+  </tr>
+  <tr>
+    <td>glaoigh</td><td>glaoim</td><td>glaoch</td><td>glaoite</td>
+ifndef::isGa[<td>{briathar-glaoigh}</td>]
+  </tr>
+  <tr>
+    <td>iaigh</td><td>iaim</td><td>iamh</td><td>iata</td>
+ifndef::isGa[<td>{briathar-iaigh}</td>]
+  </tr>
 </tbody>
 </table>
 ++++
@@ -1134,7 +1219,8 @@ fágaimis
   </caption>
   <tbody>
     <tr>
-      <th class="primary-header">Léigh</th>
+ifdef::isGa[<th class="primary-header">Léigh</th>]
+ifndef::isGa[<th class="primary-header">Léigh ({briathar-Léigh})</th>]
     </tr>
     <tr>
       <td>
@@ -1231,7 +1317,8 @@ fágaimis
   </caption>
   <tbody>
     <tr>
-      <th class="primary-header">Nigh</th>
+ifdef::isGa[<th class="primary-header">Nigh</th>]
+ifndef::isGa[<th class="primary-header">Nigh ({briathar-Nigh})</th>]
     </tr>
     <tr>
       <td>
@@ -1331,15 +1418,37 @@ fágaimis
     <th>{5-2-2-tables-col2}</th>
     <th>{5-2-2-tables-col3}</th>
     <th>{5-2-2-tables-col4}</th>
+ifndef::isGa[<th>{SaBhrí-title}</th>]
   </tr></thead>
 <tbody>
-  <tr><td>éigh</td><td>éim</td><td>éamh</td><td>éite</td></tr>
-  <tr><td>téigh ({saBhrí} <em>teas</em>)</td><td>téim</td><td>téamh</td><td>téite</td></tr>
-  <tr><td>pléigh</td><td>pléim</td><td>plé</td><td>pléite</td></tr>
-  <tr><td>spréigh</td><td>spréim</td><td>spré</td><td>spréite</td></tr>
-  <tr><td>caígh</td><td>caím</td><td>caí</td><td>caíte</td></tr>
-  <tr><td>cloígh</td><td>cloím</td><td>cloí</td><td>cloíte</td></tr>
-  <tr><td>cnaígh</td><td>cnaím</td><td>cnaí</td><td>cnaíte</td></tr>
+  <tr>
+    <td>éigh</td><td>éim</td><td>éamh</td><td>éite</td>
+ifndef::isGa[<td>{briathar-éigh}</td>]
+  </tr>
+  <tr>
+    <td>téigh ({saBhrí} <em>teas</em>)</td><td>téim</td><td>téamh</td><td>téite</td>
+ifndef::isGa[<td>{briathar-téigh}</td>]
+  </tr>
+  <tr>
+    <td>pléigh</td><td>pléim</td><td>plé</td><td>pléite</td>
+ifndef::isGa[<td>{briathar-pléigh}</td>]
+  </tr>
+  <tr>
+    <td>spréigh</td><td>spréim</td><td>spré</td><td>spréite</td>
+ifndef::isGa[<td>{briathar-spréigh}</td>]
+  </tr>
+  <tr>
+    <td>caígh</td><td>caím</td><td>caí</td><td>caíte</td>
+ifndef::isGa[<td>{briathar-caígh}</td>]
+  </tr>
+  <tr>
+    <td>cloígh</td><td>cloím</td><td>cloí</td><td>cloíte</td>
+ifndef::isGa[<td>{briathar-cloígh}</td>]
+  </tr>
+  <tr>
+    <td>cnaígh</td><td>cnaím</td><td>cnaí</td><td>cnaíte</td>
+ifndef::isGa[<td>{briathar-cnaígh}</td>]
+  </tr>
 </tbody>
 </table>
 ++++
@@ -1354,16 +1463,41 @@ fágaimis
     <th>{5-2-2-tables-col2}</th>
     <th>{5-2-2-tables-col3}</th>
     <th>{5-2-2-tables-col4}</th>
+ifndef::isGa[<th>{SaBhrí-title}</th>]
   </tr></thead>
 <tbody>
-  <tr><td>dligh</td><td>dlím</td><td>dlí</td><td>dlite</td></tr>
-  <tr><td>figh</td><td>fím</td><td>fí</td><td>fite</td></tr>
-  <tr><td>guigh</td><td>guím</td><td>guí</td><td>guite</td></tr>
-  <tr><td>ligh</td><td>lím</td><td>lí</td><td>lite</td></tr>
-  <tr><td>luigh</td><td>luím</td><td>luí</td><td>luite</td></tr>
-  <tr><td>snigh</td><td>sním</td><td>sní</td><td>snite</td></tr>
-  <tr></tr>
-  <tr><td>suigh</td><td>suím</td><td>suí</td><td>suite</td></tr>
+  <tr>
+    <td>dligh</td><td>dlím</td><td>dlí</td><td>dlite</td>
+ifndef::isGa[<td>{briathar-dligh}</td>]
+  </tr>
+  <tr>
+    <td>figh</td><td>fím</td><td>fí</td><td>fite</td>
+ifndef::isGa[<td>{briathar-figh}</td>]
+  </tr>
+  <tr>
+    <td>guigh</td><td>guím</td><td>guí</td><td>guite</td>
+ifndef::isGa[<td>{briathar-guigh}</td>]
+  </tr>
+  <tr>
+    <td>ligh</td><td>lím</td><td>lí</td><td>lite</td>
+ifndef::isGa[<td>{briathar-ligh}</td>]
+  </tr>
+  <tr>
+    <td>luigh</td><td>luím</td><td>luí</td><td>luite</td>
+ifndef::isGa[<td>{briathar-luigh}</td>]
+  </tr>
+  <tr>
+    <td>snigh</td><td>sním</td><td>sní</td><td>snite</td>
+ifndef::isGa[<td>{briathar-snigh}</td>]
+  </tr>
+  <tr>
+    <td>snoigh</td><td>snoím</td><td>snoí</td><td>snoite</td>
+ifndef::isGa[<td>{briathar-snoigh}</td>]
+  </tr>
+  <tr>
+    <td>suigh</td><td>suím</td><td>suí</td><td>suite</td>
+ifndef::isGa[<td>{briathar-suigh}</td>]
+  </tr>
 </tbody>
 </table>
 ++++
@@ -1378,11 +1512,21 @@ fágaimis
     <th>{5-2-2-tables-col2}</th>
     <th>{5-2-2-tables-col3}</th>
     <th>{5-2-2-tables-col4}</th>
+ifndef::isGa[<th>{SaBhrí-title}</th>]
   </tr></thead>
 <tbody>
-  <tr><td>bligh</td><td>blím</td><td>bleán</td><td>blite</td></tr>
-  <tr><td>buígh</td><td>buím</td><td>buíochan</td><td>buíte</td></tr>
-  <tr><td>righ</td><td>rím</td><td>ríochan</td><td>rite</td></tr>
+  <tr>
+    <td>bligh</td><td>blím</td><td>bleán</td><td>blite</td>
+ifndef::isGa[<td>{briathar-bligh}</td>]
+  </tr>
+  <tr>
+    <td>buígh</td><td>buím</td><td>buíochan</td><td>buíte</td>
+ifndef::isGa[<td>{briathar-buígh}</td>]
+  </tr>
+  <tr>
+    <td>righ</td><td>rím</td><td>ríochan</td><td>rite</td>
+ifndef::isGa[<td>{briathar-righ}</td>]
+  </tr>
 </tbody>
 </table>
 ++++
@@ -1401,7 +1545,8 @@ fágaimis
   </caption>
   <tbody>
     <tr>
-      <th class="primary-header">Beannaigh</th>
+ifdef::isGa[<th class="primary-header">Beannaigh</th>]
+ifndef::isGa[<th class="primary-header">Beannaigh ({briathar-Beannaigh})</th>]
     </tr>
     <tr>
       <td>
@@ -1498,7 +1643,8 @@ fágaimis
   </caption>
   <tbody>
     <tr>
-      <th class="primary-header">Cruinnigh</th>
+ifdef::isGa[<th class="primary-header">Cruinnigh</th>]
+ifndef::isGa[<th class="primary-header">Cruinnigh ({briathar-Cruinnigh})</th>]
     </tr>
     <tr>
       <td>
@@ -1796,13 +1942,29 @@ fágaimis
     <th>{5-2-2-tables-col2}</th>
     <th>{5-2-2-tables-col3}</th>
     <th>{5-2-2-tables-col4}</th>
+ifndef::isGa[<th>{SaBhrí-title}</th>]
   </tr></thead>
 <tbody>
-  <tr><td>codail</td><td>codlaím</td><td>codladh</td><td>codalta</td></tr>
-  <tr><td>fógair</td><td>fógraím</td><td>fógairt</td><td>fógartha</td></tr>
-  <tr><td>labhair</td><td>labhraím</td><td>labhairt</td><td>labhartha</td></tr>
-  <tr><td>oscail</td><td>osclaím</td><td>oscailt</td><td>oscailte</td></tr>
-  <tr><td>tionscain</td><td>tionscnaím</td><td>tionscnamh</td><td>tionscanta</td></tr>
+  <tr>
+    <td>codail</td><td>codlaím</td><td>codladh</td><td>codalta</td>
+ifndef::isGa[<td>{briathar-codail}</td>]
+  </tr>
+  <tr>
+    <td>fógair</td><td>fógraím</td><td>fógairt</td><td>fógartha</td>
+ifndef::isGa[<td>{briathar-fógair}</td>]
+  </tr>
+  <tr>
+    <td>labhair</td><td>labhraím</td><td>labhairt</td><td>labhartha</td>
+ifndef::isGa[<td>{briathar-labhair}</td>]
+  </tr>
+  <tr>
+    <td>oscail</td><td>osclaím</td><td>oscailt</td><td>oscailte</td>
+ifndef::isGa[<td>{briathar-oscail}</td>]
+  </tr>
+  <tr>
+    <td>tionscain</td><td>tionscnaím</td><td>tionscnamh</td><td>tionscanta</td>
+ifndef::isGa[<td>{briathar-tionscain}</td>]
+  </tr>
 </tbody>
 </table>
 ++++
@@ -1817,12 +1979,25 @@ fágaimis
     <th>{5-2-2-tables-col2}</th>
     <th>{5-2-2-tables-col3}</th>
     <th>{5-2-2-tables-col4}</th>
+ifndef::isGa[<th>{SaBhrí-title}</th>]
   </tr></thead>
 <tbody>
-  <tr><td>aithin</td><td>aithním</td><td>aithint</td><td>aitheanta</td></tr>
-  <tr><td>eitil</td><td>eitlím</td><td>eitilt</td><td>eitilte</td></tr>
-  <tr><td>imir</td><td>imrím</td><td>imirt</td><td>imeartha</td></tr>
-  <tr><td>inis</td><td>insím</td><td>insint</td><td>inste</td></tr>
+  <tr>
+    <td>aithin</td><td>aithním</td><td>aithint</td><td>aitheanta</td>
+ifndef::isGa[<td>{briathar-aithin}</td>]
+  </tr>
+  <tr>
+    <td>eitil</td><td>eitlím</td><td>eitilt</td><td>eitilte</td>
+ifndef::isGa[<td>{briathar-eitil}</td>]
+  </tr>
+  <tr>
+    <td>imir</td><td>imrím</td><td>imirt</td><td>imeartha</td>
+ifndef::isGa[<td>{briathar-imir}</td>]
+  </tr>
+  <tr>
+    <td>inis</td><td>insím</td><td>insint</td><td>inste</td>
+ifndef::isGa[<td>{briathar-inis}</td>]
+  </tr>
 </tbody>
 </table>
 ++++
@@ -1840,12 +2015,25 @@ fágaimis
     <th>{5-2-2-tables-col2}</th>
     <th>{5-2-2-tables-col3}</th>
     <th>{5-2-2-tables-col4}</th>
+ifndef::isGa[<th>{SaBhrí-title}</th>]
   </tr></thead>
 <tbody>
-  <tr><td>foghlaim</td><td>foghlaimím</td><td>foghlaim</td><td>foghlamtha</td></tr>
-  <tr><td>fulaing</td><td>fulaingím</td><td>fulaingt</td><td>fulaingthe</td></tr>
-  <tr><td>tarraing</td><td>tarraingím</td><td>tarraingt</td><td>tarraingthe</td></tr>
-  <tr><td>tuirling</td><td>tuirlingím</td><td>tuirlingt</td><td>tuirlingthe</td></tr>
+  <tr>
+    <td>foghlaim</td><td>foghlaimím</td><td>foghlaim</td><td>foghlamtha</td>
+ifndef::isGa[<td>{briathar-foghlaim}</td>]
+  </tr>
+  <tr>
+    <td>fulaing</td><td>fulaingím</td><td>fulaingt</td><td>fulaingthe</td>
+ifndef::isGa[<td>{briathar-fulaing}</td>]
+  </tr>
+  <tr>
+    <td>tarraing</td><td>tarraingím</td><td>tarraingt</td><td>tarraingthe</td>
+ifndef::isGa[<td>{briathar-tarraing}</td>]
+  </tr>
+  <tr>
+    <td>tuirling</td><td>tuirlingím</td><td>tuirlingt</td><td>tuirlingthe</td>
+ifndef::isGa[<td>{briathar-tuirling}</td>]
+  </tr>
 </tbody>
 </table>
 ++++
@@ -1860,11 +2048,21 @@ fágaimis
     <th>{5-2-2-tables-col2}</th>
     <th>{5-2-2-tables-col3}</th>
     <th>{5-2-2-tables-col4}</th>
+ifndef::isGa[<th>{SaBhrí-title}</th>]
   </tr></thead>
 <tbody>
-  <tr><td>aithris</td><td>aithrisím</td><td>aithris</td><td>aithriste</td></tr>
-  <tr><td>freastail</td><td>freastalaím</td><td>freastal</td><td>freastalta</td></tr>
-  <tr><td>taistil</td><td>taistealaím</td><td>taisteal</td><td>taistealta</td></tr>
+  <tr>
+    <td>aithris</td><td>aithrisím</td><td>aithris</td><td>aithriste</td>
+ifndef::isGa[<td>{briathar-aithris}</td>]
+  </tr>
+  <tr>
+    <td>freastail</td><td>freastalaím</td><td>freastal</td><td>freastalta</td>
+ifndef::isGa[<td>{briathar-freastail}</td>]
+  </tr>
+  <tr>
+    <td>taistil</td><td>taistealaím</td><td>taisteal</td><td>taistealta</td>
+ifndef::isGa[<td>{briathar-taistil}</td>]
+  </tr>
 </tbody>
 </table>
 ++++
@@ -1948,7 +2146,8 @@ endif::[]
   </caption>
   <tbody>
     <tr>
-      <th class="primary-header">Abair</th>
+ifdef::isGa[<th class="primary-header">Abair</th>]
+ifndef::isGa[<th class="primary-header">Abair ({briathar-Abair})</th>]
     </tr>
     <tr>
       <td>
@@ -2047,7 +2246,8 @@ endif::[]
   </caption>
   <tbody>
     <tr>
-      <th class="primary-header">Beir</th>
+ifdef::isGa[<th class="primary-header">Beir</th>]
+ifndef::isGa[<th class="primary-header">Beir ({briathar-Beir})</th>]
     </tr>
     <tr>
       <td>
@@ -2144,7 +2344,8 @@ endif::[]
   </caption>
   <tbody>
     <tr>
-      <th class="primary-header">Bí</th>
+ifdef::isGa[<th class="primary-header">Bí</th>]
+ifndef::isGa[<th class="primary-header">Bí ({briathar-Bí})</th>]
     </tr>
     <tr>
       <td>
@@ -2339,7 +2540,8 @@ endif::[]
   </caption>
   <tbody>
     <tr>
-      <th class="primary-header">Clois/Cluin</th>
+ifdef::isGa[<th class="primary-header">Clois/Cluin</th>]
+ifndef::isGa[<th class="primary-header">Clois/Cluin ({briathar-Clois})</th>]
     </tr>
     <tr>
       <td>
@@ -2436,7 +2638,8 @@ endif::[]
   </caption>
   <tbody>
     <tr>
-      <th class="primary-header">Déan</th>
+ifdef::isGa[<th class="primary-header">Déan</th>]
+ifndef::isGa[<th class="primary-header">Déan ({briathar-Déan})</th>]
     </tr>
     <tr>
       <td>
@@ -2580,7 +2783,8 @@ endif::[]
   </caption>
   <tbody>
     <tr>
-      <th class="primary-header">Faigh</th>
+ifdef::isGa[<th class="primary-header">Faigh</th>]
+ifndef::isGa[<th class="primary-header">Faigh ({briathar-Faigh})</th>]
     </tr>
     <tr>
       <td>
@@ -2727,7 +2931,8 @@ endif::[]
   </caption>
   <tbody>
     <tr>
-      <th class="primary-header">Feic</th>
+ifdef::isGa[<th class="primary-header">Feic</th>]
+ifndef::isGa[<th class="primary-header">Feic ({briathar-Feic})</th>]
     </tr>
     <tr>
       <td>
@@ -2872,7 +3077,8 @@ endif::[]
   </caption>
   <tbody>
     <tr>
-      <th class="primary-header">Ith</th>
+ifdef::isGa[<th class="primary-header">Ith</th>]
+ifndef::isGa[<th class="primary-header">Ith ({briathar-Ith})</th>]
     </tr>
     <tr>
       <td>
@@ -2970,7 +3176,8 @@ endif::[]
   </caption>
   <tbody>
     <tr>
-      <th class="primary-header">Tabhair</th>
+ifdef::isGa[<th class="primary-header">Tabhair</th>]
+ifndef::isGa[<th class="primary-header">Tabhair ({briathar-Tabhair})</th>]
     </tr>
     <tr>
       <td>
@@ -3067,7 +3274,8 @@ endif::[]
   </caption>
   <tbody>
     <tr>
-      <th class="primary-header">Tar</th>
+ifdef::isGa[<th class="primary-header">Tar</th>]
+ifndef::isGa[<th class="primary-header">Tar ({briathar-Tar})</th>]
     </tr>
     <tr>
       <td>
@@ -3164,7 +3372,8 @@ endif::[]
   </caption>
   <tbody>
     <tr>
-      <th class="primary-header">Téigh</th>
+ifdef::isGa[<th class="primary-header">Téigh</th>]
+ifndef::isGa[<th class="primary-header">Téigh ({briathar-Téigh})</th>]
     </tr>
     <tr>
       <td>

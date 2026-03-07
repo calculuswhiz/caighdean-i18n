@@ -5,11 +5,7 @@
     @apply p-1 max-w-[8.5in] mb-[50vh];
   }
 
-  a[target="_blank"] {
-    @apply after:content-['↗'] after:text-sm after:text-gray-500;
-  }
-
-  // In case anyone wants to print the document
+  /* In case anyone wants to print the document */
   @media print {
     footer,
     .toc-container,
@@ -23,6 +19,11 @@
 
   a {
     @apply text-blue-500 hover:underline;
+
+    /* Mainly for external links */
+    &[target="_blank"] {
+      @apply after:content-['↗'] after:text-sm after:text-gray-500;
+    }
   }
 
   p {

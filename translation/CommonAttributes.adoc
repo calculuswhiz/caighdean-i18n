@@ -55,6 +55,9 @@
 :saBhrí_ga: sa bhrí
 :saBhrí_en: meaning
 
+:SaBhrí-title_ga: Sa bhrí
+:SaBhrí-title_en: Meaning
+
 // Abbreviations
 
 :nod-u_ga: u.
