@@ -228,34 +228,82 @@ endif::[]
 +
 [.samplebox]
 [cols="2,1,5"]
+ifdef::isGa[]
 |===
-| go cúramach | -> | Tiomáin *níos cúramaí* amach anseo.
-| go hard | -> | Labhair *níos airde* feasta.
+| {6-2-a-SampleBox-eg1-left} | -> | {6-2-a-SampleBox-eg1-right}
+| {6-2-a-SampleBox-eg2-left} | -> | {6-2-a-SampleBox-eg2-right}
 |===
+endif::[]
+ifndef::isGa[]
+|===
+| {6-2-a-SampleBox-eg1-left_ga} +
+(_{6-2-a-SampleBox-eg1-left}_) | -> | {6-2-a-SampleBox-eg1-right_ga} +
+(_{6-2-a-SampleBox-eg1-right}_)
+| {6-2-a-SampleBox-eg2-left_ga} +
+(_{6-2-a-SampleBox-eg2-left}_) | -> | {6-2-a-SampleBox-eg2-right_ga} +
+(_{6-2-a-SampleBox-eg2-right}_)
+|===
+endif::[]
 . {6-2-b-p}
 +
 [.samplebox]
 [cols="2,1,5"]
+ifdef::isGa[]
 |===
-| go minic | -> | Níor scrúdaíodh an córas *minic go leor*.
-| go sciobtha | -> | Thiomáin sé *sciobtha go maith*.
+| {6-2-b-SampleBox-eg1-left} | -> | {6-2-b-SampleBox-eg1-right}
+| {6-2-b-SampleBox-eg2-left} | -> | {6-2-b-SampleBox-eg2-right}
 |===
+endif::[]
+ifndef::isGa[]
+|===
+| {6-2-b-SampleBox-eg1-left_ga} +
+(_{6-2-b-SampleBox-eg1-left}_) | -> | {6-2-b-SampleBox-eg1-right_ga} +
+(_{6-2-b-SampleBox-eg1-right}_)
+| {6-2-b-SampleBox-eg2-left_ga} +
+(_{6-2-b-SampleBox-eg2-left}_) | -> | {6-2-b-SampleBox-eg2-right_ga} +
+(_{6-2-b-SampleBox-eg2-right}_)
+|===
+endif::[]
 . {6-2-c-p}
 +
 [.samplebox]
 [cols="2,1,5"]
+ifdef::isGa[]
 |===
-| go réidh | -> | Déan *go deas réidh* anois é.
-| go flaithiúil | -> | Roinneadh an bia *go fial flaithiúil*.
+| {6-2-c-SampleBox-eg1-left} | -> | {6-2-c-SampleBox-eg1-right}
+| {6-2-c-SampleBox-eg2-left} | -> | {6-2-c-SampleBox-eg2-right}
 |===
+endif::[]
+ifndef::isGa[]
+|===
+| {6-2-c-SampleBox-eg1-left_ga} +
+(_{6-2-c-SampleBox-eg1-left}_) | -> | {6-2-c-SampleBox-eg1-right_ga} +
+(_{6-2-c-SampleBox-eg1-right}_)
+| {6-2-c-SampleBox-eg2-left_ga} +
+(_{6-2-c-SampleBox-eg2-left}_) | -> | {6-2-c-SampleBox-eg2-right_ga} +
+(_{6-2-c-SampleBox-eg2-right}_)
+|===
+endif::[]
 . {6-2-d-p}
 +
 [.samplebox]
 [cols="2,1,5"]
+ifdef::isGa[]
 |===
-| go dian | -> | D'oibrigh sé *cuibheasach dian*.
-| go maith | -> | D'imir sí *sách maith*.
+| {6-2-d-SampleBox-eg1-left} | -> | {6-2-d-SampleBox-eg1-right}
+| {6-2-d-SampleBox-eg2-left} | -> | {6-2-d-SampleBox-eg2-right}
 |===
+endif::[]
+ifndef::isGa[]
+|===
+| {6-2-d-SampleBox-eg1-left_ga} +
+(_{6-2-d-SampleBox-eg1-left}_) | -> | {6-2-d-SampleBox-eg1-right_ga} +
+(_{6-2-d-SampleBox-eg1-right}_)
+| {6-2-d-SampleBox-eg2-left_ga} +
+(_{6-2-d-SampleBox-eg2-left}_) | -> | {6-2-d-SampleBox-eg2-right_ga} +
+(_{6-2-d-SampleBox-eg2-right}_)
+|===
+endif::[]
 
 '''
 

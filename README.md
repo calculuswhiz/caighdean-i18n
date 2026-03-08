@@ -147,6 +147,9 @@ Some of these may appear in annotations and comments in the Asciidoc code.
 - FGB - Foclóir Gaeilge-Béarla, Ó Dónaill, 1977
 - Other sources may be mentioned inline directly
 
+# Tools
+- **FGB Lookup Bookmarklet** -- A bookmarklet that allows you to quickly look up words in FGB. Select a word, then click the bookmarket, and it will open a new tab pointed at the entry.
+
 # Team and Acknowledgements
 
 - First, all credits of the advisory staff and publishers can be viewed in the document itself. It is a part of the translated document.
