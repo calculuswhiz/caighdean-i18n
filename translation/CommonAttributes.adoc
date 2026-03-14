@@ -68,3 +68,6 @@
 
 :nod-sb_ga: sb.
 :nod-sb_en: aut.
+
+:nó_ga: nó
+:nó_en: or

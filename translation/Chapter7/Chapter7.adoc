@@ -261,8 +261,20 @@ endif::[]
     <th>is</th>
     <td>
         <ul>
-            <li><strong>Is</strong> talamh maith anois é.</li>
-            <li>Ealaíontóir maith <strong>is</strong> ea ise.</li>
+            <li>
+ifdef::isGa[{Table7A-example1}]
+ifndef::isGa[]
+            {Table7A-example1_ga} <br />
+            ({Table7A-example1})
+endif::[]
+            </li>
+            <li>
+ifdef::isGa[{Table7A-example2}]
+ifndef::isGa[]
+            {Table7A-example2_ga} <br />
+            ({Table7A-example2})
+endif::[]
+            </li>
         </ul>
     </td>
   </tr>
@@ -271,8 +283,20 @@ endif::[]
     <th>ní</th>
     <td>
         <ul>
-            <li><strong>Ní</strong> bia bainne is <strong>ní</strong> bainne bláthach.</li>
-            <li><strong>Ní</strong> hé a d'inis an bhréag sin.</li>
+            <li>
+ifdef::isGa[{Table7A-example3}]
+ifndef::isGa[]
+            {Table7A-example3_ga} <br />
+            ({Table7A-example3})
+endif::[]
+            </li>
+            <li>
+ifdef::isGa[{Table7A-example4}]
+ifndef::isGa[]
+            {Table7A-example4_ga} <br />
+            ({Table7A-example4})
+endif::[]
+            </li>
         </ul>
     </td>
   </tr>
@@ -281,8 +305,20 @@ endif::[]
     <th>an</th>
     <td>
         <ul>
-            <li><strong>An</strong> í Bríd an múinteoir?</li>
-            <li><strong>An</strong> fada go dtiocfaidh sé?</li>
+            <li>
+ifdef::isGa[{Table7A-example5}]
+ifndef::isGa[]
+            {Table7A-example5_ga} <br />
+            ({Table7A-example5})
+endif::[]
+            </li>
+            <li>
+ifdef::isGa[{Table7A-example6}]
+ifndef::isGa[]
+            {Table7A-example6_ga} <br />
+            ({Table7A-example6})
+endif::[]
+            </li>
         </ul>
     </td>
   </tr>
@@ -291,8 +327,20 @@ endif::[]
     <th>nach</th>
     <td>
         <ul>
-            <li><strong>Nach</strong> (é) Seán atá ina mhúinteoir?</li>
-            <li><strong>Nach</strong> (í) Siobhán a bheidh ann amárach?</li>
+            <li>
+ifdef::isGa[{Table7A-example7}]
+ifndef::isGa[]
+            {Table7A-example7_ga} <br />
+            ({Table7A-example7})
+endif::[]
+            </li>
+            <li>
+ifdef::isGa[{Table7A-example8}]
+ifndef::isGa[]
+            {Table7A-example8_ga} <br />
+            ({Table7A-example8})
+endif::[]
+            </li>
         </ul>
     </td>
   </tr>
@@ -331,42 +379,114 @@ endif::[]
   <caption>
     <strong>{Tábla} 7B</strong> {Table7B-caption}
   </caption>
+  <colgroup>
+    <col class="w-1/3">
+    <col class="w-1/3">
+    <col class="w-1/3">
+  </colgroup>
   <thead>
-  <tr>
-    <th colspan="3" class="text-xl py-2">{Table7B-header}</th>
-  </tr>
-  <tr>
-    <th>{BeforeConsonantQualified}</th>
-    <th colspan="2">{BeforeVowelQualified}</th>
-  </tr>
-  <tr>
-    <th class="bg-stone-300 text-black">ba</th>
-    <th class="bg-stone-300 text-black">b'</th>
-    <th class="bg-stone-300 text-black">ba (ab)</th>
-  </tr></thead>
+    <tr>
+      <th colspan="3" class="text-xl py-2">{Table7B-header}</th>
+    </tr>
+    <tr>
+      <th>{BeforeConsonantQualified}</th>
+      <th colspan="2">{BeforeVowelQualified}</th>
+    </tr>
+    <tr>
+      <th class="bg-stone-300 text-black">ba</th>
+      <th class="bg-stone-300 text-black">b'</th>
+      <th class="bg-stone-300 text-black">ba (ab)</th>
+    </tr>
+  </thead>
 <tbody>
   <tr>
     <td>
         <ul>
-            <li><strong>Ba</strong> mhian liomsa labhairt.</li>
-            <li><strong>Ba</strong> fhlaithiúil go deo a chaith siad liom.</li>
-            <li><strong>Ba</strong> bheag an chabhair dom é dá bhfaighinn in am é fiú.</li>
+          <li>
+ifdef::isGa[{Table7B-ba-example1}]
+ifndef::isGa[]
+          {Table7B-ba-example1_ga} <br />
+          ({Table7B-ba-example1})
+endif::[]
+          </li>
+          <li>
+ifdef::isGa[{Table7B-ba-example2}]
+ifndef::isGa[]
+          {Table7B-ba-example2_ga} <br />
+          ({Table7B-ba-example2})
+endif::[]
+          </li>
+          <li>
+ifdef::isGa[{Table7B-ba-example3}]
+ifndef::isGa[]
+          {Table7B-ba-example3_ga} <br />
+          ({Table7B-ba-example3})
+endif::[]
+          </li>
         </ul>
     </td>
     <td>
         <ul>
-            <li><strong>B'</strong>álainn an pictiúr é mura mbeadh an polla sin sa chúlra.</li>
-            <li><strong>B'</strong>aoibhinn linn a bheith ag éisteacht leis gach oíche.</li>
-            <li><strong>B'</strong>eol dúinn go dtéadh sí an cóngar nuair a bhíodh sé tirim.</li>
+          <li>
+ifdef::isGa[{Table7B-b-example1}]
+ifndef::isGa[]
+          {Table7B-b-example1_ga} <br />
+          ({Table7B-b-example1})
+endif::[]
+          </li>
+          <li>
+ifdef::isGa[  {Table7B-b-example2}]
+ifndef::isGa[]
+            {Table7B-b-example2_ga} <br />
+            ({Table7B-b-example2})
+endif::[]
+          </li>
+          <li>
+ifdef::isGa[  {Table7B-b-example3}]
+ifndef::isGa[]
+            {Table7B-b-example3_ga} <br />
+            ({Table7B-b-example3})
+endif::[]
+          </li>
         </ul>
     </td>
     <td>
         <ul>
-            <li><strong>Ba</strong> é an Rúnaí a cheartódh é sa chás sin.</li>
-            <li>Ceannaire maith <strong>ba/ab</strong> ea í siúd.</li>
-            <li><strong>Ba</strong> aici a bhí an ceart.</li>
-            <li><strong>Ba</strong> as Gaillimh é.</li>
-            <li><strong>Ba</strong> ó Bhaile Átha Cliath í.</li>
+          <li>
+ifdef::isGa[{Table7B-ba-ab-example1}]
+ifndef::isGa[]
+          {Table7B-ba-ab-example1_ga} <br />
+          ({Table7B-ba-ab-example1})
+endif::[]
+          </li>
+          <li>
+ifdef::isGa[{Table7B-ba-ab-example2}]
+ifndef::isGa[]
+          {Table7B-ba-ab-example2_ga} <br />
+          ({Table7B-ba-ab-example2})
+endif::[]
+          </li>
+          <li>
+ifdef::isGa[{Table7B-ba-ab-example3}]
+ifndef::isGa[]
+          {Table7B-ba-ab-example3_ga} <br />
+          ({Table7B-ba-ab-example3})
+endif::[]
+          </li>
+          <li>
+ifdef::isGa[{Table7B-ba-ab-example4}]
+ifndef::isGa[]
+          {Table7B-ba-ab-example4_ga} <br />
+          ({Table7B-ba-ab-example4})
+endif::[]
+          </li>
+          <li>
+ifdef::isGa[{Table7B-ba-ab-example5}]
+ifndef::isGa[]
+          {Table7B-ba-ab-example5_ga} <br />
+          ({Table7B-ba-ab-example5})
+endif::[]
+          </li>
         </ul>
     </td>
   </tr>
@@ -395,23 +515,59 @@ endif::[]
   <tr>
     <td>{Negative}</td>
     <td class="font-bold bg-stone-300">níor</td>
-    <td><strong>Níor</strong> mhaith léi go dtarlódh sé sin.</td>
+    <td>
+ifdef::isGa[{Table7C-Níor-example}]
+ifndef::isGa[]
+      {Table7C-Níor-example_ga} <br />
+      ({Table7C-Níor-example})
+endif::[]
+    </td>
     <td class="font-bold bg-stone-300">níorbh</td>
-    <td><strong>Níorbh</strong> aon dóithín é.</td>
+    <td>
+ifdef::isGa[{Table7C-Níorbh-example}]
+ifndef::isGa[]
+      {Table7C-Níorbh-example_ga} <br />
+      ({Table7C-Níorbh-example})
+endif::[]
+    </td>
   </tr>
   <tr>
     <td>{Interrogative} {Positive}</td>
     <td class="font-bold bg-stone-300">ar</td>
-    <td><strong>Ar</strong> dheacair leat é?</td>
+    <td>
+ifdef::isGa[{Table7C-Ar-example}]
+ifndef::isGa[]
+      {Table7C-Ar-example_ga} <br />
+      ({Table7C-Ar-example})
+endif::[]
+    </td>
     <td class="font-bold bg-stone-300">arbh</td>
-    <td><strong>Arbh</strong> fhearr é mar atá sé?</td>
+    <td>
+ifdef::isGa[{Table7C-Arbh-example}]
+ifndef::isGa[]
+      {Table7C-Arbh-example_ga} <br />
+      ({Table7C-Arbh-example})
+endif::[]
+    </td>
   </tr>
   <tr>
     <td>{Interrogative} {Negative}</td>
     <td class="font-bold bg-stone-300">nár</td>
-    <td><strong>Nár</strong> dhána an mhaise dó é!</td>
+    <td>
+ifdef::isGa[{Table7C-Nár-example}]
+ifndef::isGa[]
+      {Table7C-Nár-example_ga} <br />
+      ({Table7C-Nár-example})
+endif::[]
+    </td>
     <td class="font-bold bg-stone-300">nárbh</td>
-    <td><strong>Nárbh</strong> é an diabhal é?</td>
+    <td>
+ifdef::isGa[{Table7C-Nárbh-example}]
+ifndef::isGa[]
+      {Table7C-Nárbh-example_ga} <br />
+      ({Table7C-Nárbh-example})
+endif::[]
+    </td>
   </tr>
 </tbody>
 </table>
@@ -479,22 +635,70 @@ endif::[]
     <td>{Positive}</td>
     <td>
         <ul>
-            <li>Ceapann siad <strong>gur</strong> múinteoir maith é Seán.</li>
-            <li>Is dóigh liom <strong>gur</strong> tráthnóna amárach a bheidh an cruinniú ann.</li>
+            <li>
+ifdef::isGa[{Table7D-gur-cons-example1}]
+ifndef::isGa[]
+            {Table7D-gur-cons-example1_ga} <br />
+            ({Table7D-gur-cons-example1})
+endif::[]
+            </li>
+            <li>
+ifdef::isGa[{Table7D-gur-cons-example2}]
+ifndef::isGa[]
+            {Table7D-gur-cons-example2_ga} <br />
+            ({Table7D-gur-cons-example2})
+endif::[]
+            </li>
         </ul>
     </td>
     <td>
         <ul>
-            <li>Ceapann siad <strong>gur</strong> altra é.</li>
-            <li>Sílim <strong>gur</strong> acu a bheidh an bua.</li>
+            <li>
+ifdef::isGa[{Table7D-gur-vow-example1}]
+ifndef::isGa[]
+            {Table7D-gur-vow-example1_ga} <br />
+            ({Table7D-gur-vow-example1})
+endif::[]
+            </li>
+            <li>
+ifdef::isGa[{Table7D-gur-vow-example2}]
+ifndef::isGa[]
+            {Table7D-gur-vow-example2_ga} <br />
+            ({Table7D-gur-vow-example2})
+endif::[]
+            </li>
         </ul>
     </td>
     <td>
         <ul>
-            <li>Is dóigh leis <strong>gurb</strong> álainn an lá é.</li>
-            <li>Ní dóigh liom <strong>gurb</strong> ionann iad.</li>
-            <li>Ní foláir <strong>gurb</strong> acmhainn dóibh.</li>
-            <li>Más rud é <strong>gurb</strong> éigean dóibh.</li>
+            <li>
+ifdef::isGa[{Table7D-gurb-example1}]
+ifndef::isGa[]
+            {Table7D-gurb-example1_ga} <br />
+            ({Table7D-gurb-example1})
+endif::[]
+            </li>
+            <li>
+ifdef::isGa[{Table7D-gurb-example2}]
+ifndef::isGa[]
+            {Table7D-gurb-example2_ga} <br />
+            ({Table7D-gurb-example2})
+endif::[]
+            </li>
+            <li>
+ifdef::isGa[{Table7D-gurb-example3}]
+ifndef::isGa[]
+            {Table7D-gurb-example3_ga} <br />
+            ({Table7D-gurb-example3})
+endif::[]
+            </li>
+            <li>
+ifdef::isGa[{Table7D-gurb-example4}]
+ifndef::isGa[]
+            {Table7D-gurb-example4_ga} <br />
+            ({Table7D-gurb-example4})
+endif::[]
+            </li>
         </ul>
     </td>
   </tr>
@@ -506,10 +710,34 @@ endif::[]
     <td>{Negative}</td>
     <td colspan=3>
         <ul>
-            <li>Deir sé <strong>nach</strong> amárach a bheidh an cluiche ar siúl.</li>
-            <li>Tuigimid <strong>nach</strong> é deireadh an domhain é má chaillimid.</li>
-            <li>Síleann siad <strong>nach</strong> taighdeoir maith é.</li>
-            <li>Dar liom <strong>nach</strong> cuan sábháilte é.</li>
+            <li>
+ifdef::isGa[{Table7D-nach-example1}]
+ifndef::isGa[]
+            {Table7D-nach-example1_ga} <br />
+            ({Table7D-nach-example1})
+endif::[]
+            </li>
+            <li>
+ifdef::isGa[{Table7D-nach-example2}]
+ifndef::isGa[]
+            {Table7D-nach-example2_ga} <br />
+            ({Table7D-nach-example2})
+endif::[]
+            </li>
+            <li>
+ifdef::isGa[{Table7D-nach-example3}]
+ifndef::isGa[]
+            {Table7D-nach-example3_ga} <br />
+            ({Table7D-nach-example3})
+endif::[]
+            </li>
+            <li>
+ifdef::isGa[{Table7D-nach-example4}]
+ifndef::isGa[]
+            {Table7D-nach-example4_ga} <br />
+            ({Table7D-nach-example4})
+endif::[]
+            </li>
         </ul>
     </td>
   </tr>
@@ -560,14 +788,38 @@ endif::[]
       <td>{Positive}</td>
       <td>
           <ul>
-              <li>Dúirt Eoin <strong>gur</strong> cheart é a dhíol.</li>
-              <li>Cheapamar <strong>gur</strong> fhlaithiúil an duine ab ea é.</li>
+              <li>
+ifdef::isGa[{Table7E-gur-example1}]
+ifndef::isGa[]
+              {Table7E-gur-example1_ga} <br />
+              ({Table7E-gur-example1})
+endif::[]
+              </li>
+              <li>
+ifdef::isGa[{Table7E-gur-example2}]
+ifndef::isGa[]
+              {Table7E-gur-example2_ga} <br />
+              ({Table7E-gur-example2})
+endif::[]
+              </li>
           </ul>
       </td>
       <td>
           <ul>
-              <li>Dhearbhaigh sé <strong>gurbh</strong> fhéimheach é.</li>
-              <li>Dúirt sí <strong>gurbh</strong> é leas an phobail é.</li>
+              <li>
+ifdef::isGa[{Table7E-gurbh-example1}]
+ifndef::isGa[]
+              {Table7E-gurbh-example1_ga} <br />
+              ({Table7E-gurbh-example1})
+endif::[]
+              </li>
+              <li>
+ifdef::isGa[{Table7E-gurbh-example2}]
+ifndef::isGa[]
+              {Table7E-gurbh-example2_ga} <br />
+              ({Table7E-gurbh-example2})
+endif::[]
+              </li>
           </ul>
       </td>
     </tr>
@@ -618,20 +870,44 @@ endif::[]
   <tr>
     <th class="bg-stone-300"></th>
     <th class="bg-stone-300">go mba</th>
-    <th class="bg-stone-300">go mba <span class="font-normal">nó</span> go mb'</th>
+    <th class="bg-stone-300">go mba <span class="font-normal">{nó}</span> go mb'</th>
   </tr>
   <tr>
     <td>{Positive}</td>
     <td>
         <ul>
-            <li>Dúirt Eoin <strong>go mba</strong> cheart é a dhíol.</li>
-            <li>Sílim <strong>go mba</strong> fhliúit dhaor a cheannaigh sé.</li>
+            <li>
+ifdef::isGa[{Table7F-go-mba-cons-example1}]
+ifndef::isGa[]
+            {Table7F-go-mba-cons-example1_ga} <br />
+            ({Table7F-go-mba-cons-example1})
+endif::[]
+            </li>
+            <li>
+ifdef::isGa[{Table7F-go-mba-cons-example2}]
+ifndef::isGa[]
+            {Table7F-go-mba-cons-example2_ga} <br />
+            ({Table7F-go-mba-cons-example2})
+endif::[]
+            </li>
         </ul>
     </td>
     <td>
         <ul>
-            <li>Dhearbhaigh sé <strong>go mb'</strong>fhéimheach é.</li>
-            <li>Dúirt sí <strong>go mba</strong> é leas an phobail é.</li>
+            <li>
+ifdef::isGa[{Table7F-go-mba-vow-example1}]
+ifndef::isGa[]
+            {Table7F-go-mba-vow-example1_ga} <br />
+            ({Table7F-go-mba-vow-example1})
+endif::[]
+            </li>
+            <li>
+ifdef::isGa[{Table7F-go-mba-vow-example2}]
+ifndef::isGa[]
+            {Table7F-go-mba-vow-example2_ga} <br />
+            ({Table7F-go-mba-vow-example2})
+endif::[]
+            </li>
         </ul>
     </td>
   </tr>
@@ -677,14 +953,38 @@ endif::[]
     <td>{Positive}</td>
     <td>
         <ul>
-            <li>Ba léir <strong>nár</strong> dhochtúir cáilithe é.</li>
-            <li>Dúirt sí <strong>nár</strong> fhlichshneachta ceart é.</li>
+            <li>
+ifdef::isGa[{Table7G-nár-example1}]
+ifndef::isGa[]
+            {Table7G-nár-example1_ga} <br />
+            ({Table7G-nár-example1})
+endif::[]
+            </li>
+            <li>
+ifdef::isGa[{Table7G-nár-example2}]
+ifndef::isGa[]
+            {Table7G-nár-example2_ga} <br />
+            ({Table7G-nár-example2})
+endif::[]
+            </li>
         </ul>
     </td>
     <td>
         <ul>
-            <li>Dúirt sé <strong>nárbh</strong> fhéidir é a dhéanamh.</li>
-            <li><strong>Nárbh</strong> iontach an clár faisnéise é sin?</li>
+            <li>
+ifdef::isGa[{Table7G-nárbh-example1}]
+ifndef::isGa[]
+            {Table7G-nárbh-example1_ga} <br />
+            ({Table7G-nárbh-example1})
+endif::[]
+            </li>
+            <li>
+ifdef::isGa[{Table7G-nárbh-example2}]
+ifndef::isGa[]
+            {Table7G-nárbh-example2_ga} <br />
+            ({Table7G-nárbh-example2})
+endif::[]
+            </li>
         </ul>
     </td>
   </tr>
@@ -724,8 +1024,20 @@ endif::[]
     <th>is</th>
     <td>
         <ul>
-            <li>Labhair leis an bhfear sin <strong>is</strong> uncail leat.</li>
-            <li>An bhean <strong>is</strong> cara leat a d'eagraigh é.</li>
+            <li>
+ifdef::isGa[{Table7H-is-example1}]
+ifndef::isGa[]
+            {Table7H-is-example1_ga} <br />
+            ({Table7H-is-example1})
+endif::[]
+            </li>
+            <li>
+ifdef::isGa[{Table7H-is-example2}]
+ifndef::isGa[]
+            {Table7H-is-example2_ga} <br />
+            ({Table7H-is-example2})
+endif::[]
+            </li>
         </ul>
     </td>
   </tr>
@@ -734,8 +1046,20 @@ endif::[]
     <th>nach</th>
     <td>
         <ul>
-            <li>Ní cheadófar d'aon duine <strong>nach</strong> ball é nó í fanacht sa seomra.</li>
-            <li>Céard faoi na daoine <strong>nach</strong> comhaltaí iad?</li>
+            <li>
+ifdef::isGa[{Table7H-nach-example1}]
+ifndef::isGa[]
+            {Table7H-nach-example1_ga} <br />
+            ({Table7H-nach-example1})
+endif::[]
+            </li>
+            <li>
+ifdef::isGa[{Table7H-nach-example2}]
+ifndef::isGa[]
+            {Table7H-nach-example2_ga} <br />
+            ({Table7H-nach-example2})
+endif::[]
+            </li>
         </ul>
     </td>
   </tr>
@@ -769,15 +1093,39 @@ endif::[]
     <td class="bg-stone-300 font-bold">ba</td>
     <td>
         <ul>
-            <li>Cad é <strong>ba</strong> mhaith leat?</li>
-            <li>Sin an carr <strong>ba</strong> cheart duit a cheannach.</li>
+            <li>
+ifdef::isGa[{Table7I-ba-example1}]
+ifndef::isGa[]
+            {Table7I-ba-example1_ga} <br />
+            ({Table7I-ba-example1})
+endif::[]
+            </li>
+            <li>
+ifdef::isGa[{Table7I-ba-example2}]
+ifndef::isGa[]
+            {Table7I-ba-example2_ga} <br />
+            ({Table7I-ba-example2})
+endif::[]
+            </li>
         </ul>
     </td>
     <td class="bg-stone-300 font-bold">ab</td>
     <td>
         <ul>
-            <li>Sin rud <strong>ab</strong> éasca a rá.</li>
-            <li>Má bhí leabhar ann riamh <strong>ab</strong> fhiú a léamh, seo é.</li>
+            <li>
+ifdef::isGa[{Table7I-ab-example1}]
+ifndef::isGa[]
+            {Table7I-ab-example1_ga} <br />
+            ({Table7I-ab-example1})
+endif::[]
+            </li>
+            <li>
+ifdef::isGa[{Table7I-ab-example2}]
+ifndef::isGa[]
+            {Table7I-ab-example2_ga} <br />
+            ({Table7I-ab-example2})
+endif::[]
+            </li>
         </ul>
     </td>
   </tr>
@@ -786,15 +1134,39 @@ endif::[]
     <td class="bg-stone-300 font-bold">nár</td>
     <td>
         <ul>
-            <li>Níor dhóigh siad aon bhreosla <strong>nár</strong> ghual (é).</li>
-            <li>Níor ceannaíodh bó <strong>nár</strong> bhó mhaith (í).</li>
+            <li>
+ifdef::isGa[{Table7I-nár-example1}]
+ifndef::isGa[]
+            {Table7I-nár-example1_ga} <br />
+            ({Table7I-nár-example1})
+endif::[]
+            </li>
+            <li>
+ifdef::isGa[{Table7I-nár-example2}]
+ifndef::isGa[]
+            {Table7I-nár-example2_ga} <br />
+            ({Table7I-nár-example2})
+endif::[]
+            </li>
         </ul>
     </td>
     <td class="bg-stone-300 font-bold">nárbh</td>
     <td>
         <ul>
-            <li>Is é sin an Teachta <strong>nárbh</strong> Aire riamh (é).</li>
-            <li>Níor cheannaigh siad úlla <strong>nárbh</strong> úlla dearga (iad).</li>
+            <li>
+ifdef::isGa[{Table7I-nárbh-example1}]
+ifndef::isGa[]
+            {Table7I-nárbh-example1_ga} <br />
+            ({Table7I-nárbh-example1})
+endif::[]
+            </li>
+            <li>
+ifdef::isGa[{Table7I-nárbh-example2}]
+ifndef::isGa[]
+            {Table7I-nárbh-example2_ga} <br />
+            ({Table7I-nárbh-example2})
+endif::[]
+            </li>
         </ul>
     </td>
   </tr>

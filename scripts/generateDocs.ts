@@ -172,6 +172,8 @@ function giveListItemsIds(document: Document) {
 
       // Nesting is accounted for by using the parent section/li id, so we don't need to worry about it here.
       listItem.id = `${parentId}_${indexSuffix}`;
+      // Avoid having to scroll up to see where we are.
+      listItem.title = `${parentId.replace("sec_", "")}.${indexSuffix}`.replace(/_/g, ".");
     }
   }
 }

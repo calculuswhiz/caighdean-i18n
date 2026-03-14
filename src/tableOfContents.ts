@@ -8,7 +8,9 @@ function createListItem(heading: HTMLHeadingElement): EasyDOM<HTMLLIElement> {
     .addClasses('toc-item', 'my-1')
     .append(
       EasyDOM.createElement("a")
-        .setProperties({ href: `#${heading.id}` })
+        .setProperties({ 
+          href: `#${heading.id}`
+        })
         .setText(heading.textContent ?? "")
     );
 }
