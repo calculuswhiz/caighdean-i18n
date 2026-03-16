@@ -680,6 +680,31 @@
 :Table7J-caption_ga: Foirmeacha Simplí i gClásal Coibhneasta Indíreach &mdash; An Aimsir Láithreach agus an Aimsir Fháistineach
 :Table7J-caption_en: Simple Forms in an Indirect Relative Clause &mdash; The Present Tense and the Future Tense
 
+:Table7J-ar-example1_ga: Ná bac leis sin; sin eolas *ar* cuma faoi.
+// I think this is correct. "Is cuma" is an expression of indifference
+:Table7J-ar-example1_en: *EN*: _Don't mind that; that's information *that* is of no importance._
+
+:Table7J-ar-example2_ga: Is é sin an té *ar* dó an leabhar.
+:Table7J-ar-example2_en: *EN*: _That's the person *that* the book belongs to._
+
+:Table7J-arb-example1_ga: Is í sin an bhean *arb* iriseoir a deartháir.
+:Table7J-arb-example1_en: *EN*: _That's the woman *that* is a journalist's sister._
+
+:Table7J-arb-example2_ga: An bhfuil an té *arb* eol dó an freagra sa seomra?
+:Table7J-arb-example2_en: *EN*: _Is the one *that* knows the answer in the room?_
+
+:Table7J-nach-example1_ga: Cár imigh an duine *nach* féidir labhairt leis?
+:Table7J-nach-example1_en: *EN*: _Where did the person *that* cannot be spoken to go?_
+
+:Table7J-nach-example2_ga: Is iad sin na daoine *nach* mian leo leanúint ar aghaidh.
+:Table7J-nach-example2_en: *EN*: _Those are the people *that* don't want to continue._
+
+:Table7J-nach-example3_ga: Is í sin an bhean *nach* iriseoir a deartháir.
+:Table7J-nach-example3_en: *EN*: _That's the woman *that* is not a journalist's sister._
+
+:Table7J-nach-example4_ga: Sin é an t&#x2011;aisteoir *nach* eol dó a chuid línte.
+:Table7J-nach-example4_en: *EN*: _That's the actor *that* doesn't know his lines._
+
 :Table7J-header_ga: An Aimsir Láithreach agus an Aimsir Fháistineach
 :Table7J-header_en: The Present Tense and Future Tense
 
@@ -695,6 +720,18 @@
 :Table7K-caption_ga: Foirmeacha Simplí i gClásal Coibhneasta Indíreach &mdash; An Aimsir Chaite, an Aimsir Ghnáthchaite agus an Modh Coinníollach
 :Table7K-caption_en: Simple Forms in an Indirect Relative Clause &mdash; The Past Tense, Past Habitual Tense and Conditional Mood
 
+:Table7K-ar-example_ga: Sin í an bhean *ar* mhór aici do chabhair.
+:Table7K-ar-example_en: *EN*: _That's the woman *who* would be very helpful to you._
+
+:Table7K-arbh-example_ga: Léigh sí gach leabhar *arbh* fhiú trácht air.
+:Table7K-arbh-example_en: *EN*: _She read every book *that* was worth mentioning._
+
+:Table7K-nár-example_ga: Cá bhfuil na daoine *nár* mhaith leo labhairt?
+:Table7K-nár-example_en: *EN*: _Where are the people *that* they don't like to talk to?_
+
+:Table7K-nárbh-example_ga: Ba dhána iad na páistí *nárbh* áil leo dul ar scoil.
+:Table7K-nárbh-example_en: *EN*: _The children *who did not* want to go to school were bold._
+
 :7-2-5-title_ga: Athruithe Tosaigh i nDiaidh na Copaile
 :7-2-5-title_en: Initial Mutations after the Copula
 
@@ -705,46 +742,46 @@
 :7-2-5-A-a-p_en: No initial mutation is made after the following forms of the copula:
 
 :7-2-5-A-a-i-p_ga: an fhoirm dheimhneach den chopail _is_, e.g., _Is bréag é_;
-:7-2-5-A-a-i-p_en: the positive form of the copula _is_, e.g., _Is bréag é_;
+:7-2-5-A-a-i-p_en: the positive form of the copula _is_, e.g., _Is bréag é_ (*EN*: _It is a lie_);
 
 :7-2-5-A-a-ii-p_ga: an fhoirm cheisteach dheimhneach _an_, e.g., _An cuimhin leat an cluiche sin?_;
-:7-2-5-A-a-ii-p_en: the positive interrogative form _an_, e.g., _An cuimhin leat an cluiche sin?_;
+:7-2-5-A-a-ii-p_en: the positive interrogative form _an_, e.g., _An cuimhin leat an cluiche sin?_ (*EN*: _Do you remember that game?_);
 
 :7-2-5-A-a-iii-p_ga: an fhoirm cheisteach dhiúltach _nach_, e.g., _Nach buachaill atá ann?_
-:7-2-5-A-a-iii-p_en: the negative interrogative form _nach_, e.g., _Nach buachaill atá ann?_
+:7-2-5-A-a-iii-p_en: the negative interrogative form _nach_, e.g., _Nach buachaill atá ann?_ (*EN*: _Isn't that a boy?_)
 
 :7-2-5-A-b-p_ga: Cuirtear _h_ roimh ghuta i ndiaidh an leagain dhiúltaigh den chopail _ní_:
 :7-2-5-A-b-p_en: _h_ is placed before a vowel after the negative form of the copula _ní_:
 
 :7-2-5-A-b-i-p_ga: ar na forainmnigh _é_, _í_, _ea_, _iad_, _eo_, _in_ agus _iúd_, e.g., _Ní hiad a ghoid do mhála_; _Ní hin é mo theachsa_;
-:7-2-5-A-b-i-p_en: on the pronominals _é_, _í_, _ea_, _iad_, _eo_, _in_ and _iúd_, e.g., _Ní hiad a ghoid do mhála_; _Ní hin é mo theachsa_;
+:7-2-5-A-b-i-p_en: on the pronominals _é_, _í_, _ea_, _iad_, _eo_, _in_ and _iúd_, e.g., _Ní hiad a ghoid do mhála_ (*EN*: _They did not steal your bag_); _Ní hin é mo theachsa_ (*EN*: _It is not my house_);
 
 :7-2-5-A-b-ii-p_ga: ar na haidiachtaí seo: _amháin_, _aon_, _ionann_, _iondúil_, e.g., _Ní hionann an dá chás_;
-:7-2-5-A-b-ii-p_en: on these adjectives: _amháin_, _aon_, _ionann_, _iondúil_, e.g., _Ní hionann an dá chás_;
+:7-2-5-A-b-ii-p_en: on these adjectives: _amháin_, _aon_, _ionann_, _iondúil_, e.g., _Ní hionann an dá chás_ (*EN*: _The two cases are not the same_);
 
 :7-2-5-A-b-iii-p_ga: ar na dobhriathra seo: _amhlaidh_, _annamh_, e.g., _Ní hannamh dó a bheith luath_;
-:7-2-5-A-b-iii-p_en: on these adverbs: _amhlaidh_, _annamh_, e.g., _Ní hannamh dó a bheith luath_;
+:7-2-5-A-b-iii-p_en: on these adverbs: _amhlaidh_, _annamh_, e.g., _Ní hannamh dó a bheith luath_ (*EN*: _It is not often that he is early_);
 
 :7-2-5-A-b-iv-p_ga: ar na frásaí copaile réamhfhoclacha seo: _acmhainn do_, _áil le, aitheanta do_, _aithnid do_, _eagal do/le_, _éadáil le_, _ealaín do_, _éigean do_, _eol do_, _oircheas do_, e.g., _Ní hacmhainn dó bille eile a íoc_;
-:7-2-5-A-b-iv-p_en: on these prepositional copula phrases: _acmhainn do_, _áil le, aitheanta do_, _aithnid do_, _eagal do/le_, _éadáil le_, _ealaín do_, _éigean do_, _eol do_, _oircheas do_, e.g., _Ní hacmhainn dó bille eile a íoc_;
+:7-2-5-A-b-iv-p_en: on these prepositional copula phrases: _acmhainn do_, _áil le, aitheanta do_, _aithnid do_, _eagal do/le_, _éadáil le_, _ealaín do_, _éigean do_, _eol do_, _oircheas do_, e.g., _Ní hacmhainn dó bille eile a íoc_ (*EN*: _He is not able to pay another bill_);
 
 :7-2-5-A-b-v-p_ga: ar na focail ar leith seo: _áibhéil_, _éard_, _ionadh_, _iontas_ agus _ualach_, e.g., _Ní hionadh ar bith é go gcuireann siad fáilte roimh chách_;
-:7-2-5-A-b-v-p_en: on these particular words: _áibhéil_, _éard_, _ionadh_, _iontas_ and _ualach_, e.g., _Ní hionadh ar bith é go gcuireann siad fáilte roimh chách_;
+:7-2-5-A-b-v-p_en: on these particular words: _áibhéil_, _éard_, _ionadh_, _iontas_ and _ualach_, e.g., _Ní hionadh ar bith é go gcuireann siad fáilte roimh chách_ (*EN*: _It is no wonder that they welcome everyone_);
 
 :7-2-5-A-b-vi-p_ga: i gcorr-sheanfhocal, e.g., _Ní heolas go haontíos_; _Ní haithne go haontíos_.
-:7-2-5-A-b-vi-p_en: in an odd proverb, e.g., _Ní heolas go haontíos_; _Ní haithne go haontíos_.
+:7-2-5-A-b-vi-p_en: in an odd proverb, e.g., _Ní heolas go haontíos_ (*EN*: _No knowledge without cohabitation_); _Ní haithne go haontíos_ (*EN*: _No acquaintance without cohabitation_).
 
 :7-2-5-A-c-p_ga: Ní chuirtear _h_ roimh ghuta i ndiaidh an leagain dhiúltaigh den chopail _ní_:
 :7-2-5-A-c-p_en: _h_ is not placed before a vowel after the negative form of the copula _ní_:
 
 :7-2-5-A-c-i-p_ga: ar ainmfhocail i gcoitinne, e.g., _Ní eagrán nua den pháipéar atá á léamh agat_;
-:7-2-5-A-c-i-p_en: on nouns in general, e.g., _Ní eagrán nua den pháipéar atá á léamh agat_;
+:7-2-5-A-c-i-p_en: on nouns in general, e.g., _Ní eagrán nua den pháipéar atá á léamh agat_ (*EN*: _It is not a new edition of the paper that you are reading_);
 
 :7-2-5-A-c-ii-p_ga: ar aidiachtaí i gcoitinne, e.g., _Ní uaigneach fear i gcomhluadar_;
-:7-2-5-A-c-ii-p_en: on adjectives in general, e.g., _Ní uaigneach fear i gcomhluadar_;
+:7-2-5-A-c-ii-p_en: on adjectives in general, e.g., _Ní uaigneach fear i gcomhluadar_ (*EN*: _A man is not lonely in company_);
 
 :7-2-5-A-c-iii-p_ga: ar dhobhriathra ach amháin _amhlaidh_, _annamh_, e.g., _Ní inné a tharla an timpiste_; _Ní ansin a thit mé_.
-:7-2-5-A-c-iii-p_en: on adverbs except _amhlaidh_, _annamh_, e.g., _Ní inné a tharla an timpiste_; _Ní ansin a thit mé_.
+:7-2-5-A-c-iii-p_en: on adverbs except _amhlaidh_, _annamh_, e.g., _Ní inné a tharla an timpiste_ (*EN*: _The accident did not happen yesterday_); _Ní ansin a thit mé_ (*EN*: _I did not fall then_).
 
 :7-2-5-A-p_ga: Sa tábla thíos, leagtar amach na hathruithe tosaigh a dhéantar ar ghuta i ndiaidh an leagain dhiúltaigh den chopail _ní_.
 :7-2-5-A-p_en: In the table below, the initial vowel changes after the negative form of the copula _ní_ are given.
@@ -792,7 +829,7 @@
 :7-2-5-B-title_en: The Past Tense, the Past Habitual Tense and the Conditional Mood
 
 :7-2-5-B-p_ga: Leanann séimhiú foirmeacha na copaile san aimsir chaite, san aimsir ghnáthchaite agus sa mhodh coinníollach, e.g., _Ba dheas liom an seans a bheith faighte againn_; _Níor bheag an méid a bhí le scrúdú_.
-:7-2-5-B-p_en: Lenition follows the forms of the copula in the past tense, the past habitual tense and the conditional mood, e.g., _Ba dheas liom an seans a bheith faighte againn_; _Níor bheag an méid a bhí le scrúdú_.
+:7-2-5-B-p_en: Lenition follows the forms of the copula in the past tense, the past habitual tense and the conditional mood, e.g., _Ba dheas liom an seans a bheith faighte againn_ (*EN*: _I would have liked for us to have had the chance_); _Níor bheag an méid a bhí le scrúdú_ (*EN*: _There was not a small amount to examine_).
 
 :7-3-title_ga: Foirmeacha Cumaisc na Copaile
 :7-3-title_en: Compound Forms of the Copula
@@ -812,6 +849,18 @@
 :Table7M-caption_ga: Forainmnigh Cheisteacha i gcumasc leis an gCopail &mdash; An Aimsir Láithreach agus an Aimsir Fháistineach
 :Table7M-caption_en: Interrogative Pronominals composed with the copula &mdash; The Present Tense and Future Tense
 
+:Table7M-Cá-example_ga: *Cá* miste duit?
+:Table7M-Cá-example_en: *EN*: _What does it matter to you?_
+
+:Table7M-Cárb-example_ga: *Cárb* as é?/*Cárb* as duit?
+:Table7M-Cárb-example_en: *EN*: _Where is it from? / What is it to you?_
+
+:Table7M-Cé-example_ga: *Cé* dó a dtabharfaidh sé é?
+:Table7M-Cé-example_en: *EN*: _Who will give it to him?_
+
+:Table7M-Cérb-example_ga: *Cérb* iad?
+:Table7M-Cérb-example_en: *EN*: _Who are they?_
+
 :7-3-1-B-title_ga: An Aimsir Chaite, an Aimsir Ghnáthchaite agus an Modh Coinníollach
 :7-3-1-B-title_en: The Past Tense, Past Habitual Tense and Conditional Mood
 
@@ -823,6 +872,18 @@
 
 :Table7N-caption_ga: Forainmnigh Cheisteacha i gcumasc leis an gCopail &mdash; An Aimsir Chaite, an Aimsir Ghnáthchaite agus an Modh Coinníollach
 :Table7N-caption_en: Interrogative Pronominals composed with the Copula &mdash; The Past Tense, Past Habitual Tense and Conditional Mood
+
+:Table7N-example1_ga: *Cár* thairbhe duit é?
+:Table7N-example1_en: *EN*: _What does it profit you?_
+
+:Table7N-example2_ga: *Cárbh* aois é?
+:Table7N-example2_en: *EN*: _How old is he?_
+
+:Table7N-example3_ga: *Cér* díobh í?
+:Table7N-example3_en: *EN*: _Who is she of?_ lit. asking for surname
+
+:Table7N-example4_ga: *Cérbh* é an fear sin?
+:Table7N-example4_en: *EN*: _Who was that man?_
 
 :7-3-1-p_ga: Tabhair faoi deara nach n&#x2011;úsáidtear an cumasc _cérbh_ ach roimh _é_, _í_, _eisean_, _ise_, _iad_ agus _iadsan_. Ní dhéantar cumasc idir _cé_ agus na foirmeacha _ab_ nó _ba_ den chopail nuair nach forainmneach pearsanta a leanann _cé_: _cérbh é_; ach _cé ab fhearr_?; _cé ba chaptaen oraibh_?
 :7-3-1-p_en: Note that the compound _cérbh_ is only used before _é_, _í_, _eisean_, _ise_, _iad_ and _iadsan_. _cé_ does not merge with the _ab_ or _ba_ forms of the copula when _cé_ is not followed by a personal pronominal: _cérbh é_; but _cé ab fhearr_?; _cé ba chaptaen oraibh_?
@@ -842,6 +903,42 @@
 :Table7O-caption_ga: Réamhfhocail i gcumasc leis an gCopail &mdash; An Aimsir Láithreach agus an Aimsir Fháistineach
 :Table7O-caption_en: Prepositions composed with the Copula &mdash; The Present Tense and Future Tense
 
+:Table7O-dar-example_ga: Cuirfear deireadh leis an imscrúdú an tréimhse *dar* críoch an 1ú lá de mhí Iúil.
+:Table7O-dar-example_en: *EN*: _The investigation will be concluded in the period ending on the 1st of July._
+
+:Table7O-darb-example_ga: Tá aithne agam ar bhean *darb* ainm Máire Ní Chiarragáin.
+:Table7O-darb-example_en: *EN*: _I know a woman named Máire Ní Chiarragáin._
+
+:Table7O-faoinar-example_ga: Cé acu dlí an dlí *faoinar* féidir í a chúiseamh?
+:Table7O-faoinar-example_en: *EN*: _Which law can she be charged under?_
+
+:Table7O-faoinarb-example_ga: Is ábhar é sin *faoinarb* éasca labhairt.
+:Table7O-faoinarb-example_en: *EN*: _That is a matter easy to talk about._
+
+:Table7O-inar-example_ga: Is í sin an oifig *inar* mian léi a bheith ag obair.
+:Table7O-inar-example_en: *EN*: _That's the office she wants to work in._
+
+:Table7O-inarb-example_ga: Is foirgneamh é sin *inarb* annamh ar cuairt é.
+:Table7O-inarb-example_en: *EN*: _That is a building that is rarely visited._
+
+:Table7O-lenar-example_ga: Is iomaí córas atá ar fáil *lenar* féidir rialú a dhéanamh.
+:Table7O-lenar-example_en: *EN*: _There are many systems available with which control can be exercised._
+
+:Table7O-lenarb-example_ga: Dúirt sí a rogha rud, ar neamhchead don té *lenarb* olc.
+:Table7O-lenarb-example_en: *EN*: _She said what she wanted, regardless of whom it may offend._
+
+:Table7O-ónar-example_ga: Beidh siad i scríbhinn nó i bhfoirm *ónar* féidir taifead scríofa a tháirgeadh.
+:Table7O-ónar-example_en: *EN*: _They will be in writing or in a form from which a written record can be produced._
+
+:Table7O-ónarb-example_ga: Bhí sé i dteannta an dreama *ónarb* áil leis teitheadh.
+:Table7O-ónarb-example_en: *EN*: _He was in the company of the group that wanted to escape._
+
+:Table7O-trínar-example_ga: Faightear réidh le gach meán eile *trínar* féidir aon ní den sórt sin a scriosadh.
+:Table7O-trínar-example_en: *EN*: _All other means by which anything of this nature can be destroyed are eliminated._
+
+:Table7O-trínarb-example_ga: Cén fhoirmle atá agat *trínarb* éasca an cheist a fhreagairt?
+:Table7O-trínarb-example_en: *EN*: _What formula do you have through which it is easy to answer the question?_
+
 :7-3-2-B-title_ga: An Aimsir Chaite, an Aimsir Ghnáthchaite agus an Modh Coinníollach
 :7-3-2-B-title_en: The Past Tense, Past Habitual Tense and Conditional Mood
 
@@ -853,6 +950,42 @@
 
 :Table7P-caption_ga: Réamhfhocail i gcumasc leis an gCopail &mdash; An Aimsir Chaite, an Aimsir Ghnáthchaite agus an Modh Coinníollach
 :Table7P-caption_en: Prepositions composed with the Copula &mdash; The Past Tense, Past Habitual Tense and Conditional Mood
+
+:Table7P-dar-example_ga: Cuireadh iniúchadh i gcrích don bhliain *dar* chríoch an 8 Márta 1998.
+:Table7P-dar-example_en: *EN*: _The investigation was concluded in the period ending on the 8th of March 1998._
+
+:Table7P-darbh-example_ga: Is buachaill *darbh* ainm Gearóid a bhí i láthair.
+:Table7P-darbh-example_en: *EN*: _That is a boy named Gearóid who was present._
+
+:Table7P-faoinar-example_ga: Liostaíodh na coinníollacha *faoinar* chomhaltaí iad na daoine sin.
+:Table7P-faoinar-example_en: *EN*: _The conditions under which those people were members were listed._
+
+:Table7P-faoinarbh-example_ga: Luadh an dáta *faoinarbh* fhéidir litir a chur faoi bhráid an Aire.
+:Table7P-faoinarbh-example_en: *EN*: _The date under which a letter can be submitted to the Minister was mentioned._
+
+:Table7P-inar-example_ga: D'fhéadfaí an cás a éisteacht i gcás *inar* fhreagróir an duine sin.
+:Table7P-inar-example_en: *EN*: _The case could be heard in the case of that person's respondent._
+
+:Table7P-inarbh-example_ga: Is cás é sin *inarbh* fhostaí d'úinéir na feithicle a cúisíodh.
+:Table7P-inarbh-example_en: *EN*: _That is a case in which an employee of the vehicle's owner was charged._
+
+:Table7P-lenar-example_ga: Is í sin an eagraíocht *lenar* ghníomhaire é.
+:Table7P-lenar-example_en: *EN*: _That is the organization with which he is an agent._
+
+:Table7P-lenarbh-example_ga: Sin í an fhoireann *lenarbh* áil liom imirt.
+:Table7P-lenarbh-example_en: *EN*: _That is the team with which I wanted to play._
+
+:Table7P-ónar-example_ga: Chuaigh sé ar ais go dtí an tír *ónar* dhíbeartach é.
+:Table7P-ónar-example_en: *EN*: _He returned to the country from which he was deported._
+
+:Table7P-ónarbh-example_ga: Tabhair faisnéis dom faoin iasacht agus faoin dáta *ónarbh* iníoctha í.
+:Table7P-ónarbh-example_en: *EN*: _Give me information about the loan and the date on which it was paid._
+
+:Table7P-trínar-example_ga: Bhí fóram ann *trínar* ghnách leis an bhfoireann ceisteanna a ardú.
+:Table7P-trínar-example_en: *EN*: _There was a forum through which the team usually raised questions._
+
+:Table7P-trínarbh-example_ga: Dúnadh an tollán *trínarbh* fhéidir tiomáint.
+:Table7P-trínarbh-example_en: *EN*: _The tunnel through which it was possible to drive was closed._
 
 :7-3-3-title_ga: Cónaisc i gcumasc leis an gCopail
 :7-3-3-title_en: Conjunctions composed with the Copula
@@ -869,6 +1002,18 @@
 :Table7Q-caption_ga: Cónaisc i gcumasc leis an gCopail &mdash; An Aimsir Láithreach agus an Aimsir Fháistineach
 :Table7Q-caption_en: Conjunctions composed with the Copula &mdash; The Present Tense and Future Tense
 
+:Table7Q-example1_ga: *Sular* féidir leis carr a cheannach, caithfidh sé airgead a shábháil.
+:Table7Q-example1_en: *EN*: _Before he can buy a car, he has to save money._
+
+:Table7Q-example2_ga: *Sularb* eol di é a bheith ann, beidh an cat imithe.
+:Table7Q-example2_en: *EN*: _Before she knows it is there, the cat will be gone._
+
+:Table7Q-example3_ga: *Ós* rud é gur agat atá eochracha an chairr, is tú a rachaidh chuig an siopa.
+:Table7Q-example3_en: *EN*: _Since you have the keys to the car, you will go to the shop._
+
+:Table7Q-example4_ga: *Ós* aici a bheidh an seomra, caithfidh sí féin é a réiteach.
+:Table7Q-example4_en: *EN*: _Since she will have the room, she has to arrange it herself._
+
 :7-3-3-B-title_ga: An Aimsir Chaite, an Aimsir Ghnáthchaite agus an Modh Coinníollach
 :7-3-3-B-title_en: The Past Tense, Past Habitual Tense and Conditional Mood
 
@@ -880,6 +1025,18 @@
 
 :Table7R-caption_ga: Cónaisc i gcumasc leis an gCopail &mdash; An Aimsir Chaite, an Aimsir Ghnáthchaite agus an Modh Coinníollach
 :Table7R-caption_en: Conjunctions composed with the Copula &mdash; The Past Tense, Past Habitual Tense and Conditional Mood
+
+:Table7R-example1_ga: Ba ghá dó síniú a bhainisteora a fháil *sular* cheadmhach dó saoire a ghlacadh. 
+:Table7R-example1_en: *EN*: _He had to get his manager's signature before he could take a holiday._
+
+:Table7R-example2_ga: *Sularbh* fhéidir liom imeacht, dúnadh an geata.
+:Table7R-example2_en: *EN*: _Before I could leave, the gate was closed._
+
+:Table7R-example3_ga: Tháinig ann don choigilteas *ó ba* lú an caiteachas ná mar a bhíothas ag súil. 
+:Table7R-example3_en: *EN*: _The savings came about because spending was less than expected._
+
+:Table7R-example4_ga: *Ó ba* ann dó, níorbh fhéidir é a shéanadh.
+:Table7R-example4_en: *EN*: _Since it was there, it could not be denied._
 
 :7-3-4-title_ga: _má_ i gcumasc leis an gCopail
 :7-3-4-title_en: _má_ composed with the Copula
@@ -899,6 +1056,30 @@
 :Table7S-caption_ga: _má_ i gcumasc leis an gCopail &mdash; An Aimsir Láithreach agus an Aimsir Fháistineach
 :Table7S-caption_en: _má_ composed with the copula &mdash; The Present Tense and Future Tense
 
+:Table7S-Más-example1_ga: *Más* mian leat imeacht, is féidir leat.
+:Table7S-Más-example1_en: *EN*: _If you want to leave, you can._
+
+:Table7S-Más-example2_ga: *Más* mall, is mithid.
+:Table7S-Más-example2_en: *EN*: _If it's late, it's about time._
+
+:Table7S-más-example3_ga: Fan sa bhaile, *más* amhlaidh is fearr leat é.
+:Table7S-más-example3_en: *EN*: _Stay at home, if that's what you prefer._
+
+:Table7S-Más-example4_ga: *Más* é Séamas atá ann, abair leis teacht anseo.
+:Table7S-Más-example4_en: *EN*: _If it's Séamas, tell him to come here._
+
+:Table7S-Mura-example1_ga: *Mura* mian léi fanacht, ní gá di.
+:Table7S-Mura-example1_en: *EN*: _If she doesn't want to stay, she doesn't have to._
+
+:Table7S-mura-example2_ga: Tabhair sampla eile dom, *mura* miste leat.
+:Table7S-mura-example2_en: *EN*: _Give me another example, if you don't mind._
+
+:Table7S-murab-example1_ga: Bean ard ab ea í, *murab* ionann agus Cáit.
+:Table7S-murab-example1_en: *EN*: _She was a tall woman, unlike Cáit._
+
+:Table7S-Murab-example2_ga: *Murab* áil leis éisteacht, ní gá dó.
+:Table7S-Murab-example2_en: *EN*: _If he didn't want to listen, he didn't have to._
+
 :7-3-4-B-title_ga: An Aimsir Chaite agus an Aimsir Ghnáthchaite
 :7-3-4-B-title_en: The Past Tense and the Past Habitual Tense
 
@@ -910,6 +1091,27 @@
 
 :Table7T-header_ga: An Aimsir Chaite agus an Aimsir Ghnáthchaite
 :Table7T-header_en: The Past Tense and Past Habitual Tense
+
+:Table7T-positive-example1_ga: *Má ba* dhuine macánta é, b'ait an gnó a bhí ar siúl aige.
+:Table7T-positive-example1_en: *EN*: _If he was an honest person, the business he had going was strange._
+
+:Table7T-positive-example2_ga: **Má b'**fhear aitheanta é, ní raibh a fhios agam é.
+:Table7T-positive-example2_en: *EN*: _If he was a well-known man, I didn't know it._
+
+:Table7T-positive-example3_ga: *Má ba* í a bhí ann, níor aithin sí mé.
+:Table7T-positive-example3_en: *EN*: _If it was her, she didn't recognize me._
+
+:Table7T-negative-example1_ga: *Murar* chomhalta cláraithe é, ní raibh aon seans aige.
+:Table7T-negative-example1_en: *EN*: _If he was not a registered member, he had no chance._
+
+:Table7T-negative-example2_ga: *Murar* shíntiúsóir cláraithe í, ní bhfaigheadh sí an iris sa phost.
+:Table7T-negative-example2_en: *EN*: _If she was not a registered subscriber, she wouldn't receive the magazine in the mail._
+
+:Table7T-negative-example3_ga: *Murarbh* éan é, b'ialtóg a bhí ann.
+:Table7T-negative-example3_en: *EN*: _If it wasn't a bird, it was a bat._
+
+:Table7T-negative-example4_ga: Ní bhíodh sí ag imirt *murarbh* áil léi féin é.
+:Table7T-negative-example4_en: *EN*: _She wouldn't play if it wasn't to her liking._
 
 :7-3-5-title_ga: _dá_ agus an Chopail
 :7-3-5-title_en: _dá_ and the Copula
@@ -923,14 +1125,62 @@
 :Table7U-header_ga: An Modh Coinníollach
 :Table7U-header_en: The Conditional Mood
 
+:Table7U-example1_ga: *Dá mba* mhaith leat é, d'fhéadfainn é a fháil duit.
+:Table7U-example1_en: *EN*: _If you would like it, I could get it for you._
+
+:Table7U-example2_ga: *Dá mba* é d'athair a déarfadh sin, chreidfinn é.
+:Table7U-example2_en: *EN*: _If it were your father who would say that, I would believe it._
+
+:Table7U-example3_ga: **Dá mb'**fhear saibhir é, thabharfadh sé síntiús fial uaidh.
+:Table7U-example3_en: *EN*: _If he were a rich man, he would give a generous donation._
+
+:Table7U-example4_ga: *Dá mba* fhreastalaí í, bheadh sí ag obair ar an deireadh seachtaine.
+:Table7U-example4_en: *EN*: _If she were a waitress, she would be working on the weekend._
+
 :7-4-title_ga: An Modh Foshuiteach
 :7-4-title_en: The Subjunctive Mood
 
 :7-4-p_ga: Sa tábla thíos, leagtar amach foirmeacha na copaile sa mhodh foshuiteach, aimsir láithreach nó aimsir fháistineach. Ní gnách an chopail a úsáid sa mhodh foshuiteach caite.
-:7-4-p_en: In the table below, examples of the copula in the subjunctive mood, present tense or future tense are given. The copula is not normally used in the past subjunctive mood.
+:7-4-p_en: In the table below, examples of the copula in the subjunctive mood, present tense or future tense are given. The copula is not normally used in the past subjunctive mood. <br /> (*TL Note*: _These were really hard to translate. Please submit suggestions on improvements._)
 
 :Table7V-caption_ga: An Modh Foshuiteach &mdash; An Aimsir Láithreach agus an Aimsir Fháistineach
 :Table7V-caption_en: The Subjunctive Mood &mdash; The Present Tense and Future Tense
 
 :Table7V-header_ga: An Modh Foshuiteach
 :Table7V-header_en: The Subjunctive Mood
+
+:Table7V-Gura-example1_ga: *Gura* fada buan tú.
+:Table7V-Gura-example1_en: *EN*: _May you be long-lived._
+
+:Table7V-Gura-example2_ga: *Gura* maith an mhaise dó é.
+:Table7V-Gura-example2_en: *EN*: _May it be good for him._
+
+:Table7V-Gura-example3_ga: *Gura* slán an scéal é.
+:Table7V-Gura-example3_en: *EN*: _May the story be safe._
+
+:Table7V-Gurab-example1_ga: *Gurab* ann romhainn a bheidh sé.
+:Table7V-Gurab-example1_en: *EN*: _That it will be there before us._
+
+:Table7V-Gurab-example2_ga: *Gurab* amhlaidh duit.
+:Table7V-Gurab-example2_en: *EN*: _May it be so for you._
+
+:Table7V-Gurab-example3_ga: *Gurab* é barr do leasa é.
+:Table7V-Gurab-example3_en: *EN*: _That it is in your best interest._
+
+:Table7V-Nára-example1_ga: *Nára* fíor é.
+:Table7V-Nára-example1_en: *EN*: _That it is not true._
+
+:Table7V-Nára-example2_ga: *Nára* fearrde sibh é.
+:Table7V-Nára-example2_en: *EN*: _That it would not be better for you._
+
+:Table7V-Nára-example3_ga: *Nára* fada go bhfeicfimid a chéile arís.
+:Table7V-Nára-example3_en: *EN*: _That it is not long until we would see each other again._
+
+:Table7V-Nárab-example1_ga: *Nárab* am amú é.
+:Table7V-Nárab-example1_en: *EN*: _That it is not a waste of time._
+
+:Table7V-Nárab-example2_ga: *Nárab* é a leas é.
+:Table7V-Nárab-example2_en: *EN*: _That it is not for your benefit._
+
+:Table7V-Nárab-example3_ga: *Nárab* é duit.
+:Table7V-Nárab-example3_en: *EN*: _That it is not so for you._
