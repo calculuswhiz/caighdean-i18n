@@ -860,7 +860,8 @@ endif::[]
     </thead>
     <tbody>
         <tr>
-            <td class="font-bold">ag</td>
+ifdef::isGa[<td class="font-bold">ag</td>]
+ifndef::isGa[<td class="font-bold">ag ({Table8F-ag})</td>]
             <td>agam</td>
             <td>agat</td>
             <td>aige</td>
@@ -870,7 +871,8 @@ endif::[]
             <td>acu</td>
         </tr>
         <tr>
-            <td class="font-bold">ar</td>
+ifdef::isGa[<td class="font-bold">ar</td>]
+ifndef::isGa[<td class="font-bold">ar ({Table8F-ar})</td>]
             <td>orm</td>
             <td>ort</td>
             <td>air</td>
@@ -880,7 +882,8 @@ endif::[]
             <td>orthu</td>
         </tr>
         <tr>
-            <td class="font-bold">as</td>
+ifdef::isGa[<td class="font-bold">as</td>]
+ifndef::isGa[<td class="font-bold">as ({Table8F-as})</td>]
             <td>asam</td>
             <td>asat</td>
             <td>as</td>
@@ -890,7 +893,8 @@ endif::[]
             <td>astu</td>
         </tr>
         <tr>
-            <td class="font-bold">chuig</td>
+ifdef::isGa[<td class="font-bold">chuig</td>]
+ifndef::isGa[<td class="font-bold">chuig ({Table8F-chuig})</td>]
             <td>chugam</td>
             <td>chugat</td>
             <td>chuige</td>
@@ -900,7 +904,8 @@ endif::[]
             <td>chucu</td>
         </tr>
         <tr>
-            <td class="font-bold">de</td>
+ifdef::isGa[<td class="font-bold">de</td>]
+ifndef::isGa[<td class="font-bold">de ({Table8F-de})</td>]
             <td>díom</td>
             <td>díot</td>
             <td>de</td>
@@ -910,7 +915,8 @@ endif::[]
             <td>díobh</td>
         </tr>
         <tr>
-            <td class="font-bold">do</td>
+ifdef::isGa[<td class="font-bold">do</td>]
+ifndef::isGa[<td class="font-bold">do ({Table8F-do})</td>]
             <td>dom</td>
             <td>duit</td>
             <td>dó</td>
@@ -920,7 +926,8 @@ endif::[]
             <td>dóibh</td>
         </tr>
         <tr>
-            <td class="font-bold">faoi</td>
+ifdef::isGa[<td class="font-bold">faoi</td>]
+ifndef::isGa[<td class="font-bold">faoi ({Table8F-faoi})</td>]
             <td>fúm</td>
             <td>fút</td>
             <td>faoi</td>
@@ -930,7 +937,8 @@ endif::[]
             <td>fúthu</td>
         </tr>
         <tr>
-            <td class="font-bold">fara</td>
+ifdef::isGa[<td class="font-bold">fara</td>]
+ifndef::isGa[<td class="font-bold">fara ({Table8F-fara})</td>]
             <td>faram</td>
             <td>farat</td>
             <td>fairis</td>
@@ -940,7 +948,8 @@ endif::[]
             <td>faru</td>
         </tr>
         <tr>
-            <td class="font-bold">i</td>
+ifdef::isGa[<td class="font-bold">i</td>]
+ifndef::isGa[<td class="font-bold">i ({Table8F-i})</td>]
             <td>ionam</td>
             <td>ionat</td>
             <td>ann</td>
@@ -950,7 +959,8 @@ endif::[]
             <td>iontu</td>
         </tr>
         <tr>
-            <td class="font-bold">idir</td>
+ifdef::isGa[<td class="font-bold">idir</td>]
+ifndef::isGa[<td class="font-bold">idir ({Table8F-idir})</td>]
             <td>-</td>
             <td>-</td>
             <td>-</td>
@@ -960,7 +970,8 @@ endif::[]
             <td>eatarthu</td>
         </tr>
         <tr>
-            <td class="font-bold">ionsar</td>
+ifdef::isGa[<td class="font-bold">ionsar</td>]
+ifndef::isGa[<td class="font-bold">ionsar ({Table8F-ionsar})</td>]
             <td>ionsorm</td>
             <td>ionsort</td>
             <td>ionsair</td>
@@ -970,7 +981,8 @@ endif::[]
             <td>ionsorthu</td>
         </tr>
         <tr>
-            <td class="font-bold">le</td>
+ifdef::isGa[<td class="font-bold">le</td>]
+ifndef::isGa[<td class="font-bold">le ({Table8F-le})</td>]
             <td>liom</td>
             <td>leat</td>
             <td>leis</td>
@@ -980,7 +992,8 @@ endif::[]
             <td>leo</td>
         </tr>
         <tr>
-            <td class="font-bold">ó</td>
+ifdef::isGa[<td class="font-bold">ó</td>]
+ifndef::isGa[<td class="font-bold">ó ({Table8F-ó})</td>]
             <td>uaim</td>
             <td>uait</td>
             <td>uaidh</td>
@@ -990,7 +1003,8 @@ endif::[]
             <td>uathu</td>
         </tr>
         <tr>
-            <td class="font-bold">roimh</td>
+ifdef::isGa[<td class="font-bold">roimh</td>]
+ifndef::isGa[<td class="font-bold">roimh ({Table8F-roimh})</td>]
             <td>romham</td>
             <td>romhat</td>
             <td>roimhe</td>
@@ -1000,7 +1014,8 @@ endif::[]
             <td>rompu</td>
         </tr>
         <tr>
-            <td class="font-bold">thar</td>
+ifdef::isGa[<td class="font-bold">thar</td>]
+ifndef::isGa[<td class="font-bold">thar ({Table8F-thar})</td>]
             <td>tharam</td>
             <td>tharat</td>
             <td>thairis</td>
@@ -1010,7 +1025,8 @@ endif::[]
             <td>tharstu</td>
         </tr>
         <tr>
-            <td class="font-bold">trí</td>
+ifdef::isGa[<td class="font-bold">trí</td>]
+ifndef::isGa[<td class="font-bold">trí ({Table8F-trí})</td>]
             <td>tríom</td>
             <td>tríot</td>
             <td>tríd</td>
@@ -1020,7 +1036,8 @@ endif::[]
             <td>tríothu</td>
         </tr>
         <tr>
-            <td class="font-bold">um</td>
+ifdef::isGa[<td class="font-bold">um</td>]
+ifndef::isGa[<td class="font-bold">um ({Table8F-um})</td>]
             <td>umam</td>
             <td>umat</td>
             <td>uime</td>

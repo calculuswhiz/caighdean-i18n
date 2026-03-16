@@ -41,7 +41,7 @@
 :TheThirdPersonFem_en: Third Person (_fem._)
 
 :8-2-2-p_ga: Úsáidtear _thú_ (_thusa_) mar chuspóir briathair, e.g., _aithním thú_; _molaim thú_; agus nuair is ainmní é ar lorg na faisnéise in abairt chopaileach, e.g., _Mo náire thú_; _Is oibrí díograiseach thú_.
-:8-2-2-p_en: _thú_ (_thusa_) is used as the object of a verb, e.g., _aithním thú_; _molaim thú_; and when it is a subject following a predicate in a copular sentence, e.g., _Mo náire thú_; _Is oibrí díograiseach thú_.
+:8-2-2-p_en: _thú_ (_thusa_) is used as the object of a verb, e.g., _aithním thú_; _molaim thú_; and when it is a subject following a predicate in a copular sentence, e.g., _Mo náire thú_ (*EN*: _Shame on you_); _Is oibrí díograiseach thú_ (*EN*: _You are a diligent worker_).
 
 :8-2-2-sample1_ga: Níor dhearmad sé *thú* riamh.
 :8-2-2-sample1_en: He never forgot *you*.
@@ -131,7 +131,7 @@
 :8-2-5-sample12_en: *They* did it.
 
 :8-2-6-p_ga: Is é an forainmneach firinscneach uatha _é_ a úsáidtear in abairtí mar seo a leanas d'ainneoin ainmfhocal baininscneach a bheith iontu: _is é mo thuairim_; _is é an aidhm_; _is é an bhrí_; _is é mo bharúil_. Is ag tagairt don tuairim, don aidhm, don bhrí, etc. seachas don ainmfhocal féin atá an forainmneach.
-:8-2-6-p_en: The singular masculine pronominal _é_ is used in sentences like the following despite containing a feminine noun: _is é mo thuairim_; _is é an aidhm_; _is é an bhrí_; _is é mo bharúil_. The pronominal refers to the opinion, the aim, the meaning, etc. rather than the noun itself.
+:8-2-6-p_en: The singular masculine pronominal _é_ is used in sentences like the following despite containing a feminine noun: _is é mo thuairim_ (*EN*: _It is my opinion_); _is é an aidhm_ (*EN*: _It is the aim_); _is é an bhrí_ (*EN*: _It is the meaning_); _is é mo bharúil_ (*EN*: _It is my opinion_). The pronominal refers to the opinion, the aim, the meaning, etc. rather than the noun itself.
 
 :8-2-6-sample1_ga: Is *é* mo thuairimse gur fiú imeacht anois.
 :8-2-6-sample1_en: *It* is my opinion that it is worth leaving now.
@@ -182,7 +182,7 @@
 :8-3-1-sample3_en: They lost *their game*.
 
 :8-3-2-p_ga: Is féidir na foirmeacha treise den fhorainmneach pearsanta (_seisean_, _sise_, _siadsan_) a úsáid freisin chun treise a chur in iúl, e.g., _a gheansaí seisean_; _a cóta sise_; _a dteach siadsan_.
-:8-3-2-p_en: The emphatic forms of the third person pronominal (_seisean_, _sise_, _siadsan_) can also be used to express emphasis, e.g., _a gheansaí seisean_; _a cóta sise_; _a dteach siadsan_.
+:8-3-2-p_en: The emphatic forms of the third person pronominal (_seisean_, _sise_, _siadsan_) can also be used to express emphasis, e.g., _a gheansaí seisean_ (*EN*: _his sweater_); _a cóta sise_ (*EN*: _her coat_); _a dteach siadsan_ (*EN*: _their house_).
 
 :8-3-2-sample1_ga: Ní raibh mórán i gceist *lena mhodúil seisean*.
 :8-3-2-sample1_en: There wasn't much to *_his_ module*.
@@ -194,7 +194,7 @@
 :8-3-2-sample3_en: There is plenty to do on *_their_ farm*.
 
 :8-3-3-p_ga: I gcás ina bhfuil an bhunuimhir _dhá_ idir an aidiacht shealbhach agus an t&#x2011;ainmfhocal, ní ar an mbunuimhir ach ar an ainmfhocal a dhéantar na hathruithe tosaigh.
-:8-3-3-p_en: When the number _dhá_ (_EN: two_) appears between a possessive adjective and a noun, it is the noun that undergoes the initial mutation, not the possessive adjective.
+:8-3-3-p_en: When the number _dhá_ (*EN*: _two_) appears between a possessive adjective and a noun, it is the noun that undergoes the initial mutation, not the possessive adjective.
 
 :8C-caption_ga: An Aidiacht Shealbhach agus _dhá_
 :8C-caption_en: The Possessive Adjective and _dhá_
@@ -215,10 +215,10 @@
 :8-3-4-p_en: To complete the function of possessive pronominal --
 
 :8-3-4-a-p_ga: úsáidtear aidiacht shealbhach móide _ceann_ nó _cuid_ arna threisiú le hiarmhír, e.g., _mo cheannsa_; _a gcuidsean_; nó
-:8-3-4-a-p_en: a possessive adjective plus _ceann_ or _cuid_ reinforced with a suffix is used, e.g., _mo cheannsa_; _a gcuidsean_; or
+:8-3-4-a-p_en: a possessive adjective plus _ceann_ (*EN*: _one_) or _cuid_ (*EN*: _part_) reinforced with a suffix is used, e.g., _mo cheannsa_ (*EN*: _mine_); _a gcuidsean_ (*EN*: _theirs_); or
 
 :8-3-4-b-p_ga: úsáidtear aidiacht shealbhach móide _cuid_ arna threisiú le hiarmhír agus leis an ainmfhocal, e.g., _ár gcuidne airgid_; _bhur gcuidse iarrachtaí_.
-:8-3-4-b-p_en: a possessive adjective plus _cuid_ reinforced with a suffix is used, e.g., _ár gcuidne airgid_; _bhur gcuidse iarrachtaí_.
+:8-3-4-b-p_en: a possessive adjective plus _cuid_ reinforced with a suffix is used, e.g., _ár gcuidne airgid_ (*EN*: _our money_); _bhur gcuidse iarrachtaí_ (*EN*: _your efforts_).
 
 :8D-caption_ga: An Aidiacht Shealbhach agus _ceann_ nó _cuid_
 :8D-caption_en: The Possessive Adjective and _ceann_ or _cuid_
@@ -347,7 +347,7 @@
 :8-3-8-c-sample2_en: I wasn't happy *with* how long it took.
 
 :8-3-8-d-p_ga: i bhfrásaí amhail _a lán_; _a leithéid_; _a thuilleadh_;
-:8-3-8-d-p_en: in phrases such as _a lán_; _a leithéid_; _a thuilleadh_;
+:8-3-8-d-p_en: in phrases such as _a lán_ (*EN*: _a lot_); _a leithéid_ (*EN*: _such_); _a thuilleadh_ (*EN*: _more_);
 
 :8-3-8-d-sample1_ga: Ceadófar post lánaimseartha *ina leithéid* de chás.
 :8-3-8-d-sample1_en: A full-time position will be allowed *in such* an instance.
@@ -380,7 +380,7 @@
 :8-3-8-e-sample6_en: We were there *until* twelve.
 
 :8-3-9-p_ga: Cuirtear _n_ idir an réamhfhocal _ar_ agus an aidiacht shealbhach _a_ chun _arna_ a chruthú. Réitíonn an t&#x2011;ainm briathartha le hinscne agus le huimhir an ainmfhocail a thagann roimhe, e.g., _leabhar arna eisiúint_; _tuarascáil arna seoladh_; _doiciméid arna bhfoilsiú_.
-:8-3-9-p_en: _n_ is placed between the preposition _ar_ and the possessive adjective _a_ to form _arna_. The verbal noun agrees with the gender and number of the noun that precedes it, e.g., _leabhar arna eisiúint_; _tuarascáil arna seoladh_; _doiciméid arna bhfoilsiú_.
+:8-3-9-p_en: _n_ is placed between the preposition _ar_ and the possessive adjective _a_ to form _arna_. The verbal noun agrees with the gender and number of the noun that precedes it, e.g., _leabhar arna eisiúint_ (*EN*: _book issued_); _tuarascáil arna seoladh_ (*EN*: _report sent_); _doiciméid arna bhfoilsiú_ (*EN*: _documents published_).
 
 :8-3-9-sample1_ga: Measfar é a bheith *arna thoghadh* faoin Acht seo. (_fir._)
 :8-3-9-sample1_en: He shall be deemed to have been *elected* under this Act. (_masc._)
@@ -396,6 +396,24 @@
 
 :8F-caption_ga: Na Forainmnigh Réamhfhoclacha
 :8F-caption_en: The Prepositional Pronominals
+
+:Table8F-ag_en: *EN*: at
+:Table8F-ar_en: *EN*: on
+:Table8F-as_en: *EN*: from
+:Table8F-chuig_en: *EN*: toward
+:Table8F-de_en: *EN*: of
+:Table8F-do_en: *EN*: to
+:Table8F-faoi_en: *EN*: under
+:Table8F-fara_en: *EN*: besides
+:Table8F-i_en: *EN*: in
+:Table8F-idir_en: *EN*: between
+:Table8F-ionsar_en: *EN*: towards
+:Table8F-le_en: *EN*: with
+:Table8F-ó_en: *EN*: from
+:Table8F-roimh_en: *EN*: before
+:Table8F-thar_en: *EN*: over
+:Table8F-trí_en: *EN*: through
+:Table8F-um_en: *EN*: around
 
 :TheThirdPerson_ga: An Triú Pearsa
 :TheThirdPerson_en: Third Person
@@ -497,7 +515,7 @@
 :8-5-4-sample8_en: *What* harm is it?
 
 :8-5-5-p_ga: Úsáidtear an leagan firinscneach uatha den fhorainmneach réamhfhoclach nó den aidiacht shealbhach _a_ in abairtí ceisteacha, beag beann ar uimhir nó inscne an ní nó na nithe dá bhfuiltear ag tagairt, e.g., _Cé leis a raibh tú ag caint?_ (is ag tagairt d'fhear, do bhean nó do ghrúpa atá _leis_); _Cé ina aghaidh a raibh siad ag imirt?_ (is ag tagairt d'fhear, do bhean nó do ghrúpa atá an aidiacht shealbhach _a_).
-:8-5-5-p_en: The masculine singular form of the prepositional pronominal or possessive adjective _a_ is used in interrogative sentences, regardless of the number or gender of the thing or things being referred to, e.g., _Cé leis a raibh tú ag caint?_ (referring to a man or a woman or a group with _leis_); _Cé ina aghaidh a raibh siad ag imirt?_ (referring to a man or a woman or a group with the possessive adjective _a_).
+:8-5-5-p_en: The masculine singular form of the prepositional pronominal or possessive adjective _a_ is used in interrogative sentences, regardless of the number or gender of the thing or things being referred to, e.g., _Cé leis a raibh tú ag caint?_ (*EN*: _Who were you talking to?_) (referring to a man or a woman or a group with _leis_); _Cé ina aghaidh a raibh siad ag imirt?_ (*EN*: _Who were they playing against?_) (referring to a man or a woman or a group with the possessive adjective _a_).
 
 :8-5-5-sample1_ga: Cad *é* a chuir tú ann?
 :8-5-5-sample1_en: What *did* you put there?
@@ -515,16 +533,16 @@
 :8-6-1-p_en: These are demonstrative pronominals _seo_, _sin_ and _siúd_. The demonstrative pronominals are used in four ways:
 
 :8-6-1-a-p_ga: go comhaisnéiseach le forainmneach atá roimhe, e.g., _Is bronntanas é sin_; _Tabhair cabhair dóibh seo_; _Cá bhfuil a cóipleabhar siúd_?; _dá rachaidís siúd_;
-:8-6-1-a-p_en: in combination with a preceding pronominal, e.g., _Is bronntanas é sin_; _Tabhair cabhair dóibh seo_; _Cá bhfuil a cóipleabhar siúd_?; _dá rachaidís siúd_;
+:8-6-1-a-p_en: in combination with a preceding pronominal, e.g., _Is bronntanas é sin_ (*EN*: _That is a gift_); _Tabhair cabhair dóibh seo_ (*EN*: _Give them this help_); _Cá bhfuil a cóipleabhar siúd_? (*EN*: _Where is that copybook_?); _dá rachaidís siúd_ (*EN*: _If they went there_);
 
 :8-6-1-b-p_ga: go comhaisnéiseach roimh an bhforainmneach pearsanta, e.g., _Sin é an bronntanas_; _Seo é an cóipleabhar_; _Siúd iad na múinteoirí_; _Siúd í an traein chugainn_;
-:8-6-1-b-p_en: in combination before a personal pronominal, e.g., _Sin é an bronntanas_; _Seo é an cóipleabhar_; _Siúd iad na múinteoirí_; _Siúd í an traein chugainn_;
+:8-6-1-b-p_en: in combination before a personal pronominal, e.g., _Sin é an bronntanas_ (*EN*: _That is the gift_); _Seo é an cóipleabhar_ (*EN*: _This is the copybook_); _Siúd iad na múinteoirí_ (*EN*: _Those are the teachers_); _Siúd í an traein chugainn_ (*EN*: _That is the train coming towards us_);
 
 :8-6-1-c-p_ga: thar ceann an fhorainmnigh phearsanta, e.g., _Tá sin álainn_; _Ith seo_; _An bhfuil siúd amhlaidh?_; _D'imigh siúd leis an mbus_; _Sin madra_; _Seo an mála_; _Siúd an fhírinne_; _Cad seo?_; _Cé sin?_; _Sin sin_; _mar seo_; _go dtí sin_; _gan siúd a ól_;
-:8-6-1-c-p_en: in combination with a personal pronominal, e.g., _Tá sin álainn_; _Ith seo_; _An bhfuil siúd amhlaidh?_; _D'imigh siúd leis an mbus_; _Sin madra_; _Seo an mála_; _Siúd an fhírinne_; _Cad seo?_; _Cé sin?_; _Sin sin_; _mar seo_; _go dtí sin_; _gan siúd a ól_;
+:8-6-1-c-p_en: in combination with a personal pronominal, e.g., _Tá sin álainn_ (*EN*: _That is beautiful_); _Ith seo_ (*EN*: _Eat this_); _An bhfuil siúd amhlaidh?_ (*EN*: _Is that so?_); _D'imigh siúd leis an mbus_ (*EN*: _They left with the bus_); _Sin madra_ (*EN*: _That is a dog_); _Seo an mála_ (*EN*: _This is the bag_); _Siúd an fhírinne_ (*EN*: _That is the truth_); _Cad seo?_ (*EN*: _What is this?_); _Cé sin?_ (*EN*: _Who is that?_); _Sin sin_ (*EN*: _That is that_); _mar seo_ (*EN*: _Like this_); _go dtí sin_ (*EN*: _Until then_); _gan siúd a ól_ (*EN*: _Without drinking that_);
 
 :8-6-1-d-p_ga: le feidhm dhobhriathair, e.g., _chomh híseal seo_ (_sin_, _siúd_); _chomh mór seo_ (_sin_, _siúd_).
-:8-6-1-d-p_en: with an adverbial function, e.g., _chomh híseal seo_ (_sin_, _siúd_); _chomh mór seo_ (_sin_, _siúd_).
+:8-6-1-d-p_en: with an adverbial function, e.g., _chomh híseal seo_ (_sin_, _siúd_) (*EN*: _this low_); _chomh mór seo_ (_sin_, _siúd_) (*EN*: _this big_).
 
 :8-6-2-p_ga: Is minic a úsáidtear na foirmeacha _eo_, _in_ agus _iúd_ in ionad _seo_, _sin_ agus _siúd_ ar lorg na copaile. Tabhair faoi deara nach n&#x2011;úsáidtear na leaganacha _eo_, _in_ ná _iúd_ tar éis _is_.
 :8-6-2-p_en: The forms _eo_, _in_ and _iúd_ are often used instead of _seo_, _sin_ and _siúd_ in the copula. Note that the forms _eo_, _in_ and _iúd_ are not used after _is_. (*TL Note*: _eo_, _in_, and _iúd_ are secondary forms in dialectical Irish according to https://en.wikisource.org/wiki/Graim%C3%A9ar_na_Gaedhilge/Part_II_Chapter_IV[Graiméar na Gaedhilge, Part II Chapter IV]. These entries are not found in FGB.)

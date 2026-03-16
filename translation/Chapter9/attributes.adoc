@@ -11,25 +11,25 @@
 :9-1-1-a-title_en: The Bare Number
 
 :9-1-1-a-p_ga: Tugtar maoluimhir ar uimhir nach dtagann ainmfhocal go díreach ar a lorg. Úsáidtear an mhaoluimhir i gcomhaireamh lom, e.g., _a haon_; _a cúig_; _a deich_ (féach link:#sec_9_2[9.2]).
-:9-1-1-a-p_en: A number that is not directly followed by a noun is called a bare number. The bare number is used in counting, e.g., _a haon_; _a cúig_; _a deich_ (see link:#sec_9_2[9.2]).
+:9-1-1-a-p_en: A number that is not directly followed by a noun is called a bare number. The bare number is used in counting, e.g., _a haon_ (*EN*: _one_); _a cúig_ (*EN*: _five_); _a deich_ (*EN*: _ten_) (see link:#sec_9_2[9.2]).
 
 :9-1-1-b-title_ga: An Bhunuimhir
 :9-1-1-b-title_en: The Cardinal Number
 
 :9-1-1-b-p_ga: Tugtar bunuimhir ar uimhir a chuirtear roimh ainmfhocal chun líon rudaí a chur in iúl, e.g., _trí leabhar_; _seacht gcupán_; _naoi mbád_ (féach link:#sec_9_3[9.3]).
-:9-1-1-b-p_en: A number that is placed before a noun to express a number of things is called a cardinal number, e.g., _trí leabhar_; _seacht gcupán_; _naoi mbád_ (see link:#sec_9_3[9.3]).
+:9-1-1-b-p_en: A number that is placed before a noun to express a number of things is called a cardinal number, e.g., _trí leabhar_ (*EN*: _three books_); _seacht gcupán_ (*EN*: _seven cups_); _naoi mbád_ (*EN*: _nine boats_) (see link:#sec_9_3[9.3]).
 
 :9-1-1-c-title_ga: An Uimhir Phearsanta
 :9-1-1-c-title_en: The Personal Number
 
 :9-1-1-c-p_ga: Tugtar uimhir phearsanta ar uimhir a úsáidtear chun daoine a chomhaireamh, e.g., _beirt bhan_; _ceathrar daltaí_; _ochtar feirmeoirí_ (féach link:#sec_9_4[9.4]).
-:9-1-1-c-p_en: A number that is used to count people is called a personal number, e.g., _beirt bhan_; _ceathrar daltaí_; _ochtar feirmeoirí_ (see link:#sec_9_4[9.4]).
+:9-1-1-c-p_en: A number that is used to count people is called a personal number, e.g., _beirt bhan_ (*EN*: _two women_); _ceathrar daltaí_ (*EN*: _four students_); _ochtar feirmeoirí_ (*EN*: _eight farmers_) (see link:#sec_9_4[9.4]).
 
 :9-1-1-d-title_ga: An Orduimhir
 :9-1-1-d-title_en: The Ordinal Number
 
 :9-1-1-d-p_ga: Tugtar orduimhir ar uimhir lena gcuirtear ionad ruda i sraith rudaí in iúl, e.g., _an chéad teach_; _an dara bean_; _an fichiú haois_ (féach link:#sec_9_5[9.5]).
-:9-1-1-d-p_en: A number indicating the position of an object in a series of objects is called an ordinal number, e.g., _an chéad teach_; _an dara bean_; _an fichiú haois_ (see link:#sec_9_5[9.5]).
+:9-1-1-d-p_en: A number indicating the position of an object in a series of objects is called an ordinal number, e.g., _an chéad teach_ (*EN*: _the first house_); _an dara bean_ (*EN*: _the second woman_); _an fichiú haois_ (*EN*: _the twentieth century_) (see link:#sec_9_5[9.5]).
 
 :9-1-1-e-title_ga: An Codán
 :9-1-1-e-title_en: The Fraction
@@ -50,13 +50,13 @@
 :9-2-title_en: The Bare Number
 
 :9-2-p_ga: Tugtar maoluimhir ar uimhir a úsáidtear i gcomhaireamh lom nuair nach gcuirtear líon nó ord rudaí nó daoine in iúl, e.g., _a haon_; _a trí déag_; _a tríocha trí_; _céad nócha a cúig_; _míle, ceithre chéad seachtó a naoi_.
-:9-2-p_en: A bare number is a number used in counting when the number or order of things or people is not indicated, e.g., _a haon_; _a trí déag_; _a tríocha trí_; _céad nócha a cúig_; _míle, ceithre chéad seachtó a naoi_.
+:9-2-p_en: A bare number is a number used in counting when the number or order of things or people is not indicated, e.g., _a haon_ (*EN*: _one_); _a trí déag_ (*EN*: _thirteen_); _a tríocha trí_ (*EN*: _thirty-three_); _céad nócha a cúig_ (*EN*: _one hundred ninety-five_); _míle, ceithre chéad seachtó a naoi_ (*EN*: _one thousand four hundred seventy-nine_).
 
 :9-2-1-title_ga: Na Maoluimhreacha 0&ndash;99
 :9-2-1-title_en: The Bare Numbers 0&ndash;99
 
 :9-2-1-a-p_ga: Cuirtear an mhír _a_ roimh uimhreacha ó 1&ndash;19, e.g., _a haon_; _a dó_; _a trí_; _bus a ceathair_; _a hocht déag_; agus i gcás 20&ndash;99 (seachas na deicheanna), cuirtear í roimh an uimhir dheiridh, e.g., _fiche a haon_; _daichead a sé_; _seachtó a hocht_.
-:9-2-1-a-p_en: The particle _a_ is placed before numbers from 1&ndash;19, e.g., _a haon_; _a dó_; _a trí_; _bus a ceathair_; _a hocht déag_; and for 20&ndash;99 (other than the tens), it is placed before the last number, e.g., _fiche a haon_; _daichead a sé_; _seachtó a hocht_.
+:9-2-1-a-p_en: The particle _a_ is placed before numbers from 1&ndash;19, e.g., _a haon_ (*EN*: _one_); _a dó_ (*EN*: _two_); _a trí_ (*EN*: _three_); _bus a ceathair_ (*EN*: _bus four_); _a hocht déag_ (*EN*: _eighteen_); and for 20&ndash;99 (other than the tens), it is placed before the last number, e.g., _fiche a haon_ (*EN*: _twenty-one_); _daichead a sé_ (*EN*: _forty-six_); _seachtó a hocht_ (*EN*: _seventy-eight_).
 
 :9-2-1-b-p_ga: Tá comhstádas ag na focail _ceathracha_ agus _daichead_.
 :9-2-1-b-p_en: The words _ceathracha_ and _daichead_ have a similar status. (*TL Note*: Both of these mean "forty.")
@@ -68,7 +68,7 @@
 :TheBareNumbers_en: The Bare Numbers
 
 :9-2-1-p2_ga: Tabhair faoi deara go n&#x2011;úsáidtear an mhaoluimhir i gcúrsaí ama, e.g., _a haon a chlog_; _a seacht a chlog_; _a fiche tar éis a cúig_. Seo mar a scríobhtar an t&#x2011;am i bhfoirm figiúirí: _5.30 p.m._; _4.26 p.m._; _13:00_; _16:47_.
-:9-2-1-p2_en: Note that the bare number is used for times of day, e.g., _a haon a chlog_; _a seacht a chlog_; _a fiche tar éis a cúig_. This is how time is written in the form of figures: _5.30 p.m._; _4.26 p.m._; _13:00_; _16:47_.
+:9-2-1-p2_en: Note that the bare number is used for times of day, e.g., _a haon a chlog_ (*EN*: _one o'clock_); _a seacht a chlog_ (*EN*: _seven o'clock_); _a fiche tar éis a cúig_ (*EN*: _twenty past five_). This is how time is written in the form of figures: _5.30 p.m._; _4.26 p.m._; _13:00_; _16:47_.
 
 :9-2-1-p3_ga: Seo mar a scríobhtar na maoluimhreacha ó 20&ndash;99. Tugtar an córas iomlán idir 20 agus 29 sa tábla agus tugtar samplaí i gcás na ndeicheanna eile.
 :9-2-1-p3_en: This is how the bare numbers from 20&ndash;99 are written. The entire system between 20 and 29 is given in the table and examples are given for the other tens.
@@ -77,10 +77,10 @@
 :9-2-2-title_en: The Bare Numbers 100+
 
 :9-2-2-a-p_ga: Is ainmfhocail iad na huimhreacha _céad_, _míle_, _milliún_, _billiún_, etc. Dá bhrí sin, is é córas na mbunuimhreacha a úsáidtear má tá na huimhreacha 2&ndash;19 roimh shraith náideanna a fhreagraíonn do _céad_, _míle_, _milliún_, _billiún_, etc., e.g., _ceithre chéad_; _dhá chéad míle_; _naoi milliún déag_; _dhá bhilliún_; _ocht mbilliún_ (féach link:#sec_9_3[9.3] An Bhunuimhir).
-:9-2-2-a-p_en: The numbers _céad_, _míle_, _milliún_, _billiún_, etc. are nouns. Therefore, the cardinal number system is used if the numbers 2&ndash;19 are followed by a series of zeros corresponding to _céad_, _míle_, _milliún_, _billiún_, etc., e.g., _ceithre chéad_; _dhá chéad míle_; _naoi milliún déag_; _dhá bhilliún_; _ocht mbilliún_ (see link:#sec_9_3[9.3] The Cardinal Number).
+:9-2-2-a-p_en: The numbers _céad_ (*EN*: _hundred_), _míle_ (*EN*: _thousand_), _milliún_ (*EN*: _million_), _billiún_ (*EN*: _billion_), etc. are nouns. Therefore, the cardinal number system is used if the numbers 2&ndash;19 are followed by a series of zeros corresponding to _céad_, _míle_, _milliún_, _billiún_, etc., e.g., _ceithre chéad_ (*EN*: _four hundred_); _dhá chéad míle_ (*EN*: _two hundred thousand_); _naoi milliún déag_ (*EN*: _nineteen million_); _dhá bhilliún_ (*EN*: _two billion_); _ocht mbilliún_ (*EN*: _eight billion_) (see link:#sec_9_3[9.3] The Cardinal Number).
 
 :9-2-2-b-p_ga: Ní dhéantar athrú tosaigh ar an ainmfhocal i ndiaidh na ndeicheanna, e.g., _fiche míle_; _tríocha milliún_; etc.
-:9-2-2-b-p_en: No initial mutation is made to the noun after the tens, e.g., _fiche míle_; _tríocha milliún_; etc.
+:9-2-2-b-p_en: No initial mutation is made to the noun after the tens, e.g., _fiche míle_ (*EN*: _twenty thousand_); _tríocha milliún_ (*EN*: _thirty million_); etc.
 
 :TheTens_ga: Na Deicheanna
 :TheTens_en: The Tens
@@ -116,31 +116,31 @@
 :9-3-1-a-p_en: The number added to a noun to express the number of things is called a _cardinal number_.
 
 :9-3-1-b-p_ga: Tagann an t&#x2011;ainmfhocal ar lorg _aon_, _dhá_, _trí_, _ceithre_, _cúig_, _sé_, _seacht_, _ocht_, _naoi_, _deich_.
-:9-3-1-b-p_en: The noun comes after _aon_, _dhá_, _trí_, _ceithre_, _cúig_, _sé_, _seacht_, _ocht_, _naoi_, _deich_.
+:9-3-1-b-p_en: The noun comes after _aon_, _dhá_, _trí_, _ceithre_, _cúig_, _sé_, _seacht_, _ocht_, _naoi_, _deich_. (*EN*: 1&ndash;10 respectively).
 
 :9-3-1-c-p_ga: Tabhair faoi deara go n&#x2011;úsáidtear na bunuimhreacha _dhá_ agus _ceithre_ seachas na foirmeacha maoluimhreach _dó_ agus _ceathair_.
-:9-3-1-c-p_en: Note that the cardinal numbers _dhá_ and _ceithre_ are used rather than the bare forms _dó_ and _ceathair_.
+:9-3-1-c-p_en: Note that the cardinal numbers _dhá_ and _ceithre_ are used rather than the bare forms _dó_ and _ceathair_ (*EN*: _two_ and _four_ respectively).
 
 :9-3-1-d-p_ga: Ní mór an focal _amháin_ a lua tar éis na bunuimhreach _aon_ agus an ainmfhocail. Ní gá, áfach, _aon_ a lua i gcónaí, e.g., _aon chapall amháin_; _capall amháin_.
-:9-3-1-d-p_en: The word _amháin_ must be mentioned after the original _aon_ and the noun. It is not, however, always necessary to mention _aon_, e.g., _aon chapall amháin_; _capall amháin_.
+:9-3-1-d-p_en: The word _amháin_ must be mentioned after the original _aon_ and the noun. It is not, however, always necessary to mention _aon_, e.g., _aon chapall amháin_ (*EN*: _one horse only_); _capall amháin_ (*EN*: _one horse_).
 
 :9-3-1-e-p_ga: Ní chuirtear séimhiú ar _d_, _t_ nó _s_ tar éis _aon_, e.g., _aon doras amháin_; _aon teach amháin_.
-:9-3-1-e-p_en: _d_, _t_ or _s_ is not lenited after _aon_, e.g., _aon doras amháin_; _aon teach amháin_.
+:9-3-1-e-p_en: _d_, _t_ or _s_ is not lenited after _aon_, e.g., _aon doras amháin_ (*EN*: _one door only_); _aon teach amháin_ (*EN*: _one house only_).
 
 :9-3-1-f-p_ga: I ndiaidh an ainmfhocail a thagann an focal _déag_, e.g., _ceithre leabhar déag_. Séimhítear an focal _déag_ má chríochnaíonn an focal díreach roimhe ar ghuta (ach féach link:#sec_9_3_2_e[9.3.2(e)]), seachas i ndiaidh _euro_.
-:9-3-1-f-p_en: After the noun comes the word _déag_, e.g., _ceithre leabhar déag_. The word _déag_ is lenited if the word directly before it ends in a vowel (but see link:#sec_9_3_2_e[9.3.2(e)]), except after _euro_.
+:9-3-1-f-p_en: After the noun comes the word _déag_, e.g., _ceithre leabhar déag_ (*EN*: _fourteen books_). The word _déag_ is lenited if the word directly before it ends in a vowel (but see link:#sec_9_3_2_e[9.3.2(e)]), except after _euro_.
 
 :9-3-1-p_ga: Tabhair faoi deara, más aonad brí ar leith an t&#x2011;ainmfhocal agus an cáilitheoir, e.g., _madra rua_; _cat crainn_; _teach tábhairne_; _láthair champála_ (seachas gnáth-ainmfhocal agus cáilitheoir, e.g., _leabhar dearg_) is i ndiaidh an ainmfhocail agus an cháilitheora a chuirtear _déag_, e.g., _ceithre mhadra rua dhéag_; _cúig theach tábhairne dhéag_; _sé chat crainn déag_; _seacht n&#x2011;iora ghlasa dhéag_. Cuirtear aon cháilitheoir eile i ndiaidh _déag_, e.g., _sé chat crainn déag mhóra_; _seacht n&#x2011;iora ghlasa dhéag fhiáine_.
-:9-3-1-p_en: Note that if the noun and the qualifier are a separate unit of meaning, e.g., _madra rua_ (_EN: fox_); _cat crainn_ (_EN: pine marten_); _teach tábhairne_ (_EN: pub_); _láthair champála_ (_EN: campsite_) (rather than an ordinary noun and qualifier, e.g., _leabhar dearg_) _déag_ is placed after the noun and the qualifier, e.g., _ceithre mhadra rua dhéag_; _cúig theach tábhairne dhéag_; _sé chat crainn déag_; _seacht n&#x2011;iora ghlasa dhéag_. Any other qualifier is added after _déag_, e.g., _sé chat crainn déag mhóra_; _seacht n&#x2011;iora ghlasa dhéag fhiáine_.
+:9-3-1-p_en: Note that if the noun and the qualifier are a separate unit of meaning, e.g., _madra rua_ (*EN*: _fox_); _cat crainn_ (*EN*: _pine marten_); _teach tábhairne_ (*EN*: _pub_); _láthair champála_ (*EN*: _campsite_) (rather than an ordinary noun and qualifier, e.g., _leabhar dearg_) _déag_ is placed after the noun and the qualifier, e.g., _ceithre mhadra rua dhéag_ (*EN*: _fourteen foxes_); _cúig theach tábhairne dhéag_ (*EN*: _fifteen pubs_); _sé chat crainn déag_ (*EN*: _sixteen pine martens_); _seacht n&#x2011;iora ghlasa dhéag_ (*EN*: _seventeen gray squirrels_). Any other qualifier is added after _déag_, e.g., _sé chat crainn déag mhóra_ (*EN*: _sixteen large pine martens_); _seacht n&#x2011;iora ghlasa dhéag fhiáine_ (*EN*: _seventeen gray squirrels_).
 
 :9-3-1-g-p_ga: Ní shéimhítear _dhá_ i ndiaidh an ailt, _aon_ ná _céad_, e.g., _an dá leabhar_; _an chéad dá leabhar_; _aon dá leabhar_.
-:9-3-1-g-p_en: _two_ is not lenited after the article, _aon_ or _céad_, e.g., _an dá leabhar_; _an chéad dá leabhar_; _aon dá leabhar_.
+:9-3-1-g-p_en: _two_ is not lenited after the article, _aon_ or _céad_, e.g., _an dá leabhar_ (*EN*: _the two books_); _an chéad dá leabhar_ (*EN*: _the first two books_); _aon dá leabhar_ (*EN*: _one of the two books_).
 
 :9-3-1-h-p_ga: Cuireann na bunuimhreacha _aon_, _dhá_ (ach féach link:./chapter8.html#sec_8_3_3[8.3.3]), _trí_, _ceithre_, _cúig_ agus _sé_ séimhiú ar an ainmfhocal uatha a thagann ina ndiaidh, e.g., _trí bhád_; ach ní shéimhítear an focal _cent_, e.g., _trí cent_.
-:9-3-1-h-p_en: The cardinal numbers _aon_, _dhá_ (but see link:./chapter8.html#sec_8_3_3[8.3.3]), _trí_, _ceithre_, _cúig_ and _sé_ lenite the following singular noun, e.g., _trí bhád_; but the word _cent_ is not lenited, e.g., _trí cent_.
+:9-3-1-h-p_en: The cardinal numbers _aon_, _dhá_ (but see link:./chapter8.html#sec_8_3_3[8.3.3]), _trí_, _ceithre_, _cúig_ and _sé_ lenite the following singular noun, e.g., _trí bhád_ (*EN*: _three boats_); but the word _cent_ is not lenited, e.g., _trí cent_ (*EN*: _three cents_).
 
 :9-3-1-i-p_ga: Cuireann na bunuimhreacha _seacht_, _ocht_, _naoi_ agus _deich_ urú ar an ainmfhocal uatha agus iolra a thagann ina ndiaidh, e.g., _seacht gcnámh_; _deich gcinn_; ach ní uraítear an focal _euro_, e.g., _ocht euro_; _naoi euro_, ná _cent_, e.g., _ocht cent_; _deich cent_.
-:9-3-1-i-p_en: The cardinal numbers _seacht_, _ocht_, _naoi_ and _deich_ eclipse the following singular and plural nouns, e.g., _seacht gcnámh_; _deich gcinn_; but the word _euro_ is not eclipsed, e.g., _ocht euro_; _naoi euro_, and neither is _cent_, e.g., _ocht cent_; _deich cent_.
+:9-3-1-i-p_en: The cardinal numbers _seacht_ (*EN*: _seven_), _ocht_ (*EN*: _eight_), _naoi_ (*EN*: _nine_) and _deich_ (*EN*: _ten_) eclipse the following singular and plural nouns, e.g., _seacht gcnámh_ (*EN*: _seven bones_); _deich gcinn_ (*EN*: _ten heads_); but the word _euro_ is not eclipsed, e.g., _ocht euro_ (*EN*: _eight euros_); _naoi euro_ (*EN*: _nine euros_), and neither is _cent_, e.g., _ocht cent_ (*EN*: _eight cents_); _deich cent_ (*EN*: _ten cents_).
 
 :TheCardinalNumbers_ga: Na Bunuimhreacha
 :TheCardinalNumbers_en: The Cardinal Numbers
@@ -155,22 +155,22 @@
 :Table9G-caption_en: The Cardinal Numbers -- Forms of Nouns that have a distinct Plural Version
 
 :9-3-2-a-p_ga: Foirm an ainmnigh uatha de na hainmfhocail a úsáidtear leis na bunuimhreacha 1&ndash;2 agus i ndiaidh uimhreacha a chríochnaíonn ar 1&ndash;2, e.g., _aon phingin amháin_; _dhá bhliain_; _aon uair déag_; _dhá cheann is tríocha_.
-:9-3-2-a-p_en: The nominative singular form of nouns used with the cardinal numbers 1&ndash;2 and after numbers ending in 1&ndash;2, e.g., _aon phingin amháin_; _dhá bhliain_; _aon uair déag_; _dhá cheann is tríocha_.
+:9-3-2-a-p_en: The nominative singular form of nouns used with the cardinal numbers 1&ndash;2 and after numbers ending in 1&ndash;2, e.g., _aon phingin amháin_ (*EN*: _one penny_); _dhá bhliain_ (*EN*: _two years_); _aon uair déag_ (*EN*: _eleven times_); _dhá cheann is tríocha_ (*EN*: _thirty-two_).
 
 :9-3-2-b-p_ga: Ní chuirtear séimhiú ar an leagan iolra i ndiaidh 3&ndash;6 ná i ndiaidh uimhreacha a chríochnaíonn ar 3&ndash;6, e.g., _trí seachtaine_; _ceithre cinn déag_.
-:9-3-2-b-p_en: The plural form is not lenited after 3&ndash;6 or after numbers ending in 3&ndash;6, e.g., _trí seachtaine_; _ceithre cinn déag_.
+:9-3-2-b-p_en: The plural form is not lenited after 3&ndash;6 or after numbers ending in 3&ndash;6, e.g., _trí seachtaine_ (*EN*: _three weeks_); _ceithre cinn déag_ (*EN*: _fourteen heads_).
 
 :9-3-2-c-p_ga: I ndiaidh 3&ndash;6 agus i ndiaidh uimhreacha a chríochnaíonn ar 3&ndash;6 cuirtear _h_ roimh an leagan iolra _uaire_, e.g., _cúig huaire_.
-:9-3-2-c-p_en: After 3&ndash;6 and after numbers ending in 3&ndash;6 _h_ is placed before the plural form _uaire_, e.g., _cúig huaire_.
+:9-3-2-c-p_en: After 3&ndash;6 and after numbers ending in 3&ndash;6 _h_ is placed before the plural form _uaire_, e.g., _cúig huaire_ (*EN*: _five times_).
 
 :9-3-2-d-p_ga: Cuireann na huimhreacha 7&ndash;10 agus uimhreacha a chríochnaíonn ar 7&ndash;9 urú ar an leagan iolra, e.g., _seacht mbliana_; _ocht bpingine déag_.
-:9-3-2-d-p_en: The numbers 7&ndash;10 and numbers ending in 7&ndash;9 eclipse the plural form, e.g., _seacht mbliana_; _ocht bpingine déag_.
+:9-3-2-d-p_en: The numbers 7&ndash;10 and numbers ending in 7&ndash;9 eclipse the plural form, e.g., _seacht mbliana_ (*EN*: _seven years_); _ocht bpingine déag_ (*EN*: _eighteen pennies_).
 
 :9-3-2-e-p_ga: Ní chuirtear séimhiú ar _déag_ i ndiaidh an leagain iolra, fiú amháin sa chás go gcríochnaíonn sé ar ghuta, e.g., _trí bliana déag_; _ocht n&#x2011;uaire déag_.
-:9-3-2-e-p_en: _déag_ is not lenited after the plural form, even if it ends in a vowel, e.g., _trí bliana déag_; _ocht n&#x2011;uaire déag_.
+:9-3-2-e-p_en: _déag_ is not lenited after the plural form, even if it ends in a vowel, e.g., _trí bliana déag_ (*EN*: _thirteen years_); _ocht n&#x2011;uaire déag_ (*EN*: _eighteen times_).
 
 :9-3-2-f-p_ga: Is í foirm an ainmnigh uatha a úsáidtear i ndiaidh na ndeicheanna (seachas _deich_), e.g., _fiche bliain_; _tríocha pingin_; _ochtó troigh_.
-:9-3-2-f-p_en: The nominative singular form is used after the tens (other than _deich_), e.g., _fiche bliain_; _tríocha pingin_; _ochtó troigh_.
+:9-3-2-f-p_en: The nominative singular form is used after the tens (other than _deich_), e.g., _fiche bliain_ (*EN*: _twenty years_); _tríocha pingin_ (*EN*: _thirty pennies_); _ochtó troigh_ (*EN*: _eighty feet_).
 
 :Table9H-caption_ga: Na Bunuimhreacha -- Samplaí d'Fhoirmeacha na nAinmfhocal a bhfuil Leagan Iolra ar leith acu
 :Table9H-caption_en: The Cardinal Numbers -- Examples of Noun Forms with Distinct Plural Forms
@@ -220,11 +220,11 @@
 :9-3-5-a-i-p_ga: Cuirtear foirm uatha an ailt roimh an mbunuimhir 1, roimh uimhreacha a chríochnaíonn ar 1, agus roimh iolraithe ar 10 ó 20 ar aghaidh.
 :9-3-5-a-i-p_en: The singular form of the article is placed before the cardinal number 1, before numbers ending in 1, and before plurals of 10 from 20 onwards.
 
-:9-3-5-a-ii-p_ga: Cuirtear _t-_ roimh an mbunuimhir _aon_ ar lorg an ailt, e.g., _an t&#x2011;aon leabhar amháin_; _an t&#x2011;aon bhileog amháin_. Baintear an _t-_ i ndiaidh réamhfhocal, e.g., _san aon leabhar amháin_; _tríd an aon fhuinneog amháin_.
-:9-3-5-a-ii-p_en: _t-_ is placed before the cardinal number _aon_ after the article, e.g., _an t&#x2011;aon leabhar amháin_; _an t&#x2011;aon bhileog amháin_. The _t-_ is removed after a preposition, e.g., _san aon leabhar amháin_; _tríd an aon fhuinneog amháin_.
+:9-3-5-a-ii-p_ga: Cuirtear _t&#x2011;_ roimh an mbunuimhir _aon_ ar lorg an ailt, e.g., _an t&#x2011;aon leabhar amháin_; _an t&#x2011;aon bhileog amháin_. Baintear an _t&#x2011;_ i ndiaidh réamhfhocal, e.g., _san aon leabhar amháin_; _tríd an aon fhuinneog amháin_.
+:9-3-5-a-ii-p_en: _t&#x2011;_ is placed before the cardinal number _aon_ after the article, e.g., _an t&#x2011;aon leabhar amháin_ (*EN*: _the one book_); _an t&#x2011;aon bhileog amháin_ (*EN*: _the one sheet_). The _t&#x2011;_ is removed after a preposition, e.g., _san aon leabhar amháin_ (*EN*: _in the one book_); _tríd an aon fhuinneog amháin_ (*EN*: _through the one window_).
 
 :9-3-5-a-iii-p_ga: Foirm uatha an ailt a chuirtear roimh an mbunuimhir _dhá_ freisin ach déantar _dá_ den bhunuimhir, e.g., _an dá chapall_.
-:9-3-5-a-iii-p_en: The singular form of the article placed before the cardinal number _dhá_ also but the cardinal number becomes _dá_, e.g., _an dá chapall_.
+:9-3-5-a-iii-p_en: The singular form of the article placed before the cardinal number _dhá_ also but the cardinal number becomes _dá_, e.g., _an dá chapall_ (*EN*: _the two horses_).
 
 :9-3-5-b-p_ga: Foirm iolra an ailt
 :9-3-5-b-p_en: Plural form of the article
@@ -233,10 +233,10 @@
 :9-3-5-b-i-p_en: It is the plural form of the article that is placed before the cardinal numbers 3&ndash;9 and 13&ndash;19.
 
 :9-3-5-b-ii-p_ga: Cuirtear _h_ roimh bhunuimhir dar tús guta i ndiaidh fhoirm iolra an ailt, e.g., _na hocht gcapall_.
-:9-3-5-b-ii-p_en: _h_ is placed before a cardinal number beginning with a vowel after the plural form of the article, e.g., _na hocht gcapall_.
+:9-3-5-b-ii-p_en: _h_ is placed before a cardinal number beginning with a vowel after the plural form of the article, e.g., _na hocht gcapall_ (*EN*: _the eight horses_).
 
 :9-3-5-c-p_ga: Ní dhéanann an t&#x2011;alt aon difear d'aidiacht ar lorg bunuimhreacha agus ainmfhocal, e.g., _an dá chapall mhóra_.
-:9-3-5-c-p_en: The article does not affect adjectives following cardinal numbers and nouns, e.g., _an dá chapall mhóra_.
+:9-3-5-c-p_en: The article does not affect adjectives following cardinal numbers and nouns, e.g., _an dá chapall mhóra_ (*EN*: _the two big horses_).
 
 :Table9K-caption_ga: Na Bunuimhreacha 1&ndash;19 -- An tAlt
 :Table9K-caption_en: The Cardinal Numbers 1&ndash;19 -- The Article
@@ -245,31 +245,31 @@
 :Table9K-header_en: The Article with the Cardinal Numbers
 
 :9-3-5-note_ga: Tabhair faoi deara, i gcás na n&#x2011;ainmfhocal a n&#x2011;úsáidtear leagan iolra ar leith díobh i ndiaidh na mbunuimhreacha, go leantar an patrún céanna, e.g., _an t&#x2011;aon bhliain amháin_; _an dá cheann mhóra_; _na hocht dtroithe déag_; etc.
-:9-3-5-note_en: Note that for nouns that use a particular plural form after the cardinal numbers, the same pattern is followed, e.g., _an t&#x2011;aon bhliain amháin_; _an dá cheann mhóra_; _na hocht dtroithe déag_; etc.
+:9-3-5-note_en: Note that for nouns that use a particular plural form after the cardinal numbers, the same pattern is followed, e.g., _an t&#x2011;aon bhliain amháin_ (*EN*: _the one year_); _an dá cheann mhóra_ (*EN*: _the two big heads_); _na hocht dtroithe déag_ (*EN*: _the eighteen feet_); etc.
 
-:9-3-6-title_ga: Na Bunuimhreacha 1&ndash;19  --  An Tuiseal Ginideach gan an tAlt
-:9-3-6-title_en: The Cardinal Numbers 1&ndash;19  --  The Genitive Case without the Article
+:9-3-6-title_ga: Na Bunuimhreacha 1&ndash;19 -- An Tuiseal Ginideach gan an tAlt
+:9-3-6-title_en: The Cardinal Numbers 1&ndash;19 -- The Genitive Case without the Article
 
 :9-3-6-a-p_ga: Téann athrú foirme ar ainmfhocal agus ar aidiacht sa ghinideach i ndiaidh _aon_, e.g., _ualach aon chapaill mhóir amháin_; _fráma aon fhuinneoige báine amháin_; ach amháin nuair atá _déag_ ag gabháil leis, e.g., _ualach aon chapall déag mhóra_; _fráma aon fhuinneog déag bhána_.
-:9-3-6-a-p_en: Nouns and adjectives change form in the genitive after _aon_, e.g., _ualach aon chapaill mhóir amháin_; _fráma aon fhuinneoige báine amháin_; except when _déag_ follows, e.g., _ualach aon chapall déag mhóra_; _fráma aon fhuinneog déag bhána_.
+:9-3-6-a-p_en: Nouns and adjectives change form in the genitive after _aon_, e.g., _ualach aon chapaill mhóir amháin_ (*EN*: _one big horse's load_); _fráma aon fhuinneoige báine amháin_ (*EN*: _one white window frame_); except when _déag_ follows, e.g., _ualach aon chapall déag mhóra_ (*EN*: _eighteen big horses' load_); _fráma aon fhuinneog déag bhána_ (*EN*: _eighteen white window frames_).
 
 :9-3-6-b-p_ga: I gcás 2&ndash;19, ní théann aon athrú foirme sa ghinideach ar an ainmfhocal ná ar an mbunuimhir, e.g., _fad dhá mhéadar_; _costas trí fhuinneog_; _úinéir seacht ngabhar_; _tréimhse naoi n&#x2011;oíche_; _tiománaithe trí thacsaí dhéag_; ach cuirtear an aidiacht san uimhir iolra agus séimhítear í, e.g., _costas trí fhuinneog dheasa_; _úinéir seacht ngabhar chrosta_; _tiománaithe trí thacsaí dhéag chostasacha_; ach amháin más leagan iolra ar leith é a chríochnaíonn ar ghuta nó ar chonsan leathan, e.g., _trí bliana crua_.
-:9-3-6-b-p_en: For 2&ndash;19, the form of the noun or the cardinal number in the genitive does not change, e.g., _fad dhá mhéadar_; _costas trí fhuinneog_; _úinéir seacht ngabhar_; _tréimhse naoi n&#x2011;oíche_; _tiománaithe trí thacsaí dhéag_; but the adjective is put in the plural, and it is lenited, e.g., _costas trí fhuinneog dheasa_; _úinéir seacht ngabhar chrosta_; _tiománaithe trí thacsaí dhéag chostasacha_; unless it is a distinct plural form ending in a vowel or a broad consonant, e.g., _trí bliana crua_.
+:9-3-6-b-p_en: For 2&ndash;19, the form of the noun or the cardinal number in the genitive does not change, e.g., _fad dhá mhéadar_ (*EN*: _two meters long_); _costas trí fhuinneog_ (*EN*: _cost of three windows_); _úinéir seacht ngabhar_ (*EN*: _owner of seven goats_); _tréimhse naoi n&#x2011;oíche_ (*EN*: _period of nine nights_); _tiománaithe trí thacsaí dhéag_ (*EN*: _drivers of thirteen taxis_); but the adjective is put in the plural, and it is lenited, e.g., _costas trí fhuinneog dheasa_ (*EN*: _cost of three nice windows_); _úinéir seacht ngabhar chrosta_ (*EN*: _owner of seven cross goats_); _tiománaithe trí thacsaí dhéag chostasacha_ (*EN*: _drivers of thirteen costly taxis_); unless it is a distinct plural form ending in a vowel or a broad consonant, e.g., _trí bliana crua_ (*EN*: _three hard years_).
 
-:9-3-7-title_ga: Na Bunuimhreacha 1&ndash;19  --  An Tuiseal Ginideach leis an Alt
-:9-3-7-title_en: The Cardinal Numbers 1&ndash;19  --  The Genitive Case with the Article
+:9-3-7-title_ga: Na Bunuimhreacha 1&ndash;19 -- An Tuiseal Ginideach leis an Alt
+:9-3-7-title_en: The Cardinal Numbers 1&ndash;19 -- The Genitive Case with the Article
 
 :9-3-7-a-p_ga: Téann athrú foirme ar ainmfhocal agus ar aidiacht sa ghinideach i ndiaidh aon nuair atá an t&#x2011;alt ann faoi réir na bpointí seo a leanas.
 :9-3-7-a-p_en: A change of form on a noun and an adjective in the genitive after any place where the article is there is subject to the following points.
 
 :9-3-7-a-i-p_ga: De réir inscne an ainmfhocail, úsáidtear _an_ nó _na_ sa tuiseal ginideach roimh an mbunuimhir _aon_ nuair nach bhfuil _déag_ ag gabháil leis, e.g., _ualach an aon chapaill amháin_; _costas na haon fhuinneoige amháin_; ach _ábhar an aon chuntas déag amháin_; _ag ceartú an aon aiste dhéag shuimiúla_.
-:9-3-7-a-i-p_en: Subject to the gender of the noun, use _an_ or _na_ in the genitive case before the ordinal number _aon_ when _déag_ does not follow it, e.g., _ualach an aon chapaill amháin_; _costas na haon fhuinneoige amháin_; but _ábhar an aon chuntas déag amháin_; _ag ceartú an aon aiste dhéag shuimiúla_.
+:9-3-7-a-i-p_en: Subject to the gender of the noun, use _an_ or _na_ in the genitive case before the ordinal number _aon_ when _déag_ does not follow it, e.g., _ualach an aon chapaill amháin_ (*EN*: _the load of the one horse_); _costas na haon fhuinneoige amháin_ (*EN*: _the cost of the one window_); but _ábhar an aon chuntas déag amháin_ (*EN*: _the content of the one account of ten_); _ag ceartú an aon aiste dhéag shuimiúla_ (*EN*: _correcting the one essay of ten significant_).
 
 :9-3-7-a-ii-p_ga: Más ainmfhocal baininscneach atá i gceist, ní foláir _h_ a chur roimh an mbunuimhir _aon_, e.g., _i gcaitheamh na haon oíche amháin sin_.
-:9-3-7-a-ii-p_en: If the noun is feminine, an _h_ must be placed before the cardinal number _aon_, e.g., _i gcaitheamh na haon oíche amháin sin_.
+:9-3-7-a-ii-p_en: If the noun is feminine, an _h_ must be placed before the cardinal number _aon_, e.g., _i gcaitheamh na haon oíche amháin sin_ (*EN*: _in the course of that one night_).
 
-:9-3-7-a-iii-p_ga: Más ainmfhocal firinscneach atá i gceist, baintear an _t-_ roimh an mbunuimhir _aon_, e.g., _ar feadh an aon lae amháin sin_.
-:9-3-7-a-iii-p_en: If the noun is masculine, the _t-_ is removed before the cardinal number _aon_, e.g., _ar feadh an aon lae amháin sin_.
+:9-3-7-a-iii-p_ga: Más ainmfhocal firinscneach atá i gceist, baintear an _t&#x2011;_ roimh an mbunuimhir _aon_, e.g., _ar feadh an aon lae amháin sin_.
+:9-3-7-a-iii-p_en: If the noun is masculine, the _t&#x2011;_ is removed before the cardinal number _aon_, e.g., _ar feadh an aon lae amháin sin_ (*EN*: _over the course of that one day_).
 
 :9-3-7-b-p_ga: Déantar _dá_ de _dhá_ i ndiaidh an ailt uatha (_an_, _don_, _sa_, etc.).
 :9-3-7-b-p_en: Change _dhá_ to _dá_ after the singular article (_an_, _don_, _sa_, etc.).
@@ -278,7 +278,7 @@
 :9-3-7-c-p_en: For the cardinal numbers _trí_ to _deich_, the cardinal numbers (_trí_, _ceithre_, _cúig_, _ocht_, _deich_) are eclipsed in the genitive case after the article (_na_).
 
 :9-3-7-d-p_ga: Tá na rialacha céanna le cur i bhfeidhm ar na hainmfhocail a bhfuil leagan iolra ar leith acu agus ar na haidiachtaí a ghabhann leo (féach link:#sec_9_3_4[9.3.4]) agus a chuirtear i bhfeidhm sa tuiseal ainmneach, e.g., _tréimhse na sé bliana fada_; _deireadh na naoi seachtaine déag fada_; _Cogadh na Naoi mBliana_; _costas na dtrí troithe cearnacha eile_; _úinéir an dá cheann bhána_; _praghas na dtrí cinn mhóra_.
-:9-3-7-d-p_en: The same rules apply to nouns with a particular plural form and the adjectives accompanying them (see link:#sec_9_3_4[9.3.4]) as applied in the nominative case, e.g., _tréimhse na sé bliana fada_; _deireadh na naoi seachtaine déag fada_; _Cogadh na Naoi mBliana_; _costas na dtrí troithe cearnacha eile_; _úinéir an dá cheann bhána_; _praghas na dtrí cinn mhóra_.
+:9-3-7-d-p_en: The same rules apply to nouns with a particular plural form and the adjectives accompanying them (see link:#sec_9_3_4[9.3.4]) as applied in the nominative case, e.g., _tréimhse na sé bliana fada_ (*EN*: _the period of six long years_); _deireadh na naoi seachtaine déag fada_ (*EN*: _the end of the nineteen long weeks_); _Cogadh na Naoi mBliana_ (*EN*: _the Nine Years' War_); _costas na dtrí troithe cearnacha eile_ (*EN*: _the cost of the three other square feet_); _úinéir an dá cheann bhána_ (*EN*: _the owner of the two white ones_); _praghas na dtrí cinn mhóra_ (*EN*: _the price of the three big ones_).
 
 :Table9L-caption_ga: Na Bunuimhreacha 1&ndash;19 -- An Tuiseal Ginideach leis an Alt
 :Table9L-caption_en: The Cardinal Numbers 1&ndash;19 -- The Genitive Case with the Article
@@ -290,10 +290,10 @@
 :9-3-8-title_en: The Cardinal Numbers written in Figures 1&ndash;19
 
 :9-3-8-p_ga: Is ionann na rialacha a bhaineann leis na bunuimhreacha 1&ndash;19 a scríobh ina bhfigiúirí agus iad a scríobh ina bhfocail, e.g., _1 chapall mór_; _3 bhád bheaga_; _7 n&#x2011;oíche dhorcha_; _13 seachtaine fuara_; _17 ngluaisteán shaora_; _19 mbliana fada_.
-:9-3-8-p_en: The rules for writing the cardinal numbers 1&ndash;19 in figures are the same as those for writing them in words, e.g., _1 chapall mór_; _3 bhád bheaga_; _7 n&#x2011;oíche dhorcha_; _13 seachtaine fuara_; _17 ngluaisteán shaora_; _19 mbliana fada_.
+:9-3-8-p_en: The rules for writing the cardinal numbers 1&ndash;19 in figures are the same as those for writing them in words, e.g., _1 chapall mór_ (*EN*: _1 big horse_); _3 bhád bheaga_ (*EN*: _3 small boats_); _7 n&#x2011;oíche dhorcha_ (*EN*: _7 dark nights_); _13 seachtaine fuara_ (*EN*: _13 cold weeks_); _17 ngluaisteán shaora_ (*EN*: _17 free cars_); _19 mbliana fada_ (*EN*: _19 long years_).
 
-:9-3-9-title_ga: Na Bunuimhreacha 20+  --  Na Deicheanna
-:9-3-9-title_en: The Cardinal Numbers 20+  --  The Tens
+:9-3-9-title_ga: Na Bunuimhreacha 20+ -- Na Deicheanna
+:9-3-9-title_en: The Cardinal Numbers 20+ -- The Tens
 
 :9-3-9-a-p_ga: Is í foirm an ainmnigh uatha den ainmfhocal a chuirtear i ndiaidh na ndeicheanna. Ní dhéantar aon athrú tosaigh ar an ainmfhocal.
 :9-3-9-a-p_en: The nominative singular form of the noun is placed after the tens. No initial mutation is made to the noun.
@@ -302,7 +302,7 @@
 :9-3-9-b-p_en: If there is an adjective, it agrees with the gender of the noun.
 
 :9-3-9-c-p_ga: Cuirtear foirm uatha an ailt roimh na deicheanna, e.g., _an fiche teach nua_; _an seasca duine cáiliúil_.
-:9-3-9-c-p_en: The singular form of the article is placed before the tens, e.g., _an fiche teach nua_; _an seasca duine cáiliúil_.
+:9-3-9-c-p_en: The singular form of the article is placed before the tens, e.g., _an fiche teach nua_ (*EN*: _the twenty new houses_); _an seasca duine cáiliúil_ (*EN*: _the sixty famous people_).
 
 :9-3-9-d-p_ga: Sa tuiseal ginideach, mura bhfuil an t&#x2011;alt ann, ní théann aon athrú foirme ar an ainmfhocal ná ar an mbunuimhir.
 :9-3-9-d-p_en: In the genitive case, if the article is not present, no change of form is made to the noun or to the cardinal number.
@@ -326,10 +326,10 @@
 :WithArticle_en: with the Article
 
 :9-3-9-note-p1_ga: Nuair a úsáidtear leagan iolra na ndeicheanna is sa ghinideach iolra a bhíonn an t&#x2011;ainmfhocal ina dhiaidh, e.g., _na céadta daoine_; _na mílte dathanna_.
-:9-3-9-note-p1_en: When the plural form of the tens is used in the genitive plural, the noun following it is also in the plural, e.g., _na céadta daoine_; _na mílte dathanna_.
+:9-3-9-note-p1_en: When the plural form of the tens is used in the genitive plural, the noun following it is also in the plural, e.g., _na céadta daoine_ (*EN*: _the hundreds of people_); _na mílte dathanna_ (*EN*: _the thousands of colors_).
 
 :9-3-9-note-p2_ga: Leanann an ginideach iolra na hainmfhocail uatha _dosaen_ agus _scór_ freisin, e.g., _dosaen amhrán_; _scór daoine_.
-:9-3-9-note-p2_en: The genitive plural of the singular nouns also follows _dosaen_ (dozen) and _scór_ (score), e.g., _dosaen amhrán_; _scór daoine_.
+:9-3-9-note-p2_en: The genitive plural of the singular nouns also follows _dosaen_ (dozen) and _scór_ (score), e.g., _dosaen amhrán_ (*EN*: _a dozen songs_); _scór daoine_ (*EN*: _a score of people_).
 
 :9-3-10-title_ga: Na Bunuimhreacha eile 20+
 :9-3-10-title_en: The other Cardinal Numbers 20+
@@ -356,25 +356,25 @@
 :9-3-10-c-ii-p_en: For numbers ending in 2 or 4, the bare numbers _dó_ and _ceathair_ are used instead of _dhá_ and _ceithre_.
 
 :9-3-10-d-p_ga: Más iolraí ar 10 atá i gceist, níl ann ach leagan amháin, e.g., _céad is fiche bád_.
-:9-3-10-d-p_en: If multiples of 10 are involved, there is only one form, e.g., _céad is fiche bád_.
+:9-3-10-d-p_en: If multiples of 10 are involved, there is only one form, e.g., _céad is fiche bád_ (*EN*: _one hundred and twenty boats_).
 
 :9-3-10-e-p_ga: Maidir leis an alt, leantar an patrún a úsáidtear leis na bunuimhreacha 1&ndash;19 leis na bunuimhreacha os cionn 20, e.g., _an t&#x2011;aon leabhar is fiche_; _an dá bhord is tríocha_; _na cúig pheann is seasca_ (féach link:#sec_9_3_5[9.3.5]).
-:9-3-10-e-p_en: Regarding the article, the pattern used with the numbers 1&ndash;19 is followed with the numbers above 20, e.g., _an t&#x2011;aon leabhar is fiche_; _an dá bhord is tríocha_; _na cúig pheann is seasca_ (see link:#sec_9_3_5[9.3.5]).
+:9-3-10-e-p_en: Regarding the article, the pattern used with the numbers 1&ndash;19 is followed with the numbers above 20, e.g., _an t&#x2011;aon leabhar is fiche_ (*EN*: _the twenty-one books_); _an dá bhord is tríocha_ (*EN*: _the thirty-two tables_); _na cúig pheann is seasca_ (*EN*: _the sixty-five pens_) (see link:#sec_9_3_5[9.3.5]).
 
 :Table9N-caption_ga: Na Bunuimhreacha 21&ndash;99 -- An Córas Seanbhunaithe agus an Córas Simplithe
 :Table9N-caption_en: The Cardinal Numbers 21&ndash;99 -- The Established System and the Simplified System
 
 :9-3-10-note-p1_ga: Nuair atá aidiacht ag gabháil le bunuimhir, is féidir úsáid a bhaint as leagan iolra an ainmfhocail _ceann_ (_cinn_) i dteannta an réamhfhocail _de_, e.g., _seacht gcinn déag d'oícheanta ciúine_; _trí cinn is tríocha de bháid mhóra_.
-:9-3-10-note-p1_en: When an adjective accompanies a cardinal number, the plural form of the noun _ceann_ (_cinn_) can be used along with the preposition _de_, e.g., _seacht gcinn déag d'oícheanta ciúine_; _trí cinn is tríocha de bháid mhóra_.
+:9-3-10-note-p1_en: When an adjective accompanies a cardinal number, the plural form of the noun _ceann_ (_cinn_) can be used along with the preposition _de_, e.g., _seacht gcinn déag d'oícheanta ciúine_ (*EN*: _seventeen quiet nights_); _trí cinn is tríocha de bháid mhóra_ (*EN*: _thirty-three big boats_).
 
 :9-3-10-note-p2_ga: Rogha eile atá ann ná an mhaoluimhir móide an réamhfhocal _de_ móide leagan iolra an ainmfhocail agus na haidiachta a ghabhann leis, e.g., _a haon déag de bhlianta fada_; _tríocha a trí de bháid mhóra_.
-:9-3-10-note-p2_en: Another option is the bare number plus the preposition _de_ plus the plural form of the noun and the accompanying adjective, e.g., _a haon déag de bhlianta fada_; _tríocha a trí de bháid mhóra_.
+:9-3-10-note-p2_en: Another option is the bare number plus the preposition _de_ plus the plural form of the noun and the accompanying adjective, e.g., _a haon déag de bhlianta fada_ (*EN*: _the eleven long years_); _tríocha a trí de bháid mhóra_ (*EN*: _the thirty-three big boats_).
 
 :9-3-11-title_ga: Na Bunuimhreacha 100+
 :9-3-11-title_en: The Cardinal Numbers 100+
 
 :9-3-11-p1_ga: Sa Chóras Seanbhunaithe, is é malairt na comhréire a úsáidtear faoi bhun 100 a úsáidtear le huimhreacha os cionn 100, e.g., _céad fiche is aon chapall amháin_; _dhá mhíle, trí chéad is ceithre chapall_; etc.
-:9-3-11-p1_en: In the Established System, the reverse order is used below 100 for numbers above 100, e.g., _céad fiche is aon chapall amháin_; _dhá mhíle, trí chéad is ceithre chapall_; etc.
+:9-3-11-p1_en: In the Established System, the reverse order is used below 100 for numbers above 100, e.g., _céad fiche is aon chapall amháin_ (*EN*: _one hundred and twenty-one horses_); _dhá mhíle, trí chéad is ceithre chapall_ (*EN*: _two thousand, three hundred and four horses_); etc.
 
 :9-3-11-p2_ga: Is ionann na rialacha eile agus na rialacha maidir leis na bunuimhreacha a luaitear in link:#sec_9_3_10[9.3.10].
 :9-3-11-p2_en: The other rules are the same as the rules for the cardinal numbers mentioned in link:#sec_9_3_10[9.3.10].
@@ -404,7 +404,7 @@
 :9-4-1-a-p_en: The personal numbers (2&ndash;10 and 12) are used to count people.
 
 :9-4-1-b-p_ga: Is é gnáthchóras na mbunuimhreacha a úsáidtear chun _aon duine dhéag_ nó líon daoine is mó ná _dháréag_ a chomhaireamh, e.g., _aon duine dhéag_; _trí dhuine dhéag_; _ceithre dhuine is daichead_.
-:9-4-1-b-p_en: The usual system of numbers is used to count _aon duine dhéag_ or a number of people greater than _dháréag_, e.g., _aon duine dhéag_; _trí dhuine dhéag_; _ceithre dhuine is daichead_.
+:9-4-1-b-p_en: The usual system of numbers is used to count _aon duine dhéag_ or a number of people greater than _dháréag_ (*EN*: _twelve_), e.g., _aon duine dhéag_ (*EN*: _eleven people_); _trí dhuine dhéag_ (*EN*: _thirteen people_); _ceithre dhuine is daichead_ (*EN*: _forty-four people_).
 
 :Table9Q-caption_ga: Na hUimhreacha Pearsanta
 :Table9Q-caption_en: The Personal Numbers
@@ -419,22 +419,22 @@
 :9-4-2-a-title_en: The bare personal number
 
 :9-4-2-a-i-p_ga: Is féidir uimhir phearsanta a úsáid lom (gan ainmfhocal ar a lorg) chun líon daoine a chomhaireamh, e.g., _An bhfaca tú an bheirt?_; _Gabhadh seachtar_.
-:9-4-2-a-i-p_en: The personal number can be used bare (without a noun following) to count the number of people, e.g., _An bhfaca tú an bheirt?_; _Gabhadh seachtar_.
+:9-4-2-a-i-p_en: The personal number can be used bare (without a noun following) to count the number of people, e.g., _An bhfaca tú an bheirt?_ (*EN*: _Did you see the two of them?_); _Gabhadh seachtar_ (*EN*: _Seven were captured_).
 
 :9-4-2-a-ii-p_ga: Is mar ghnáth-ainmfhocal a chaitear leis an uimhir phearsanta lom sa ghinideach, e.g., _cor beirte_; _col ceathrair_; _col seisir_.
-:9-4-2-a-ii-p_en: The bare personal number in the genitive is treated as a common noun, e.g., _cor beirte_; _col ceathrair_; _col seisir_.
+:9-4-2-a-ii-p_en: The bare personal number in the genitive is treated as a common noun, e.g., _cor beirte_ (*EN*: _a pair of_); _col ceathrair_ (*EN*: _a group of four_); _col seisir_ (*EN*: _a group of six_).
 
 :9-4-2-b-title_ga: an t&#x2011;alt roimh an uimhir phearsanta lom
 :9-4-2-b-title_en: The article before the bare personal number
 
 :9-4-2-b-i-p_ga: Ainmfhocail fhirinscneacha is ea na huimhreacha pearsanta go léir seachas _beirt_, e.g., _an bheirt_; _an ceathrar_; _an t&#x2011;ochtar_.
-:9-4-2-b-i-p_en: All personal numbers except _beirt_ are masculine nouns, e.g., _an bheirt_; _an ceathrar_; _an t&#x2011;ochtar_.
+:9-4-2-b-i-p_en: All personal numbers except _beirt_ are masculine nouns, e.g., _an bheirt_ (*EN*: _the two_); _an ceathrar_ (*EN*: _the four_); _an t&#x2011;ochtar_ (*EN*: _the eight_).
 
 :9-4-2-b-ii-p_ga: Ní shéimhítear _dháréag_ i ndiaidh an ailt, _aon_ ná _céad_, e.g., _bhí an dáréag ann_; _gach aon dáréag acu_; _an chéad dáréag a cháiligh_.
-:9-4-2-b-ii-p_en: _Dháréag_ is not lenited after the article, _aon_ or _céad_, e.g., _bhí an dáréag ann_; _gach aon dáréag acu_; _an chéad dáréag a cháiligh_.
+:9-4-2-b-ii-p_en: _Dháréag_ is not lenited after the article, _aon_ or _céad_, e.g., _bhí an dáréag ann_ (*EN*: _there were twelve_); _gach aon dáréag acu_ (*EN*: _each of them had twelve_); _an chéad dáréag a cháiligh_ (*EN*: _the first twelve qualified_).
 
 :9-4-2-b-iii-p_ga: Is mar ghnáth-ainmfhocal a chaitear leis an uimhir phearsanta lom sa ghinideach nuair atá an t&#x2011;alt roimhe, e.g., _cótaí an tseisir_; _ticéid an ochtair_; _gluaisteán na beirte_.
-:9-4-2-b-iii-p_en: The bare personal number in the genitive is treated as a common noun when preceded by the article, e.g., _cótaí an tseisir_; _ticéid an ochtair_; _gluaisteán na beirte_.
+:9-4-2-b-iii-p_en: The bare personal number in the genitive is treated as a common noun when preceded by the article, e.g., _cótaí an tseisir_ (*EN*: _the coats of the six_); _ticéid an ochtair_ (*EN*: _the tickets of the eight_); _gluaisteán na beirte_ (*EN*: _the car of the two_).
 
 :Table9R-caption_ga: Na hUimhreacha Pearsanta Loma -- An Tuiseal Ainmneach agus an Tuiseal Ginideach leis an Alt
 :Table9R-caption_en: The Bare Personal Numbers -- The Nominative and Genitive Cases with the Article
@@ -442,29 +442,29 @@
 :TheNumber_ga: An Uimhir
 :TheNumber_en: Number
 
-:9-4-2-c-title_ga: An aidiacht leis an uimhir phearsanta lom  --  _Beirt_
-:9-4-2-c-title_en: The adjective with the bare personal number  --  _Beirt_
+:9-4-2-c-title_ga: An aidiacht leis an uimhir phearsanta lom -- _Beirt_
+:9-4-2-c-title_en: The adjective with the bare personal number -- _Beirt_ (*EN*: _two (people)_)
 
 :9-4-2-c-i-p_ga: Má cháilíonn aidiacht an focal _beirt_ agus é san ainmneach*, is san ainmneach iolra a bhíonn an aidiacht agus í séimhithe, e.g., _an bheirt cháiliúla_; _beirt mhisniúla_; _don bheirt óga_.
-:9-4-2-c-i-p_en: If an adjective qualifies the word _beirt_ and it is in the nominative*, the adjective is in the nominative plural and lenited, e.g., _an bheirt cháiliúla_; _beirt mhisniúla_; _don bheirt óga_.
+:9-4-2-c-i-p_en: If an adjective qualifies the word _beirt_ and it is in the nominative*, the adjective is in the nominative plural and lenited, e.g., _an bheirt cháiliúla_ (*EN*: _the two famous_); _beirt mhisniúla_ (*EN*: _two brave_); _don bheirt óga_ (*EN*: _to the two young_).
 
 :9-4-2-c-ii-p_ga: Má tá an focal _beirt_, agus é ar lorg an ailt agus é sa ghinideach, á cháiliú le haidiacht a thagann ina dhiaidh, is sa ghinideach baininscneach uatha a bhíonn an aidiacht, e.g., _tuairimí na beirte díograisí_; _nótaí na beirte misniúla_; _iarrachtaí na beirte cróga_.
-:9-4-2-c-ii-p_en: If the word _beirt_, when following the article and in the genitive, is qualified by an adjective that follows it, the adjective is in the feminine singular genitive, e.g., _tuairimí na beirte díograisí_; _nótaí na beirte misniúla_; _iarrachtaí na beirte cróga_.
+:9-4-2-c-ii-p_en: If the word _beirt_, when following the article and in the genitive, is qualified by an adjective that follows it, the adjective is in the feminine singular genitive, e.g., _tuairimí na beirte díograisí_ (*EN*: _the opinions of the two enthusiastic_); _nótaí na beirte misniúla_ (*EN*: _the notes of the two brave_); _iarrachtaí na beirte cróga_ (*EN*: _the efforts of the two courageous_).
 
 :9-4-2-c-iii-p_ga: Má tá an focal _beirt_, agus é sa ghinideach ach gan an t&#x2011;alt a bheith roimhe, á cháiliú le haidiacht a thagann ina dhiaidh, agus é ar lorg agus faoi réir ag ainmfhocal eile, bíonn an aidiacht san iolra ar lorg _beirt_ agus í séimhithe (agus ní théann athrú an ghinidigh ar an bhfocal _beirt_ ach cuirtear séimhiú air), e.g., _moltaí bheirt mhisniúla_; _tuairimí bheirt cháiliúla_; _obair bheirt acadúla_.
-:9-4-2-c-iii-p_en: If the word _beirt_, when in the genitive but without the article preceding it, is qualified by an adjective that follows it, and it is following and subject to another noun, the adjective is in the plural following _beirt_ and lenited (and the genitive change does not apply to the word _beirt_ but it is lenited), e.g., _moltaí bheirt mhisniúla_; _tuairimí bheirt cháiliúla_; _obair bheirt acadúla_.
+:9-4-2-c-iii-p_en: If the word _beirt_, when in the genitive but without the article preceding it, is qualified by an adjective that follows it, and it is following and subject to another noun, the adjective is in the plural following _beirt_ and lenited (and the genitive change does not apply to the word _beirt_ but it is lenited), e.g., _moltaí bheirt mhisniúla_ (*EN*: _the praises of two brave_); _tuairimí bheirt cháiliúla_ (*EN*: _the opinions of two famous_); _obair bheirt acadúla_ (*EN*: _the work of two academic_).
 
 :9-4-2-c-iv-p_ga: Má tá an focal _beirt_, agus é sa ghinideach ach gan an t&#x2011;alt a bheith roimhe, á cháiliú le haidiacht a thagann ina dhiaidh, agus é faoi réir ag réamhfhocal comhshuite nó ainm briathartha, bíonn an aidiacht san iolra ar lorg _beirt_ agus í séimhithe (agus ní dhéantar aon athrú ar an bhfocal _beirt_ ach an oiread), e.g., _le haghaidh beirt inniúla_; _ag moladh beirt mhaithe_.
-:9-4-2-c-iv-p_en: If the word _beirt_, when in the genitive but without the article preceding it, is qualified by an adjective that follows it, and it is subject to a compound preposition or a verbal noun, the adjective is in the plural following _beirt_ and lenited (and no change is made to the word _beirt_ either), e.g., _le haghaidh beirt inniúla_; _ag moladh beirt mhaithe_.
+:9-4-2-c-iv-p_en: If the word _beirt_, when in the genitive but without the article preceding it, is qualified by an adjective that follows it, and it is subject to a compound preposition or a verbal noun, the adjective is in the plural following _beirt_ and lenited (and no change is made to the word _beirt_ either), e.g., _le haghaidh beirt inniúla_ (*EN*: _for two capable_); _ag moladh beirt mhaithe_ (*EN*: _praising two good_).
 
-:9-4-2-d-title_ga: An aidiacht leis an uimhir phearsanta lom  --  _Triúr_ go _dháréag_
-:9-4-2-d-title_en: The adjective with the bare personal number  --  _Triúr_ to _dháréag_
+:9-4-2-d-title_ga: An aidiacht leis an uimhir phearsanta lom -- _Triúr_ go _dháréag_
+:9-4-2-d-title_en: The adjective with the bare personal number -- _Triúr_ to _dháréag_
 
 :9-4-2-d-i-p_ga: Má tá na huimhreacha pearsanta _triúr_ go _dháréag_ (ach féach link:#sec_9_4_1_b[9.4.1(b)]), agus iad san ainmneach*, á gcáiliú le haidiacht a thagann ina ndiaidh, is san ainmneach uatha a bhíonn an aidiacht gan aon séimhiú uirthi, e.g., _triúr mór_; _ceathrar ard_; _an cúigear saibhir_; _don dáréag clúiteach_.
-:9-4-2-d-i-p_en: If the personal numbers _triúr_ to _dháréag_ (but see link:#sec_9_4_1_b[9.4.1(b)]), and they are in the nominative*, are being qualified by an adjective that follows them, the adjective is in the nominative singular without any lenition, e.g., _triúr mór_; _ceathrar ard_; _an cúigear saibhir_; _don dáréag clúiteach_.
+:9-4-2-d-i-p_en: If the personal numbers _triúr_ to _dháréag_ (but see link:#sec_9_4_1_b[9.4.1(b)]), and they are in the nominative*, are being qualified by an adjective that follows them, the adjective is in the nominative singular without any lenition, e.g., _triúr mór_ (*EN*: _three big_); _ceathrar ard_ (*EN*: _four tall_); _an cúigear saibhir_ (*EN*: _the five rich_); _don dáréag clúiteach_ (*EN*: _to the twelve famous_).
 
 :9-4-2-d-ii-p_ga: Má tá na huimhreacha pearsanta _triúr_ go _dháréag_ (ach féach link:#sec_9_4_1_b[9.4.1(b)]), agus iad sa ghinideach, á gcáiliú le haidiacht a thagann ina dhiaidh, cuirtear na gnáthrialacha maidir le haidiacht atá ar lorg ainmfhocal sa ghinideach i bhfeidhm ar na haidiachtaí a ghabhann leo, e.g., _éadaí an cheathrair bhig_; _meitheal ochtair dhíograisigh_; _airgead an dáréag chlúitigh_ (féach link:./chapter4.html[Caibidil 4]).
-:9-4-2-d-ii-p_en: If the personal numbers _triúr_ to _dháréag_ (but see link:#sec_9_4_1_b[9.4.1(b)]), and they are in the genitive, are being qualified by an adjective that follows them, the usual rules regarding adjectives in the genitive case that apply to nouns are applied to the adjectives accompanying them, e.g., _éadaí an cheathrair bhig_; _meitheal ochtair dhíograisigh_; _airgead an dáréag chlúitigh_ (see link:./chapter4.html[Chapter 4]).
+:9-4-2-d-ii-p_en: If the personal numbers _triúr_ to _dháréag_ (but see link:#sec_9_4_1_b[9.4.1(b)]), and they are in the genitive, are being qualified by an adjective that follows them, the usual rules regarding adjectives in the genitive case that apply to nouns are applied to the adjectives accompanying them, e.g., _éadaí an cheathrair bhig_ (*EN*: _the clothes of the four small_); _meitheal ochtair dhíograisigh_ (*EN*: _the effort of the eight diligent_); _airgead an dáréag chlúitigh_ (*EN*: _the money of the twelve famous_) (see link:./chapter4.html[Chapter 4]).
 
 :OtherCasesFootnote_ga: Nó sa ghairmeach, sa chuspóireach nó sa tabharthach.
 :OtherCasesFootnote_en: Or in the vocative, dative or accusative.
@@ -476,19 +476,19 @@
 :9-4-3-a-title_en: The form of the personal number and the form of the noun following it
 
 :9-4-3-a-i-p_ga: Má tá an focal _beirt_, agus é san ainmneach*, á cháiliú le hainmfhocal a thagann ina dhiaidh, is sa ghinideach iolra a bhíonn an t&#x2011;ainmfhocal agus é séimhithe (seachas ainmfhocal a thosaíonn ar _d_, _t_ nó _s_), e.g., _beirt chaptaen_; _beirt chumadóirí_; _beirt drumadóirí_; _ag beirt bhan_.
-:9-4-3-a-i-p_en: If the word _beirt_, when in the nominative*, is being qualified by a noun that follows it, the noun is in the genitive plural and lenited (except for a noun beginning with _d_, _t_ or _s_), e.g., _beirt chaptaen_; _beirt chumadóirí_; _beirt drumadóirí_; _ag beirt bhan_.
+:9-4-3-a-i-p_en: If the word _beirt_, when in the nominative*, is being qualified by a noun that follows it, the noun is in the genitive plural and lenited (except for a noun beginning with _d_, _t_ or _s_), e.g., _beirt chaptaen_ (*EN*: _two captains_); _beirt chumadóirí_ (*EN*: _two composers_); _beirt drumadóirí_ (*EN*: _two drummers_); _ag beirt bhan_ (*EN*: _with two women_).
 
 :9-4-3-a-ii-p_ga: Má tá an focal _beirt_, agus é sa ghinideach gan an t&#x2011;alt, á cháiliú le hainmfhocal a thagann ina dhiaidh, agus é ar lorg agus faoi réir ag ainmfhocal eile, ní théann athrú an ghinidigh ar an bhfocal _beirt_ ach cuirtear séimhiú air agus bíonn an t&#x2011;ainmfhocal sa ghinideach iolra agus cuirtear séimhiú air (seachas ainmfhocal a thosaíonn ar _d_, _t_ nó _s_), e.g., _moltaí bheirt chumadóirí_; _tuairimí bheirt chaptaen_; _obair bheirt saineolaithe_.
-:9-4-3-a-ii-p_en: If the word _beirt_, when in the genitive without the article, is being qualified by a noun that follows it, and it is following and subject to another noun, the genitive change does not apply to the word _beirt_ but it is lenited and the noun is in the genitive plural and lenited (except for a noun beginning with _d_, _t_ or _s_), e.g., _moltaí bheirt chumadóirí_; _tuairimí bheirt chaptaen_; _obair bheirt saineolaithe_.
+:9-4-3-a-ii-p_en: If the word _beirt_, when in the genitive without the article, is being qualified by a noun that follows it, and it is following and subject to another noun, the genitive change does not apply to the word _beirt_ but it is lenited and the noun is in the genitive plural and lenited (except for a noun beginning with _d_, _t_ or _s_), e.g., _moltaí bheirt chumadóirí_ (*EN*: _the praises of two composers_); _tuairimí bheirt chaptaen_ (*EN*: _the opinions of two captains_); _obair bheirt saineolaithe_ (*EN*: _the work of two experts_).
 
 :9-4-3-a-iii-p_ga: Má tá an focal _beirt_, agus é sa ghinideach ach gan an t&#x2011;alt a bheith roimhe, á cháiliú le hainmfhocal a thagann ina dhiaidh, agus é ar lorg agus faoi réir ag réamhfhocal comhshuite nó ainm briathartha, ní dhéantar aon athrú ar an bhfocal _beirt_ agus bíonn an t&#x2011;ainmfhocal sa ghinideach iolra agus cuirtear séimhiú air (seachas ainmfhocal a thosaíonn ar _d_, _t_ nó _s_), e.g., _le haghaidh beirt mholtóirí_; _ag moladh beirt saighdiúirí_.
-:9-4-3-a-iii-p_en: If the word _beirt_, when in the genitive but without the article preceding it, is being qualified by a noun that follows it, and it is following and subject to a compound preposition or a verbal noun, no change is made to the word _beirt_ and the noun is in the genitive plural and lenited (except for a noun beginning with _d_, _t_ or _s_), e.g., _le haghaidh beirt mholtóirí_; _ag moladh beirt saighdiúirí_.
+:9-4-3-a-iii-p_en: If the word _beirt_, when in the genitive but without the article preceding it, is being qualified by a noun that follows it, and it is following and subject to a compound preposition or a verbal noun, no change is made to the word _beirt_ and the noun is in the genitive plural and lenited (except for a noun beginning with _d_, _t_ or _s_), e.g., _le haghaidh beirt mholtóirí_ (*EN*: _for two evaluators_); _ag moladh beirt saighdiúirí_ (*EN*: _praising two soldiers_).
 
 :9-4-3-a-iv-p_ga: Is é ginideach iolra an ainmfhocail a leanann na huimhreacha pearsanta ó _triúr_ go _dháréag_ (ach féach link:#sec_9_4_1_b[9.4.1(b)]) nuair atá daoine á gcomhaireamh, e.g., _triúr bádóirí_; _ceathrar múinteoirí_.
-:9-4-3-a-iv-p_en: The genitive plural of the noun follows the personal numbers from _triúr_ to _dháréag_ (but see link:#sec_9_4_1_b[9.4.1(b)]) when counting people, e.g., _triúr bádóirí_; _ceathrar múinteoirí_.
+:9-4-3-a-iv-p_en: The genitive plural of the noun follows the personal numbers from _triúr_ to _dháréag_ (but see link:#sec_9_4_1_b[9.4.1(b)]) when counting people, e.g., _triúr bádóirí_ (*EN*: _three boatmen_); _ceathrar múinteoirí_ (*EN*: _four teachers_).
 
 :9-4-3-a-v-p_ga: Ní théann athrú an ghinidigh ar uimhreacha pearsanta ó _triúr_ go _dháréag_ (ach féach link:#sec_9_4_1_b[9.4.1(b)]) má tá ainmfhocal ar a lorg, e.g., _athair ceathrar mac_; _máthair cúigear iníonacha_; _geansaithe dháréag peileadóirí_.
-:9-4-3-a-v-p_en: The genitive change does not apply to the personal numbers from _triúr_ to _dháréag_ (but see link:#sec_9_4_1_b[9.4.1(b)]) if there is a noun following, e.g., _athair ceathrar mac_; _máthair cúigear iníonacha_; _geansaithe dháréag peileadóirí_.
+:9-4-3-a-v-p_en: The genitive change does not apply to the personal numbers from _triúr_ to _dháréag_ (but see link:#sec_9_4_1_b[9.4.1(b)]) if there is a noun following, e.g., _athair ceathrar mac_ (*EN*: _father of four sons_); _máthair cúigear iníonacha_ (*EN*: _mother of five daughters_); _geansaithe dháréag peileadóirí_ (*EN*: _sweaters of twelve footballers_).
 
 :Table9S-caption_ga: Na hUimhreacha Pearsanta -- Foirm an Ainmfhocail ar lorg Uimhir Phearsanta
 :Table9S-caption_en: The Personal Numbers -- The Form of the Noun following the Personal Number
@@ -503,13 +503,13 @@
 :9-4-3-b-i-p_en: The singular form of the article is used before the personal numbers. They are all masculine except for _beirt_.
 
 :9-4-3-b-ii-p_ga: Ní shéimhítear _dháréag_ i ndiaidh an ailt, _aon_ ná _céad_, e.g., _an Dáréag Aspal_; _gach aon dáréag scoláirí_; _an chéad dáréag múinteoirí a cháiligh_.
-:9-4-3-b-ii-p_en: _Dháréag_ is not lenited after the article, _aon_ or _céad_, e.g., _an Dáréag Aspal_; _gach aon dáréag scoláirí_; _an chéad dáréag múinteoirí a cháiligh_.
+:9-4-3-b-ii-p_en: _Dháréag_ is not lenited after the article, _aon_ or _céad_, e.g., _an Dáréag Aspal_ (*EN*: _the twelve apostles_); _gach aon dáréag scoláirí_ (*EN*: _each of the twelve students_); _an chéad dáréag múinteoirí a cháiligh_ (*EN*: _the first twelve teachers who qualified_).
 
 :9-4-3-b-iii-p_ga: Má tá an focal _beirt_, agus é sa ghinideach ar lorg an ailt, á cháiliú le hainmfhocal a thagann ina dhiaidh, is sa ghinideach iolra a bhíonn an t&#x2011;ainmfhocal agus ní shéimhítear é (ach téann athrú an ghinidigh ar an bhfocal _beirt_), e.g., _tuairimí na beirte múinteoirí_; _nótaí na beirte saineolaithe_; _tuairiscí na beirte comhfhreagraithe_; _tithe na beirte deartháireacha_.
-:9-4-3-b-iii-p_en: If the word _beirt_, when in the genitive following the article, is being qualified by a noun that follows it, the noun is in the genitive plural and is not lenited (but the genitive change does apply to the word _beirt_), e.g., _tuairimí na beirte múinteoirí_; _nótaí na beirte saineolaithe_; _tuairiscí na beirte comhfhreagraithe_; _tithe na beirte deartháireacha_.
+:9-4-3-b-iii-p_en: If the word _beirt_, when in the genitive following the article, is being qualified by a noun that follows it, the noun is in the genitive plural and is not lenited (but the genitive change does apply to the word _beirt_), e.g., _tuairimí na beirte múinteoirí_ (*EN*: _opinions of the two teachers_); _nótaí na beirte saineolaithe_ (*EN*: _notes of the two experts_); _tuairiscí na beirte comhfhreagraithe_ (*EN*: _reports of the two correspondents_); _tithe na beirte deartháireacha_ (*EN*: _houses of the two brothers_).
 
 :9-4-3-b-iv-p_ga: Ní théann athrú foirme sa ghinideach ar na huimhreacha pearsanta ó _triúr_ go _dháréag_ ná ar an ainmfhocal ar a lorg, ach imríonn an t&#x2011;alt ar thúslitir na n&#x2011;uimhreacha pearsanta mar a d'imreodh ar ghinideach aon ainmfhocail uatha eile, e.g., _cótaí an cheathrar daltaí_; _oifig an tseachtar tréidlianna_; _Scoil an tSeachtar Laoch_.
-:9-4-3-b-iv-p_en: The genitive form change does not apply to the personal numbers from _triúr_ to _dháréag_ nor to the noun following, but the article affects the initial mutations of the personal numbers as it would affect the genitive of any other singular noun, e.g., _cótaí an cheathrar daltaí_; _oifig an tseachtar tréidlianna_; _Scoil an tSeachtar Laoch_.
+:9-4-3-b-iv-p_en: The genitive form change does not apply to the personal numbers from _triúr_ to _dháréag_ nor to the noun following, but the article affects the initial mutations of the personal numbers as it would affect the genitive of any other singular noun, e.g., _cótaí an cheathrar daltaí_ (*EN*: _coats of the four students_); _oifig an tseachtar tréidlianna_ (*EN*: _office of the seven treasurers_); _Scoil an tSeachtar Laoch_ (*EN*: _School of the Seven Heroes_).
 
 :Table9T-caption_ga: Na hUimhreacha Pearsanta -- An tAlt roimh Uimhir Phearsanta a bhfuil Ainmfhocal ar a lorg
 :Table9T-caption_en: The Personal Numbers -- The Article before a Personal Number with a following Noun
@@ -521,16 +521,16 @@
 :9-4-3-c-title_en: The adjective with a noun following a personal number
 
 :9-4-3-c-i-p_ga: Ar lorg na huimhreach pearsanta _beirt_, is san ainmneach iolra a bhíonn an aidiacht agus séimhítear í, e.g., _beirt bhan cháiliúla_; _beirt ghirseach chruthaitheacha_; _beirt amhránaithe cháiliúla_; _beirt mhúinteoirí shealadacha_.
-:9-4-3-c-i-p_en: Following the personal number _beirt_, the adjective is in the nominative plural and lenited, e.g., _beirt bhan cháiliúla_; _beirt ghirseach chruthaitheacha_; _beirt amhránaithe cháiliúla_; _beirt mhúinteoirí shealadacha_.
+:9-4-3-c-i-p_en: Following the personal number _beirt_, the adjective is in the nominative plural and lenited, e.g., _beirt bhan cháiliúla_ (*EN*: _two famous women_); _beirt ghirseach chruthaitheacha_ (*EN*: _two creative girls_); _beirt amhránaithe cháiliúla_ (*EN*: _two famous singers_); _beirt mhúinteoirí shealadacha_ (*EN*: _two temporary teachers_).
 
 :9-4-3-c-ii-p_ga: Má tá an focal _beirt_, agus é sa ghinideach ach gan an t&#x2011;alt a bheith roimhe, á cháiliú le _hainmfhocal_ + _aidiacht_ a thagann ina dhiaidh, agus é ar lorg agus faoi réir ag ainmfhocal eile, bíonn an aidiacht atá á cháiliú san iolra agus í séimhithe, e.g., _moltaí bheirt léachtóirí acadúla_; _tuairimí bheirt iriseoirí sheanbhunaithe_; _saothar bheirt ghramadóirí chliste_.
-:9-4-3-c-ii-p_en: If the word _beirt_, when in the genitive but without the article preceding it, is being qualified by a _noun_ + _adjective_ that follows it, and it is following and subject to another noun, the adjective being qualified is in the plural and lenited, e.g., _moltaí bheirt léachtóirí acadúla_; _tuairimí bheirt iriseoirí sheanbhunaithe_; _saothar bheirt ghramadóirí chliste_.
+:9-4-3-c-ii-p_en: If the word _beirt_, when in the genitive but without the article preceding it, is being qualified by a _noun_ + _adjective_ that follows it, and it is following and subject to another noun, the adjective being qualified is in the plural and lenited, e.g., _moltaí bheirt léachtóirí acadúla_ (*EN*: _recommendations of two academic lecturers_); _tuairimí bheirt iriseoirí sheanbhunaithe_ (*EN*: _opinions of two established journalists_); _saothar bheirt ghramadóirí chliste_ (*EN*: _work of two clever grammarians_).
 
 :9-4-3-c-iii-p_ga: Má tá an focal _beirt_, agus é sa ghinideach ach gan an t&#x2011;alt a bheith roimhe, á cháiliú le _hainmfhocal_ + _aidiacht_ a thagann ina dhiaidh, agus é ar lorg agus faoi réir ag réamhfhocal comhshuite nó ainm briathartha, bíonn an aidiacht atá á cháiliú san iolra agus í séimhithe, e.g., _le haghaidh beirt mholtóirí dheasa_; _ag moladh beirt chumadóirí shamhlaíocha_.
-:9-4-3-c-iii-p_en: If the word _beirt_, when in the genitive but without the article preceding it, is being qualified by a _noun_ + _adjective_ that follows it, and it is following and subject to a compound preposition or a verbal noun, the adjective being qualified is in the plural and lenited, e.g., _le haghaidh beirt mholtóirí dheasa_; _ag moladh beirt chumadóirí shamhlaíocha_.
+:9-4-3-c-iii-p_en: If the word _beirt_, when in the genitive but without the article preceding it, is being qualified by a _noun_ + _adjective_ that follows it, and it is following and subject to a compound preposition or a verbal noun, the adjective being qualified is in the plural and lenited, e.g., _le haghaidh beirt mholtóirí dheasa_ (*EN*: _for two nice reviewers_); _ag moladh beirt chumadóirí shamhlaíocha_ (*EN*: _praising two imaginative composers_).
 
 :9-4-3-c-iv-p_ga: Ar lorg na n&#x2011;uimhreacha pearsanta _triúr_ go _dháréag_ (ach féach link:#sec_9_4_1_b[9.4.1(b)]), is sa ghinideach iolra a bhíonn an aidiacht a ghabhann leis an ainmfhocal, e.g., _triúr scoláirí díograiseacha_; _ceathrar girseach éirimiúil_; _bád an triúr bádóirí tuirseacha_; _airgead an deichniúr ban bríomhar_. Léirítear samplaí leis an alt agus gan an t&#x2011;alt sa tábla ina dhiaidh seo.
-:9-4-3-c-iv-p_en: Following the personal numbers _triúr_ to _dháréag_ (but see link:#sec_9_4_1_b[9.4.1(b)]), the adjective accompanying the noun is in the genitive plural, e.g., _triúr scoláirí díograiseacha_; _ceathrar girseach éirimiúil_; _bád an triúr bádóirí tuirseacha_; _airgead an deichniúr ban bríomhar_. Examples with and without the article are shown in the table below.
+:9-4-3-c-iv-p_en: Following the personal numbers _triúr_ to _dháréag_ (but see link:#sec_9_4_1_b[9.4.1(b)]), the adjective accompanying the noun is in the genitive plural, e.g., _triúr scoláirí díograiseacha_ (*EN*: _three diligent students_); _ceathrar girseach éirimiúil_ (*EN*: _four clever girls_); _bád an triúr bádóirí tuirseacha_ (*EN*: _the boat of the three tired boatmen_); _airgead an deichniúr ban bríomhar_ (*EN*: _the money of the ten lively women_). Examples with and without the article are shown in the table below.
 
 :Table9U-caption_ga: Na hUimhreacha Pearsanta -- An Aidiacht le hAinmfhocal atá ar lorg Uimhir Phearsanta
 :Table9U-caption_en: The Personal Numbers -- The Adjective with a Noun following a Personal Number
@@ -542,16 +542,16 @@
 :9-4-4-title_en: The Personal Numbers written in Figures
 
 :9-4-4-a-p_ga: Moltar na huimhreacha pearsanta ó 1&ndash;12 a scríobh ina bhfocail seachas ina bhfigiúirí. Má dhéantar iad a scríobh ina bhfigiúirí, is mar bhunuimhreacha a chaitear leo, e.g., _2 bhean bheaga_, _4 bhádóir cháiliúla_, _7 bhfeirmeoir shaibhre_ (féach link:#sec_9_3_8[9.3.8]).
-:9-4-4-a-p_en: It is recommended to write the personal numbers from 1&ndash;12 in words rather than figures. If they are written in figures, they are treated as cardinal numbers, e.g., _2 bhean bheaga_, _4 bhádóir cháiliúla_, _7 bhfeirmeoir shaibhre_ (see link:#sec_9_3_8[9.3.8]).
+:9-4-4-a-p_en: It is recommended to write the personal numbers from 1&ndash;12 in words rather than figures. If they are written in figures, they are treated as cardinal numbers, e.g., _2 bhean bheaga_ (*EN*: _2 small women_), _4 bhádóir cháiliúla_ (*EN*: _4 famous boatmen_), _7 bhfeirmeoir shaibhre_ (*EN*: _7 wealthy farmers_) (see link:#sec_9_3_8[9.3.8]).
 
 :9-4-4-b-p_ga: Úsáidtear córas na mbunuimhreacha chun líon daoine os cionn _dháréag_ a chomhaireamh. Féach link:#sec_9_3_1[9.3.1] le haghaidh cur síos ar chóras na mbunuimhreacha ó 1&ndash;19, e.g., _trí bhean déag_; _ceithre ghirseach déag ghalánta_; _17 mbádóir_; _19 bhfear ocracha_; agus féach link:#sec_9_3_10[9.3.10] le haghaidh cur síos ar chóras na mbunuimhreacha os cionn 20, e.g., _trí bhean arda is caoga_; _49 ngirseach ghalánta_.
-:9-4-4-b-p_en: The cardinal number system is used to count numbers of people above _dháréag_. See link:#sec_9_3_1[9.3.1] for a description of the cardinal number system from 1&ndash;19, e.g., _trí bhean déag_; _ceithre ghirseach déag ghalánta_; _17 mbádóir_; _19 bhfear ocracha_; and see link:#sec_9_3_10[9.3.10] for a description of the cardinal number system over 20, e.g., _trí bhean arda is caoga_; _49 ngirseach ghalánta_.
+:9-4-4-b-p_en: The cardinal number system is used to count numbers of people above _dháréag_. See link:#sec_9_3_1[9.3.1] for a description of the cardinal number system from 1&ndash;19, e.g., _trí bhean déag_ (*EN*: _thirteen women_); _ceithre ghirseach déag ghalánta_ (*EN*: _fourteen elegant girls_); _17 mbádóir_ (*EN*: _17 boatmen_); _19 bhfear ocracha_ (*EN*: _19 old men_); and see link:#sec_9_3_10[9.3.10] for a description of the cardinal number system over 20, e.g., _trí bhean arda is caoga_ (*EN*: _fifty-three tall women_); _49 ngirseach ghalánta_ (*EN*: _49 elegant girls_).
 
-:9-4-5-title_ga: Na hUimhreacha Pearsanta  --  An Córas Simplithe
-:9-4-5-title_en: The Personal Numbers  --  The Simplified System
+:9-4-5-title_ga: Na hUimhreacha Pearsanta -- An Córas Simplithe
+:9-4-5-title_en: The Personal Numbers -- The Simplified System
 
 :9-4-5-p_ga: Is féidir córas simplithe a úsáid leis na bunuimhreacha agus leis na huimhreacha pearsanta os cionn fiche. Féach link:#sec_9_3_10_c[9.3.10(c)] le haghaidh cur síos ar an gCóras Simplithe sin, e.g., _fiche a cúig fear mór_; _tríocha a sé bean shaibhir_; _46 bádóir cumasach_; _56 girseach chróga_.
-:9-4-5-p_en: A simplified system can be used with the cardinal numbers and the personal numbers above twenty. See link:#sec_9_3_10_c[9.3.10(c)] for a description of that Simplified System, e.g., _fiche a cúig fear mór_; _tríocha a sé bean shaibhir_; _46 bádóir cumasach_; _56 girseach chróga_.
+:9-4-5-p_en: A simplified system can be used with the cardinal numbers and the personal numbers above twenty. See link:#sec_9_3_10_c[9.3.10(c)] for a description of that Simplified System, e.g., _fiche a cúig fear mór_ (*EN*: _twenty-five big men_); _tríocha a sé bean shaibhir_ (*EN*: _thirty-six wealthy women_); _46 bádóir cumasach_ (*EN*: _46 talented boatmen_); _56 girseach chróga_ (*EN*: _56 brave girls_).
 
 :9-5-title_ga: An Orduimhir
 :9-5-title_en: The Ordinal Number
@@ -563,43 +563,43 @@
 :9-5-1-title_en: The Ordinal Number 1
 
 :9-5-1-a-p_ga: Is féidir an orduimhir _céad_ (_an chéad_) a úsáid le hainmfhocal uatha nó iolra. Úsáidtear an t&#x2011;alt uatha nuair atá ainmfhocal uatha ar a lorg, e.g., _an chéad chaibidil_, agus an t&#x2011;alt iolra nuair atá ainmfhocal iolra ar a lorg, e.g., _na chéad chaibidlí_.
-:9-5-1-a-p_en: The ordinal number _céad_ (_an chéad_) can be used with a singular or plural noun. The singular article is used when a singular noun is following, e.g., _an chéad chaibidil_, and the plural article when a plural noun is following, e.g., _na chéad chaibidlí_.
+:9-5-1-a-p_en: The ordinal number _céad_ (_an chéad_) (*EN*: _first_, (_the first_)) can be used with a singular or plural noun. The singular article is used when a singular noun is following, e.g., _an chéad chaibidil_ (*EN*: _the first chapter_), and the plural article when a plural noun is following, e.g., _na chéad chaibidlí_ (*EN*: _the first chapters_).
 
 :9-5-1-b-p_ga: Bíonn séimhiú ar an orduimhir _céad_ i ndiaidh an ailt, e.g., _an chéad leabhar_; _na chéad rialacha_, ach ní bhíonn séimhiú uirthi:
-:9-5-1-b-p_en: The ordinal number _céad_ is lenited after the article, e.g., _an chéad leabhar_; _na chéad rialacha_, but it is not lenited:
+:9-5-1-b-p_en: The ordinal number _céad_ is lenited after the article, e.g., _an chéad leabhar_ (*EN*: _the first book_); _na chéad rialacha_ (*EN*: _the first rules_), but it is not lenited:
 
 :9-5-1-b-i-p_ga: sna cásanna a luaitear i link:./chapter1.html[gCaibidil 1] ina mbíonn urú i ndiaidh an ailt sa tuiseal tabharthach, e.g., _ar an gcéad duine_; _leis an gcéad cheadúnas_;
-:9-5-1-b-i-p_en: in the contexts mentioned in link:./chapter1.html[Chapter 1] where there is eclipsis after the article in the dative case, e.g., _ar an gcéad duine_; _leis an gcéad cheadúnas_;
+:9-5-1-b-i-p_en: in the contexts mentioned in link:./chapter1.html[Chapter 1] where there is eclipsis after the article in the dative case, e.g., _ar an gcéad duine_ (*EN*: _on the first person_); _leis an gcéad cheadúnas_ (*EN*: _with the first license_);
 
 :9-5-1-b-ii-p_ga: nuair a úsáidtear _céad_ mar réimír in ainmfhocal firinscneach nó in ainmfhocal san iolra, e.g., _céadainm_, _an céadainm_; _Céad-Aire_, _an Céad-Aire_; _céadonóracha_, _na céadonóracha_; (ach _céadghairm_, _an chéadghairm_; _céadsearc_, _an chéadsearc_; de réir ghnáthrialacha an ainmfhocail bhaininscnigh); nó mar réimír i mbriathar, e.g., _céadbhlaisim_, _céadbhlaisfidh sé_ (ach _ón uair a chéadbhlais mé é_, de réir ghnáthrialacha na mbriathra san aimsir chaite, modh táscach);
-:9-5-1-b-ii-p_en: when _céad_ is used as a prefix in a masculine noun or in a plural noun, e.g., _céadainm_, _an céadainm_; _Céad-Aire_, _an Céad-Aire_; _céadonóracha_, _na céadonóracha_; (but _céadghairm_, _an chéadghairm_; _céadsearc_, _an chéadsearc_; according to the usual rules of the feminine noun); or as a prefix in a verb, e.g., _céadbhlaisim_, _céadbhlaisfidh sé_ (but _ón uair a chéadbhlais mé é_, according to the usual rules of verbs in the past tense, indicative mood);
+:9-5-1-b-ii-p_en: when _céad_ is used as a prefix in a masculine noun or in a plural noun, e.g., _céadainm_, _an céadainm_ (*EN*: _first name_, _the first name_); _Céad-Aire_, _an Céad-Aire_ (*EN*: _First Minister_, _the First Minister_); _céadonóracha_, _na céadonóracha_ (*EN*: _first honors_, _the first honors_); (but _céadghairm_, _an chéadghairm_ (*EN*: _first call_, _the first call_); _céadsearc_, _an chéadsearc_ (*EN*: _first love_, _the first love_); according to the usual rules of the feminine noun); or as a prefix in a verb, e.g., _céadbhlaisim_ (*EN*: _I taste first_), _céadbhlaisfidh sé_ (*EN*: _he will taste first_) (but _ón uair a chéadbhlais mé é_ (*EN*: _from the time I first tasted it_), according to the usual rules of verbs in the past tense, indicative mood);
 
 :9-5-1-b-iii-p_ga: ar lorg na n&#x2011;aidiachtaí sealbhacha a (baininscneach, tríú pearsa uatha), e.g., _a céad cheolchoirm agus ár_, _bhur_, _a_ (tríú pearsa iolra), e.g., _ár gcéad teach_; _bhur gcéad charr_; _a gcéad mhac_.
-:9-5-1-b-iii-p_en: following the possessive adjectives (feminine, third person singular), e.g., _a céad cheolchoirm_ and _ár_, _bhur_, _a_ (third person plural), e.g., _ár gcéad teach_; _bhur gcéad charr_; _a gcéad mhac_.
+:9-5-1-b-iii-p_en: following the possessive adjectives (feminine, third person singular), e.g., _a céad cheolchoirm_ (*EN*: _her first concert_) and _ár_, _bhur_, _a_ (third person plural), e.g., _ár gcéad teach_ (*EN*: _our first house_); _bhur gcéad charr_ (*EN*: _your first car_); _a gcéad mhac_ (*EN*: _their first son_).
 
 :9-5-1-c-p_ga: Cuireann an orduimhir _céad_ séimhiú ar an ainmfhocal nó ar an aidiacht ar a lorg i ngach tuiseal, e.g., _an chéad fhear_; _an chéad bhean_; _na chéad cheithre ghloine_; _na chéad bhlianta; clann an chéad fhir_; _mac na chéad mhná_; _lucht na chéad bhliana_; mura _d_, _t_ nó _s_ a thúslitir, e.g., _na chéad daoine_, _an chéad saighdiúir_; _an chéad turas_; _ceadúnas an chéad tógálaí_. (Féach link:#sec_9_5_4[9.5.4] chun tuilleadh eolais a fháil ar orduimhreacha sa tuiseal ginideach.)
-:9-5-1-c-p_en: The ordinal number _céad_ causes lenition of the noun or adjective it governs in all cases, e.g., _an chéad fhear_; _an chéad bhean_; _na chéad cheithre ghloine_; _na chéad bhlianta; clann an chéad fhir_; _mac na chéad mhná_; _lucht na chéad bhliana_; unless the initial letter is _d_, _t_ or _s_, e.g., _na chéad daoine_, _an chéad saighdiúir_; _an chéad turas_; _ceadúnas an chéad tógálaí_. (See link:#sec_9_5_4[9.5.4] for more information on ordinal numbers in the genitive case.)
+:9-5-1-c-p_en: The ordinal number _céad_ causes lenition of the noun or adjective it governs in all cases, e.g., _an chéad fhear_ (*EN*: _the first man_); _an chéad bhean_ (*EN*: _the first woman_); _na chéad cheithre ghloine_ (*EN*: _the first four glasses_); _na chéad bhlianta_ (*EN*: _the first years_); _clann an chéad fhir_ (*EN*: _the children of the first man_); _mac na chéad mhná_ (*EN*: _the son of the first woman_); _lucht na chéad bhliana_ (*EN*: _the people of the first year_); unless the initial letter is _d_, _t_ or _s_, e.g., _na chéad daoine_ (*EN*: _the first people_), _an chéad saighdiúir_ (*EN*: _the first soldier_); _an chéad turas_ (*EN*: _the first journey_); _ceadúnas an chéad tógálaí_ (*EN*: _the license of the first builder_). (See link:#sec_9_5_4[9.5.4] for more information on ordinal numbers in the genitive case.)
 
-:9-5-1-d-p_ga: Úsáidtear an orduimhir _céad_ i gcás 1, ach i gcás na n&#x2011;orduimhreacha eile a chríochnaíonn ar 1, úsáidtear an focal _aonú_. Sa tuiseal ainmneach, cuirtear _t-_ roimh _aonú_ i ndiaidh an ailt, e.g., _an t&#x2011;aonú lá is tríocha_.
-:9-5-1-d-p_en: The ordinal number _céad_ is used in the for 1, but for other ordinals ending in 1, the word _aonú_ is used. In the nominative case, _t-_ is prefixed to _aonú_ after the article, e.g., _an t&#x2011;aonú lá is tríocha_.
+:9-5-1-d-p_ga: Úsáidtear an orduimhir _céad_ i gcás 1, ach i gcás na n&#x2011;orduimhreacha eile a chríochnaíonn ar 1, úsáidtear an focal _aonú_. Sa tuiseal ainmneach, cuirtear _t&#x2011;_ roimh _aonú_ i ndiaidh an ailt, e.g., _an t&#x2011;aonú lá is tríocha_.
+:9-5-1-d-p_en: The ordinal number _céad_ is used in the for 1, but for other ordinals ending in 1, the word _aonú_ is used. In the nominative case, _t&#x2011;_ is prefixed to _aonú_ after the article, e.g., _an t&#x2011;aonú lá is tríocha_ (*EN*: _the thirty-first day_).
 
-:9-5-2-title_ga: Na hOrduimhreacha 1&ndash;100  --  Eolas Ginearálta
-:9-5-2-title_en: The Ordinal Numbers 1&ndash;100  --  General Information
+:9-5-2-title_ga: Na hOrduimhreacha 1&ndash;100 -- Eolas Ginearálta
+:9-5-2-title_en: The Ordinal Numbers 1&ndash;100 -- General Information
 
 :9-5-2-a-p_ga: Is é foirm uatha an ailt a bhíonn roimh na horduimhreacha (seachas an orduimhir 1, féach link:#sec_9_5_1[9.5.1]), e.g., _an dara bean_; _an dóú teach_; _an tríú tuarascáil_; _an ceathrú bean is fiche_; _an cúigiú comhartha is seasca_.
-:9-5-2-a-p_en: The singular form of the article precedes the ordinal numbers (except for the ordinal number 1, see link:#sec_9_5_1[9.5.1]), e.g., _an dara bean_; _an dóú teach_; _an tríú tuarascáil_; _an ceathrú bean is fiche_; _an cúigiú comhartha is seasca_.
+:9-5-2-a-p_en: The singular form of the article precedes the ordinal numbers (except for the ordinal number 1, see link:#sec_9_5_1[9.5.1]), e.g., _an dara bean_ (*EN*: _the second woman_); _an dóú teach_ (*EN*: _the second house_); _an tríú tuarascáil_ (*EN*: _the third report_); _an ceathrú bean is fiche_ (*EN*: _the twenty-fourth woman_); _an cúigiú comhartha is seasca_ (*EN*: _the sixty-fifth sign_).
 
 :9-5-2-b-p_ga: I ndiaidh na horduimhreach _dara_ agus na n&#x2011;orduimhreacha go léir dar críoch _-ú_, cuirtear _h_ roimh ainmfhocal dar tús guta, e.g., _an dara hoíche_; _an tríú hurlár_; _an séú hóstán déag_; _an t&#x2011;ochtú hurlár is tríocha_.
-:9-5-2-b-p_en: After the ordinal number _dara_ and all ordinal numbers ending in _-ú_, _h_ is prefixed to a noun beginning with a vowel, e.g., _an dara hoíche_; _an tríú hurlár_; _an séú hóstán déag_; _an t&#x2011;ochtú hurlár is tríocha_.
+:9-5-2-b-p_en: After the ordinal number _dara_ and all ordinal numbers ending in _-ú_, _h_ is prefixed to a noun beginning with a vowel, e.g., _an dara hoíche_ (*EN*: _the second night_); _an tríú hurlár_ (*EN*: _the third floor_); _an séú hóstán déag_ (*EN*: _the sixteenth hotel_); _an t&#x2011;ochtú hurlár is tríocha_ (*EN*: _the thirty-eighth floor_).
 
 :9-5-2-c-p_ga: Bíonn an t&#x2011;alt roimh an gcéad uimhir san orduimhir de ghnáth, mura mbíonn aidiacht shealbhach nó _gach_ roimpi, e.g., _an tríú lá ach gach dara bliain_; _a tríú bliain_.
-:9-5-2-c-p_en: The article usually precedes the first number in the ordinal number, unless a possessive adjective or _gach_ precedes it, e.g., _an tríú lá ach gach dara bliain_; _a tríú bliain_.
+:9-5-2-c-p_en: The article usually precedes the first number in the ordinal number, unless a possessive adjective or _gach_ precedes it, e.g., _an tríú lá ach gach dara bliain_ (*EN*: _the third day but every second year_); _a tríú bliain_ (*EN*: _his third year_).
 
 :9-5-2-d-p_ga: Úsáidtear córas a leanann comhréir na mbunuimhreacha (An Córas Seanbhunaithe) chun ionad ruda i sraith faoi bhun 100 a chur in iúl, e.g., _an dara hábhar is tríocha_; _an ceathrú cathaoir is caoga_; _an seachtú hoíche is seachtó_; _an t&#x2011;ochtú madra is nócha_.
-:9-5-2-d-p_en: A system that follows the rules of the cardinal numbers (The Established System) is used to indicate the position of a thing in a series below 100, e.g., _an dara hábhar is tríocha_; _an ceathrú cathaoir is caoga_; _an seachtú hoíche is seachtó_; _an t&#x2011;ochtú madra is nócha_.
+:9-5-2-d-p_en: A system that follows the rules of the cardinal numbers (The Established System) is used to indicate the position of a thing in a series below 100, e.g., _an dara hábhar is tríocha_ (*EN*: _the thirty-second item_); _an ceathrú cathaoir is caoga_ (*EN*: _the fifty-fourth chair_); _an seachtú hoíche is seachtó_ (*EN*: _the seventy-seventh night_); _an t&#x2011;ochtú madra is nócha_ (*EN*: _the ninety-eighth dog_).
 
 :9-5-2-e-p_ga: Ní chuirtear séimhiú ar an bhfocal _déag_ san orduimhir, e.g., _an tríú duine déag_; _an t&#x2011;ochtú bosca déag_; _an naoú leabhar déag_.
-:9-5-2-e-p_en: No lenition is added to the word _déag_ in the ordinal number, e.g., _an tríú duine déag_; _an t&#x2011;ochtú bosca déag_; _an naoú leabhar déag_.
+:9-5-2-e-p_en: No lenition is added to the word _déag_ in the ordinal number, e.g., _an tríú duine déag_ (*EN*: _the thirteenth person_); _an t&#x2011;ochtú bosca déag_ (*EN*: _the eighteenth box_); _an naoú leabhar déag_ (*EN*: _the nineteenth book_).
 
 :TheOrdinalNumbers_ga: Na hOrduimhreacha
 :TheOrdinalNumbers_en: The Ordinal Numbers
@@ -607,26 +607,26 @@
 :9-5-3-title_ga: Na hOrduimhreacha 100+
 :9-5-3-title_en: The Ordinal Numbers 100+
 
-:9-5-3-a-p_ga: Úsáidtear córas atá bunaithe ar chóras na maoluimhreacha chun ionad ruda i sraith os cionn 100 a chur in iúl, e.g., _céad a ceathair -- an céad is ceathrú feirmeoir_; _cúig chéad seasca a ceathair -- an cúig chéad seasca is ceathrú heitleán_; _seacht míle, ceithre chéad a naoi déag -- an seacht míle_, _ceithre chéad is naoú hóstán déag_.
-:9-5-3-a-p_en: A system based on the multiplicative number system is used to indicate the position of a thing in a series above 100, e.g., _céad a ceathair -- an céad is ceathrú feirmeoir_; _cúig chéad seasca a ceathair -- an cúig chéad seasca is ceathrú heitleán_; _seacht míle, ceithre chéad a naoi déag -- an seacht míle_, _ceithre chéad is naoú hóstán déag_.
+:9-5-3-a-p_ga: Úsáidtear córas atá bunaithe ar chóras na maoluimhreacha chun ionad ruda i sraith os cionn 100 a chur in iúl, e.g., _céad a ceathair -- an céad is ceathrú feirmeoir_; _cúig chéad seasca a ceathair -- an cúig chéad seasca is ceathrú heitleán_; _seacht míle, ceithre chéad a naoi déag -- an seacht míle, ceithre chéad is naoú hóstán déag_.
+:9-5-3-a-p_en: A system based on the multiplicative number system is used to indicate the position of a thing in a series above 100, e.g., _céad a ceathair -- an céad is ceathrú feirmeoir_ (*EN*: _the one hundred and fourth farmer_); _cúig chéad seasca a ceathair -- an cúig chéad seasca is ceathrú heitleán_ (*EN*: _the five hundred and sixty-fourth airplane_); _seacht míle, ceithre chéad a naoi déag -- an seacht míle, ceithre chéad is naoú hóstán déag_ (*EN*: _the seven thousand, four hundred and nineteenth hotel_).
 
 :9-5-3-b-p_ga: Cuirtear séimhiú ar an bhfocal _déag_ i ndiaidh na huimhreach _míle_, e.g., _an trí mhíle dhéag is ceathrú hoileán_.
-:9-5-3-b-p_en: Lenition is added to the word _déag_ after the number _míle_, e.g., _an trí mhíle dhéag is ceathrú hoileán_.
+:9-5-3-b-p_en: Lenition is added to the word _déag_ after the number _míle_, e.g., _an trí mhíle dhéag is ceathrú hoileán_ (*EN*: _the three thousand and fourteenth island_).
 
 :9-5-4-title_ga: Na hOrduimhreacha sa Tuiseal Ginideach
 :9-5-4-title_en: The Ordinal Numbers in the Genitive Case
 
 :9-5-4-a-p_ga: I gcás na horduimhreach _céad_, díochlaontar an t&#x2011;ainmfhocal ina dhiaidh agus géilleann an t&#x2011;alt d'uimhir agus d'inscne an ainmfhocail, e.g., _an chéad fhear_, _clann an chéad fhir_; _an chéad bhean_, _clann na chéad mhná_; _na chéad cheithre bliana_, _tús na chéad cheithre bliana_; _na chéad chúig charr_, _plátaí clárúcháin na chéad chúig charr_; _na chéad taiscéalaithe_, _eachtraí na chéad taiscéalaithe_.
-:9-5-4-a-p_en: For the ordinal number _céad_, the noun following it is declined and the article agrees with the number and gender of the noun, e.g., _an chéad fhear_, _clann an chéad fhir_; _an chéad bhean_, _clann na chéad mhná_; _na chéad cheithre bliana_, _tús na chéad cheithre bliana_; _na chéad chúig charr_, _plátaí clárúcháin na chéad chúig charr_; _na chéad taiscéalaithe_, _eachtraí na chéad taiscéalaithe_.
+:9-5-4-a-p_en: For the ordinal number _céad_, the noun following it is declined and the article agrees with the number and gender of the noun, e.g., _an chéad fhear_, _clann an chéad fhir_ (*EN*: _the first man_, _the family of the first man_); _an chéad bhean_, _clann na chéad mhná_ (*EN*: _the first woman_, _the family of the first woman_); _na chéad cheithre bliana_, _tús na chéad cheithre bliana_ (*EN*: _the first four years_, _the beginning of the first four years_); _na chéad chúig charr_, _plátaí clárúcháin na chéad chúig charr_ (*EN*: _the first five cars_, _the registration plates of the first five cars_); _na chéad taiscéalaithe_, _eachtraí na chéad taiscéalaithe_ (*EN*: _the first explorers_, _the adventures of the first explorers_).
 
 :9-5-4-b-p_ga: I gcás na n&#x2011;orduimhreacha eile go léir, ní dhéantar díochlaonadh riamh ar an ainmfhocal, e.g., _mac an dara bean_; _mac an dara fear_; _eagraíocht tríú tír_; _oideachas tríú leibhéal_; _clúdach an cheathrú tuarascáil_; _deireadh an fichiú haois_; _tús an aonú haois is fiche_.
-:9-5-4-b-p_en: For all other ordinal numbers, the noun is never declined, e.g., _mac an dara bean_; _mac an dara fear_; _eagraíocht tríú tír_; _oideachas tríú leibhéal_; _clúdach an cheathrú tuarascáil_; _deireadh an fichiú haois_; _tús an aonú haois is fiche_.
+:9-5-4-b-p_en: For all other ordinal numbers, the noun is never declined, e.g., _mac an dara bean_ (*EN*: _the son of the second woman_); _mac an dara fear_ (*EN*: _the son of the second man_); _eagraíocht tríú tír_ (*EN*: _the organization of the third country_); _oideachas tríú leibhéal_ (*EN*: _the third level of education_); _clúdach an cheathrú tuarascáil_ (*EN*: _the cover of the fourth report_); _deireadh an fichiú haois_ (*EN*: _the end of the twentieth century_); _tús an aonú haois is fiche_ (*EN*: _the beginning of the twenty-first century_).
 
-:9-5-4-c-p_ga: Cailltear an _t-_ roimh _aonú_, _ochtú_, _ochtódú_, etc., e.g., _an t&#x2011;aonú bliain déag_, _tús an aonú bliain déag_; _an t&#x2011;ochtú haois déag_, _tús an ochtú haois déag_; _an t&#x2011;ochtódú cruinniú_, _miontuairiscí an ochtódú cruinniú_.
-:9-5-4-c-p_en: The _t-_ is dropped before _aonú_, _ochtú_, _ochtódú_, etc., e.g., _an t&#x2011;aonú bliain déag_, _tús an aonú bliain déag_; _an t&#x2011;ochtú haois déag_, _tús an ochtú haois déag_; _an t&#x2011;ochtódú cruinniú_, _miontuairiscí an ochtódú cruinniú_.
+:9-5-4-c-p_ga: Cailltear an _t&#x2011;_ roimh _aonú_, _ochtú_, _ochtódú_, etc., e.g., _an t&#x2011;aonú bliain déag_, _tús an aonú bliain déag_; _an t&#x2011;ochtú haois déag_, _tús an ochtú haois déag_; _an t&#x2011;ochtódú cruinniú_, _miontuairiscí an ochtódú cruinniú_.
+:9-5-4-c-p_en: The _t&#x2011;_ is dropped before _aonú_, _ochtú_, _ochtódú_, etc., e.g., _an t&#x2011;aonú bliain déag_, _tús an aonú bliain déag_ (*EN*: _the eleventh year_, _the beginning of the eleventh year_); _an t&#x2011;ochtú haois déag_, _tús an ochtú haois déag_ (*EN*: _the eighteenth century_, _the beginning of the eighteenth century_); _an t&#x2011;ochtódú cruinniú_, _miontuairiscí an ochtódú cruinniú_ (*EN*: _the eighteenth meeting_, _the minutes of the eighteenth meeting_).
 
 :9-5-4-d-p_ga: Imríonn an t&#x2011;alt ar thúslitir na horduimhreach mar a d'imreodh ar ainmfhocal firinscneach, e.g., _bróga an chúigiú girseach_; _seoladh an cheathrú teach is daichead_; ach ní dhéantar athrú tosaigh ar _f_ ná _s_, e.g., _lucht an seachtú hoifig_; _bonn an fichiú himreoir_; _deireadh an seascadú comhdháil_.
-:9-5-4-d-p_en: The article affects the initial mutations of the ordinal numbers as it would affect a masculine noun, e.g., _bróga an chúigiú girseach_; _seoladh an cheathrú teach is daichead_; but no initial mutation is made to _f_ or _s_, e.g., _lucht an seachtú hoifig_; _bonn an fichiú himreoir_; _deireadh an seascadú comhdháil_.
+:9-5-4-d-p_en: The article affects the initial mutations of the ordinal numbers as it would affect a masculine noun, e.g., _bróga an chúigiú girseach_ (*EN*: _the shoes of the fifth girl_); _seoladh an cheathrú teach is daichead_ (*EN*: _the launch of the forty-fourth house_); but no initial mutation is made to _f_ or _s_, e.g., _lucht an seachtú hoifig_ (*EN*: _the people of the seventh office_); _bonn an fichiú himreoir_ (*EN*: _the base of the twentieth player_); _deireadh an seascadú comhdháil_ (*EN*: _the end of the sixteenth conference_).
 
 :Table9XCaption_ga: Na hOrduimhreacha sa Tuiseal Ginideach
 :Table9XCaption_en: The Ordinal Numbers in the Genitive Case
@@ -638,13 +638,13 @@
 :9-5-5-title_en: Adjectives with Ordinal Numbers
 
 :9-5-5-p_ga: Díochlaontar an aidiacht de réir an ainmfhocail, e.g., _an chéad bhean mhór_; _an chéad fhear mór_; _seol an chéad bháid ghoirm_; _deireadh na chéad tuarascála cuimsithí_; _na chéad scoláirí maithe_; _eachtraí na chéad taiscéalaithe cáiliúla_; _an tríú fear mór is tríocha_; _cóta an daicheadú bean mhór_.
-:9-5-5-p_en: The adjective is declined according to the noun, e.g., _an chéad bhean mhór_; _an chéad fhear mór_; _seol an chéad bháid ghoirm_; _deireadh na chéad tuarascála cuimsithí_; _na chéad scoláirí maithe_; _eachtraí na chéad taiscéalaithe cáiliúla_; _an tríú fear mór is tríocha_; _cóta an daicheadú bean mhór_.
+:9-5-5-p_en: The adjective is declined according to the noun, e.g., _an chéad bhean mhór_ (*EN*: _the first big woman_); _an chéad fhear mór_ (*EN*: _the first big man_); _seol an chéad bháid ghoirm_ (*EN*: _the launch of the first blue boat_); _deireadh na chéad tuarascála cuimsithí_ (*EN*: _the end of the first comprehensive report_); _na chéad scoláirí maithe_ (*EN*: _the first good students_); _eachtraí na chéad taiscéalaithe cáiliúla_ (*EN*: _the adventures of the first famous explorers_); _an tríú fear mór is tríocha_ (*EN*: _the thirty-third big man_); _cóta an daicheadú bean mhór_ (*EN*: _the coat of the forty-first big woman_).
 
 :9-5-6-title_ga: Na hOrduimhreacha a Scríobh ina bhFigiúirí
 :9-5-6-title_en: The Ordinal Numbers written in Figures
 
 :9-5-6-a-p_ga: Scríobhtar orduimhreacha ina bhfigiúirí trí _ú_ a chur i ndiaidh an fhigiúir, e.g., _an 1ú_, _an 2ú_, _an 19ú_, _an 123ú_.
-:9-5-6-a-p_en: Ordinal numbers are written in figures by adding _ú_ after the figure, e.g., _an 1ú_, _an 2ú_, _an 19ú_, _an 123ú_.
+:9-5-6-a-p_en: Ordinal numbers are written in figures by adding _ú_ (*EN*: _st, nd, rd, th_) after the figure, e.g., _an 1ú_, _an 2ú_, _an 19ú_, _an 123ú_.
 
 :9-5-6-b-p_ga: Is ionann na rialacha a bhaineann le horduimhreacha a scríobh ina bhfigiúirí agus na rialacha a bhaineann le horduimhreacha a scríobh ina bhfocail (féach link:#sec_9_5_1[9.5.1] go link:#sec_9_5_5[9.5.5] roimhe seo). Tabhair faoi deara go gcuirtear _h_ roimh ghuta agus nach gcuirtear séimhiú i ndiaidh 1ú toisc gur _aonú_ atá i gceist (seachas _céad_).
 :9-5-6-b-p_en: The rules for writing ordinal numbers in figures are the same as the rules for writing ordinal numbers in words (see link:#sec_9_5_1[9.5.1] to link:#sec_9_5_5[9.5.5] above). Note that _h_ is prefixed before a vowel and no lenition is added after 1ú since it is _aonú_ (not _céad_).
