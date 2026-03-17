@@ -1222,44 +1222,137 @@ h| {Table11E-header1} h| {Table11E-header2} h| {Table11E-header3} h| {Table11E-h
 |===
 h| {Table11F-header1} h| {Table11F-header2}
 
-h| cad 
-a| . Cad a tharla?
-. Cad is brí leis sin?
+h| cad
+a|
+ifdef::isGa[]
+. {Table11F-cad-example1}
+. {Table11F-cad-example2}
+endif::[]
+ifndef::isGa[]
+. {Table11F-cad-example1_ga} +
+({Table11F-cad-example1})
+. {Table11F-cad-example2_ga} +
+({Table11F-cad-example2})
+endif::[]
 
-h| cathain | Cathain a fuair tú an carr nua?
+h| cathain | 
+ifdef::isGa[{Table11F-cathain-example}]
+ifndef::isGa[]
+{Table11F-cathain-example_ga} +
+({Table11F-cathain-example})
+endif::[]
 
-h| cá fhad, cén fhad* a| . Cá fhad a bhí sibh ann?
-. Cén fhad a mhair an cheolchoirm?
+h| cá fhad, cén fhad*
+a|
+ifdef::isGa[]
+. {Table11F-fhad-example1}
+. {Table11F-fhad-example2}
+endif::[]
+ifndef::isGa[]
+. {Table11F-fhad-example1_ga} +
+({Table11F-fhad-example1})
+. {Table11F-fhad-example2_ga} +
+({Table11F-fhad-example2})
+endif::[]
 
 h| cá mhéad, cé mhéad, cén méid
-a| . Cá mhéad leabhar atá agat?
-. Cé mhéad a fuair tú mar íocaíocht?
-. Cén méid a chosnaíonn sé?
+a|
+ifdef::isGa[]
+. {Table11F-mhéad-example1}
+. {Table11F-mhéad-example2}
+. {Table11F-mhéad-example3}
+endif::[]
+ifndef::isGa[]
+. {Table11F-mhéad-example1_ga} +
+({Table11F-mhéad-example1})
+. {Table11F-mhéad-example2_ga} +
+({Table11F-mhéad-example2})
+. {Table11F-mhéad-example3_ga} +
+({Table11F-mhéad-example3})
+endif::[]
 
-h| cé | Cé a bhí leat?
+h| cé |
+ifdef::isGa[{Table11F-cé-example1}]
+ifndef::isGa[]
+{Table11F-cé-example1_ga} +
+({Table11F-cé-example1})
+endif::[]
 
 h| cé acu, cibé acu 
-a| . Cé acu mise nó tusa atá i gceist?
-. Is cuma liom cé acu a rinne sé é nó nach ndearna.
-. Beidh feidhm ag an socrú cibé acu atá sé sásta nó nach bhfuil.
+a|
+ifdef::isGa[]
+. {Table11F-acu-example1}
+. {Table11F-acu-example2}
+. {Table11F-acu-example3}
+endif::[]
+ifndef::isGa[]
+. {Table11F-acu-example1_ga} +
+({Table11F-acu-example1})
+. {Table11F-acu-example2_ga} +
+({Table11F-acu-example2})
+. {Table11F-acu-example3_ga} +
+({Table11F-acu-example3})
+endif::[]
 
-h| céard | Céard atá ar siúl agat?
+h| céard |
+ifdef::isGa[{Table11F-céard-example1}]
+ifndef::isGa[]
+{Table11F-céard-example1_ga} +
+({Table11F-céard-example1})
+endif::[]
 
 h| cá huair, cén uair
-a| . Cá huair a tháinig sí?
-. Cén uair a chríochnóidh an scannán?
+a|
+ifdef::isGa[]
+. {Table11F-uair-example1}
+. {Table11F-uair-example2}
+endif::[]
+ifndef::isGa[]
+. {Table11F-uair-example1_ga} +
+({Table11F-uair-example1})
+. {Table11F-uair-example2_ga} +
+({Table11F-uair-example2})
+endif::[]
 
-h| chomh + dobhriathar ama + is
-a| . Coimeádfar na sonraí sin chomh fada is a bheidh siad riachtanach.
-. Cé chomh minic (is) a bhíonn cóisir agaibh sa teach?
+h| chomh + {Table11F-dobhriathar-ama} + is
+a|
+ifdef::isGa[]
+. {Table11F-chomh-example1}
+. {Table11F-chomh-example2}
+endif::[]
+ifndef::isGa[]
+. {Table11F-chomh-example1_ga} +
+({Table11F-chomh-example1})
+. {Table11F-chomh-example2_ga} +
+({Table11F-chomh-example2})
+endif::[]
 
-h| conas | Conas a dhéanann tú é?
+h| conas | 
+ifdef::isGa[{Table11F-conas-example1}]
+ifndef::isGa[]
+{Table11F-conas-example1_ga} +
+({Table11F-conas-example1})
+endif::[]
 
-h| cad é mar, mar (_cónasc_) 
-a| . Cad é mar a chuir tú aithne air?
-. Déan mar is ceart é.
+h| cad é mar, mar (_{Table11F-cónasc}_) 
+a|
+ifdef::isGa[]
+. {Table11F-mar-example1}
+. {Table11F-mar-example2}
+endif::[]
+ifndef::isGa[]
+. {Table11F-mar-example1_ga} +
+({Table11F-mar-example1})
+. {Table11F-mar-example2_ga} +
+({Table11F-mar-example2})
+endif::[]
 
-h| nuair | Cuirfidh mé scairt ort nuair a bheidh deis agam.
+h| nuair |
+ifdef::isGa[{Table11F-nuair-example1}]
+ifndef::isGa[]
+{Table11F-nuair-example1_ga} +
+({Table11F-nuair-example1})
+endif::[]
 
 |===
 
@@ -1272,39 +1365,118 @@ h| nuair | Cuirfidh mé scairt ort nuair a bheidh deis agam.
 h| {Table11G-header1} h| {Table11G-header2}
 
 h| an áit, cá háit, cén áit
-a| . Sin an áit a raibh sé.
-. Cá háit a mbíonn na ranganna sin ar siúl?
-. Cén áit a ndeachaigh sibh ansin?
+a|
+ifdef::isGa[]
+. {Table11G-áit-example1}
+. {Table11G-áit-example2}
+. {Table11G-áit-example3}
+endif::[]
+ifndef::isGa[]
+. {Table11G-áit-example1_ga} +
+({Table11G-áit-example1})
+. {Table11G-áit-example2_ga} +
+({Table11G-áit-example2})
+. {Table11G-áit-example3_ga} +
+({Table11G-áit-example3})
+endif::[]
 
 h| an chaoi, cén chaoi
-a| . Ba é sin an chaoi ar chuala mé faoi.
-. Cén chaoi ar tharla a leithéid?
+a|
+ifdef::isGa[]
+. {Table11G-chaoi-example1}
+. {Table11G-chaoi-example2}
+endif::[]
+ifndef::isGa[]
+. {Table11G-chaoi-example1_ga} +
+({Table11G-chaoi-example1})
+. {Table11G-chaoi-example2_ga} +
+({Table11G-chaoi-example2})
+endif::[]
 
 h| an dóigh, cén dóigh
-a| . Sin an dóigh a bhfuil sé anois.
-. Cén dóigh a ndéantar an obair?
+a|
+ifdef::isGa[]
+. {Table11G-dóigh-example1}
+. {Table11G-dóigh-example2}
+endif::[]
+ifndef::isGa[]
+. {Table11G-dóigh-example1_ga} +
+({Table11G-dóigh-example1})
+. {Table11G-dóigh-example2_ga} +
+({Table11G-dóigh-example2})
+endif::[]
 
 h| an fáth, cén fáth
-a| . Is é sin an fáth a raibh áthas orm.
-. Cén fáth a gcuireann tú do chuid ama amú mar sin?
+a|
+ifdef::isGa[]
+. {Table11G-fáth-example1}
+. {Table11G-fáth-example2}
+endif::[]
+ifndef::isGa[]
+. {Table11G-fáth-example1_ga} +
+({Table11G-fáth-example1})
+. {Table11G-fáth-example2_ga} +
+({Table11G-fáth-example2})
+endif::[]
 
-h| cad chuige | Cad chuige a ndearna tú sin?
+h| cad chuige |
+ifdef::isGa[{Table11G-chuige-example1}]
+ifndef::isGa[]
+{Table11G-chuige-example1_ga} +
+({Table11G-chuige-example1})
+endif::[]
 
-h| cad ina thaobh | Cad ina thaobh ar inis tú bréag?
+h| cad ina thaobh |
+ifdef::isGa[{Table11G-ina-thaobh-example1}]
+ifndef::isGa[]
+{Table11G-ina-thaobh-example1_ga} +
+({Table11G-ina-thaobh-example1})
+endif::[]
 
 h| an tslí, cén tslí
-a| . Ní maith liom an tslí a bhfuil sé á chur i bhfeidhm.
-. Cén tslí a dtoghtar comhaltaí an tSeanaid?
+a|
+ifdef::isGa[]
+. {Table11G-tslí-example1}
+. {Table11G-tslí-example2}
+endif::[]
+ifndef::isGa[]
+. {Table11G-tslí-example1_ga} +
+({Table11G-tslí-example1})
+. {Table11G-tslí-example2_ga} +
+({Table11G-tslí-example2})
+endif::[]
 
-h| a, ar (_sa bhrí_ an méid a, an méid ar);
-gach a, gach ar (_sa bhrí_ gach rud a, gach rud ar)
-a| . Ólann sé a dtuilleann sé.
-. D'ól sé ar thuill sé.
-. Faigheann sí gach a bhfuil ag teastáil.
-. Fuair sí gach ar theastaigh uaithi.
+h| a, ar (_{saBhrí}_ an méid a, an méid ar);
+gach a, gach ar (_{saBhrí}_ gach rud a, gach rud ar)
+a|
+ifdef::isGa[]
+. {Table11H-misc-example1}
+. {Table11H-misc-example2}
+. {Table11H-misc-example3}
+. {Table11H-misc-example4}
+endif::[]
+ifndef::isGa[]
+. {Table11H-misc-example1_ga} +
+({Table11H-misc-example1})
+. {Table11H-misc-example2_ga} +
+({Table11H-misc-example2})
+. {Table11H-misc-example3_ga} +
+({Table11H-misc-example3})
+. {Table11H-misc-example4_ga} +
+({Table11H-misc-example4})
+endif::[]
 
-h| mar (_sa bhrí_ áit)
-a| . Chuaigh mé go dtí an siopa éadaí mar a ndíoltar geansaithe áille olla.
-. Sin é teach m'aintín mar ar mhinic mo chuairt.
+h| mar (_{saBhrí}_ áit)
+a|
+ifdef::isGa[]
+. {Table11H-mar-example1}
+. {Table11H-mar-example2}
+endif::[]
+ifndef::isGa[]
+. {Table11H-mar-example1_ga} +
+({Table11H-mar-example1})
+. {Table11H-mar-example2_ga} +
+({Table11H-mar-example2})
+endif::[]
 
 |===
