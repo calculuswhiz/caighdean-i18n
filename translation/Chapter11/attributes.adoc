@@ -501,7 +501,7 @@
 :11-6-1-a-title_en: The Direct Relative Clause
 
 :11-6-1-a-i-p_ga: Más clásal coibhneasta díreach atá ann, is é _a_ an fhoirm den mhír choibhneasta a úsáidtear roimh na briathra rialta agus neamhrialta i ngach aimsir (seachas i gcás aimsir láithreach an bhriathair _bí_ -- féach link:#sec_11_6_1_a_ii[(ii)] thíos). Séimhítear an briathar i ndiaidh na míre coibhneasta dírí _a_ ach amháin i gcás an tsaorbhriathair, aimsir chaite (ach féach link:#sec_11_7_1_b[11.7.1(b)]).
-:11-6-1-a-i-p_en: If it is a direct relative clause, _a_ is the form of the relative particle used before regular and irregular verbs in all tenses (except in the present tense of the verb _bí_ -- see link:#sec_11_6_1_a_ii[(ii)] below). The verb is lenited after the direct relative particle _a_ except when the past participle (but see link:#sec_11_7_1_b[11.7.1(b)]).
+:11-6-1-a-i-p_en: If it is a direct relative clause, _a_ is the form of the relative particle used before regular and irregular verbs in all tenses (except in the present tense of the verb _bí_ -- see link:#sec_11_6_1_a_ii[(ii)] below). The verb is lenited after the direct relative particle _a_ except when it is an autonomous verb in the past tense (but see link:#sec_11_7_1_b[11.7.1(b)]).
 
 :11-6-1-a-i-sample-1_ga: Sin é an stáisiún raidió *a* chraolann cláir do leanaí.
 :11-6-1-a-i-sample-1_en: That is the radio station *that* broadcasts programs for children.
@@ -753,7 +753,7 @@
 :11-7-1-b-sample-2_en: That is the hurley ball *that will be hit* during the game.
 
 :11-7-1-p_ga: Tabhair faoi deara go séimhítear an saorbhriathar sna cásanna ina séimhítear na foirmeacha eile den bhriathar, e.g., _na héadaí a cheannaítear_ (_a cheannófar_, _a cheannaítí_) seachas san aimsir chaite, e.g., _na héadaí a ceannaíodh_. Ní shéimhítear an saorbhriathar neamhspleách san aimsir chaite ach amháin i gcás _chonacthas_, _chualathas_, _chuathas_ agus _thángthas_.
-:11-7-1-p_en: Note that the past participle is lenited where the other forms of the verb are lenited, e.g., _na héadaí a cheannaítear_ (_a cheannófar_, _a cheannaítí_) (*EN*: _the clothes that are bought_ (_will be bought_, _have been bought_)) except in the past tense, e.g., _na héadaí a ceannaíodh_ (*EN*: _the clothes that were bought_). The independent past participle is only lenited in the past tense for _chonacthas_, _chualathas_, _chuathas_ and _thángthas_.
+:11-7-1-p_en: Note that the autonomous verb is lenited where the other forms of the verb are lenited, e.g., _na héadaí a cheannaítear_ (_a cheannófar_, _a cheannaítí_) (*EN*: _the clothes that are bought_ (_will be bought_, _have been bought_)) except in the past tense, e.g., _na héadaí a ceannaíodh_ (*EN*: _the clothes that were bought_). The independent autonomous verb is only lenited in the past tense for _chonacthas_, _chualathas_, _chuathas_ and _thángthas_.
 
 :11-7-2-title_ga: An Briathar -- An Clásal Coibhneasta Indíreach Deimhneach
 :11-7-2-title_en: The Verb -- The Indirect Affirmative Relative Clause
@@ -762,7 +762,7 @@
 :11-7-2-p_en: The dependent form of the verb is used after the relative particles _ar_ and _a_ in indirect affirmative relative clauses.
 
 :11-7-2-a-p_ga: Séimhítear an fhoirm spleách den bhriathar i ndiaidh na míre coibhneasta _ar_ (ach amháin i gcás an tsaorbhriathair san aimsir chaite, e.g., _ar goideadh_; _ar buaileadh_).
-:11-7-2-a-p_en: The dependent form of the verb is lenited after the relative particle _ar_ (except for the past participle in the past tense, e.g., _ar goideadh_; _ar buaileadh_).
+:11-7-2-a-p_en: The dependent form of the verb is lenited after the relative particle _ar_ (except for the autonomous verb in the past tense, e.g., _ar goideadh_; _ar buaileadh_).
 
 :11-7-2-a-sample-1_ga: Sin é an sliotar *ar bhuail* an bhean é.
 :11-7-2-a-sample-1_en: That is the hurley ball *that* the woman *hit*.
@@ -807,7 +807,7 @@
 :11-7-3-a-sample-4_en: That is the woman from *whom* the boy *will not buy* a car.
 
 :11-7-3-b-p_ga: Séimhítear an fhoirm spleách den bhriathar i ndiaidh _nár_ ach amháin i gcás an tsaorbhriathair, aimsir chaite, e.g., _nár ceannaíodh_; _nár blaiseadh_.
-:11-7-3-b-p_en: The dependent form of the verb is lenited after _nár_ except for the past participle in the past tense, e.g., _nár ceannaíodh_; _nár blaiseadh_.
+:11-7-3-b-p_en: The dependent form of the verb is lenited after _nár_ except for the autonomous verb in the past tense, e.g., _nár ceannaíodh_; _nár blaiseadh_.
 
 :11-7-3-b-sample-1_ga: Sin é an sliotar *nár bhuail* an bhean.
 :11-7-3-b-sample-1_en: That is the hurley ball *that* the woman *did not hit*.

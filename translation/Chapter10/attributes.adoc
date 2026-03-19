@@ -897,7 +897,7 @@
 :10-4-1-p_en: The independent verb is lenited --
 
 :10-4-1-a-p_ga: sa mhodh táscach, aimsir chaite agus aimsir ghnáthchaite, agus sa mhodh coinníollach, e.g., _mhol mé_ (_mhol tú_, etc.), _mholainn_ (_mholtá_, etc.), _mholfainn_, (_mholfá_, etc.), _mholtaí_, _mholfaí_:
-:10-4-1-a-p_en: in the indicative mood, past tense and past habitual tense, and in the conditional mood, e.g., _mhol mé_ (_mhol tú_, etc.), _mholainn_ (_mholtá_, etc.), _mholfainn_, (_mholfá_, etc.), _mholtaí_, _mholfaí_:
+:10-4-1-a-p_en: in the indicative mood, past tense and past habitual tense, and in the conditional mood, e.g., _mhol mé_ (_mhol tú_, etc.) (*EN*: _I praised_), _mholainn_ (_mholtá_, etc.) (*EN*: _I used to praise_), _mholfainn_, (_mholfá_, etc.) (*EN*: _I would praise_), _mholtaí_ (*EN*: _used to be praised_), _mholfaí_ (*EN*: _would be praised_):
 
 :10-4-1-a-sample-1_ga: *Shábháil* sí go leor airgid.
 :10-4-1-a-sample-1_en: She *saved* a lot of money.
@@ -924,7 +924,7 @@
 :10-4-1-b-sample-4_en: *Since* you put it in my head, I haven't thought about anything else.
 
 :10-4-1-c-p1_ga: san fhochlásal dearfach atá mar ainmní ag an gcopail i leaganacha mar _Is ann a chonaic mé é_; _Is leis a bheidh mé_:
-:10-4-1-c-p1_en: in the affirmative clause functioning as a noun with the copula in forms such as _Is ann a chonaic mé é_; _Is leis a bheidh mé_:
+:10-4-1-c-p1_en: in the affirmative clause functioning as a noun with the copula in forms such as _Is ann a chonaic mé é_ (*EN*: _It is there that I saw him_); _Is leis a bheidh mé_ (*EN*: _It is his that I will be_):
 
 :10-4-1-c-sample-1_ga: Is sa siopa sin *a cheannaíonn* sé a chuid éadaí.
 :10-4-1-c-sample-1_en: It is in that shop *that he buys* his clothes.
@@ -936,7 +936,7 @@
 :10-4-1-c-p2_en: *But*, note --
 
 :10-4-1-c-i-p_ga: Taobh amuigh de bhriathra neamhrialta áirithe -- _bhíothas_, _chonacthas_, _chualathas_, _chuathas_, _thángthas_ -- ní shéimhítear an saorbhriathar san aimsir chaite, e.g., _Buaileadh go dona iad_; _an geall a briseadh_:
-:10-4-1-c-i-p_en: Outside certain irregular verbs -- _bhíothas_, _chonacthas_, _chualathas_, _chuathas_, _thángthas_ -- the verbal noun in the past tense is not lenited, e.g., _Buaileadh go dona iad_; _an geall a briseadh_:
+:10-4-1-c-i-p_en: Outside certain irregular verbs -- _bhíothas_ (*EN*: aut. _to be_), _chonacthas_ (*EN*: _was seen_), _chualathas_ (*EN*: _was heard_), _chuathas_ (*EN*: _was gone_), _thángthas_ (*EN*: _was come_) -- the autonomous verb in the past tense is not lenited, e.g., _Buaileadh go dona iad_ (*EN*: _They were badly beaten_); _an geall a briseadh_ (*EN*: _the pledge to be broken_):
 
 :10-4-1-c-i-sample-1_ga: Ní raibh sé sa bhaile *ó fuarthas* ciontach é.
 :10-4-1-c-i-sample-1_en: He was not at home *since he was found* guilty.
@@ -993,10 +993,10 @@
 :10-4-2-p2_en: *But*, note:
 
 :10-4-2-a-p_ga: go n&#x2011;uraítear an briathar _faigh_ sa leagan spleách san aimsir chaite, san aimsir fháistineach agus sa mhodh coinníollach i ndiaidh na míre briathartha _ní_, e.g., _Ní bhfuair tú ansin iad_; _Ní bhfaighinn aon chabhair uathu_ (féach link:#sec_10_8_2_b[10.8.2(b)]).
-:10-4-2-a-p_en: that the verb _faigh_ is eclipsed in the dependent form in the past tense, future tense and conditional mood after the verbal particle _ní_, e.g., _Ní bhfuair tú ansin iad_; _Ní bhfaighinn aon chabhair uathu_ (see link:#sec_10_8_2_b[10.8.2(b)]).
+:10-4-2-a-p_en: that the verb _faigh_ is eclipsed in the dependent form in the past tense, future tense and conditional mood after the verbal particle _ní_, e.g., _Ní bhfuair tú ansin iad_ (*EN*: _You did not get them there_); _Ní bhfaighinn aon chabhair uathu_ (*EN*: _I will not get any help from them_) (see link:#sec_10_8_2_b[10.8.2(b)]).
 
 :10-4-2-b-p_ga: nach séimhítear an briathar _abair_ in aon chás, e.g., _Ní déarfadh aon duine gur theip ort_.
-:10-4-2-b-p_en: that the verb _abair_ is not lenited in any context, e.g., _Ní déarfadh aon duine gur theip ort_.
+:10-4-2-b-p_en: that the verb _abair_ is not lenited in any context, e.g., _Ní déarfadh aon duine gur theip ort_ (*EN*: _No one would say that you failed_).
 
 :10-5-title_ga: Séimhiú ar an bhForainmneach
 :10-5-title_en: Lenition on the Pronominal
@@ -1029,7 +1029,7 @@
 :h2-gp-6-8-title_en: Eclipsis
 
 :h2-gp-6-8-p_ga: Is iad seo na consain inuraithe: _b_, _c_, _d_, _f_, _g_, _p_ agus _t_. Cuirtear _n-_ roimh ghuta san áit a ndéanfaí urú a chur ar chonsan, ach amháin sa tuiseal tabharthach ar lorg an ailt nó an ailt i gcumasc le réamhfhocal, e.g., _ar an uisce_, _faoin ábhar_; agus i gcás _i_ (féach link:#sec_10_6_4[10.6.4]). Cuirtear fleiscín idir an t&#x2011;urú _n_ agus guta, e.g., _líon na n&#x2011;ospidéal_; ach amháin nuair is ceannlitir an guta, e.g., _meon na nAlbanach_.
-:h2-gp-6-8-p_en: The eclipsed consonants are: _b_, _c_, _d_, _f_, _g_, _p_ and _t_. _N-_ is prefixed to a vowel where an eclipse would be applied to a consonant, except in the dative case after the article or the article composed with a preposition, e.g., _ar an uisce_, _faoin ábhar_; and with _i_ (see link:#sec_10_6_4[10.6.4]). A hyphen is placed between the eclipse _n_ and a vowel, e.g., _líon na n&#x2011;ospidéal_; except when the vowel is a proper noun, e.g., _meon na nAlbanach_.
+:h2-gp-6-8-p_en: The eclipsed consonants are: _b_, _c_, _d_, _f_, _g_, _p_ and _t_. A vowel is prefixed with _n-_ where an eclipsis would be applied to a consonant, except in the dative case after the article or the article composed with a preposition, e.g., _ar an uisce_ (*EN*: _on the water_), _faoin ábhar_ (*EN*: _under the matter_); and with _i_ (see link:#sec_10_6_4[10.6.4]). A hyphen is placed between the eclipsing _n_ and a vowel, e.g., _líon na n&#x2011;ospidéal_ (*EN*: _the number of hospitals_); except when the vowel is a proper noun, e.g., _meon na nAlbanach_ (*EN*: _the mind of the Scots_).
 
 :10-6-title_ga: Urú ar an Ainmfhocal
 :10-6-title_en: Eclipsis on the Noun
