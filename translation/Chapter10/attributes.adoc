@@ -1419,7 +1419,7 @@
 :10-11-3-title_en: After the Prepositions _le_ and _go_
 
 :10-11-3-p_ga: Cuirtear h roimh ainmfhocal a thosaíonn ar ghuta i ndiaidh na réamhfhocal le agus go (sa bhrí _go dtí_), e.g., _ó mhaidin go hoíche_; _le hintinn mhaith_; _le hÁine_; _go hAlasca_.
-:10-11-3-p_en: _h_ is placed before a noun beginning with a vowel after the prepositions _le_ and _go_ (meaning _go dtí_), e.g., _ó mhaidin go hoíche_; _le hintinn mhaith_; _le hÁine_; _go hAlasca_.
+:10-11-3-p_en: _h_ is placed before a noun beginning with a vowel after the prepositions _le_ and _go_ (meaning _go dtí_ (*EN*: _to_)), e.g., _ó mhaidin go hoíche_ (*EN*: _from morning to night_); _le hintinn mhaith_ (*EN*: _with good intention_); _le hÁine_ (*EN*: _with Áine_); _go hAlasca_ (*EN*: _to Alaska_).
 
 :10-11-3-sample-1_ga: Is ar an mbád a chuaigh sí *go hÁrainn*.
 :10-11-3-sample-1_en: It was on the boat that she went *to Aran*.
@@ -1431,7 +1431,7 @@
 :10-11-4-title_en: After the Interrogative Pronominal
 
 :10-11-4-p_ga: Cuirtear _h_ roimh ainmfhocal a thosaíonn ar ghuta i ndiaidh an fhorainmnigh cheistigh _cá_, e.g., _cá hiontas?_; _cá háit?_
-:10-11-4-p_en: _h_ is placed before a noun beginning with a vowel after the interrogative pronominal _cá_, e.g., _cá hiontas_?; _cá háit_?
+:10-11-4-p_en: _h_ is placed before a noun beginning with a vowel after the interrogative pronominal _cá_, e.g., _cá hiontas?_ (*EN*: _what surprise?_); _cá háit?_ (*EN*: _what place?_).
 
 :10-11-4-sample-1_ga: *Cá haois* í anois?
 :10-11-4-sample-1_en: *What age* is she now?
@@ -1482,7 +1482,7 @@
 :10-11-8-p1_en: _h_ is placed before a vowel after _ní_ (the negative form, present tense of the copula (see link:./chapter7.html#sec_7_2_5[7.2.5])):
 
 :10-11-8-a-p_ga: ar na hainmfhocail _áibhéil_, _ionadh_, _iontas_ agus _ualach_:
-:10-11-8-a-p_en: on the nouns _áibhéil_, _ionadh_, _iontas_ and _ualach_:
+:10-11-8-a-p_en: on the nouns _áibhéil_ (*EN*: _exaggeration_), _ionadh_ (*EN*: _wonder_), _iontas_ (*EN*: _surprise_) and _ualach_ (*EN*: _burden_):
 
 :10-11-8-a-sample-1_ga: *Ní hiontas* ar bith é sin.
 :10-11-8-a-sample-1_en: That is *no surprise* at all.
@@ -1491,7 +1491,7 @@
 :10-11-8-a-sample-2_en: Learning is *not a burden* for a person.
 
 :10-11-8-b-p_ga: ar an ainmfhocal sna frásaí copaile réamhfhoclacha _acmhainn do_; _áil le_; _aitheanta do_; _aithnid do_; _éadáil le_; _ealaín do_; _éigean do_; agus _eol do_:
-:10-11-8-b-p_en: on the noun in the copular prepositional phrases _acmhainn do_; _áil le_; _aitheanta do_; _aithnid do_; _éadáil le_; _ealaín do_; _éigean do_; and _eol do_:
+:10-11-8-b-p_en: on the noun in the copular prepositional phrases _acmhainn do_ (*EN*: _ability to_); _áil le_ (*EN*: _desire to_); _aitheanta do_ (*EN*: _known to_); _aithnid do_ (*EN*: _recognized by_); _éadáil le_ (*EN*: _profit with_); _ealaín do_ (*EN*: _art of_); _éigean do_ (*EN*: _necessity for_); and _eol do_ (*EN*: _knowledge of_):
 
 :10-11-8-b-sample-1_ga: *Ní haithnid duit* mé.
 :10-11-8-b-sample-1_en: You *do not know* me.
@@ -1509,7 +1509,7 @@
 :10-11-8-c-sample-2_en: (Same as above. This one appears in FGB.)
 
 :10-11-8-p2_ga: Tabhair faoi deara nach gcuirtear _h_ roimh ainmfhocal i ndiaidh _ní_ taobh amuigh de na cásanna thuasluaite, e.g., _Ní amadán é_; _Ní Eoin is ainm dom_; _Ní eolas oideachas_.
-:10-11-8-p2_en: Note that _h_ is not placed before a noun after _ní_ outside of the above-mentioned contexts, e.g., _Ní amadán é_; _Ní Eoin is ainm dom_; _Ní eolas oideachas_.
+:10-11-8-p2_en: Note that _h_ is not placed before a noun after _ní_ outside of the above-mentioned contexts, e.g., _Ní amadán é_ (*EN*: _He is not a fool_); _Ní Eoin is ainm dom_ (*EN*: _My name is not Eoin_); _Ní eolas oideachas_ (*EN*: _Knowledge is not education_).
 
 :10-12-title_ga: _h_ roimh Ghuta -- An Aidiacht agus an Dobhriathar
 :10-12-title_en: _h_ before a Vowel -- The Adjective and the Adverb
@@ -1518,7 +1518,7 @@
 :10-12-1-title_en: After _chomh_, _go_, _le_
 
 :10-12-1-p_ga: Cuirtear _h_ roimh aidiacht nó dobhriathar a thosaíonn ar ghuta i ndiaidh _chomh_, _go_ agus _le_, e.g., _chomh hard le haon chapall_; _Tá sé go hálainn_.
-:10-12-1-p_en: _h_ is placed before an adjective or adverb beginning with a vowel after _chomh_, _go_ and _le_, e.g., _chomh hard le haon chapall_; _Tá sé go hálainn_.
+:10-12-1-p_en: _h_ is placed before an adjective or adverb beginning with a vowel after _chomh_, _go_ and _le_, e.g., _chomh hard le haon chapall_ (*EN*: _as tall as any horse_); _Tá sé go hálainn_ (*EN*: _It is beautiful_).
 
 :10-12-1-sample-1_ga: Bhí an crann crónghiúise *chomh hard* le foirgneamh tríocha urlár.
 :10-12-1-sample-1_en: The redwood tree was *as tall* as a thirty-story building.
@@ -1548,7 +1548,7 @@
 :10-12-2-a-sample-3_en: It is *not so* that she was not told.
 
 :10-12-2-b-p_ga: ar an aidiacht sna frásaí copaile réamhfhoclacha _eagal do_/_le_ agus _oircheas do_:
-:10-12-2-b-p_en: on the adjective in the copular prepositional phrases _eagal do_/_le_ and _oircheas do_:
+:10-12-2-b-p_en: on the adjective in the copular prepositional phrases _eagal do_/_le_ (*EN*: _afraid of_) and _oircheas do_(*EN*: _right for_):
 
 :10-12-2-b-sample-1_ga: *Ní heagal duit* an madra.
 :10-12-2-b-sample-1_en: You are *not afraid* of the dog.
@@ -1560,7 +1560,7 @@
 :10-12-3-title_en: After _a_ and _na_
 
 :10-12-3-p_ga: Cuirtear _h_ roimh ghuta i ndiaidh _a_ agus _na_ sna huimhreacha, e.g., _ceacht a haon_; _na hocht gcinn_.
-:10-12-3-p_en: _h_ is placed before a vowel after _a_ and _na_ in numbers, e.g., _ceacht a haon_; _na hocht gcinn_.
+:10-12-3-p_en: _h_ is placed before a vowel after _a_ and _na_ in numbers, e.g., _ceacht a haon_ (*EN*: _lesson one_); _na hocht gcinn_ (*EN*: _the eight_).
 
 :10-12-3-sample-1_ga: Fuair sí bus *a haon déag*.
 :10-12-3-sample-1_en: She got bus *number eleven*.
@@ -1575,7 +1575,7 @@
 :10-13-1-title_en: After _cé_ and _ní_
 
 :10-13-1-p_ga: Cuirtear _h_ roimh ghuta i ndiaidh _cé_ agus _ní_ ar na forainmnigh phearsanta _é_, _í_, _ea_ agus _iad_, e.g., _ní hé_; _ní hí_; _ní hea_; _ní hiad_; _cé hé?_; _cé hí?_; _cé hiad_?
-:10-13-1-p_en: _h_ is placed before a vowel after _cé_ and _ní_ on the personal pronominals _é_, _í_, _ea_ and _iad_, e.g., _ní hé_; _ní hí_; _ní hea_; _ní hiad_; _cé hé?_; _cé hí?_; _cé hiad_?
+:10-13-1-p_en: _h_ is placed before a vowel after _cé_ and _ní_ on the personal pronominals _é_, _í_, _ea_ and _iad_, e.g., _ní hé_ (*EN*: _he is not_); _ní hí_ (*EN*: _she is not_); _ní hea_ (*EN*: _it is not_); _ní hiad_ (*EN*: _they are not_); _cé hé?_ (*EN*: _who is he?_); _cé hí?_ (*EN*: _who is she?_); _cé hiad?_ (*EN*: _who are they?_).
 
 :10-13-1-sample-1_ga: *Ní hé* lá na báistí lá na bpáistí.
 :10-13-1-sample-1_en: *It is not* a rainy day for the children.
@@ -1587,7 +1587,7 @@
 :10-13-2-title_en: After _ní_
 
 :10-13-2-p_ga: Cuirtear _h_ roimh ghuta i ndiaidh _ní_ ar na forainmnigh thaispeántacha _éard_, _eo_, _in_ agus _iúd_, e.g., _ní héard_; _ní heo_; _ní hin_; _ní hiúd_.
-:10-13-2-p_en: _h_ is placed before a vowel after _ní_ on the demonstrative pronominals _éard_, _eo_, _in_ and _iúd_, e.g., _ní héard_; _ní heo_; _ní hin_; _ní hiúd_.
+:10-13-2-p_en: _h_ is placed before a vowel after _ní_ on the demonstrative pronominals _éard_, _eo_, _in_ and _iúd_, e.g., _ní héard_ (*EN*: _it is not that_); _ní heo_ (*EN*: _this is not_); _ní hin_ (*EN*: _that is not_); _ní hiúd_ (*EN*: _those are not_).
 
 :10-13-2-sample-1_ga: *Ní heo* é an rud atá le déanamh.
 :10-13-2-sample-1_en: *This* is not the thing to be done.
@@ -1599,7 +1599,7 @@
 :10-13-3-title_en: After _le_
 
 :10-13-3-p_ga: Cuirtear _h_ roimh ghuta i ndiaidh _le_ ar na forainmnigh phearsanta _é_, _í_ agus _iad_, e.g., _le hé_; _le hí_; _le hiad_.
-:10-13-3-p_en: _h_ is placed before a vowel after _le_ on the personal pronominals _é_, _í_ and _iad_, e.g., _le hé_; _le hí_; _le hiad_.
+:10-13-3-p_en: _h_ is placed before a vowel after _le_ on the personal pronominals _é_, _í_ and _iad_, e.g., _le hé_ (*EN*: _with him_); _le hí_ (*EN*: _with her_); _le hiad_ (*EN*: _with them_).
 
 :10-13-3-sample-1_ga: Chuaigh sé ann *le hí* a phósadh.
 :10-13-3-sample-1_en: He went there *with her* to marry.
@@ -1614,7 +1614,7 @@
 :10-14-1-title_en: After _ná_
 
 :10-14-1-p_ga: Cuirtear _h_ roimh ghuta i ndiaidh ná sa mhodh ordaitheach, e.g., _ná himigh_.
-:10-14-1-p_en: _h_ is placed before a vowel after _ná_ in the imperative mood, e.g., _ná himigh_.
+:10-14-1-p_en: _h_ is placed before a vowel after _ná_ in the imperative mood, e.g., _ná himigh_ (*EN*: _do not go_).
 
 :10-14-1-sample-1_ga: *Ná habair* dada leis faoin gcóisir.
 :10-14-1-sample-1_en: *Do not say* anything to him about the party.
@@ -1632,7 +1632,7 @@
 :10-15-title_en: _d'_ before a Vowel or before _fh_ -- The Verb
 
 :10-15-p_ga: Cuirtear _d'_ roimh ghuta nó _fh&#x2011;_ san áit a mbeadh séimhiú ar chonsan san aimsir chaite agus san aimsir ghnáthchaite, modh táscach, agus sa mhodh coinníollach, e.g., _d'fhágamar_; _d'fhanadh sibh_; _d'fhreagróinn_; _d'imeoinn_; _d'ithinn_; _d'ól sé_; _an té a d'imigh_; _d'aithneofaí í_; _má d'fhág sé_; _má d'fheiceadh sé_; _má d'imríomar_.
-:10-15-p_en: _d'_ is placed before a vowel or _fh&#x2011;_ in place of lenition on a consonant in the past tense and the habitual past tense, the indicative mood, and the conditional mood, e.g., _d'fhágamar_; _d'fhanadh sibh_; _d'fhreagróinn_; _d'imeoinn_; _d'ithinn_; _d'ól sé_; _an té a d'imigh_; _d'aithneofaí í_; _má d'fhág sé_; _má d'fheiceadh sé_; _má d'imríomar_.
+:10-15-p_en: _d'_ is placed before a vowel or _fh&#x2011;_ in place of lenition on a consonant in the past tense and the habitual past tense, the indicative mood, and the conditional mood, e.g., _d'fhágamar_ (*EN*: _we left_); _d'fhanadh sibh_ (*EN*: _you would stay_); _d'fhreagróinn_ (*EN*: _I would answer_); _d'imeoinn_ (*EN*: _I would go in_); _d'ithinn_ (*EN*: _I used to eat_); _d'ól sé_ (*EN*: _he drank_); _an té a d'imigh_ (*EN*: _the one who left_); _d'aithneofaí í_ (*EN*: _she would be recognized_); _má d'fhág sé_ (*EN*: _if he left_); _má d'fheiceadh sé_ (*EN*: _if he saw_); _má d'imríomar_ (*EN*: _if we played_).
 
 :10-15-sample-1_ga: An í sin an cheist a *d'fhreagair* sé?
 :10-15-sample-1_en: Is that the question that he *answered*?
