@@ -11,7 +11,7 @@
 :name1-line2_en: Royal Irish Academy, Dublin
 
 :name2-line1_ga: iarStiúrthóir, Gaeleagras na Seirbhíse Poiblí,
-:name2-line1_en: Former Director, Public Service Gaelic Services,
+:name2-line1_en: Former Director, Gaelic Organization of Public Services,
 
 :name2-line2_ga: An Roinn Airgeadais.
 :name2-line2_en: Department of Finance.
@@ -20,7 +20,7 @@
 :name3-line1_en: Director of Education and Research,
 
 :name3-line2_ga: Cumann Múinteoirí Éireann.
-:name3-line2_en: Irish National Teachers' Organisation.
+:name3-line2_en: Irish National Teachers' Organization.
 
 :name4-line1_ga: Ceann Scoile, Scoil Theanga agus Litríocht na Gaeilge,
 :name4-line1_en: Head of School, School of Irish Language and Literature,
@@ -44,13 +44,13 @@
 :name7-line1_en: Head of the Irish Unit, Directorate-General
 
 :name7-line2_ga: an Aistriúcháin, An Coimisiún Eorpach.
-:name7-line2_en: for Translation, European Commission.
+:name7-line2_en: of Translations, European Commission.
 
 :name8-line1_ga: Saoraistritheoir agus Múinteoir Gaeilge,
 :name8-line1_en: Freelance Translator and Irish Teacher,
 
 :name8-line2_ga: Meánscoil San Nioclás, Rinn Ua gCuanach,
-:name8-line2_en: St. Nicholas Secondary School, Ringaskiddy,
+:name8-line2_en: St. Nicholas Secondary School, Ringagonagh,
 
 :name8-line3_ga: Co. Phort Láirge.
 :name8-line3_en: Co. Waterford.
