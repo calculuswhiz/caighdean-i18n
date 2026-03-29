@@ -1,0 +1,404 @@
+include ../../tlMatter.pug
+
+mixin gaDb(key)
+  case key
+    when "teidealNaCaibidle"
+      | An tAlt
+    when "1-title"
+      | #[+renderKey("Caibidil", { getFromCommon: true })] 1 | #[+gaDb("teidealNaCaibidle")]
+    when "1-1-title"
+      | #[+renderKey("Ginearálta", { getFromCommon: true })]
+    when "1-1-1-p"
+      | Alt amháin atá sa Ghaeilge &mdash; an t&#x2011;alt cinnte. Deirtear gur #[i ainmfhocal cinnte] ainmfhocal atá faoi réir ag an alt. Tá dhá fhoirm den alt ann: #[i an] agus #[i na]. Is roimh an ainmfhocal a chuirtear an t&#x2011;alt, e.g., #[i an baile]; #[i an mhír]; #[i na caoirigh]; #[i teach na cúirte]; nó roimh cibé focal a chuirtear roimh an ainmfhocal lena cháiliú, e.g., #[i an uile dhuine]; #[i scéal mhadra na n&#x2011;ocht gcos]; #[i tús na chéad seachtaine]. Is féidir an t&#x2011;alt a chur in ionad na haidiachta sealbhaí, e.g., #[i Tá an croí ag cur air]; #[i Bhí an ghrian ag baint na súl asam].
+    when "1-1-2-p"
+      | Is litir bheag a bhíonn ar an alt i lár abairte, e.g., #[i Nach raibh tú ag an Oireachtas i mbliana?]; #[i Bhí aithne mhaith agam ar an Seabhac]; ach amháin i gcásanna áirithe amhail teidil foilseachán, e.g., #[i Cé a scríobh An tOileánach?]
+    when "1-1-3-p"
+      | Má tá teideal a bhfuil an t&#x2011;alt ann (féach #[+link("#sec_1_1_5", "1.1.5")] #[+link("#sec_1_1_5_a", "(a)")], #[+link("#sec_1_1_5_b", "(b)")] agus #[+link("#sec_1_1_5_c", "(c)")]) á scríobh ina aonar, mar shampla ar fhógra poiblí nó ar cheannpháipéar, cuirtear an t&#x2011;alt leis i gcónaí agus is ceannlitir a bhíonn air, e.g., #[i An Ghníomhaireacht um Thacaíocht Teaghlaigh]; #[i Na Coimisinéirí Ioncaim]; #[i An Ceoláras Náisiúnta].
+    when "1-1-4-p"
+      | Cuirtear fleiscín idir an réamhlitir #[i t] agus guta, ach amháin nuair is ceannlitir an guta, e.g., #[i an t&#x2011;ospidéal], #[i an tAlbanach]. Ní chuirtear fleiscín idir an réamhlitir #[i t] agus #[i s], e.g., #[i an tsaoirse]; #[i an tSionainn]; #[i tús an tsaoil]; ná idir an réamhlitir #[i h] agus guta, e.g., #[i na hainmneacha]; #[i lár na habairte]; #[i stair na hUachtaránachta].
+    when "1-1-5-p"
+      | Úsáidtear an t&#x2011;alt sna cásanna seo a leanas.
+    when "1-1-5-a-p"
+      | #[b Teidil oifige], e.g., #[i an tAire Airgeadais], #[i an Príomh-Oifigeach Feidhmiúcháin], #[i an Taoiseach], #[i Ard-Rúnaí na Náisiún Aontaithe].
+    when "1-1-5-a-sample1"
+      | Beidh #[b an tAire Airgeadais] ag freastal ar an gcruinniú.
+    when "1-1-5-a-sample2"
+      | Cá bhfuil #[b an Príomh-Oifigeach Feidhmiúcháin]?
+    when "1-1-5-a-sample3"
+      | Tá #[b an Taoiseach] ag labhairt leis na daltaí.
+    when "1-1-5-a-sample4"
+      | An é sin #[b Ard-Rúnaí na Náisiún Aontaithe]?
+    when "1-1-5-b-p"
+      | #[b Teidil ranna rialtais agus comhlachtaí stáit], e.g., #[i an Roinn Oideachais agus Scileanna], #[i an Oifig um Rialú Tobac], #[i Feidhmeannacht na Seirbhíse Sláinte], #[i an Phríomh-Oifig Staidrimh].
+    when "1-1-5-b-sample1"
+      | Is san fhoirgneamh sin thall atá #[b an Roinn Oideachais agus Scileanna].
+    when "1-1-5-b-sample2"
+      | Chuaigh Seán go dtí #[b an Oifig um Rialú Tobac].
+    when "1-1-5-b-sample3"
+      | Tá #[b Feidhmeannacht na Seirbhíse] Sláinte an-ghnóthach.
+    when "1-1-5-b-sample4"
+      | Seo #[b an Phríomh-Oifig Staidrimh].
+    when "1-1-5-c-p"
+      | #[b Teideal duine roimh ainm dílis], e.g., #[i an tAthair Peadar Ua Laoghaire], #[i an Captaen Ó Murchú], #[i an tUachtarán Mhic Róibín], #[i an Teachta de Barra], #[i an Múinteoir Ailbhe], #[i an Pápa Eoin Pól II], #[i an Rí Anraí VIII].
+    when "1-1-5-c-sample1"
+      | Ba é #[b an tAthair Peadar Ua Laoghaire] a scríobh an dráma #[i An Sprid].
+    when "1-1-5-c-sample2"
+      | Labhair #[b an Captaen Ó Murchú] leis na himreoirí.
+    when "1-1-5-c-sample3"
+      | Bhí #[b an tUachtarán Mhic Róibín] le feiceáil sa ghrianghraf.
+    when "1-1-5-c-sample4"
+      | Beidh #[b an Dochtúir de Barra] ar saoire ar feadh seachtaine.
+    when "1-1-5-c-sample5"
+      | Tá #[b an Múinteoir Ailbhe] i bhfeighil ar rang a sé i mbliana.
+    when "1-1-5-c-sample6"
+      | Is í #[b an Bhanríon Elsa a Dó] atá sa scannán.
+    when "1-1-5-d-p1"
+      | #[b Féilte], e.g., #[i an Nollaig], #[i an Cháisc], #[i an Carghas].
+    when "1-1-5-d-sample1"
+      | Tá #[b an Nollaig] ag teannadh linn.
+    when "1-1-5-d-sample2"
+      | Is i mí an Mhárta a bheid #[b an Cháisc] i mbliana.
+    when "1-1-5-d-sample3"
+      | Rinne mé #[b an Carghas] ar an ól.
+    when "1-1-5-d-p2"
+      | Tabhair faoi deara nach n&#x2011;úsáidtear an t&#x2011;alt i leaganacha dobhriathartha áirithe, e.g., #[i faoi Cháisc], #[i um Nollaig], #[i faoi Bhealtaine].
+    when "1-1-5-e-p1"
+      | #[b Laethanta na seachtaine], e.g., #[i an Luan], #[i an Mháirt], #[i an Chéadaoin].
+    when "1-1-5-e-sample1"
+      | Is é #[b an Luan] an lá is ansa liom.
+    when "1-1-5-e-sample2"
+      | Téim ag snámh ar #[b an Máirt].
+    when "1-1-5-e-sample3"
+      | Inniu #[b an Chéadaoin].
+    when "1-1-5-e-p2"
+      | Tabhair faoi deara go n&#x2011;úsáidtear an dobhriathar ama #[i Dé] in ionad an ailt nuair atáthar ag tagairt do lá áirithe, e.g., #[i Bhí mé ag caint leis Dé Céadaoin seo caite].
+    when "1-1-5-e-p3"
+      | Má tá réamhfhocal á úsáid roimh lá áirithe, déantar an t&#x2011;alt a chumasc leis an réamhfhocal, e.g., #[i Ní mór na hiarratais a bheith faighte faoin Aoine, an 16 Bealtaine].
+    when "1-1-5-f-p1"
+      | Míonna na bliana
+    when "1-1-5-f-sample1"
+      | Is minic a bhíonn mí #[b Eanáir] níos fuaire ná mí #[b na Nollag].
+    when "1-1-5-f-sample2"
+      | Tá an Cháisc i mí #[b an Mhárta] seachas #[b mí Aibreáin] i mbliana.
+    when "1-1-5-f-p2"
+      | Úsáidtear an t&#x2011;alt leis na míonna #[i Márta], #[i Bealtaine], #[i Meitheamh], #[i Samhain] agus #[i Nollaig]. Ní úsáidtear an t&#x2011;alt leis na míonna eile, ach amháin sa leagan calctha #[i san Aibreán].
+    when "1-1-5-g-p1"
+      | Dátaí
+    when "1-1-5-g-sample1"
+      | Ba chóir é a dhéanamh tráth nach déanaí ná #[b an 30 Meán Fómhair] gach bliain.
+    when "1-1-5-g-sample2"
+      | Beidh an chóisir ar síúl ar #[b an 12 Aibreán].
+    when "1-1-5-g-sample3"
+      | Baineann na ráitis airgeadais leis an mbliain dar chríoch #[b an 31 Nollaig 2014].
+    when "1-1-5-g-sample4"
+      | Pósfaidh siad #[b an 26 Feabhra].
+    when "1-1-5-g-sample5"
+      | Ní ghlacfar le haon iarratas a gheofar tar éis #[b an 7 Márta 2016].
+    when "1-1-5-g-p2"
+      | Is cóir an t&#x2011;alt a úsáid nuair a dhéantar tagairt do dhátaí in abairt.
+    when "1-1-5-g-p3"
+      | Nuair atá an dáta leis féin &mdash; ar bharr litreach, nó mar dháta le sonrasc nó le hAcht, etc. &mdash; fágtar an t&#x2011;alt ar lár, e.g., #[i 26 Feabhra 2014].
+    when "1-1-5-h-p1"
+      | Ainmneacha bailte, sléibhte agus aibhneacha
+    when "1-1-5-h-i"
+      | Roinnt cathracha agus bailte, e.g., #[i an Aithin], #[i na Cealla Beaga], #[i na Gleannta], #[i an tSnaidhm], #[i an Spidéal].
+    when "1-1-5-h-ii"
+      | Cnoic agus sléibhte áirithe, e.g., #[i na hAindéis], #[i na hAlpa], #[i an Bhograch], #[i an Chearc], #[i na Comaraigh], #[i an Earagail], #[i na Himiléithe], #[i an Mhucais].
+    when "1-1-5-h-iii"
+      | Formhór na n&#x2011;aibhneacha, e.g., #[i an Bhóinn], #[i an Danóib], #[i an Life], #[i an Phó], #[i an Réin], #[i an Róin], #[i an tSéin], #[i an tSionainn], #[i an Tibir].
+    when "1-1-5-h-sample1"
+      | Rinne mé #[b an Mhucais] a shiúl inné.
+    when "1-1-5-h-sample2"
+      | Ar bhuaigh #[b an Spidéal] an cluiche?
+    when "1-1-5-h-sample3"
+      | Bhí #[b an tSionainn] le feiceáil ón eitleán.
+    when "1-1-5-i-p1"
+      | Ainmneacha tíortha agus réigiún
+    when "1-1-5-i-A-p1"
+      | Gabhann an t&#x2011;alt le hainmneacha tíortha agus réigiún más rud é go bhfuil an t&#x2011;ainmfhocal baininscneach agus:
+    when "1-1-5-i-A-i"
+      | má chríochnaíonn sé ar chonsan caol, e.g., #[i an Airgintín], #[i an Albáin], #[i an Bhaváir], #[i an Chatalóin], #[i an Eastóin], #[i an Eoraip], #[i an Fhrainc], #[i an Ghearmáin], #[i an Mhacadóin], #[i an Namaib], #[i an Phacastáin], #[i an tSeineagáil], #[i an Spáinn], #[i an tSúdáin];
+    when "1-1-5-i-A-ii"
+      | má chríochnaíonn sé ar #[i -ia], e.g., #[i an India], #[i an Laitvia], #[i an tSiria];
+    when "1-1-5-i-A-iii"
+      | má chríochnaíonn sé ar #[i -e], #[i -é], e.g., #[i an Chóiré], #[i an Chrimé], #[i an Ghuine], #[i an tSile].
+    when "1-1-5-i-A-p2"
+      | Tá roinnt ainmneacha tíortha agus réigiún ann a chríochnaíonn ar chonsan caol ach nach ngabhann an t&#x2011;alt leo, e.g., #[i Bairéin], #[i Beinin], #[i Cuáit], #[i Éimin], #[i Guadalúip], #[i Lichtinstéin], #[i Mósaimbíc], nó atá san uimhir uatha agus a chríochnaíonn ar #[i -í] agus nach ngabhann an t&#x2011;alt leo, e.g., #[i Geansaí], #[i Geirsí], #[i Háítí], #[i Haváí], #[i Mailí], #[i Taihítí]. Ní úsáidtear an t&#x2011;alt ach amháin sa ghinideach i gcás #[i Albain], #[i Éire] (féach #[+link("./chapter3.html#sec_3_1_4", "3.1.4")]).
+    when "1-1-5-i-A-sample1"
+      | Is tír álainn í #[b an Fhrainc].
+    when "1-1-5-i-A-sample2"
+      | Luaitear #[b Mósaimbíc] sa leabhar.
+    when "1-1-5-i-B-p"
+      | Ní ghabhann an t&#x2011;alt le hainmneacha tíortha agus réigiún más rud é go bhfuil an t&#x2011;ainmfhocal firinscneach agus:
+    when "1-1-5-i-B-i"
+      | má chríochnaíonn sé ar chonsan leathan, e.g., #[i Barbadós], #[i Eacuadór], #[i Guam], #[i Hondúras], #[i Natal], #[i Óman], #[i Sead], #[i Siam], #[i Suranam];
+    when "1-1-5-i-B-ii"
+      | má chríochnaíonn sé ar #[i -eo], #[i -ó], e.g., #[i Boirneo], #[i Maracó], #[i Meicsiceo], #[i Monacó], #[i Samó] (eisceacht: #[i an Congó]);
+    when "1-1-5-i-B-iii"
+      | má chríochnaíonn sé ar #[i -a], #[i -á], #[i -iú], #[i -ua], e.g., #[i Alasca], #[i Ceanada], #[i Cúba], #[i Gána], #[i Meiriceá], #[i Nicearagua], #[i Panama], #[i Papua], #[i Paragua], #[i Peiriú], #[i Sasana];
+    when "1-1-5-i-B-iv"
+      | má chríochnaíonn sé ar #[i -ael], e.g., #[i Iosrael].
+    when "1-1-5-i-C-p"
+      | Gabhann an t&#x2011;alt le hainmneacha tíortha agus réigiún is ainmfhocail san uimhir iolra, e.g., #[i na hAsóir], #[i na Bahámaí], #[i na Garbhchríocha], #[i na Scigirí].
+    when "1-1-5-i-C-sample1"
+      | I Muir Chairib atá #[b na Bahámaí].
+    when "1-1-5-i-C-sample2"
+      | Rinneadh an scannán a thaifeadadh #[b sna Garbhchríocha].
+    when "1-1-5-j-p"
+      | #[b Paidreacha agus roisc chatha áirithe], e.g., #[i an Choróin Mhuire], #[i an Ghlóir], #[i an Dord Fiann].
+    when "1-1-5-j-sample1"
+      | Dúradh #[b an Ghlóir] i lár an Aifrinn.
+    when "1-1-5-j-sample2"
+      | Ní minic a chloistear #[b an Dord Fiann].
+    when "1-1-5-j-sample3"
+      | Dúirt sé #[b an Choróin Mhuire] os ard.
+    when "1-1-5-k-p1"
+      | Úsáid dháileach
+    when "1-1-5-k-sample1"
+      | Dhíol sé na leabhair ar euro #[b an ceann].
+    when "1-1-5-k-sample2"
+      | Eagraítear comóradh uair #[b sa bhliain].
+    when "1-1-5-k-sample3"
+      | Bhí mála #[b an duine] ag na páistí scoile.
+    when "1-1-5-k-p2"
+      | Úsáidtear an t&#x2011;alt chun ráta a chur in iúl nuair a bhíonn an bhrí #[i gach ceann ar leithligh] nó #[i in aghaidh] i gceist.
+    when "1-1-5-l-p1"
+      | Brí theibí nó brí choincheapúil a bheith leis an ainmfhocal
+    when "1-1-5-l-sample1"
+      | Nuair a bhíonn #[b an t&#x2011;ól] istigh, bíonn #[b an chiall] amuigh.
+    when "1-1-5-l-sample2"
+      | Ní maith í #[b an fhearg].
+    when "1-1-5-l-sample3"
+      | Tugadh isteach #[b an colscaradh] in Éirinn roinnt blianta ó shin.
+    when "1-1-5-l-sample4"
+      | Is rud nua í #[b an taiscéalaíocht] sa spás.
+    when "1-1-5-l-sample5"
+      | Ní féidir taisteal #[b san am].
+    when "1-1-5-l-sample6"
+      | Inseoidh #[b an aimsir].
+    when "1-1-5-l-sample7"
+      | Is maith #[b an t&#x2011;anlann] #[b an t&#x2011;ocras].
+    when "1-1-5-l-p2"
+      | Tabhair faoi deara nach nós an t&#x2011;alt a úsáid i nathanna áirithe, e.g., #[i Tá ciall cheannaithe aige]; ná nuair nach bhfuil brí ghinearálta leis an ainmfhocal, e.g., #[i Bhí ocras orm]; #[i Tá siad i ngrá].
+    when "1-1-5-m-p"
+      | #[b Tinnis áirithe], e.g., #[i an ailse], #[i an déideadh], #[i an titimeas], #[i an bhruitíneach].
+    when "1-1-5-m-sample1"
+      | Bhí #[b an bhruitíneach] fairsing in Éirinn go dtí na 1960idí.
+    when "1-1-5-m-sample2"
+      | An bhfuil leigheas #[b ar an titimeas]?
+    when "1-1-5-n-p1"
+      | #[b Teangacha], e.g., #[i an Ghaeilge], #[i an Ghearmáinis], #[i an Béarla].
+    when "1-1-5-n-sample1"
+      | Is í #[b an Ghaeilge] teanga ár sinsear.
+    when "1-1-5-n-sample2"
+      | Labhraítear #[b an Ghearmáinis] san Ostair.
+    when "1-1-5-n-sample3"
+      | Bhí #[b an Béarla] go maith aici.
+    when "1-1-5-n-p2"
+      | Tabhair faoi deara go ligtear an t&#x2011;alt ar lár mura bhfuil an bhrí forleathan, e.g., #[i Tá Fraincis aici]; #[i Cuir i nGaeilge é]; #[i rang Iodáilise].
+    when "h2-gp-2-5-title"
+      | Na Tuisil
+    when "h2-gp-2-5-p"
+      | Cúig thuiseal atá sa Ghaeilge: an tuiseal ainmneach, an tuiseal cuspóireach, an tuiseal tabharthach, an tuiseal ginideach agus an tuiseal gairmeach (féach #[+link("./chapter2.html#sec_2_1_2", "2.1.2")]). Sna táblaí a leanas, taispeántar na hathruithe a dhéantar ar an alt agus ar thúslitir an ainmfhocail bunaithe ar cheithre ní &mdash; inscne, tuiseal, uimhir agus túslitir an ainmfhocail. Féach freisin #[+link("chapter10.html", "Caibidil 10")] le haghaidh eolas breise ar na hathruithe tosaigh.
+    when "1-2-title"
+      | An Tuiseal Ainmneach agus an Tuiseal Cuspóireach Uatha
+    when "1-2-p1"
+      | Is ionann foirm an ainmfhocail sa tuiseal ainmneach agus sa tuiseal cuspóireach uatha. Féach an tábla thíos ina léirítear an tionchar a bhíonn ag an alt ar an ainmfhocal sna tuisil sin.
+
+    //- Article Table
+    when "ArticleTable-col1-th"
+      | Túslitir an Ainmfhocail
+    when "ArticleTable-col2-th"
+      | Foirm an Ailt
+    when "ArticleTable-col3-th"
+      | An Tionchar ar an Túslitir
+    when "ArticleTable-col4-th"
+      | Samplaí
+    when "LenitionNote"
+      | *Is iad seo na consain inséimhithe: #[i b], #[i c], #[i d], #[i f], #[i g], #[i m], #[i p], #[i s] agus #[i t]
+    when "EclipsisNote"
+      | *Is iad seo na consain inuraithe: #[i b], #[i c], #[i d], #[i f], #[i g], #[i p] agus #[i t].
+    when "gachConsan"
+      | gach consan
+    when "gachGuta"
+      | gach guta
+    when "ganAonAthru"
+      | gan aon athrú
+    when "séimhiú"
+      | séimhiú
+    when "tRoimhe"
+      | #[i t] roimhe
+    when "dNoT"
+      | #[i d] nó #[i t]
+    when "consanInséimhitheSeachasDTS"
+      | consan inséimhithe*, <br /> (seachas #[i d], #[i t] nó #[i s])
+    when "sSeachasCFMPTV"
+      | #[i s] <br /> (seachas #[i sc-], #[i sf-], #[i sm-], #[i sp-], #[i st-], #[i sv-])
+
+    //- Consonant/vowel covered by CommonAttributes
+
+    //- Table1A
+    when "Table1A-caption"
+      | An Tuiseal Ainmneach agus an Tuiseal Cuspóireach Uatha
+    when "1-3-title"
+      | An Tuiseal Tabharthach Uatha
+    when "1-3-1-p"
+      | Tugtar an tuiseal tabharthach ar an tuiseal a thagann i ndiaidh na réamhfhocal #[i a], #[i ag], #[i ar], #[i as], #[i chuig], #[i dar], #[i de], #[i do], #[i faoi], #[i fara], #[i go], #[i i], #[i ionsar], #[i le], #[i ó], #[i roimh], #[i trí] agus #[i um]. Is de réir mar atá leagtha amach sna táblaí ina dhiaidh seo a phléitear le hainmfhocail ar lorg an ailt sa tuiseal tabharthach uatha.
+    when "1-3-2-p"
+      | Is é an tuiseal ainmneach a leanann na focail #[i ach], #[i amhail], #[i gan], #[i go dtí], #[i idir], #[i mar], #[i murach], #[i ná] agus #[i seachas] agus an t&#x2011;alt, e.g., #[i gan an t&#x2011;uisce]; #[i idir an t&#x2011;am sin agus an t&#x2011;am seo]; #[i mar an t&#x2011;aistriúchán]. Úsáidtear an tuiseal tabharthach sa leagan calctha #[i mar an gcéanna].
+    when "1-3-3-p"
+      | Cuirtear gnáthrialacha an tabharthaigh i bhfeidhm ar mhúnlaí den saghas seo: #[i réamhfhocal] + #[i ainmfhocal] + #[i a] + #[i ainm briathartha], e.g., #[i leis an ngnó a dhéanamh]; #[i as an árasán a dhíol].
+    when "1-3-4-p"
+      | I gcás na réamhfhocal #[i de], #[i do], #[i faoi], #[i i] agus #[i ó], déantar cumasc idir an réamhfhocal agus an t&#x2011;alt san uimhir uatha, mar a léirítear thíos.
+    when "1-3-5-p"
+      | Bíonn foirmeacha ar leith ar na réamhfhocail sa tábla thíos nuair a thagann siad roimh an alt san uimhir uatha.
+    when "CoreSystem"
+      | An Córas Lárnach
+    when "1-4-title"
+      | An Tuiseal Tabharthach Uatha &mdash; An Córas Lárnach
+    when "1-4-1-p"
+      | Maidir le hainmfhocail fhirinscneacha agus bhaininscneacha dar tús consan (seachas #[i d], #[i t] agus #[i s]), cuirtear séimhiú orthu i ndiaidh #[i den], #[i don], #[i sa/san] agus urú i ngach cás eile, mar a léirítear sa tábla thíos.
+    when "1-4-1-topic"
+      | Ainmfhocail dar tús Consan seachas #[i d], #[i t] agus #[i s]
+    when "Table1B-caption"
+      | #[+gaDb("1-4-title")] &mdash; #[+gaDb("1-4-1-topic")]
+    when "Table1B-header"
+      | #[+gaDb('CoreSystem')] &mdash; #[+gaDb("1-4-1-topic")]
+    when "Table1B-note"
+      | #[i ACH i gcás] f #[i roimh ghuta:]
+    when "1-4-2-p"
+      | Ní dhéantar aon athrú ar ainmfhocail fhirinscneacha dar tús #[i s] sa tuiseal tabharthach. Cuirtear #[i t] roimh #[i s] ar ainmfhocail bhaininscneacha (seachas i gcás ainmfhocail dar tús #[i sc-], #[i sf-], #[i sm-], #[i sp-], #[i st-] nó #[i sv-] a fhágtar lom) mar a léirítear sa tábla thíos.
+    when "1-4-2-topic"
+      | Ainmfhocail dar tús #[i s]
+    when "Table1C-header"
+      | #[+gaDb('CoreSystem')] &mdash; #[+gaDb("1-4-2-topic")]
+    when "Table1C-caption"
+      | #[+gaDb("1-4-title")] &mdash; #[+gaDb("1-4-2-topic")]
+    when "Table1C-col2-subheader"
+      | Cuirtear #[i t] roimh an #[i s], seachas i gcás #[i sc-], #[i sf-], #[i sm-], #[i sp-], #[i st-] nó #[i sv-]
+    when "1-4-3-p"
+      | Ní dhéantar aon athrú ar ainmfhocail fhirinscneacha ná ar ainmfhocail bhaininscneacha dar tús guta.
+    when "1-4-3-topic"
+      | Ainmfhocail dar tús Guta
+    when "Table1D-header"
+      | #[+gaDb('CoreSystem')] &mdash; #[+gaDb("1-4-3-topic")]
+    when "Table1D-caption"
+      | #[+gaDb("1-4-title")] &mdash; #[+gaDb("1-4-3-topic")]
+    when "1-4-4-p"
+      | Ní dhéantar aon athrú ar ainmfhocail fhirinscneacha ná ar ainmfhocail bhaininscneacha dar tús #[i d] agus #[i t].
+    when "1-4-4-topic"
+      | Ainmfhocail dar tús #[i d] agus #[i t]
+    when "Table1E-header"
+      | #[+gaDb('CoreSystem')] &mdash; #[+gaDb("1-4-4-topic")]
+    when "Table1E-caption"
+      | #[+gaDb("1-4-title")] &mdash; #[+gaDb("1-4-4-topic")]
+    when "1-4-4-NB-p1"
+      | I dteannta an Chórais Lárnaigh a thugtar sa chaibidil seo, ceadaítear na roghanna seo a leanas:
+    when "1-4-4-NB-a"
+      | urú ar an ainmfhocal (in ionad séimhiú) i ndiaidh #[i den] agus #[i don], e.g., #[i den gcrann], #[i don bhfear]; nó
+    when "1-4-4-NB-b"
+      | urú ar an ainmfhocal (in ionad séimhiú) i ndiaidh #[i sa], e.g., #[i sa bpáirc], #[i sa gcarr].
+    when "1-5-title"
+      | An Tuiseal Ginideach Uatha
+    when "1-5-1-p1"
+      | Is gnách foirm an ghinidigh a úsáid i gcás go bhfuil an t&#x2011;ainmfhocal faoi réir ag ceann de na nithe seo a leanas &mdash;
+    when "1-5-1-a-p"
+      | ainmfhocal eile:
+    when "1-5-1-a-sample1"
+      | Cár fhág tú #[b eochair an chairr]?
+    when "1-5-1-a-sample2"
+      | Tá muintir na háite sásta le #[b foireann na leabharlainne].
+    when "1-5-1-b-p"
+      | ainm briathartha:
+    when "1-5-1-b-sample1"
+      | Is maith leis na gasúir a bheith #[b ag réiteach an dinnéir].
+    when "1-5-1-b-sample2"
+      | Is í Síle atá #[b ag déanamh na hArdteiste] i mbliana.
+    when "1-5-1-c-p"
+      | réamhfhocal comhshuite, e.g., #[i faoi chomhair], #[i i gcás], #[i le haghaidh]:
+    when "1-5-1-c-sample1"
+      | Bíonn an cat ina shuí ansin #[b os comhair na tine] gach uile oíche.
+    when "1-5-1-c-sample2"
+      | Ba iad na hailtirí a bhí #[b i mbun an scrúdaithe].
+    when "1-5-1-d-p"
+      | ceann de na focail #[i cois], #[i dála], #[i fearacht], #[i timpeall], #[i trasna]:
+    when "1-5-1-d-sample1"
+      | Chuala mé go ndeachaigh sibh ar thuras #[b timpeall an domhain].
+    when "1-5-1-d-sample2"
+      | Shiúlamar #[b cois na habhann].
+    when "1-5-1-e-p"
+      | an réamhfhocal #[i chun]:
+    when "1-5-1-e-sample1"
+      | Tá an grúpa uile ag dul #[b chun na Spáinne] i mí Iúil.
+    when "1-5-1-e-sample2"
+      | Rinne siad achomharc #[b chun na cúirte].
+    when "1-5-1-p2"
+      | Féach #[+link("./chapter3.html#sec_3_3", "3.3")] le haghaidh cásanna ina n&#x2011;úsáidtear foirm an ainmnigh in ionad an ghinidigh.
+    when "1-5-2-p"
+      | Sa tábla thíos, léirítear an tionchar a bhíonn ag an alt ar an ainmfhocal sa tuiseal ginideach uatha.
+    when "Table1F-caption"
+      | An Tuiseal Ginideach Uatha
+    when "hRoimhe"
+      | #[i h] roimhe
+    when "1-6-title"
+      | An tIolra
+    when "1-6-p"
+      | Is é #[i na] foirm iolra an ailt. Is ionann foirm an ailt don dá inscne agus sna tuisil go léir san uimhir iolra.
+    when "1-6-1-title"
+      | An Tuiseal Ainmneach Iolra agus an Tuiseal Cuspóireach Iolra
+    when "1-6-1-p1"
+      | Sa tábla thíos, léirítear an tionchar a bhíonn ag an alt ar an ainmfhocal sa tuiseal ainmneach iolra agus sa tuiseal cuspóireach iolra.
+
+    //- Table 1G is the same as the Feminine sub-table of 1F.
+    when "Table1G-caption"
+      | An Tuiseal Ainmneach Iolra agus an Tuiseal Cuspóireach Iolra
+    when "1-6-2-title"
+      | An Tuiseal Tabharthach Iolra
+    when "1-6-2-p1"
+      | Leanann an tuiseal tabharthach na réamhfhocail #[i a], #[i ag], #[i ar], #[i as], #[i chuig], #[i dar], #[i de], #[i do], #[i faoi], #[i fara], #[i go], #[i i], #[i ionsar], #[i le], #[i ó], #[i roimh], #[i trí] agus #[i um]. Déantar cumasc idir an réamhfhocal #[i i] agus an t&#x2011;alt san uimhir iolra: #[i i] + #[i na] = #[i sna]. Tá foirm ar leith ar #[i fara] agus #[i le] roimh an alt san uimhir iolra: #[i fara], #[i fairis]; #[i le], #[i leis]. Léirítear sa tábla thíos an tionchar a bhíonn ag an alt ar an ainmfhocal sa tuiseal tabharthach iolra.
+    when "Table1H-caption"
+      | An Tuiseal Tabharthach Iolra
+    when "1-6-3-title"
+      | An Tuiseal Ginideach Iolra
+    when "1-6-3-p"
+      | Sa tábla thíos, léirítear an tionchar a bhíonn ag an alt ar an ainmfhocal sa tuiseal ginideach iolra.
+    when "Table1I-caption"
+      | An Tuiseal Ginideach Iolra
+    when "ConsanInuraithe"
+      | Consan inuraithe*
+    when "1-7-title"
+      | An Tuiseal Tabharthach Uatha &mdash; Córas an tSéimhithe
+    when "1-7-1-p"
+      | Sa tuiseal tabharthach uatha amháin, tá rogha eile ann ar a dtugtar Córas an tSéimhithe. Moltar cloí le córas amháin &mdash; an Córas Lárnach nó Córas an tSéimhithe &mdash; agus gan na córais a mheascadh.
+    when "1-7-2-p"
+      | Is ionann na rialacha a bhaineann leis an tuiseal tabharthach iolra sa Chóras Lárnach agus i gCóras an tSéimhithe (féach #[+link("#sec_1_6_2", "1.6.2")]).
+    when "1-7-3-p"
+      | I gCóras an tSéimhithe, cuirtear séimhiú ar ainmfhocail dar tús consan (seachas #[i d], #[i t] agus #[i s]) agus ar na haidiachtaí a ghabhann leo. Féach an tábla thíos.
+    when "Table1J-header"
+      | Córas an tSéimhithe &mdash;<br />Ainmfhocail dar tús Consan seachas #[i d], #[i t] agus #[i s]
+    when "Table1J-caption"
+      | #[+gaDb("AnTuisealTabharthachUatha")] &mdash; #[+gaDb("Table1J-header")]
+    when "AnTuisealTabharthachUatha"
+      | An Tuiseal Tabharthach Uatha
+    when "1-7-4-p"
+      | Maidir le hainmfhocail fhirinscneacha agus bhaininscneacha dar tús #[i s], cuirtear #[i t] roimh an #[i s] (seachas i gcás ainmfhocail dar tús #[i sc-], #[i sf-], #[i sm-], #[i sp-], #[i st-] nó #[i sv-] a fhágtar lom) mar a léirítear sa tábla thíos.
+    when "Table1K-subheading"
+      | Cuirtear #[i t] roimh an #[i s], seachas i gcás #[i sc-], #[i sf-], #[i sm-], #[i sp-], #[i st-] nó #[i sv-]
+    when "Table1K-header"
+      | Córas an tSéimhithe &mdash; Ainmfhocail dar tús #[i s]
+    when "Table1K-caption"
+      | #[+gaDb("AnTuisealTabharthachUatha")] &mdash; #[+gaDb("Table1K-header")]
+    when "1-7-5-p"
+      | Ní dhéantar aon athrú ar ainmfhocail fhirinscneacha ná ar ainmfhocail bhaininscneacha dar tús guta. Féach an tábla thíos.
+    when "Table1L-header"
+      | Córas an tSéimhithe &mdash; Ainmfhocail dar tús Guta
+    when "Table1L-caption"
+      | #[+gaDb("AnTuisealTabharthachUatha")] &mdash; #[+gaDb("Table1L-header")]
+    when "1-7-6-p"
+      | Ní dhéantar aon athrú ar ainmfhocail fhirinscneacha ná ar ainmfhocail bhaininscneacha dar tús #[i d] agus #[i t]. Féach an tábla thíos.
+    when "Table1M-header"
+      | Córas an tSéimhithe &mdash; Ainmfhocail dar tús #[i d] agus #[i t]
+    when "Table1M-caption"
+      | #[+gaDb("AnTuisealTabharthachUatha")] &mdash; #[+gaDb("Table1M-header")]
+    default
+      - throw new Error(`No content for ${key} (ga.pug)`)

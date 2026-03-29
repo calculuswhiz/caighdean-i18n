@@ -1,0 +1,748 @@
+//- 
+  TODO Ensure that the chapter prefix is in the caption keys where applicable
+
+mixin Table1A
+  +markedTable(1, 'A', 'Table1A-caption').top-level-table
+    tbody
+      //- Top half
+      tr
+        td
+          table(class="chapter-1 w-full")
+            colgroup
+              col(class="w-1/8")
+              col(class="w-2/8")
+              col(class="w-1/8")
+              col(class="w-2/8")
+            thead
+              tr
+                th(colspan=5 class="text-2xl")
+                  +renderKey('Firinscneach', { getFromCommon: true })
+              tr
+                th(colspan=2) #[+renderKey('ArticleTable-col1-th')]
+                th: +renderKey('ArticleTable-col2-th')
+                th: +renderKey('ArticleTable-col3-th')
+                th: +renderKey('ArticleTable-col4-th')
+            tbody
+              tr
+                th(class="bg-stone-300")
+                  +renderKey('Consan', { getFromCommon: true })
+                td: +renderKey('gachConsan')
+                td an
+                td: +renderKey('ganAonAthru')
+                td
+                  ul
+                    li an cnoc
+                    li an diabhal
+                    li an fear
+                    li an saol
+                    li an Seapánach
+                    li an teach
+              tr
+                th(class="bg-stone-300")
+                  +renderKey('Guta', { getFromCommon: true })
+                td: +renderKey('gachGuta')
+                td an
+                td: +renderKey('tRoimhe')
+                td
+                  ul
+                    li an t&#x2011;íochtar
+                    li an t&#x2011;uisce
+                    li an t&#x2011;alt
+                    li an tAcht
+                    li an tUltach
+      //- Bottom half
+      tr
+        td
+          table(class="chapter-1 w-full")
+            colgroup
+              col(class="w-1/8")
+              col(class="w-2/8")
+              col(class="w-1/8")
+              col(class="w-2/8")
+            thead
+              tr
+                th(colspan=5 class="text-2xl")
+                  +renderKey('Baininscneach', { getFromCommon: true })
+              tr
+                th(colspan=2) #[+renderKey('ArticleTable-col1-th' )]
+                th: +renderKey('ArticleTable-col2-th' )
+                th: +renderKey('ArticleTable-col3-th' )
+                th: +renderKey('ArticleTable-col4-th' )
+            tbody
+              tr
+                th(rowspan=3 class="bg-stone-300")
+                  +renderKey('Consan', { getFromCommon: true })
+                td: +renderKey('consanInséimhitheSeachasDTS')
+                td an
+                td: +renderKey('séimhiú', { getFromCommon: true })
+                td
+                  ul
+                    li an fhuinneog
+                    li an chaibidil
+              tr
+                td: +renderKey('dNoT')
+                td an
+                td: +renderKey('ganAonAthru')
+                td
+                  ul
+                    li an deoch
+                    li an teanga
+              tr
+                td: +renderKey('sSeachasCFMPTV')
+                td an
+                td: +renderKey('tRoimhe')
+                td
+                  ul
+                    li an tsráid
+                    li an tSeapáin
+              tr
+                th(class="bg-stone-300")
+                  +renderKey('Guta', { getFromCommon: true })
+                td: +renderKey('gachGuta')
+                td an
+                td: +renderKey('ganAonAthru')
+                td
+                  ul
+                    li an áit
+                    li an Astráil
+                    li an Iodáil
+                    li an obair
+
+mixin Table1B
+  +markedTable(1, "B", 'Table1B-caption')
+    thead
+      tr
+        th(colspan=2 class="text-2xl px-4 py-2")
+          +renderKey('Table1B-header')
+      tr
+        th(class="py-2"): +renderKey('Firinscneach', { getFromCommon: true })
+        th(class="py-2"): +renderKey('Baininscneach', { getFromCommon: true })
+    tbody
+      tr
+        td ag an bhfear maith
+        td ag an gcuideachta bheag
+      tr
+        td ar an mbosca dearg
+        td ar an mbean shaibhir
+      tr
+        td as an ngleann mór
+        td as an bpáirc chéanna
+      tr
+        td chuig an gCoimisinéir coinsiasach
+        td chuig an mbean ghairmiúil
+      tr
+        td den chrann caol
+        td den bhean fhlaithiúil
+      tr
+        td don fhear trom
+        td don chuideachta ghnóthach
+      tr
+        td fairis an ngarda béasach
+        td fairis an mbean chairdiúil
+      tr
+        td faoin bhfógra práinneach
+        td faoin ngrian bhreá
+      tr
+        td.
+          sa bhosca buí #[br]
+          sa fhraoch bán #[br]
+          #[br]
+          #[+renderKey('Table1B-note')] #[br]
+          san fhéar fliuch
+        td.
+          sa chomhairle shóisialta #[br]
+          sa fhrithréabhlóid fhíochmhar #[br]
+          #[br]
+          #[+renderKey('Table1B-note')] #[br]
+          san fharraige ghlan
+      tr
+        td leis an bhfasach cruinn
+        td leis an mbáisteach throm
+      tr
+        td ón gcaisleán fuar
+        td ón gcathair mhór
+      tr
+        td roimh an gcruinniú tábhachtach
+        td roimh an mbainis bheag
+      tr
+        td thar an gcnoc bán
+        td thar an bhfarraige chiúin
+      tr
+        td tríd an ngairdín breá
+        td tríd an bhfuinneog ghorm
+      tr
+        td um an mBille fada
+        td um an ngníomhaireacht reachtúil
+
+mixin Table1C
+  +markedTable(1, "C", 'Table1C-caption')
+    thead
+      tr
+        th(colspan=2 class="text-2xl px-4 py-2")
+          +renderKey('Table1C-header')
+      tr
+        th(class="py-2"): +renderKey('Firinscneach', { getFromCommon: true })
+        th(class="py-2"): +renderKey('Baininscneach', { getFromCommon: true })
+      tr
+        th(class="text-center bg-stone-300")
+          b: +renderKey('GanAthrú', { getFromCommon: true })
+        th(class="text-center bg-stone-300")
+          b: +renderKey('Table1C-col2-subheader')
+    tbody
+      tr
+        td ag an Seapánach cliste
+        td ag an tseanmháthair bhocht
+      tr
+        td ar an suíochán fliuch
+        td ar an tsráid ghlan
+      tr
+        td as an sailéad blasta
+        td as an tsaoire bhliantúil
+      tr
+        td chuig an Seanadóir nuacheaptha
+        td chuig an tsatailít mhór
+      tr
+        td den saighdiúir sásúil
+        td den tslándáil shóisialach
+      tr
+        td don Seanad nua
+        td don tsaoirse cheart
+      tr
+        td fairis an saineolaí lách
+        td fairis an tseanbhean shaibhir
+      tr
+        td faoin sonrasc déanach
+        td faoin tslí dhíreach
+      tr
+        td sa soitheach gorm
+        td sa tseacláid mhilis
+      tr
+        td leis an salann bán
+        td leis an tslat fhada
+      tr
+        td ón suirbhé pearsanta
+        td ón scoil bheag
+      tr
+        td roimh an samhradh fada
+        td roimh an tseachtain mhór
+      tr
+        td thar an seol mór
+        td thar an tSionainn fhada
+      tr
+        td tríd an sorcas mór
+        td tríd an tseift chliste
+      tr
+        td um an sainchomhairleoir cruinn
+        td um an tseirbhís mhaith
+
+mixin Table1D
+  +markedTable(1, "D", 'Table1D-caption')
+    thead
+      tr
+        th(colspan=2 class="text-2xl px-4 py-2")
+          +renderKey('Table1D-header')
+      tr
+        th(class="py-2"): +renderKey('Firinscneach', { getFromCommon: true })
+        th(class="py-2"): +renderKey('Baininscneach', { getFromCommon: true })
+    tbody
+      tr
+        td ag an Albanach ciallmhar
+        td ag an aeráid ghaofar
+      tr
+        td ar an eitleán dubh
+        td ar an olann bhán
+      tr
+        td as an uisce glan
+        td as an iris cháiliúil
+      tr
+        td chuig an Aire ilteangach
+        td chuig an Ostair shléibhtiúil
+      tr
+        td den alt fada
+        td den uimhir chruinn
+      tr
+        td don údarás céanna
+        td don obair chrua
+      tr
+        td fairis an oifigeach múinte
+        td fairis an ógbhean chliste
+
+mixin Table1E
+  +markedTable(1, "E", 'Table1E-caption')
+    thead
+      tr
+        th(colspan=2 class="text-2xl px-4 py-2")
+          +renderKey('Table1E-header')
+      tr
+        th(class="py-2"): +renderKey('Firinscneach', { getFromCommon: true })
+        th(class="py-2"): +renderKey('Baininscneach', { getFromCommon: true })
+    tbody
+      tr
+        td faoin dréimire bhriste
+        td faoin deacracht bhreise
+      tr
+        td sa theas mór
+        td sa deoch fhuar
+      tr
+        td leis an duine ciúin
+        td leis an taithí mhaith
+      tr
+        td ón deartháir cineálta
+        td ón teanga líofa
+      tr
+        td roimh an tarbh fiáin
+        td roimh an deighilt mhór
+      tr
+        td thar an teach gorm
+        td thar an diallait nua
+      tr
+        td tríd an talamh crua
+        td tríd an drochaimsir ghránna
+      tr
+        td um an dlí coiriúil
+        td um an tagairt chuí
+
+mixin Table1F
+  +markedTable(1, "F", 'Table1F-caption')
+    tbody
+      //- First half
+      tr
+        td
+          table(class="chapter-1 w-full")
+            colgroup
+              col(class="w-1/8")
+              col(class="w-2/8")
+              col(class="w-1/8")
+              col(class="w-2/8")
+            thead
+              tr
+                th(colspan=5 class="text-2xl px-4 py-2")
+                  +renderKey('Firinscneach', { getFromCommon: true })
+              tr
+                th(colspan=2): +renderKey('ArticleTable-col1-th')
+                th: +renderKey('ArticleTable-col2-th')
+                th: +renderKey('ArticleTable-col3-th')
+                th: +renderKey('ArticleTable-col4-th')
+            tbody
+              tr
+                th(rowspan=3 class="bg-stone-300")
+                  +renderKey('Consan', { getFromCommon: true })
+                td: +renderKey('consanInséimhitheSeachasDTS')
+                td an
+                td: +renderKey('séimhiú', { getFromCommon: true })
+                td
+                  ul
+                    li barr an chnoic
+                    li hata an fhir
+              tr
+                td: +renderKey('dNoT')
+                td an
+                td: +renderKey('ganAonAthru')
+                td
+                  ul
+                    li chun an diabhail
+                    li doras an tí
+              tr
+                td: +renderKey('sSeachasCFMPTV')
+                td an
+                td: +renderKey('tRoimhe')
+                td
+                  ul
+                    li tús an tsaoil
+                    li pas an tSeapánaigh
+              tr
+                th(class="bg-stone-300")
+                  +renderKey('Guta', { getFromCommon: true })
+                td: +renderKey('gachGuta')
+                td an
+                td: +renderKey('ganAonAthru')
+                td
+                  ul
+                    li de réir an ailt
+                    li faoi réir an Achta
+                    li pas an Albanaigh
+      //- Second half
+      tr
+        td
+          table(class="chapter-1 w-full")
+            colgroup
+              col(class="w-1/8")
+              col(class="w-2/8")
+              col(class="w-1/8")
+              col(class="w-2/8")
+            thead
+              tr
+                th(colspan=5 class="text-2xl px-4 py-2")
+                  +renderKey('Baininscneach', { getFromCommon: true })
+              tr
+                th(colspan=2): +renderKey('ArticleTable-col1-th')
+                th: +renderKey('ArticleTable-col2-th')
+                th: +renderKey('ArticleTable-col3-th')
+                th: +renderKey('ArticleTable-col4-th')
+            tbody
+              tr
+                th(class="bg-stone-300")
+                  +renderKey('Consan', { getFromCommon: true })
+                td: +renderKey('gachConsan')
+                td na
+                td: +renderKey('ganAonAthru')
+                td
+                  ul
+                    li leac na fuinneoige
+                    li deireadh na caibidle
+                    li bun na sráide
+                    li muintir na Téalainne
+              tr
+                th(class="bg-stone-300")
+                  +renderKey('Guta', { getFromCommon: true })
+                td: +renderKey('gachGuta')
+                td na
+                td: +renderKey('hRoimhe')
+                td
+                  ul
+                    li timpeall na háite
+                    li foireann na hÍsiltíre
+
+mixin Table1G
+  +markedTable(1, "G", 'Table1G-caption')
+    colgroup
+      col(class="w-2/12")
+      col(class="w-2/12")
+      col(class="w-2/12")
+    thead
+      tr
+        th(colspan=4 class="text-2xl px-4 py-2")
+          +renderKey('FirAgusBain', { getFromCommon: true })
+      tr
+        th: +renderKey('ArticleTable-col1-th')
+        th: +renderKey('ArticleTable-col2-th')
+        th: +renderKey('ArticleTable-col3-th')
+        th: +renderKey('ArticleTable-col4-th')
+    tbody
+      tr
+        th(class="bg-stone-300")
+          +renderKey('Consan', { getFromCommon: true })
+        td na
+        td: +renderKey('ganAonAthru')
+        td
+          ul
+            li na capaill ghlasa
+            li na cnoic arda
+            li na fuinneoga móra
+            li na Seapánaigh
+            li na sráideanna
+      tr
+        th(class="bg-stone-300")
+          +renderKey('Guta', { getFromCommon: true })
+        td na
+        td: +renderKey('hRoimhe')
+        td
+          ul
+            li na hAchtanna tábhachtacha
+            li na háiteanna
+            li na hAlbanaigh bhródúla
+            li na hÉireannaigh
+            li na híomhánna
+
+mixin Table1H
+  +markedTable(1, "H", 'Table1H-caption')
+    colgroup
+      col(class="w-2/8")
+      col(class="w-1/8")
+      col(class="w-1/8")
+      col(class="w-4/8")
+    thead
+      tr
+        th(colspan=4 class="text-2xl px-4 py-2")
+          +renderKey('FirAgusBain', { getFromCommon: true })
+      tr
+        th: +renderKey('ArticleTable-col1-th')
+        th: +renderKey('ArticleTable-col2-th')
+        th: +renderKey('ArticleTable-col3-th')
+        th: +renderKey('ArticleTable-col4-th')
+    tbody
+      tr
+        th(class="bg-stone-300")
+          +renderKey('Consan', { getFromCommon: true })
+        td na
+        td: +renderKey('ganAonAthru')
+        td
+          ul
+            li ag na fir mhóra
+            li ar na mná cliste
+            li as na seirbhísí poiblí
+            li chuig na mic léinn ghlóracha
+            li de na crainn
+            li do na Teachtaí
+            li faoi na daoine
+            li fairis na gardaí
+            li leis na fasaigh
+            li ó na múinteoirí
+            li roimh na cait
+            li sna boscaí
+            li thar na farraigí
+            li trí na gairdíní
+            li um na coillte
+      tr
+        th(class="bg-stone-300")
+          +renderKey('Guta', { getFromCommon: true })
+        td na
+        td: +renderKey('hRoimhe')
+        td
+          ul
+            li ag na hiníonacha fásta
+            li ar na hoileáin ghaofara
+            li as na hirisí acadúla
+            li chuig na hoifigigh dheasa
+            li de na huimhreacha
+            li do na hoibreacha
+            li faoi na heachtraí
+            li fairis na hógmhná
+            li leis na heochracha
+            li ó na hÉireannaigh
+            li roimh na héin
+            li sna heitleáin
+            li thar na háiteanna
+            li trí na haistriúcháin
+            li um na hAchtanna
+
+mixin Table1I
+  +markedTable(1, "I", 'Table1I-caption')
+    colgroup
+      col(class="w-2/6")
+      col(class="w-1/6")
+      col(class="w-1/6")
+      col(class="w-2/6")
+    thead
+      tr
+        th(colspan=4 class="text-2xl px-4 py-2")
+          +renderKey('FirAgusBain', { getFromCommon: true })
+      tr
+        th: +renderKey('ArticleTable-col1-th')
+        th: +renderKey('ArticleTable-col2-th')
+        th: +renderKey('ArticleTable-col3-th')
+        th: +renderKey('ArticleTable-col4-th')
+    tbody
+      tr
+        th(class="bg-stone-300")
+          +renderKey('ConsanInuraithe')
+        td na
+        td: +renderKey('urú', { getFromCommon: true })
+        td
+          ul
+            li trasna na gcnoc íseal
+            li leaca na bhfuinneog
+            li i measc na ndaoine
+      tr
+        th(class="bg-stone-300")
+          +renderKey('Guta', { getFromCommon: true })
+        td na
+        td: +renderKey('urú', { getFromCommon: true })
+        td
+          ul
+            li líon na n&#x2011;áiteanna breátha
+            li costas na n&#x2011;oibreacha
+            li líon na nAlbanach
+
+mixin Table1J
+  +markedTable(1, "J", 'Table1J-caption')
+    colgroup
+      col(class="w-1/2")
+    thead
+      tr
+        th(colspan=2 class="text-2xl px-4 py-2")
+          +renderKey('Table1J-header')
+      tr
+        th(class="py-2"): +renderKey('Firinscneach', { getFromCommon: true })
+        th(class="py-2"): +renderKey('Baininscneach', { getFromCommon: true })
+    tbody
+      tr
+        td ag an fhear mhaith
+        td ag an chuideachta bheag
+      tr
+        td ar an bhosca dhearg
+        td ar an bhean shaibhir
+      tr
+        td as an ghleann mhór
+        td as an pháirc chéanna
+      tr
+        td chuig an Choimisinéir choinsiasach
+        td chuig an bhean ghairmiúil
+      tr
+        td den chrann chaol
+        td den bhean fhlaithiúil
+      tr
+        td don fhear throm
+        td don chuideachta ghnóthach
+      tr
+        td fairis an gharda bhéasach
+        td fairis an bhean chairdiúil
+      tr
+        td faoin fhógra phráinneach
+        td faoin ghrian bhreá
+      tr
+        td.
+          sa bhosca bhuí #[br]
+          sa fhraoch bhán #[br]
+          #[br]
+          #[+renderKey('Table1B-note')] #[br]
+          san fhéar fhliuch
+        td.
+          sa chomhairle shóisialta #[br]
+          sa fhrithréabhlóid fhíochmhar #[br]
+          #[br]
+          #[+renderKey('Table1B-note')] #[br]
+          san fharraige ghlan
+      tr
+        td leis an fhasach chruinn
+        td leis an bháisteach throm
+      tr
+        td ón chaisleán fhuar
+        td ón chathair mhór
+      tr
+        td roimh an chruinniú thábhachtach
+        td roimh an bhainis bheag
+      tr
+        td thar an chnoc bhán
+        td thar an fharraige chiúin
+      tr
+        td tríd an ghairdín bhreá
+        td tríd an fhuinneog ghorm
+      tr
+        td um an Bhille fhada
+        td um an ghníomhaireacht reachtúil
+
+mixin Table1K
+  +markedTable(1, "K", 'Table1K-caption')
+    colgroup
+      col(class="w-1/2")
+      col(class="w-1/2")
+    thead
+      tr
+        th(colspan=2 class="text-2xl px-4 py-2")
+          +renderKey('Table1K-header')
+      tr
+        th(class="py-2"): +renderKey('Firinscneach', { getFromCommon: true })
+        th(class="py-2"): +renderKey('Baininscneach', { getFromCommon: true })
+      tr
+        th(colspan=2 class="text-center bg-stone-300")
+          b: +renderKey('Table1K-subheading')
+    tbody
+      tr
+        td ag an tSeapánach chliste
+        td ag an tseanmháthair bhocht
+      tr
+        td ar an tsuíochán fhliuch
+        td ar an tsráid ghlan
+      tr
+        td as an tsailéad bhlasta
+        td as an tsaoire bhliantúil
+      tr
+        td chuig an tSeanadóir nuacheaptha
+        td chuig an tsatailít mhór
+      tr
+        td den tsaighdiúir shásúil
+        td den tslándáil shóisialach
+      tr
+        td don tSeanadóir nua
+        td don tsaoirse cheart
+      tr
+        td fairis an tsaineolaí lách
+        td fairis an tseanbhean shaibhir
+      tr
+        td faoin tsonrasc déanach
+        td faoin tslí dhíreach
+      tr
+        td sa tsoitheach ghorm
+        td sa tseacláid mhilis
+      tr
+        td leis an tsalann bhán
+        td leis an tslat fhada
+      tr
+        td ón tsuirbhé phearsanta
+        td ón scoil bheag
+      tr
+        td roimh an tsamhradh fhada
+        td roimh an tseachtain mhór
+      tr
+        td thar an tseol mhór
+        td thar an tSionainn fhada
+      tr
+        td tríd an tsorcas mhór
+        td tríd an tseift chliste
+      tr
+        td um an tsainchomhairleoir chruinn
+        td um an tseirbhís mhaith
+
+mixin Table1L
+  +markedTable(1, "L", 'Table1L-caption')
+    colgroup
+      col(class="w-1/2")
+      col(class="w-1/2")
+    thead
+      tr
+        th(colspan=2 class="text-2xl px-4 py-2")
+          +renderKey('Table1L-header')
+      tr
+        th(class="py-2"): +renderKey('Firinscneach', { getFromCommon: true })
+        th(class="py-2"): +renderKey('Baininscneach', { getFromCommon: true })
+    tbody
+      tr
+        td ag an Albanach chiallmhar
+        td ag an aeráid ghaofar
+      tr
+        td ar an eitleán dhubh
+        td ar an olann bhán
+      tr
+        td as an uisce ghlan
+        td as an iris cháiliúil
+      tr
+        td chuig an Aire ilteangach
+        td chuig an Ostair shléibhtiúil
+      tr
+        td den alt fhada
+        td den uimhir chruinn
+      tr
+        td don údarás céanna
+        td don obair chrua
+      tr
+        td fairis an oifigeach mhúinte
+        td fairis an ógbhean chliste
+
+mixin Table1M
+  +markedTable(1, "M", 'Table1M-caption')
+    colgroup
+      col(class="w-1/2")
+      col(class="w-1/2")
+    thead
+      tr
+        th(colspan=2 class="text-2xl px-4 py-2")
+          +renderKey('Table1M-header')
+      tr
+        th(class="py-2"): +renderKey('Firinscneach', { getFromCommon: true })
+        th(class="py-2"): +renderKey('Baininscneach', { getFromCommon: true })
+    tbody
+      tr
+        td faoin dréimire bhriste
+        td faoin deacracht bhreise
+      tr
+        td sa theas mór
+        td sa deoch fhuar
+      tr
+        td leis an duine ciúin
+        td leis an taithí mhaith
+      tr
+        td ón deartháir cineálta
+        td ón teanga líofa
+      tr
+        td roimh an tarbh fiáin
+        td roimh an deighilt mhór
+      tr
+        td thar an teach gorm
+        td thar an diallait nua
+      tr
+        td tríd an talamh crua
+        td tríd an drochaimsir ghránna
+      tr
+        td um an dlí coiriúil
+        td um an tagairt chuí

@@ -1,0 +1,408 @@
+include ../../tlMatter.pug
+
+if docLang === 'EN'
+  mixin tl(tlText)
+    +inlineTl('EN', tlText)
+
+  mixin tlDb(key)
+    case key
+      when "teidealNaCaibidle"
+        | The Article
+      when "1-title"
+        | #[+renderKey("Caibidil", { getFromCommon: true })] 1 | #[+tlDb("teidealNaCaibidle")]
+      when "1-1-title"
+        | #[+renderKey("Ginearálta", { getFromCommon: true })]
+      when "1-1-1-p"
+        | There is one article in the Irish language &mdash; the definite article. The subject of the article is called the #[i definite noun]. The article has two forms: #[i an] and #[i na]. The article is placed before the noun, e.g., #[i an baile] #[+tl("the town")]; #[i an mhír] #[+tl("the item")]; #[i na caoirigh] #[+tl("the sheep")]; #[i teach na cúirte] #[+tl("the court house")]; or before whatever word is put before the noun to qualify it, e.g., #[i an uile dhuine] #[+tl("everyone")]; #[i scéal mhadra na n&#x2011;ocht gcos] #[+tl("story of the eight-legged dog")]; #[i tús na chéad seachtaine] #[+tl("beginning of the first week")]. It is possible to use the article in place of possessive adjectives, e.g., #[i Tá an croí ag cur air] #[+tl("His heart is troubling him")]; #[i Bhí an ghrian ag baint na súl asam] #[+tl("The sun was taking my eyes from me")].
+      when "1-1-2-p"
+        | The article is written with a small letter in the middle of sentences, e.g., #[i Nach raibh tú ag an Oireachtas i mbliana?] #[+tl("Were you at the Oireachtas this year?")]; #[i Bhí aithne mhaith agam ar an Seabhac] #[+tl("I knew Seabhac well")]; except in certain contexts such as publication titles e.g., #[i Cé a scríobh An tOileánach?] #[+tl("Who wrote An tOileánach?")]
+      when "1-1-3-p"
+        | If a title containing an article (see #[+link("#sec_1_1_5", "1.1.5")] #[+link("#sec_1_1_5_a", "(a)")], #[+link("#sec_1_1_5_b", "(b)")] and #[+link("#sec_1_1_5_c", "(c)")]) is written on its own, for example on a public notice or on a cover sheet, the article is always included and is capitalized, e.g., #[i An Ghníomhaireacht um Thacaíocht Teaghlaigh] #[+tl("The Agency for Family Support")]; #[i Na Coimisinéirí Ioncaim] #[+tl("The Revenue Commissioners")]; #[i An Ceoláras Náisiúnta] #[+tl("The National Conservatory")].
+      when "1-1-4-p"
+        | A hyphen is placed between the initial letter #[i t] and a vowel, except when the vowel is capitalized, e.g., #[i an t&#x2011;ospidéal], #[i an tAlbanach]. A hyphen is not placed between the initial letter #[i t] and #[i s], e.g., #[i an tsaoirse]; #[i an tSionainn]; #[i tús an tsaoil]; nor between the initial letter #[i h] and a vowel, e.g., #[i na hainmneacha]; #[i lár na habairte]; #[i stair na hUachtaránachta].
+      when "1-1-5-p"
+        | The article is used in the following contexts.
+      when "1-1-5-a-p"
+        | #[b Official Titles] e.g., #[i an tAire Airgeadais], #[i an Príomh-Oifigeach Feidhmiúcháin], #[i an Taoiseach], #[i Ard-Rúnaí na Náisiún Aontaithe].
+      when "1-1-5-a-sample1"
+        | The #[b Minister for Finance] will attend the meeting.
+      when "1-1-5-a-sample2"
+        | Where is #[b the Chief Executive Officer]?
+      when "1-1-5-a-sample3"
+        | #[b The Taoiseach] is speaking with the students.
+      when "1-1-5-a-sample4"
+        | Is that #[b the Secretary General of the United Nations]?
+      when "1-1-5-b-p"
+        | #[b Titles of Government Departments and State Companies] e.g., #[i an Roinn Oideachais agus Scileanna], #[i an Oifig um Rialú Tobac], #[i Feidhmeannacht na Seirbhíse Sláinte], #[i an Phríomh-Oifig Staidrimh].
+      when "1-1-5-b-sample1"
+        | This building is opposite #[b the Department of Education and Skills].
+      when "1-1-5-b-sample2"
+        | Sean went to #[b the Office of Tobacco Control].
+      when "1-1-5-b-sample3"
+        | #[b The Health Service Executive] is very busy.
+      when "1-1-5-b-sample4"
+        | This is #[b the Central Statistics Office].
+      when "1-1-5-c-p"
+        | #[b Titles of people before a proper noun], e.g., #[i an tAthair Peadar Ua Laoghaire], #[i an Captaen Ó Murchú], #[i an tUachtarán Mhic Róibín], #[i an Teachta de Barra] #[+tl("the Reprsentative of de Barra")], #[i an Múinteoir Ailbhe], #[i an Pápa Eoin Pól II] #[+tl("Pope John Paul II")], #[i an Rí Anraí VIII] #[+tl("King Henry VIII")].
+      when "1-1-5-c-sample1"
+        | #[b Father Peadar Ua Laoghaire] wrote the play #[i An Sprid].
+      when "1-1-5-c-sample2"
+        | #[b Captain Ó Murchú] spoke to the players.
+      when "1-1-5-c-sample3"
+        | #[b President Mhic Róibín] was to be seen in the photograph.
+      when "1-1-5-c-sample4"
+        | #[b Doctor de Barra] will be on holiday for the week.
+      when "1-1-5-c-sample5"
+        | #[b Teacher Ailbhe] is in charge of sixth class this year.
+      when "1-1-5-c-sample6"
+        | It is #[b Queen Elsa II] in the film.
+      when "1-1-5-d-p1"
+        | #[b Festivals], e.g., #[i an Nollaig], #[i an Cháisc], #[i an Carghas].
+      when "1-1-5-d-sample1"
+        | #[b Christmas] is approaching us.
+      when "1-1-5-d-sample2"
+        | #[b Easter] will be in March this year.
+      when "1-1-5-d-sample3"
+        | I gave up drinking for #[b Lent].
+      when "1-1-5-d-p2"
+        | Note that the article is not used in certain adverbial forms, e.g., #[i faoi Cháisc], #[i um Nollaig], #[i faoi Bhealtaine].
+      when "1-1-5-e-p1"
+        | #[b Days of the week], e.g., #[i an Luan], #[i an Mháirt], #[i an Chéadaoin].
+      when "1-1-5-e-sample1"
+        | #[b Monday] is my favorite day.
+      when "1-1-5-e-sample2"
+        | I go swimming #[b on Tuesdays].
+      when "1-1-5-e-sample3"
+        | Today #[b is a Wednesday].
+      when "1-1-5-e-p2"
+        | Note that the adverb #[i Dé] is used in place of the article when referring to a particular day, e.g., #[i Bhí mé ag caint leis Dé Céadaoin seo caite] #[+tl("I was talking to him last Wednesday")].
+      when "1-1-5-e-p3"
+        | If a preposition is used before certain days, a compound is formed between the article and the preposition, e.g., #[i Ní mór na hiarratais a bheith faighte foin Aoine, an 16 Bealtaine] #[+tl("The applications must be received by Friday, 16 May")].
+      when "1-1-5-f-p1"
+        b Months and years
+      when "1-1-5-f-sample1"
+        | Often #[b January] is colder than #[b December].
+      when "1-1-5-f-sample2"
+        | Easter is in #[b March] rather than #[b April] this year.
+      when "1-1-5-f-p2"
+        | The article is used for the months #[i Márta] (March), #[i Bealtaine] (May), #[i Meitheamh] (June), #[i Samhain] (November) and #[i Nollaig] (December). The article is not used for the other months except for the calqued form #[i san Aibreán] (#[i From: in April]). #[br] #[b TL Note]: (#[i calqued version/form] appears to be the intended meaning here for #[i leagan calctha], not found in FGB. See also #[+link("#sec_1_3_2", "1.3.2")] for another instance.)
+      when "1-1-5-g-p1"
+        b Dates
+      when "1-1-5-g-sample1"
+        | I should be done no later than #[b 30 September] every year.
+      when "1-1-5-g-sample2"
+        | The party will be on #[b 12 April].
+      when "1-1-5-g-sample3"
+        | The financial reports are for the year ended #[b 31 December 2014].
+      when "1-1-5-g-sample4"
+        | They will marry on #[b 26 February].
+      when "1-1-5-g-sample5"
+        | No applications will be accepted after #[b 7 March 2016].
+      when "1-1-5-g-p2"
+        | The article should be used when referring to a date in a sentence.
+      when "1-1-5-g-p3"
+        | When the date is by itself &mdash; in a letterhead, or as in the date on an invoice or an Act etc. &mdash; the article is omitted, e.g., #[i 26 Feabhra 2014].
+      when "1-1-5-h-p1"
+        b Names of towns, mountains and rivers
+      when "1-1-5-h-i"
+        | Some cities and towns, e.g., #[i an Aithin] #[+tl("Athens")], #[i na Cealla Beaga] #[+tl("Kells")], #[i na Gleannta] #[+tl("the Glens")], #[i an tSnaidhm] #[+tl("Snaidhm")], #[i an Spidéal] #[+tl("Spiddal")].
+      when "1-1-5-h-ii"
+        | Certain mountains and cities, e.g., #[i na hAindéis] #[+tl("the Andes")], #[i na hAlpa] #[+tl("the Alps")], #[i an Bhograch] #[+tl("the Bograch")], #[i an Chearc] #[+tl("the Chearc")], #[i na Comaraigh] #[+tl("the Comaraigh")], #[i an Earagail] #[+tl("the Erigail")], #[i na Himiléithe] #[+tl("the Himalayas")], #[i an Mhucais] #[+tl("the Muckish")].
+      when "1-1-5-h-iii"
+        | Most rivers e.g., #[i an Bhóinn] #[+tl("the Boyne")], #[i an Danóib] #[+tl("the Danube")], #[i an Life] #[+tl("the Liffey")], #[i an Phó] #[+tl("the Po")], #[i an Réin] #[+tl("the Rhine")], #[i an Róin] #[+tl("the Rhone")], #[i an tSéin] #[+tl("the Seine")], #[i an tSionainn] #[+tl("the Shannon")], #[i an Tibir] #[+tl("the Tiber")].
+      when "1-1-5-h-sample1"
+        | I walked #[b the Muckish] yesterday.
+      when "1-1-5-h-sample2"
+        | Did #[b Spiddal] win the game?
+      when "1-1-5-h-sample3"
+        | #[b The Shannon] can be seen from the airplane.
+      when "1-1-5-i-p1"
+        b Names of countries and regions
+      when "1-1-5-i-A-p1"
+        | The article accompanies the names of countries and regions if the noun is feminine and:
+      when "1-1-5-i-A-i"
+        | if it ends with a slender consonant e.g., #[i an Airgintín] #[+tl("Argentina")], #[i an Albáin] #[+tl("Albania")], #[i an Bhaváir] #[+tl("Bavaria")], #[i an Chatalóin] #[+tl("Catalonia")], #[i an Eastóin] #[+tl("Estonia")], #[i an Eoraip] #[+tl("Europe")], #[i an Fhrainc] #[+tl("France")], #[i an Ghearmáin] #[+tl("Germany")], #[i an Mhacadóin] #[+tl("Macedonia")], #[i an Namaib] #[+tl("Namibia")], #[i an Phacastáin] #[+tl("Pakistan")], #[i an tSeineagáil] #[+tl("Senegal")], #[i an Spáinn] #[+tl("Spain")], #[i an tSúdáin] #[+tl("Sudan")];
+      when "1-1-5-i-A-ii"
+        | if it ends with #[i -ia] e.g., #[i an India] #[+tl("India")], #[i an Laitvia] #[+tl("Latvia")], #[i an tSiria] #[+tl("Syria")];
+      when "1-1-5-i-A-iii"
+        | if it ends with #[i -e], #[i -é] e.g., #[i an Chóiré] #[+tl("Korea")], #[i an Chrimé] #[+tl("Crimea")], #[i an Ghuine] #[+tl("Guinea")], #[i an tSile] #[+tl("Chile")].
+      when "1-1-5-i-A-p2"
+        | Some names of countries and regions end with a slender consonant but are not accompanied by the article, e.g., #[i Bairéin] #[+tl("Bahrain")], #[i Beinin] #[+tl("Benin")], #[i Cuáit] #[+tl("Kuwait")], #[i Éimin] #[+tl("Egypt")], #[i Guadalúip] #[+tl("Guadeloupe")], #[i Lichtinstéin] #[+tl("Liechtenstein")], #[i Mósaimbíc] #[+tl("Mozambique")], or end with #[i -í] in the singular but are not accompanied by the article e.g. #[i Geansaí] #[+tl("Jersey")], #[i Geirsí] #[+tl("Guernsey")], #[i Háítí] #[+tl("Haiti")], #[i Haváí] #[+tl("Hawaii")], #[i Mailí] #[+tl("Mali")], #[i Taihítí] #[+tl("Tahiti")]. The article is not used except for the genitive for #[i Albain] #[+tl("Scotland")], #[i Éire] #[+tl("Ireland")] (see #[+link("./chapter3.html#sec_3_1_4", "3.1.4")]).
+      when "1-1-5-i-A-sample1"
+        | #[b France] is a beautiful country.
+      when "1-1-5-i-A-sample2"
+        | #[b Mozambique] is mentioned in the book.
+      when "1-1-5-i-B-p"
+        | The article does not accompany the names of countries and regions if the noun is masculine and:
+      when "1-1-5-i-B-i"
+        | if it ends with a broad consonant, e.g., #[i Barbadós] #[+tl("Barbados")], #[i Eacuadór] #[+tl("Ecuador")], #[i Guam] #[+tl("Guam")], #[i Hondúras] #[+tl("Honduras")], #[i Natal] #[+tl("Natal")], #[i Óman] #[+tl("Oman")], #[i Sead] #[+tl("Seychelles")], #[i Siam] #[+tl("Siam")], #[i Suranam] #[+tl("Suriname")];
+      when "1-1-5-i-B-ii"
+        | if it ends with #[i -eo], #[i -ó], e.g., #[i Boirneo] #[+tl("Borneo")], #[i Maracó] #[+tl("Morocco")], #[i Meicsiceo] #[+tl("Mexico")], #[i Monacó] #[+tl("Monaco")], #[i Samó] #[+tl("Samoa")] (exception: #[i an Congó] #[+tl("the Congo")]);
+      when "1-1-5-i-B-iii"
+        | if it ends with #[i -a], #[i -á], #[i -iú], #[i -ua], e.g., #[i Alasca] #[+tl("Alaska")], #[i Ceanada] #[+tl("Canada")], #[i Cúba] #[+tl("Cuba")], #[i Gána] #[+tl("Ghana")], #[i Meiriceá] #[+tl("America")], #[i Nicearagua] #[+tl("Nicaragua")], #[i Panama] #[+tl("Panama")], #[i Papua] #[+tl("Papua")], #[i Paragua] #[+tl("Paraguay")], #[i Peiriú] #[+tl("Peru")], #[i Sasana] #[+tl("England")];
+      when "1-1-5-i-B-iv"
+        | if it ends with #[i -ael], e.g., #[i Iosrael] #[+tl("Israel")].
+      when "1-1-5-i-C-p"
+        | The article accompanies the names of countries and regions that are nouns in the plural, e.g., #[i na hAsóir] #[+tl("the Azores")], #[i na Bahámaí] #[+tl("the Bahamas")], #[i na Garbhchríocha] #[+tl("the Highlands")], #[i na Scigirí] #[+tl("the Shetland Islands")].
+      when "1-1-5-i-C-sample1"
+        | #[b The Bahamas] are in the Caribbean.
+      when "1-1-5-i-C-sample2"
+        | The film was recorded in #[b the Highlands].
+      when "1-1-5-j-p"
+        | #[b Prayers and certain battle cries], e.g., #[i an Choróin Mhuire], #[i an Ghlóir], #[i an Dord Fiann].
+      when "1-1-5-j-sample1"
+        | #[b Glory] was said in the middle of the Mass.
+      when "1-1-5-j-sample2"
+        | #[b The Dord Fiann] is not often heard.
+      when "1-1-5-j-sample3"
+        | He said #[b the rosary] loudly.
+      when "1-1-5-k-p1"
+        b Distributive use
+      when "1-1-5-k-sample1"
+        | He sells the books for one Euro #[b each].
+      when "1-1-5-k-sample2"
+        | An anniversary is organized once #[b per year].
+      when "1-1-5-k-sample3"
+        | #[b Every] schoolchild had a bag.
+      when "1-1-5-k-p2"
+        | The article is used to express a rate when the meaning #[i each individual] or #[i per] is intended.
+      when "1-1-5-l-p1"
+        | The noun has an abstract or conceptual meaning
+      when "1-1-5-l-sample1"
+        | When #[b the drink] is in, #[b sense] is out.
+      when "1-1-5-l-sample2"
+        | #[b Anger] is not good.
+      when "1-1-5-l-sample3"
+        | #[b Divorce] was introduced in Ireland some years ago.
+      when "1-1-5-l-sample4"
+        | Space #[b exploration] is a new thing.
+      when "1-1-5-l-sample5"
+        | It is not possible to travel through #[b time].
+      when "1-1-5-l-sample6"
+        | #[b The weather] will tell.
+      when "1-1-5-l-sample7"
+        | #[b Hunger] is the best #[b sauce].
+      when "1-1-5-l-p2"
+        | Note that the article is not used in certain sayings, e.g., #[i Tá ciall cheannaith aige] #[+tl("He has bought sense")]; or when the noun does not have a general meaning, e.g., #[i Bhí ocras orm] #[+tl("I was hungry")]; #[i Tá siad i ngrá] #[+tl("They are in love")].
+      when "1-1-5-m-p"
+        | #[b Certain Illnesses], e.g., #[i an ailse] #[+tl("cancer")], #[i an déideadh] #[+tl("smallpox")], #[i an titimeas] #[+tl("epilepsy")], #[i an bhruitíneach] #[+tl("measles")].
+      when "1-1-5-m-sample1"
+        | #[b Measles] was widespread in Ireland until the 1960s.
+      when "1-1-5-m-sample2"
+        | Is there a cure for #[b epilepsy]?
+      when "1-1-5-n-p1"
+        | #[b Languages], e.g., #[i an Ghaeilge] #[+tl("Irish")], #[i an Ghearmáinis] #[+tl("German")], #[i an Béarla] #[+tl("English")].
+      when "1-1-5-n-sample1"
+        | #[b Irish] is the language of our ancestors.
+      when "1-1-5-n-sample2"
+        | #[b German] is spoken in Austria.
+      when "1-1-5-n-sample3"
+        | She had good #[b English].
+      when "1-1-5-n-p2"
+        | Note that the article is omitted when the general meaning is not intended, e.g., #[i Tá Fraincis aici] #[+tl("She speaks French")]; #[i Cuir i nGaeilge é] #[+tl("Put it in Irish")]; #[i rang Iodáilise] #[+tl("Italian class")].
+      when "h2-gp-2-5-title"
+        | The Cases
+      when "h2-gp-2-5-p"
+        | There are five cases in the Irish language: the nominative case, the accusative case, the dative case, the genitive case and the vocative case (see #[+link("./chapter2.html#sec_2_1_2", "2.1.2")]). In the following tables, changes applied to the article and the first letter of the noun are shown based on four items &mdash; gender, case, number and the first letter of the noun. Also see #[+link("chapter10.html", "Chapter 10")] for additional information about initial mutations.
+      when "1-2-title"
+        | The Nominative Case and the Singular Accusative Case
+      when "1-2-p1"
+        | The noun form is the same for the nominative case and the singular accusative case. See the table below which shows the effect of the article on the noun in those cases.
+      //- Article Table
+
+      when "ArticleTable-col1-th"
+        | Initial Letter of the Noun
+      when "ArticleTable-col2-th"
+        | Form of the Article
+      when "ArticleTable-col3-th"
+        | Effect on the Initial Letter
+      when "ArticleTable-col4-th"
+        | Examples
+      when "LenitionNote"
+        | *These are the lenitable consonants: #[i b], #[i c], #[i d], #[i f], #[i g], #[i m], #[i p], #[i s] and #[i t]
+      when "EclipsisNote"
+        | *These are the eclipsable consonants: #[i b], #[i c], #[i d], #[i f], #[i g], #[i p] and #[i t]
+      when "gachConsan"
+        | every consonant
+      when "gachGuta"
+        | every vowel
+      when "ganAonAthru"
+        | no change
+      when "séimhiú"
+        | lenition
+      when "tRoimhe"
+        | #[i t] in front
+      when "dNoT"
+        | #[i d] or #[i t]
+      when "consanInséimhitheSeachasDTS"
+        | lenitable consonants*, #[br] (other than #[i d], #[i t] or #[i s])
+      when "sSeachasCFMPTV"
+        | #[i s] #[br] (other than #[i sc-], #[i sf-], #[i sm-], #[i sp-], #[i st-], #[i sv-])
+      //- Consonant/vowel covered by CommonAttributes
+
+      //- Table1A
+
+      when "Table1A-caption"
+        | The Nominative Case and the Singular Accusative Case
+      when "1-3-title"
+        | The Dative Singular Case
+      when "1-3-1-p"
+        | The dative case is given to the case following the preposition #[i a] #[+tl("various meanings")], #[i ag] #[+tl("at")], #[i ar] #[+tl("on")], #[i as] #[+tl("from")], #[i chuig] #[+tl("towards")], #[i dar] #[+tl("by (asservation)")], #[i de] #[+tl("various meanings")], #[i do] #[+tl("various meanings")], #[i faoi] #[+tl("under")], #[i fara] #[+tl("beyond")], #[i go] #[+tl("to (a place)")], #[i i] #[+tl("in")], #[i ionsar] #[+tl("towards")], #[i le] #[+tl("with")], #[i ó] #[+tl("from")], #[i roimh] #[+tl("before")], #[i trí] #[+tl("through")] and #[i um] #[+tl("around")]. Nouns that follow the article in the dative singular case are dealt with as laid out in the following tables.
+      when "1-3-2-p"
+        | The nominative case follows the words #[i ach] #[+tl("but")], #[i amhail] #[+tl("like")], #[i gan] #[+tl("without")], #[i go dtí] #[+tl("until")], #[i idir] #[+tl("between")], #[i mar] #[+tl("as")], #[i murach] #[+tl("except")], #[i ná] #[+tl("nor")] and #[i seachas] #[+tl("except")] and the article, e.g., #[i gan an t&#x2011;uisce] #[+tl("without the water")]; #[i idir an t&#x2011;am sin agus an t&#x2011;am seo] #[+tl("between that time and this time")]; #[i mar an t&#x2011;aistriúchán] #[+tl("like the translation")]. The dative case is used in the calqued form #[i mar an gcéanna] #[+tl("In the same way")] (#[i From: like the same]).
+      when "1-3-3-p"
+        | The general rules of the dative are applied to forms of this type: #[i preposition] + #[i noun] + #[i a] + #[i verbal noun], e.g., #[i leis an ngnó a dhéanamh] #[+tl("with doing the business")]; #[i as an árasán a dhíol] #[+tl("from selling the apartment")].
+      when "1-3-4-p"
+        | For prepositions #[i de], #[i do], #[i faoi], #[i i] and #[i ó], the preposition and the singular article are composed as shown below.
+      when "1-3-5-p"
+        | The prepositions in the table below have specific forms when they precede the singular article.
+      when "CoreSystem"
+        | The Core System
+      when "1-4-title"
+        | The Dative Singular Case &mdash; The Core System
+      when "1-4-1-p"
+        | As for masculine and feminine nouns starting with a consonant (other than #[i d], #[i t] and #[i s]), lenition is applied to them following #[i den], #[i don], #[i sa/san] and eclipsis in every other context, as shown in the table below.
+      when "1-4-1-topic"
+        | Nouns starting with a Consonant other than #[i d], #[i t] and #[i s]
+      when "Table1B-caption"
+        | #[+tlDb("1-4-title")] &mdash; #[+tlDb("1-4-1-topic")]
+      when "Table1B-header"
+        | #[+renderKey('CoreSystem')] &mdash; #[+tlDb("1-4-1-topic")]
+      when "Table1B-note"
+        | #[i BUT where] f #[i precedes a vowel:]
+      when "1-4-2-p"
+        | No change is done to masculine nouns starting with #[i s] in the dative case. A #[i t] precedes an #[i s] in feminine nouns (other than when the noun starts with #[i sc-], #[i sf-], #[i sm-], #[i sp-], #[i st-] or #[i sv-] which are left bare) as shown in the table below.
+      when "1-4-2-topic"
+        | Nouns Starting with #[i s]
+      when "Table1C-header"
+        | #[+renderKey('CoreSystem')] &mdash; #[+tlDb("1-4-2-topic")]
+      when "Table1C-caption"
+        | #[+renderKey('CoreSystem')] &mdash; #[+tlDb("1-4-2-topic")]
+      when "Table1C-col2-subheader"
+        | #[i t] is put before the #[i s], other than for #[i sc-], #[i sf-], #[i sm-], #[i sp-], #[i st-] or #[i sv-]
+      when "1-4-3-p"
+        | No change is made to masculine nouns or feminine nouns starting with a vowel.
+      when "1-4-3-topic"
+        | Nouns Starting with Vowels
+      when "Table1D-header"
+        | #[+renderKey('CoreSystem')] &mdash; #[+tlDb("1-4-3-topic")]
+      when "Table1D-caption"
+        | #[+tlDb("1-4-title")] &mdash; #[+tlDb("1-4-3-topic")]
+      when "1-4-4-p"
+        | No change is made to masculine nouns or feminine nouns starting with #[i d] and #[i t].
+      when "1-4-4-topic"
+        | Nouns Starting with #[i d] and #[i t]
+      when "Table1E-header"
+        | #[+renderKey('CoreSystem')] &mdash; #[+tlDb("1-4-4-topic")]
+      when "Table1E-caption"
+        | #[+tlDb("1-4-title")] &mdash; #[+tlDb("1-4-4-topic")]
+      when "1-4-4-NB-p1"
+        | In addition to the Core System given in this chapter, the following choices are allowed:
+      when "1-4-4-NB-a"
+        | eclipsis of the noun (instead of lenition) following #[i den] and #[i don], e.g., #[i den gcrann], #[i don bhfear]; or
+      when "1-4-4-NB-b"
+        | eclipsis of the noun (instead of lenition) following #[i sa], e.g., #[i sa bpáirc], #[i sa gcarr].
+      when "1-5-title"
+        | The Genitive Singular Case
+      when "1-5-1-p1"
+        | It is customary to use the genitive form when the noun is governed by the following things &mdash;
+      when "1-5-1-a-p"
+        | other nouns:
+      when "1-5-1-a-sample1"
+        | Where did you leave #[b the car keys]?
+      when "1-5-1-a-sample2"
+        | The local people are happy with #[b the library staff].
+      when "1-5-1-b-p"
+        | verbal nouns:
+      when "1-5-1-b-sample1"
+        | The youngsters like #[b to be preparing dinner].
+      when "1-5-1-b-sample2"
+        | It is Síle who is #[b doing the Leaving Certificate] this year.
+      when "1-5-1-c-p"
+        | compound prepositions, e.g., #[i faoi chomhair] #[+tl("under the guidance of")], #[i i gcás] #[+tl("in case of")], #[i le haghaidh] #[+tl("for the purpose of")]:
+      when "1-5-1-c-sample1"
+        | The cat sits #[b in front of the fire] every night.
+      when "1-5-1-c-sample2"
+        | The architects were #[b conducting the examination].
+      when "1-5-1-d-p"
+        | one of the words #[i cois] #[+tl("beside")], #[i dála] #[+tl("like")], #[i fearacht] #[+tl("in the manner of")], #[i timpeall] #[+tl("around")], #[i trasna] #[+tl("across")]:
+      when "1-5-1-d-sample1"
+        | I heard that you went on a journey #[b around the world].
+      when "1-5-1-d-sample2"
+        | We walked #[b beside the river].
+      when "1-5-1-e-p"
+        | the preposition #[i chun]:
+      when "1-5-1-e-sample1"
+        | The whole group is going #[b to Spain] in July.
+      when "1-5-1-e-sample2"
+        | They made an appeal #[b to the court].
+      when "1-5-1-p2"
+        | See #[+link("./chapter3.html#sec_3_3", "3.3")] for contexts where the nominative form is used instead of the genitive.
+      when "1-5-2-p"
+        | In the table below, the effect of the article on the noun in the genitive singular case is shown.
+      when "Table1F-caption"
+        | The Genitive Singular Case
+      when "hRoimhe"
+        | #[i h] in front
+      when "1-6-title"
+        | The Plural
+      when "1-6-p"
+        | The article's plural form is #[i na]. The article's form is the same in both genders and in all cases of the plural.
+      when "1-6-1-title"
+        | The Nominative Plural Case and the Accusative Plural Case
+      when "1-6-1-p1"
+        | In the table below, the effect of the article on the noun in the nominative plural case and in the accusative plural case is shown.
+      //- Table 1G is the same as the Feminine sub-table of 1F.
+
+      when "Table1G-caption"
+        | The Nominative Plural Case and the Accusative Plural Case
+      when "1-6-2-title"
+        | The Dative Plural Case
+      when "1-6-2-p1"
+        | The dative plural case follows the prepositions #[i a], #[i ag], #[i ar], #[i as], #[i chuig], #[i dar], #[i de], #[i do], #[i faoi], #[i fara], #[i go], #[i i], #[i ionsar], #[i le], #[i ó], #[i roimh], #[i trí] and #[i um]. The preposition #[i i] is composed with the article in the plural: #[i i] + #[i na] = #[i sna]. There is a separate form for #[i fara] and #[i le] before the article in the plural: #[i fara], #[i fairis]; #[i le], #[i leis]. Shown in the table below is the effect of the article on the noun in the dative plural case.
+      when "Table1H-caption"
+        | The Dative Plural Case
+      when "1-6-3-title"
+        | The Genitive Plural Case
+      when "1-6-3-p"
+        | In the table below, the effect of the article on the noun in the genitive plural case is shown.
+      when "Table1I-caption"
+        | The Genitive Plural Case
+      when "ConsanInuraithe"
+        | Eclipsable consonants*
+      when "1-7-title"
+        | The Dative Singular Case &mdash; The Lenition System
+      when "1-7-1-p"
+        | In the dative plural case only, there are other choices given for the Lenition System. It is recommended to adhere to one system only &mdash; the Core System or the Lenition System &mdash; and  not to mix the systems.
+      when "1-7-2-p"
+        | The rules regarding the dative plural case in the Core System and in the Lenition System are the same (See #[+link("#sec_1_6_2", "1.6.2")]).
+      when "1-7-3-p"
+        | In the Lenition system, nouns starting with the a consonant are lenited (other than #[i d], #[i t] and #[i s]) as well as the adjectives attached to them. See the table below.
+      when "Table1J-header"
+        | The Lenition System &mdash;#[br]Nouns starting with a consonant other than #[i d], #[i t], and #[i s]
+      when "Table1J-caption"
+        | #[+tlDb("AnTuisealTabharthachUatha")] &mdash; #[+tlDb("Table1J-header")]
+      when "AnTuisealTabharthachUatha"
+        | The Dative Singular Case
+      when "1-7-4-p"
+        | As for masculine nouns and feminine nouns starting with #[i s], a #[i t] is placed before the #[i s] (other than with nouns starting with #[i sc-], #[i sf-], #[i sm-], #[i sp-], #[i st-] or #[i sv-] which are left bare) as shown in the table below.
+      when "Table1K-subheading"
+        | #[i t] is put before the #[i s], other than in case of #[i sc-], #[i sf-], #[i sm-], #[i sp-], #[i st-] or #[i sv-]
+      when "Table1K-header"
+        | The Lenition System &mdash; Nouns Starting with #[i s]
+      when "Table1K-caption"
+        | #[+tlDb("AnTuisealTabharthachUatha")] &mdash; #[+tlDb("Table1K-header")]
+      when "1-7-5-p"
+        | No change is done to either masculine nouns or feminine nouns starting with vowels. See the table below.
+      when "Table1L-header"
+        | The Lenition System &mdash; Nouns Starting with a Vowel
+      when "Table1L-caption"
+        | #[+tlDb("AnTuisealTabharthachUatha")] &mdash; #[+tlDb("Table1L-header")]
+      when "1-7-6-p"
+        | No change is done to either masculine nouns or feminine nouns starting with #[i d] and #[i t]. See the table below.
+      when "Table1M-header"
+        | The Lenition System &mdash; Nouns Starting with #[i d] and #[i t]
+      when "Table1M-caption"
+        | #[+tlDb("AnTuisealTabharthachUatha")] &mdash; #[+tlDb("Table1M-header")]
+      default
+        - throw new Error(`No content for ${key} (en.pug)`)

@@ -1,0 +1,55 @@
+if docLang === 'EN'
+  mixin commonTlDb(key)
+    case key
+      when "teidealNaCaibidle"
+        | Chapter Title
+      when "Caibidil"
+        | Chapter
+      when "Firinscneach"
+        | Masculine
+      when "Baininscneach"
+        | Feminine
+      when "FirAgusBain"
+        | Masculine and Feminine
+      when "Consan"
+        | Consonant
+      when "Guta"
+        | Vowel
+      when "urú"
+        | eclipsis
+      when "séimhiú"
+        | lenition
+      when "Tábla"
+        | Table
+      when "Ginearálta"
+        | General
+      when "Uatha"
+        | Singular
+      when "Iolra"
+        | Plural
+      when "Ainmneach"
+        | Nominative
+      when "Ginideach"
+        | Genitive
+      when "GachTuiseal"
+        | Every Case
+      when "Nóta"
+        | Note
+      when "Inscne"
+        | Gender
+      when "GanAthrú"
+        | No change
+      when "saBhrí"
+        | meaning
+      when "SaBhrí-title"
+        | Meaning
+      when "nod-u"
+        | sg.
+      when "nod-iol"
+        | pl.
+      when "nod-sb"
+        | aut.
+      when "nó"
+        | or
+      default
+        - throw new Error(`No content for ${key}`)

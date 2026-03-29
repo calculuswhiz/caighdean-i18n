@@ -1,0 +1,129 @@
+//- Colleciton of mixins to help with generating chapter layout
+//- Make sure you only include this ONCE in the layout file
+
+-
+  // No, generators are not allowed, I checked.
+  function range(start, end, step = 1) {
+    const result = [];
+    for (let i = start; i <= end; i += step) 
+      result.push(i);
+    
+    return result;
+  }
+
+  const romanMap = {
+    1: 'i',
+    2: 'ii',
+    3: 'iii',
+    4: 'iv',
+    5: 'v',
+    6: 'vi',
+    7: 'vii',
+    8: 'viii',
+    9: 'ix',
+    10: 'x'
+  };
+
+  function romanCount(num) {
+    return range(1, num).map(n => romanMap[n]);
+  }
+
+  const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+  function alphaRange(endLetter, uppercase = false) {
+    const endIndex = alphabet.indexOf(endLetter.toLowerCase());
+    if (endIndex === -1)
+      throw new Error(`Invalid end letter: ${endLetter}`);
+
+    const letters = alphabet.slice(0, endIndex + 1);
+    return uppercase ? letters.toUpperCase() : letters;
+  }
+
+//- 
+  Retrieve key from db.
+  If getFromGa is true, get from gaDb regardless of docLang.
+  Otherwise, just get from expected language db.
+mixin renderKey(key, options = { getFromGa: false, getFromCommon: false })
+  -
+    const getFromGa = options.getFromGa ?? false;
+    const getFromCommon = options.getFromCommon ?? false;
+
+  if docLang === 'GA' || getFromGa
+    if getFromCommon
+      +commonGaDb(key)
+    else
+      +gaDb(key)
+  else
+    if getFromCommon
+      +commonTlDb(key)
+    else
+      //- - console.log(docLang, options);
+      +tlDb(key)
+    
+mixin sampleBox(samplePrefix, sampleCount)
+  table.samplebox(class="my-1")
+    tbody
+      each row in range(1, sampleCount)
+        tr
+          if docLang === 'GA'
+            td(class="bg-stone-100 border-1 border-[rgba(0,0,0,0.1)] p-1")
+              +renderKey(`${samplePrefix}${row}`)
+          else
+            td(class="bg-stone-100 border-1 border-[rgba(0,0,0,0.1)] p-1")
+              +renderKey(`${samplePrefix}${row}`, { getFromGa: true })
+            td(class="bg-stone-100 border-1 border-[rgba(0,0,0,0.1)] p-1")
+              +renderKey(`${samplePrefix}${row}`)
+
+//- Normal chapter content table (e.g. Table 1A)
+mixin markedTable(chapter, tableLetter, captionKey)
+  table(
+    class=`chapter-${chapter}`
+    id=`table${chapter}${tableLetter}`
+  )&attributes(attributes)
+    caption
+      b(class="pr-2")
+        +renderKey('Tábla', { getFromCommon: true })
+        | #{chapter}#{tableLetter}
+      +renderKey(captionKey)
+    block
+
+//- Generate a table body from array of rows (cell[][])
+mixin autoRows(rows)
+  tbody
+    each row in rows
+      tr
+        each cell in row
+          td #{cell}
+
+//- 
+  Generates heading element. Comes with id, anchor link
+  - The id is formatted as as sec_ + nav with dots replaced by underscores
+  If normal nav string is provided (1.2.3, etc.), 
+    - the nav is displayed before the title text
+  In the case where the nav contains .gp$x-$y
+    - do not display nav before title text
+mixin hx(level, nav, titleKey = null)
+  -
+    if (level < 1 || level > 5)
+      throw new Error(`Unsupported heading level: ${level}`);
+
+    const id = `sec_${nav.replace(/\./g, '_')}`;
+    const tag = `h${level}`;
+
+  #{tag}(id=id)
+    //- Anchor link
+    a(
+      href=`#${id}`, 
+      class="mx-2 text-blue-400 hover:text-blue-600 cursor-pointer select-none"
+    ) #
+    if (level > 1 && !nav.includes('.gp'))
+      | #{nav}&nbsp;
+    if titleKey != null
+      +renderKey(titleKey)
+  //- H1 reserved for chapter, so border just adds noise
+  section(
+    class=`${level > 1
+      ? "pl-1 border-l-3 border-gray-200" 
+      : ""
+    }`
+  )
+    block

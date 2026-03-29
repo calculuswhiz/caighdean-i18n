@@ -1,0 +1,54 @@
+mixin commonGaDb(key)
+  case key
+    when "teidealNaCaibidle"
+      | An tAlt
+    when "Caibidil"
+      | Caibidil
+    when "Firinscneach"
+      | Firinscneach
+    when "Baininscneach"
+      | Baininscneach
+    when "FirAgusBain"
+      | Firinscneach agus Baininscneach
+    when "Consan"
+      | Consan
+    when "Guta"
+      | Guta
+    when "urú"
+      | urú
+    when "séimhiú"
+      | séimhiú
+    when "Tábla"
+      | Tábla
+    when "Ginearálta"
+      | Ginearálta
+    when "Uatha"
+      | Uatha
+    when "Iolra"
+      | Iolra
+    when "Ainmneach"
+      | Ainmneach
+    when "Ginideach"
+      | Ginideach
+    when "GachTuiseal"
+      | Gach Tuiseal
+    when "Nóta"
+      | Nóta
+    when "Inscne"
+      | Inscne
+    when "GanAthrú"
+      | Gan athrú
+    when "saBhrí"
+      | sa bhrí
+    when "SaBhrí-title"
+      | Sa bhrí
+    when "nod-u"
+      | u.
+    when "nod-iol"
+      | iol.
+    when "nod-sb"
+      | sb.
+    when "nó"
+      | nó
+    default
+      - throw new Error(`No content for ${key}`)

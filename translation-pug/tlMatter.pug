@@ -1,0 +1,5 @@
+mixin link(url, text)
+  a(href=`${url}`) #{text}
+
+mixin inlineTl(lang, tlText)
+  span (#[strong #{lang}]: #[em #{tlText}])
