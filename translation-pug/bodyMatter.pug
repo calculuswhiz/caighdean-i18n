@@ -2,6 +2,8 @@
 //- Make sure you only include this ONCE in the layout file
 
 -
+  // JS helper functions
+
   // No, generators are not allowed, I checked.
   function range(start, end, step = 1) {
     const result = [];
@@ -37,6 +39,23 @@
     const letters = alphabet.slice(0, endIndex + 1);
     return uppercase ? letters.toUpperCase() : letters;
   }
+
+//- Mixins
+
+mixin chapterTemplate(chapterNum)
+  html
+    head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title: +renderKey(`${chapterNum}-title`)
+    link(rel="stylesheet", href="/src/index-pug.css")
+  body
+    header
+      #home-menu-container
+        a#menu-link(href="../")
+    #toc-container
+    +hx(1, chapterNum.toString(), `${chapterNum}-title`)
+      block
 
 //- 
   Retrieve key from db.
