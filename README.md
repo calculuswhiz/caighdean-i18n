@@ -46,39 +46,21 @@ For those interested, the following base will be used:
 - Various node.js scripts for quicker text processing (index+layout)
 - If heavy-duty application development is required beyond document generation, we will bring in React, but currently we are not actively using it, despite any project dependencies.
 
-## Using AsciiDoc
+### Amendment
 
-In the **translation** folder, each chapter has a main **.adoc** file and an **attributes.adoc** file. Outside, there is also a **CommonAttributes.adoc** file that holds very common text. The attributes are referenced in the main file. The processing script merges the two files, so we don't have to worry about using AsciiDoctor's macro system. The rendered HTML is then loaded to the page.
+The project is currently transitioning to using Pug for templating instead of AsciiDoc. The original attraction of AsciiDoc was the ability to output both PDF and HTML. However, due to the limiations of AsciiDoc, the table output forced the project into injected HTML anyway. As a result, the benefit of a multi-output markup language was found to be moot.
 
-Notes:
-- The attributes names have a version for each language, suffixed with `_en` and `_ga` respectively.
+Pure HTML, however, was also not desired as it comes with a lot of boilerplate and would involve heavy custom JS preprocessing. Pug was chosen as a middle ground, as it allows for easy templating and mixins, while still being able to output clean and semantic HTML.
 
-### Table standardization
-
-The base Asciidoc language is incapable of rendering any of the more complex tables without significant infrastructure programming (technical debt). As a result if a table is anything more complex than having a single header row, it should be rendered using direct html injection.
-
-```adoc
-[subs="attributes,replacements,macros"]
-++++
-<table class="chapter-7">
-// etc.
-++++
-```
-
-If a table has multiple sub-tables (e.g. 2A), it shall be grouped as one table. The tables will both be contained in the `tbody`, including the header:
-
-```html
-<table>
-  <!-- ... -->
-  <tbody>
-    <tr>
-      <td>
-        <!-- Sub-table here -->
-      </td>
-    </tr>
-  </tbody>
-</table>
-```
+The architecture is as follows:
+- translation-pug - Root folder for pug-based files.
+  - Some library files are at this root
+  - Each chapter has a folder
+    - The **dbs** folder contains the databases for translation lookups for that chapter. They are implemented as pug mixins.
+      - The per-language translation files are located in the correspondingly named **pug** files.
+    - The **layout.pug** dictates the layout of the chapter
+    - Any table mixins will be extracted into **tables.pug** for easier editing and readability.
+  - The **common** folder contains the common databases for translation lookups. It is the only folder that is not a chapter
 
 # Contributing
 
@@ -142,7 +124,7 @@ npm run generate-docs
   - This describes what happens when a nominative is changed to a genitive, for example, in a verbal noun. This will be translated as **genitive change**. Discussed further in ch 3.
 
 ## Abbreviations and sources
-Some of these may appear in annotations and comments in the Asciidoc code.
+Some of these may appear in annotations and comments in the translation code.
 - GT - Google Translate
 - FGB - Foclóir Gaeilge-Béarla, Ó Dónaill, 1977
 - Other sources may be mentioned inline directly
