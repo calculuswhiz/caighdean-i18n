@@ -1,0 +1,505 @@
+include ../../tlMatter.pug
+if docLang === 'EN'
+  mixin tl(tlText)
+    +inlineTl('EN', tlText)
+    
+  mixin tlDb(key)
+    case key
+      when "teidealNaCaibidle"
+        | The Noun
+      when "2-title"
+        | #[+renderKey("Caibidil", { getFromCommon: true })] 2 | #[+tlDb("teidealNaCaibidle")]
+      when "2-1-title"
+        | #[+renderKey("Ginearálta", { getFromCommon: true })]
+      when "declension-1"
+        | The First Declension
+      when "declension-2"
+        | The Second Declension
+      when "declension-3"
+        | The Third Declension
+      when "declension-4"
+        | The Fourth Declension
+      when "declension-5"
+        | The Fifth Declension
+      when "genPl"
+        | gen. pl.
+      when "meaning"
+        | meaning
+      when "datSg"
+        | #[i dat. sg.]
+      when "2-1-1-title"
+        | The Declensions
+      when "2-1-1-p1"
+        | The nouns can be divided into five declensions, according to genitive case form, as is seen in #[+link("#table2e", "table 2E")].
+      when "2-1-2-title"
+        | The Cases
+      when "2-1-2-a-title"
+        | The Nominative and the Accusative
+      when "2-1-2-a-p1"
+        | Both of these cases have the same form now, in the singular and in the plural, and they are both counted under the title #[i Nominative] in the declensions of nouns.
+      when "2-1-2-b-title"
+        | The Dative
+      when "2-1-2-b-p1"
+        | The form of the dative is also the same as the nominative, singular and plural (but see #[+link("#sec_2_3_3", "2.3.3")]), and that case is also counted under the title #[i Nominative].
+      when "2-1-2-c-title"
+        | The Genitive
+      when "2-1-2-c-p1"
+        | The form of the genitive in the different declensions is given in the tables in this chapter and in the description of the particular declensions.
+      when "2-1-2-d-title"
+        | The Vocative
+      when "2-1-2-d-p1"
+        | In the vocative case, the vocative particle #[i a] is put before the noun and the initial consonant of the following noun is lenited. The form of the vocative is the same as the nominative except in the first declension and does not need to be specified separately outside of that declension (see #[+link("#sec_2_2_3", "2.2.3")] and #[+link("#sec_2_2_4_c", "2.2.4(c)")]).
+      when "2-1-3-title"
+        | The Plural
+      when "2-1-3-p1"
+        | The plurals of nouns can be divided into two main classes: strong plurals and weak plurals. The two classes are described as follows:
+      when "2-1-3-a-title"
+        | Strong Plurals
+      when "2-1-3-a-p1"
+        | The plural of a noun is a strong plural if the noun&rsquo;s plural form is the same in all the cases.
+      when "Table2A-Title"
+        | Examples of Strong Plurals
+      when "Table2A-CornerHeading"
+        | The Declensions
+      when "Table2A-Irregular"
+        | Irregular Nouns
+      when "2-1-3-b-title"
+        | Weak Plurals
+      when "2-1-3-b-p1"
+        | The plural of a noun is a weak plural if the noun&rsquo;s plural form is not the same in the genitive plural as the noun&rsquo;s plural form in the other cases. This class includes:
+      when "2-1-3-b-i-p1"
+        | Nouns that end on a broad consonant and the ending consonant becomes slender in the nominative plural and the genitive singular, e.g., #[i fear], #[i tá na fir ag teacht], #[i hata an fhir]; #[i eitleán], #[i feictear na heitleáin sa spéir], #[i athraíodh roth an eitleáin]. Those nouns are only in the First Declension. An example is in the table below:
+      when "Table2B-Title"
+        | The First Declension &mdash; Weak Plural
+      when "2-1-3-b-ii-p1"
+        | Nouns that take an #[i a] in the nominative plural with neither syncope nor an exchange of vowel or vowels nor broadening in the nominative singular &mdash; lose the ending vowel #[i -a] in the genitive plural. Those plurals are mostly in the Second Declension, e.g., #[i géag crainn], #[i do ghéaga a shíneadh], #[i laige na ngéag]. This is shown in the table below:
+      when "Table2C-Title"
+        | The Second Declension &mdash; Weak Plural
+      when "2-1-3-b-ii-p2"
+        | Note that several nouns follow the same pattern as in the First Declension, e.g., #[i úll], #[i itheadh na húlla], #[i blas na n&#x2011;úll]; in the Third Declension, e.g., #[i tréad caorach], #[i tréada is comhaltas], #[i seoladh na dtréad]; and in the Fourth Declension, e.g., #[i gach aon neach], #[i na neacha daonna], #[i teacht na neach neamhshaolta].
+      when "2-1-3-b-iii-p1"
+        | A few nouns in the Second Declension, e.g., #[i súil], #[i leath na súile uirthi], #[i radharc na súl]; a few in the Third Declension, e.g., #[i mionn], #[i na mionnaí marbha], #[i dar bhrí na mionn]; a few in the Fourth Declension, e.g., #[i bó], #[i tá na ba sa gharraí], #[i cró na mbó]; a few in the Fifth Declension, e.g., #[i caora], #[i tá na caoirigh ann], #[i líon na gcaorach]; and an occasional irregular noun, e.g., #[i bean], #[i tá na mná ag teacht], #[i hataí na mban]; have a separate form in the genitive plural. Examples are shown in the table below:
+      when "Table2D-Title"
+        | Other Weak Plurals &mdash; Examples
+      when "2-1-4-title"
+        | Palatalization
+      when "2-1-4-p1"
+        | When a broad consonant is made slender, this is palatalization. An #[i -i-] is placed before the end consonant to indicate a palatalization, e.g., #[i cnoc], #[i cnoic]. The palatalization is done in the same way if the end-consonant has an #[i ae] in front, e.g., #[i aer], #[i aeir].
+      when "2-1-4-p2"
+        | It is customary to change certain vowels when the following consonant is narrowed:
+      when "2-1-4-a-p"
+        | #[i -ea-] and #[i -io-]  to #[i -i-], e.g., #[i ceann], #[i cinn]; #[i fionn], #[i finn] (but in certain monosyllabic nouns #[i ea-] to #[i ei-], e.g., #[i each], #[i eich]);
+      when "2-1-4-b-p"
+        | #[i -éa-] and #[i -ia-] to #[i éi-], e.g., #[i béal], #[i béil]; #[i iasc], #[i éisc];
+      when "2-1-4-c-p"
+        | #[i -ío-] to #[i -í-], e.g., #[i síol], #[i síl];
+      when "2-1-4-d-p"
+        | in the polysyllabic nouns, #[i -ach] to #[i -aigh], #[i -each] to #[i -igh], #[i -ioch] to #[i -igh], e.g., #[i bithiúnach], #[i bithiúnaigh]; #[i cléireach], #[i cléirigh]; #[i gaiscíoch], #[i gaiscígh]. That change applies to these monosyllabic nouns which were once written as disyllabic nouns, e.g., #[i dúch], #[i dúigh]; #[i fiach], #[i fiaigh]; and occasionally with other monosyllabic nouns, e.g., #[i fraoch], #[i fraoigh].
+      when "2-1-5-title"
+        | Broadening
+      when "2-1-5-p1"
+        | When a slender consonant is made broad, this is broadening. The #[i -i-] directly in front of the consonant is dropped to broaden the noun, e.g., #[i athair, athar; droim, droma.]
+      when "2-1-5-p2"
+        | It is customary to change certain vowels as follows when they are broadened:
+      when "2-1-5-a"
+        | #[i -ei-] and #[i -i-] to #[i -ea-], e.g., #[i greim], #[i greama]; #[i mil], #[i meala];
+      when "2-1-5-b"
+        | #[i -éi-] to #[i -éa-], e.g., #[i úinéir], #[i úinéara];
+      when "2-1-5-c"
+        | #[i -oi-] and #[i -ui-] to #[i -o-], e.g., #[i fuil], #[i fola]; #[i toil], #[i tola].
+      when "2-1-6-title"
+        | Syncopation
+      when "2-1-6-p"
+        | When a short, unaccented vowel or vowels are dropped from the word when it is inflected, this is syncopation, e.g., #[i cathair], #[i cathrach]; #[i obair], #[i oibre].
+      when "2-1-7-title"
+        | The Compound Word
+      when "2-1-7-p1"
+        | A compound word is made by connecting two words or more together, e.g, #[i bunscoil]; #[i príomhoifigeach]; #[i ríomheolaíocht]. The second word in a compound word is lenited, e.g., #[i deargbhuile]; #[i rósghairdín], except when #[i d], #[i n], #[i t], #[i l] or #[i s] come with it, e.g., #[i antráth]; #[i catsúil]. The hyphen is used in a compound:
+      when "2-1-7-a"
+        | between two vowels, e.g., #[i fo-aicme]; #[i mí-ádh]; #[i mí-iompar]; #[i ró-olc];
+      when "2-1-7-b"
+        | between common consonants, e.g., #[i droch-chaint]; #[i gearr-rás]; #[i gnáth-thuarastal];
+      when "2-1-7-c"
+        | between two prefixes, e.g., #[i comh-cheolfhoireann]; #[i mór-cheoldráma]; #[i sin-seanathair];
+      when "2-1-7-d"
+        | in contexts when the compound would be unrecognizable without the hyphen, for example, between the prefixes #[i do-], #[i fo-], #[i so-] and words starting with #[i bha-], #[i bhla-], #[i bhra-], #[i dha-], #[i gha-], #[i ghla-], #[i ghra-], #[i mha-], e.g., #[i do-ghlanta]; #[i fo-bhaile]; #[i so-mharaithe];
+      when "2-1-7-e"
+        | in specific titles and their initial letters, e.g., #[i an Ard-Chúirt]; #[i an tArd-Aighne]; #[i an Príomh-Aire]; #[i an Príomh-Bhreitheamh];
+      when "2-1-7-f"
+        | after #[i an-] (emphatic prefix) and after #[i dea-], e.g., #[i an-aimsir]; #[i dea-bhéas]. Note that the second word is not lenited in a compound word after #[i an-] when #[i d, t] or #[i s] follows it, e.g., #[i an-duine is ea é]; #[i an-drochaimsir] (see #[+link("chapter10-en.html#sec_10_2_12", "10.2.12")]).
+      when "2-1-7-notes-1"
+        | Two hyphens are placed in a compound word when it is necessary for the sake of clarity, e.g., #[i an-dea-aimsir]; #[i an-droch-chaint]; #[i iar-nua-aimseartha]; #[i an Leas-Phríomh-Aire].
+      when "2-1-7-notes-2"
+        | The placement of a hyphen is not needed in an administrative term with more than one prefix if the meaning of the term is clear without it, e.g., #[i comhfhochoiste]; #[i roghfhochoiste].
+      when "2-1-7-notes-3"
+        | Note if #[i iar] is coming before a title starting with a capital letter, the placement of a hyphen is not necessary between #[i iar] and the title, e.g., #[i an t&#x2011;iarArd-Reachtaire Cuntas agus Ciste].
+      when "Table2E-Title"
+        | #[+renderKey("2-1-8-title")]
+      when "Table2E-row1-cell2"
+        | Ends with a broad consonant, e.g., #[i bád], #[i cás], #[i ceol], #[i marcach].
+      when "Table2E-row1-cell3"
+        | Palatalization of the last consonant, e.g., #[i báid], #[i cáis], #[i ceoil], #[i marcaigh].
+      when "Table2E-row1-cell4"
+        | The form is usually the same as in the genitive singular, e.g., #[i báid], #[i marcaigh].
+      when "Table2E-row1-cell5"
+        | The form is usually the same as in the nominative singular, e.g., #[i bád], #[i marcach].
+      when "Table2E-row1-cell6"
+        | The form in the plural is completely the same. e.g., #[i cásanna], #[i ceolta]
+      when "Table2E-row2-cell1"
+        | Feminine, but not #[i im], #[i sliabh].
+      when "Table2E-row2-cell2"
+        | Ends with a consonant (broad or slender), e.g., #[i aisling], #[i áit], #[i baintreach], #[i bróg], #[i coill], #[i foirm], #[i muinín], #[i pian], #[i scornach], #[i tír].
+      when "Table2E-row2-cell3"
+        | Ends with #[i -e], e.g., #[i aislinge], #[i áite], #[i bróige], #[i coille], #[i foirme], #[i muiníne], #[i péine], #[i tíre]; or with #[i -(a)í], e.g., #[i baintrí], #[i scornaí].
+      when "Table2E-row2-cell4"
+        | Ends with #[i -a], e.g., #[i baintreacha], #[i bróga], #[i scornacha.]
+      when "Table2E-row2-cell5"
+        | The #[i -a] is omitted, e.g., #[i baintreach], #[i bróg], #[i scornach].
+      when "Table2E-row2-cell6"
+        | Ends with #[i -a], #[i -e], #[i -(e)acha], #[i -(e)anna], #[i -í], #[i -t(h)a], #[i -te] and is completely the same as the plural form, e.g., #[i aislingí, áiteanna, coillte, foirmeacha, pianta, tíortha].
+      when "Table2E-row3-cell1"
+        | Masculine and Feminine
+      when "Table2E-row3-cell2"
+        | Ends with a consonant (broad or slender), e.g., #[i bádóir], #[i éacht], #[i foráil], #[i gleann], #[i lus], #[i táin].
+      when "Table2E-row3-cell3"
+        | Ends with #[i -a], e.g., #[i bádóra], #[i éachta], #[i forála], #[i gleanna], #[i lusa], #[i tána].
+      when "Table2E-row3-cell4"
+        | Ends with #[i -a], #[i -acha], #[i -(a)í], #[i -(e)anna], #[i -ta], #[i -te] and the form is completely the same as in the plural, e.g., #[i bádóirí], #[i éachtaí], #[i forálacha], #[i gleannta], #[i lusanna], #[i táinte].
+      when "Table2E-row4-cell1"
+        | Masculine and Feminine
+      when "Table2E-row4-cell2"
+        | Ends with a vowel or with #[i -ín] (other than #[i muinín] and #[i muirín] (meaning #[i clann]) which are in the second declension), e.g., #[i acra], #[i cailín], #[i oibrí], #[i trá]. Does not change the genitive.
+      when "Table2E-row4-cell3"
+        | Ends with #[i -(a)í, -(e)anna, -(i)te, -(i)the, -nna, -nna] and the form is completely the same as in the plural, e.g., #[i acraí], #[i cailíní], #[i oibrithe], #[i tránna].
+      when "Table2E-row5-cell1"
+        | Feminine, except a few are Masculine
+      when "Table2E-row5-cell2"
+        | Ends with #[i -il, -in, -ir] or with a vowel, e.g., #[i athair], #[i cabhail], #[i cáin], #[i fiche].
+      when "Table2E-row5-cell3"
+        | Ends with a broad consonant, e.g., #[i athar], #[i cabhlach], #[i cánach], #[i fichead].
+      when "Table2E-row5-cell4"
+        | Ends with #[i -(e)acha], #[i -idí], #[i -na], #[i -ne] and the form is completely the same as in the plural, e.g., #[i aithreacha], #[i cabhlacha], #[i cánacha], #[i fichidí].
+      when "2-1-8-title"
+        | A Brief Overview of the Declensions
+      when "2-1-8-notes"
+        | As mentioned in #[+link("#sec_2_1_2", "2.1.2")], the form is the same in the Nominative Case, the Accusative Case and the Dative Case and all of them are included under the title Nominative.
+      when "2-2-title"
+        | The First Declension
+      when "2-2-1-title"
+        | The Singular
+      when "2-2-1-p"
+        | This declension includes most of the masculine nouns ending in a broad consonant in the nominative singular. The nouns in the first declension are all masculine.
+      when "2-2-2-title"
+        | The Genitive Singular
+      when "2-2-2-a"
+        | In the genitive singular, the last consonant is palatalized, e.g., #[i bord], #[i boird]; #[i nuachtán], #[i nuachtáin].
+      when "2-2-2-b"
+        | The changes under #[+link("#sec_2_1_4", "2.1.4")] apply with the palatalization, but #[i -ia-] is not changed to #[i -éi-] in these nouns: #[i Brian], #[i Briain]; #[i cliant], #[i cliaint]; #[i fiar], #[i fiair]; #[i giar], #[i giair]; #[i rian], #[i riain]; #[i srian], #[i sriain_]; and #[i trian], #[i triain].
+      when "2-2-2-c"
+        | #[i mac] is changed to #[i mic] in the genitive singular and in the genitive plural.
+      when "2-2-2-d"
+        | In the genitive singular, #[i -ea-] is changed to #[i -i-], e.g., #[i breac], #[i bric]; #[i cuireadh], #[i cuiridh]; #[i leiceann], #[i leicinn]; other than with certain monosyllabic nouns, e.g., #[i each], #[i eich].
+      when "2-2-3-title"
+        | The Vocative Singular
+      when "2-2-3-a"
+        | The form is usually the same in the vocative singular as in the genitive singular, e.g., #[i a Chorcaígh], #[i a mhic], #[i a Sheáin].
+      when "2-2-3-b-p"
+        | However, it is not customary to inflect in the vocative singular:
+      when "2-2-3-b-i"
+        | on collective names, e.g., #[i a chomhthionól]; #[i a phobal];
+      when "2-2-3-b-ii"
+        | on nouns used with a metaphorical meaning or as proper names, e.g., #[i a cheann cipín]; #[i a chumann]; #[i a ghrá geal]; #[i a rós geal]; #[i a rún]; #[i a stór];
+      when "2-2-3-b-iii"
+        | on nouns that have a definite genitive subject, e.g., #[i a Chléireach na Dála]; #[i a fhear an tí]; #[i a scáthán an chirt]; #[i a shólás na ndobrónach];
+      when "2-2-3-b-iv"
+        | on multi-word official titles, e.g., #[i a Cheann Comhairle]; #[i a Oifigeach Ealaíon]; #[i a Cheann Scoile].
+      when "2-2-4-title"
+        | The Plural
+      when "2-2-4-p1"
+        | There are both weak plurals and strong plurals in this declension. The nouns that palatalize the final consonant are weak plurals, e.g., #[i amhrán]; #[i amhráin]; or have #[i -a] with them without other changes, e.g., #[i nod]; #[i noda]; #[i úll]; #[i úlla]; in the genitive plural. All the other nouns are strong plurals.
+      when "2-2-4-p2"
+        | Note that the First Declension pattern appears in the genitive singular column in the following tables, namely, that the final consonant is palatalized and #[i -(e)ach] is changed to #[i -(a)igh].
+      when "2-2-4-a"
+        | Strong Plurals
+      when "Table2F-Title"
+        | Strong Plurals in the First Declension &mdash; Examples
+      when "Table2F-CornerHeading"
+        | Strong Plural Classes
+      when "Table2F-rh1-title"
+        | Nouns ending in #[i -ta], #[i -tha] in the singular
+      when "Table2F-rh1-p"
+        | Most of the monosyllabic nouns in which there is a long vowel (or diphthong) and end with #[i -l], #[i -n] (but not #[i -ll], #[i -nn]) in the nominative singular. #[i -tha] is put in the plural with occasional nouns ending with #[i -r] (but not #[i -rr]) in the nominative singular.
+      when "Table2F-rh2-title"
+        | Nouns ending with #[i -aí], #[i -i] in the plural
+      when "Table2F-rh2-p"
+        | Certain monosyllabic nouns ending with #[i -ch], and some in #[i -dh], in the nominative singular, as with some other nouns.
+      when "Table2F-rh3"
+        | Nouns ending with #[i -taí], #[i -thaí] in the plural
+      when "Table2F-rh4"
+        | Nouns ending with #[i -anna] in the plural
+      when "Table2F-rh5"
+        | Nouns ending with #[i -e] in the plural and syncopated
+      when "Table2F-rh6"
+        | Nouns ending with #[i -(e)acha] in the plural
+      when "Table2F-rh7"
+        | Nouns ending with #[i -te] in the plural
+      when "Table2F-rh8"
+        | Miscellaneous nouns
+      when "2-2-4-b"
+        | Weak Plurals
+      when "Table2G-Title"
+        | Weak Plurals in the First Declension &mdash; Examples
+      when "Table2G-CornerHeading"
+        | Weak Plural Classes
+      when "Table2G-rh1"
+        | Nouns that get narrowed in the nominative plural
+      when "Table2G-rh2"
+        | Nouns ending in #[i -a] in the nominative plural
+      when "2-2-4-c-title"
+        | The Vocative Plural
+      when "2-2-4-c-p1"
+        | The vocative plural form is the same as the nominative plural except in the weak plurals. Normally, #[i -a] is added to the form inf the nominative singular of those nouns to form the vocative plural, e.g., #[i Corcaíoch], #[i a Chorcaíocha]; #[i fear], #[i a fheara]; #[i Gael], #[i a Ghaela].
+      when "2-3-title"
+        | The Second Declension
+      when "2-3-1-title"
+        | The Singular
+      when "2-3-1-p"
+        | Nouns in this declension end with a consonant, broad or slender, in the nominative singular. They are all feminine other than #[i im] and #[i sliabh].
+      when "2-3-2-title"
+        | The Genitive Singular
+      when "2-3-2-a"
+        | An #[i -e] is put with the nominative singular and if it ends with a broad consonant, it is palatalized, e.g., #[i bróg], #[i bróige]; #[i coill], #[i coille]; #[i earr], #[i eirre]; except with polysyllabic nouns ending with #[i -(e)ach].
+      when "2-3-2-b"
+        | When polysyllabic nouns end with #[i -(e)ach], #[i -(a)í] is made from #[i -(e)ach], e.g., #[i scornach], #[i scornaí]; #[i cailleach], #[i caillí].
+      when "2-3-2-c-p1"
+        | The palatalization changes mentioned in #[+link("#sec_2_1_4", "2.1.4")] apply to the nouns as follows:
+      when "2-3-2-c-i"
+        | #[i -ea-] to #[i -ei-], e.g., #[i beach], #[i beiche] (#[i -ea-] is changed to #[i -i-] in a monosyllabic noun, e.g., #[i beann], #[i binne]; #[i cearc], #[i circe]; and in the unaccented syllable of the polysyllabic noun, e.g., #[i bruinneall], #[i bruinnille]; #[i ficheall], #[i fichille]); and
+      when "2-3-2-c-ii"
+        | #[i -ia-] to #[i -i-] in the word #[i scian], #[i scine].
+      when "2-3-3-title"
+        | The Dative Singular
+      when "2-3-3-p1"
+        | There are two forms of the dative singular when nouns end with a broad consonant:
+      when "2-3-3-a"
+        | one form is the same as the nominative singular;
+      when "2-3-3-b"
+        | a distinct old form used only in well-established expressions, e.g., #[i cur i gcéill]; #[i cur dá chois]; #[i airgead ar láimh]; #[i bolg le gréin]; #[i imithe le gealaigh]; #[i cur de láimh]; #[i faoi bhois an chait]; #[i bíonn a chroí ar a bhois i gcónaí aige]; #[i ar éill]; etc.
+      when "2-3-4-title"
+        | The Plural
+      when "2-3-4-p1"
+        | There are both weak plurals and strong plurals in this declension.
+      when "2-3-4-p2"
+        | Note that the pattern of the Second Declension is seen in the genitive singular column in the following tables. That is, the genitive singular ends with #[i -e] and the final consonant is palatalized if it is a broad consonant, and for polysyllabic nouns ending in #[i -each], #[i -each] is changed to #[i -(a)í].
+      when "2-3-4-a-title"
+        | Strong Plurals
+      when "Table2H-Title"
+        | Strong Plurals in the Second Declension &mdash; Examples
+      when "Table2H-CornerHeading"
+        | Strong Plural Classes
+      when "Table2H-rh1"
+        | Nouns ending in #[i -a] in the plural and syncopated, whose vowels are broadened or exchanged
+      when "Table2H-rh2"
+        | Nouns ending in #[i -(e)anna] in the plural
+      when "Table2H-rh3-title"
+        | Nouns ending in #[i -í] in the plural
+      when "Table2H-rh3-p"
+        | Polysyllabic nouns ending in a slender consonant in the nominative singular.
+      when "Table2H-rh4-title"
+        | Nouns ending in #[i -(e)acha] in the plural
+      when "Table2H-rh4-p"
+        | Monosyllabic nouns, and polysyllabic nouns ending in a slender consonant in the nominative singular (other than #[i iníon] which ends on a broad consonant).
+      when "Table2H-rh5-title"
+        | Nouns ending in #[i -ta] in the plural
+      when "Table2H-rh5-p"
+        | Some monosyllabic nouns ending in a broad #[i -l] or #[i -n] in the nominative singular.
+      when "Table2H-rh6-title"
+        | Nouns ending in #[i -te] in the plural
+      when "Table2H-rh6-p"
+        | The occasional noun ending in a slender #[i -l] or #[i -n] in the nominative singular.
+      when "Table2H-rh7"
+        | Nouns ending in #[i -e] in the plural and that are syncopated
+      when "Table2H-rh8"
+        | Miscellaneous nouns
+      when "2-3-4-b-title"
+        | Weak Plurals
+      when "Table2I-Title"
+        | Weak Plurals in the Second Declension &mdash; Examples
+      when "Table2I-CornerHeading"
+        | Weak Plural Classes
+      when "Table2I-rh1"
+        | Monosyllabic and polysyllabic nouns ending in a broad consonant in the nominative singular and have a #[i -a] added in the nominative plural and no other changes
+      when "Table2I-rh2"
+        | Nouns that are broadened and end in #[i -a] in the nominative plural
+      when "Table2I-rh3"
+        | The occasional noun ending in a slender consonant in the nominative singular and ending in #[i -e] in the nominative plural
+      when "2-4-title"
+        | The Third Declension
+      when "2-4-1-title"
+        | The Singular
+      when "2-4-1-a"
+        | This declension has the polysyllabic nouns ending in #[i -áil], #[i -aíl], #[i -cht], #[i -éir], #[i -eoir], #[i -irt], #[i -óir], #[i -úil], #[i -úint], #[i -úir] (other than country names that are in the second declension, e.g., #[i an Ailgéir], #[i an Bhrasaíl], #[i an Iodáil]).
+      when "2-4-1-b"
+        | This declension also has some nouns ending in a consonant, broad or slender, in the nominative singular. For these nouns, the genitive singular ends with #[i -a] and the final consonant is broadened if necessary, e.g., #[i buachaill], #[i buachalla]; #[i gleann], #[i gleanna] (see #[+link("#sec_2_1_5", "2.1.5")]).
+      when "2-4-2-title"
+        | The Genitive Singular
+      when "2-4-2-a"
+        | As with in #[+link("#sec_2_4_1_b", "(b)")] above, the genitive singular ends with #[i -a].
+      when "2-4-2-b"
+        | It is customary to change #[i -io-] to #[i -ea-] in the genitive singular for monosyllabic nouns, e.g., #[i crios], #[i creasa]; #[i lios], #[i leasa]; but not #[i cion] (meaning #[i coir], #[+tl("crime")]), #[i ciona].
+      when "2-4-2-c"
+        | The #[i -t] is dropped in the genitive singular from nouns ending in #[i -int], e.g., #[i oiliúint], #[i oiliúna] (with these exceptions #[i cogaint], #[i coganta]; #[i cosaint], #[i cosanta]; #[i seachaint], #[i seachanta]). The #[i -th-] is turned to #[i -t] when nouns end in #[i -irt], e.g., #[i imirt], #[i imeartha].
+      when "2-4-3-title"
+        | The Plural
+      when "2-4-3-p1"
+        | There are both weak plurals and strong plurals in this declension.
+      when "2-4-3-p2"
+        | Note that the pattern of the Third Declension is seen in the genitive singular column in the following table. That is, the genitive singular ends with #[i -a] and the last consonant is broadened if it is a slender consonant.
+      when "2-4-3-a-title"
+        | Strong Plurals
+      when "Table2J-Title"
+        | Strong Plurals in the Third Declension &mdash; Examples
+      when "Table2J-CornerHeading"
+        | Strong Plural Classes
+      when "Table2J-rh1-title"
+        | Nouns ending in #[i -(a)í] in the plural
+      when "Table2J-rh1-p"
+        | Polysyllabic nouns (masculine other than a few, e.g., #[i altóir, seanmóir]) ending in #[i -éir], #[i -eoir], #[i -óir], #[i -úir], and polysyllabic nouns (feminine other than few, e.g., #[i bunreacht], #[i comhlacht], #[i complacht], #[i gnólacht]) ending in #[i -cht], #[i -irt], #[i -úint] in the nominative singular.
+      when "Table2J-rh2-title"
+        | Nouns ending in #[i -(e)anna] in the plural
+      when "Table2J-rh2-p"
+        | Polysyllabic masculine nouns (other than some that are feminine, e.g., #[i cuid], #[i dleacht], #[i troid], #[i uaim]).
+      when "Table2J-rh3"
+        | Nouns ending in #[i -a] in the plural and syncopated, broadened or exchanged vowels
+      when "Table2J-rh4-title"
+        | Nouns ending in #[i -acha] in the plural
+      when "Table2J-rh4-p1"
+        | Polysyllabic feminine nouns ending in a slender #[i -l], #[i -n] or #[i -r] (exceptions: #[i anam], #[i anama], #[i anamacha]; #[i úim], #[i úma], #[i úmacha]) in the nominative singular.
+      when "Table2J-rh4-p2"
+        | Note that this is also how the genitive singular of a noun ending in #[i -aíl] is formed, e.g., #[i feadaíl], #[i feadaíola]; #[i sceamhaíl], #[i sceamhaíola].
+      when "Table2J-rh5-title"
+        | Nouns ending in #[i -ta] in the plural
+      when "Table2J-rh5-p"
+        | Monosyllabic nouns ending in #[i -l] or #[i -n] that is broad (masculine) or slender (feminine) in the nominative singular.
+      when "Table2J-rh6"
+        | Nouns ending in #[i -te] in the plural
+      when "Table2J-rh7-title"
+        | Miscellaneous Nouns
+      when "2-4-3-b-title"
+        | Weak Plurals
+      when "Table2K-Title"
+        | Weak Plurals in the Third Declension &mdash; Examples
+      when "Table2K-CornerHeading"
+        | Weak Plural Classes
+      when "Table2K-Col1Text"
+        | Miscellaneous nouns
+      when "2-5-title"
+        | The Fourth Declension
+      when "2-5-1-title"
+        | The Singular
+      when "2-5-1-a"
+        | This declension has the masculine nouns ending in #[i -ín], diminutives ending in #[i -ín], the majority of the nouns ending in a vowel, and a small number of other nouns.
+      when "2-5-1-b"
+        | Occupational nouns ending in #[i -(a)í] or #[i -aire] are also masculine, e.g., #[i ceannaí], #[i cócaire].
+      when "2-5-1-c"
+        | Abstract nouns ending in #[i -e] and formed from an adjective are feminine, e.g., #[i airde], #[i gile], #[i saoirse].
+      when "2-5-2-title"
+        | The Genitive Singular
+      when "2-5-2-a"
+        | Nouns of this declension do not undergo any change in the genitive singular.
+      when "2-5-2-b"
+        | The diminutive #[i -ín] normally is feminine if the original word is a common feminine word. There are exceptions, e.g., #[i paidir] (fem.), #[i paidrín] (masc.); #[i toit] (fem.), #[i toitín] (masc.). However, all diminutives are declined as masculine nouns in the genitive and vocative singular, e.g., #[i an bheainín bheag], #[i teach an bheainín bhig], #[i a bheainín bhig].
+      when "2-5-2-c"
+        | There are some nouns in this Declension that do not have any plural, e.g., #[i cruach] (meaning #[i miotal] (#[i EN: metal])), #[i dóthain], #[i gorta], #[i lucht] (meaning #[i daoine] (#[i EN: people])), #[i oiread], #[i tobac].
+      when "2-5-3-title"
+        | The Plural
+      when "2-5-3-p1"
+        | The vast majority of the nouns in this declension have strong plurals.
+      when "2-5-3-p2"
+        | Note that the Fourth Declension&rsquo;s pattern is shown in the singular column in the table below. That is, the form of the genitive singular is the same as the form of the nominative plural.
+      when "2-5-3-a-title"
+        | Strong Plurals
+      when "Table2L-Title"
+        | Strong Plurals in the Fourth Declension &mdash; Examples
+      when "Table2L-CornerHeading"
+        | Strong Plural Classes
+      when "Table2L-rh1-title"
+        | Nouns ending in #[i -(a)í] in the plural
+      when "Table2L-rh1-p"
+        | Nouns ending in #[i -a], #[i -e], #[i -ín] in the singular.
+      when "Table2L-rh2-title"
+        | Nouns ending in #[i -te] in the plural
+      when "Table2L-rh2-p"
+        | Occasional nouns ending in #[i -le], #[i -ne] in the singular.
+      when "Table2L-rh3-title"
+        | Nouns ending in #[i -(i)the] in the plural
+      when "Table2L-rh3-p"
+        | Nouns ending in #[i -(a)í], #[i -aoi], #[i -é] in the singular (#[i -í-] is not shortened in the monosyllabic nouns, other than #[i ní], #[i nithe]).
+      when "Table2L-rh4-title"
+        | Nouns ending in #[i -nna] in the plural
+      when "Table2L-rh4-p"
+        | Nouns ending in #[i -á], #[i -ao], #[i -eá], #[i -eo], #[i -ia], #[i -ó], #[i -ogha], #[i -ú], #[i -ua] in the singular.
+      when "Table2L-rh5"
+        | Some nouns ending in a consonant in the singular and have #[i -(e)anna] added in the plural and no other changes
+      when "Table2L-rh6"
+        | Occasional nouns ending in #[i -ite] in the plural
+      when "Table2L-rh7"
+        | Miscellaneous nouns
+      when "2-5-3-Note"
+        | Note that in the following nouns, which do not necessarily have a plural form, also belong to this declension: #[i cruach] (meaning #[i miotal] (#[i EN: metal])), #[i dóthain], #[i gorta], #[i iomad], #[i lucht] (meaning #[i daoine] (#[i EN: people])), #[i oiread], #[i tobac]; along with some personal names, e.g., #[i Cáit], #[i Liam], #[i Pilib], #[i Siobhán], #[i Uileag].
+      when "2-6-title"
+        | The Fifth Declension
+      when "2-6-1-title"
+        | The Singular
+      when "2-6-1-a"
+        | The majority of the nouns in this declension are feminine.
+      when "2-6-1-b"
+        | This declension also has some nouns ending in slender consonants or a vowel in the nominative singular and on a broad consonant (#[i -ch], #[i -d], #[i -(n)n], #[i -r]) in the genitive singular.
+      when "2-6-2-title"
+        | The Plural
+      when "2-6-2-p1"
+        | The vast majority of nouns in this declension have strong plurals.
+      when "2-6-2-p2"
+        | Note that the pattern of the Fifth Declension is shown in the genitive singular column of the following table. That is, the genitive singular ends with broad consonants #[i -ch], #[i -d], #[i -(n)n], #[i -r] (other than rare exceptions, e.g., #[i Nollaig], #[i Nollag]).
+      when "2-6-2-a-title"
+        | Strong Plurals
+      when "Table2M-Title"
+        | Strong Plurals in the Fifth Declension &mdash; Examples
+      when "Table2M-CornerHeading"
+        | Strong Plural Classes
+      when "Table2M-rh1-title"
+        | Nouns ending in #[i -(e)acha] in the plural
+      when "Table2M-rh1-p1"
+        | Feminine nouns ending in #[i -il], #[i -in], #[i -ir] in the nominative singular (exceptions: #[i siúr, siúrach]). In the genitive singular, the final consonant of a monosyllabic noun is broadened, and other nouns do not undergo syncopation, and an #[i -ach] is added (exceptions: #[i cathaoir], #[i cathaoireach]).
+      when "Table2M-rh1-p2"
+        | Polysyllabic nouns are syncopated if they have a short vowel in the final syllable and #[i -(e)ach] is added.
+      when "Table2M-rh2-title"
+        | The occasional nouns that ends in #[i -inn], #[i -ir] in the nominative singular, broadened in the genitive singular and ending in #[i -(e)acha] in the plural.
+      when "Table2M-rh2-p"
+        | (Exceptions: #[i bráthair], #[i bráthar], #[i bráithre].)
+      when "Table2M-rh3-title"
+        | Nouns ending in #[i -na], #[i -ne] in the plural
+      when "Table2M-rh3-p"
+        | Feminine nouns ending in a vowel in the nominative singular and in #[i -n] in the genitive singular (exceptions: #[i díle], #[i díleann], #[i dílí]; #[i lacha], #[i lachan], #[i lachain] (gen. sg. #[i lachan])).
+      when "Table2M-rh4-title"
+        | Nouns ending in #[i -idí] in the plural
+      when "Table2M-rh4-p1"
+        | The occasional masculine noun ending in #[i -d] in the genitive singular.
+      when "Table2M-rh4-p2"
+        | Note that #[i daichead] (#[i daichid], #[i daichidí]) belongs to the first declension.
+      when "Table2M-rh5"
+        | Miscellaneous nouns
+      when "2-7-title"
+        | Irregular Nouns
+      when "2-7-p"
+        | The inflections of the following nouns do not correspond to any of the declensions:
+      when "Table2N-Title"
+        | Irregular Nouns &mdash; Examples
+      when "Table2N-masc"
+        | masc.
+      when "Table2N-fem"
+        | fem.
+      when "2-7-Note"
+        | Note that a distinct old form of the word #[i lá] is used in the old phrase #[i ar athló], e.g., #[i Tá an Dáil ar athló].
+      default
+        - throw new Error(`No content for ${key} (en.pug)`)

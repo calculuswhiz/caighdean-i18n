@@ -1,0 +1,502 @@
+include ../../tlMatter.pug
+
+mixin gaDb(key)
+  case key
+    when "teidealNaCaibidle"
+      | An tAinmfhocal
+    when "2-title"
+      | #[+renderKey("Caibidil", { getFromCommon: true })] 2 | #[+gaDb("teidealNaCaibidle")]
+    when "2-1-title"
+      | #[+renderKey("Ginearálta", { getFromCommon: true })]
+    when "declension-1"
+      | An Chéad Díochlaonadh
+    when "declension-2"
+      | An Dara Díochlaonadh
+    when "declension-3"
+      | An Tríú Díochlaonadh
+    when "declension-4"
+      | An Ceathrú Díochlaonadh
+    when "declension-5"
+      | An Cúigiú Díochlaonadh
+    when "genPl"
+      | gin. iol.
+    when "meaning"
+      | sa bhrí
+    when "datSg"
+      | #[i tabh. uatha]
+    when "2-1-1-title"
+      | Na Díochlaontaí
+    when "2-1-1-p1"
+      | Roinntear na hainmfhocail ina gcúig dhíochlaonadh, de réir fhoirm a dtuisil ghinidigh, mar a léirítear i #[+link("#table2e", "dtábla 2E")].
+    when "2-1-2-title"
+      | Na Tuisil
+    when "2-1-2-a-title"
+      | An tAinmneach agus an Cuspóireach
+    when "2-1-2-a-p1"
+      | Is ionann foirm don dá thuiseal seo anois, san uatha agus san iolra, agus áirítear iad araon faoin teideal #[i Ainmneach] i ndíochlaonadh na n&#x2011;ainmfhocal.
+    when "2-1-2-b-title"
+      | An Tabharthach
+    when "2-1-2-b-p1"
+      | Is ionann foirm freisin don tabharthach agus don ainmneach, uatha agus iolra (ach féach #[+link("#sec_2_3_3", "2.3.3")]), agus áirítear an tuiseal sin freisin faoin teideal #[i Ainmneach].
+    when "2-1-2-c-title"
+      | An Ginideach
+    when "2-1-2-c-p1"
+      | Tugtar foirm an ghinidigh sna díochlaontaí éagsúla sna táblaí sa chaibidil seo agus sa chur síos ar na díochlaontaí ar leithligh.
+    when "2-1-2-d-title"
+      | An Gairmeach
+    when "2-1-2-d-p1"
+      | Sa tuiseal gairmeach, cuirtear an mhír ghairmeach #[i a] roimh an ainmfhocal agus séimhítear túschonsan an ainmfhocail ar a lorg. Is ionann foirm don ghairmeach agus don ainmneach ach amháin sa Chéad Díochlaonadh agus ní gá an gairmeach a shonrú ar leithligh taobh amuigh den díochlaonadh sin (féach #[+link("#sec_2_2_3", "2.2.3")] agus #[+link("#sec_2_2_4_c", "2.2.4(c)")]).
+    when "2-1-3-title"
+      | An tIolra
+    when "2-1-3-p1"
+      | Is féidir iolraí na n&#x2011;ainmfhocal a roinnt ina dhá bpríomhaicme: tréaniolraí agus lagiolraí. Déantar cur síos ar an dá aicme anseo thíos:
+    when "2-1-3-a-title"
+      | Tréaniolraí
+    when "2-1-3-a-p1"
+      | Tugtar tréaniolra ar iolra ainmfhocail i gcás gurb ionann foirm iolra an ainmfhocail sna tuisil go léir.
+    when "Table2A-Title"
+      | Samplaí de Thréaniolraí
+    when "Table2A-CornerHeading"
+      | An Díochlaonadh
+    when "Table2A-Irregular"
+      | Ainmfhocail Neamhrialta
+    when "2-1-3-b-title"
+      | Lagiolraí
+    when "2-1-3-b-p1"
+      | Tugtar lagiolra ar iolra ainmfhocail i gcás nach ionann foirm an ainmfhocail sa ghinideach iolra agus foirm an ainmfhocail sna tuisil eile san iolra. Leis an aicme sin, baineann:
+    when "2-1-3-b-i-p1"
+      | Ainmfhocail a chríochnaíonn ar chonsan leathan agus a gcaolaítear a gconsan deiridh san ainmneach iolra agus sa ghinideach uatha, e.g., #[i fear], #[i tá na fir ag teacht], #[i hata an fhir]; #[i eitleán], #[i feictear na heitleáin sa spéir], #[i athraíodh roth an eitleáin]. Is sa Chéad Díochlaonadh amháin atá na hainmfhocail sin. Léirítear sampla sa tábla thíos:
+    when "Table2B-Title"
+      | An Chéad Díochlaonadh &mdash; Lagiolraí
+    when "2-1-3-b-ii-p1"
+      | Ainmfhocail a ghabhann #[i -a] san ainmneach iolra gan coimriú ná malartú guta nó gutaí ná leathnú ar an ainmneach uatha &mdash; cailleann siad an guta deiridh #[i -a] sa ghinideach iolra. Is sa Dara Díochlaonadh is mó atá na hiolraí sin, e.g., #[i géag crainn], #[i do ghéaga a shíneadh], #[i laige na ngéag]. Léirítear sampla sa tábla thíos:
+    when "Table2C-Title"
+      | An Dara Díochlaonadh &mdash; Lagiolraí
+    when "2-1-3-b-ii-p2"
+      | Tabhair faoi deara go bhfuil roinnt ainmfhocal a leanann an patrún céanna sa Chéad Díochlaonadh, e.g., #[i úll], #[i itheadh na húlla], #[i blas na n&#x2011;úll]; sa Tríú Díochlaonadh, e.g., #[i tréad caorach], #[i tréada is comhaltas], #[i seoladh na dtréad]; agus sa Cheathrú Díochlaonadh, e.g., #[i gach aon neach], #[i na neacha daonna], #[i teacht na neach neamhshaolta].
+    when "2-1-3-b-iii-p1"
+      | Dornán ainmfhocal sa Dara Díochlaonadh, e.g., #[i súil], #[i leath na súile uirthi], #[i radharc na súl]; dornán sa Tríú Díochlaonadh, e.g., #[i mionn], #[i na mionnaí marbha], #[i dar bhrí na mionn]; dornán sa Cheathrú Díochlaonadh, e.g., #[i bó], #[i tá na ba sa gharraí], #[i cró na mbó]; dornán sa Chúigiú Díochlaonadh, e.g., #[i caora], #[i tá na caoirigh ann], #[i líon na gcaorach]; agus corr-ainmfhocal neamhrialta, e.g., #[i bean], #[i tá na mná ag teacht], #[i hataí na mban]; a bhfuil foirm leithleach orthu sa ghinideach iolra. Léirítear samplaí sa tábla thíos:
+    when "Table2D-Title"
+      | Lagiolraí Eile &mdash; Samplaí
+    when "2-1-4-title"
+      | Caolú
+    when "2-1-4-p1"
+      | Is é is caolú ann consan leathan a dhéanamh caol. Cuirtear #[i -i-] roimh an gconsan deiridh chun caolú a chur in iúl, e.g., #[i cnoc], #[i cnoic]. Déantar an caolú céanna i gcás consan deiridh a bhfuil ae roimhe, e.g., #[i aer], #[i aeir].
+    when "2-1-4-p2"
+      | Is iondúil go n&#x2011;athraítear gutaí áirithe nuair a chaolaítear an consan ina ndiaidh:
+    when "2-1-4-a-p"
+      | #[i -ea-] agus #[i -io-] go #[i -i-], e.g., #[i ceann], #[i cinn]; #[i fionn], #[i finn] (ach in ainmfhocail aonsiollacha áirithe #[i ea-] go #[i ei-], e.g., #[i each, eich]);
+    when "2-1-4-b-p"
+      | #[i -éa-] agus #[i -ia-] go #[i -éi-], e.g., #[i béal], #[i béil]; #[i iasc], #[i éisc];
+    when "2-1-4-c-p"
+      | #[i -ío-] go #[i -í-], e.g., #[i síol], #[i síl];
+    when "2-1-4-d-p"
+      | in ainmfhocail ilsiollacha, #[i -ach] go #[i -aigh], #[i -each] go #[i -igh], #[i -íoch] go #[i -ígh], e.g., #[i bithiúnach], #[i bithiúnaigh]; #[i cléireach], #[i cléirigh]; #[i gaiscíoch], #[i gaiscígh]. Baineann an t&#x2011;athrú sin leis na hainmfhocail aonsiollacha seo a leanas a scríobhtaí tráth mar fhocail dhéshiollacha, e.g., #[i dúch], #[i dúigh]; #[i fiach], #[i fiaigh]; agus le corr-ainmfhocal aonsiollach eile, e.g., #[i fraoch], #[i fraoigh].
+    when "2-1-5-title"
+      | Leathnú
+    when "2-1-5-p1"
+      | Is é is leathnú ann consan caol a dhéanamh leathan. Déantar an #[i -i-] roimh an gconsan deiridh a ligean ar lár chun ainmfhocal a leathnú, e.g., #[i athair, athar; droim, droma.]
+    when "2-1-5-p2"
+      | Is iondúil go n&#x2011;athraítear gutaí áirithe mar a leanas nuair a leathnaítear iad:
+    when "2-1-5-a"
+      | #[i -ei-] agus #[i -i-] go #[i -ea-], e.g., #[i greim], #[i greama]; #[i mil], #[i meala];
+    when "2-1-5-b"
+      | #[i -éi-] go #[i -éa-], e.g., #[i úinéir], #[i úinéara];
+    when "2-1-5-c"
+      | #[i -oi-] agus #[i -ui-] go #[i -o-], e.g., #[i fuil], #[i fola]; #[i toil], #[i tola].
+    when "2-1-6-title"
+      | Coimriú
+    when "2-1-6-p"
+      | Is é is coimriú ann guta nó gutaí atá gairid neamhaiceanta a ligean ar lár as focal nuair a dhéantar infhilleadh air, e.g., #[i cathair], #[i cathrach]; #[i obair], #[i oibre].
+    when "2-1-7-title"
+      | An Comhfhocal
+    when "2-1-7-p1"
+      | Déantar comhfhocal nuair a cheanglaítear dhá fhocal nó níos mó le chéile, e.g., #[i bunscoil]; #[i príomhoifigeach]; #[i ríomheolaíocht]. Séimhítear an dara focal i gcomhfhocal, e.g., #[i deargbhuile]; #[i rósghairdín], ach amháin nuair a thagann #[i d], #[i n], #[i t], #[i l] nó #[i s] le chéile, e.g., #[i antráth]; #[i catsúil]. Úsáidtear an fleiscín i gcomhfhocal:
+    when "2-1-7-a"
+      | idir dhá ghuta, e.g., #[i fo-aicme]; #[i mí-ádh]; #[i mí-iompar]; #[i ró-olc];
+    when "2-1-7-b"
+      | idir comhchonsain, e.g., #[i droch-chaint]; #[i gearr-rás]; #[i gnáth-thuarastal];
+    when "2-1-7-c"
+      | idir dhá réimír, e.g., #[i comh-cheolfhoireann]; #[i mór-cheoldráma]; #[i sin-seanathair];
+    when "2-1-7-d"
+      | i gcásanna inar bhaol go mbeadh an comhfhocal do-aitheanta d'éagmais an fhleiscín, mar shampla idir na réimíreanna #[i do-], #[i fo-], #[i so-] agus focail dar tús #[i bha-], #[i bhla-], #[i bhra-], #[i dha-], #[i gha-], #[i ghla-], #[i ghra-], #[i mha-], e.g., #[i do-ghlanta]; #[i fo-bhaile]; #[i so-mharaithe];
+    when "2-1-7-e"
+      | i dteidil shainiúla agus ceannlitreacha orthu, e.g., #[i an Ard-Chúirt]; #[i an tArd-Aighne]; #[i an Príomh-Aire]; #[i an Príomh-Bhreitheamh];
+    when "2-1-7-f"
+      | i ndiaidh #[i an-] (réimír threise) agus i ndiaidh #[i dea-], e.g., #[i an-aimsir]; #[i dea-bhéas]. Tabhair faoi deara nach séimhítear an dara focal i gcomhfhocal i ndiaidh #[i an-] nuair a thagann #[i d, t] nó #[i s] ar a lorg, e.g., #[i an-duine is ea é]; #[i an-drochaimsir] (féach #[+link("chapter10-ga.html#sec_10_2_12", "10.2.12")]).
+    when "2-1-7-notes-1"
+      | Cuirtear dhá fhleiscín i gcomhfhocal nuair is gá ar mhaithe leis an tsoiléireacht, e.g., #[i an-dea-aimsir]; #[i an-droch-chaint]; #[i iar-nua-aimseartha]; #[i an Leas-Phríomh-Aire].
+    when "2-1-7-notes-2"
+      | Ní gá fleiscín a chur i dtéarma riaracháin ina bhfuil níos mó ná réimír amháin má tá brí an téarma soiléir gan é, e.g., #[i comhfhochoiste]; #[i roghfhochoiste].
+    when "2-1-7-notes-3"
+      | Tabhair faoi deara, má tá #[i iar] ag teacht roimh theideal a thosaíonn ar cheannlitir, nach gá fleiscín a chur idir #[i iar] agus an teideal, e.g., #[i an t&#x2011;iarArd-Reachtaire Cuntas agus Ciste].
+    when "Table2E-Title"
+      | #[+renderKey("2-1-8-title")]
+    when "Table2E-row1-cell2"
+      | Críochnaíonn ar chonsan leathan, e.g., #[i bád], #[i cás], #[i ceol], #[i marcach].
+    when "Table2E-row1-cell3"
+      | Caolaítear an consan deiridh, e.g., #[i báid], #[i cáis], #[i ceoil], #[i marcaigh].
+    when "Table2E-row1-cell4"
+      | Bíonn ar aon fhoirm de ghnáth leis an nginideach uatha, e.g., #[i báid], #[i marcaigh].
+    when "Table2E-row1-cell5"
+      | Bíonn ar aon fhoirm de ghnáth leis an ainmneach uatha, e.g., #[i bád], #[i marcach].
+    when "Table2E-row1-cell6"
+      | Is ionann an fhoirm sna tuisil go léir, e.g., #[i cásanna], #[i ceolta]
+    when "Table2E-row2-cell1"
+      | Baininscneach, ach #[i im], #[i sliabh].
+    when "Table2E-row2-cell2"
+      | Críochnaíonn ar chonsan (leathan nó caol), e.g., #[i aisling], #[i áit], #[i baintreach], #[i bróg], #[i coill], #[i foirm], #[i muinín], #[i pian], #[i scornach], #[i tír].
+    when "Table2E-row2-cell3"
+      | Críochnaíonn ar #[i -e], e.g., #[i aislinge], #[i áite], #[i bróige], #[i coille], #[i foirme], #[i muiníne], #[i péine], #[i tíre]; nó ar #[i -(a)í], e.g., #[i baintrí], #[i scornaí].
+    when "Table2E-row2-cell4"
+      | Críochnaíonn ar #[i -a], e.g., #[i baintreacha], #[i bróga], #[i scornacha.]
+    when "Table2E-row2-cell5"
+      | Cailltear an #[i -a], e.g., #[i baintreach], #[i bróg], #[i scornach].
+    when "Table2E-row2-cell6"
+      | Críochnaíonn ar #[i -a], #[i -e], #[i -(e)acha], #[i -(e)anna], #[i -í], #[i -t(h)a], #[i -te] agus is ionann an fhoirm sna tuisil go léir, e.g., #[i aislingí, áiteanna, coillte, foirmeacha, pianta, tíortha].
+    when "Table2E-row3-cell1"
+      | Firinscneach agus Baininscneach
+    when "Table2E-row3-cell2"
+      | Críochnaíonn ar chonsan (leathan nó caol), e.g., #[i bádóir], #[i éacht], #[i foráil], #[i gleann], #[i lus], #[i táin].
+    when "Table2E-row3-cell3"
+      | Críochnaíonn ar #[i -a], e.g., #[i bádóra], #[i éachta], #[i forála], #[i gleanna], #[i lusa], #[i tána].
+    when "Table2E-row3-cell4"
+      | Críochnaíonn ar #[i -a], #[i -acha], #[i -(a)í], #[i -(e)anna], #[i -ta], #[i -te] agus is ionann an fhoirm sna tuisil go léir, e.g., #[i bádóirí], #[i éachtaí], #[i forálacha], #[i gleannta], #[i lusanna], #[i táinte].
+    when "Table2E-row4-cell1"
+      | Firinscneach agus Baininscneach
+    when "Table2E-row4-cell2"
+      | Críochnaíonn ar ghuta nó ar #[i -ín] (seachas #[i muinín] agus #[i muirín] (sa bhrí #[i clann]) atá sa dara díochlaonadh), e.g., #[i acra], #[i cailín], #[i oibrí], #[i trá]. Ní athraíonn sa ghinideach.
+    when "Table2E-row4-cell3"
+      | Críochnaíonn ar #[i -(a)í, -(e)anna, -(i)te, -(i)the, -nna, -nna] agus is ionann an fhoirm sna tuisil go léir, e.g., #[i acraí], #[i cailíní], #[i oibrithe], #[i tránna].
+    when "Table2E-row5-cell1"
+      | Baininscneach, ach roinnt bheag Firinscneach
+    when "Table2E-row5-cell2"
+      | Críochnaíonn ar #[i -il], #[i -in], #[i -ir] nó ar ghuta, e.g., #[i athair], #[i cabhail], #[i cáin], #[i fiche].
+    when "Table2E-row5-cell3"
+      | Críochnaíonn ar chonsan leathan, e.g., #[i athar], #[i cabhlach], #[i cánach], #[i fichead].
+    when "Table2E-row5-cell4"
+      | Críochnaíonn ar #[i -(e)acha], #[i -idí], #[i -na], #[i -ne] agus is ionann an fhoirm sna tuisil go léir, e.g., #[i aithreacha], #[i cabhlacha], #[i cánacha], #[i fichidí].
+    when "2-1-8-title"
+      | Gearrléiriú ar na Díochlaontaí
+    when "2-1-8-notes"
+      | Mar a luadh in #[+link("#sec_2_1_2", "2.1.2")], is ionann foirm don Tuiseal Ainmneach, don Tuiseal Cuspóireach agus don Tuiseal Tabharthach agus áirítear iad uile faoin teideal Ainmneach.
+    when "2-2-title"
+      | An Chéad Díochlaonadh
+    when "2-2-1-title"
+      | An tUatha
+    when "2-2-1-p"
+      | Is leis an díochlaonadh seo a bhaineann formhór na n&#x2011;ainmfhocal firinscneach a chríochnaíonn ar chonsan leathan san ainmneach uatha. Is firinscneach do na hainmfhocail go léir sa chéad díochlaonadh.
+    when "2-2-2-title"
+      | An Ginideach Uatha
+    when "2-2-2-a"
+      | Sa ghinideach uatha, caolaítear an consan deiridh, e.g., #[i bord], #[i boird]; #[i nuachtán], #[i nuachtáin].
+    when "2-2-2-b"
+      | Gabhann na hathruithe a luaitear faoi #[+link("#sec_2_1_4", "2.1.4")] leis an gcaolú ach ní athraítear #[i -ia-] go #[i -éi-] sna hainmfhocail seo: #[i Brian], #[i Briain]; #[i cliant], #[i cliaint]; #[i fiar], #[i fiair]; #[i giar], #[i giair]; #[i rian], #[i riain]; #[i srian], #[i sriain_]; agus #[i trian], #[i triain].
+    when "2-2-2-c"
+      | Athraítear #[i mac] go #[i mic] sa ghinideach uatha agus san ainmneach iolra.
+    when "2-2-2-d"
+      | Sa ghinideach uatha, athraítear #[i -ea-] go #[i -i-], e.g., #[i breac], #[i bric]; #[i cuireadh], #[i cuiridh]; #[i leiceann], #[i leicinn]; seachas i gcás ainmfhocail aonsiollacha áirithe, e.g., #[i each], #[i eich].
+    when "2-2-3-title"
+      | An Gairmeach Uatha
+    when "2-2-3-a"
+      | Is ionann foirm de ghnáth don ghairmeach uatha agus don ghinideach uatha, e.g., #[i a Chorcaígh], #[i a mhic], #[i a Sheáin].
+    when "2-2-3-b-p"
+      | Ní gnách, áfach, infhilleadh sa ghairmeach uatha:
+    when "2-2-3-b-i"
+      | ar shlua-ainmneacha, e.g., #[i a chomhthionól]; #[i a phobal];
+    when "2-2-3-b-ii"
+      | ar ainmfhocail a úsáidtear le brí mheafarach nó mar ainmneacha ceana, e.g., #[i a cheann cipín]; #[i a chumann]; #[i a ghrá geal]; #[i a rós geal]; #[i a rún]; #[i a stór];
+    when "2-2-3-b-iii"
+      | ar ainmfhocal a bhfuil ginideach cinnte faoi réir aige, e.g., #[i a Chléireach na Dála]; #[i a fhear an tí]; #[i a scáthán an chirt]; #[i a shólás na ndobrónach];
+    when "2-2-3-b-iv"
+      | ar theideal oifige ilfhoclach, e.g., #[i a Cheann Comhairle]; #[i a Oifigeach Ealaíon]; #[i a Cheann Scoile].
+    when "2-2-4-title"
+      | An tIolra
+    when "2-2-4-p1"
+      | Tá idir lagiolraí agus tréaniolraí sa díochlaonadh seo. Is lagiolraí iad na hainmfhocail a gcaolaítear a ndeireadh, e.g., #[i amhrán]; #[i amhráin]; nó a gcuirtear #[i -a] leo gan aon athrú eile, e.g., #[i nod]; #[i noda]; #[i úll]; #[i úlla]; san ainmneach iolra. Tréaniolraí is ea na hainmfhocail eile.
+    when "2-2-4-p2"
+      | Tabhair faoi deara go bhfuil patrún an Chéad Díochlaonta le feiceáil i gcolún an ghinidigh uatha sna táblaí ina dhiaidh seo, is é sin, go gcaolaítear an consan deiridh agus go n&#x2011;athraítear #[i -(e)ach] go #[i -(a)igh].
+    when "2-2-4-a"
+      | Tréaniolraí
+    when "Table2F-Title"
+      | Tréaniolraí sa Chéad Díochlaonadh &mdash; Samplaí
+    when "Table2F-CornerHeading"
+      | Aicmí Tréaniolraí
+    when "Table2F-rh1-title"
+      | Ainmfhocail a chríochnaíonn ar #[i -ta], #[i -tha] san iolra
+    when "Table2F-rh1-p"
+      | Formhór na n&#x2011;ainmfhocal aonsiollach ina bhfuil guta fada (nó défhoghar) agus a chríochnaíonn ar #[i -l], #[i -n] (ach ní ar #[i -ll], #[i -nn]) san ainmneach uatha. Cuirtear #[i -tha] san iolra le corr-ainmfhocal a chríochnaíonn ar #[i -r] (ach ní ar #[i -rr]) san ainmneach uatha.
+    when "Table2F-rh2-title"
+      | Ainmfhocail a chríochnaíonn ar #[i -aí], #[i -í] san iolra
+    when "Table2F-rh2-p"
+      | Ainmfhocail ilsiollacha áirithe a chríochnaíonn ar #[i -ch], agus roinnt ar #[i -dh], san ainmneach uatha, mar aon le roinnt ainmfhocail eile.
+    when "Table2F-rh3"
+      | Ainmfhocail a chríochnaíonn ar #[i -taí], #[i -thaí] san iolra
+    when "Table2F-rh4"
+      | Ainmfhocail a chríochnaíonn ar #[i -anna] san iolra
+    when "Table2F-rh5"
+      | Ainmfhocail a chríochnaíonn ar #[i -e] san iolra agus a dhéantar a choimriú
+    when "Table2F-rh6"
+      | Ainmfhocail a chríochnaíonn ar #[i -(e)acha] san iolra 
+    when "Table2F-rh7"
+      | Ainmfhocail a chríochnaíonn ar #[i -te] san iolra
+    when "Table2F-rh8"
+      | Ainmfhocail ilghnéitheacha
+    when "2-2-4-b"
+      | Lagiolraí
+    when "Table2G-Title"
+      | Lagiolraí sa Chéad Díochlaonadh &mdash; Samplaí
+    when "Table2G-CornerHeading"
+      | Aicmí Lagiolraí
+    when "Table2G-rh1"
+      | Ainmfhocail a chaolaítear san ainmneach iolra
+    when "Table2G-rh2"
+      | Ainmfhocail a chríochnaíonn ar #[i -a] san ainmneach iolra
+    when "2-2-4-c-title"
+      | An Gairmeach Iolra
+    when "2-2-4-c-p1"
+      | Is ionann foirm don ghairmeach iolra agus don ainmneach iolra ach amháin i gcás na lagiolraí. Is gnách #[i -a] a chur le foirm an ainmnigh uatha de na hainmfhocail sin chun an gairmeach iolra a dhéanamh, e.g., #[i Corcaíoch], #[i a Chorcaíocha]; #[i fear], #[i a fheara]; #[i Gael], #[i a Ghaela].
+    when "2-3-title"
+      | An Dara Díochlaonadh
+    when "2-3-1-title"
+      | An tUatha
+    when "2-3-1-p"
+      | Críochnaíonn ainmfhocail an díochlaonta seo ar chonsan, leathan nó caol, san ainmneach uatha. Is baininscneach dóibh uile seachas #[i im] agus #[i sliabh].
+    when "2-3-2-title"
+      | An Ginideach Uatha
+    when "2-3-2-a"
+      | Cuirtear #[i -e] leis an ainmneach uatha agus más consan leathan is críoch dó caolaítear é, e.g., #[i bróg], #[i bróige]; #[i coill], #[i coille]; #[i earr], #[i eirre]; ach amháin i gcás ainmfhocail ilsiollacha a chríochnaíonn ar #[i -(e)ach].
+    when "2-3-2-b"
+      | I gcás ainmfhocail ilsiollacha a chríochnaíonn ar #[i -(e)ach], déantar #[i -(a)í] den #[i -(e)ach], e.g., #[i scornach], #[i scornaí]; #[i cailleach], #[i caillí].
+    when "2-3-2-c-p1"
+      | Gabhann na hathruithe a luaitear faoi #[+link("#sec_2_1_4", "2.1.4")] leis an gcaolú faoi réir na n&#x2011;ainmfhocal seo a leanas:
+    when "2-3-2-c-i"
+      | #[i -ea-] go #[i -ei-], e.g., #[i beach], #[i beiche] (athraítear #[i -ea-] go #[i -i-] san ainmfhocal aonsiollach, e.g., #[i beann], #[i binne]; #[i cearc], #[i circe]; agus sa siolla neamhaiceanta d'ainmfhocail ilsiollacha, e.g., #[i bruinneall], #[i bruinnille]; #[i ficheall], #[i fichille]); agus
+    when "2-3-2-c-ii"
+      | #[i -ia-] go #[i -i-] san fhocal #[i scian], #[i scine].
+    when "2-3-3-title"
+      | An Tabharthach Uatha
+    when "2-3-3-p1"
+      | Tá dhá fhoirm den tabharthach uatha ann i gcás ainmfhocail a chríochnaíonn ar chonsan leathan:
+    when "2-3-3-a"
+      | foirm is ionann agus foirm an ainmnigh uatha;
+    when "2-3-3-b"
+      | seanfhoirm leithleach nach n&#x2011;úsáidtear ach in abairtíní seanbhunaithe, e.g., #[i cur i gcéill]; #[i cur dá chois]; #[i airgead ar láimh]; #[i bolg le gréin]; #[i imithe le gealaigh]; #[i cur de láimh]; #[i faoi bhois an chait]; #[i bíonn a chroí ar a bhois i gcónaí aige]; #[i ar éill]; etc.
+    when "2-3-4-title"
+      | An tIolra
+    when "2-3-4-p1"
+      | Tá idir lagiolraí agus tréaniolraí sa díochlaonadh seo.
+    when "2-3-4-p2"
+      | Tabhair faoi deara go bhfuil patrún an Dara Díochlaonadh le feiceáil i gcolún an ghinidigh uatha sna táblaí ina dhiaidh seo, is é sin, go gcríochnaíonn an ginideach uatha ar #[i -e] agus go gcaolaítear an consan deiridh más consan leathan é, agus i gcás ainmfhocail ilsiollacha a chríochnaíonn ar #[i -(e)ach], go n&#x2011;athraítear #[i -(e)ach] go #[i -(a)í].
+    when "2-3-4-a-title"
+      | Tréaniolraí
+    when "Table2H-Title"
+      | Tréaniolraí sa Dara Díochlaonadh &mdash; Samplaí
+    when "Table2H-CornerHeading"
+      | Aicmí Tréaniolraí
+    when "Table2H-rh1"
+      | Ainmfhocail a chríochnaíonn ar #[i -a] san iolra agus a ndéantar coimriú, leathnú nó malartú ar a ngutaí
+    when "Table2H-rh2"
+      | Ainmfhocail a chríochnaíonn ar #[i -(e)anna] san iolra
+    when "Table2H-rh3-title"
+      | Ainmfhocail a chríochnaíonn ar #[i -í] san iolra
+    when "Table2H-rh3-p"
+      | Ainmfhocail ilsiollacha a chríochnaíonn ar chonsan caol san ainmneach uatha.
+    when "Table2H-rh4-title"
+      | Ainmfhocail a chríochnaíonn ar #[i -(e)acha] san iolra
+    when "Table2H-rh4-p"
+      | Ainmfhocail aonsiollacha, agus ainmfhocail ilsiollacha a chríochnaíonn ar chonsan caol san ainmneach uatha (seachas #[i iníon] a chríochnaíonn ar chonsan leathan).
+    when "Table2H-rh5-title"
+      | Ainmfhocail a chríochnaíonn ar #[i -ta] san iolra
+    when "Table2H-rh5-p"
+      | Roinnt ainmfhocail aonsiollacha a chríochnaíonn ar #[i -l] nó #[i -n] leathan san ainmneach uatha.
+    when "Table2H-rh6-title"
+      | Ainmfhocail a chríochnaíonn ar #[i -te] san iolra
+    when "Table2H-rh6-p"
+      | Corr-ainmfhocal a chríochnaíonn ar #[i -l] nó #[i -n] caol san ainmneach uatha.
+    when "Table2H-rh7"
+      | Ainmfhocail a chríochnaíonn ar #[i -e] san iolra agus a dhéantar a choimriú
+    when "Table2H-rh8"
+      | Ainmfhocail ilghnéitheacha
+    when "2-3-4-b-title"
+      | Lagiolraí
+    when "Table2I-Title"
+      | Lagiolraí sa Dara Díochlaonadh &mdash; Samplaí
+    when "Table2I-CornerHeading"
+      | Aicmí Lagiolraí
+    when "Table2I-rh1"
+      | Ainmfhocail aonsiollacha agus ilsiollacha a chríochnaíonn ar chonsan leathan san ainmneach uatha agus a gcuirtear #[i -a] leo san ainmneach iolra gan aon athrú eile
+    when "Table2I-rh2"
+      | Ainmfhocail a leathnaítear agus a chríochnaíonn ar #[i -a] san ainmneach iolra
+    when "Table2I-rh3"
+      | Corr-ainmfhocal a chríochnaíonn ar chonsan caol san ainmneach uatha agus a chríochnaíonn ar #[i -e] san ainmneach iolra
+    when "2-4-title"
+      | An Tríú Díochlaonadh
+    when "2-4-1-title"
+      | An tUatha
+    when "2-4-1-a"
+      | Is leis an díochlaonadh seo a bhaineann ainmfhocail ilsiollacha a chríochnaíonn ar #[i -áil], #[i -aíl], #[i -cht], #[i -éir], #[i -eoir], #[i -irt], #[i -óir], #[i -úil], #[i -úint], #[i -úir] (seachas i gcás ainmneacha tíortha atá sa Dara Díochlaonadh, e.g., #[i an Ailgéir], #[i an Bhrasaíl], #[i an Iodáil]).
+    when "2-4-1-b"
+      | Is leis an díochlaonadh seo freisin a bhaineann roinnt ainmfhocal a chríochnaíonn ar chonsan, leathan nó caol, san ainmneach uatha. I gcás na n&#x2011;ainmfhocal sin, críochnaíonn an ginideach uatha ar #[i -a] agus leathnaítear an consan deiridh más gá, e.g., #[i buachaill], #[i buachalla]; #[i gleann], #[i gleanna] (féach #[+link("#sec_2_1_5", "2.1.5")]).
+    when "2-4-2-title"
+      | An Ginideach Uatha
+    when "2-4-2-a"
+      | Mar a luadh in #[+link("#sec_2_4_1_b", "(b)")] thuas, críochnaíonn an ginideach uatha ar #[i -a].
+    when "2-4-2-b"
+      | Is iondúil go n&#x2011;athraítear #[i -io-] go #[i -ea-] sa ghinideach uatha i gcás ainmfhocail aonsiollacha, e.g., #[i crios], #[i creasa]; #[i lios], #[i leasa]; ach #[i cion] (sa bhrí #[i coir]), #[i ciona].
+    when "2-4-2-c"
+      | Ligtear an #[i -t] ar lár sa ghinideach uatha as ainmfhocail a chríochnaíonn ar #[i -int], e.g., #[i oiliúint], #[i oiliúna] (ach amháin sna heisceachtaí #[i cogaint], #[i coganta]; #[i cosaint], #[i cosanta]; #[i seachaint], #[i seachanta]). Déantar #[i -th-] den #[i -t] i gcás ainmfhocail a chríochnaíonn ar #[i -irt], e.g., #[i imirt], #[i imeartha].
+    when "2-4-3-title"
+      | An tIolra
+    when "2-4-3-p1"
+      | Tá idir lagiolraí agus tréaniolraí sa díochlaonadh seo.
+    when "2-4-3-p2"
+      | Tabhair faoi deara go bhfuil patrún an Tríú Díochlaonadh le feiceáil i gcolún an ghinidigh uatha sna táblaí ina dhiaidh seo, is é sin, go gcríochnaíonn an ginideach uatha ar #[i -a] agus go leathnaítear an consan deiridh más consan caol é.
+    when "2-4-3-a-title"
+      | Tréaniolraí
+    when "Table2J-Title"
+      | Tréaniolraí sa Tríú Díochlaonadh &mdash; Samplaí
+    when "Table2J-CornerHeading"
+      | Aicmí Tréaniolraí
+    when "Table2J-rh1-title"
+      | Ainmfhocail a chríochnaíonn ar #[i -(a)í] san iolra
+    when "Table2J-rh1-p"
+      | Ainmfhocail ilsiollacha (firinscneach seachas corrcheann, e.g., #[i altóir, seanmóir]) a chríochnaíonn ar #[i -éir], #[i -eoir], #[i -óir], #[i -úir], agus ainmfhocail ilsiollacha (baininscneach seachas corrcheann, e.g., #[i bunreacht], #[i comhlacht], #[i complacht], #[i gnólacht]) a chríochnaíonn ar #[i -cht], #[i -irt], #[i -úint] san ainmneach uatha.
+    when "Table2J-rh2-title"
+      | Ainmfhocail a chríochnaíonn ar #[i -(e)anna] san iolra
+    when "Table2J-rh2-p"
+      | Ainmfhocail fhirinscneacha ilsiollacha (seachas roinnt ainmfhocal atá baininscneach, e.g., #[i cuid], #[i dleacht], #[i troid], #[i uaim]).
+    when "Table2J-rh3"
+      | Ainmfhocail a chríochnaíonn ar #[i -a] san iolra agus a ndéantar coimriú, leathnú nó malartú ar a ngutaí
+    when "Table2J-rh4-title"
+      | Ainmfhocail a chríochnaíonn ar #[i -acha] san iolra
+    when "Table2J-rh4-p1"
+      | Ainmfhocail ilsiollacha bhaininscneacha a chríochnaíonn ar #[i -l], #[i -n] nó #[i -r] caol (eisceachtaí: #[i anam], #[i anama], #[i anamacha]; #[i úim], #[i úma], #[i úmacha]) san ainmneach uatha.
+    when "Table2J-rh4-p2"
+      | Tabhair faoi deara gur mar sin a chumtar ginideach uatha ainmfhocal a chríochnaíonn ar #[i -aíl] freisin, e.g., #[i feadaíl], #[i feadaíola]; #[i sceamhaíl], #[i sceamhaíola].
+    when "Table2J-rh5-title"
+      | Ainmfhocail a chríochnaíonn ar #[i -ta] san iolra
+    when "Table2J-rh5-p"
+      | Ainmfhocail aonsiollacha a chríochnaíonn ar #[i -l] nó #[i -n] leathan (firinscneach) nó caol (baininscneach) san ainmneach uatha.
+    when "Table2J-rh6"
+      | Ainmfhocail a chríochnaíonn ar #[i -te] san iolra
+    when "Table2J-rh7-title"
+      | Ainmfhocail ilghnéitheacha
+    when "2-4-3-b-title"
+      | Lagiolraí
+    when "Table2K-Title"
+      | Lagiolraí sa Tríú Díochlaonadh &mdash; Samplaí
+    when "Table2K-CornerHeading"
+      | Aicmí Lagiolraí
+    when "Table2K-Col1Text"
+      | Ainmfhocail ilghnéitheacha
+    when "2-5-title"
+      | An Ceathrú Díochlaonadh
+    when "2-5-1-title"
+      | An tUatha
+    when "2-5-1-a"
+      | Is leis an díochlaonadh seo a bhaineann ainmfhocail fhirinscneacha a chríochnaíonn ar #[i -ín], díspeagthaí a chríochnaíonn ar #[i -ín], formhór na n&#x2011;ainmfhocal a chríochnaíonn ar ghuta, agus líon beag ainmfhocail eile.
+    when "2-5-1-b"
+      | Is firinscneach freisin d'ainmneacha ceirde a chríochnaíonn ar #[i -(a)í] nó #[i -aire], e.g., #[i ceannaí], #[i cócaire].
+    when "2-5-1-c"
+      | Is baininscneach d'ainmfhocail theibí a chríochnaíonn ar #[i -e] agus a chumtar ó aidiachtaí, e.g., #[i airde], #[i gile], #[i saoirse].
+    when "2-5-2-title"
+      | An Ginideach Uatha
+    when "2-5-2-a"
+      | Ní théann aon athrú foirme ar ainmfhocail an díochlaonta seo sa ghinideach uatha.
+    when "2-5-2-b"
+      | Is baininscneach de ghnáth don díspeagadh #[i -ín], más focal baininscneach coitianta an bunfhocal. Tá eisceachtaí ann, e.g., #[i paidir] (bain.), #[i paidrín] (fir.); #[i toit] (bain.), #[i toitín] (fir.). Is mar ainmfhocal firinscneach, áfach, a dhíochlaontar gach díspeagadh sa ghinideach agus sa ghairmeach uatha, e.g., #[i an bheainín bheag], #[i teach an bheainín bhig], #[i a bheainín bhig].
+    when "2-5-2-c"
+      | Tá roinnt ainmfhocal sa Díochlaonadh seo nach bhfuil aon uimhir iolra acu, e.g., #[i cruach] (sa bhrí #[i miotal]), #[i dóthain], #[i gorta], #[i lucht] (sa bhrí #[i daoine]), #[i oiread], #[i tobac].
+    when "2-5-3-title"
+      | An tIolra
+    when "2-5-3-p1"
+      | Tréaniolraí atá ag formhór mór na n&#x2011;ainmfhocal sa díochlaonadh seo.
+    when "2-5-3-p2"
+      | Tabhair faoi deara go bhfuil patrún an Cheathrú Díochlaonadh le feiceáil i gcolún an uatha sa tábla ina dhiaidh seo, is é sin, gurb ionann foirm an ghinidigh uatha agus foirm an ainmnigh uatha.
+    when "2-5-3-a-title"
+      | Tréaniolraí
+    when "Table2L-Title"
+      | Tréaniolraí sa Cheathrú Díochlaonadh &mdash; Samplaí
+    when "Table2L-CornerHeading"
+      | Aicmí Tréaniolraí
+    when "Table2L-rh1-title"
+      | Ainmfhocail a chríochnaíonn ar #[i -(a)í] san iolra
+    when "Table2L-rh1-p"
+      | Ainmfhocail a chríochnaíonn ar #[i -a], #[i -e], #[i -ín] san uatha.
+    when "Table2L-rh2-title"
+      | Ainmfhocail a chríochnaíonn ar #[i -te] san iolra
+    when "Table2L-rh2-p"
+      | Corr-ainmfhocal a chríochnaíonn ar #[i -le], #[i -ne] san uatha.
+    when "Table2L-rh3-title"
+      | Ainmfhocail a chríochnaíonn ar #[i -(i)the] san iolra
+    when "Table2L-rh3-p"
+      | Ainmfhocail a chríochnaíonn ar #[i -(a)í], #[i -aoi], #[i -é] san uatha (ní ghiorraítear #[i -í-] sna hainmfhocail aonsiollacha, seachas #[i ní], #[i nithe]).
+    when "Table2L-rh4-title"
+      | Ainmfhocail a chríochnaíonn ar #[i -nna] san iolra
+    when "Table2L-rh4-p"
+      | Ainmfhocail a chríochnaíonn ar #[i -á], #[i -ao], #[i -eá], #[i -eo], #[i -ia], #[i -ó], #[i -ogha], #[i -ú], #[i -ua] san uatha.
+    when "Table2L-rh5"
+      | Roinnt ainmfhocal a chríochnaíonn ar chonsan san uatha agus a gcuirtear #[i -(e)anna] leo san iolra gan aon athrú eile
+    when "Table2L-rh6"
+      | Corr-ainmfhocal a chríochnaíonn ar #[i -ite] san iolra
+    when "Table2L-rh7"
+      | Ainmfhocail ilghnéitheacha
+    when "2-5-3-Note"
+      | Tabhair faoi deara go mbaineann na hainmfhocail seo a leanas, nach dual dóibh foirm iolra a bheith orthu, leis an díochlaonadh seo freisin: #[i cruach] (sa bhrí #[i miotal]), #[i dóthain], #[i gorta], #[i iomad], #[i lucht] (sa bhrí #[i daoine]), #[i oiread], #[i tobac]; mar aon le hainmneacha pearsanta áirithe, e.g., #[i Cáit], #[i Liam], #[i Pilib], #[i Siobhán], #[i Uileag].
+    when "2-6-title"
+      | An Cúigiú Díochlaonadh
+    when "2-6-1-title"
+      | An tUatha
+    when "2-6-1-a"
+      | Is baininscneach d'fhormhór na n&#x2011;ainmfhocal sa díochlaonadh seo.
+    when "2-6-1-b"
+      | Is leis an díochlaonadh seo freisin a bhaineann roinnt ainmfhocal a chríochnaíonn ar chonsan caol nó ar ghuta san ainmneach uatha agus ar chonsan leathan (#[i -ch], #[i -d], #[i -(n)n], #[i -r]) sa ghinideach uatha.
+    when "2-6-2-title"
+      | An tIolra
+    when "2-6-2-p1"
+      | Tréaniolraí atá ag formhór mór na n&#x2011;ainmfhocal atá sa díochlaonadh seo.
+    when "2-6-2-p2"
+      | Tabhair faoi deara go bhfuil patrún an Chúigiú Díochlaonadh le feiceáil i gcolún an ghinidigh uatha sa tábla ina dhiaidh seo, is é sin, críochnaíonn an ginideach uatha ar na consain leathana #[i -ch], #[i -d], #[i -(n)n], #[i -r] (seachas correisceacht, e.g., #[i Nollaig], #[i Nollag]).
+    when "2-6-2-a-title"
+      | Tréaniolraí
+    when "Table2M-Title"
+      | Tréaniolraí sa Chúigiú Díochlaonadh &mdash; Samplaí
+    when "Table2M-CornerHeading"
+      | Aicmí Tréaniolraí
+    when "Table2M-rh1-title"
+      | Ainmfhocail a chríochnaíonn ar #[i -(e)acha] san iolra
+    when "Table2M-rh1-p1"
+      | Ainmfhocail bhaininscneacha a chríochnaíonn ar #[i -il], #[i -in], #[i -ir] san ainmneach uatha (eisceacht: #[i siúr, siúrach]). Sa ghinideach uatha, leathnaítear consan deiridh ainmfhocal aonsiollach, agus ainmfhocal eile nach ndéantar coimriú orthu, agus cuirtear #[i -ach] leo (eisceacht: #[i cathaoir], #[i cathaoireach]).
+    when "Table2M-rh1-p2"
+      | Coimrítear ainmfhocail ilsiollacha más guta gearr atá sa siolla deiridh acu agus cuirtear #[i -(e)ach] leo.
+    when "Table2M-rh2-title"
+      | Corr-ainmfhocal a chríochnaíonn ar #[i -inn], #[i -ir] san ainmneach uatha, a leathnaítear sa ghinideach uatha agus a chríochnaíonn ar #[i -(e)acha] san iolra.
+    when "Table2M-rh2-p"
+      | (Eisceacht: #[i bráthair], #[i bráthar], #[i bráithre].)
+    when "Table2M-rh3-title"
+      | Ainmfhocail a chríochnaíonn ar #[i -na], #[i -ne] san iolra
+    when "Table2M-rh3-p"
+      | Ainmfhocail bhaininscneacha a chríochnaíonn ar ghuta san ainmneach uatha agus ar #[i -n] sa ghinideach uatha (eisceachtaí: #[i díle], #[i díleann], #[i dílí]; #[i lacha], #[i lachan], #[i lachain] (gin. iol. #[i lachan])).
+    when "Table2M-rh4-title"
+      | Ainmfhocail a chríochnaíonn ar #[i -idí] san iolra
+    when "Table2M-rh4-p1"
+      | Corr-ainmfhocal firinscneach a chríochnaíonn ar #[i -d] sa ghinideach uatha.
+    when "Table2M-rh4-p2"
+      | Tabhair faoi deara go mbaineann #[i daichead] (#[i daichid], #[i daichidí]) leis an gcéad díochlaonadh.
+    when "Table2M-rh5"
+      | Ainmfhocail ilghnéitheacha
+    when "2-7-title"
+      | Ainmfhocail Neamhrialta
+    when "2-7-p"
+      | Ní fhreagraíonn infhilleadh na n&#x2011;ainmfhocal seo a leanas d'aon cheann de na díochlaontaí:
+    when "Table2N-Title"
+      | Ainmfhocail Neamhrialta &mdash; Samplaí
+    when "Table2N-masc"
+      | fir.
+    when "Table2N-fem"
+      | bain.
+    when "2-7-Note"
+      | Tabhair faoi deara go n&#x2011;úsáidtear seanfhoirm leithleach den fhocal #[i lá] sa fhrása seanbhunaithe #[i ar athló], e.g., #[i Tá an Dáil ar athló].
+    default
+      - throw new Error(`No content for ${key} (ga.pug)`)

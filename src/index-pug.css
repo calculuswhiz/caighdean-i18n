@@ -26,6 +26,10 @@
     }
   }
 
+  aside {
+    @apply bg-gray-100 p-4 my-4 border-l-4 border-gray-400;
+  }
+
   p {
     @apply my-2 leading-relaxed;
   }

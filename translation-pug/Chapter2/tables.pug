@@ -1,0 +1,1374 @@
+mixin Table2A
+  +markedTable(2, 'A', 'Table2A-Title')
+    colgroup
+      col(class="w-1/3")
+      col(class="w-1/6")
+      col(class="w-1/6")
+      col(class="w-1/6")
+      col(class="w-1/6")
+      col(class="w-1/6")
+    thead
+      tr
+        th(rowspan=2 class="text-center text-xl"): +renderKey("Table2A-CornerHeading")
+        th(colspan=2 class="text-center"): +renderKey("Uatha", { getFromCommon: true })
+        th(colspan=2 class="text-center"): +renderKey("Iolra", { getFromCommon: true }, { getFromCommon: true })
+      tr
+        th(class="text-center"): +renderKey("Ainmneach", { getFromCommon: true })
+        th(class="text-center"): +renderKey("Ginideach", { getFromCommon: true })
+        th(class="text-center"): +renderKey("Ainmneach", { getFromCommon: true })
+        th(class="text-center"): +renderKey("Ginideach", { getFromCommon: true })
+    tbody
+      tr
+        th(class="bg-stone-300" rowspan=2): +renderKey("declension-1")
+        td cás
+        td cáis
+        td cásanna
+        td cásanna
+      tr
+        td ceol
+        td ceoil
+        td ceolta
+        td ceolta
+      tr
+        th(class="bg-stone-300" rowspan=2): +renderKey("declension-2")
+        td foirm
+        td foirme
+        td foirmeacha
+        td foirmeacha
+      tr
+        td sliabh
+        td sléibhe
+        td sléibhte
+        td sléibhte
+      tr
+        th(class="bg-stone-300" rowspan=2): +renderKey("declension-3")
+        td feirmeoir
+        td feirmeora
+        td feirmeoirí
+        td feirmeoirí
+      tr
+        td foráil
+        td forála
+        td forálacha
+        td forálacha
+      tr
+        th(class="bg-stone-300" rowspan=2): +renderKey("declension-4")
+        td amhránaí
+        td amhránaí
+        td amhránaithe
+        td amhránaithe
+      tr
+        td gloine
+        td gloine
+        td gloiní
+        td gloiní
+      tr
+        th(class="bg-stone-300" rowspan=2): +renderKey("declension-5")
+        td deartháir
+        td dearthár
+        td deartháireacha
+        td deartháireacha
+      tr
+        td lasair
+        td lasrach
+        td lasracha
+        td lasracha
+      tr
+        th(class="bg-stone-300" rowspan=2): +renderKey("Table2A-Irregular")
+        td leaba
+        td leapa
+        td leapacha
+        td leapacha
+      tr
+        td teach
+        td tí
+        td tithe
+        td tithe
+
+mixin Table2B
+  +markedTable(2, 'B', 'Table2B-Title')
+    thead
+      tr
+        th(colspan=3 class="text-center"): +renderKey("declension-1")
+      tr
+        th(class="bg-orange-600 text-white")
+        th(class="text-center"): +renderKey("Ainmneach", { getFromCommon: true })
+        th(class="text-center"): +renderKey("Ginideach", { getFromCommon: true })
+    tbody
+      tr
+        th(class="bg-orange-600 text-white"): +renderKey("Uatha", { getFromCommon: true })
+        td fear
+        td fir
+      tr
+        th(class="bg-orange-600 text-white"): +renderKey("Iolra", { getFromCommon: true }, { getFromCommon: true })
+        td fir
+        td fear
+
+mixin Table2C
+  +markedTable(2, "C", "Table2C-Title")
+    colgroup
+      col(class="w-1/3")
+      col(class="w-1/3")
+      col(class="w-1/3")
+    thead
+      tr
+        th(colspan=3 class="text-center"): +renderKey("declension-2")
+      tr
+        th(class="bg-orange-600 text-white")
+        th(class="text-center"): +renderKey("Ainmneach", { getFromCommon: true })
+        th(class="text-center"): +renderKey("Ginideach", { getFromCommon: true })
+    tbody
+      tr
+        th(class="bg-orange-600 text-white"): +renderKey("Uatha", { getFromCommon: true })
+        td fuinneog
+        td fuinneoige
+      tr
+        th(class="bg-orange-600 text-white"): +renderKey("Iolra", { getFromCommon: true }, { getFromCommon: true })
+        td fuinneoga
+        td fuinneog
+
+mixin Table2D
+  +markedTable(2, 'D', 'Table2D-Title')
+    colgroup
+      col(class="w-1/3")
+      col(class="w-1/6")
+      col(class="w-1/6")
+      col(class="w-1/6")
+      col(class="w-1/6")
+    thead
+      tr
+        th(rowspan=2 class="text-center text-xl"): +renderKey("Table2A-CornerHeading")
+        th(colspan=2 class="text-center"): +renderKey("Uatha", { getFromCommon: true })
+        th(colspan=2 class="text-center"): +renderKey("Iolra", { getFromCommon: true }, { getFromCommon: true })
+      tr
+        th(class="text-center"): +renderKey("Ainmneach", { getFromCommon: true })
+        th(class="text-center"): +renderKey("Ginideach", { getFromCommon: true })
+        th(class="text-center"): +renderKey("Ainmneach", { getFromCommon: true })
+        th(class="text-center"): +renderKey("Ginideach", { getFromCommon: true })
+    tbody
+      tr
+        th(class="bg-stone-300 text-left" rowspan=2): +renderKey("declension-2")
+        td ealaín
+        td ealaíne
+        td ealaíona
+        td ealaíon
+      tr
+        td súil
+        td súile
+        td súile
+        td súl
+      tr
+        th(class="bg-stone-300 text-left"): +renderKey("declension-3")
+        td mionn
+        td mionna
+        td mionnaí
+        td mionn
+      tr
+        th(class="bg-stone-300 text-left" rowspan=2): +renderKey("declension-4")
+        td bó
+        td bó
+        td ba
+        td bó
+      tr
+        td grásta
+        td grásta
+        td grásta
+        td grást
+      tr
+        th(class="bg-stone-300 text-left" rowspan=2): +renderKey("declension-5")
+        td caora
+        td caorach
+        td caoirigh
+        td caorach
+      tr
+        td lacha
+        td lachan
+        td lachain
+        td lachan
+      tr
+        th(class="bg-stone-300 text-left" rowspan=2): +renderKey("Table2A-Irregular")
+        td bean
+        td mná
+        td mná
+        td ban
+      tr
+        td olann
+        td olla
+        td olanna
+        td olann
+
+mixin Table2E
+  +markedTable(2, 'E', 'Table2E-Title')
+    tbody
+      tr: td: table(class="chapter-2")
+        colgroup
+          col(class="w-1/5")
+          col(class="w-1/5")
+          col(class="w-1/5")
+          col(class="w-1/5")
+        thead
+          tr
+            th(colspan=5): +renderKey("declension-1")
+          tr
+            th: +renderKey("Inscne", { getFromCommon: true })
+            th
+              | #[+renderKey("Ainmneach", { getFromCommon: true })]
+              | #[+renderKey("Uatha", { getFromCommon: true })]
+            th
+              | #[+renderKey("Ginideach", { getFromCommon: true })]
+              | #[+renderKey("Uatha", { getFromCommon: true })]
+            th
+              | #[+renderKey("Ainmneach", { getFromCommon: true })]
+              | #[+renderKey("Iolra", { getFromCommon: true }, { getFromCommon: true })]
+            th
+              | #[+renderKey("Ginideach", { getFromCommon: true })]
+              | #[+renderKey("Iolra", { getFromCommon: true }, { getFromCommon: true })]
+        tbody
+          tr
+            td(rowspan=2): +renderKey("Firinscneach", { getFromCommon: true })
+            td(rowspan=2): +renderKey("Table2E-row1-cell2")
+            td(rowspan=2): +renderKey("Table2E-row1-cell3")
+            td: +renderKey("Table2E-row1-cell4")
+            td: +renderKey("Table2E-row1-cell5")
+          tr
+            td(colspan=2): +renderKey("Table2E-row1-cell6")
+          
+      tr: td: table(class="chapter-2")
+        colgroup
+          col(class="w-1/5")
+          col(class="w-1/5")
+          col(class="w-1/5")
+          col(class="w-1/5")
+        thead
+          tr
+            th(colspan=5): +renderKey("declension-2")
+          tr
+            th: +renderKey("Inscne", { getFromCommon: true })
+            th
+              | #[+renderKey("Ainmneach", { getFromCommon: true })]
+              | #[+renderKey("Uatha", { getFromCommon: true })]
+            th
+              | #[+renderKey("Ginideach", { getFromCommon: true })]
+              | #[+renderKey("Uatha", { getFromCommon: true })]
+            th
+              | #[+renderKey("Ainmneach", { getFromCommon: true })]
+              | #[+renderKey("Iolra", { getFromCommon: true }, { getFromCommon: true })]
+            th
+              | #[+renderKey("Ginideach", { getFromCommon: true })]
+              | #[+renderKey("Iolra", { getFromCommon: true }, { getFromCommon: true })]
+        tbody
+          tr
+            td(rowspan=2): +renderKey("Table2E-row2-cell1")
+            td(rowspan=2): +renderKey("Table2E-row2-cell2")
+            td(rowspan=2): +renderKey("Table2E-row2-cell3")
+            td: +renderKey("Table2E-row2-cell4")
+            td: +renderKey("Table2E-row2-cell5")
+          tr
+            td(colspan=2): +renderKey("Table2E-row2-cell6")
+
+      tr: td: table(class="chapter-2")
+        colgroup
+          col(class="w-1/5")
+          col(class="w-1/5")
+          col(class="w-1/5")
+          col(class="w-1/5")
+        thead
+          tr
+            th(colspan=5): +renderKey("declension-3")
+          tr
+            th: +renderKey("Inscne", { getFromCommon: true })
+            th
+              | #[+renderKey("Ainmneach", { getFromCommon: true })]
+              | #[+renderKey("Uatha", { getFromCommon: true })]
+            th
+              | #[+renderKey("Ginideach", { getFromCommon: true })]
+              | #[+renderKey("Uatha", { getFromCommon: true })]
+            th
+              | #[+renderKey("Ainmneach", { getFromCommon: true })]
+              | #[+renderKey("Iolra", { getFromCommon: true }, { getFromCommon: true })]
+            th
+              | #[+renderKey("Ginideach", { getFromCommon: true })]
+              | #[+renderKey("Iolra", { getFromCommon: true }, { getFromCommon: true })]
+        tbody
+          tr
+            td: +renderKey("Table2E-row3-cell1")
+            td: +renderKey("Table2E-row3-cell2")
+            td: +renderKey("Table2E-row3-cell3")
+            td(colspan=2): +renderKey("Table2E-row3-cell4")
+      
+      tr: td: table(class="chapter-2")
+        colgroup
+          col(class="w-1/5")
+          col(class="w-1/5")
+          col(class="w-1/5")
+          col(class="w-1/5")
+        thead
+          tr
+            th(colspan=5): +renderKey("declension-4")
+          tr
+            th: +renderKey("Inscne", { getFromCommon: true })
+            th
+              | #[+renderKey("Ainmneach", { getFromCommon: true })]
+              | #[+renderKey("Uatha", { getFromCommon: true })]
+            th
+              | #[+renderKey("Ginideach", { getFromCommon: true })]
+              | #[+renderKey("Uatha", { getFromCommon: true })]
+            th
+              | #[+renderKey("Ainmneach", { getFromCommon: true })]
+              | #[+renderKey("Iolra", { getFromCommon: true }, { getFromCommon: true })]
+            th
+              | #[+renderKey("Ginideach", { getFromCommon: true })]
+              | #[+renderKey("Iolra", { getFromCommon: true }, { getFromCommon: true })]
+        tbody
+          tr
+            td: +renderKey("Table2E-row4-cell1")
+            td(colspan=2): +renderKey("Table2E-row4-cell2")
+            td(colspan=2): +renderKey("Table2E-row4-cell3")
+
+      tr: td: table(class="chapter-2")
+        colgroup
+          col(class="w-1/5")
+          col(class="w-1/5")
+          col(class="w-1/5")
+          col(class="w-1/5")
+        thead
+          tr
+            th(colspan=5): +renderKey("declension-5")
+          tr
+            th: +renderKey("Inscne", { getFromCommon: true })
+            th
+              | #[+renderKey("Ainmneach", { getFromCommon: true })]
+              | #[+renderKey("Uatha", { getFromCommon: true })]
+            th
+              | #[+renderKey("Ginideach", { getFromCommon: true })]
+              | #[+renderKey("Uatha", { getFromCommon: true })]
+            th
+              | #[+renderKey("Ainmneach", { getFromCommon: true })]
+              | #[+renderKey("Iolra", { getFromCommon: true }, { getFromCommon: true })]
+            th
+              | #[+renderKey("Ginideach", { getFromCommon: true })]
+              | #[+renderKey("Iolra", { getFromCommon: true }, { getFromCommon: true })]
+        tbody
+          tr
+            td: +renderKey("Table2E-row5-cell1")
+            td: +renderKey("Table2E-row5-cell2")
+            td: +renderKey("Table2E-row5-cell3")
+            td(colspan=2): +renderKey("Table2E-row5-cell4")
+
+mixin Table2F
+  +markedTable(2, "F", "Table2F-Title")
+    colgroup
+      col(class="w-4/8")
+      col(class="w-1/8")
+      col(class="w-1/8")
+    thead
+      tr
+        th(rowspan=2 class="text-center text-xl"): +renderKey("Table2F-CornerHeading")
+        th(colspan=2 class="text-center"): +renderKey("Uatha", { getFromCommon: true })
+        th(class="text-center"): +renderKey("Iolra", { getFromCommon: true }, { getFromCommon: true })
+      tr
+        th(class="text-center"): +renderKey("Ainmneach", { getFromCommon: true })
+        th(class="text-center"): +renderKey("Ginideach", { getFromCommon: true })
+        th(class="text-center"): +renderKey("GachTuiseal", { getFromCommon: true })
+    tbody
+      tr
+        th(class="bg-stone-300" rowspan=6)
+          div: +renderKey("Table2F-rh1-title")
+          div(class="font-normal"): +renderKey("Table2F-rh1-p")
+        td braon
+        td braoin
+        td braonta
+      tr
+        td fál
+        td fáil
+        td fálta
+      tr
+        td glór
+        td glóir
+        td glórtha
+      tr
+        td líon
+        td lín
+        td líonta
+      tr
+        td pór
+        td póir
+        td pórtha
+      tr(class="black-bottom-divider")
+        td tuar
+        td tuair
+        td tuartha
+
+      tr
+        th(class="bg-stone-300" rowspan=5)
+          div: +renderKey("Table2F-rh2-title")
+          div(class="font-normal"): +renderKey("Table2F-rh2-p")
+        td árthach
+        td árthaigh
+        td árthaí
+      tr
+        td cladach
+        td cladaigh
+        td cladaí (#[em #[+renderKey("genPl")] cladach])
+      tr
+        td cúram
+        td cúraim
+        td cúraimí
+      tr
+        td daichead
+        td daichid
+        td daichidí
+      tr(class="black-bottom-divider")
+        td margadh
+        td margaidh
+        td margaí
+
+      tr
+        th(class="bg-stone-300" rowspan=3): +renderKey("Table2F-rh3")
+        td aonach
+        td aonaigh
+        td aontaí
+      tr
+        td dearcadh
+        td dearcaidh
+        td dearcthaí
+      tr(class="black-bottom-divider")
+        td toradh
+        td toraidh
+        td torthaí
+
+      tr
+        th(class="bg-stone-300" rowspan=3): +renderKey("Table2F-rh4")
+        td cás
+        td cáis
+        td cásanna
+      tr
+        td praghas
+        td praghais
+        td praghsanna
+      tr(class="black-bottom-divider")
+        td saghas
+        td saghais
+        td saghsanna
+
+      tr
+        th(class="bg-stone-300" rowspan=3): +renderKey("Table2F-rh5")
+        td bóthar
+        td bóthair
+        td bóithre
+      tr
+        td doras
+        td dorais
+        td doirse
+      tr(class="black-bottom-divider")
+        td uasal
+        td uasail
+        td uaisle
+
+      tr
+        th(class="bg-stone-300" rowspan=3): +renderKey("Table2F-rh6")
+        td cineál
+        td cineáil
+        td cineálacha
+      tr
+        td coinníoll
+        td coinníll
+        td coinníollacha
+      tr(class="black-bottom-divider")
+        td tobar
+        td tobair
+        td toibreacha
+
+      tr
+        th(class="bg-stone-300" rowspan=3): +renderKey("Table2F-rh7")
+        td claíomh
+        td claímh
+        td claimhte
+      tr
+        td muileann
+        td muilinn
+        td muilte
+      tr(class="black-bottom-divider")
+        td smaoineamh
+        td smaoinimh
+        td smaointe
+
+      tr
+        th(class="bg-stone-300" rowspan=4): +renderKey("Table2F-rh8")
+        td breitheamh
+        td breithimh
+        td breithiúna
+      tr
+        td briathar
+        td briathair
+        td briathra
+      tr
+        td gníomh
+        td gnímh
+        td gníomhartha
+      tr
+        td scaitheamh
+        td scaithimh
+        td scaití
+
+mixin Table2G
+  +markedTable(2, 'G', 'Table2G-Title')
+    colgroup
+      col(class="w-3/8")
+    thead
+      tr
+        th(rowspan=2 class="text-center text-xl"): +renderKey("Table2G-CornerHeading")
+        th(colspan=2 class="text-center"): +renderKey("Uatha", { getFromCommon: true })
+        th(colspan=2 class="text-center"): +renderKey("Iolra", { getFromCommon: true }, { getFromCommon: true })
+      tr
+        th(class="text-center"): +renderKey("Ainmneach", { getFromCommon: true })
+        th(class="text-center"): +renderKey("Ginideach", { getFromCommon: true })
+        th(class="text-center"): +renderKey("Ainmneach", { getFromCommon: true })
+        th(class="text-center"): +renderKey("Ginideach", { getFromCommon: true })
+    tbody
+      tr
+        th(rowspan=4 class="bg-stone-300"): +renderKey("Table2G-rh1")
+        td amhrán
+        td amhráin
+        td amhráin
+        td amhrán
+      tr
+        td beithíoch
+        td beithígh
+        td beithígh
+        td beithíoch
+      tr
+        td foirgneamh
+        td foirgnimh
+        td foirgnimh
+        td foirgneamh
+      tr(class="black-bottom-divider")
+        td iasc
+        td éisc
+        td éisc
+        td iasc
+
+      tr
+        th(rowspan=4 class="bg-stone-300"): +renderKey("Table2G-rh2")
+        td bruach
+        td bruaigh
+        td bruacha
+        td bruach
+      tr
+        td ceap
+        td cip
+        td ceapa
+        td ceap
+      tr
+        td giall
+        td géill
+        td gialla
+        td giall
+      tr(class="black-bottom-divider")
+        td úll
+        td úill
+        td úlla
+        td úll
+
+mixin Table2H
+  +markedTable(2, "H", "Table2H-Title")
+    colgroup
+      col(class="w-4/8")
+    thead
+      tr
+        th(rowspan=2 class="text-center text-xl"): +renderKey("Table2H-CornerHeading")
+        th(colspan=2 class="text-center"): +renderKey("Uatha", { getFromCommon: true })
+        th(class="text-center"): +renderKey("Iolra", { getFromCommon: true })
+      tr
+        th(class="text-center"): +renderKey("Ainmneach", { getFromCommon: true })
+        th(class="text-center"): +renderKey("Ginideach", { getFromCommon: true })
+        th(class="text-center"): +renderKey("GachTuiseal", { getFromCommon: true })
+    tbody
+      tr
+        th(rowspan=3 class="bg-stone-300"): +renderKey("Table2H-rh1")
+        td dabhach
+        td daibhche
+        td dabhcha
+      tr
+        td roinn
+        td roinne
+        td ranna
+      tr(class="black-bottom-divider")
+        td scian
+        td scine
+        td sceana
+
+      tr
+        th(rowspan=3 class="bg-stone-300"): +renderKey("Table2H-rh2")
+        td áit
+        td áite
+        td áiteanna
+      tr
+        td blaosc
+        td blaoisce
+        td blaoscanna
+      tr(class="black-bottom-divider")
+        td im
+        td ime
+        td imeanna
+
+      tr
+        th(rowspan=3 class="bg-stone-300")
+          div: +renderKey("Table2H-rh3-title")
+          div(class="font-normal"): +renderKey("Table2H-rh3-p")
+        td abairt
+        td abairte
+        td abairtí
+      tr
+        td cáipéis
+        td cáipéise
+        td cáipéisí
+      tr(class="black-bottom-divider")
+        td earráid
+        td earráide
+        td earráidí
+
+      tr
+        th(rowspan=4 class="bg-stone-300")
+          div: +renderKey("Table2H-rh4-title")
+          div(class="font-normal"): +renderKey("Table2H-rh4-p")
+        td bainis
+        td bainise
+        td bainiseacha
+      tr
+        td iall
+        td éille
+        td iallacha
+      tr
+        td iníon
+        td iníne
+        td iníonacha
+      tr(class="black-bottom-divider")
+        td maidin
+        td maidine
+        td maidineacha
+
+      tr
+        th(rowspan=3 class="bg-stone-300")
+          div: +renderKey("Table2H-rh5-title")
+          div(class="font-normal"): +renderKey("Table2H-rh5-p")
+        td buíon
+        td buíne
+        td buíonta
+      tr
+        td grian
+        td gréine
+        td grianta
+      tr(class="black-bottom-divider")
+        td steall
+        td steille
+        td steallta
+
+      tr
+        th(rowspan=3 class="bg-stone-300")
+          div: +renderKey("Table2H-rh6-title")
+          div(class="font-normal"): +renderKey("Table2H-rh6-p")
+        td aill
+        td aille
+        td aillte
+      tr
+        td bléin
+        td bléine
+        td bléinte
+      tr(class="black-bottom-divider")
+        td linn
+        td linne
+        td linnte
+
+      tr
+        th(rowspan=4 class="bg-stone-300"): +renderKey("Table2H-rh7")
+        td caingean
+        td caingne
+        td caingne
+      tr
+        td coinneal
+        td coinnle
+        td coinnle
+      tr
+        td foireann
+        td foirne
+        td foirne
+      tr(class="black-bottom-divider")
+        td maighean
+        td maighne
+        td maighne
+
+      tr
+        th(rowspan=4 class="bg-stone-300"): +renderKey("Table2H-rh8")
+        td culaith
+        td culaithe
+        td cultacha
+      tr
+        td gualainn
+        td gualainne
+        td guaillí
+      tr
+        td sliabh
+        td sléibhe
+        td sléibhte
+      tr
+        td uair
+        td uaire
+        td uaireanta
+
+mixin Table2I
+  +markedTable(2, "I", "Table2I-Title")
+    colgroup
+      col(class="w-1/3")
+    thead
+      tr
+        th(rowspan=2 class="text-center text-xl"): +renderKey("Table2I-CornerHeading")
+        th(colspan=2 class="text-center"): +renderKey("Uatha", { getFromCommon: true })
+        th(colspan=2 class="text-center"): +renderKey("Iolra", { getFromCommon: true })
+      tr
+        th(class="text-center"): +renderKey("Ainmneach", { getFromCommon: true })
+        th(class="text-center"): +renderKey("Ginideach", { getFromCommon: true })
+        th(class="text-center"): +renderKey("Ainmneach", { getFromCommon: true })
+        th(class="text-center"): +renderKey("Ginideach", { getFromCommon: true })
+    tbody
+      tr
+        th(rowspan=6 class="bg-stone-300"): +renderKey("Table2I-rh1")
+        td amharclann
+        td amharclainne
+        td amharclanna
+        td amharclann
+      tr
+        td beach
+        td beiche
+        td beacha
+        td beach
+      tr
+        td dallóg
+        td dallóige
+        td dallóga
+        td dallóg
+      tr
+        td gealach
+        td gealaí
+        td gealacha
+        td gealach
+      tr
+        td girseach
+        td girsí
+        td girseacha
+        td girseach
+      tr(class="black-bottom-divider")
+        td maighdean
+        td maighdine
+        td maighdeana
+        td maighdean
+
+      tr
+        th(rowspan=4 class="bg-stone-300"): +renderKey("Table2I-rh2")
+        td cill
+        td cille
+        td cealla
+        td ceall
+      tr
+        td deoir
+        td deoire
+        td deora
+        td deor
+      tr
+        td ealaín
+        td ealaíne
+        td ealaíona
+        td ealaíon
+      tr(class="black-bottom-divider")
+        td rinn
+        td rinne
+        td reanna
+        td reann
+
+      tr
+        th(rowspan=4 class="bg-stone-300"): +renderKey("Table2I-rh3")
+        td ainimh
+        td ainimhe
+        td ainimhe
+        td aineamh
+      tr
+        td dúil
+        td dúile
+        td dúile
+        td dúl
+      tr
+        td glúin
+        td glúine
+        td glúine
+        td glún
+      tr(class="black-bottom-divider")
+        td súil
+        td súile
+        td súile
+        td sú
+
+mixin Table2J
+  +markedTable(2, 'J', 'Table2J-Title')
+    colgroup
+      col(class="w-1/2")
+    thead
+      tr
+        th(rowspan=2 class="text-center text-xl"): +renderKey('Table2J-CornerHeading')
+        th(colspan=2 class="text-center"): +renderKey('Uatha', { getFromCommon: true })
+        th(class="text-center"): +renderKey('Iolra', { getFromCommon: true })
+      tr
+        th(class="text-center"): +renderKey('Ainmneach', { getFromCommon: true })
+        th(class="text-center"): +renderKey('Ginideach', { getFromCommon: true })
+        th(class="text-center"): +renderKey('GachTuiseal', { getFromCommon: true })
+    tbody
+      tr
+        th(rowspan=8 class="bg-stone-300")
+          div: +renderKey('Table2J-rh1-title')
+          div(class="font-normal"): +renderKey('Table2J-rh1-p')
+        td athnuachan
+        td athnuachana
+        td athnuachaintí
+      tr
+        td bagairt
+        td bagartha
+        td bagairtí
+      tr
+        td báicéir
+        td báicéara
+        td báicéirí
+      tr
+        td beannacht
+        td beannachta
+        td beannachtaí
+      tr
+        td dlíodóir
+        td dlíodóra
+        td dlíodóirí
+      tr
+        td dochtúir
+        td dochtúra
+        td dochtúirí
+      tr
+        td eisiúint
+        td eisiúna
+        td eisiúintí
+      tr.black-bottom-divider
+        td múinteoir
+        td múinteora
+        td múinteoirí
+
+      tr
+        th(rowspan=3 class="bg-stone-300")
+          div: +renderKey('Table2J-rh2-title')
+          div(class="font-normal"): +renderKey('Table2J-rh2-p')
+        td droim
+        td droma
+        td dromanna
+      tr
+        td rang
+        td ranga
+        td ranganna
+      tr.black-bottom-divider
+        td troid
+        td troda
+        td troideanna
+
+      tr
+        th(rowspan=3 class="bg-stone-300"): +renderKey('Table2J-rh3')
+        td feadhain
+        td feadhna
+        td feadhna
+      tr
+        td gamhain
+        td gamhna
+        td gamhna
+      tr.black-bottom-divider
+        td slios
+        td sleasa
+        td sleasa
+
+      tr
+        th(rowspan=4 class="bg-stone-300")
+          div: +renderKey('Table2J-rh4-title')
+          div(class="font-normal"): +renderKey('Table2J-rh4-p1')
+          div(class="font-normal"): +renderKey('Table2J-rh4-p2')
+        td admháil
+        td admhála
+        td admhálacha
+      tr
+        td barúil
+        td barúla
+        td barúlacha
+      tr
+        td fíniúin
+        td fíniúna
+        td fíniúnacha
+      tr.black-bottom-divider
+        td onóir
+        td onóra
+        td onóracha
+
+      tr
+        th(rowspan=3 class="bg-stone-300")
+          div: +renderKey('Table2J-rh5-title')
+          div(class="font-normal"): +renderKey('Table2J-rh5-p')
+        td cion (#[i: +renderKey('saBhrí', { getFromCommon: true })] coir)
+        td ciona
+        td cionta
+      tr
+        td feoil
+        td feola
+        td feolta
+      tr.black-bottom-divider
+        td gleann
+        td gleanna
+        td gleannta
+
+      tr
+        th(rowspan=3 class="bg-stone-300"): +renderKey('Table2J-rh6')
+        td cluain
+        td cluana
+        td cluainte
+      tr
+        td móin
+        td móna
+        td móinte
+      tr.black-bottom-divider
+        td táin
+        td tána
+        td táinte
+
+      tr
+        th(rowspan=5 class="bg-stone-300")
+          div: b: +renderKey('Table2J-rh7-title')
+        td anacair
+        td anacra
+        td anacraí
+      tr
+        td buachaill
+        td buachalla
+        td buachaillí
+      tr
+        td conradh
+        td conartha
+        td conarthaí
+      tr
+        td maitheas
+        td maitheasa
+        td maitheasaí
+      tr
+        td roth
+        td rotha
+        td rothaí
+
+mixin Table2K
+  +markedTable(2, 'K', 'Table2K-Title')
+    colgroup
+      col(class="w-1/4")
+    thead
+      tr
+        th(rowspan=2 class="text-center text-xl"): +renderKey("Table2K-CornerHeading")
+        th(colspan=2 class="text-center"): +renderKey("Uatha", { getFromCommon: true })
+        th(colspan=2 class="text-center"): +renderKey("Iolra", { getFromCommon: true })
+      tr
+        th(class="text-center"): +renderKey("Ainmneach", { getFromCommon: true })
+        th(class="text-center"): +renderKey("Ginideach", { getFromCommon: true })
+        th(class="text-center"): +renderKey("Ainmneach", { getFromCommon: true })
+        th(class="text-center"): +renderKey("Ginideach", { getFromCommon: true })
+    tbody
+      tr
+        th(rowspan=5 class="bg-stone-300"): +renderKey("Table2K-Col1Text")
+        td béas
+        td béasa
+        td béasa
+        td béas
+      tr
+        td dreas
+        td dreasa
+        td dreasa
+        td dreas
+      tr
+        td mionn
+        td mionna
+        td mionnaí
+        td mionn
+      tr
+        td tréad
+        td tréada
+        td tréada
+        td tréad
+      tr
+        td treas
+        td treasa
+        td treasa
+        td treas
+
+mixin Table2L
+  +markedTable(2, 'L', 'Table2L-Title')
+    colgroup
+      col(class="w-2/3")
+      col(class="w-1/6")
+    thead
+      tr
+        th(rowspan=2 class="text-center text-xl"): +renderKey("Table2L-CornerHeading")
+        th(colspan=2 class="text-center"): +renderKey("Uatha", { getFromCommon: true })
+      tr
+        th(class="text-center"): +renderKey("GachTuiseal", { getFromCommon: true })
+        th(class="text-center"): +renderKey("GachTuiseal", { getFromCommon: true })
+    tbody
+      tr
+        th(rowspan=3 class="bg-stone-300")
+          div: +renderKey("Table2L-rh1-title")
+          div(class="font-normal"): +renderKey("Table2L-rh1-p")
+        td altra
+        td altraí
+      tr
+        td báidín
+        td báidíní
+      tr.black-bottom-divider
+        td fáinne
+        td fáinní
+        
+      tr
+        th(rowspan=3 class="bg-stone-300")
+          div: +renderKey("Table2L-rh2-title")
+          div(class="font-normal"): +renderKey("Table2L-rh2-p")
+        td baile
+        td bailte
+      tr
+        td sloinne
+        td sloinnte
+      tr.black-bottom-divider
+        td tine
+        td tinte
+
+      tr
+        th(rowspan=4 class="bg-stone-300")
+          div: +renderKey("Table2L-rh3-title")
+          div(class="font-normal"): +renderKey("Table2L-rh3-p")
+        td ainmhí
+        td ainmhithe
+      tr
+        td draoi
+        td draoithe
+      tr
+        td giúiré
+        td giúiréithe
+      tr.black-bottom-divider
+        td rí
+        td ríthe
+
+      tr
+        th(rowspan=9 class="bg-stone-300")
+          div: +renderKey("Table2L-rh4-title")
+          div(class="font-normal"): +renderKey("Table2L-rh4-p")
+        td bogha
+        td boghanna
+      tr
+        td ceo
+        td ceonna
+      tr
+        td cnó
+        td cnónna
+      tr
+        td cú
+        td cúnna
+      tr
+        td grua
+        td gruanna
+      tr
+        td íomhá
+        td íomhánna
+      tr
+        td lao
+        td laonna
+      tr
+        td meá
+        td meánna
+      tr.black-bottom-divider
+        td nia
+        td nianna
+
+      tr
+        th(rowspan=3 class="bg-stone-300"): +renderKey("Table2L-rh5")
+        td bus
+        td busanna
+      tr
+        td seic
+        td seiceanna
+      tr.black-bottom-divider
+        td téacs
+        td téacsanna
+
+      tr
+        th(rowspan=5 class="bg-stone-300"): +renderKey("Table2L-rh6")
+        td comhrá
+        td comhráite
+      tr
+        td cró
+        td cróite
+      tr
+        td crú
+        td crúite
+      tr
+        td rá
+        td ráite
+      tr.black-bottom-divider
+        td slua
+        td sluaite
+
+      tr
+        th(rowspan=13 class="bg-stone-300"): +renderKey("Table2L-rh7")
+        td achainí
+        td achainíocha
+      tr
+        td airí
+        td airíonna
+      tr
+        td aithne
+        td aitheanta
+      tr
+        td aturnae
+        td aturnaetha
+      tr
+        td bó
+        td ba (#[i: +renderKey("genPl")] bó)
+      tr
+        td cine
+        td ciníocha
+      tr
+        td claí
+        td claíocha
+      tr
+        td duine
+        td daoine
+      tr
+        td gabha
+        td gaibhne
+      tr
+        td gnó
+        td gnóthaí
+      tr
+        td oíche
+        td oícheanta
+      tr
+        td slí
+        td slite
+      tr
+        td teanga
+        td teangacha
+
+mixin Table2M
+  +markedTable(2, 'M', 'Table2M-Title')
+    thead
+      tr
+        th(rowspan=2 class="text-center text-xl"): +renderKey("Table2M-CornerHeading")
+        th(colspan=2 class="text-center"): +renderKey("Uatha", { getFromCommon: true })
+        th(class="text-center"): +renderKey("Iolra", { getFromCommon: true })
+      tr
+        th(class="text-center"): +renderKey("Ainmneach", { getFromCommon: true })
+        th(class="text-center"): +renderKey("Ginideach", { getFromCommon: true })
+        th(class="text-center"): +renderKey("GachTuiseal", { getFromCommon: true })
+    tbody
+      tr
+        th(rowspan=8 class="bg-stone-300")
+          div: +renderKey("Table2M-rh1-title")
+          div(class="font-normal"): +renderKey("Table2M-rh1-p1")
+          div(class="font-normal"): +renderKey("Table2M-rh1-p2")
+        td cathair
+        td cathrach
+        td cathracha
+      tr
+        td draein
+        td draenach
+        td draenacha
+      tr
+        td litir
+        td litreach
+        td litreach
+      tr
+        td rial
+        td rialach
+        td rialacha
+      tr
+        td traein
+        td traenach
+        td traenacha
+      tr
+        td treoir
+        td treorach
+        td treoracha
+      tr
+        td triail
+        td trialach
+        td trialacha
+      tr.black-bottom-divider
+        td uimhir
+        td uimhreach
+        td uimhreacha
+        
+      tr
+        th(class="bg-stone-300" rowspan=3)
+          div: +renderKey("Table2M-rh2-title")
+          div(class="font-normal"): +renderKey("Table2M-rh2-p")
+        td abhainn
+        td abhann
+        td aibhneacha
+      tr
+        td máthair
+        td máthar
+        td máithreacha
+      tr.black-bottom-divider
+        td teorainn
+        td teorann
+        td teorainneacha
+
+      tr
+        th(class="bg-stone-300" rowspan=6)
+          div: +renderKey("Table2M-rh3-title")
+          div(class="font-normal"): +renderKey("Table2M-rh3-p")
+        td ceathrú
+        td ceathrún
+        td ceathrúna
+      tr
+        td comharsa
+        td comharsan
+        td comharsana (#[i: +renderKey("genPl")] comharsana)
+      tr
+        td ionga
+        td iongan
+        td ingne
+      tr
+        td leite
+        td leitean
+        td &mdash;
+      tr
+        td monarcha
+        td monarchan
+        td monarchana
+      tr.black-bottom-divider
+        td pearsa
+        td pearsan
+        td pearsana (#[i: +renderKey("genPl")] pearsan)
+
+      tr
+        th(class="bg-stone-300" rowspan=8)
+          div: +renderKey("Table2M-rh4-title")
+          div(class="font-normal"): +renderKey("Table2M-rh4-p1")
+          div(class="font-normal"): +renderKey("Table2M-rh4-p2")
+        td fiche (#[i: +renderKey("datSg")] fichid)
+        td fichead
+        td fichidí
+      tr
+        td tríocha
+        td tríochad
+        td tríochaidí
+      tr
+        td ceathracha
+        td ceathrachad
+        td ceathrachaidí
+      tr
+        td caoga
+        td caogad
+        td caogaidí
+      tr
+        td seasca
+        td seascad
+        td seascaidí
+      tr
+        td seachtó
+        td seachtód
+        td seachtóidí
+      tr
+        td ochtó
+        td ochtód
+        td ochtóidí
+      tr.black-bottom-divider
+        td nócha
+        td nóchad
+        td nóchaidí
+        
+      tr
+        th(class="bg-stone-300" rowspan=6): +renderKey("Table2M-rh5")
+        td bráid
+        td brád
+        td bráide
+      tr
+        td cara
+        td carad
+        td cairde
+      tr
+        td caora
+        td caorach
+        td caoirigh (#[i: +renderKey("genPl")] caorach)
+      tr
+        td Éire (#[i: +renderKey("datSg")] Éirinn)
+        td Éireann
+        td &mdash;
+      tr
+        td namhaid
+        td namhad
+        td naimhde
+      tr
+        td Nollaig
+        td Nollag
+        td Nollaigí
+
+mixin Table2N
+  +markedTable(2, 'N', 'Table2N-Title')
+    colgroup
+      col(class="w-1/3")
+      col(class="w-1/3")
+      col(class="w-1/3")
+    thead
+      tr
+        th(colspan=2 class="text-xl"): +renderKey("Uatha", { getFromCommon: true })
+        th(class="text-xl"): +renderKey("Iolra", { getFromCommon: true })
+      tr
+        th: +renderKey("Ainmneach", { getFromCommon: true })
+        th: +renderKey("Ginideach", { getFromCommon: true })
+        th: +renderKey("GachTuiseal", { getFromCommon: true })
+    tbody
+      tr
+        td bean
+        td mná
+        td mná (#[i: +renderKey("genPl")] ban)
+      tr
+        td deirfiúr
+        td deirfiúracha
+        td deirfiúracha
+      tr
+        td deoch
+        td deochanna
+        td deochanna
+      tr
+        td dia
+        td déithe
+        td déithe
+      tr
+        td lá
+        td lae
+        td laethanta
+      tr
+        td leaba
+        td leapa
+        td leapacha
+      tr
+        td mí
+        td míosa
+        td míonna
+      tr
+        td olann
+        td olla
+        td olanna (#[i: +renderKey("genPl")] olann)
+      tr
+        td talamh (#[+renderKey("Table2N-masc")])
+        td.
+          talaimh (#[+renderKey("Table2N-masc")]) #[br ]
+          talún (#[+renderKey("Table2N-fem")])
+        td tailte
+      tr
+        td teach
+        td tí
+        td tithe
+

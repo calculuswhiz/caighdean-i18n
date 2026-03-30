@@ -1,0 +1,204 @@
+include ../bodyMatter.pug
+include ./dbs/index.pug
+include tables.pug
+
++chapterTemplate(2)
+  +hx(2, "2.1", "2-1-title")
+    +hx(3, "2.1.1", "2-1-1-title")
+      p: +renderKey("2-1-1-p1")
+
+    +hx(3, "2.1.2", "2-1-2-title")
+      ol(class="list-[lower-alpha]")
+        each item in alphaRange('d')
+          li(id=`sec_2_1_2_${item}`)
+            p: b: +renderKey(`2-1-2-${item}-title`)
+            p: +renderKey(`2-1-2-${item}-p1`)
+
+    +hx(3, "2.1.3", "2-1-3-title")
+      p: +renderKey("2-1-3-p1")
+      ol(class="list-[lower-alpha]")
+        li#sec_2_1_3_a
+          p: b: +renderKey("2-1-3-a-title")
+          p: +renderKey("2-1-3-a-p1")
+          +Table2A()
+
+        li#sec_2_1_3_b
+          p: b: +renderKey("2-1-3-b-title")
+          p: +renderKey("2-1-3-b-p1")
+          ol(class="list-[lower-roman]")
+            li#sec_2_1_3_b_i
+              p: +renderKey("2-1-3-b-i-p1")
+              +Table2B()
+            li#sec_2_1_3_b_ii
+              p: +renderKey("2-1-3-b-ii-p1")
+              +Table2C()
+              p: +renderKey("2-1-3-b-ii-p2")
+            li#sec_2_1_3_b_iii
+              p: +renderKey("2-1-3-b-iii-p1")
+              +Table2D()
+
+    +hx(3, "2.1.4", "2-1-4-title")
+      p: +renderKey("2-1-4-p1")
+      p: +renderKey("2-1-4-p2")
+      ol(class="list-[lower-alpha]")
+        each item in alphaRange('d')
+          li(id=`sec_2_1_4_${item}`): +renderKey(`2-1-4-${item}-p`)
+
+    +hx(3, "2.1.5", "2-1-5-title")
+      p: +renderKey("2-1-5-p1")
+      p: +renderKey("2-1-5-p2")
+      ol(class="list-[lower-alpha]")
+        each item in alphaRange('c')
+          li(id=`sec_2_1_5_${item}`): +renderKey(`2-1-5-${item}`)
+
+    +hx(3, "2.1.6", "2-1-6-title")
+      p: +renderKey("2-1-6-p")
+
+    +hx(3, "2.1.7", "2-1-7-title")
+      p: +renderKey("2-1-7-p1")
+      ol(class="list-[lower-alpha]")
+        each item in alphaRange('f')
+          li(id=`sec_2_1_7_${item}`): +renderKey(`2-1-7-${item}`)
+
+      p: b: +renderKey("Nóta", { getFromCommon: true })
+      ol(class="list-[disc]")
+        each item in range(1, 3)
+          li(id=`sec_2_1_7_notes_${item}`): +renderKey(`2-1-7-notes-${item}`)
+
+    +hx(3, "2.1.8", "2-1-8-title")
+      +Table2E()
+      aside
+        | #[b: +renderKey("Nóta", { getFromCommon: true })]: #[+renderKey("2-1-8-notes")]
+  hr
+
+  +hx(2, "2.2", "2-2-title")
+    +hx(3, "2.2.1", "2-2-1-title")
+      p: +renderKey("2-2-1-p")
+
+    +hx(3, "2.2.2", "2-2-2-title")
+      ol(class="list-[lower-alpha]")
+        each item in alphaRange('d')
+          li(id=`sec_2_2_2_${item}`): +renderKey(`2-2-2-${item}`)
+
+    +hx(3, "2.2.3", "2-2-3-title")
+      ol(class="list-[lower-alpha]")
+        li#sec_2_2_3_a: +renderKey(`2-2-3-a`)
+        li#sec_2_2_3_b
+          p: +renderKey(`2-2-3-b-p`)
+          ol(class="list-[lower-roman]")
+            each item in romanCount(4)
+              li(id=`sec_2_2_3_b_${item}`): +renderKey(`2-2-3-b-${item}`)
+
+    +hx(3, "2.2.4", "2-2-4-title")
+      p: +renderKey("2-2-4-p1")
+      p: +renderKey("2-2-4-p2")
+      ol(class="list-[lower-alpha]")
+        li#sec_2_2_4_a
+          p: b: +renderKey("2-2-4-a")
+          +Table2F()
+        li#sec_2_2_4_b
+          p: b: +renderKey("2-2-4-b")
+          +Table2G()
+        li#sec_2_2_4_c
+          p: b: +renderKey("2-2-4-c-title")
+          p: +renderKey("2-2-4-c-p1")
+  hr
+
+  +hx(2, "2.3", "2-3-title")
+    +hx(3, "2.3.1", "2-3-1-title")
+      p: +renderKey("2-3-1-p")
+
+    +hx(3, "2.3.2", "2-3-2-title")
+      ol(class="list-[lower-alpha]")
+        li#sec_2_3_2_a: +renderKey(`2-3-2-a`)
+        li#sec_2_3_2_b: +renderKey(`2-3-2-b`)
+        li#sec_2_3_2_c
+          span: +renderKey(`2-3-2-c-p1`)
+          ol(class="list-[lower-roman]")
+            li#sec_2_3_2_c_i: +renderKey(`2-3-2-c-i`)
+            li#sec_2_3_2_c_ii: +renderKey(`2-3-2-c-ii`)
+
+    +hx(3, "2.3.3", "2-3-3-title")
+      p: +renderKey("2-3-3-p1")
+      ol(class="list-[lower-alpha]")
+        li#sec_2_3_3_a: +renderKey(`2-3-3-a`)
+        li#sec_2_3_3_b: +renderKey(`2-3-3-b`)
+
+    +hx(3, "2.3.4", "2-3-4-title")
+      p: +renderKey("2-3-4-p1")
+      p: +renderKey("2-3-4-p2")
+      ol(class="list-[lower-alpha]")
+        li#sec_2_3_4_a
+          p: b: +renderKey("2-3-4-a-title")
+          +Table2H()
+        li#sec_2_3_4_b
+          p: b: +renderKey("2-3-4-b-title")
+          +Table2I()
+  hr
+
+  +hx(2, "2.4", "2-4-title")
+    +hx(3, "2.4.1", "2-4-1-title")
+      ol(class="list-[lower-alpha]")
+        li#sec_2_4_1_a: +renderKey(`2-4-1-a`)
+        li#sec_2_4_1_b: +renderKey(`2-4-1-b`)
+
+    +hx(3, "2.4.2", "2-4-2-title")
+      ol(class="list-[lower-alpha]")
+        li#sec_2_4_2_a: +renderKey(`2-4-2-a`)
+        li#sec_2_4_2_b: +renderKey(`2-4-2-b`)
+        li#sec_2_4_2_c: +renderKey(`2-4-2-c`)
+
+    +hx(3, "2.4.3", "2-4-3-title")
+      p: +renderKey("2-4-3-p1")
+      p: +renderKey("2-4-3-p2")
+      ol(class="list-[lower-alpha]")
+        li#sec_2_4_3_a
+          p: b: +renderKey("2-4-3-a-title")
+          +Table2J()
+        li#sec_2_4_3_b
+          p: b: +renderKey("2-4-3-b-title")
+          +Table2K()
+  hr
+
+  +hx(2, "2.5", "2-5-title")
+    +hx(3, "2.5.1", "2-5-1-title")
+      ol(class="list-[lower-alpha]")
+        li#sec_2_5_1_a: +renderKey(`2-5-1-a`)
+        li#sec_2_5_1_b: +renderKey(`2-5-1-b`)
+        li#sec_2_5_1_c: +renderKey(`2-5-1-c`)
+    +hx(3, "2.5.2", "2-5-2-title")
+      ol(class="list-[lower-alpha]")
+        li#sec_2_5_2_a: +renderKey(`2-5-2-a`)
+        li#sec_2_5_2_b: +renderKey(`2-5-2-b`)
+        li#sec_2_5_2_c: +renderKey(`2-5-2-c`)
+    +hx(3, "2.5.3", "2-5-3-title")
+      p: +renderKey("2-5-3-p1")
+      p: +renderKey("2-5-3-p2")
+      ol(class="list-[lower-alpha]")
+        li#sec_2_5_3_a
+          p: b: +renderKey("2-5-3-a-title")
+          +Table2L()
+      aside
+        | #[b: +renderKey("Nóta", { getFromCommon: true })]: #[+renderKey("2-5-3-Note")]
+  hr
+
+  +hx(2, "2.6", "2-6-title")
+    +hx(3, "2.6.1", "2-6-1-title")
+      ol(class="list-[lower-alpha]")
+        li#sec_2_6_1_a: +renderKey(`2-6-1-a`)
+        li#sec_2_6_1_b: +renderKey(`2-6-1-b`)
+    +hx(3, "2.6.2", "2-6-2-title")
+      p: +renderKey("2-6-2-p1")
+      p: +renderKey("2-6-2-p2")
+      ol(class="list-[lower-alpha]")
+        li#sec_2_6_2_a
+          p: b: +renderKey("2-6-2-a-title")
+          +Table2M()
+  hr
+
+  +hx(2, "2.7", "2-7-title")
+    p: +renderKey("2-7-p")
+    +Table2N()
+    aside
+      | #[b: +renderKey("Nóta", { getFromCommon: true })]: #[+renderKey("2-7-Note")]
+  hr

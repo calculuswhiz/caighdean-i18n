@@ -92,7 +92,9 @@ mixin sampleBox(samplePrefix, sampleCount)
             td(class="bg-stone-100 border-1 border-[rgba(0,0,0,0.1)] p-1")
               +renderKey(`${samplePrefix}${row}`)
 
-//- Normal chapter content table (e.g. Table 1A)
+//- 
+  Normal chapter content table (e.g. Table 1A)
+  Puts in a caption too.
 mixin markedTable(chapter, tableLetter, captionKey)
   table(
     class=`chapter-${chapter}`
@@ -101,17 +103,9 @@ mixin markedTable(chapter, tableLetter, captionKey)
     caption
       b(class="pr-2")
         +renderKey('Tábla', { getFromCommon: true })
-        | #{chapter}#{tableLetter}
+        | &nbsp;#{chapter}#{tableLetter}
       +renderKey(captionKey)
     block
-
-//- Generate a table body from array of rows (cell[][])
-mixin autoRows(rows)
-  tbody
-    each row in rows
-      tr
-        each cell in row
-          td #{cell}
 
 //- 
   Generates heading element. Comes with id, anchor link
