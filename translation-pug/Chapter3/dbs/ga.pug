@@ -1,0 +1,644 @@
+include ../../tlMatter.pug
+
+mixin gaDb(key)
+  case key
+    when "teidealNaCaibidle"
+      | Ainmfhocail Chinnte agus Éiginnte, Giorrúcháin agus Foirm An Ainmnigh in ionad An Ghinidigh
+    when "3-title"
+      | #[+renderKey("Caibidil", { getFromCommon: true })] 3 | #[+gaDb("teidealNaCaibidle")]
+    when "3-1-title"
+      | Ainmfhocail Chinnte agus Éiginnte
+    when "3-1-1-p"
+      | Bíonn ainmfhocal cinnte nó éiginnte. Is ainmfhocal cinnte ainmfhocal a thagraíonn do dhuine nó do rud cinnte. Is ar cheann de na slite a léirítear in #[+link("#sec_3_1_2", "3.1.2")] thíos a dhéantar tagairt do dhuine nó do rud cinnte. Is ainmfhocal éiginnte ainmfhocal in aon chás eile.
+    when "3-1-2-p"
+      | Is ainmfhocal cinnte &mdash;
+    when "3-1-2-a"
+      | ainm dílis (ainm duine nó áite áirithe), e.g., #[i Fionnán], #[i Gráinne], #[i Leamhcán]:
+    when "3-1-2-a-sample1"
+      | #[b Caoimhe] is ainm di.
+    when "3-1-2-a-sample2"
+      | Tá cónaí orthu i #[b Meiriceá].
+    when "3-1-2-b"
+      | ainmfhocal a bhfuil an t&#x2011;alt roimhe, e.g., #[i an tAcht], #[i an obair], #[i an fhadhb]:
+    when "3-1-2-b-sample1"
+      | An bhfaca tú #[b an t&#x2011;eitleán] mór sin?
+    when "3-1-2-b-sample2"
+      | Tá #[b an ghealach] lán anocht.
+    when "3-1-2-b-sample3"
+      | An raibh #[b an tiománaí] tacsaí ag an gcruinniú?
+    when "3-1-2-c"
+      | ainmfhocal a bhfuil aidiacht shealbhach roimhe, e.g., #[i mo mhac], #[i a hathair], #[i a ngluaisteán]:
+    when "3-1-2-c-sample1"
+      | Ar bhuail tú le #[b mo dheartháir]?
+    when "3-1-2-c-sample2"
+      | #[b A hathair] a d&rsquo;inis an scéal di.
+    when "3-1-2-c-sample3"
+      | Bhí sí ag glanadh #[b a bróg] peile. (#[i iol.])
+    when "3-1-2-c-sample4"
+      | Chuaigh sé i gcomhair #[b a chupáin] tae. (#[i u.])
+    when "3-1-2-d"
+      | ainmfhocal a bhfuil #[i gach], #[i gach aon] nó #[i gach uile] roimhe:
+    when "3-1-2-d-sample1"
+      | Bhí #[b gach duine] den teaghlach i láthair.
+    when "3-1-2-d-sample2"
+      | Buaileann sé isteach ag an am céanna #[b gach aon lá].
+    when "3-1-2-d-sample3"
+      | Baineann an t&#x2011;acht leasaithe le #[b gach uile fheithicil] inneallghluaiste.
+    when "3-1-2-e"
+      | ainmfhocal a bhfuil uimhir nó litir ar a lorg, e.g., #[i Cuid III], #[i riail a sé], #[i Bus 16], #[i mír (b)]:
+    when "3-1-2-e-sample1"
+      | Bain triail as #[b ceist a ceathair].
+    when "3-1-2-e-sample2"
+      | Ar sheiceáil tú #[b Aguisín A]?
+    when "3-1-2-f"
+      | ainmfhocal a bhfuil ainmfhocal cinnte ar a lorg, e.g., #[i oifig Áine], #[i óráid an Aire], #[i teach mo mhic], #[i tús gach bliana], #[i sonraí mhír (b)]:
+    when "3-1-2-f-sample1"
+      | Tá an fhéile á heagrú i gcomhar le #[b muintir Thamhlachta].
+    when "3-1-2-f-sample2"
+      | An é #[b leabhar an mhúinteora] é?
+    when "3-1-2-f-sample3"
+      | Ar labhair tú le #[b bainisteoir an óstáin]?
+    when "3-1-2-f-sample4"
+      | Thug sé cuairt ar #[b theach a iníne].
+    when "3-1-2-f-sample5"
+      | Tá #[b ainm gach imreora] ar eolas aige.
+    when "3-1-2-f-sample6"
+      | Tugadh ardmholadh #[b d&rsquo;fhoireann Bhus 16].
+    when "3-1-2-g"
+      | ainmfhocal sa tuiseal gairmeach, e.g., #[i a bhean], #[i a dhuine uasail]:
+    when "3-1-2-g-sample1"
+      | Céard atá á dhéanamh agat ansin, #[b a mhic]?
+    when "3-1-2-g-sample2"
+      | Ní chreidfeá é, #[b a thaisce].
+    when "3-1-3-p1"
+      | Is minic an t&#x2011;alt ina chuid d&rsquo;ainm dílis (go háirithe i gcás logainmneacha) agus ní mór an t&#x2011;alt a úsáid sna cásanna sin, e.g., #[i an Ísiltír], #[i an tSionainn], #[i an Longfort], #[i an Streoillín], #[i an Earagail], #[i An tOileánach] (nuair is é an leabhar atá i gceist), #[i na Cruacha Dubha].
+    when "3-1-3-sample1"
+      | Bhí mé ar #[b an Earagail] inné.
+    when "3-1-3-sample2"
+      | Cé a scríobh #[i: b An Grá agus an Ghruaim]?
+    when "3-1-3-p2"
+      | Tabhair faoi deara, i gcásanna inar gnách an t&#x2011;alt a úsáid le hainm dílis, nach gcuirtear an t&#x2011;alt isteach má tá an t&#x2011;ainm dílis sin ag feidhmiú i gcáil aidiachta, e.g., #[i an Nollaig] ach #[i cárta Nollag]; #[i an Ardteist] ach #[i scrúdú Ardteiste]; #[i an Cháisc] ach #[i ubh Chásca].
+    when "3-1-4-p1"
+      | Úsáidtear an t&#x2011;alt roimh ghinideach #[i Éire], #[i Albain], #[i Gaillimh], e.g., #[i oileán na hÉireann], #[i foireann na hAlban], #[i cathair na Gaillimhe] (féach #[+link("./chapter1.html#sec_1_1_5_i_A", "1.1.5(i)A")]).
+    when "3-1-4-p1-sample1"
+      | Tá an-eolas aici ar litríocht #[b na hÉireann].
+    when "3-1-4-p1-sample2"
+      | Blas #[b na Gaillimhe] atá ar a cuid cainte.
+    when "3-1-4-p2"
+      | Fágtar an t&#x2011;alt ar lár roimh #[i Éireann] i roinnt leaganacha oifigiúla, áfach, e.g., #[i Dáil Éireann], #[i Seanad Éireann], #[i Iarnród Éireann], #[i Bus Éireann], agus i roinnt seanleaganacha agus leaganacha fileata, e.g., #[i plúr ban Éireann], #[i bánchnoic Éireann].
+    when "3-1-4-p2-sample1"
+      | Is clár de chuid #[b Raidió Teilifís Éireann] é.
+    when "3-1-4-p2-sample2"
+      | Is í #[b rogha ban Éireann] í.
+    when "3-1-5-p"
+      | Is féidir an t&#x2011;alt a úsáid le hainmneacha trádála nuair atá feidhm aidiachtach acu, e.g., #[i an buidéal Coca Cola]; #[i sa mhála Supervalu]; #[i laistigh den doiciméad Word]; #[i ar an ríomhaire Apple].
+    when "3-1-5-p-sample1"
+      | Is é sin #[b an t&#x2011;inneall fuála Singer] a cheannaigh mo sheanmháthair.
+    when "3-1-5-p-sample2"
+      | Shábháil mé sa #[b scarbhileog Excel] chéanna é.
+    when "3-1-6-p1"
+      | Ní chuirtear an t&#x2011;alt roimh ainmfhocal má tá sé cáilithe le hainmfhocal cinnte sa ghinideach, e.g., #[i tiománaí an tacsaí], #[i ceadúnas thiománaí an tacsaí]; #[i dáta éaga cheadúnas thiománaí an tacsaí] (nuair atá tacsaí áirithe i gceist).
+    when "3-1-6-p1-sample1"
+      | An raibh #[b úinéir an tsiopa] in ann cabhrú leat?
+    when "3-1-6-p1-sample2"
+      | Fágadh na heochracha in oifig chuntasóir #[b úinéir an tsiopa].
+    when "3-1-6-p2"
+      | Cuirtear an t&#x2011;alt roimh an gcéad ainmfhocal má tá sé cáilithe le hainmfhocal éiginnte, e.g., #[i an tiománaí tacsaí], #[i an tiománaí leoraí] (cineál áirithe tiománaí); #[i an freastalaí beáir], #[i an freastalaí bialainne] (cineál áirithe freastalaí); #[i an t&#x2011;oifigeach feidhmiúcháin], #[i an t&#x2011;oifigeach riaracháin] (cineál áirithe oifigigh) (féach #[+link("#sec_3_1_9", "3.1.9")]).
+    when "3-1-6-p2-sample1"
+      | Is é #[b an t&#x2011;úinéir talún] is fearr sa cheantar é.
+    when "3-1-6-p2-sample2"
+      | Is í #[b an t&#x2011;imreoir sacair] is gasta dá bhfaca mé riamh í.
+    when "3-1-7-p1"
+      | Tá roinnt frásaí ainmfhoclacha ann a bhfuil ainmfhocal iontu a bheadh cinnte de réir #[+link("#sec_3_1_2", "3.1.2")] ach atá éiginnte toisc go bhfuil an frása iomlán á úsáid ina aonad amháin brí mar ainmfhocal éiginnte. Uaireanta, sna cásanna sin, úsáidtear an t&#x2011;alt nuair atá an frása iomlán ag feidhmiú mar ainmfhocal cinnte, e.g., #[i an Leabhar Eoin]; #[i an Choróin Mhuire]; #[i ba mhór an grá Dia é]; #[i an fear sin na n&#x2011;uibheacha].
+    when "3-1-7-p1-sample1"
+      | D&rsquo;imigh siad leo nuair a bhí #[b an uair an chloig] caite.
+    when "3-1-7-p1-sample2"
+      | Nach é #[b an trua Mhuire] é!
+    when "3-1-7-p2"
+      | Tabhair faoi deara go gcoinnítear an t&#x2011;alt freisin i gcás go dtagann uimhir nó litir i ndiaidh ainmfhocal atá á cháiliú le forainmneach taispeántach, e.g., #[i an t&#x2011;alt sin 5]; #[i an mhír sin (f)].
+    when "3-1-8-p"
+      | Maidir le teidil a mbíonn blianta ag gabháil leo &mdash; teidil féilte agus tuarascálacha bliantúla, mar shampla &mdash; níor cheart an t&#x2011;alt a úsáid ach amháin más aonaid bhrí ar leithligh iad an dáta agus an chuid eile den teideal. Ní hionann brí #[i An tOireachtas], #[i 2010] agus #[i Oireachtas 2010] ná #[i An Tuarascáil Bhliantúil], #[i 2009] agus #[i Tuarascáil Bhliantúil 2009].
+    when "3-1-8-p-sample1"
+      | An bhfuil #[b Tuarascáil Bhliantúil 2015] réidh?
+    when "3-1-8-p-sample2"
+      | Foilseofar #[b Tuarascáil Bhliantúil an Choimisinéara Faisnéise, 2014] go luath.
+    when "3-1-8-p-sample3"
+      | Eisíodh #[b an tAcht Oideachais, 2015] inné.
+    when "3-1-9-p"
+      | Úsáidtear an tuiseal ginideach sna cásanna seo a leanas (féach na cásanna eile in #[+link("./chapter1.html#sec_1_5_1", "1.5.1")]) &mdash;
+    when "3-1-9-a-p"
+      | nuair atá ainmfhocal cinnte á cháiliú le hainmfhocal cinnte eile:
+    when "3-1-9-b-p"
+      | nuair atá ainmfhocal éiginnte á cháiliú le hainmfhocal éiginnte eile:
+    when "3-1-9-c-p"
+      | nuair atá ainmfhocal cinnte á cháiliú le hainmfhocal éiginnte:
+    when "3-1-10-p"
+      | A thúisce a cháilítear ainmfhocal éiginnte le hainmfhocal cinnte, ní ainmfhocal éiginnte é a thuilleadh ach ainmfhocal cinnte. Dá réir sin, más brí éiginnte atá i gceist, ní foláir fochlásal réamhfhoclach nó réamhfhocal a úsáid chun an nasc idir na hainmfhocail a léiriú.
+    when "3-1-10-a-p"
+      | Úsáidtear #[i de] más cuid nó páirt atá i gceist, e.g., #[i Ballstát den Aontas Eorpach]; #[i gloine den bheoir gheal]:
+    when "3-1-10-a-p-sample1"
+      | An bhfuair tú cuid #[b den] airgead?
+    when "3-1-10-a-p-sample2"
+      | Tháinig na ceisteanna ó dhaoine #[b den] phobal.
+    when "3-1-10-b-p"
+      | Úsáidtear #[i de chuid] i gcás gur ní as measc grúpa de nithe iomadúla den saghas céanna atá i gceist, e.g., #[i iománaí de chuid na Gaillimhe]; #[i feidhmeanna áirithe de chuid an choiste]:
+    when "3-1-10-b-p-sample1"
+      | Briseadh ríomhaire #[b de chuid] na hoifige.
+    when "3-1-10-b-p-sample2"
+      | Is deontas #[b de chuid] na Roinne é.
+    when "3-1-10-c-p"
+      | Úsáidtear réamhfhocal eile (#[i le], etc.) i gcásanna eile chun éiginnteacht a chur in iúl, e.g., #[i deartháir le Bríd]; #[i úrscéal le Máire]:
+    when "3-1-10-c-p-sample1"
+      | Ba #[b bhréagán le Caoimhe] an bréagán a bhris sé.
+    when "3-1-10-c-p-sample2"
+      | Ar léigh sibh #[b tuarascáil ó Pharlaimint na hEorpa]?
+    when "3-1-11-p"
+      | Is minic i gcás #[+link("#sec_3_1_10_b", "3.1.10(b)")] thuas, áfach, gur feiliúnaí ceann de na focail ionadacha #[i ceann], #[i cuid] nó #[i duine] a chur in ionad an chéad ainmfhocail, e.g., #[i ceann de ríomhairí na hoifige]; #[i duine d&rsquo;iománaithe na Gaillimhe]. Is féidir, freisin, an t&#x2011;ainmfhocal a úsáid faoi dhó, e.g., #[i dán de dhánta Uí Bhruadair].
+    when "3-1-11-p-sample1"
+      | Bhris sé #[b ceann] de na cupáin sa chistin.
+    when "3-1-11-p-sample2"
+      | Rachaidh #[b cuid] den aos óg thar sáile i gcónaí.
+    when "3-1-11-p-sample3"
+      | Is #[b duine] d&rsquo;fhoireann na hoifige é.
+    when "3-1-11-p-sample4"
+      | Nach #[b amhrán] d&rsquo;amhráin Kíla é?
+    when "3-1-11-note"
+      | Úsáidtear na struchtúir chéanna uaireanta i gcás ainmfhocail chinnte, e.g., #[i an ghloine dheireanach den fhíon dearg]; #[i an chuid is fearr den leabhar].
+    when "3-1-11-p-sample5"
+      | Bhí #[b gach ríomhaire de chuid] na cuideachta briste.
+    when "3-1-11-p-sample6"
+      | Ba é #[b an ceann] ba mheasa #[b de] na scannáin uile a chonaiceamar é.
+    when "3-2-title"
+      | Giorrúcháin agus Acrainmneacha
+    when "3-2-1-title"
+      | Ginearálta
+    when "3-2-1-a-p"
+      | Ní dhéantar infhilleadh ná athrú tosaigh ar ghiorrúchán nó ar acrainm riamh. (#[i SAM &mdash; Stáit Aontaithe Mheiriceá]; #[i OÉ &mdash; Ollscoil na hÉireann].)
+    when "3-2-1-a-p-sample1"
+      | Scríobh sé leabhar #[b faoi SAM].
+    when "3-2-1-a-p-sample2"
+      | Tá agallamh aige #[b le OÉ] Gaillimh.
+    when "3-2-1-b-p"
+      | Is é #[i in] (seachas #[i i]) an fhoirm den réamhfhocal #[i i] a úsáidtear roimh ghiorrúchán nó acrainm. (#[i RTÉ &mdash; Raidió Teilifís Éireann]; #[i CSE &mdash; Ciste Sóisialta na hEorpa].)
+    when "3-2-1-b-p-sample1"
+      | Tá sí ag obair #[b in RTÉ].
+    when "3-2-1-b-p-sample2"
+      | Tá na milliúin euro #[b in CSE].
+    when "3-2-1-c-p1"
+      | Ní chiorraítear na réamhfhocail #[i de] agus #[i do] go #[i d&rsquo;] roimh ghiorrúchán nó acrainm a thosaíonn ar ghuta. (#[i OLAF &mdash; an Oifig Eorpach Frith-Chalaoise]; #[i ÍMAT &mdash; Íoc mar a Thuillir].)
+    when "3-2-1-c-p1-sample1"
+      | Is ag cruinnithe #[b de OLAF] a pléadh an cheist.
+    when "3-2-1-c-p1-sample2"
+      | Tugadh aitheantas #[b do ÍMAT] mar chóras cánach a bhfuil ag éirí go maith leis.
+    when "3-2-1-c-p2"
+      | Tabhair faoi deara go mbíonn sé de rogha ag an scríbhneoir na focail ar a bhfuil an giorrúchán nó an t&#x2011;acrainm bunaithe a scríobh amach i gcónaí.
+    when "3-2-1-c-p2-sample1"
+      | An bhfuil an cur chuige bunaithe ar an #[b Ionstraim Eorpach Aonair]?
+    when "3-2-1-c-p2-sample2"
+      | Tá súil ag na #[b Náisiúin Aontaithe] go mbeidh dea-thoradh ar an bpróiseas.
+    when "3-2-2-title"
+      | Nithe Aonaracha
+    when "3-2-2-p"
+      | Tá dhá chóras is féidir a úsáid chun plé le giorrúcháin agus le hacrainmneacha ar teidil iad ar eagraíochtaí, foilseacháin, conarthaí, comhaontuithe, scéimeanna, córais nó nithe eile dá samhail nach ann ach do cheann amháin acu &mdash; an córas gan an t&#x2011;alt agus an córas leis an alt. Cé is moite de théacsanna reachtúla ina n&#x2011;úsáidtear an córas gan an t&#x2011;alt i gcónaí, is faoin scríbhneoir atá sé an córas a úsáidfear a roghnú. Moltar gan an dá chóras a mheascadh.
+    when "3-2-2-A-title"
+      | Nithe aonaracha &mdash; an córas gan an t&#x2011;alt
+    when "3-2-2-A-a-p"
+      | Sa chóras gan an t&#x2011;alt, is mar ainmfhocail chinnte a phléitear le giorrúcháin agus le hacrainmneacha agus ní chuirtear an t&#x2011;alt rompu (ach féach #[+link("#sec_3_2_3_b", "3.2.3(b)")]). (#[i CTT &mdash; an Clár Tacaíochta Teaghlaigh]; #[i NA &mdash; na Náisiúin Aontaithe]; #[i OÉ &mdash; Ollscoil na hÉireann])
+    when "3-2-2-A-a-p-sample1"
+      | Tá #[b SAM] ina bhall den Chomhairle Slándála.
+    when "3-2-2-A-a-p-sample2"
+      | Tá beartais #[b OÉ] dírithe ar an oideachas a fhorbairt.
+    when "3-2-2-A-a-p-sample3"
+      | Tagann Airí Bhallstáit #[b AE] le chéile sa Chomhairle.
+    when "3-2-2-A-a-p-sample4"
+      | Tá obair ar bun le haghaidh dhíscaoileadh #[b CTT].
+    when "3-2-2-A-a-p-sample5"
+      | Tá sí ag obair i gcomhar le Gasra Imscrúdaithe de chuid #[b NA].
+    when "3-2-2-A-b-p"
+      | Is mar ainmfhocal firinscneach uatha a dhéantar tagairt do ghiorrúchán nó d&rsquo;acrainm gan beann ar uimhir ná inscne na bhfocal ar a bhfuil sé bunaithe. (#[i FSS &mdash; Feidhmeannacht na Seirbhíse Sláinte].)
+    when "3-2-2-B-title"
+      | Nithe aonaracha &mdash; an córas leis an alt
+    when "3-2-2-B-p"
+      | Sa chóras leis an alt, úsáidtear an t&#x2011;alt roimh ghiorrúcháin nó roimh acrainmneacha de réir mar is cuí. Bíonn úsáid an ailt faoi réir ag struchtúr na bhfocal ar a bhfuil na giorrúcháin nó na hacrainmneacha bunaithe, mar seo a leanas &mdash;
+    when "3-2-2-B-a-p"
+      | ní chuirtear an t&#x2011;alt roimh ghiorrúcháin nó roimh acrainmneacha má tá siad bunaithe ar ainmfhocail chinnte nach gcuirtear an t&#x2011;alt leo, e.g., #[i Stáit Aontaithe Mheiriceá], #[i Raidió Teilifís Éireann], nó má tá an t&#x2011;alt i lár na bhfocal ar a bhfuil na giorrúcháin nó na hacrainmneacha bunaithe, e.g., #[i Feidhmeannacht na Seirbhíse Sláinte], #[i Ollscoil na hÉireann]:
+    when "3-2-2-B-a-p-sample1"
+      | Tá #[b SAM] ina bhall den Chomhairle Slándála.
+    when "3-2-2-B-a-p-sample2"
+      | Tá beartais #[b OÉ] dírithe ar an oideachas a fhorbairt.
+    when "3-2-2-B-b-p"
+      | cuirtear an t&#x2011;alt roimh ghiorrúcháin nó roimh acrainmneacha má tá siad bunaithe ar ainmfhocail a gcuirtear an t&#x2011;alt rompu chun iad a dhéanamh cinnte. Úsáidtear foirm uatha nó iolra an ailt ag brath ar uimhir na bhfocal ar a bhfuil na giorrúcháin nó na hacrainmneacha bunaithe:
+    when "3-2-2-B-b-p-sample1"
+      | Tagann Airí Bhallstáit #[b an AE] le chéile sa Chomhairle.
+    when "3-2-2-B-b-p-sample2"
+      | Cé atá i dteideal maoiniú #[b faoin CTT]?
+    when "3-2-2-B-b-p-sample3"
+      | Tá sí ag obair i gcomhar le Gasra Imscrúdaithe de chuid #[b na NA].
+    when "3-2-2-B-c-p"
+      | is mar ainmfhocal firinscneach uatha a dhéantar tagairt do ghiorrúchán nó d&rsquo;acrainm gan beann ar uimhir ná inscne na bhfocal ar a bhfuil sé bunaithe. (#[i an IEA &mdash; an Ionstraim Eorpach Aonair].)
+    when "3-2-3-title"
+      | Nithe Iomadúla
+    when "3-2-3-a-p"
+      | Má bhaineann giorrúchán nó acrainm le nithe iomadúla (nithe a bhfuil níos mó ná ceann amháin acu ann), is féidir an t&#x2011;alt a chur roimhe ar mhaithe lena idirdhealú ó nithe eile den chineál céanna. (#[i CIN &mdash; Corparáid Ilnáisiúnta]; #[i PO &mdash; Príomhoifigeach].)
+    when "3-2-3-a-p-sample1"
+      | Is fostaí de chuid #[b CIN] rannpháirteach í.
+    when "3-2-3-a-p-sample2"
+      | - #[i ach] Is fostaí de chuid #[b an CIN rannpháirtigh sin] í.
+    when "3-2-3-a-p-sample3"
+      | Úsáidtear an seomra mar oifig #[b PO].
+    when "3-2-3-a-p-sample4"
+      | - #[i ach] Úsáidtear an seomra mar oifig #[b an PO sin].
+    when "3-2-3-b-p"
+      | Is féidir an t&#x2011;alt a úsáid le hainmfhocal atá á cháiliú le giorrúchán nó le hacrainm a bhfuil feidhm aidiachtach leis ar mhaithe le rud sonrach as measc nithe iomadúla a aithint. (#[i uimhir PSP &mdash; uimhir Phearsanta Seirbhíse Poiblí]; #[i CBL &mdash; Cáin Bhreisluacha]; #[i DART &mdash; Dublin Area Rapid Transit].)
+    when "3-2-3-b-p-sample1"
+      | Tabharfar #[b uimhir PSP] duit.
+    when "3-2-3-b-p-sample2"
+      | - #[i ach] Cá bhfuil #[b an uimhir PSP] a tugadh duit?
+    when "3-2-3-b-p-sample3"
+      | Tá #[b ráta ard CBL] i bhfeidhm.
+    when "3-2-3-b-p-sample4"
+      | - #[i ach] Tá #[b an ráta céanna CBL] i bhfeidhm le fada.
+    when "3-2-3-b-p-sample5"
+      | Tá #[b stáisiún DART] sa cheantar seo.
+    when "3-2-3-b-p-sample6"
+      | - #[i ach] An é #[b an stáisiún DART sin] atá i gceist?
+    when "3-2-3-c-p"
+      | Cruthaítear leagan iolra de ghiorrúchán nó d&rsquo;acrainm a bhaineann le nithe iomadúla trí #[i -anna] a chur leis má chríochnaíonn sé ar chonsan agus trí #[i -nna] a chur leis má chríochnaíonn sé ar ghuta. Is mar ainmfhocal firinscneach iolra a dhéantar tagairt do ghiorrúchán nó d&rsquo;acrainm atá san iolra.
+    when "3-2-3-c-p-sample1"
+      | Nach #[b iad] sin #[b na CINanna] a bhfuil dea-cháil #[b orthu]?
+    when "3-2-3-c-p-sample2"
+      | Is #[b POnna] ar fad #[b iad] sin.
+    when "3-3-title"
+      | Foirm an Ainmnigh in ionad an Ghinidigh
+    when "3-3-1-title"
+      | An tAinmfhocal Cinnte
+    when "3-3-1-a-p1"
+      | Má thagann ainmfhocal cinnte sa ghinideach i ndiaidh ainmfhocal eile, is gnách an t&#x2011;ainmfhocal eile sin a fhágáil gan infhilleadh agus a thúschonsan a shéimhiú nuair atá sé faoi réir ag focal nó ag leagan a leanann an ginideach é (féach freisin #[+link("./chapter10.html#sec_10_2_6", "10.2.6")]). Fágtar ainmfhocal a bhfuil uimhir nó litir ar a lorg gan infhilleadh agus séimhítear a thúschonsan freisin &mdash;
+    when "3-3-1-a-i-p"
+      | ainm dílis (ainm duine nó áite áirithe):
+    when "3-3-1-a-ii-p"
+      | ainmfhocal a bhfuil an t&#x2011;alt roimhe:
+    when "3-3-1-a-iii-p"
+      | ainmfhocal a bhfuil aidiacht shealbhach roimhe:
+    when "3-3-1-a-iv-p"
+      | ainmfhocal a bhfuil #[i gach], #[i gach aon], nó #[i gach uile] roimhe:
+    when "3-3-1-a-v-p"
+      | ainmfhocal a bhfuil uimhir nó litir ar a lorg:
+    when "3-3-1-a-vi-p"
+      | ainmfhocal a bhfuil ainmfhocal cinnte ar a lorg:
+    when "3-3-1-a-p2"
+      | #[b Ach], más ainm briathartha an t&#x2011;ainmfhocal a bhfuil ainmfhocal cinnte ar a lorg, déantar athrú an ghinidigh air má thagann ainmfhocal eile roimhe, e.g., #[i cosaint], #[i madra cosanta na monarchan]; #[i fuascailt], #[i bean fuascailte na ceiste]; #[i cealgadh], #[i beach cealgtha an pháiste]; #[i bualadh], #[i innill buailte an arbhair]; #[i bailiú], #[i seachtain bailithe na rátaí].
+    when "3-3-1-b-p"
+      | I gcás ainm briathartha a bheith ina dhlúthchuid d&rsquo;aonad áirithe, e.g., #[i cur chun cinn]; #[i cur chuige]; #[i teacht i bhfeidhm]; atá faoi réir ag ainmfhocal eile nó ag leagan a leanann an ginideach é:
+    when "3-3-1-b-i-p"
+      | má tá an t&#x2011;alt roimh an ainm briathartha sin, is é an t&#x2011;alt firinscneach uatha a bhíonn roimhe i ngach tuiseal agus ní dhéantar an t&#x2011;ainm briathartha a infhilleadh, e.g., #[i luas an dul chun cinn]; #[i ag moladh an teacht i bhfeidhm]; #[i le linn an tabhairt amach]; #[i i bhfianaise an tabhairt suas]; #[i faoi réir an leagan amach]. Imríonn an t&#x2011;alt ar thúslitir an ainm bhriathartha, áfach, mar a d&rsquo;imreodh ar ainmfhocal firinscneach uatha sa ghinideach, e.g., #[i fad an chur síos]; #[i castacht an chur chuige]; #[i ag cáineadh an éirí in airde]; #[i ag comóradh an éirí amach]; #[i de dheasca an tsracfhéachaint ar gcúl]; #[i d&rsquo;ainneoin an chéim ar gcúl] (féach #[+link("#sec_3_3_3_c", "3.3.3(c)")]):
+    when "3-3-1-b-i-p-sample1"
+      | Tá an t&#x2011;iniúchóir #[b ag fiosrú an chur i gcéill] sin faoi láthair.
+    when "3-3-1-b-i-p-sample2"
+      | Bhí sí #[b i mbun an chur i láthair] nuair a theip ar an ríomhaire.
+    when "3-3-1-b-ii-p"
+      | má tá aidiacht shealbhach roimh an ainm briathartha, déantar a thúschonsan a shéimhiú nó a urú, de réir mar is cuí, ach fágtar é gan infhilleadh, e.g., #[i i bhfianaise mo chur chuige]; #[i luas ár ndul chun cinn]; #[i ag moladh a gcur chuige] (iol.):
+    when "3-3-1-b-ii-p-sample1"
+      | Tá siad #[b ag moladh a chur chuige] ó mhínigh sé dóibh é.
+    when "3-3-1-b-ii-p-sample2"
+      | Dúirt sí go raibh an t&#x2011;eolas ag teastáil #[b le haghaidh a cur i láthair].
+    when "3-3-2-title"
+      | Ainmfhocal Cinnte nó Éiginnte
+    when "3-3-2-a-p"
+      | Nuair atá ainmfhocal nó abairtín ainmfhoclach á cheangal ag an réamhfhocal #[i a] (as #[i do]) le hainm briathartha, fágtar an t&#x2011;ainmfhocal san ainmneach ar lorg focal nó leagan a leanann an ginideach é.
+    when "Table-3A-Col1Title"
+      | An Ginideach
+    when "Table-3A-Col2Title"
+      | Foirm an Ainmnigh in ionad an Ghinidigh
+    when "Table-3A-caption-part"
+      | Ainmfhocal nó Abairtín Cinnte nó Éiginnte á cheangal ag an Réamhfhocal #[i a] le hAinm Briathartha
+    when "Table3A-caption"
+        | #[+renderKey("Table-3A-Col2Title")] &mdash; #[+renderKey("Table-3A-caption-part")]
+    when "3-3-2-b-p1"
+      | Ní dhéantar athrú an ghinidigh ar na focail #[i ceann] agus #[i cuid] nuair atá ginideach rannaíoch nó tabharthach rannaíoch faoina réir.
+    when "3-3-2-b-p1-sample1"
+      | Gortaíodh í #[b le linn ceann de na cluichí áitiúla].
+    when "3-3-2-b-p1-sample2"
+      | Tá laghdú tagtha ar #[b mhéid mo chuid oibre].
+    when "3-3-2-b-p1-sample3"
+      | Bhí siad #[b ag díbirt cuid mhór acu].
+    when "3-3-2-b-p1-sample4"
+      | Ritheadh é #[b d&rsquo;ainneoin an chuid eile den alt].
+    when "3-3-2-b-p2"
+      | #[b Ach], infhilltear iad nuair is gnáth-ainmfhocail iad.
+    when "3-3-2-b-p2-sample1"
+      | D&rsquo;ainneoin #[b na Coda] sin, ritheadh an Bille.
+    when "3-3-2-b-p2-sample2"
+      | Thit sí ar mhullach #[b a cinn].
+    when "3-3-2-c-p1"
+      | Nuair a úsáidtear aon ainmfhocal coiteann amháin gan an t&#x2011;alt leis mar ainm comhlachta, cumainn nó cláir, ní dhéantar infhilleadh ná athrú tosaigh ar an ainmfhocal, e.g., #[i buaicphointe Múscailt], #[i ceannáras Muintearas], #[i ceardlanna Síolta], #[i gníomhairí Bóthar].
+    when "3-3-2-c-p1-sample1"
+      | Bhuail mé le #[b Príomhfheidhmeannach Trócaire] ann.
+    when "3-3-2-c-p1-sample2"
+      | Cá bhfuil #[b príomhoifig Bóthar]?
+    when "3-3-3-title"
+      | An tAinmfhocal Éiginnte &mdash; An tAinm Briathartha
+    when "3-3-3-p"
+      | Is é is ainm briathartha ann focal a bhfuil feidhm ainmfhocail agus feidhm bhriathair araon aige. Is féidir focail amhail #[i eitilt], #[i foghlaim], #[i snámh], etc. a úsáid mar ainmfhocal, e.g., #[i deireadh na heitilte]; #[i foghlaim a fháil]; #[i snámh féileacáin], agus mar ainm briathartha, e.g., #[i ag eitilt sa spéir]; #[i ag foghlaim teanga]; #[i ag snámh in aghaidh easa]. Déantar cur síos anseo ar chásanna ina n&#x2011;úsáidtear foirm an ainmnigh den ainm briathartha in ionad fhoirm an ghinidigh de.
+    when "3-3-3-a-p"
+      | Ní dhéantar athrú an ghinidigh ar ainm briathartha nuair atá an forainmneach réamhthagrach #[i a] roimhe.
+    when "3-3-3-a-p-sample1"
+      | Tá sé #[b tar éis a rá] go ndéanfaidh sé é.
+    when "3-3-3-a-p-sample2"
+      | Tá sé #[b ag iarraidh a dheimhniú] go mbeidh gach ní ina cheart.
+    when "3-3-3-b-p1"
+      | Má tá ainm briathartha sa struchtúr #[i chun] + #[i ainm briathartha] á úsáid chun gníomh atá le teacht a chur in iúl, ní dhéantar athrú an ghinidigh air.
+    when "3-3-3-b-p1-sample1"
+      | An bhfuil sé #[b chun iomáint] le Corcaigh?
+    when "3-3-3-b-p1-sample2"
+      | Níl an eagraíocht #[b chun snámh] in aghaidh easa.
+    when "3-3-3-b-p1-sample3"
+      | Tá na páistí #[b chun dul abhaile].
+    when "3-3-3-b-p1-sample4"
+      | Tá an ghaoth #[b chun séideadh] níos measa.
+    when "3-3-3-b-p1-sample5"
+      | Níl siad #[b chun seasamh] siar.
+    when "3-3-3-b-p1-sample6"
+      | Tá sí #[b chun pósadh] go luath.
+    when "3-3-3-b-p1-sample7"
+      | Tá sé #[b chun imirt].
+    when "3-3-3-b-p2"
+      | #[b Ach], más í an bhrí #[i le haghaidh] atá ag #[i chun], úsáidtear an ginideach.
+    when "3-3-3-c-p"
+      | I gcás ainm briathartha a bheith ina dhlúthchuid d&rsquo;aonad áirithe, e.g., #[i cur chun cinn]; #[i cur chuige]; atá faoi réir ag ainmfhocal eile nó ag leagan a leanann an ginideach é, má tá sé éiginnte fágtar an t&#x2011;ainm briathartha gan infhilleadh agus ní dhéantar a thúschonsan a shéimhiú, e.g., #[i fad cur síos]; #[i i gcás cur i gcéill]; #[i ag ullmhú cur i láthair]; #[i i bhfianaise teacht i bhfeidhm] (féach #[+link("#sec_3_3_1_b", "3.3.1(b)")]):
+    when "3-3-3-c-p-sample1"
+      | Cén #[b cineál cur chuige] a d&rsquo;úsáid siad?
+    when "3-3-3-c-p-sample2"
+      | Bhí sí #[b i mbun cur i láthair] nuair a theip ar an teilgeoir.
+    when "3-3-3-c-p-sample3"
+      | Tá an #[b plean dul chun cinn] sa tuarascáil bhliantúil.
+    when "3-3-4-title"
+      | An tAinmfhocal Éiginnte &mdash; Ainmfhocail Éiginnte a úsáidtear mar Ainmneacha Briathartha
+    when "3-3-4-a-p1"
+      | Má tá gnáthghinideach de réir ceann de na díochlaontaí (féach #[+link("./chapter5.html#sec_5_6_1_a", "5.6.1(a)")]) ar ainmfhocal éiginnte a úsáidtear mar ainm briathartha freisin, ní dhéantar athrú an ghinidigh air nuair a úsáidtear mar ainm briathartha é.
+    when "3-3-4-a-p1-sample1"
+      | Bhí na léirsitheoirí #[b ag diúltú imeacht].
+    when "3-3-4-a-p1-sample2"
+      | Níl na déagóirí #[b ag iarraidh troid] (#[i sa bhrí] ag iarraidh troid a dhéanamh).
+    when "3-3-4-a-p1-sample3"
+      | Tá sé #[b tar éis siúl] abhaile.
+    when "3-3-4-a-p2"
+      | #[b Ach], déantar athrú an ghinidigh ar an ainmfhocal nuair a úsáidtear mar ainmfhocal éiginnte é.
+    when "3-3-4-a-p2-sample1"
+      | Tá sé ag #[b tabhairt léime].
+    when "3-3-4-a-p2-sample2"
+      | Bíonn an fhoireann #[b ag imirt iomána] gach deireadh seachtaine.
+    when "3-3-4-a-p2-sample3"
+      | Bíonn siad amuigh istoíche #[b ag iarraidh troda] (#[i sa bhrí] ag lorg troda).
+    when "3-3-4-b-p1"
+      | Mura bhfuil gnáthghinideach de réir ceann de na díochlaontaí (féach #[+link("./chapter5.html#sec_5_6_1_a", "5.6.1(a)")]) ar ainmfhocal éiginnte a úsáidtear mar ainm briathartha freisin, agus má tá sé ina chuspóir go díreach ag ainm briathartha a bhfuil #[i ag] nó #[i do] (nó #[i a] as #[i do]) roimhe, ní dhéantar athrú an ghinidigh air.
+    when "3-3-4-b-p1-sample1"
+      | Tá siad #[b ag déanamh leasú] (athrú, marú, coigeartú).
+    when "3-3-4-b-p1-sample2"
+      | Is minic é #[b a thabhairt moladh] (bualadh, ordú, ardú).
+    when "3-3-4-b-p1-sample3"
+      | Acht #[b do dhéanamh leasú] (iniúchadh, scrúdú) de réir moladh ón Aire.
+    when "3-3-4-b-p1-sample4"
+      | An bhfuil tú #[b ag iarraidh suí] (éirí, pósadh)?
+    when "3-3-4-b-p1-sample5"
+      | Tá sí #[b ag fáil ardú] (cáiliú, breisiú, greadadh).
+    when "3-3-4-b-p1-sample6"
+      | Cé a bhí #[b a dhéanamh cáineadh] (múineadh, díscaoileadh, fuirseadh)?
+    when "3-3-4-b-p2"
+      | #[b Ach], nuair atá an t&#x2011;ainmfhocal cinnte, déantar athrú an ghinidigh air.
+    when "3-3-4-b-p2-sample1"
+      | Cé atá #[b ag déanamh an athraithe]?
+    when "3-3-4-b-p2-sample2"
+      | An bhfuil an tArd-Rúnaí #[b ag dréachtú an ordaithe]?
+    when "3-3-4-b-p2-sample3"
+      | Bhí a gcairde #[b ag beannú a bpósta].
+    when "3-3-4-b-p2-sample4"
+      | Is #[b ag léamh gach leasaithe] roimh an gcruinniú atá sí.
+    when "3-3-4-c-p1"
+      | Mura bhfuil gnáthghinideach de réir ceann de na díochlaontaí (féach #[+link("./chapter5.html#sec_5_6_1_a", "5.6.1(a)")]) ar ainmfhocal éiginnte a úsáidtear mar ainm briathartha freisin, agus má tá sé faoi réir ag réamhfhocal comhshuite nó i ndiaidh #[i chun], ní dhéantar athrú an ghinidigh air.
+    when "3-3-4-c-p1-sample1"
+      | Tá an lánúin sin #[b ar tí pósadh].
+    when "3-3-4-c-p1-sample2"
+      | Nílim ach #[b tar éis éirí].
+    when "3-3-4-c-p1-sample3"
+      | Nach deas dul ag siúl #[b i ndiaidh suí]?
+    when "3-3-4-c-p1-sample4"
+      | Tá an lá ag dul #[b chun síneadh].
+    when "3-3-4-c-p2"
+      | #[b Ach], nuair atá an t&#x2011;ainmfhocal cinnte, déantar athrú an ghinidigh air.
+    when "3-3-4-c-p2-sample1"
+      | Níl siad ar son #[b an cholscartha].
+    when "3-3-4-c-p2-sample2"
+      | Tá sé ar tí #[b a phósta].
+    when "3-3-4-c-p2-sample3"
+      | Ní mór staidéar a dhéanamh i gcomhair #[b gach scrúdaithe].
+    when "3-3-5-title"
+      | An tAinmfhocal Éiginnte &mdash; Clásail Ainm Bhriathartha nach Abairtí Neamhspleácha
+    when "3-3-5-p1"
+      | Ní dhéantar athrú an ghinidigh ar ainmfhocal éiginnte i gclásal ina bhfuil an t&#x2011;ainmfhocal éiginnte faoi réir ag ainm briathartha a bhfuil #[i ag] nó #[i do] (nó #[i a] as #[i do]) roimhe más rud é nach féidir leis an gclásal ainm bhriathartha sin feidhmiú go neamhspleách gan réamhfhocal simplí nó clásal réamhfhoclach a bheith ina dhiaidh. Na focail a bhfuil cló trom orthu anseo thíos, ní féidir leo feidhmiú go neamhspleách astu féin.
+    when "3-3-5-p1-sample1"
+      | #[b Tá siad ag tabhairt aghaidh] ar an bhfoireann eile anois.
+    when "3-3-5-p1-sample2"
+      | #[b Is ag baint leas] as an gcóras atá siad.
+    when "3-3-5-p1-sample3"
+      | #[b Tá an scoil ag cur deireadh] leis an scéim.
+    when "3-3-5-p1-sample4"
+      | #[b Is léir go bhfuil na mic léinn ag baint taitneamh] as an oíche.
+    when "3-3-5-p1-sample5"
+      | #[b Tá sé ag fágáil slán] leis.
+    when "3-3-5-p1-sample6"
+      | #[b Stiúrthóirí do thabhairt aird] ar leasanna fostaithe.
+    when "3-3-5-p1-sample7"
+      | #[b Tá siad ag baint triail] as roghchlár nua.
+    when "3-3-5-p1-sample8"
+      | #[b Bhí an eagraíocht ag cur tionscadail] chun cinn. (#[i iol.])
+    when "3-3-5-p1-sample9"
+      | #[b Tá an Roinn ag cur beartais] i bhfeidhm. (#[i iol.])
+    when "3-3-5-p2"
+      | #[b Ach], d&rsquo;ainneoin sin, más rud é gur dlúthchuid den chlásal ainm bhriathartha an t&#x2011;ainmfhocal éiginnte agus gur féidir leis an gclásal ainm bhriathartha sin feidhmiú go neamhspleách, déantar athrú an ghinidigh ar an ainmfhocal éiginnte sin. Na focail a bhfuil cló trom orthu anseo thíos, is féidir leo feidhmiú go neamhspleách astu féin agus déantar athrú an ghinidigh ar an ainmfhocal éiginnte dá réir sin.
+    when "3-3-5-p2-sample1"
+      | #[b Bhí sé ag cur báistí] (i gCorcaigh).
+    when "3-3-5-p2-sample2"
+      | #[b Tá sí ag déanamh oibre] (san oifig).
+    when "3-3-5-p2-sample3"
+      | #[b Bíonn siad ag bailiú airgid] (ann).
+    when "3-3-5-p2-sample4"
+      | #[b Beidh sé ag tabhairt cabhrach] (in am an ghátair).
+    when "3-3-5-p2-sample5"
+      | #[b Tá sí ag fáil bháis] (san ospidéal).
+    when "3-3-5-p2-sample6"
+      | #[b An bhfuil sí ag imirt peile] (leis na comharsana)?
+    when "3-3-5-p2-sample7"
+      | #[b Bhí siad ag gabháil fhoinn] (sa teach).
+    when "3-3-6-title"
+      | An tAinmfhocal Éiginnte &mdash; Téarmaí ar Leith
+    when "3-3-6-a-p"
+      | Má tá frásaí ilfhoclacha áirithe a bhfuil brí ar leith leo, e.g., #[i bolg le gréin]; #[i buail isteach]; #[i buaileam sciath]; #[i cos ar bolg]; #[i cúl le rath]; #[i uisce faoi thalamh]; etc. faoi réir ag focal nó ag leagan a leanann an ginideach é, ní infhilltear an chéad ainmfhocal sa fhrása ilfhoclach ná ní chuirtear séimhiú air.
+    when "3-3-6-a-p-sample1"
+      | Gheobhaidh mé bia #[b beir leat] ar mo shlí abhaile dom.
+    when "3-3-6-a-p-sample2"
+      | Tá sé ag déanamh #[b bolg le gréin] sa Fhrainc faoi láthair.
+    when "3-3-6-a-p-sample3"
+      | Tá ionad #[b buail isteach] acu i lár na cathrach.
+    when "3-3-6-b-p"
+      | I gcás aonad dhá ainmfhocal éiginnte arb é #[i tús], #[i lár] nó #[i deiradh] (san uatha) an chéad ainmfhocal den aonad sin, fágtar an chéad ainmfhocal sa tuiseal ainmneach nuair atá sé faoi réir ag focal nó ag leagan a leanann an ginideach é.
+    when "3-3-6-b-p-sample1"
+      | Tá gach rud eagraithe don chruinniú #[b tús] bliana.
+    when "3-3-6-b-p-sample2"
+      | Bain taitneamh as an sos #[b lár] téarma!
+    when "3-3-6-b-p-sample3"
+      | Déantar ócáid #[b deireadh] seachtaine a eagrú gach bliain.
+    when "3-3-7-title"
+      | Cainníocht Chinnte i Liosta
+    when "3-3-7-p1"
+      | Má tá ainmfhocal éiginnte atá faoi réir ag ainmfhocal lena gcuirtear cainníocht chinnte in iúl á chur i láthair in oideas nó i bhfoirm liosta, ní dhéantar athrú an ghinidigh ar an ainmfhocal ná ar aidiacht atá á cháiliú.
+    when "3-3-7-p1-sample1"
+      | 500g #[b plúr]
+    when "3-3-7-p1-sample2"
+      | 1lb #[b plúr bán]
+    when "3-3-7-p1-sample3"
+      | 250g #[b siúcra mín]
+    when "3-3-7-p1-sample4"
+      | 150ml #[b uachtar]
+    when "3-3-7-p1-sample5"
+      | 1/2 taesp. #[b púdar bácála]
+    when "3-3-7-p1-sample6"
+      | 2 spúnóg bhoird #[b mil]
+    when "3-3-7-p2"
+      | Is é an tabharthach rannaíoch a úsáidtear sa phrós.
+    when "3-3-7-p2-sample1"
+      | Déan #[b 500g de phlúr bán] agus #[b 250g de shiúcra mín] a mheascadh i mbabhla.
+    when "3-3-7-p2-sample2"
+      | Cuir #[b 150ml de bhainne] agus #[b 150ml d&rsquo;uachtar] leis an meascán.
+    when "3-3-8-title"
+      | An tAinmfhocal Éiginnte &mdash; Cáilitheoirí
+    when "3-3-8-a-p"
+      | Ní dhéantar athrú an ghinidigh ar ainmfhocal éiginnte atá faoi réir ag ainm briathartha a bhfuil #[i ag] nó #[i do] (nó #[i a] as #[i do]) roimhe, faoi réir ag réamhfhocal comhshuite nó faoi réir ag cainníocht éiginnte má tá an t&#x2011;ainmfhocal éiginnte cáilithe le ceann de na cáilitheoirí a liostaítear i dtáblaí #[+link("#table3b", "3B")], #[+link("#table3c", "3C")] agus #[+link("#table3d", "3D")] ina dhiaidh seo.
+    when "3-3-8-b-p"
+      | Ní foláir an t&#x2011;ainmfhocal éiginnte féin a bheith cáilithe leis an gcáilitheoir chun an ginideach a chur ar ceal. Má tá feidhm seachas feidhm aidiachtach ag an gcáilitheoir (feidhm dhobhriathair, mar shampla), déantar athrú an ghinidigh ar an ainmfhocal éiginnte (féach #[+link("#sec_3_3_12_b", "3.3.12(b)")]).
+    when "3-3-9-title"
+      | Ainmfhocal Éiginnte Cáilithe atá faoi réir ag Ainm Briathartha a bhfuil #[i ag] nó #[i do] (nó #[i a] as #[i do]) roimhe
+    when "3-3-9-p"
+      | Nuair atá ainmfhocal éiginnte atá faoi réir ag ainm briathartha a bhfuil #[i ag] nó #[i do] (nó #[i a] as #[i do]) roimhe cáilithe leis na cáilitheoirí a liostaítear anseo thíos, ní dhéantar athrú an ghinidigh ar an ainmfhocal éiginnte (ná ar an aidiacht a ghabhann leis).
+    when "Table3B-caption"
+      | Cáilitheoirí &mdash; Ainmfhocal Éiginnte atá faoi réir ag Ainm Briathartha a bhfuil #[i ag] nó #[i do] (nó #[i a] as #[i do]) roimhe
+    when "Table3B-Col1"
+      | Cáilitheoir
+    when "Table3B-Col2"
+      | Uatha
+    when "Table3B-Col3"
+      | Iolra
+    when "Table3B-row1"
+      | Aidiacht cháilíochta, nó ainmfhocal i gcáil aidiachta
+    when "Table3B-row2"
+      | Frása réamhfhoclach amhail #[i ar bith], #[i ar leith], #[i den scoth], etc. má tá feidhm aidiachtach aige
+    when "Table3B-row3"
+      | Clásal coibhneasta
+    when "Table3B-row4"
+      | An aidiacht éiginnte #[i aon] nó an réimír threise #[i an-]
+    when "3-3-10-title"
+      | Ainmfhocal Éiginnte Cáilithe atá faoi réir ag Réamhfhocal Comhshuite
+    when "3-3-10-p1"
+      | Nuair atá ainmfhocal éiginnte atá faoi réir ag réamhfhocal comhshuite (nó #[i cois], #[i dála], #[i fearacht], #[i timpeall], #[i trasna]) cáilithe leis na cáilitheoirí a liostaítear anseo thíos, ní dhéantar athrú an ghinidigh ar an ainmfhocal éiginnte (ná ar an aidiacht a ghabhann leis).
+    when "Table3C-caption"
+      | Cáilitheoirí &mdash; Ainmfhocal Éiginnte atá faoi réir ag Réamhfhocal Comhshuite
+    when "Table3C-row1"
+      | #[+gaDb("Table3B-row1")]
+    when "Table3C-row2"
+      | #[+gaDb("Table3B-row2")]
+    when "Table3C-row3"
+      | Fochlásal réamhfhoclach, e.g., #[i ar an mBille], #[i faoin mbord], #[i sa phóstaer], etc., nó forainmneach réamhfhoclach, e.g., #[i air], #[i fúithi], #[i uainn], etc., má tá feidhm aidiachtach aige
+    when "Table3C-row4"
+      | #[+gaDb("Table3B-row3")]
+    when "Table3C-row5"
+      | An aidiacht éiginnte #[i aon]
+    when "3-3-10-p2"
+      | Tabhair faoi deara gur frása réamhfhoclach a bhfuil brí faoi leith aige é réamhfhocal comhshuite, e.g., #[i i gcás] sa bhrí #[i más rud é]. #[i Réamhfhocal simplí + ainmfhocal] is múnla dó. Níl feidhm ag #[+link("#table3c", "tábla 3C")] má tá ainmfhocal éiginnte faoi réir ag réamhfhocal agus ainmfhocal nach réamhfhocal comhshuite, e.g., #[i i gcas] sa bhrí #[i in imeachtaí dlí], #[i i mála].
+    when "3-3-11-title"
+      | Ainmfhocal Éiginnte Cáilithe atá faoi réir ag Cainníocht Éiginnte
+    when "3-3-11-p1"
+      | Nuair atá ainmfhocal éiginnte atá faoi réir ag focal nó frása lena gcuirtear cainníocht éiginnte in iúl, e.g., #[i barraíocht], #[i breis], #[i easpa], #[i go leor], #[i iomarca], #[i níos mó], #[i roinnt], cáilithe leis na cáilitheoirí a liostaítear anseo thíos, ní dhéantar athrú an ghinidigh ar an ainmfhocal éiginnte (ná ar an aidiacht a ghabhann leis).
+    when "Table3D-caption"
+      | Cáilitheoirí &mdash; Ainmfhocal Éiginnte atá faoi réir ag Cainníocht Éiginnte
+    when "3-3-11-p2"
+      | Tabhair faoi deara go mbreathnaítear ar chainníocht éiginnte mar chainníocht chinnte nuair a chuirtear aidiacht shealbhach roimpi agus sa chás sin go ndéantar athrú an ghinidigh ar an ainmfhocal a thagann ina dhiaidh (agus ar an aidiacht a ghabhann leis), e.g., #[i a chuid gruaige fada]; #[i a dóthain bia the]; #[i a ndóthain saineolais theicniúil]; #[i ár gcuid oibre baile].
+    when "3-3-12-title"
+      | Foirm an Ghinidigh
+    when "3-3-12-a-p"
+      | Lasmuigh de na cásanna atá sonraithe i dtáblaí #[+link("#table3b", "3B")], #[+link("#table3c", "3C")] agus #[+link("#table3d", "3D")], déantar athrú an ghinidigh ar an ainmfhocal éiginnte sa struchtúr #[i ainmfhocal] + #[i ainmfhocal éiginnte] + #[i cáilitheoir].
+    when "Table3E-caption"
+      | Foirm an Ghinidigh &mdash; Ainmfhocal + Ainmfhocal Éiginnte + Cáilitheoir
+    when "3-3-12-b-p"
+      | Déantar athrú an ghinidigh ar ainmfhocal éiginnte atá faoi réir ag réamhfhocal comhshuite agus a dtagann frása réamhfhoclach, fochlásal réamhfhoclach nó forainmneach réamhfhoclach ina dhiaidh mura bhfuil an t&#x2011;ainmfhocal éiginnte cáilithe leis an bhfrása réamhfhoclach, leis an bhfochlásal réamhfhoclach nó leis an bhforainmneach réamhfhoclach sin (mar shampla, más é an briathar seachas an t&#x2011;ainmfhocal éiginnte atá cáilithe) ná le haon cheann de na cáilitheoirí eile a luaitear i #[+link("#table3c", "dtábla 3C")].
+    when "Table3F-caption"
+      | Foirm an Ghinidigh &mdash; Ainmfhocal Éiginnte atá faoi réir ag Réamhfhocal Comhshuite
+    when "3-3-13-title"
+      | Achoimre ar Fhoirm an Ainmnigh in ionad an Ghinidigh
+    when "3-3-13-p"
+      | Mar áis tagartha, tugtar achoimre anseo ar na cásanna ina n&#x2011;úsáidtear foirm an ainmnigh in ionad an ghinidigh.
+    when "Table3G-caption"
+      | Achoimre ar na Cásanna ina n&#x2011;úsáidtear Foirm an Ainmnigh in ionad an Ghinidigh
+    when "Table3G-col1"
+      | Má tá:
+    when "Table3G-col2"
+      | Faoi réir ag:
+    when "Table3G-col3"
+      | Úsáidtear foirm an ainmnigh in ionad an ghinidigh:
+    when "Table3G-row1-condition"
+      | Ainmfhocal a thagann roimh ainmfhocal cinnte sa ghinideach (#[+link("#sec_3_3_1_a", "3.3.1(a)")])
+    when "leanannAnGinideach"
+      | Focal nó leagan a leanann an ginideach é
+    when "Table3G-row2-condition"
+      | Aonad cinnte áirithe a bhfuil ainm briathartha ina dhlúthchuid de (#[+link("#sec_3_3_1_b", "3.3.1(b)")])
+    when "Table3G-row3-condition"
+      | Ainmfhocal nó abairtín ainmfhoclach, cinnte nó éiginnte, atá á cheangal ag an réamhfhocal #[i a] (as #[i do]) le hainm briathartha (#[+link("#sec_3_3_2_a", "3.3.2(a)")])
+    when "Table3G-row4-condition"
+      | #[i cuid] agus #[i ceann], agus ginideach rannaíoch nó tabharthach rannaíoch faoina réir (#[+link("#sec_3_3_2_b", "3.3.2(b)")])
+    when "Table3G-row5-condition"
+      | Ainmfhocal coiteann amháin gan an t&#x2011;alt leis atá á úsáid mar ainm comhlachta, cumainn nó cláir (#[+link("#sec_3_3_2_c", "3.3.2(c)")])
+    when "Table3G-row6-condition"
+      | Ainm briathartha a bhfuil an forainmneach réamhthagrach #[i a] roimhe (#[+link("#sec_3_3_3_a", "3.3.3(a)")])
+    when "Table3G-row7-condition"
+      | Ainm briathartha (#[+link("#sec_3_3_3", "3.3.3")](b))
+    when "Table3G-row7-rule"
+      | #[i chun], sa struchtúr #[i chun] + #[i ainm briathartha] a úsáidtear chun gníomh atá le teacht a chur in iúl
+    when "Table3G-row8-condition"
+      | Aonad éiginnte áirithe a bhfuil ainm briathartha ina dhlúthchuid de (#[+link("#sec_3_3_3_c", "3.3.3(c)")])
+    when "Table3G-row9-condition"
+      | Ainmfhocal éiginnte a úsáidtear mar ainm briathartha freisin, agus a bhfuil gnáthghinideach aige de réir ceann de na díochlaontaí, atá á úsáid mar ainm briathartha (#[+link("#sec_3_3_4_a", "3.3.4(a)")])
+    when "Table3G-row9-rule"
+      | Ainm briathartha a bhfuil #[i ag] nó #[i do] (nó #[i a] as #[i do]) roimhe nó réamhfhocal comhshuite
+    when "Table3G-row10-condition"
+      | Ainmfhocal éiginnte a úsáidtear mar ainm briathartha freisin, agus nach bhfuil gnáthghinideach aige de réir ceann de na díochlaontaí, atá mar chuspóir díreach ainm bhriathartha (#[+link("#sec_3_3_4_b", "3.3.4(b)")])
+    when "Table3G-row10-rule"
+      | Ainm briathartha a bhfuil #[i ag] nó #[i do] (nó #[i a] as #[i do]) roimhe
+    when "Table3G-row11-condition"
+      | Ainmfhocal éiginnte a úsáidtear mar ainm briathartha freisin, agus nach bhfuil gnáthghinideach aige de réir ceann de na díochlaontaí (#[+link("#sec_3_3_4_c", "3.3.4(c)")])
+    when "Table3G-row11-rule"
+      | Réamhfhocal comhshuite nó #[i chun] sa bhrí #[i i dtreo]
+    when "Table3G-row12-condition"
+      | Ainmfhocal éiginnte i gclásal ainm bhriathartha nach féidir feidhmiú go neamhspleách gan réamhfhocal simplí nó clásal réamhfhoclach ina dhiaidh (#[+link("#sec_3_3_5", "3.3.5")])
+    when "Table3G-row12-rule"
+      | Ainm briathartha a bhfuil #[i ag] nó #[i do] (nó #[i a] as #[i do]) roimhe
+    when "Table3G-row13-condition"
+      | An chéad ainmfhocal éiginnte i bhfrása ilfhoclach a bhfuil brí ar leith leis (#[+link("#sec_3_3_6_a", "3.3.6(a)")])
+    when "Table3G-row14-condition"
+      | #[i tús], #[i lár] nó #[i deireadh], más an chéad ainmfhocal in aonad dhá ainmfhocal éiginnte é (#[+link("#sec_3_3_6_b", "3.3.6(b)")])
+    when "Table3G-row15-condition"
+      | Ainmfhocal i liosta (#[+link("#sec_3_3_7", "3.3.7")])
+    when "Table3G-row15-rule"
+      | Focal nó frása lena gcuirtear cainníocht chinnte in iúl
+    when "Table3G-row16-condition"
+      | Ainmfhocal éiginnte atá cáilithe le cáilitheoirí áirithe (#[+link("#sec_3_3_9", "3.3.9")])
+    when "Table3G-row16-rule"
+      | Ainm briathartha a bhfuil #[i ag] nó #[i do] (nó #[i a] as #[i do]) roimhe
+    when "Table3G-row17-condition"
+      | Ainmfhocal éiginnte atá cáilithe le cáilitheoirí áirithe (#[+link("#sec_3_3_10", "3.3.10")])
+    when "Table3G-row17-rule"
+      | Réamhfhocal comhshuite
+    when "Table3G-row18-condition"
+      | Ainmfhocal éiginnte atá cáilithe le cáilitheoirí áirithe (#[+link("#sec_3_3_11", "3.3.11")])
+    when "Table3G-row18-rule"
+      | Focal nó frása lena gcuirtear cainníocht éiginnte in iúl
+    default
+      - throw new Error(`No content for ${key} (ga.pug)`)

@@ -1,0 +1,339 @@
+mixin Table3A
+  +markedTable(3, "A", "Table3A-caption")
+    colgroup
+      col(class="w-1/2")
+      col(class="w-1/2")
+    thead
+      tr
+        th: +renderKey("Table-3A-Col1Title")
+        th: +renderKey("Table-3A-Col2Title")
+    tbody
+      tr
+        td Chuir sé #[b chun an rialtais] é.
+        td Tá sé ann #[b chun an obair a dhéanamh].
+      tr
+        td Ní fhanann sé i bhfad #[b tar éis dinnéir].
+        td Tá na leanaí #[b tar éis dinnéar a réiteach] duit.
+      tr
+        td Tharla sé #[b le linn na tréimhse] sin.
+        td Is #[b le linn na hoibrithe a fhostú] a tháinig an cheist sin chun cinn.
+      tr
+        td Tá an lánúin óg #[b ar tí a bpósta].
+        td Bhí na fir shlándála #[b ar tí na doirse a dhúnadh].
+      tr
+        td Cuideachta áitiúil atá #[b i mbun na hoibre].
+        td Cuideachta áitiúil atá #[b i mbun an teach a thógáil].
+      tr
+        td An bhfuil siad #[b ag geallúint an airgid] dúinn?
+        td Níl aon duine #[b ag bagairt an t&#x2011;airgead a thógáil] ar ais.
+
+mixin Table3B
+  +markedTable(3, 'B', 'Table3B-caption')
+    colgroup
+      col(class="w-1/4")
+      col(class="w-3/8")
+      col(class="w-3/8")
+    thead
+      tr
+        th: +renderKey('Table3B-Col1')
+        th: +renderKey('Table3B-Col2')
+        th: +renderKey('Table3B-Col3')
+    tbody
+      tr
+        th(rowspan="4"): +renderKey('Table3B-row1')
+        td Thosaigh sé #[b ag imirt peil Mheiriceánach] sna Stáit Aontaithe anuraidh.
+        td Chaith sé tamall #[b ag glacadh grianghraif áille] i nGarraithe Náisiúnta na Lus.
+      tr
+        td Tá siad #[b ag coinneáil súil ghéar] ar na himeachtaí.
+        td Bímse #[b ag ullmhú lóin shláintiúla] dom féin.
+      tr
+        td Táim #[b ag réiteach cupán tae].
+        td Níl siad ach #[b ag éileamh pinsin stáit].
+      tr
+        td Bíonn siad #[b ag casadh ceol tíre] ar an Aoine.
+        td An mbíonn sé #[b ag scríobh leabhair staire]?
+        
+      tr
+        th(rowspan="3"): +renderKey('Table3B-row2')
+        td Níl siad #[b ag fáil pingin ar bith].
+        td Bíonn an chuideachta sin #[b ag tógáil foirgnimh den scoth].
+      tr
+        td Tá an Chomhairle Contae #[b ag ullmhú scéim den sórt sin].
+        td Tá na fostaithe #[b ag iarraidh tuarastail as an ngnáth].
+      tr
+        td Ritheadh ionstraim #[b do leasú riail ar leith].
+        td Ritheadh ordú #[b d&rsquo;fhionraí liúntais den sórt sin].
+
+      tr
+        th(rowspan="3"): +renderKey('Table3B-row3')
+        td Tá sé #[b ag cuardach scéal a scríobh sé] anuraidh.
+        td Tá an coiste #[b ag athbhreithniú cláir ar cuireadh tús leo fadó].
+      tr
+        td Tá an Rialtas #[b ag leasú Acht a ritheadh san ochtú haois déag].
+        td Bhí sé #[b ag moladh scannáin a mbeadh spéis agam iontu].
+      tr
+        td Ní fiú bheith #[b ag ordú trealamh atá daor].
+        td Thosaigh siad #[b ag díol milseáin a bhí an-bhlasta].
+
+      tr
+        th(rowspan="3"): +renderKey('Table3B-row4')
+        td An bhfuil sí #[b ag réiteach aon straitéis] chun déileáil leis?
+        td An bhfuil siad #[b ag tógáil aon fhoirgnimh] faoi láthair?
+      tr
+        td Ní léir dom go bhfuil siad #[b ag déanamh aon iarracht].
+        td Nílim #[b ag ceannach aon dearbháin] uait i mbliana.
+      tr
+        td Tá na mic léinn #[b ag déanamh an-obair] ar an tionscadal sin.
+        //- Intentionally left blank
+        td
+
+mixin Table3C
+  +markedTable(3, 'C', 'Table3C-caption')
+    thead
+      tr
+        th: +renderKey('Table3B-Col1')
+        th: +renderKey('Table3B-Col2')
+        th: +renderKey('Table3B-Col3')
+    tbody
+      tr
+        th(rowspan="4"): +renderKey('Table3C-row1')
+        td Tá an dlíodóir ag gníomhú #[b thar ceann eagraíocht áitiúil].
+        td Cheannaigh mé leabhair dóibh #[b in ionad bréagáin úra].
+      tr
+        td Shuigh siad #[b cois abhainn chiúin].
+        td Is éasca léim #[b trasna srutháin bheaga].
+      tr
+        td Chuaigh sé #[b i gcomhair cupán tae].
+        td Chuaigh sí #[b ar thóir buidéil uisce].
+      tr
+        td Ní mór an páipéarachas cuí a chomhlánú #[b le haghaidh scéim pinsin ceirde].
+        td Is suíomh gréasáin #[b le haghaidh mic léinn] é.
+
+      tr
+        th(rowspan="2"): +renderKey('Table3C-row2')
+        td Ní foláir leanúint ar aghaidh #[b d&rsquo;ainneoin moill den sórt sin].
+        td Teastaíonn uathu cláir nua-aimseartha a chur #[b in ionad seanchláir gan mhaith].
+      tr
+        td Ní fiú a bheith #[b i mbun obair in aisce].
+        td Cuireadh na bailiúcháin #[b faoi chúram leabharlanna ar leith].
+        
+      tr
+        th(rowspan="4"): +renderKey('Table3C-row3')
+        td Bhuaigh siad ticéid #[b i gcomhair turas chun na Fraince].
+        td Fuarthas an admháil #[b i measc iarratais ó dhaltaí] scoile.
+      tr
+        td Tá sí ag obair ann #[b de bhun conradh leis an Roinn].
+        td Bunaíodh scéim ar leith #[b le haghaidh amharclanna i lár na cathrach].
+      tr
+        td Fuair siad maoiniú #[b le haghaidh scéim i dtaca le cúram] leanaí.
+        td Scríobh sé alt #[b i dtaobh amhráin faoin imirce].
+      tr
+        td An ndúirt sé go raibh sé #[b i mbun eagarthóireacht air]?
+        td Is ábhar é seo ar thagair mé dó #[b le linn cainteanna leis].
+
+      tr
+        th(rowspan="3"): +renderKey('Table3C-row4')
+        td Fágadh gan mhaoiniú iad #[b de bharr scéim ar tháinig deireadh léi].
+        td Tá sé #[b ar thóir leabhair a ndearnadh scannáin díobh].
+      tr
+        td Bhí sé i mbéal an phobail #[b de thoradh amhrán dar teideal #[i An Dreoilín]].
+        td Tá an scéal á fhiosrú arís #[b i bhfianaise páipeir a aimsíodh].
+      tr
+        td Nach iontach a bheith ag siúl #[b trasna sráid a tógadh sa 14ú haois]!
+        td Rith siad #[b trasna páirceanna a bhí lán de bhláthanna beaga].
+
+      tr
+        th(rowspan="3"): +renderKey('Table3C-row5')
+        td Bíonn an obair sin le déanamh #[b i gcás aon chonradh].
+        td Socraítear téarmaí ar leith #[b comhair aon tionscail].
+      tr
+        td Ní dhearnadh gearán #[b i gcoinne aon mhúinteoir] sa scoil seo.
+        td An bhfuil an fhoráil sin #[b faoi réir aon chomhaontuithe fostaíochta]?
+      tr
+        td Ní foláir dúinn airgead a thuilleamh #[b fearacht aon eagras].
+        td #[b Dála aon údair], chaith siad go leor ama ag déanamh taighde.
+
+mixin Table3D
+  +markedTable(3, 'D', 'Table3D-caption')
+    colgroup
+      col(class="w-1/5")
+      col(class="w-2/5")
+      col(class="w-2/5")
+    thead
+      tr
+        th: +renderKey('Table3B-Col1')
+        th: +renderKey('Table3B-Col2')
+        th: +renderKey('Table3B-Col3')
+    tbody
+      tr
+        th(rowspan="2"): +renderKey('Table3B-row1')
+        td Thit #[b go leor báisteach throm] an tseachtain seo caite.
+        td Tá #[b an-chuid foirgnimh cháiliúla] i mBaile Átha Cliath.
+      tr
+        td An dteastaíonn #[b roinnt arán cruithneachta] uait?
+        td Bhí #[b scata báid iascaigh] sa chuan.
+
+mixin Table3E
+  +markedTable(3, 'E', 'Table3E-caption')
+    colgroup
+      col(class="w-1/2")
+      col(class="w-1/2")
+    thead
+      tr
+        th: +renderKey("Uatha", { getFromCommon: true })
+        th: +renderKey("Iolra", { getFromCommon: true })
+    tbody
+      tr
+        td An #[b leabhar múinteora scoile] é seo?
+        td Is #[b calafort bád iascaigh] é.
+      tr
+        td Cé a thosaigh #[b an togra oideachais Gaeltachta] sin?
+        td Cá huair a tionscnaíodh #[b an scéim ealaíon pobail]?
+      tr
+        td Bhain mé úsáid as #[b an tSeirbhís Eolais Gnó].
+        td Tá #[b monarcha scáileán ríomhaire] sa pháirc ghnó.
+      tr
+        td Is #[b fear tí solais é].
+        td Ní mór #[b an plean bóithre náisiúnta] a athbhreithniú.
+      tr
+        td An #[b cathaoirleach boird stáit] í?
+        td Tionóladh cruinniú #[b d'eagarthóirí nuachtán áitiúil].
+      tr
+        td Scríobh sé #[b amhrán ceoil tíre].
+        td An ball de #[b chumann óstán idirnáisiúnta] é?
+      tr
+        td Cá bhfuil #[b an tIonad Nuálaíochta Gnó]?
+        td Cá bhfuil #[b an t&#x2011;ionad diúscartha crann Nollag]?
+      tr
+        td Ní mór páirt a ghlacadh #[b i bpróiseas réitigh díospóidí tionscail].
+        td Cén cineál taithí a bhíonn #[b ag láithreoirí clár cúrsaí reatha]?
+
+mixin Table3F
+  +markedTable(3, 'F', 'Table3F-caption')
+    colgroup
+      col(class="w-1/2")
+      col(class="w-1/2")
+    thead
+      tr
+        th: +renderKey("Uatha", { getFromCommon: true })
+        th: +renderKey("Iolra", { getFromCommon: true })
+    tbody
+      tr
+        td Bhí siad #[b i mbun ceoil ar an tsráid].
+        td Bhí an madra #[b ar thóir éan sa pháirc].
+      tr
+        td Chuaigh siad #[b le haghaidh dinnéir ar an 14 Samhain].
+        td Dúirt siad go raibh siad chun tithe a thógáil #[b in ionad árasán i mbliana].
+      tr
+        td Bhí sí ann #[b ar feadh tamaill le cailíní eile ón gceantar].
+        td Fuair sé brioscaí #[b in áit bonnóg sa siopa].
+
+mixin Table3G
+  +markedTable(3, "G", "Table3G-caption").chapter-3-alt
+    colgroup
+      col(class="w-1/2")
+      col(class="w-1/4")
+      col(class="w-1/4")
+    thead
+      tr
+        th: +renderKey("Table3G-col1")
+        th: +renderKey("Table3G-col2")
+        th: +renderKey("Table3G-col3")
+    tbody
+      tr
+        td: +renderKey("Table3G-row1-condition")
+        td: +renderKey("leanannAnGinideach")
+        td Bhí bus #[b fhoireann] Chorcaí ann.
+      tr
+        td: +renderKey("Table3G-row2-condition")
+        td: +renderKey("leanannAnGinideach")
+        td Tá an t&#x2011;iniúchóir ag fiosrú #[b an chur i gcéill] sin faoi láthair.
+      tr
+        td: +renderKey("Table3G-row3-condition")
+        td: +renderKey("leanannAnGinideach")
+        td Bhí na fir shlándála ar tí #[b na doirse] a dhúnadh.
+      tr
+        td: +renderKey("Table3G-row4-condition")
+        td: +renderKey("leanannAnGinideach")
+        td
+          ul
+            li Gortaíodh í le linn #[b ceann] de na cluichí áitiúla.
+            li Tá laghdú tagtha ar mhéid #[b mo chuid] oibre.
+      tr
+        td: +renderKey("Table3G-row5-condition")
+        td: +renderKey("leanannAnGinideach")
+        td Cá bhfuil príomhoifig #[b Bóthar]?
+      tr
+        td: +renderKey("Table3G-row6-condition")
+        td: +renderKey("leanannAnGinideach")
+        td Tá sé tar éis #[b a rá] go ndéanfaidh sé é.
+      tr
+        td: +renderKey("Table3G-row7-condition")
+        td: +renderKey("Table3G-row7-rule")
+        td An bhfuil sé chun #[b iomáint] le Corcaigh?
+      tr
+        td: +renderKey("Table3G-row8-condition")
+        td: +renderKey("leanannAnGinideach")
+        td Cén cineál #[b cur chuige] a d&rsquo;úsáid siad?
+      tr
+        td: +renderKey("Table3G-row9-condition")
+        td: +renderKey("Table3G-row9-rule")
+        td
+          ul
+            li Tá na páistí ag iarraidh #[b léim].
+            li Tá sé tar éis #[b siúl] abhaile.
+      tr
+        td: +renderKey("Table3G-row10-condition")
+        td: +renderKey("Table3G-row10-rule")
+        td An bhfuil tú ag iarraidh #[b éirí]?
+      tr
+        td: +renderKey("Table3G-row11-condition")
+        td: +renderKey("Table3G-row11-rule")
+        td
+          ul
+            li Tá an lánúin sin ar tí #[b pósadh].
+            li Tá an lá ag dul chun #[b síneadh].
+      tr
+        td: +renderKey("Table3G-row12-condition")
+        td: +renderKey("Table3G-row12-rule")
+        td Tá siad ag tabhairt #[b aghaidh] ar an bhfoireann eile anois.
+      tr
+        td: +renderKey("Table3G-row13-condition")
+        td: +renderKey("leanannAnGinideach")
+        td Tá sé ag déanamh #[b bolg le gréin] sa Fhrainc faoi láthair.
+      tr
+        td: +renderKey("Table3G-row14-condition")
+        td: +renderKey("leanannAnGinideach")
+        td Déantar ócáid #[b deireadh] seachtaine a eagrú gach bliain.
+      tr
+        td: +renderKey("Table3G-row15-condition")
+        td: +renderKey("Table3G-row15-rule")
+        td
+          ul
+            li 1lb #[b plúr]
+            li 250g #[b siúcra mín]
+      tr
+        td: +renderKey("Table3G-row16-condition")
+        td: +renderKey("Table3G-row16-rule")
+        td
+          ul
+            li Bímse ag ullmhú #[b lóin shláintiúla] dom féin. (#[i: +renderKey("nod-iol", { getFromCommon: true })])
+            li Táim ag réiteach #[b cupán tae]. (#[i: +renderKey("nod-u", { getFromCommon: true })])
+            li Níl siad ag fáil #[b pingin ar bith]. (#[i: +renderKey("nod-u", { getFromCommon: true })])
+            li Ní fiú bheith ag ordú #[b trealamh atá daor]. (#[i: +renderKey("nod-u", { getFromCommon: true })])
+            li Nílim ag ceannach #[b aon dearbháin] i mbliana. (#[i: +renderKey("nod-iol", { getFromCommon: true })])
+            li Tá na mic léinn ag déanamh #[b an-obair] ar an tionscadal sin. (#[i: +renderKey("nod-u", { getFromCommon: true })])
+      tr
+        td: +renderKey("Table3G-row17-condition")
+        td: +renderKey("Table3G-row17-rule")
+        td
+          ul
+            li Chuaigh sé i gcomhair #[b cupán tae]. (#[i: +renderKey("nod-u", { getFromCommon: true })])
+            li D&rsquo;fhéadfaí a leithéid a rá i gcás #[b cláir ar bith]. (#[i: +renderKey("nod-iol", { getFromCommon: true })])
+            li Fuarthas an admháil i measc #[b iarratais ó dhaltaí scoile]. (#[i: +renderKey("nod-iol", { getFromCommon: true })])
+            li Fágadh gan mhaoiniú iad de bharr #[b scéim ar tháinig deireadh léi]. (#[i: +renderKey("nod-u", { getFromCommon: true })])
+            li Bíonn an obair sin le déanamh i gcás #[b aon chonradh]. (#[i: +renderKey("nod-u", { getFromCommon: true })])
+      tr
+        td: +renderKey("Table3G-row18-condition")
+        td: +renderKey("Table3G-row18-rule")
+        td Thit go leor #[b báisteach throm] an tseachtain seo caite. (#[i: +renderKey("nod-u", { getFromCommon: true })])

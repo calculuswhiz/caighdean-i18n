@@ -1,2 +1,11 @@
 include ./bodyMatter.pug
-+hx(2, "1.1")
+include ./tlMatter.pug
+
+mixin tl(tlText)
+  if tlText != null
+    +inlineTl('EN', tlText)
+  else
+    +inlineTl('EN')
+      block
+
+p abcde #[+tl a]

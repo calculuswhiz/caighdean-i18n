@@ -1,5 +1,12 @@
 mixin link(url, text)
   a(href=`${url}`) #{text}
 
+//- Allows both plain text or blocks (for more complex content)
 mixin inlineTl(lang, tlText)
-  span (#[strong #{lang}]: #[em #{tlText}])
+  if tlText != null
+    span (#[b #{lang}]: #[i #{tlText}])
+  else
+    span
+      | (#[b #{lang}]:!{' '}
+      i: block
+      | )

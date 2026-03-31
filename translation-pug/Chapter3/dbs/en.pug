@@ -1,0 +1,658 @@
+include ../../tlMatter.pug
+if docLang === 'EN'
+  mixin tl(tlText)
+    if tlText != null
+      +inlineTl('EN', tlText)
+    else
+      +inlineTl('EN')
+        block
+    
+  mixin tlDb(key)
+    case key
+      when "teidealNaCaibidle"
+        | Definite and Indefinite Nouns, Abbreviations and the Form of the Nominative in Place of the Genitive
+      when "3-title"
+        | #[+renderKey("Caibidil", { getFromCommon: true })] 3 | #[+tlDb("teidealNaCaibidle")]
+      when "3-1-title"
+        | Definite and Indefinite Nouns
+      when "3-1-1-p"
+        | A noun is either definite or indefinite. A definite noun is a noun that refers to a definite person or thing. A definite person or thing is referred to in one of the ways shown in #[+link("#sec_3_1_2", "3.1.2")] below. Any other noun is an indefinite noun.
+      when "3-1-2-p"
+        | A definite noun is &mdash;
+      when "3-1-2-a"
+        | a proper name (names of particular people or places), e.g., #[i Fionnán], #[i Gráinne], #[i Leamhcán]:
+      when "3-1-2-a-sample1"
+        | Her name is #[b Caoimhe].
+      when "3-1-2-a-sample2"
+        | They live in #[b America].
+      when "3-1-2-b"
+        | a noun that is preceded by the article, e.g., #[i an tAcht] #[+tl("the Act")], #[i an obair] #[+tl("the work")], #[i an fhadhb] #[+tl("the problem")]:
+      when "3-1-2-b-sample1"
+        | Did you see #[b that] big #[b airplane]?
+      when "3-1-2-b-sample2"
+        | #[b The moon] is full tonight.
+      when "3-1-2-b-sample3"
+        | Was #[b the] taxi #[b driver] at the meeting?
+      when "3-1-2-c"
+        | a noun that is preceded by a possessive adjective, e.g., #[i mo mhac] #[+tl("my son")], #[i a hathair] #[+tl("her father")], #[i a ngluaisteán] #[+tl("their car")]:
+      when "3-1-2-c-sample1"
+        | Have you met #[b my brother]?
+      when "3-1-2-c-sample2"
+        | #[b Her father] told her the story.
+      when "3-1-2-c-sample3"
+        | She was cleaning #[b her] football #[b shoes]. (#[i pl.])
+      when "3-1-2-c-sample4"
+        | He went for #[b his cup] of tea. (#[i sg.])
+      when "3-1-2-d"
+        | a noun that is preceded by #[i gach] #[+tl("every")], #[i gach aon] #[+tl("every single")] or #[i gach uile] #[+tl("all")]:
+      when "3-1-2-d-sample1"
+        | #[b Every person] in the family was present. 
+      when "3-1-2-d-sample2"
+        | He comes in at the same time #[b every single day].
+      when "3-1-2-d-sample3"
+        | The amended act applies to #[b all] mechanical #[b vehicles].
+      when "3-1-2-e"
+        | a noun that has a number or letter following it, e.g., #[i Cuid III] #[+tl Part III], #[i riail a sé] #[+tl Rule Six], #[i Bus 16] #[+tl Bus 16], #[i mír (b)] #[+tl item (b)]:
+      when "3-1-2-e-sample1"
+        | Try #[b question four].
+      when "3-1-2-e-sample2"
+        | Did you check #[b Appendix A]?
+      when "3-1-2-f"
+        | a noun that has a definite noun following it, e.g., #[i oifig Áine] #[+tl Áine&rsquo;s office], #[i óráid an Aire] #[+tl the Minister&rsquo;s speech], #[i teach mo mhic] #[+tl my son&rsquo;s house], #[i tús gach bliana] #[+tl the beginning of each year], #[i sonraí mhír (b)] #[+tl details of item (b)]:
+      when "3-1-2-f-sample1"
+        | The festival is being organized in collaboration with #[b the people of Tallaght].
+      when "3-1-2-f-sample2"
+        | Is it the #[b teacher&rsquo;s book]? 
+      when "3-1-2-f-sample3"
+        | Did you speak with #[b the hotel manager]?
+      when "3-1-2-f-sample4"
+        | He visited #[b his daughter&rsquo;s house].
+      when "3-1-2-f-sample5"
+        | He knows #[b the name of every player].
+      when "3-1-2-f-sample6"
+        | The #[b Bus 16 Team] was highly commended.
+      when "3-1-2-g"
+        | a noun in the vocative case, e.g., #[i a bhean] #[+tl("woman")], #[i a dhuine uasail] #[+tl("noble person")]:
+      when "3-1-2-g-sample1"
+        | What are you doing there, #[b son]?
+      when "3-1-2-g-sample2"
+        | You would not believe it, #[b dear].
+      when "3-1-3-p1"
+        | The article is often a part of the proper name (especially for place names), and the article must be used in these contexts, e.g., #[i an Ísiltír] #[+tl("the Netherlands")], #[i an tSionainn] #[+tl("the Seine")], #[i an Longfort] #[+tl("Longford")], #[i an Streoillín] #[+tl("the Streelin")], #[i an Earagail] #[+tl("the Erigail")], #[i An tOileánach] (when it comes to the book) #[+tl("The Islander")], #[i na Cruacha Dubha] #[+tl("the Black Stacks")].
+      when "3-1-3-sample1"
+        | I was on #[b the Erigail] yesterday.
+      when "3-1-3-sample2"
+        | Who wrote #[i: b Love and Grief]?
+      when "3-1-3-p2"
+        | Note, in contexts where it is usual to use the article with a proper name, the article is not put in if the proper name is functioning as an adjective, e.g., #[i an Nollaig] vs #[i cárta Nollag]; #[i an Ardteist] vs #[i scrúdú Ardteiste]; #[i an Cháisc] vs #[i ubh Chásca].
+      when "3-1-4-p1"
+        | The article is used before genitive #[i Éire] #[+tl("Ireland")], #[i Albain] #[+tl("Scotland")], #[i Gaillimh] #[+tl("Galway")], e.g., #[i oileán na hÉireann] #[+tl("the island of Ireland")], #[i foireann na hAlban] #[+tl("the team of Scotland")], #[i cathair na Gaillimhe] #[+tl("the city of Galway")] (see #[+link("./chapter1.html#sec_1_1_5_i_A", "1.1.5(i)A")]).
+      when "3-1-4-p1-sample1"
+        | She knows a lot about #[b the] literature #[b of Ireland].
+      when "3-1-4-p1-sample2"
+        | Her speech has #[b the] flavor of #[b Galway].
+      when "3-1-4-p2"
+        | The article is left out before #[i Éireann] #[+tl("Ireland")] in some official forms, however, e.g., #[i Dáil Éireann] #[+tl("the Irish Parliament")], #[i Seanad Éireann] #[+tl("the Irish Senate")], #[i Iarnród Éireann] #[+tl("Irish Rail")], #[i Bus Éireann] #[+tl("Irish Bus")], and in some old forms and poetic forms, e.g., #[i plúr ban Éireann] #[+tl("white flour of Ireland")], #[i bánchnoic Éireann] #[+tl("white hills of Ireland")].
+      when "3-1-4-p2-sample1"
+        | It is a program from #[b Raidió Teilifís Éireann].
+      when "3-1-4-p2-sample2"
+        | It is the #[b choice of Irish women].
+      when "3-1-5-p"
+        | The article can be used with trade names when they have an adjectival function, e.g., #[i an buidéal Coca Cola] #[+tl("the Coca Cola bottle")]; #[i sa mhála Supervalu] #[+tl("in the Supervalu bag")]; #[i laistigh den doiciméad Word] #[+tl("inside the Word document")]; #[i ar an ríomhaire Apple] #[+tl("on the Apple computer")].
+      when "3-1-5-p-sample1"
+        | This is #[b the Singer sewing machine] that my grandmother bought.
+      when "3-1-5-p-sample2"
+        | I saved it in the same #[b Excel spreadsheet].
+      when "3-1-6-p1"
+        | The article is not put in front of a noun if it is qualified with a definite noun in the genitive, e.g., #[i tiománaí an tacsaí] #[+tl("the driver of the taxi")], #[i ceadúnas thiománaí an tacsaí] #[+tl("the license of the driver of the taxi")], #[i dáta éaga cheadúnas thiománaí an tacsaí] #[+tl("the expiration date of the license of the driver of the taxi")] (when a certain taxi is involved).
+      when "3-1-6-p1-sample1"
+        | Was the #[b owner of the shop] able to help you?
+      when "3-1-6-p1-sample2"
+        | The keys were left in the #[b owner of the shop]&rsquo;s accountant&rsquo;s office.
+      when "3-1-6-p2"
+        | The article is put in front of the first noun if it is qualified with an indefinite noun, e.g., #[i an tiománaí tacsaí] #[+tl("the taxi driver")], #[i an tiománaí leoraí] #[+tl("the lorry driver")] (a certain type of driver); #[i an freastalaí beáir] #[+tl("the bar server")], #[i an freastalaí bialainne] #[+tl("the restaurant server")] (a certain type of server); #[i an t&#x2011;oifigeach feidhmiúcháin] #[+tl("the executive officer")], #[i an t&#x2011;oifigeach riaracháin] #[+tl("the administrative officer")] (a certain type of officer) (see #[+link("#sec_3_1_9", "3.1.9")]).
+      when "3-1-6-p2-sample1"
+        | He is #[b the] best #[b landowner] in the area.
+      when "3-1-6-p2-sample2"
+        | She is #[b the] fastest #[b soccer player] I have ever seen.
+      when "3-1-7-p1"
+        | There are some noun phrases that have nouns in them which would be definite according to #[+link("#sec_3_1_2", "3.1.2")] but are indefinite because the whole phrase is being used as a single unit of meaning as an indefinite noun. Sometimes, in these contexts, the article is used when the whole phrase functions as a definite noun, e.g., #[i an Leabhar Eoin] #[+tl("the Book of John")]; #[i an Choróin Mhuire] #[+tl("the Crown of Mary")]; #[i ba mhór an grá Dia é] #[+tl("it was great the love of God")]; #[i an fear sin na n&#x2011;uibheacha] #[+tl("that man of the eggs")].
+      when "3-1-7-p1-sample1"
+        | They left when #[b the hour] was up.
+      when "3-1-7-p1-sample2"
+        | Isn&rsquo;t it #[b the pity of Mary]!
+      when "3-1-7-p2"
+        | Note that the article is also retained when a number or letter comes after a noun that is qualified by a demonstrative pronominal, e.g., #[i an t&#x2011;alt sin 5] #[+tl("that article 5")]; #[i an mhír sin (f)] #[+tl("that item (f)")].
+      when "3-1-8-p"
+        | As for titles with years accompanying them &mdash; festival titles and annual reports, for example &mdash; the article should only be used when the date and title have sparate units of meaning. These have different meanings: #[i An tOireachtas, 2010] and #[i Oireachtas 2010] or #[i An Tuarascáil Bhliantúil, 2009] and #[i Tuarascáil Bhliantúil 2009].
+      when "3-1-8-p-sample1"
+        | Is #[b Annual Report 2015] ready?
+      when "3-1-8-p-sample2"
+        | #[b The Information Commissioner&rsquo;s Annual Report, 2014] will be published shortly.
+      when "3-1-8-p-sample3"
+        | #[b The Education Act, 2015] was issued yesterday.
+      when "3-1-9-p"
+        | The genitive case is used in the following situations (see other situations in #[+link("./chapter1.html#sec_1_5_1", "1.5.1")]) &mdash;
+      when "3-1-9-a-p"
+        | when the definite noun is qualified by other definite nouns:
+      when "3-1-9-b-p"
+        | when an indefinite noun is qualified by another indefinite noun:
+      when "3-1-9-c-p"
+        | when the definite noun is qualified by an indefinite noun:
+      when "3-1-10-p"
+        | Once an indefinite noun is qualified with a definite noun, it is no longer an indefinite noun but a definite noun. Accordingly, if the meaning is indefinite, a prepositional clause or preposition must be used to indicate the connection between the nouns.
+      when "3-1-10-a-p"
+        | #[i de] is used if referring to a portion or part, e.g., #[i Ballstát den Aontas Eorpach] #[+tl("a member state of the European Union")]; #[i gloine den bheoir gheal] #[+tl("a glass of the light beer")]:
+      when "3-1-10-a-p-sample1"
+        | Did you get some #[b of the] money?
+      when "3-1-10-a-p-sample2"
+        | The questions came from people #[b of the] community.
+      when "3-1-10-b-p"
+        | #[i de chuid] is used when the item in question is one of a group of many items of the same type, e.g., #[i iománaí de chuid na Gaillimhe] #[+tl one of Galway&rsquo;s hurlers]; #[i feidhmeanna áirithe de chuid an choiste] #[+tl certain functions of the committee]:
+      when "3-1-10-b-p-sample1"
+        | #[b One of the] computers in the office was broken.
+      when "3-1-10-b-p-sample2"
+        | It is #[b one of the] Department&rsquo;s grants.
+      when "3-1-10-c-p"
+        | Another preposition is used (#[i le], etc.) in other contexts to express indefiniteness, e.g., #[i deartháir le Bríd] #[+tl a brother of Bríd&rsquo;s]; #[i úrscéal le Máire] #[+tl a novel by Máire]:
+      when "3-1-10-c-p-sample1"
+        | The toy that he broke was #[b one of Caoimhe&rsquo;s toys].
+      when "3-1-10-c-p-sample2"
+        | Have you [all] read #[b a report from the European Parliament]?
+      when "3-1-11-p"
+        | Often as with #[+link("#sec_3_1_10_b", "3.1.10(b)")] above, however, one of the substitute words #[i ceann] #[+tl one], #[i cuid] #[+tl some] or #[i duine] #[+tl a person] is more appropriate in place of the first noun, e.g., #[i ceann de ríomhairí na hoifige] #[+tl one of the office&rsquo;s computers]; #[i duine d&rsquo;iománaithe na Gaillimhe] #[+tl one of Galway&rsquo;s hurlers]. It is also possible to use the noun twice, e.g., #[i dán de dhánta Uí Bhruadair] #[+tl a poem from the poems of Uí Bhruadair].
+      when "3-1-11-p-sample1"
+        | He broke #[b one] of the cups in the kitchen.
+      when "3-1-11-p-sample2"
+        | #[b Some] young people will always go abroad.
+      when "3-1-11-p-sample3"
+        | He is #[b a member] of the office staff.
+      when "3-1-11-p-sample4"
+        | Isn&rsquo;t it #[b a song of] Kila&rsquo;s songs?
+      when "3-1-11-note"
+        | The same structures are used sometimes for definite nouns, e.g., #[i an ghloine dheireanach den fhíon dearg] #[+tl the last glass of red wine]; #[i an chuid is fearr den leabhar] #[+tl the best part of the book].
+      when "3-1-11-p-sample5"
+        | #[b All of] the company&rsquo;s computers were broken.
+      when "3-1-11-p-sample6"
+        | It was #[b the] worst #[b of all] the movies we saw.
+      when "3-2-title"
+        | Abbreviations and Acronyms
+      when "3-2-1-title"
+        | General
+      when "3-2-1-a-p"
+        | An abbreviation or acronym is never inflected or given an initial mutation. (#[i SAM &mdash; Stáit Aontaithe Mheiriceá] #[+tl United States of America]; #[i OÉ &mdash; Ollscoil na hÉireann] #[+tl National University of Ireland].)
+      when "3-2-1-a-p-sample1"
+        | He wrote a book #[b about the USA]. #[br]
+        | #[+tl United States of America]
+      when "3-2-1-a-p-sample2"
+        | He has an interview #[b with NUI] Galway.#[br]
+        | #[+tl National University of Ireland]
+      when "3-2-1-b-p"
+        | #[i in] (rather than #[i i]) is the form of the preposition #[i i] used before an abbreviation or acronym. (#[i RTÉ &mdash; Raidió Teilifís Éireann] #[+tl("Irish Radio and Television")]; #[i CSE &mdash; Ciste Sóisialta na hEorpa] #[+tl("European Social Fund")].)
+      when "3-2-1-b-p-sample1"
+        | She works #[b at RTÉ].
+      when "3-2-1-b-p-sample2"
+        | There are millions of euros #[b in the ESF].#[br]
+        | #[+tl("European Social Fund")]
+      when "3-2-1-c-p1"
+        | The preposition #[i de] and #[i do] are not shortened to #[i d&rsquo;] before abbreviations and acronyms starting with a vowel. (#[i OLAF &mdash; an Oifig Eorpach Frith-Chalaoise] #[+tl("European Anti-Fraud Office")]; #[i ÍMAT &mdash; Íoc mar a Thuillir] #[+tl("Pay As You Earn")].)
+      when "3-2-1-c-p1-sample1"
+        | The issue was discussed #[b at OLAF] meetings.
+      when "3-2-1-c-p1-sample2"
+        | #[b PAYE] has been recognized as a successful tax system.#[br]
+        | #[+tl("Pay As You Earn")]
+      when "3-2-1-c-p2"
+        | Note that the writer always has the choice of writing the words on which the abbreviation or acronym is based.
+      when "3-2-1-c-p2-sample1"
+        | Is this approach based on the #[b Single European Act]?
+      when "3-2-1-c-p2-sample2"
+        | The #[b United Nations] hopes that the process will have a positive outcome.
+      when "3-2-2-title"
+        | Individual Things
+      when "3-2-2-p"
+        | There are two systems that can be used to deal with abbreviations and with acronyms that are titles of organizations, publications, contracts, agreements, schemes, systems or other similar things of which only one exists &mdash; the system without the article and the system with the article. Except for statutory texts where the system without the article is always used, it is up to the writer to choose which system to use. It is recommended not to mix the two systems.
+      when "3-2-2-A-title"
+        | Individual things &mdash; the system without the article
+      when "3-2-2-A-a-p"
+        | In the system without the article, abbreviations and acronyms are treated as nouns are not preceded by the article (but see #[+link("#sec_3_2_3_b", "3.2.3(b)")]). (#[i CTT &mdash; an Clár Tacaíochta Teaghlaigh]; #[i NA &mdash; na Náisiúin Aontaithe]; #[i OÉ &mdash; Ollscoil na hÉireann])
+      when "3-2-2-A-a-p-sample1"
+        | The #[b USA] is a member of the Security Council.
+      when "3-2-2-A-a-p-sample2"
+        | #[b NUI]&rsquo;s policies are focused on developing education.
+      when "3-2-2-A-a-p-sample3"
+        | Ministers of the #[b EU] Member States meet in the Council.#[br]
+        | #[+tl("European Union")]
+      when "3-2-2-A-a-p-sample4"
+        | Work is underway to dissolve the #[b CTT].
+      when "3-2-2-A-a-p-sample5"
+        | She is working in collaboration with an #[b UN] Investigation Group.#[br]
+        | #[+tl("United Nations")]
+      when "3-2-2-A-b-p"
+        | An abbreviation or acronym is referred to as a singular masculine noun regardless of the number or gender on which the words are based. (#[i FSS &mdash; Feidhmeannacht na Seirbhíse Sláinte].)
+      when "3-2-2-B-title"
+        | Individual things &mdash; the system with the article
+      when "3-2-2-B-p"
+        | In the system with the article, the article is used before abbreviations or before acronyms as appropriate. The use of the article is subject to the structure of the words the abbreviations or the acronym are based, as follows &mdash;
+      when "3-2-2-B-a-p"
+        | the article is not used before abbreviations or acronyms if they are based on a definite noun that do not have the article, e.g., #[i Stáit Aontaithe Mheiriceá] #[+tl("United States of America")], #[i Raidió Teilifís Éireann] #[+tl("Irish Radio and Television")], or if the article is in the middle of the words on which the abbreviations or the acronyms are based, e.g., #[i Feidhmeannacht na Seirbhíse Sláinte] #[+tl("The Health Service Executive")], #[i Ollscoil na hÉireann] #[+tl("University of Ireland")]:
+      when "3-2-2-B-a-p-sample1"
+        | The #[b USA] is a member of the Security Council.
+      when "3-2-2-B-a-p-sample2"
+        | #[b NUI]&rsquo;s policies are focused on developing education.
+      when "3-2-2-B-b-p"
+        | the article is placed before abbreviations or acronyms if they are based on words having an article to make it definite. The singular or plural form of the article is used depending on the number of words on which the abbreviations or the acronyms are based:
+      when "3-2-2-B-b-p-sample1"
+        | Ministers of #[b the EU] Member States meet in the Council.
+      when "3-2-2-B-b-p-sample2"
+        | Who is eligible for funding #[b under the CTT]?
+      when "3-2-2-B-b-p-sample3"
+        | She is working in collaboration with an Investigation Team of #[b the UN].
+      when "3-2-2-B-c-p"
+        | an abbreviation or acronym is referred to as a singular masculine noun regardless of the number or gender of the words on which it is based (#[i an IEA &mdash; an Ionstraim Eorpach Aonair] #[+tl("the European Single Instrument")].)
+      when "3-2-3-title"
+        | Multiple Things
+      when "3-2-3-a-p"
+        | If an abbreviation or acronym refers to multiple things (things that have more than one item in them), the article can be placed in front of it in order to distinguish it from other things of the same kind. (#[i CIN &mdash; Corparáid Ilnáisiúnta] #[+tl("Multi-National Corporation")]; #[i PO &mdash; Príomhoifigeach] #[+tl("Principal Officer")])
+      when "3-2-3-a-p-sample1"
+        | She is #[b a] participating #[b MNC] employee.#[br]
+        | #[+tl("multinational corporation")]
+      when "3-2-3-a-p-sample2"
+        | - #[i but] She is an employee of #[b that participating MNC].
+      when "3-2-3-a-p-sample3"
+        | The room is used as #[b a PO] office.
+      when "3-2-3-a-p-sample4"
+        | - #[i but] The room is used as #[b that PO office].
+      when "3-2-3-b-p"
+        | The article can be used with a noun that is qualified by an abbreviation or an acronym which has an adjectival function in order to identify something specific from many things. (#[i uimhir PSP &mdash; uimhir Phearsanta Seirbhíse Poiblí] #[+tl("Personal Public Service Number")]; #[i CBL &mdash; Cáin Bhreisluacha] #[+tl("Value Added Tax")]; #[i DART &mdash; Dublin Area Rapid Transit])
+      when "3-2-3-b-p-sample1"
+        | You will be given #[b a PPS number].
+      when "3-2-3-b-p-sample2"
+        | - #[i but] Where is #[b the PPS number] that was given to you?
+      when "3-2-3-b-p-sample3"
+        | #[b A high VAT rate] is in effect.
+      when "3-2-3-b-p-sample4"
+        | - #[i but] #[b The same VAT rate] has been in effect for a long time.
+      when "3-2-3-b-p-sample5"
+        | There is #[b a DART station] in this area.
+      when "3-2-3-b-p-sample6"
+        | - #[i but] Is #[b that the DART station] in question?
+      when "3-2-3-c-p"
+        | A plural form is created from an abbreviation or an acronym when referring to multiple things by adding #[i -anna] to it if it ends with a consonant and by adding #[i -nna] to it if it ends with a vowel. An abbreviation or acronym in the plural is referred to as a plural masculine noun.
+      when "3-2-3-c-p-sample1"
+        | Aren&rsquo;t #[b those the] reputable #[b MNCs]?
+      when "3-2-3-c-p-sample2"
+        | #[b Those] are all #[b POs].
+      when "3-3-title"
+        | The Form of the Nominative in Place of the Genitive
+      when "3-3-1-title"
+        | The Definite Nouns
+      when "3-3-1-a-p1"
+        | If a definite noun in the genitive comes after another word, it is customary for the other word to be left without inflection and its initial consonant to be lenited when it is subject to a word or form followed by the genitive (see also #[+link("./chapter10.html#sec_10_2_6", "10.2.6")]). A noun that has a number or letter at the end is left without inflection and its initial consonant is also lenited &mdash;
+      when "3-3-1-a-i-p"
+        | a proper name (name of a particular person or place):
+      when "3-3-1-a-ii-p"
+        | a noun that is preceded by the article:
+      when "3-3-1-a-iii-p"
+        | a noun with a possessive adjective:
+      when "3-3-1-a-iv-p"
+        | a noun that has #[i gach] #[+tl("each")], #[i gach aon] #[+tl("each one")], or #[i gach uile] #[+tl("all")] before it:
+      when "3-3-1-a-v-p"
+        | a noun that has a number or letter following it:
+      when "3-3-1-a-vi-p"
+        | a noun that has a definite noun following:
+      when "3-3-1-a-p2"
+        | #[b But], if the noun that has a definite noun following it is a verbal noun, the genitive change is done to it if another noun precedes it, e.g., #[i cosaint] #[+tl("protection")], #[i madra cosanta na monarchan] #[+tl("the dog guarding the factory")]; #[i fuascailt] #[+tl("release")], #[i bean fuascailte na ceiste] #[+tl("the woman answering the question")]; #[i cealgadh] #[+tl("sting")], #[i beach cealgtha an pháiste] #[+tl("the bee stinging the child")]; #[i bualadh] #[+tl("striking")], #[i innill buailte an arbhair] #[+tl("the machines striking the grain")]; #[i bailiú] #[+tl("collection")], #[i seachtain bailithe na rátaí] #[+tl("the week of rate collection")].
+      when "3-3-1-b-p"
+        | When a verbal noun is an integral part of a particular unit, e.g., #[i cur chun cinn] #[+tl("progress")]; #[i cur chuige] #[+tl("approach")]; #[i teacht i bhfeidhm] #[+tl("come into operation")]; which is subject to another noun or to a form followed by the genitive:
+      when "3-3-1-b-i-p"
+        | if the article precedes that verbal noun, it is the singular masculine that precedes it in every case and the verbal noun is not inflected, e.g., #[i luas an dul chun cinn] #[+tl("the speed of progress")]; #[i ag moladh an teacht i bhfeidhm] #[+tl("praising the implementation")]; #[i le linn an tabhairt amach] #[+tl("during the display")]; #[i i bhfianaise an tabhairt suas] #[+tl("in light of the surrender")]; #[i faoi réir an leagan amach] #[+tl("according to the arrangement")]. The article applies to the initial letter of the verbal noun, however, as it would apply on a singular masculine noun in the genitive, e.g., #[i fad an chur síos] #[+tl("the length of the description")]; #[i castacht an chur chuige] #[+tl("the rigidity of the approach")]; #[i ag cáineadh an éirí in airde] #[+tl("criticizing the high spirits")]; #[i ag comóradh an éirí amach] #[+tl("commemorating the outing")]; #[i de dheasca an tsracfhéachaint ar gcúl] #[+tl("due to the backward glance")]; #[i d&rsquo;ainneoin an chéim ar gcúl] #[+tl("despite the step back")] (see #[+link("#sec_3_3_3_c", "3.3.3(c)")]):
+      when "3-3-1-b-i-p-sample1"
+        | The auditor #[b is currently investigating] this allegation.
+      when "3-3-1-b-i-p-sample2"
+        | She was #[b giving the presentation] when the computer failed.
+      when "3-3-1-b-ii-p"
+        | if there is a possessive adjective before a verbal noun, the initial consonant is lenited or eclipsed, as appropriate, but is left without inflection, e.g., #[i i bhfianaise mo chur chuige] #[+tl("in light of my approach")]; #[i luas ár ndul chun cinn] #[+tl("the speed of our progress")]; #[i ag moladh a gcur chuige] #[+tl("praising their approach")] (pl.):
+      when "3-3-1-b-ii-p-sample1"
+        | They #[b have been praising his approach] since he explained it to them.
+      when "3-3-1-b-ii-p-sample2"
+        | She said the information was needed #[b for her presentation].
+      when "3-3-2-title"
+        | Definite and Indefinite Nouns
+      when "3-3-2-a-p"
+        | When a noun or noun phrase is connected by the preposition #[i a] (from #[i do]) with a verbal noun, the noun is left in the nominative, followed by a word or form that follows the genitive.
+      when "Table-3A-Col1Title"
+        | The Genitive
+      when "Table-3A-Col2Title"
+        | Form of the Nominative in Place of the Genitive
+      when "Table-3A-caption-part"
+        | Definite or Indefinite Noun or Phrase connected by the preposition #[i a] with a Verbal Noun
+      when "Table3A-caption"
+        | #[+renderKey("Table-3A-Col2Title")] &mdash; #[+renderKey("Table-3A-caption-part")]
+      when "3-3-2-b-p1"
+        | The genitive change does not apply to the words #[i ceann] and #[i cuid] when there is a partitive genitive or partitive dative following.
+      when "3-3-2-b-p1-sample1"
+        | She was injured #[b during one of the local games].
+      when "3-3-2-b-p1-sample2"
+        | The #[b amount of my work] has decreased.
+      when "3-3-2-b-p1-sample3"
+        | They were #[b expelling many of them].
+      when "3-3-2-b-p1-sample4"
+        | It was passed #[b despite the rest of the article].
+      when "3-3-2-b-p2"
+        | #[b But], they are inflected when they are normal nouns.
+      when "3-3-2-b-p2-sample1"
+        | Despite #[b that Section], the Bill was passed.
+      when "3-3-2-b-p2-sample2"
+        | She fell on #[b her head].
+      when "3-3-2-c-p1"
+        | When using a single common noun without the article as the name of a company, association or program, no inflection or initial mutation is made to the noun, e.g., #[i buaicphointe Múscailt] #[+tl Múscailt&rsquo;s highlight]; #[i ceannáras Muintearas] #[+tl Muintearas headquarters]; #[i ceardlanna Síolta] #[+tl Síolta workshops]; #[i gníomhairí Bóthar] #[+tl Bóthar agents].
+      when "3-3-2-c-p1-sample1"
+        | I met the #[b Chief Executive of Trócaire] there.
+      when "3-3-2-c-p1-sample2"
+        | Where is #[b Bóthar&rsquo;s main office]?
+      when "3-3-3-title"
+        | The Indefinite Noun &mdash; The Verbal Noun
+      when "3-3-3-p"
+        | A verbal noun is a word that has both the function of a noun and a verb. It is possible to use words like #[i eitilt] #[+tl flight], #[i foghlaim] #[+tl learning], #[i snámh] #[+tl swimming], etc. like nouns, e.g., #[i deireadh na heitilte] #[+tl end of the flight]; #[i foghlaim a fháil] #[+tl to get learning]; #[i snámh féileacáin] #[+tl butterfly swimming], and as a verbal noun, e.g., #[i ag eitilt sa spéir] #[+tl flying in the sky]; #[i ag foghlaim teanga] #[+tl learning a language]; #[i ag snámh in aghaidh easa] #[+tl swimming against the current]. This section describes cases where the nominative form of the verbal noun is used in place of the genitive form.
+      when "3-3-3-a-p"
+        | The genitive change is not made to the verbal noun when the prepositional pronoun #[i a] precedes it.
+      when "3-3-3-a-p-sample1"
+        | He #[b has just said] that he will do it.
+      when "3-3-3-a-p-sample2"
+        | He #[b is trying to confirm] that everything is going to be all right.
+      when "3-3-3-b-p1"
+        | If there is a verbal noun in the structure #[i chun] + #[i verbal noun] used to express an upcoming action, the genitive change is not made to it.
+      when "3-3-3-b-p1-sample1"
+        | Is he #[b going to play hurling] with Cork?
+      when "3-3-3-b-p1-sample2"
+        | The organization is not #[b going to swim] against the tide.
+      when "3-3-3-b-p1-sample3"
+        | The children are #[b going to go home].
+      when "3-3-3-b-p1-sample4"
+        | The wind is #[b going to blow] worse.
+      when "3-3-3-b-p1-sample5"
+        | They are not #[b going to stand] back.
+      when "3-3-3-b-p1-sample6"
+        | She is #[b going to get married] soon.
+      when "3-3-3-b-p1-sample7"
+        | He is #[b going to play].
+      when "3-3-3-b-p2"
+        | #[b But], if the meaning of #[i chun] is #[i le haghaidh] #[+tl("for")], the genitive is used.
+      when "3-3-3-c-p"
+        | When the verbal noun is an integral part of a particular unit, e.g., #[i cur chun cinn] #[+tl("promotion")]; #[i cur chuige] #[+tl("approach")]; subject to another noun or a form followed by a genitive, if it is indefinite, the verbal noun is left uninflected and the initial consonant is not lenited, e.g., #[i fad cur síos] #[+tl("during a description")]; #[i i gcás cur i gcéill] #[+tl("in case of acting sensibly")]; #[i ag ullmhú cur i láthair] #[+tl("preparing a presentation")]; #[i i bhfianaise teacht i bhfeidhm] #[+tl("in light of coming into effect")] (see #[+link("#sec_3_3_1_b", "3.3.1(b)")]):
+      when "3-3-3-c-p-sample1"
+        | What #[b kind of approach] did they use?
+      when "3-3-3-c-p-sample2"
+        | She was #[b in the middle of a presentation] when the projector failed.
+      when "3-3-3-c-p-sample3"
+        | The #[b progress plan] is in the annual report.
+      when "3-3-4-title"
+        | The Indefinite Noun &mdash; Indefinite Nouns used as Verbal Nouns
+      when "3-3-4-a-p1"
+        | If an indefinite noun has a normal genitive following one of the declensions (see #[+link("./chapter5.html#sec_5_6_1_a", "5.6.1(a)")]) also used as a verbal noun, the genitive change is not made to it when it is used as a verbal noun.
+      when "3-3-4-a-p1-sample1"
+        | The demonstrators were #[b refusing to leave].
+      when "3-3-4-a-p1-sample2"
+        | The teenagers were not #[b wanting to fight] (#[i meaning] wanting to make a fight).
+      when "3-3-4-a-p1-sample3"
+        | He #[b has just walked] home.
+      when "3-3-4-a-p2"
+        | #[b But], the genitive change is made to the noun when it is used as an indefinite noun.
+      when "3-3-4-a-p2-sample1"
+        | He is #[b taking a jump].
+      when "3-3-4-a-p2-sample2"
+        | The team is #[b playing hurling] every weekend.
+      when "3-3-4-a-p2-sample3"
+        | They are out in the open #[b seeking a fight] (#[i meaning] looking for a fight).
+      when "3-3-4-b-p1"
+        | If an indefinite noun that is also used as a verbal noun does not have a normal genitive according to one of the declensions (see #[+link("./chapter5.html#sec_5_6_1_a", "5.6.1(a)")]), and if it is the direct object of a verbal noun preceded by #[i ag] or #[i do] (or #[i a] from #[i do]), the genitive change is not made to it.
+      when "3-3-4-b-p1-sample1"
+        | They are #[b making an amendment] (a change, a killing, an adjustment).
+      when "3-3-4-b-p1-sample2"
+        | He/It is often #[b given praise] (a beating, an order, a raise).
+      when "3-3-4-b-p1-sample3"
+        | An Act #[b to make an amendment] (inspection, examination) in recommendation from the Minister.
+      when "3-3-4-b-p1-sample4"
+        | Are you #[b wanting to sit] (get up, marry)?
+      when "3-3-4-b-p1-sample5"
+        | She is #[b getting a raise] (qualification, increase, beating).
+      when "3-3-4-b-p1-sample6"
+        | Who was #[b doing/making the condemnation] (teaching, dispersion, fuss)?
+      when "3-3-4-b-p2"
+        | #[b But], when it is the definite noun, the genitive change is made to it.
+      when "3-3-4-b-p2-sample1"
+        | Who is #[b making the change]?
+      when "3-3-4-b-p2-sample2"
+        | Is the Secretary General #[b drafting the order]?
+      when "3-3-4-b-p2-sample3"
+        | Their friends were #[b congratulating their marriage].
+      when "3-3-4-b-p2-sample4"
+        | She is #[b reading every amendment] before the meeting.
+      when "3-3-4-c-p1"
+        | If an indefinite noun that is also used as a verbal noun does not have a normal genitive according to one of the declensions (see #[+link("./chapter5.html#sec_5_6_1_a", "5.6.1(a)")]), and if it is subject to a compound preposition or follows #[i chun], the genitive change is not made to it.
+      when "3-3-4-c-p1-sample1"
+        | The couple is #[b about to marry].
+      when "3-3-4-c-p1-sample2"
+        | I am #[b just getting up].
+      when "3-3-4-c-p1-sample3"
+        | Isn&rsquo;t it nice to go on a walk #[b after sitting]?
+      when "3-3-4-c-p1-sample4"
+        | The day is #[b going to get longer].
+      when "3-3-4-c-p2"
+        | #[b But], when it is the definite noun, the genitive change is made to it.
+      when "3-3-4-c-p2-sample1"
+        | They are not for #[b divorce].
+      when "3-3-4-c-p2-sample2"
+        | He is about #[b to marry].
+      when "3-3-4-c-p2-sample3"
+        | You must study for #[b every exam].
+      when "3-3-5-title"
+        | The Indefinite Noun &mdash; Verbal Noun Clauses that are not Independent Sentences
+      when "3-3-5-p1"
+        | The genitive change is not made to the indefinite noun in clauses where the indefinite noun is subject to a verbal noun where #[i ag] or #[i do] (or #[i a] from #[i do]) precedes it if that verbal noun clause cannot function independently without being followed by a simple preposition or a prepositional clause. The words in bold below cannot function independently on their own.
+      when "3-3-5-p1-sample1"
+        | #[b They are facing] the other team now.
+      when "3-3-5-p1-sample2"
+        | They are #[b taking advantage] of the system.
+      when "3-3-5-p1-sample3"
+        | #[b The school is ending] the scheme.
+      when "3-3-5-p1-sample4"
+        | #[b The students are are clearly enjoying] the night.
+      when "3-3-5-p1-sample5"
+        | #[b He is saying good-bye] to him.
+      when "3-3-5-p1-sample6"
+        | #[b Directors to give attention] to the interests of employees.
+      when "3-3-5-p1-sample7"
+        | #[b They are trying out] a new menu.
+      when "3-3-5-p1-sample8"
+        | #[b The organization was] advancing #[b projects]. (#[i pl.])
+      when "3-3-5-p1-sample9"
+        | #[b The Department is] implementing #[b policies]. (#[i pl.])
+      when "3-3-5-p2"
+        | #[b But], despite this, if the indefinite noun is an integral part of the verbal noun clause, and the verbal noun clause can function independently, the genitive change is made to the indefinite noun. The words in bold below can function independently on their own and the genitive change is made to the indefinite noun accordingly.
+      when "3-3-5-p2-sample1"
+        | #[b It was raining] (in Cork).
+      when "3-3-5-p2-sample2"
+        | #[b She was doing work] (in the office).
+      when "3-3-5-p2-sample3"
+        | #[b They are collecting money] (there).
+      when "3-3-5-p2-sample4"
+        | #[b He will give help] (in times of need).
+      when "3-3-5-p2-sample5"
+        | #[b She is dying] (in the hospital).
+      when "3-3-5-p2-sample6"
+        | #[b Is she playing football] (with the neighbors)?
+      when "3-3-5-p2-sample7"
+        | #[b They were singing] (in the house).
+      when "3-3-6-title"
+        | The Indefinite Noun &mdash; Specific Terms
+      when "3-3-6-a-p"
+        | If there are certain multi-word phrases that have a specific meaning, e.g., #[i bolg le gréin] #[+tl("sunbathing")]; #[i buail isteach] #[+tl("drop-in")]; #[i buaileam sciath] #[+tl("shield strike")]; #[i cos ar bolg] #[+tl("foot on belly")]; #[i cúl le rath] #[+tl("back to success")]; #[i uisce faoi thalamh] #[+tl("groundwater")]; etc. subject to a word or a form followed by a genitive, the first noun in the multi-word phrase is neither inflected nor lenited.
+      when "3-3-6-a-p-sample1"
+        | I will get #[b takeaway] food on my way home.
+      when "3-3-6-a-p-sample2"
+        | He is sunbathing in France currently. (#[i Lit.] #[b belly with sun])
+      when "3-3-6-a-p-sample3"
+        | They have a #[b drop-in] center in the middle of the city.
+      when "3-3-6-b-p"
+        | Where a unit of two indefinite nouns in which the first noun of that unit is #[i tús] #[+tl("beginning")], #[i lár] #[+tl("middle")], or #[i deiradh] #[+tl("end")] (in the singular), the first noun is left in the nominative case when it is subject to a word or a form followed by the genitive.
+      when "3-3-6-b-p-sample1"
+        | Everything is organized for the #[b beginning] of the year meeting.
+      when "3-3-6-b-p-sample2"
+        | Enjoy the #[b mid]-term break!
+      when "3-3-6-b-p-sample3"
+        | A week-#[b end] event is organized every year.
+      when "3-3-7-title"
+        | A Definite Quantity in a List
+      when "3-3-7-p1"
+        | If an indefinite noun that is subject to a noun expressing definite quantity is presented in a recipe or in the form of a list, the genitive change is not made to the noun or adjective being qualified.
+      when "3-3-7-p1-sample1"
+        | 500g #[b flour]
+      when "3-3-7-p1-sample2"
+        | 1lb #[b white flour]
+      when "3-3-7-p1-sample3"
+        | 250g #[b castor sugar]
+      when "3-3-7-p1-sample4"
+        | 150ml #[b cream]
+      when "3-3-7-p1-sample5"
+        | 1/2 tsp. #[b baking powder]
+      when "3-3-7-p1-sample6"
+        | 2 tablespoons #[b honey]
+      when "3-3-7-p2"
+        | The partitive dative is used in prose.
+      when "3-3-7-p2-sample1"
+        | Mix #[b 500g of white flour] and #[b 250g of castor sugar] in a bowl.
+      when "3-3-7-p2-sample2"
+        | Add #[b 150ml of milk] and #[b 150ml of cream] to the mixture.
+      when "3-3-8-title"
+        | The Indefinite Noun &mdash; Qualifiers
+      when "3-3-8-a-p"
+        | The genitive change is not made to an indefinite noun that is subject to a verbal noun preceded by #[i ag] or #[i do] (or #[i a] from #[i do]), subject to a compound preposition or subject to an indefinite quantity if the indefinite noun is qualified with one of the qualifiers listed in tables #[+link("#table3b", "3B")], #[+link("#table3c", "3C")] and #[+link("#table3d", "3D")] below.
+      when "3-3-8-b-p"
+        | The indefinite noun itself must be qualified with the qualifier to cancel the genitive. If the qualifier functions as something other than an adjective (as an adverb, for example), the genitive change is made to the indefinite noun (see #[+link("#sec_3_3_12_b", "3.3.12(b)")]).
+      when "3-3-9-title"
+        | A Qualified Indefinite Noun subject to a Verbal Noun preceded by #[i ag] or #[i do] (or #[i a] from #[i do])
+      when "3-3-9-p"
+        | When an indefinite noun is subject to a verbal noun preceded by #[i ag] or #[i do] (or #[i a] from #[i do]) qualified with the qualifiers listed below, the genitive change is not made to the indefinite noun (or the adjective accompanying it).
+      when "Table3B-caption"
+        | Qualifiers &mdash; An Indefinite Noun subject to a Verbal Noun preceded by #[i ag] or #[i do] (or #[i a] from #[i do])
+      when "Table3B-Col1"
+        | Qualifier
+      when "Table3B-Col2"
+        | Singular
+      when "Table3B-Col3"
+        | Plural
+      when "Table3B-row1"
+        | Attributive adjective, or a noun in the capacity of an adjective
+      when "Table3B-row2"
+        | Prepositional phrase like #[i ar bith], #[i ar leith], #[i den scoth], etc. if it has an adjectival function
+      when "Table3B-row3"
+        | Relative clause
+      when "Table3B-row4"
+        | The indefinite adjective #[i aon] or the emphatic prefix #[i an-]
+      when "3-3-10-title"
+        | Qualified Indefinite Noun subject to a Compound Preposition
+      when "3-3-10-p1"
+        | When an indefinite noun that is subject to a compound preposition (or #[i cois] #[+tl("beside")], #[i dála] #[+tl("like")], #[i fearacht] #[+tl("opposite")], #[i timpeall] #[+tl("around")], #[i trasna] #[+tl("across")]) qualified with one of the qualifiers shown below, the genitive change is not made to the indefinite noun (or the adjective accompanying it).
+      when "Table3C-caption"
+        | Qualifiers &mdash; Indefinite Noun subject to a Compound Preposition
+      when "Table3C-row1"
+        | #[+tlDb("Table3B-row1")]
+      when "Table3C-row2"
+        | #[+tlDb("Table3B-row2")]
+      when "Table3C-row3"
+        | Prepositional dependent clause, e.g., #[i ar an mBille], #[i faoin mbord], #[i sa phóstaer], etc., or prepositional pronominal, e.g., #[i air], #[i fúithi], #[i uainn], etc., if it has a adjectival function
+      when "Table3C-row4"
+        | #[+tlDb("Table3B-row3")]
+      when "Table3C-row5"
+        | The indefinite adjective #[i aon] #[+tl("any")]
+      when "3-3-10-p2"
+        | Note that a prepositional phrase with a specific meaning is a compound preposition, e.g., #[i i gcás] meaning #[i más rud é] #[+tl("if")]. #[i Simple preposition + noun] is the model for this. #[+link("#table3c", "Table 3C")] does not apply if an indefinite noun is present that is subject to a preposition and a noun that is not a compound preposition, e.g., #[i i gcas] meaning #[i in imeachtaí dlí] #[+tl("in a legal proceeding")], #[i i mála] #[+tl("in a bag")].
+      when "3-3-11-title"
+        | A Qualified Indefinite Noun subject to An Indefinite Quantity
+      when "3-3-11-p1"
+        | When an indefinite noun is subject to a word or phrase expressing an indefinite quantity, e.g., #[i barraíocht] #[+tl("excess")], #[i breis] #[+tl("more")], #[i easpa] #[+tl("lack")], #[i go leor] #[+tl("enough")], #[i iomarca] #[+tl("too much")], #[i níos mó] #[+tl("more")], #[i roinnt] #[+tl("some")], qualified with one a qualifier in the table below, the genitive change is not made to the indefinite noun (or the adjective accompanying it).
+      when "Table3D-caption"
+        | Qualifiers &mdash; Indefinite Noun subject to an Indefinite Quantity
+      when "3-3-11-p2"
+        | Note that an indefinite quantity is observed as a definite quantity when a possessive adjective precedes it, and in this context the genitive change is made to the noun that follows it (and the adjective accompanying it), e.g., #[i a chuid gruaige fada] #[+tl("his long hair")]; #[i a dóthain bia the] #[+tl("her share of hot food")]; #[i a ndóthain saineolais theicniúil] #[+tl("their share of technical knowledge")]; #[i ár gcuid oibre baile] #[+tl("our share of homework")].
+      when "3-3-12-title"
+        | Form of the Genitive
+      when "3-3-12-a-p"
+        | Apart from the contexts specified in tables #[+link("#table3b", "3B")], #[+link("#table3c", "3C")] and #[+link("#table3d", "3D")], the genitive change is made to the indefinite noun in the structure #[i noun] + #[i indefinite noun] + #[i qualifier].
+      when "Table3E-caption"
+        | Form of the Genitive &mdash; Noun + Indefinite Noun + Qualifier
+      when "3-3-12-b-p"
+        | The genitive change is made to an indefinite noun is subject to a compound preposition and followed by a prepositional phrase, prepositional phrase or prepositional pronominal unless the indefinite noun is qualified by that prepositional phrase, prepositional dependent clause or prepositional pronominal (for example, if the verb rather than the indefinite noun is qualified) or by any of the other qualifier mentioned in #[+link("#table3c", "table 3C")].
+      when "Table3F-caption"
+        | Form of the Genitive &mdash; An Indefinite Noun subject to a Compound Preposition
+      when "3-3-13-title"
+        | Summary of the Form of the Nominative in place of the Genitive
+      when "3-3-13-p"
+        | For reference, a summary of the situations where the form of the nominative is used in place of the genitive is given here.
+      when "Table3G-caption"
+        | Summary of the Situations where the Form of the Nominative is used in place of the Genitive
+      when "Table3G-col1"
+        | If:
+      when "Table3G-col2"
+        | Is subject to:
+      when "Table3G-col3"
+        | The form of the nominative is used in place of the genitive:
+      when "Table3G-row1-condition"
+        | A noun that comes before a definite noun in the genitive (#[+link("#sec_3_3_1_a", "3.3.1(a)")])
+      when "leanannAnGinideach"
+        | Word or form following the genitive
+      when "Table3G-row2-condition"
+        | A certain definite unit of which a verbal noun is an integral part (#[+link("#sec_3_3_1_b", "3.3.1(b)")])
+      when "Table3G-row3-condition"
+        | A noun or noun phrase, definite or indefinite, connected by a preposition #[i a] (from #[i do]) to a verbal noun (#[+link("#sec_3_3_2_a", "3.3.2(a)")])
+      when "Table3G-row4-condition"
+        | #[i cuid] and #[i ceann], and genitive partitive or dative partitive subject to it (#[+link("#sec_3_3_2_b", "3.3.2(b)")])
+      when "Table3G-row5-condition"
+        | A single common noun without the article that is used as the name of a company, association or program (#[+link("#sec_3_3_2_c", "3.3.2(c)")])
+      when "Table3G-row6-condition"
+        | A verbal noun that is preceded by the proleptic pronominal #[i a] (#[+link("#sec_3_3_3_a", "3.3.3(a)")])
+      when "Table3G-row7-condition"
+        | A verbal noun (#[+link("#sec_3_3_3", "3.3.3")](b))
+      when "Table3G-row7-rule"
+        | #[i chun], in the structure #[i chun] + #[i verbal noun] used to express an upcoming action
+      when "Table3G-row8-condition"
+        | A certain indefinite unit has a verbal noun as an integral part (#[+link("#sec_3_3_3_c", "3.3.3(c)")])
+      when "Table3G-row9-condition"
+        | An indefinite noun is used as a verbal noun also, and has a normal genitive subject to one of the declensions, that is used as a verbal noun (#[+link("#sec_3_3_4_a", "3.3.4(a)")])
+      when "Table3G-row9-rule"
+        | A verbal noun is preceded by #[i ag] or #[i do] (or #[i a] from #[i do]) or a compound preposition
+      when "Table3G-row10-condition"
+        | An indefinite noun is used as a verbal noun also, and does not have a normal genitive subject to one of the declensions, that is the direct object of a verbal noun (#[+link("#sec_3_3_4_b", "3.3.4(b)")])
+      when "Table3G-row10-rule"
+        | Verbal noun preceded by #[i ag] or #[i do] (or #[i a] from #[i do])
+      when "Table3G-row11-condition"
+        | An indefinite noun that is used as a verbal noun also, and does not have a normal genitive subject to one of the declensions (#[+link("#sec_3_3_4_c", "3.3.4(c)")])
+      when "Table3G-row11-rule"
+        | A compound preposition or #[i chun] meaning #[i i dtreo] (#[i towards])
+      when "Table3G-row12-condition"
+        | An indefinite noun in a verbal noun clause that cannot function independently without a simple preposition or prepositional clause following it (#[+link("#sec_3_3_5", "3.3.5")])
+      when "Table3G-row12-rule"
+        | Verbal noun preceded by #[i ag] or #[i do] (or #[i a] from #[i do])
+      when "Table3G-row13-condition"
+        | The first indefinite noun in a multi-word phrase that has a specific meaning (#[+link("#sec_3_3_6_a", "3.3.6(a)")]) 
+      when "Table3G-row14-condition"
+        | #[i tús], #[i lár] or #[i deireadh], if they are the first noun in a unit of two indefinite nouns (#[+link("#sec_3_3_6_b", "3.3.6(b)")])
+      when "Table3G-row15-condition"
+        | A noun in a list (#[+link("#sec_3_3_7", "3.3.7")])
+      when "Table3G-row15-rule"
+        | A word or phrase used to express a definite quantity
+      when "Table3G-row16-condition"
+        | An indefinite noun qualified by a certain qualifier (#[+link("#sec_3_3_9", "3.3.9")])
+      when "Table3G-row16-rule"
+        | Verbal noun preceded #[i ag] or #[i do] (or #[i a] from #[i do])
+      when "Table3G-row17-condition"
+        | An indefinite noun qualified by a certain qualifier (#[+link("#sec_3_3_10", "3.3.10")])
+      when "Table3G-row17-rule"
+        | A compound preposition
+      when "Table3G-row18-condition"
+        | An indefinite noun qualified by a certain qualifier (#[+link("#sec_3_3_11", "3.3.11")])
+      when "Table3G-row18-rule"
+        | Word or phrase used to express an indefinite quantity
+      default
+        - throw new Error(`No content for ${key} (en.pug)`)

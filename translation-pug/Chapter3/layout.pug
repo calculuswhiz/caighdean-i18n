@@ -1,0 +1,410 @@
+include ../bodyMatter.pug
+include ./dbs/index.pug
+include tables.pug
+
++chapterTemplate(3)
+  +hx(2, "3.1", "3-1-title")
+    +hx(3, "3.1.1")
+      p: +renderKey("3-1-1-p")
+
+    +hx(3, "3.1.2")
+      p: +renderKey("3-1-2-p")
+      ol(class="list-[lower-alpha]")
+        li#sec_3_1_2_a
+          p: +renderKey("3-1-2-a")
+          +sampleBox("3-1-2-a-sample", 2)
+        li#sec_3_1_2_b
+          p: +renderKey("3-1-2-b")
+          +sampleBox("3-1-2-b-sample", 3)
+        li#sec_3_1_2_c
+          p: +renderKey("3-1-2-c")
+          +sampleBox("3-1-2-c-sample", 4)
+        li#sec_3_1_2_d
+          p: +renderKey("3-1-2-d")
+          +sampleBox("3-1-2-d-sample", 3)
+        li#sec_3_1_2_e
+          p: +renderKey("3-1-2-e")
+          +sampleBox("3-1-2-e-sample", 2)
+        li#sec_3_1_2_f
+          p: +renderKey("3-1-2-f")
+          +sampleBox("3-1-2-f-sample", 6)
+        li#sec_3_1_2_g
+          p: +renderKey("3-1-2-g")
+          +sampleBox("3-1-2-g-sample", 2)
+    
+    +hx(3, "3.1.3")
+      p: +renderKey("3-1-3-p1")
+      +sampleBox("3-1-3-sample", 2)
+      p: +renderKey("3-1-3-p2")
+
+    +hx(3, "3.1.4")
+      p: +renderKey("3-1-4-p1")
+      +sampleBox("3-1-4-p1-sample", 2)
+      p: +renderKey("3-1-4-p2")
+      +sampleBox("3-1-4-p2-sample", 2)
+
+    +hx(3, "3.1.5")
+      p: +renderKey("3-1-5-p")
+      +sampleBox("3-1-5-p-sample", 2)
+
+    +hx(3, "3.1.6")
+      p: +renderKey("3-1-6-p1")
+      +sampleBox("3-1-6-p1-sample", 2)
+      p: +renderKey("3-1-6-p2")
+      +sampleBox("3-1-6-p2-sample", 2)
+
+    +hx(3, "3.1.7")
+      p: +renderKey("3-1-7-p1")
+      +sampleBox("3-1-7-p1-sample", 2)
+      p: +renderKey("3-1-7-p2")
+
+    +hx(3, "3.1.8")
+      p: +renderKey("3-1-8-p")
+      +sampleBox("3-1-8-p-sample", 3)
+
+    +hx(3, "3.1.9")
+      p: +renderKey("3-1-9-p")
+      ol(class="list-[lower-alpha]")
+        li#sec_3_1_9_a
+          p: +renderKey("3-1-9-a-p")
+          table
+            colgroup
+              col(class="w-4/9")
+              col(class="w-1/9")
+              col(class="w-4/9")
+            tbody
+              tr
+                td an cóta + an bhean
+                td &rarr;
+                td Is é sin #[b cóta na mná].
+              tr
+                td an t&#x2011;údar + na leabhair
+                td &rarr;
+                td Is í #[b údar na leabhar] í.
+        li#sec_3_1_9_b
+          p: +renderKey("3-1-9-b-p")
+          table
+            colgroup
+              col(class="w-4/9")
+              col(class="w-1/9")
+              col(class="w-4/9")
+            tbody
+              tr
+                td cóta + bean
+                td &rarr;
+                td Is #[b cóta mná] é.
+              tr
+                td údar + leabhair
+                td &rarr;
+                td Is #[b údar leabhar] í.
+        li#sec_3_1_9_c
+          p: +renderKey("3-1-9-c-p")
+          table
+            colgroup
+              col(class="w-2/7")
+              col(class="w-1/7")
+              col(class="w-4/7")
+            tbody
+              tr
+                td an cóta + bean
+                td &rarr;
+                td An bhfaca tú #[b an cóta mná] sin?
+              tr
+                td an t&#x2011;údar + leabhair
+                td &rarr;
+                td Is í #[b an t&#x2011;údar leabhar] is cáiliúla in Éirinn í.
+
+    +hx(3, "3.1.10")
+      p: +renderKey("3-1-10-p")
+      ol(class="list-[lower-alpha]")
+        li#sec_3_1_10_a
+          p: +renderKey("3-1-10-a-p")
+          +sampleBox("3-1-10-a-p-sample", 2)
+        li#sec_3_1_10_b
+          p: +renderKey("3-1-10-b-p")
+          +sampleBox("3-1-10-b-p-sample", 2)
+        li#sec_3_1_10_c
+          p: +renderKey("3-1-10-c-p")
+          +sampleBox("3-1-10-c-p-sample", 2)
+
+    +hx(3, "3.1.11")
+      p: +renderKey("3-1-11-p")
+      +sampleBox("3-1-11-p-sample", 4)
+      aside
+        | #[+renderKey("Nóta", { getFromCommon: true })]: #[+renderKey("3-1-11-note")]
+      +sampleBox("3-1-11-p-sample", 2, 5)
+  hr
+
+  +hx(2, "3.2", "3-2-title")
+    +hx(3, "3.2.1", "3-2-1-title")
+      ol(class="list-[lower-alpha]")
+        li#sec_3_2_1_a
+          p: +renderKey("3-2-1-a-p")
+          +sampleBox("3-2-1-a-p-sample", 2)
+        li#sec_3_2_1_b
+          p: +renderKey("3-2-1-b-p")
+          +sampleBox("3-2-1-b-p-sample", 2)
+        li#sec_3_2_1_c
+          p: +renderKey("3-2-1-c-p1")
+          +sampleBox("3-2-1-c-p1-sample", 2)
+          p: +renderKey("3-2-1-c-p2")
+          +sampleBox("3-2-1-c-p2-sample", 2)
+
+    +hx(3, "3.2.2", "3-2-2-title")
+      p: +renderKey("3-2-2-p")
+      ol(class="list-[upper-alpha]")
+        li#sec_3_2_2_A
+          b: +renderKey("3-2-2-A-title")
+          ol(class="list-[lower-alpha]")
+            li#sec_3_2_2_A_a
+              p: +renderKey("3-2-2-A-a-p")
+              +sampleBox("3-2-2-A-a-p-sample", 5)
+            li#sec_3_2_2_A_b
+              p: +renderKey("3-2-2-A-b-p")
+              //- This one is not translated. Self-evident
+              table.samplebox(class="my-1")
+                tbody
+                  tr: td An #[b é] FSS a bhfuil freagracht #[b air] as cúrsaí sláinte?
+                  tr: td Maidir le NA, is é 193 líon #[b a] bhall.
+        li#sec_3_2_2_B
+          b: +renderKey("3-2-2-B-title")
+          p: +renderKey("3-2-2-B-p")
+          ol(class="list-[lower-alpha]")
+            li#sec_3_2_2_B_a
+              p: +renderKey("3-2-2-B-a-p")
+              +sampleBox("3-2-2-B-a-p-sample", 2)
+            li#sec_3_2_2_B_b
+              p: +renderKey("3-2-2-B-b-p")
+              +sampleBox("3-2-2-B-b-p-sample", 3)
+            li#sec_3_2_2_B_c
+              p: +renderKey("3-2-2-B-c-p")
+              table.samplebox(class="my-1")
+                tbody
+                  tr: td Maidir leis #[b na NA], is é 193 líon #[b a] bhall.
+                  tr: td Síníodh #[b an IEA] sa bhliain 1986 agus tá feidhm reachtach #[b aige].
+
+    +hx(3, "3.2.3", "3-2-3-title")
+      ol(class="list-[lower-alpha]")
+        li#sec_3_2_3_a
+          p: +renderKey("3-2-3-a-p")
+          +sampleBox("3-2-3-a-p-sample", 4)
+        li#sec_3_2_3_b
+          p: +renderKey("3-2-3-b-p")
+          +sampleBox("3-2-3-b-p-sample", 6)
+        li#sec_3_2_3_c
+          p: +renderKey("3-2-3-c-p")
+          +sampleBox("3-2-3-c-p-sample", 2)
+  hr
+
+  +hx(2, "3.3", "3-3-title")
+    +hx(3, "3.3.1", "3-3-1-title")
+      ol(class="list-[lower-alpha]")
+        li#sec_3_3_1_a
+          p: +renderKey("3-3-1-a-p1")
+          ol(class="list-[lower-roman]")
+            li#sec_3_3_1_a_i
+              p: +renderKey("3-3-1-a-i-p")
+              table
+                colgroup
+                  col(class="w-4/9")
+                  col(class="w-1/9")
+                  col(class="w-4/9")
+                tbody
+                  tr
+                    td Sin é #[b teach Ghráinne].
+                    td &rarr;
+                    td Sin í #[b eochair theach Ghráinne].
+                  tr
+                    td An raibh #[b foireann Chorcaí] ann?
+                    td &rarr;
+                    td Bhí #[b bus fhoireann Chorcaí] ann.
+            li#sec_3_3_1_a_ii
+              p: +renderKey("3-3-1-a-ii-p")
+              table
+                colgroup
+                  col(class="w-4/9")
+                  col(class="w-1/9")
+                  col(class="w-4/9")
+                tbody
+                  tr
+                    td Pléadh #[b forais chreidmheasa an Stáit].
+                    td &rarr;
+                    td Dúradh go bhfuil #[b cobhsaíocht fhorais chreidmheasa an Stáit] ríthábhachtach.
+                  tr
+                    td Ar labhair tú le #[b bainisteoir na hoifige]?
+                    td &rarr;
+                    td D&rsquo;fhág mé nóta #[b le haghaidh bhainisteoir na hoifige].
+            li#sec_3_3_1_a_iii
+              p: +renderKey("3-3-1-a-iii-p")
+              table
+                colgroup
+                  col(class="w-4/9")
+                  col(class="w-1/9")
+                  col(class="w-4/9")
+                tbody
+                  tr
+                    td Cad atá á dhéanamh le #[b doras a ghluaisteáin]?
+                    td &rarr;
+                    td Tá an meicneoir #[b ag deisiú dhoras a ghluaisteáin].
+                  tr
+                    td An le toil #[b a dtuismitheoirí] a rinne siad é?
+                    td &rarr;
+                    td Ní hea, ach #[b in éadan thoil a dtuismitheoirí].
+            li#sec_3_3_1_a_iv
+              p: +renderKey("3-3-1-a-iv-p")
+              table
+                colgroup
+                  col(class="w-4/9")
+                  col(class="w-1/9")
+                  col(class="w-4/9")
+                tbody
+                  tr
+                    td Cheartaigh sé #[b ceacht gach linbh].
+                    td &rarr;
+                    td Chuir sé réalta órga #[b ag bun cheacht gach linbh].
+                  tr
+                    td Tá #[b cearta gach aon saoránaigh] tábhachtach.
+                    td &rarr;
+                    td Tá siad ag gníomhú #[b ar son chearta gach aon saoránaigh].
+            li#sec_3_3_1_a_v
+              p: +renderKey("3-3-1-a-v-p")
+              table
+                colgroup
+                  col(class="w-4/9")
+                  col(class="w-1/9")
+                  col(class="w-4/9")
+                tbody
+                  tr
+                    td Sin é #[b Traein 20].
+                    td &rarr;
+                    td Cá bhfuil #[b tiománaí Thraein 20]?
+                  tr
+                    td Ar luaigh tú #[b fomhír (i)]?
+                    td &rarr;
+                    td Luaigh, tá an fhaisnéis #[b i lár fhomhír (i)].
+            li#sec_3_3_1_a_vi
+              p: +renderKey("3-3-1-a-vi-p")
+              table
+                colgroup
+                  col(class="w-4/9")
+                  col(class="w-1/9")
+                  col(class="w-4/9")
+                tbody
+                  tr
+                    td Tá #[b téarmaí an Achta] soiléir.
+                    td &rarr;
+                    td Tá na ceapacháin #[b faoi réir théarmaí an Achta].
+                  tr
+                    td Cá bhfuil #[b bainisteoir an óstáin]?
+                    td &rarr;
+                    td Tá #[b oifigí bhainisteoir an óstáin] san fhoirgneamh sin.
+          p: +renderKey("3-3-1-a-p2")
+        li#sec_3_3_1_b
+          p: +renderKey("3-3-1-b-p")
+          ol(class="list-[lower-roman]")
+            li#sec_3_3_1_b_i
+              p: +renderKey("3-3-1-b-i-p")
+              +sampleBox("3-3-1-b-i-p-sample", 2)
+            li#sec_3_3_1_b_ii
+              p: +renderKey("3-3-1-b-ii-p")
+              +sampleBox("3-3-1-b-ii-p-sample", 2)
+
+    +hx(3, "3.3.2", "3-3-2-title")
+      ol(class="list-[lower-alpha]")
+        li#sec_3_3_2_a
+          p: +renderKey("3-3-2-a-p")
+          +Table3A
+        li#sec_3_3_2_b
+          p: +renderKey("3-3-2-b-p1")
+          +sampleBox("3-3-2-b-p1-sample", 4)
+          p: +renderKey("3-3-2-b-p2")
+          +sampleBox("3-3-2-b-p2-sample", 2)
+        li#sec_3_3_2_c
+          p: +renderKey("3-3-2-c-p1")
+          +sampleBox("3-3-2-c-p1-sample", 2)
+
+    +hx(3, "3.3.3", "3-3-3-title")
+      p: +renderKey("3-3-3-p")
+      ol(class="list-[lower-alpha]")
+        li#sec_3_3_3_a
+          p: +renderKey("3-3-3-a-p")
+          +sampleBox("3-3-3-a-p-sample", 2)
+        li#sec_3_3_3_b
+          p: +renderKey("3-3-3-b-p1")
+          +sampleBox("3-3-3-b-p1-sample", 7)
+          p: +renderKey("3-3-3-b-p2")
+        li#sec_3_3_3_c
+          p: +renderKey("3-3-3-c-p")
+          +sampleBox("3-3-3-c-p-sample", 3)
+
+    +hx(3, "3.3.4", "3-3-4-title")
+      ol(class="list-[lower-alpha]")
+        li#sec_3_3_4_a
+          p: +renderKey("3-3-4-a-p1")
+          +sampleBox("3-3-4-a-p1-sample", 3)
+          p: +renderKey("3-3-4-a-p2")
+          +sampleBox("3-3-4-a-p2-sample", 3)
+        li#sec_3_3_4_b
+          p: +renderKey("3-3-4-b-p1")
+          +sampleBox("3-3-4-b-p1-sample", 6)
+          p: +renderKey("3-3-4-b-p2")
+          +sampleBox("3-3-4-b-p2-sample", 4)
+        li#sec_3_3_4_c
+          p: +renderKey("3-3-4-c-p1")
+          +sampleBox("3-3-4-c-p1-sample", 4)
+          p: +renderKey("3-3-4-c-p2")
+          +sampleBox("3-3-4-c-p2-sample", 3)
+
+    +hx(3, "3.3.5", "3-3-5-title")
+      p: +renderKey("3-3-5-p1")
+      +sampleBox("3-3-5-p1-sample", 9)
+      p: +renderKey("3-3-5-p2")
+      +sampleBox("3-3-5-p2-sample", 7)
+
+    +hx(3, "3.3.6", "3-3-6-title")
+      ol(class="list-[lower-alpha]")
+        li#sec_3_3_6_a
+          p: +renderKey("3-3-6-a-p")
+          +sampleBox("3-3-6-a-p-sample", 3)
+        li#sec_3_3_6_b
+          p: +renderKey("3-3-6-b-p")
+          +sampleBox("3-3-6-b-p-sample", 3)
+
+    +hx(3, "3.3.7", "3-3-7-title")
+      p: +renderKey("3-3-7-p1")
+      +sampleBox("3-3-7-p1-sample", 6)
+      p: +renderKey("3-3-7-p2")
+      +sampleBox("3-3-7-p2-sample", 2)
+
+    +hx(3, "3.3.8", "3-3-8-title")
+      ol(class="list-[lower-alpha]")
+        li#sec_3_3_8_a: +renderKey("3-3-8-a-p")
+        li#sec_3_3_8_b: +renderKey("3-3-8-b-p")
+
+    +hx(3, "3.3.9", "3-3-9-title")
+      p: +renderKey("3-3-9-p")
+      +Table3B
+
+    +hx(3, "3.3.10", "3-3-10-title")
+      p: +renderKey("3-3-10-p1")
+      +Table3C
+      p: +renderKey("3-3-10-p2")
+
+    +hx(3, "3.3.11", "3-3-11-title")
+      p: +renderKey("3-3-11-p1")
+      +Table3D
+      p: +renderKey("3-3-11-p2")
+
+    +hx(3, "3.3.12", "3-3-12-title")
+      ol(class="list-[lower-alpha]")
+        li#sec_3_3_12_a
+          p: +renderKey("3-3-12-a-p")
+          +Table3E
+        li#sec_3_3_12_b
+          p: +renderKey("3-3-12-b-p")
+          +Table3F
+
+    +hx(3, "3.3.13", "3-3-13-title")
+      p: +renderKey("3-3-13-p")
+      +Table3G
+  hr

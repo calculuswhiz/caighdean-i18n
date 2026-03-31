@@ -1,0 +1,2585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.22">
+<title>{Caibidil} 3 | {teidealNaCaibidle}</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<style>
+/*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
+/* Uncomment the following line when using as a custom stylesheet */
+/* @import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700"; */
+html{font-family:sans-serif;-webkit-text-size-adjust:100%}
+a{background:none}
+a:focus{outline:thin dotted}
+a:active,a:hover{outline:0}
+h1{font-size:2em;margin:.67em 0}
+b,strong{font-weight:bold}
+abbr{font-size:.9em}
+abbr[title]{cursor:help;border-bottom:1px dotted #dddddf;text-decoration:none}
+dfn{font-style:italic}
+hr{height:0}
+mark{background:#ff0;color:#000}
+code,kbd,pre,samp{font-family:monospace;font-size:1em}
+pre{white-space:pre-wrap}
+q{quotes:"\201C" "\201D" "\2018" "\2019"}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-.5em}
+sub{bottom:-.25em}
+img{border:0}
+svg:not(:root){overflow:hidden}
+figure{margin:0}
+audio,video{display:inline-block}
+audio:not([controls]){display:none;height:0}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0}
+button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}
+button,input{line-height:normal}
+button,select{text-transform:none}
+button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+input[type=checkbox],input[type=radio]{padding:0}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+textarea{overflow:auto;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
+*,::before,::after{box-sizing:border-box}
+html,body{font-size:100%}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;line-height:1;position:relative;cursor:auto;-moz-tab-size:4;-o-tab-size:4;tab-size:4;word-wrap:anywhere;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+a:hover{cursor:pointer}
+img,object,embed{max-width:100%;height:auto}
+object,embed{height:100%}
+img{-ms-interpolation-mode:bicubic}
+.left{float:left!important}
+.right{float:right!important}
+.text-left{text-align:left!important}
+.text-right{text-align:right!important}
+.text-center{text-align:center!important}
+.text-justify{text-align:justify!important}
+.hide{display:none}
+img,object,svg{display:inline-block;vertical-align:middle}
+textarea{height:auto;min-height:50px}
+select{width:100%}
+.subheader,.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{line-height:1.45;color:#7a2518;font-weight:400;margin-top:0;margin-bottom:.25em}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,pre,form,p,blockquote,th,td{margin:0;padding:0}
+a{color:#2156a5;text-decoration:underline;line-height:inherit}
+a:hover,a:focus{color:#1d4b8f}
+a img{border:0}
+p{line-height:1.6;margin-bottom:1.25em;text-rendering:optimizeLegibility}
+p aside{font-size:.875em;line-height:1.35;font-style:italic}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{font-family:"Open Sans","DejaVu Sans",sans-serif;font-weight:300;font-style:normal;color:#ba3925;text-rendering:optimizeLegibility;margin-top:1em;margin-bottom:.5em;line-height:1.0125em}
+h1 small,h2 small,h3 small,#toctitle small,.sidebarblock>.content>.title small,h4 small,h5 small,h6 small{font-size:60%;color:#e99b8f;line-height:0}
+h1{font-size:2.125em}
+h2{font-size:1.6875em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.375em}
+h4,h5{font-size:1.125em}
+h6{font-size:1em}
+hr{border:solid #dddddf;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em}
+em,i{font-style:italic;line-height:inherit}
+strong,b{font-weight:bold;line-height:inherit}
+small{font-size:60%;line-height:inherit}
+code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;color:rgba(0,0,0,.9)}
+ul,ol,dl{line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
+ul,ol{margin-left:1.5em}
+ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0}
+ul.circle{list-style-type:circle}
+ul.disc{list-style-type:disc}
+ul.square{list-style-type:square}
+ul.circle ul:not([class]),ul.disc ul:not([class]),ul.square ul:not([class]){list-style:inherit}
+ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
+dl dt{margin-bottom:.3125em;font-weight:bold}
+dl dd{margin-bottom:1.25em}
+blockquote{margin:0 0 1.25em;padding:.5625em 1.25em 0 1.1875em;border-left:1px solid #ddd}
+blockquote,blockquote p{line-height:1.6;color:rgba(0,0,0,.85)}
+@media screen and (min-width:768px){h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2}
+h1{font-size:2.75em}
+h2{font-size:2.3125em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.6875em}
+h4{font-size:1.4375em}}
+table{background:#fff;margin-bottom:1.25em;border:1px solid #dedede;word-wrap:normal}
+table thead,table tfoot{background:#f7f8f7}
+table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:.5em .625em .625em;font-size:inherit;color:rgba(0,0,0,.8);text-align:left}
+table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
+table tr.even,table tr.alt{background:#f8f8f7}
+table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{line-height:1.6}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
+h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
+.center{margin-left:auto;margin-right:auto}
+.stretch{width:100%}
+.clearfix::before,.clearfix::after,.float-group::before,.float-group::after{content:" ";display:table}
+.clearfix::after,.float-group::after{clear:both}
+:not(pre).nobreak{word-wrap:normal}
+:not(pre).nowrap{white-space:nowrap}
+:not(pre).pre-wrap{white-space:pre-wrap}
+:not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed}
+pre{color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;line-height:1.45;text-rendering:optimizeSpeed}
+pre code,pre pre{color:inherit;font-size:inherit;line-height:inherit}
+pre>code{display:block}
+pre.nowrap,pre.nowrap pre{white-space:pre;word-wrap:normal}
+em em{font-style:normal}
+strong strong{font-weight:400}
+.keyseq{color:rgba(51,51,51,.8)}
+kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background:#f7f7f7;border:1px solid #ccc;border-radius:3px;box-shadow:0 1px 0 rgba(0,0,0,.2),inset 0 0 0 .1em #fff;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
+.keyseq kbd:first-child{margin-left:0}
+.keyseq kbd:last-child{margin-right:0}
+.menuseq,.menuref{color:#000}
+.menuseq b:not(.caret),.menuref{font-weight:inherit}
+.menuseq{word-spacing:-.02em}
+.menuseq b.caret{font-size:1.25em;line-height:.8}
+.menuseq i.caret{font-weight:bold;text-align:center;width:.45em}
+b.button::before,b.button::after{position:relative;top:-1px;font-weight:400}
+b.button::before{content:"[";padding:0 3px 0 2px}
+b.button::after{content:"]";padding:0 2px 0 3px}
+p a>code:hover{color:rgba(0,0,0,.9)}
+#header,#content,#footnotes,#footer{width:100%;margin:0 auto;max-width:62.5em;*zoom:1;position:relative;padding-left:.9375em;padding-right:.9375em}
+#header::before,#header::after,#content::before,#content::after,#footnotes::before,#footnotes::after,#footer::before,#footer::after{content:" ";display:table}
+#header::after,#content::after,#footnotes::after,#footer::after{clear:both}
+#content{margin-top:1.25em}
+#content::before{content:none}
+#header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
+#header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
+#header>h1:only-child{border-bottom:1px solid #dddddf;padding-bottom:8px}
+#header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:flex;flex-flow:row wrap}
+#header .details span:first-child{margin-left:-.125em}
+#header .details span.email a{color:rgba(0,0,0,.85)}
+#header .details br{display:none}
+#header .details br+span::before{content:"\00a0\2013\00a0"}
+#header .details br+span.author::before{content:"\00a0\22c5\00a0";color:rgba(0,0,0,.85)}
+#header .details br+span#revremark::before{content:"\00a0|\00a0"}
+#header #revnumber{text-transform:capitalize}
+#header #revnumber::after{content:"\00a0"}
+#content>h1:first-child:not([class]){color:rgba(0,0,0,.85);border-bottom:1px solid #dddddf;padding-bottom:8px;margin-top:0;padding-top:1rem;margin-bottom:1.25rem}
+#toc{border-bottom:1px solid #e7e7e9;padding-bottom:.5em}
+#toc>ul{margin-left:.125em}
+#toc ul.sectlevel0>li>a{font-style:italic}
+#toc ul.sectlevel0 ul.sectlevel1{margin:.5em 0}
+#toc ul{font-family:"Open Sans","DejaVu Sans",sans-serif;list-style-type:none}
+#toc li{line-height:1.3334;margin-top:.3334em}
+#toc a{text-decoration:none}
+#toc a:active{text-decoration:underline}
+#toctitle{color:#7a2518;font-size:1.2em}
+@media screen and (min-width:768px){#toctitle{font-size:1.375em}
+body.toc2{padding-left:15em;padding-right:0}
+body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+#toc.toc2{margin-top:0!important;background:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
+#toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
+#toc.toc2>ul{font-size:.9em;margin-bottom:0}
+#toc.toc2 ul ul{margin-left:0;padding-left:1em}
+#toc.toc2 ul.sectlevel0 ul.sectlevel1{padding-left:0;margin-top:.5em;margin-bottom:.5em}
+body.toc2.toc-right{padding-left:0;padding-right:15em}
+body.toc2.toc-right #toc.toc2{border-right-width:0;border-left:1px solid #e7e7e9;left:auto;right:0}}
+@media screen and (min-width:1280px){body.toc2{padding-left:20em;padding-right:0}
+#toc.toc2{width:20em}
+#toc.toc2 #toctitle{font-size:1.375em}
+#toc.toc2>ul{font-size:.95em}
+#toc.toc2 ul ul{padding-left:1.25em}
+body.toc2.toc-right{padding-left:0;padding-right:20em}}
+#content #toc{border:1px solid #e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;border-radius:4px}
+#content #toc>:first-child{margin-top:0}
+#content #toc>:last-child{margin-bottom:0}
+#footer{max-width:none;background:rgba(0,0,0,.8);padding:1.25em}
+#footer-text{color:hsla(0,0%,100%,.8);line-height:1.44}
+#content{margin-bottom:.625em}
+.sect1{padding-bottom:.625em}
+@media screen and (min-width:768px){#content{margin-bottom:1.25em}
+.sect1{padding-bottom:1.25em}}
+.sect1:last-child{padding-bottom:0}
+.sect1+.sect1{border-top:1px solid #e7e7e9}
+#content h1>a.anchor,h2>a.anchor,h3>a.anchor,#toctitle>a.anchor,.sidebarblock>.content>.title>a.anchor,h4>a.anchor,h5>a.anchor,h6>a.anchor{position:absolute;z-index:1001;width:1.5ex;margin-left:-1.5ex;display:block;text-decoration:none!important;visibility:hidden;text-align:center;font-weight:400}
+#content h1>a.anchor::before,h2>a.anchor::before,h3>a.anchor::before,#toctitle>a.anchor::before,.sidebarblock>.content>.title>a.anchor::before,h4>a.anchor::before,h5>a.anchor::before,h6>a.anchor::before{content:"\00A7";font-size:.85em;display:block;padding-top:.1em}
+#content h1:hover>a.anchor,#content h1>a.anchor:hover,h2:hover>a.anchor,h2>a.anchor:hover,h3:hover>a.anchor,#toctitle:hover>a.anchor,.sidebarblock>.content>.title:hover>a.anchor,h3>a.anchor:hover,#toctitle>a.anchor:hover,.sidebarblock>.content>.title>a.anchor:hover,h4:hover>a.anchor,h4>a.anchor:hover,h5:hover>a.anchor,h5>a.anchor:hover,h6:hover>a.anchor,h6>a.anchor:hover{visibility:visible}
+#content h1>a.link,h2>a.link,h3>a.link,#toctitle>a.link,.sidebarblock>.content>.title>a.link,h4>a.link,h5>a.link,h6>a.link{color:#ba3925;text-decoration:none}
+#content h1>a.link:hover,h2>a.link:hover,h3>a.link:hover,#toctitle>a.link:hover,.sidebarblock>.content>.title>a.link:hover,h4>a.link:hover,h5>a.link:hover,h6>a.link:hover{color:#a53221}
+details,.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:1.25em}
+details{margin-left:1.25rem}
+details>summary{cursor:pointer;display:block;position:relative;line-height:1.6;margin-bottom:.625rem;outline:none;-webkit-tap-highlight-color:transparent}
+details>summary::-webkit-details-marker{display:none}
+details>summary::before{content:"";border:solid transparent;border-left:solid;border-width:.3em 0 .3em .5em;position:absolute;top:.5em;left:-1.25rem;transform:translateX(15%)}
+details[open]>summary::before{border:solid transparent;border-top:solid;border-width:.5em .3em 0;transform:translateY(15%)}
+details>summary::after{content:"";width:1.25rem;height:1em;position:absolute;top:.3em;left:-1.25rem}
+.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{text-rendering:optimizeLegibility;text-align:left;font-family:"Noto Serif","DejaVu Serif",serif;font-size:1rem;font-style:italic}
+table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
+.paragraph.lead>p,#preamble>.sectionbody>[class=paragraph]:first-of-type p{font-size:1.21875em;line-height:1.6;color:rgba(0,0,0,.85)}
+.admonitionblock>table{border-collapse:separate;border:0;background:none;width:100%}
+.admonitionblock>table td.icon{text-align:center;width:80px}
+.admonitionblock>table td.icon img{max-width:none}
+.admonitionblock>table td.icon .title{font-weight:bold;font-family:"Open Sans","DejaVu Sans",sans-serif;text-transform:uppercase}
+.admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6);word-wrap:anywhere}
+.admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content{border:1px solid #e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;border-radius:4px}
+.sidebarblock{border:1px solid #dbdbd6;margin-bottom:1.25em;padding:1.25em;background:#f3f3f2;border-radius:4px}
+.sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
+.exampleblock>.content>:first-child,.sidebarblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child,.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.literalblock pre,.listingblock>.content>pre{border-radius:4px;overflow-x:auto;padding:1em;font-size:.8125em}
+@media screen and (min-width:768px){.literalblock pre,.listingblock>.content>pre{font-size:.90625em}}
+@media screen and (min-width:1280px){.literalblock pre,.listingblock>.content>pre{font-size:1em}}
+.literalblock pre,.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class=highlight],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
+.literalblock.output pre{color:#f7f7f8;background:rgba(0,0,0,.9)}
+.listingblock>.content{position:relative}
+.listingblock code[data-lang]::before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:inherit;opacity:.5}
+.listingblock:hover code[data-lang]::before{display:block}
+.listingblock.terminal pre .command::before{content:attr(data-prompt);padding-right:.5em;color:inherit;opacity:.5}
+.listingblock.terminal pre .command:not([data-prompt])::before{content:"$"}
+.listingblock pre.highlightjs{padding:0}
+.listingblock pre.highlightjs>code{padding:1em;border-radius:4px}
+.listingblock pre.prettyprint{border-width:0}
+.prettyprint{background:#f7f7f8}
+pre.prettyprint .linenums{line-height:1.45;margin-left:2em}
+pre.prettyprint li{background:none;list-style-type:inherit;padding-left:0}
+pre.prettyprint li code[data-lang]::before{opacity:1}
+pre.prettyprint li:not(:first-child) code[data-lang]::before{display:none}
+table.linenotable{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.linenotable td[class]{color:inherit;vertical-align:top;padding:0;line-height:inherit;white-space:normal}
+table.linenotable td.code{padding-left:.75em}
+table.linenotable td.linenos,pre.pygments .linenos{border-right:1px solid;opacity:.35;padding-right:.5em;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+pre.pygments span.linenos{display:inline-block;margin-right:.75em}
+.quoteblock{margin:0 1em 1.25em 1.5em;display:table}
+.quoteblock:not(.excerpt)>.title{margin-left:-1.5em;margin-bottom:.75em}
+.quoteblock blockquote,.quoteblock p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
+.quoteblock blockquote{margin:0;padding:0;border:0}
+.quoteblock blockquote::before{content:"\201c";float:left;font-size:2.75em;font-weight:bold;line-height:.6em;margin-left:-.6em;color:#7a2518;text-shadow:0 1px 2px rgba(0,0,0,.1)}
+.quoteblock blockquote>.paragraph:last-child p{margin-bottom:0}
+.quoteblock .attribution{margin-top:.75em;margin-right:.5ex;text-align:right}
+.verseblock{margin:0 1em 1.25em}
+.verseblock pre{font-family:"Open Sans","DejaVu Sans",sans-serif;font-size:1.15rem;color:rgba(0,0,0,.85);font-weight:300;text-rendering:optimizeLegibility}
+.verseblock pre strong{font-weight:400}
+.verseblock .attribution{margin-top:1.25rem;margin-left:.5ex}
+.quoteblock .attribution,.verseblock .attribution{font-size:.9375em;line-height:1.45;font-style:italic}
+.quoteblock .attribution br,.verseblock .attribution br{display:none}
+.quoteblock .attribution cite,.verseblock .attribution cite{display:block;letter-spacing:-.025em;color:rgba(0,0,0,.6)}
+.quoteblock.abstract blockquote::before,.quoteblock.excerpt blockquote::before,.quoteblock .quoteblock blockquote::before{display:none}
+.quoteblock.abstract blockquote,.quoteblock.abstract p,.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{line-height:1.6;word-spacing:0}
+.quoteblock.abstract{margin:0 1em 1.25em;display:block}
+.quoteblock.abstract>.title{margin:0 0 .375em;font-size:1.15em;text-align:center}
+.quoteblock.excerpt>blockquote,.quoteblock .quoteblock{padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+.quoteblock.excerpt,.quoteblock .quoteblock{margin-left:0}
+.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{color:inherit;font-size:1.0625rem}
+.quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;font-size:.85rem;text-align:left;margin-right:0}
+p.tableblock:last-child{margin-bottom:0}
+td.tableblock>.content{margin-bottom:1.25em;word-wrap:anywhere}
+td.tableblock>.content>:last-child{margin-bottom:-1.25em}
+table.tableblock,th.tableblock,td.tableblock{border:0 solid #dedede}
+table.grid-all>*>tr>*{border-width:1px}
+table.grid-cols>*>tr>*{border-width:0 1px}
+table.grid-rows>*>tr>*{border-width:1px 0}
+table.frame-all{border-width:1px}
+table.frame-ends{border-width:1px 0}
+table.frame-sides{border-width:0 1px}
+table.frame-none>colgroup+*>:first-child>*,table.frame-sides>colgroup+*>:first-child>*{border-top-width:0}
+table.frame-none>:last-child>:last-child>*,table.frame-sides>:last-child>:last-child>*{border-bottom-width:0}
+table.frame-none>*>tr>:first-child,table.frame-ends>*>tr>:first-child{border-left-width:0}
+table.frame-none>*>tr>:last-child,table.frame-ends>*>tr>:last-child{border-right-width:0}
+table.stripes-all>*>tr,table.stripes-odd>*>tr:nth-of-type(odd),table.stripes-even>*>tr:nth-of-type(even),table.stripes-hover>*>tr:hover{background:#f8f8f7}
+th.halign-left,td.halign-left{text-align:left}
+th.halign-right,td.halign-right{text-align:right}
+th.halign-center,td.halign-center{text-align:center}
+th.valign-top,td.valign-top{vertical-align:top}
+th.valign-bottom,td.valign-bottom{vertical-align:bottom}
+th.valign-middle,td.valign-middle{vertical-align:middle}
+table thead th,table tfoot th{font-weight:bold}
+tbody tr th{background:#f7f8f7}
+tbody tr th,tbody tr th p,tfoot tr th,tfoot tr th p{color:rgba(0,0,0,.8);font-weight:bold}
+p.tableblock>code:only-child{background:none;padding:0}
+p.tableblock{font-size:1em}
+ol{margin-left:1.75em}
+ul li ol{margin-left:1.5em}
+dl dd{margin-left:1.125em}
+dl dd:last-child,dl dd:last-child>:last-child{margin-bottom:0}
+li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
+ul.checklist,ul.none,ol.none,ul.no-bullet,ol.no-bullet,ol.unnumbered,ul.unstyled,ol.unstyled{list-style-type:none}
+ul.no-bullet,ol.no-bullet,ol.unnumbered{margin-left:.625em}
+ul.unstyled,ol.unstyled{margin-left:0}
+li>p:empty:only-child::before{content:"";display:inline-block}
+ul.checklist>li>p:first-child{margin-left:-1em}
+ul.checklist>li>p:first-child>.fa-square-o:first-child,ul.checklist>li>p:first-child>.fa-check-square-o:first-child{width:1.25em;font-size:.8em;position:relative;bottom:.125em}
+ul.checklist>li>p:first-child>input[type=checkbox]:first-child{margin-right:.25em}
+ul.inline{display:flex;flex-flow:row wrap;list-style:none;margin:0 0 .625em -1.25em}
+ul.inline>li{margin-left:1.25em}
+.unstyled dl dt{font-weight:400;font-style:normal}
+ol.arabic{list-style-type:decimal}
+ol.decimal{list-style-type:decimal-leading-zero}
+ol.loweralpha{list-style-type:lower-alpha}
+ol.upperalpha{list-style-type:upper-alpha}
+ol.lowerroman{list-style-type:lower-roman}
+ol.upperroman{list-style-type:upper-roman}
+ol.lowergreek{list-style-type:lower-greek}
+.hdlist>table,.colist>table{border:0;background:none}
+.hdlist>table>tbody>tr,.colist>table>tbody>tr{background:none}
+td.hdlist1,td.hdlist2{vertical-align:top;padding:0 .625em}
+td.hdlist1{font-weight:bold;padding-bottom:1.25em}
+td.hdlist2{word-wrap:anywhere}
+.literalblock+.colist,.listingblock+.colist{margin-top:-.5em}
+.colist td:not([class]):first-child{padding:.4em .75em 0;line-height:1;vertical-align:top}
+.colist td:not([class]):first-child img{max-width:none}
+.colist td:not([class]):last-child{padding:.25em 0}
+.thumb,.th{line-height:0;display:inline-block;border:4px solid #fff;box-shadow:0 0 0 1px #ddd}
+.imageblock.left{margin:.25em .625em 1.25em 0}
+.imageblock.right{margin:.25em 0 1.25em .625em}
+.imageblock>.title{margin-bottom:0}
+.imageblock.thumb,.imageblock.th{border-width:6px}
+.imageblock.thumb>.title,.imageblock.th>.title{padding:0 .125em}
+.image.left,.image.right{margin-top:.25em;margin-bottom:.25em;display:inline-block;line-height:0}
+.image.left{margin-right:.625em}
+.image.right{margin-left:.625em}
+a.image{text-decoration:none;display:inline-block}
+a.image object{pointer-events:none}
+sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
+sup.footnote a,sup.footnoteref a{text-decoration:none}
+sup.footnote a:active,sup.footnoteref a:active,#footnotes .footnote a:first-of-type:active{text-decoration:underline}
+#footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
+#footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
+#footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
+#footnotes .footnote a:first-of-type{font-weight:bold;text-decoration:none;margin-left:-1.05em}
+#footnotes .footnote:last-of-type{margin-bottom:0}
+#content #footnotes{margin-top:-.625em;margin-bottom:0;padding:.75em 0}
+div.unbreakable{page-break-inside:avoid}
+.big{font-size:larger}
+.small{font-size:smaller}
+.underline{text-decoration:underline}
+.overline{text-decoration:overline}
+.line-through{text-decoration:line-through}
+.aqua{color:#00bfbf}
+.aqua-background{background:#00fafa}
+.black{color:#000}
+.black-background{background:#000}
+.blue{color:#0000bf}
+.blue-background{background:#0000fa}
+.fuchsia{color:#bf00bf}
+.fuchsia-background{background:#fa00fa}
+.gray{color:#606060}
+.gray-background{background:#7d7d7d}
+.green{color:#006000}
+.green-background{background:#007d00}
+.lime{color:#00bf00}
+.lime-background{background:#00fa00}
+.maroon{color:#600000}
+.maroon-background{background:#7d0000}
+.navy{color:#000060}
+.navy-background{background:#00007d}
+.olive{color:#606000}
+.olive-background{background:#7d7d00}
+.purple{color:#600060}
+.purple-background{background:#7d007d}
+.red{color:#bf0000}
+.red-background{background:#fa0000}
+.silver{color:#909090}
+.silver-background{background:#bcbcbc}
+.teal{color:#006060}
+.teal-background{background:#007d7d}
+.white{color:#bfbfbf}
+.white-background{background:#fafafa}
+.yellow{color:#bfbf00}
+.yellow-background{background:#fafa00}
+span.icon>.fa{cursor:default}
+a span.icon>.fa{cursor:inherit}
+.admonitionblock td.icon [class^="fa icon-"]{font-size:2.5em;text-shadow:1px 1px 2px rgba(0,0,0,.5);cursor:default}
+.admonitionblock td.icon .icon-note::before{content:"\f05a";color:#19407c}
+.admonitionblock td.icon .icon-tip::before{content:"\f0eb";text-shadow:1px 1px 2px rgba(155,155,0,.8);color:#111}
+.admonitionblock td.icon .icon-warning::before{content:"\f071";color:#bf6900}
+.admonitionblock td.icon .icon-caution::before{content:"\f06d";color:#bf3400}
+.admonitionblock td.icon .icon-important::before{content:"\f06a";color:#bf0000}
+.conum[data-value]{display:inline-block;color:#fff!important;background:rgba(0,0,0,.8);border-radius:50%;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
+.conum[data-value] *{color:#fff!important}
+.conum[data-value]+b{display:none}
+.conum[data-value]::after{content:attr(data-value)}
+pre .conum[data-value]{position:relative;top:-.125em}
+b.conum *{color:inherit!important}
+.conum:not([data-value]):empty{display:none}
+dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
+h1,h2,p,td.content,span.alt,summary{letter-spacing:-.01em}
+p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
+p,blockquote,dt,td.content,td.hdlist1,span.alt,summary{font-size:1.0625rem}
+p{margin-bottom:1.25rem}
+.sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
+.exampleblock>.content{background:#fffef7;border-color:#e0e0dc;box-shadow:0 1px 4px #e0e0dc}
+.print-only{display:none!important}
+@page{margin:1.25cm .75cm}
+@media print{*{box-shadow:none!important;text-shadow:none!important}
+html{font-size:80%}
+a{color:inherit!important;text-decoration:underline!important}
+a.bare,a[href^="#"],a[href^="mailto:"]{text-decoration:none!important}
+a[href^="http:"]:not(.bare)::after,a[href^="https:"]:not(.bare)::after{content:"(" attr(href) ")";display:inline-block;font-size:.875em;padding-left:.25em}
+abbr[title]{border-bottom:1px dotted}
+abbr[title]::after{content:" (" attr(title) ")"}
+pre,blockquote,tr,img,object,svg{page-break-inside:avoid}
+thead{display:table-header-group}
+svg{max-width:100%}
+p,blockquote,dt,td.content{font-size:1em;orphans:3;widows:3}
+h2,h3,#toctitle,.sidebarblock>.content>.title{page-break-after:avoid}
+#header,#content,#footnotes,#footer{max-width:none}
+#toc,.sidebarblock,.exampleblock>.content{background:none!important}
+#toc{border-bottom:1px solid #dddddf!important;padding-bottom:0!important}
+body.book #header{text-align:center}
+body.book #header>h1:first-child{border:0!important;margin:2.5em 0 1em}
+body.book #header .details{border:0!important;display:block;padding:0!important}
+body.book #header .details span:first-child{margin-left:0!important}
+body.book #header .details br{display:block}
+body.book #header .details br+span::before{content:none!important}
+body.book #toc{border:0!important;text-align:left!important;padding:0!important;margin:0!important}
+body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-break-before:always}
+.listingblock code[data-lang]::before{display:block}
+#footer{padding:0 .9375em}
+.hide-on-print{display:none!important}
+.print-only{display:block!important}
+.hide-for-print{display:none!important}
+.show-for-print{display:inherit!important}}
+@media amzn-kf8,print{#header>h1:first-child{margin-top:1.25rem}
+.sect1{padding:0!important}
+.sect1+.sect1{border:0}
+#footer{background:none}
+#footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
+@media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
+</style>
+</head>
+<body class="article">
+<div id="header">
+<h1>{Caibidil} 3 | {teidealNaCaibidle}</h1>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_3_1_3_1_title">3.1 {3-1-title}</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_3_1_1">3.1.1</h3>
+<div class="paragraph">
+<p>{3-1-1-p}</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_3_1_2">3.1.2</h3>
+<div class="paragraph">
+<p>{3-1-2-p}</p>
+</div>
+<div class="olist list-[lower-alpha]">
+<ol class="list-[lower-alpha]">
+<li>
+<p>{3-1-2-a}</p>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-2-a-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-2-a-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-2-a-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-2-a-sample2}</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>{3-1-2-b}</p>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-2-b-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-2-b-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-2-b-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-2-b-sample2}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-2-b-sample3_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-2-b-sample3}</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>{3-1-2-c}</p>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-2-c-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-2-c-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-2-c-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-2-c-sample2}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-2-c-sample3_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-2-c-sample3}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-2-c-sample4_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-2-c-sample4}</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>{3-1-2-d}</p>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-2-d-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-2-d-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-2-d-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-2-d-sample2}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-2-d-sample3_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-2-d-sample3}</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>{3-1-2-e}</p>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-2-e-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-2-e-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-2-e-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-2-e-sample2}</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>{3-1-2-f}</p>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-2-f-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-2-f-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-2-f-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-2-f-sample2}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-2-f-sample3_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-2-f-sample3}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-2-f-sample4_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-2-f-sample4}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-2-f-sample5_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-2-f-sample5}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-2-f-sample6_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-2-f-sample6}</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>{3-1-2-g}</p>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-2-g-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-2-g-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-2-g-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-2-g-sample2}</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_3_1_3">3.1.3</h3>
+<div class="paragraph">
+<p>{3-1-3-p1}</p>
+</div>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-3-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-3-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-3-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-3-sample2}</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>{3-1-3-p2}</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_3_1_4">3.1.4</h3>
+<div class="paragraph">
+<p>{3-1-4-p1}</p>
+</div>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-4-p1-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-4-p1-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-4-p1-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-4-p1-sample2}</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>{3-1-4-p2}</p>
+</div>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-4-p2-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-4-p2-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-4-p2-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-4-p2-sample2}</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_3_1_5">3.1.5</h3>
+<div class="paragraph">
+<p>{3-1-5-p}</p>
+</div>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-5-p-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-5-p-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-5-p-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-5-p-sample2}</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_3_1_6">3.1.6</h3>
+<div class="paragraph">
+<p>{3-1-6-p1}</p>
+</div>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-6-p1-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-6-p1-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-6-p1-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-6-p1-sample2}</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>{3-1-6-p2}</p>
+</div>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-6-p2-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-6-p2-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-6-p2-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-6-p2-sample2}</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_3_1_7">3.1.7</h3>
+<div class="paragraph">
+<p>{3-1-7-p1}</p>
+</div>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-7-p1-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-7-p1-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-7-p1-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-7-p1-sample2}</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>{3-1-7-p2}</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_3_1_8">3.1.8</h3>
+<div class="paragraph">
+<p>{3-1-8-p}</p>
+</div>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-8-p-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-8-p-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-8-p-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-8-p-sample2}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-8-p-sample3_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-8-p-sample3}</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_3_1_9">3.1.9</h3>
+<div class="paragraph">
+<p>{3-1-9-p}</p>
+</div>
+<div class="olist list-[lower-alpha]">
+<ol class="list-[lower-alpha]">
+<li>
+<p>{3-1-9-a-p}</p>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 44.4444%;">
+<col style="width: 11.1111%;">
+<col style="width: 44.4445%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">an cóta + an bhean</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8594;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Is é sin <strong>cóta na mná</strong>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">an t&#x2011;údar + na leabhair</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8594;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Is í <strong>údar na leabhar</strong> í.</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>{3-1-9-b-p}</p>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 44.4444%;">
+<col style="width: 11.1111%;">
+<col style="width: 44.4445%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cóta + bean</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8594;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Is <strong>cóta mná</strong> é.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">údar + leabhair</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8594;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Is <strong>údar leabhar</strong> í.</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>{3-1-9-c-p}</p>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 28.5714%;">
+<col style="width: 14.2857%;">
+<col style="width: 57.1429%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">an cóta + bean</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8594;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An bhfaca tú <strong>an cóta mná</strong> sin?</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">an t&#x2011;údar + leabhair</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8594;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Is í <strong>an t&#x2011;údar leabhar</strong> is cáiliúla in Éirinn í.</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_3_1_10">3.1.10</h3>
+<div class="paragraph">
+<p>{3-1-10-p}</p>
+</div>
+<div class="olist list-[lower-alpha]">
+<ol class="list-[lower-alpha]">
+<li>
+<p>{3-1-10-a-p}</p>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-10-a-p-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-10-a-p-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-10-a-p-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-10-a-p-sample2}</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>{3-1-10-b-p}</p>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-10-b-p-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-10-b-p-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-10-b-p-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-10-b-p-sample2}</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>{3-1-10-c-p}</p>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-10-c-p-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-10-c-p-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-10-c-p-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-10-c-p-sample2}</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_3_1_11">3.1.11</h3>
+<div class="paragraph">
+<p>{3-1-11-p}</p>
+</div>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-11-p-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-11-p-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-11-p-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-11-p-sample2}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-11-p-sample3_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-11-p-sample3}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-11-p-sample4_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-11-p-sample4}</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>{Nóta}:</strong> {3-1-11-note}</p>
+</div>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-11-p-sample5_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-11-p-sample5}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-11-p-sample6_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-1-11-p-sample6}</p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_3_2_3_2_title">3.2 {3-2-title}</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_3_2_1_3_2_1_title">3.2.1 {3-2-1-title}</h3>
+<div class="olist list-[lower-alpha]">
+<ol class="list-[lower-alpha]">
+<li>
+<p>{3-2-1-a-p}</p>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-1-a-p-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-1-a-p-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-1-a-p-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-1-a-p-sample2}</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>{3-2-1-b-p}</p>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-1-b-p-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-1-b-p-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-1-b-p-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-1-b-p-sample2}</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>{3-2-1-c-p1}</p>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-1-c-p1-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-1-c-p1-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-1-c-p1-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-1-c-p1-sample2}</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>{3-2-1-c-p2}</p>
+</div>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-1-c-p2-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-1-c-p2-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-1-c-p2-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-1-c-p2-sample2}</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_3_2_2_3_2_2_title">3.2.2 {3-2-2-title}</h3>
+<div class="paragraph">
+<p>{3-2-2-p}</p>
+</div>
+<div class="olist list-[upper-alpha]">
+<ol class="list-[upper-alpha]">
+<li>
+<p><strong>{3-2-2-A-title}</strong></p>
+<div class="olist list-[lower-alpha]">
+<ol class="list-[lower-alpha]">
+<li>
+<p>{3-2-2-A-a-p}</p>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-2-A-a-p-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-2-A-a-p-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-2-A-a-p-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-2-A-a-p-sample2}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-2-A-a-p-sample3_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-2-A-a-p-sample3}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-2-A-a-p-sample4_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-2-A-a-p-sample4}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-2-A-a-p-sample5_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-2-A-a-p-sample5}</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>{3-2-2-A-b-p}</p>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An <strong>é</strong> FSS a bhfuil freagracht <strong>air</strong> as cúrsaí sláinte?</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Maidir le NA, is é 193 líon <strong>a</strong> bhall.</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p><strong>{3-2-2-B-title}</strong></p>
+<div class="paragraph">
+<p>{3-2-2-B-p}</p>
+</div>
+<div class="olist list-[lower-alpha]">
+<ol class="list-[lower-alpha]">
+<li>
+<p>{3-2-2-B-a-p}</p>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-2-B-a-p-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-2-B-a-p-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-2-B-a-p-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-2-B-a-p-sample2}</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>{3-2-2-B-b-p}</p>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-2-B-b-p-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-2-B-b-p-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-2-B-b-p-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-2-B-b-p-sample2}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-2-B-b-p-sample3_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-2-B-b-p-sample3}</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>{3-2-2-B-c-p}</p>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Maidir leis <strong>na NA</strong>, is é 193 líon <strong>a</strong> bhall.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Síníodh <strong>an IEA</strong> sa bhliain 1986 agus tá feidhm reachtach <strong>aige</strong>.</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_3_2_3_3_2_3_title">3.2.3 {3-2-3-title}</h3>
+<div class="olist list-[lower-alpha]">
+<ol class="list-[lower-alpha]">
+<li>
+<p>{3-2-3-a-p}</p>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-3-a-p-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-3-a-p-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-3-a-p-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-3-a-p-sample2}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-3-a-p-sample3_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-3-a-p-sample3}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-3-a-p-sample4_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-3-a-p-sample4}</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>{3-2-3-b-p}</p>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-3-b-p-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-3-b-p-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-3-b-p-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-3-b-p-sample2}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-3-b-p-sample3_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-3-b-p-sample3}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-3-b-p-sample4_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-3-b-p-sample4}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-3-b-p-sample5_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-3-b-p-sample5}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-3-b-p-sample6_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-3-b-p-sample6}</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>{3-2-3-c-p}</p>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-3-c-p-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-3-c-p-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-3-c-p-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-2-3-c-p-sample2}</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+</div>
+<hr>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_3_3_3_3_title">3.3 {3-3-title}</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_3_3_1_3_3_1_title">3.3.1 {3-3-1-title}</h3>
+<div class="olist list-[lower-alpha]">
+<ol class="list-[lower-alpha]">
+<li>
+<p>{3-3-1-a-p1}</p>
+<div class="olist list-[lower-roman]">
+<ol class="list-[lower-roman]">
+<li>
+<p>{3-3-1-a-i-p}</p>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 44.4444%;">
+<col style="width: 11.1111%;">
+<col style="width: 44.4445%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sin é <strong>teach Ghráinne</strong>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8594;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sin í <strong>eochair theach Ghráinne</strong>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An raibh <strong>foireann Chorcaí</strong> ann?</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8594;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bhí <strong>bus fhoireann Chorcaí</strong> ann.</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>{3-3-1-a-ii-p}</p>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 44.4444%;">
+<col style="width: 11.1111%;">
+<col style="width: 44.4445%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pléadh <strong>forais chreidmheasa an Stáit</strong>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8594;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dúradh go bhfuil <strong>cobhsaíocht fhorais chreidmheasa an Stáit</strong> ríthábhachtach.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ar labhair tú le <strong>bainisteoir na hoifige</strong>?</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8594;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">D&#8217;fhág mé nóta <strong>le haghaidh bhainisteoir na hoifige</strong>.</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>{3-3-1-a-iii-p}</p>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 44.4444%;">
+<col style="width: 11.1111%;">
+<col style="width: 44.4445%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cad atá á dhéanamh le <strong>doras a ghluaisteáin</strong>?</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8594;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tá an meicneoir <strong>ag deisiú dhoras a ghluaisteáin</strong>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An le toil <strong>a dtuismitheoirí</strong> a rinne siad é?</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8594;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ní hea, ach <strong>in éadan thoil a dtuismitheoirí</strong>.</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>{3-3-1-a-iv-p}</p>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 44.4444%;">
+<col style="width: 11.1111%;">
+<col style="width: 44.4445%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cheartaigh sé <strong>ceacht gach linbh</strong>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8594;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Chuir sé réalta órga <strong>ag bun cheacht gach linbh</strong>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tá <strong>cearta gach aon saoránaigh</strong> tábhachtach.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8594;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tá siad ag gníomhú <strong>ar son chearta gach aon saoránaigh</strong>.</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>{3-3-1-a-v-p}</p>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 44.4444%;">
+<col style="width: 11.1111%;">
+<col style="width: 44.4445%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sin é <strong>Traein 20</strong>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8594;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cá bhfuil <strong>tiománaí Thraein 20</strong>?</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ar luaigh tú <strong>fomhír (i)</strong>?</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8594;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Luaigh, tá an fhaisnéis <strong>i lár fhomhír (i)</strong>.</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>{3-3-1-a-vi-p}</p>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 44.4444%;">
+<col style="width: 11.1111%;">
+<col style="width: 44.4445%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tá <strong>téarmaí an Achta</strong> soiléir.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8594;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tá na ceapacháin <strong>faoi réir théarmaí an Achta</strong>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cá bhfuil <strong>bainisteoir an óstáin</strong>?</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8594;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tá <strong>oifigí bhainisteoir an óstáin</strong> san fhoirgneamh sin.</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>{3-3-1-a-p2}</p>
+</div>
+</li>
+<li>
+<p>{3-3-1-b-p}</p>
+<div class="olist list-[lower-roman]">
+<ol class="list-[lower-roman]">
+<li>
+<p>{3-3-1-b-i-p}</p>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-1-b-i-p-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-1-b-i-p-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-1-b-i-p-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-1-b-i-p-sample2}</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>{3-3-1-b-ii-p}</p>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-1-b-ii-p-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-1-b-ii-p-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-1-b-ii-p-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-1-b-ii-p-sample2}</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_3_3_2_3_3_2_title">3.3.2 {3-3-2-title}</h3>
+<div class="olist list-[lower-alpha]">
+<ol class="list-[lower-alpha]">
+<li>
+<p>{3-3-2-a-p}</p>
+<table class="tableblock frame-all grid-all stretch chapter-3">
+<caption class="title"><strong>{Tábla} 3A</strong>  {Table-3A-Col2Title}&#8201;&#8212;&#8201;{Table-3A-caption-part}</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">{Table-3A-Col1Title}</th>
+<th class="tableblock halign-left valign-top">{Table-3A-Col2Title}</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Chuir sé <strong>chun an rialtais</strong> é.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tá sé ann <strong>chun an obair a dhéanamh</strong>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ní fhanann sé i bhfad <strong>tar éis dinnéir</strong>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tá na leanaí <strong>tar éis dinnéar a réiteach</strong> duit.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tharla sé <strong>le linn na tréimhse</strong> sin.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Is <strong>le linn na hoibrithe a fhostú</strong> a tháinig an cheist sin chun cinn.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tá an lánúin óg <strong>ar tí a bpósta</strong>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bhí na fir shlándála <strong>ar tí na doirse a dhúnadh</strong>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cuideachta áitiúil atá <strong>i mbun na hoibre</strong>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cuideachta áitiúil atá <strong>i mbun an teach a thógáil</strong>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An bhfuil siad <strong>ag geallúint an airgid</strong> dúinn?</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Níl aon duine <strong>ag bagairt an t&#x2011;airgead a thógáil</strong> ar ais.</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>{3-3-2-b-p1}</p>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-2-b-p1-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-2-b-p1-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-2-b-p1-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-2-b-p1-sample2}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-2-b-p1-sample3_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-2-b-p1-sample3}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-2-b-p1-sample4_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-2-b-p1-sample4}</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>{3-3-2-b-p2}</p>
+</div>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-2-b-p2-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-2-b-p2-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-2-b-p2-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-2-b-p2-sample2}</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>{3-3-2-c-p1}</p>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-2-c-p1-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-2-c-p1-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-2-c-p1-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-2-c-p1-sample2}</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_3_3_3_3_3_3_title">3.3.3 {3-3-3-title}</h3>
+<div class="paragraph">
+<p>{3-3-3-p}</p>
+</div>
+<div class="olist list-[lower-alpha]">
+<ol class="list-[lower-alpha]">
+<li>
+<p>{3-3-3-a-p}</p>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-3-a-p-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-3-a-p-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-3-a-p-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-3-a-p-sample2}</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>{3-3-3-b-p1}</p>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-3-b-p1-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-3-b-p1-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-3-b-p1-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-3-b-p1-sample2}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-3-b-p1-sample3_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-3-b-p1-sample3}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-3-b-p1-sample4_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-3-b-p1-sample4}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-3-b-p1-sample5_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-3-b-p1-sample5}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-3-b-p1-sample6_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-3-b-p1-sample6}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-3-b-p1-sample7_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-3-b-p1-sample7}</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>{3-3-3-b-p2}</p>
+</div>
+</li>
+<li>
+<p>{3-3-3-c-p}</p>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-3-c-p-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-3-c-p-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-3-c-p-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-3-c-p-sample2}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-3-c-p-sample3_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-3-c-p-sample3}</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_3_3_4_3_3_4_title">3.3.4 {3-3-4-title}</h3>
+<div class="olist list-[lower-alpha]">
+<ol class="list-[lower-alpha]">
+<li>
+<p>{3-3-4-a-p1}</p>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-4-a-p1-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-4-a-p1-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-4-a-p1-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-4-a-p1-sample2}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-4-a-p1-sample3_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-4-a-p1-sample3}</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>{3-3-4-a-p2}</p>
+</div>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-4-a-p2-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-4-a-p2-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-4-a-p2-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-4-a-p2-sample2}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-4-a-p2-sample3_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-4-a-p2-sample3}</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>{3-3-4-b-p1}</p>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-4-b-p1-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-4-b-p1-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-4-b-p1-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-4-b-p1-sample2}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-4-b-p1-sample3_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-4-b-p1-sample3}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-4-b-p1-sample4_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-4-b-p1-sample4}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-4-b-p1-sample5_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-4-b-p1-sample5}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-4-b-p1-sample6_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-4-b-p1-sample6}</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>{3-3-4-b-p2}</p>
+</div>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-4-b-p2-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-4-b-p2-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-4-b-p2-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-4-b-p2-sample2}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-4-b-p2-sample3_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-4-b-p2-sample3}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-4-b-p2-sample4_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-4-b-p2-sample4}</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>{3-3-4-c-p1}</p>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-4-c-p1-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-4-c-p1-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-4-c-p1-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-4-c-p1-sample2}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-4-c-p1-sample3_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-4-c-p1-sample3}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-4-c-p1-sample4_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-4-c-p1-sample4}</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>{3-3-4-c-p2}</p>
+</div>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-4-c-p2-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-4-c-p2-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-4-c-p2-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-4-c-p2-sample2}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-4-c-p2-sample3_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-4-c-p2-sample3}</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_3_3_5_3_3_5_title">3.3.5 {3-3-5-title}</h3>
+<div class="paragraph">
+<p>{3-3-5-p1}</p>
+</div>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-5-p1-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-5-p1-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-5-p1-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-5-p1-sample2}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-5-p1-sample3_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-5-p1-sample3}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-5-p1-sample4_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-5-p1-sample4}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-5-p1-sample5_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-5-p1-sample5}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-5-p1-sample6_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-5-p1-sample6}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-5-p1-sample7_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-5-p1-sample7}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-5-p1-sample8_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-5-p1-sample8}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-5-p1-sample9_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-5-p1-sample9}</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>{3-3-5-p2}</p>
+</div>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-5-p2-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-5-p2-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-5-p2-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-5-p2-sample2}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-5-p2-sample3_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-5-p2-sample3}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-5-p2-sample4_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-5-p2-sample4}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-5-p2-sample5_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-5-p2-sample5}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-5-p2-sample6_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-5-p2-sample6}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-5-p2-sample7_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-5-p2-sample7}</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_3_3_6_3_3_6_title">3.3.6 {3-3-6-title}</h3>
+<div class="olist list-[lower-alpha]">
+<ol class="list-[lower-alpha]">
+<li>
+<p>{3-3-6-a-p}</p>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-6-a-p-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-6-a-p-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-6-a-p-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-6-a-p-sample2}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-6-a-p-sample3_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-6-a-p-sample3}</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>{3-3-6-b-p}</p>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-6-b-p-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-6-b-p-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-6-b-p-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-6-b-p-sample2}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-6-b-p-sample3_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-6-b-p-sample3}</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_3_3_7_3_3_7_title">3.3.7 {3-3-7-title}</h3>
+<div class="paragraph">
+<p>{3-3-7-p1}</p>
+</div>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-7-p1-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-7-p1-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-7-p1-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-7-p1-sample2}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-7-p1-sample3_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-7-p1-sample3}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-7-p1-sample4_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-7-p1-sample4}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-7-p1-sample5_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-7-p1-sample5}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-7-p1-sample6_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-7-p1-sample6}</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>{3-3-7-p2}</p>
+</div>
+<table class="tableblock frame-all grid-all stretch samplebox">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-7-p2-sample1_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-7-p2-sample1}</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-7-p2-sample2_ga}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{3-3-7-p2-sample2}</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_3_3_8_3_3_8_title">3.3.8 {3-3-8-title}</h3>
+<div class="olist list-[lower-alpha]">
+<ol class="list-[lower-alpha]">
+<li>
+<p>{3-3-8-a-p}</p>
+</li>
+<li>
+<p>{3-3-8-b-p}</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_3_3_9_3_3_9_title">3.3.9 {3-3-9-title}</h3>
+<div class="paragraph">
+<p>{3-3-9-p}</p>
+</div>
+<table class="tableblock frame-all grid-all stretch chapter-3">
+<caption class="title"><strong>{Tábla} 3B</strong>  {Table3B-caption}</caption>
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 37.5%;">
+<col style="width: 37.5%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">{Table3B-Col1}</th>
+<th class="tableblock halign-left valign-top">{Table3B-Col2}</th>
+<th class="tableblock halign-left valign-top">{Table3B-Col3}</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="tableblock halign-left valign-top" rowspan="4"><p class="tableblock">{Table3B-row1}</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Thosaigh sé <strong>ag imirt peil Mheiriceánach</strong> sna Stáit Aontaithe anuraidh.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Chaith sé tamall <strong>ag glacadh grianghraif áille</strong> i nGarraithe Náisiúnta na Lus.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tá siad <strong>ag coinneáil súil ghéar</strong> ar na himeachtaí.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bímse <strong>ag ullmhú lóin shláintiúla</strong> dom féin.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Táim <strong>ag réiteach cupán tae</strong>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Níl siad ach <strong>ag éileamh pinsin stáit</strong>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bíonn siad <strong>ag casadh ceol tíre</strong> ar an Aoine.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An mbíonn sé <strong>ag scríobh leabhair staire</strong>?</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top" rowspan="3"><p class="tableblock">{Table3B-row2}</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Níl siad <strong>ag fáil pingin ar bith</strong>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bíonn an chuideachta sin <strong>ag tógáil foirgnimh den scoth</strong>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tá an Chomhairle Contae <strong>ag ullmhú scéim den sórt sin</strong>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tá na fostaithe <strong>ag iarraidh tuarastail as an ngnáth</strong>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ritheadh ionstraim <strong>do leasú riail ar leith</strong>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ritheadh ordú <strong>d&#8217;fhionraí liúntais den sórt sin</strong>.</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top" rowspan="3"><p class="tableblock">{Table3B-row3}</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tá sé <strong>ag cuardach scéal a scríobh sé</strong> anuraidh.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tá an coiste <strong>ag athbhreithniú cláir ar cuireadh tús leo fadó</strong>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tá an Rialtas <strong>ag leasú Acht a ritheadh san ochtú haois déag</strong>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bhí sé <strong>ag moladh scannáin a mbeadh spéis agam iontu</strong>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ní fiú bheith <strong>ag ordú trealamh atá daor</strong>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Thosaigh siad <strong>ag díol milseáin a bhí an-bhlasta</strong>.</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top" rowspan="3"><p class="tableblock">{Table3B-row4}</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An bhfuil sí <strong>ag réiteach aon straitéis</strong> chun déileáil leis?</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An bhfuil siad <strong>ag tógáil aon fhoirgnimh</strong> faoi láthair?</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ní léir dom go bhfuil siad <strong>ag déanamh aon iarracht</strong>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nílim <strong>ag ceannach aon dearbháin</strong> uait i mbliana.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tá na mic léinn <strong>ag déanamh an-obair</strong> ar an tionscadal sin.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_3_3_10_3_3_10_title">3.3.10 {3-3-10-title}</h3>
+<div class="paragraph">
+<p>{3-3-10-p1}</p>
+</div>
+<table class="tableblock frame-all grid-all stretch chapter-3">
+<caption class="title"><strong>{Tábla} 3C</strong>  {Table3C-caption}</caption>
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 40%;">
+<col style="width: 40%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">{Table3B-Col1}</th>
+<th class="tableblock halign-left valign-top">{Table3B-Col2}</th>
+<th class="tableblock halign-left valign-top">{Table3B-Col3}</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="tableblock halign-left valign-top" rowspan="4"><p class="tableblock">{Table3B-row1}</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tá an dlíodóir ag gníomhú <strong>thar ceann eagraíocht áitiúil</strong>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cheannaigh mé leabhair dóibh <strong>in ionad bréagáin úra</strong>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Shuigh siad <strong>cois abhainn chiúin</strong>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Is éasca léim <strong>trasna srutháin bheaga</strong>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Chuaigh sé <strong>i gcomhair cupán tae</strong>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Chuaigh sí <strong>ar thóir buidéil uisce</strong>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ní mór an páipéarachas cuí a chomhlánú <strong>le haghaidh scéim pinsin ceirde</strong>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Is suíomh gréasáin <strong>le haghaidh mic léinn</strong> é.</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">{Table3B-row2}</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ní foláir leanúint ar aghaidh <strong>d&#8217;ainneoin moill den sórt sin</strong>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Teastaíonn uathu cláir nua-aimseartha a chur <strong>in ionad seanchláir gan mhaith</strong>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ní fiú a bheith <strong>i mbun obair in aisce</strong>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cuireadh na bailiúcháin <strong>faoi chúram leabharlanna ar leith</strong>.</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top" rowspan="4"><p class="tableblock">{Table3C-row3}</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bhuaigh siad ticéid <strong>i gcomhair turas chun na Fraince</strong>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fuarthas an admháil <strong>i measc iarratais ó dhaltaí</strong> scoile.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tá sí ag obair ann <strong>de bhun conradh leis an Roinn</strong>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bunaíodh scéim ar leith <strong>le haghaidh amharclanna i lár na cathrach</strong>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fuair siad maoiniú <strong>le haghaidh scéim i dtaca le cúram</strong> leanaí.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Scríobh sé alt <strong>i dtaobh amhráin faoin imirce</strong>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An ndúirt sé go raibh sé <strong>i mbun eagarthóireacht air</strong>?</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Is ábhar é seo ar thagair mé dó <strong>le linn cainteanna leis</strong>.</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top" rowspan="3"><p class="tableblock">{Table3B-row3}</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fágadh gan mhaoiniú iad <strong>de bharr scéim ar tháinig deireadh léi</strong>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tá sé <strong>ar thóir leabhair a ndearnadh scannáin díobh</strong>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bhí sé i mbéal an phobail <strong>de thoradh amhrán dar teideal <em>An Dreoilín</em></strong>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tá an scéal á fhiosrú arís <strong>i bhfianaise páipéir a aimsíodh</strong>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nach iontach a bheith ag siúl <strong>trasna sráid a tógadh sa 14ú haois</strong>!</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rith siad <strong>trasna páirceanna a bhí lán de bhláthanna beaga</strong>.</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top" rowspan="3"><p class="tableblock">{Table3C-row5}</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bíonn an obair sin le déanamh <strong>i gcás aon chonradh</strong>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Socraítear téarmaí ar leith <strong>gcomhair aon tionscail</strong>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ní dhearnadh gearán <strong>i gcoinne aon mhúinteoir</strong> sa scoil seo.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An bhfuil an fhoráil sin <strong>faoi réir aon chomhaontuithe fostaíochta</strong>?</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ní foláir dúinn airgead a thuilleamh <strong>fearacht aon eagras</strong>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Dála aon údair</strong>, chaith siad go leor ama ag déanamh taighde.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>{3-3-10-p2}</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_3_3_11_3_3_11_title">3.3.11 {3-3-11-title}</h3>
+<div class="paragraph">
+<p>{3-3-11-p1}</p>
+</div>
+<table class="tableblock frame-all grid-all stretch chapter-3">
+<caption class="title"><strong>{Tábla} 3D</strong>  {Table3D-caption}</caption>
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 40%;">
+<col style="width: 40%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">{Table3B-Col1}</th>
+<th class="tableblock halign-left valign-top">{Table3B-Col2}</th>
+<th class="tableblock halign-left valign-top">{Table3B-Col3}</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">{Table3B-row1}</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Thit <strong>go leor báisteach throm</strong> an tseachtain seo caite.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tá <strong>an-chuid foirgnimh cháiliúla</strong> i mBaile Átha Cliath.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An dteastaíonn <strong>roinnt arán cruithneachta</strong> uait?</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bhí <strong>scata báid iascaigh</strong> sa chuan.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>{3-3-11-p2}</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_3_3_12_3_3_12_title">3.3.12 {3-3-12-title}</h3>
+<div class="olist list-[lower-alpha]">
+<ol class="list-[lower-alpha]">
+<li>
+<p>{3-3-12-a-p}</p>
+<table class="tableblock frame-all grid-all stretch chapter-3">
+<caption class="title"><strong>{Tábla} 3E</strong>  {Table3E-caption}</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">{Uatha}</th>
+<th class="tableblock halign-left valign-top">{Iolra}</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An <strong>leabhar múinteora scoile</strong> é seo?</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Is <strong>calafort bád iascaigh</strong> é.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cé a thosaigh <strong>an togra oideachais Gaeltachta</strong> sin?</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cá huair a tionscnaíodh <strong>an scéim ealaíon pobail</strong>?</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bhain mé úsáid as <strong>an tSeirbhís Eolais Gnó</strong>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tá <strong>monarcha scáileán ríomhaire</strong> sa pháirc ghnó.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Is <strong>fear tí solais é</strong>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ní mór <strong>an plean bóithre náisiúnta</strong> a athbhreithniú.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An <strong>cathaoirleach boird stáit</strong> í?</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tionóladh cruinniú <strong>d&#8217;eagarthóirí nuachtán áitiúil</strong>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Scríobh sé <strong>amhrán ceoil tíre</strong>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An ball de <strong>chumann óstán idirnáisiúnta</strong> é?</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cá bhfuil <strong>an tIonad Nuálaíochta Gnó</strong>?</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cá bhfuil <strong>an t&#x2011;ionad diúscartha crann Nollag</strong>?</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ní mór páirt a ghlacadh <strong>i bpróiseas réitigh díospóidí tionscail</strong>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cén cineál taithí a bhíonn <strong>ag láithreoirí clár cúrsaí reatha</strong>?</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>{3-3-12-b-p}</p>
+<table class="tableblock frame-all grid-all stretch chapter-3">
+<caption class="title"><strong>{Tábla} 3F</strong>  {Table3F-caption}</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">{Uatha}</th>
+<th class="tableblock halign-left valign-top">{Iolra}</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bhí siad <strong>i mbun ceoil ar an tsráid</strong>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bhí an madra <strong>ar thóir éan sa pháirc</strong>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Chuaigh siad <strong>le haghaidh dinnéir ar an 14 Samhain</strong>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dúirt siad go raibh siad chun tithe a thógáil <strong>in ionad árasán i mbliana</strong>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bhí sí ann <strong>ar feadh tamaill le cailíní eile ón gceantar</strong>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fuair sé brioscaí <strong>in áit bonnóg sa siopa</strong>.</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_3_3_13_3_3_13_title">3.3.13 {3-3-13-title}</h3>
+<div class="paragraph">
+<p>{3-3-13-p}</p>
+</div>
+<table class="tableblock frame-all grid-all stretch chapter-3-alt">
+<caption class="title"><strong>{Tábla} 3G</strong> {Table3G-caption}</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">{Table3G-col1}</th>
+<th class="tableblock halign-left valign-top">{Table3G-col2}</th>
+<th class="tableblock halign-left valign-top">{Table3G-col3}</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{Table3G-row1-condition}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{leanannAnGinideach}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bhí bus <strong>fhoireann</strong> Chorcaí ann.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{Table3G-row2-condition}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{leanannAnGinideach}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tá an t&#x2011;iniúchóir ag fiosrú <strong>an chur i gcéill</strong> sin faoi láthair.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{Table3G-row3-condition}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{leanannAnGinideach}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bhí na fir shlándála ar tí <strong>na doirse</strong> a dhúnadh.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{Table3G-row4-condition}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{leanannAnGinideach}</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Gortaíodh í le linn <strong>ceann</strong> de na cluichí áitiúla.</p>
+</li>
+<li>
+<p>Tá laghdú tagtha ar mhéid <strong>mo chuid</strong> oibre.</p>
+</li>
+</ol>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{Table3G-row5-condition}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{leanannAnGinideach}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cá bhfuil príomhoifig <strong>Bóthar</strong>?</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{Table3G-row6-condition}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{leanannAnGinideach}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tá sé tar éis <strong>a rá</strong> go ndéanfaidh sé é.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{Table3G-row7-condition}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{Table3G-row7-rule}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An bhfuil sé chun <strong>iomáint</strong> le Corcaigh?</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{Table3G-row8-condition}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{leanannAnGinideach}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cén cineál <strong>cur chuige</strong> a d&#8217;úsáid siad?</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{Table3G-row9-condition}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{Table3G-row9-rule}</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Tá na páistí ag iarraidh <strong>léim</strong></p>
+</li>
+<li>
+<p>Tá sé tar éis <strong>siúl</strong> abhaile.</p>
+</li>
+</ol>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{Table3G-row10-condition}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{Table3G-row10-rule}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An bhfuil tú ag iarraidh <strong>éirí</strong>?</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{Table3G-row11-condition}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{Table3G-row11-rule}</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Tá an lánúin sin ar tí <strong>pósadh</strong>.</p>
+</li>
+<li>
+<p>Tá an lá ag dul chun <strong>síneadh</strong>.</p>
+</li>
+</ol>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{Table3G-row12-condition}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{Table3G-row12-rule}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tá siad ag tabhairt <strong>aghaidh</strong> ar an bhfoireann eile anois.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{Table3G-row13-condition}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{leanannAnGinideach}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tá sé ag déanamh <strong>bolg le gréin</strong> sa Fhrainc faoi láthair.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{Table3G-row14-condition}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{leanannAnGinideach}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Déantar ócáid <strong>deireadh</strong> seachtaine a eagrú gach bliain.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{Table3G-row15-condition}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{Table3G-row15-rule}</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>1lb <strong>plúr</strong></p>
+</li>
+<li>
+<p>250g <strong>siúcra mín</strong></p>
+</li>
+</ol>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{Table3G-row16-condition}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{Table3G-row16-rule}</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Bímse ag ullmhú <strong>lóin shláintiúla</strong> dom féin. (<em>{nod-iol}</em>)</p>
+</li>
+<li>
+<p>Táim ag réiteach <strong>cupán tae</strong>. (<em>{nod-u}</em>)</p>
+</li>
+<li>
+<p>Níl siad ag fáil <strong>pingin ar bith</strong>. (<em>{nod-u}</em>)</p>
+</li>
+<li>
+<p>Ní fiú bheith ag ordú <strong>trealamh atá daor</strong>. (<em>{nod-u}</em>)</p>
+</li>
+<li>
+<p>Nílim ag ceannach <strong>aon dearbháin</strong> i mbliana. (<em>{nod-iol}</em>)</p>
+</li>
+<li>
+<p>Tá na mic léinn ag déanamh <strong>an-obair</strong> ar an tionscadal sin. (<em>{nod-u}</em>)</p>
+</li>
+</ol>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{Table3G-row17-condition}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{Table3G-row17-rule}</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Chuaigh sé i gcomhair <strong>cupán tae</strong>. (<em>{nod-u}</em>)</p>
+</li>
+<li>
+<p>D&#8217;fhéadfaí a leithéid a rá i gcás <strong>cláir ar bith</strong>. (<em>{nod-iol}</em>)</p>
+</li>
+<li>
+<p>Fuarthas an admháil i measc <strong>iarratais ó dhaltaí scoile</strong>. (<em>{nod-iol}</em>)</p>
+</li>
+<li>
+<p>Fágadh gan mhaoiniú iad de bharr <strong>scéim ar tháinig deireadh léi</strong>. (<em>{nod-u}</em>)</p>
+</li>
+<li>
+<p>Bíonn an obair sin le déanamh i gcás <strong>aon chonradh</strong>. (<em>{nod-u}</em>)</p>
+</li>
+</ol>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{Table3G-row18-condition}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">{Table3G-row18-rule}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Thit go leor <strong>báisteach throm</strong> an tseachtain seo caite. (<em>{nod-u}</em>)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2026-03-30 21:58:55 -0400
+</div>
+</div>
+</body>
+</html>
