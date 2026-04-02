@@ -1,0 +1,436 @@
+include ../../tlMatter.pug
+if docLang === "EN"
+  mixin tl(tlText)
+    if tlText != null
+      +inlineTl("EN", tlText)
+    else
+      +inlineTl("EN")
+        block
+    
+  mixin tlDb(key)
+    case key
+      when "teidealNaCaibidle"
+        | The Adjective
+      when "4-title"
+        | #[+renderKey("Caibidil", { getFromCommon: true })] 4 | #[+renderKey("teidealNaCaibidle")]
+      when "4-1-title"
+        | The Attributive Adjective
+      when "4-1-1-p"
+        | The adjectives are divided into three declensions.
+      when "4-1-2-p"
+        | The adjective is only declined when it is used as an attributive adjective.
+      when "4-1-3-p"
+        | The form of the attributive adjective depends on gender, case and number of the noun that it is qualifying and on the declension of the adjective itself. See #[+link("./chapter9.html", "Chapter 9")] for rules on using adjectives with numbers.
+      when "4-2-title"
+        | Gender, Case and Number of the Attributive Adjective
+      when "4-2-1-p"
+        | The qualifying adjective agrees with the noun in gender, case and number. When there is a series of nouns, the adjective agrees with the final noun, e.g., #[i mná agus fir ghnaíúla]; #[i peann, páipéar agus bileog ghorm] #[+tl blue pen, paper and sheet]. When a series of adjectives follows a single noun, every adjective agrees with the noun, e.g., #[i ailt shuimiúla thábhachtacha fhada] #[+tl interesting, important, long articles].
+      when "4-2-1-p-sample1"
+        | The #[b lovely] women and men came in.
+      when "4-2-1-p-sample2"
+        | The #[b lovely] men and women came in.
+      when "4-2-1-p-sample3"
+        | She had a #[b blue] skirt, coat and scarf on.
+      when "4-2-1-p-sample4"
+        | There are #[b big, wild] cats in the zoo.
+      when "4-2-2-a-p"
+        | In the singular &mdash;
+      when "4-2-2-a-i-p"
+        | when there is a masculine noun, the adjective that qualifies it is not lenited, e.g., #[i an fear beag] #[+tl the small man]; #[i ag an bhfear beag] #[+tl at the small man]; except in the vocative case and in the genitive case e.g., #[i a fhir bhig] #[+tl O small man]; #[i hata an fhir bhig] #[+tl the hat of the small man].
+      when "4-2-2-a-ii-p"
+        | if the Lenition System (see #[+link("./chapter1.html#sec_1_7", "1.7")]) is in use, the adjective that qualifies the masculine noun is lenited in the dative case if the article goes with that noun, e.g., #[i ag an fhear bheag] #[+tl at the small man].
+      when "4-2-2-b-p"
+        | In the singular, when there is a feminine noun, the adjective that qualifies it is lenited in all the cases, e.g., #[i an bhean bheag] #[+tl the small woman]; #[i a bhean bheag] #[+tl O small woman]; #[i ag an mbean bheag] #[+tl at the small woman]; except in the genitive case, e.g., #[i hata na mná bige] #[+tl the hat of the small woman].
+      when "4-2-3-p"
+        | #[+link("./chapter9.html", "Chapter 9")] provides an illustration of the attributive adjective when a number precedes the noun being qualified.
+      when "4-2-4-title"
+        | Lenition of an Attributive Adjective in the Singular
+      when "4-2-4-p"
+        | An adjective is either left bare or inflected based on the gender and case of the noun it is qualifying. The contexts are shown in the table below. See the discussion of adjective declension (#[+link("#sec_4_3", "4.3")]) for information on form change (other than lenition) of the adjective itself.
+      when "lenition"
+        | lenition
+      when "no-lenition"
+        | no lenition
+      when "Table4A-caption"
+        | Lenition of an Attributive Adjective in the Singular
+      when "Table4A-col1"
+        | The Case
+      when "Table4A-col2"
+        | Singular Masculine Noun
+      when "Table4A-col3"
+        | Singular Feminine Noun
+      when "Table4A-row1"
+        | Nominative and Accusative
+      when "Table4A-row2"
+        | Vocative
+      when "Table4A-row3"
+        | Dative*
+      when "Table4A-row4"
+        | Genitive
+      when "Table4A-footnote"
+        | But see #[+link("./chapter1.html#sec_1_7", "1.7")] The Lenition System
+      when "4-2-5-title"
+        | Lenition of Attributive Adjective in the Plural
+      when "4-2-5-p"
+        | In the plural, the initial consonant of the adjective is lenited if the plural noun starts with a slender consonant, as in the table below (see also #[+link("./chapter10.html#sec_10_3_1", "10.3.1")]).
+      when "Table4B-col1-main"
+        | Lenition
+      when "Table4B-col2-main"
+        | Without Lenition
+      when "Table4B-col1-sub"
+        | Noun that starts with a slender consonant in the plural
+      when "Table4B-col2-sub"
+        | Noun that starts with a broad consonant or vowel in the plural
+      when "4-3-title"
+        | Declensions of the Adjectives
+      when "4-3-1-p"
+        | The form of the adjective is the same in the nominative, accusative and dative singular cases, and the form of the adjective is the same in the nominative, accusative and dative plural cases.
+      when "4-3-2-p"
+        | In the genitive plural case &mdash;
+      when "4-3-2-a-p"
+        | if the noun is a strong plural, the same form of the adjective is used as is used in the nominative plural case:
+      when "4-3-2-a-sample-row1"
+        | Nominative plural
+      when "4-3-2-a-sample-row2"
+        | Genitive plural
+      when "4-3-2-a-sample1"
+        | I like the #[b great] poets.
+      when "4-3-2-a-sample2"
+        | I like the #[b great] poems of the poets.
+      when "4-3-2-b-p"
+        | if the noun is a weak plural, the same form of adjective is used as is used in the nominative singular case:
+      when "4-3-2-b-sample-row1"
+        | Nominative singular
+      when "4-3-2-b-sample-row2"
+        | Genitive plural
+      when "4-3-2-b-sample1"
+        | The #[b local] authority publishes a report every year.
+      when "4-3-2-b-sample2"
+        | The reports of the #[b local] authorities were published.
+      when "4-3-3-a-p"
+        | An adjective in the masculine vocative is not lenited or inflected if it is a nickname or metaphorical in meaning.
+      when "4-3-3-a-p-sample1"
+        | How are you, #[b little father]?
+      when "4-3-3-a-p-sample2"
+        | #[b Faithful brother], I knew very well it was you.
+      when "4-3-3-a-p-sample3"
+        | #[b Fragrant mouth], we won&rsquo;t be happy together.
+      when "4-3-3-a-p-sample4"
+        | How are you, #[b white son]?
+      when "4-3-3-b-p"
+        | The initial letter of an adjective is lenited, however, if a feminine noun precedes it.
+      when "4-3-3-b-p-sample1"
+        | How are you today, my #[b sweet] treasure?
+      when "4-3-3-b-p-sample2"
+        | #[b Little] mother, your work will never end.
+      when "4-3-4-p"
+        | The adjective following a female baptismal name is not inflected, e.g., #[i Máire Mhór] #[+tl Big Mary], #[i teach Mháire Mhór] #[+tl Big Mary&rsquo;s house].
+      when "4-3-5-p"
+        | The adjective is neither inflected nor does it undergo an initial mutation after adverbs or adjectives used as adverbs such as #[i cuibheasach] #[+tl fairly], #[i sách] #[+tl quite], #[i measartha] #[+tl moderately], #[i réasúnta] #[+tl relatively], etc.
+      when "4-3-5-p-sample1"
+        | She is a #[b moderately wealthy] woman.
+      when "4-3-5-p-sample2"
+        | They are #[b moderately wealthy] women.
+      when "4-3-5-p-sample3"
+        | They are #[b quite tall] men.
+      when "4-3-5-p-sample4"
+        | They are #[b relatively quiet] children.
+      when "4-3-5-p-sample5"
+        | It was a #[b rather cold] morning.
+      when "4-3-5-p-sample6"
+        | We want a #[b fairly dry] year.
+      when "4-3-6-p"
+        | The adjective is not inflected after the emphatic particle #[i an-].
+      when "4-3-6-p-sample1"
+        | They are #[b very nice] people.
+      when "4-3-6-p-sample2"
+        | Those #[b very important] aspects will be considered.
+      when "4-3-6-p-sample3"
+        | They are not #[b very quiet] children.
+      when "4-3-7-p"
+        | The adjective is neither inflected nor lenited if it is part of a multi-word adjectival phrase, e.g., #[i athnuachan saor in aisce] #[+tl free renewal]; #[i tuarascáil cothrom le dáta] #[+tl up-to-date report].
+      when "4-3-7-p-sample1"
+        | She is a #[b prominent] woman in the field of science.
+      when "4-3-7-p-sample2"
+        | The author of the #[b up-to-date] report gave the presentation.
+      when "4-3-8-p"
+        | The form of the singular genitive is described under each separate declension.
+      when "4-4-title"
+        | The First Declension
+      when "4-4-p"
+        | Included in this declension are adjectives ending with a consonant, broad or slender, aside from adjectives ending with #[i -úil] and certain adjectives ending with #[i -ir] (see #[+link("#sec_4_5", "4.5")]).
+      when "4-4-1-title"
+        | Form of the Genitive Singular
+      when "4-4-1-a-title"
+        | Masculine
+      when "4-4-1-a-i-p"
+        | If the adjective ends with a broad consonant, the consonant is palatalized as it would be done with a noun in the First Declension (see #[+link("./chapter2.html#sec_2_2_2", "2.2.2")]).
+      when "4-4-1-a-i-p-sample1"
+        | Where did he leave the #[b big] man&rsquo;s hat?
+      when "4-4-1-a-i-p-sample2"
+        | The terms of the #[b permanent] contract must be read carefully.
+      when "4-4-1-a-i-p-sample3"
+        | He read the #[b renowned] player&rsquo;s book when it was published.
+      when "4-4-1-a-ii-p"
+        | Inflection is not done in the genitive singular masculine on monosyllabic adjectives ending in #[i -ch(t)] (except #[i bocht]), e.g., #[i beacht] #[+tl exact], #[i caoch] #[+tl blind], #[i déach] #[+tl dual], #[i fliuch] #[+tl wet], #[i lách] #[+tl pleasant], #[i moch] #[+tl early], #[i nocht] #[+tl naked].
+      when "4-4-1-a-ii-p-sample1"
+        | They had to hold the festival at the end of the #[b wet] summer.
+      when "4-4-1-a-ii-p-sample2"
+        | The children are in the teacher&rsquo;s class #[b exactly] this year.
+      when "4-4-1-a-ii-p-sample3"
+        | The #[b poor] farmer&rsquo;s cows were stolen.
+      when "4-4-1-a-iii-p"
+        | If a slender consonant or #[i -íoch] is the ending of the adjective, it is not inflected.
+      when "4-4-1-a-iii-p-sample1"
+        | I would like to speak to the parents of the #[b quiet] boy.
+      when "4-4-1-a-iii-p-sample2"
+        | Everyone was in favor of the #[b industrial] campaign.
+      when "4-4-1-a-iv-p"
+        | Inflection is not done in the genitive singular masculine on monosyllabic adjectives ending in double consonants (except #[i dall] #[+tl blind], #[i donn] #[+tl brown], #[i fionn] #[+tl fair]), e.g., #[i cearr] #[+tl wrong], #[i corr] #[+tl odd], #[i gann] #[+tl scarce], #[i gearr] #[+tl short], #[i mall] #[+tl slow], #[i teann] #[+tl tight], #[i toll] #[+tl hollow].
+      when "4-4-1-a-iv-p-sample1"
+        | The price of #[b scarce] food is rising every day.
+      when "4-4-1-a-iv-p-sample2"
+        | The cost of the #[b short] trip surprised them.
+      when "4-4-1-a-iv-p-sample3"
+        | The smell of #[b brown] bread was all over the house.
+      when "4-4-1-a-v-p"
+        | Inflection is not done in the genitive singular masculine in these following monosyllabic adjectives: #[i amh] #[+tl raw], #[i cúng] #[+tl narrow], #[i deas] (meaning #[i cineálta] #[+tl kind/nice]), #[i leamh] #[+tl weak], #[i mear] #[+tl quick], #[i seang] #[+tl slim], #[i searbh] #[+tl bitter/sour], #[i tearc] #[+tl rare], #[i tiubh] #[+tl thick], #[i trom] #[+tl heavy], #[i tur] #[+tl dry].
+      when "4-4-1-a-v-p-sample1"
+        | She put oil on the door of the #[b narrow] way.
+      when "4-4-1-a-v-p-sample2"
+        | I spoke to the owner of the #[b fast] horse.
+      when "4-4-1-b-title"
+        | Feminine
+      when "4-4-1-b-i-p"
+        | #[i -e] is put with the final consonant, and it is palatalized if broad, e.g., #[i gorm], #[i goirme]; #[i maith], #[i maithe] as would be done with nouns in the Second Declension (see #[+link("./chapter2.html#sec_2_3_2", "2.3.2")]).
+      when "4-4-1-b-i-p-sample1"
+        | Look at the beauty of the #[b blue] sky.
+      when "4-4-1-b-i-p-sample2"
+        | Who is the author of the #[b good] report?
+      when "4-4-1-b-ii-p"
+        | When adjectives end with #[i -(e)ach], #[i -(a)í] replaces #[i -(e)ach], e.g., #[i isteach], #[i aistí]; #[i iontach], #[i iontaí]; as would be done with nouns in the Second Declension (see #[+link("./chapter2.html#sec_2_3_2", "2.3.2")]).
+      when "4-4-1-b-ii-p-sample1"
+        | The voice of the #[b peculiar] old woman can be heard on the record.
+      when "4-4-1-b-ii-p-sample2"
+        | I liked the theme of the #[b wonderful] composition.
+      when "4-4-1-b-iii-p"
+        | When adjectives end with #[i -íoch], #[i -íoch] is changed to #[i -íche], e.g., #[i eacnamaíoch], #[i eacnamaíche].
+      when "4-4-1-b-iii-p-sample1"
+        | When will we feel the end of the #[b economic] crisis?
+      when "4-4-1-b-iii-p-sample2"
+        | The growth of the #[b industrial] sector is a good thing.
+      when "4-4-1-b-iv-p"
+        | See #[+link("./chapter2.html", "Chapter 2")] for a comprehensive description of vowel changes.
+      when "4-4-2-title"
+        | Form of the Vocative Singular
+      when "4-4-2-p"
+        | The form of the vocative singular is the same as the nominative singular, except when adjectives whose final consonant is palatalized in the masculine genitive singular. With such adjectives, the form of the masculine vocative singular is usually the same as the form of the masculine genitive singular, e.g., #[i a fhir mhóir]; #[i cóta an fhir mhóir].
+      when "4-4-3-title"
+        | Form of the Plural &mdash; Every Case
+      when "4-4-3-p"
+        | #[i -a] is added to adjectives ending in a broad consonant and #[i -e] to adjectives ending in a slender consonant and some adjectives are syncopated (but see weak plurals in the genitive plural, #[+link("#sec_4_3_2_b", "4.3.2(b)")]).
+      when "4-4-3-p-sample1"
+        | Where are the #[b famous] footballers?
+      when "4-4-3-p-sample2"
+        | The #[b good] essays will be published in the annual magazine.
+      when "4-4-3-p-sample3"
+        | The #[b noble] persons were present yesterday.
+      when "4-4-4-title"
+        | Syncopation in the Singular and in the Plural
+      when "4-4-4-p"
+        | The adjectives in the following table, among others, are syncopated in the feminine genitive singular case and in the plural in each case, but the forms in brackets are not syncopated.
+      when "Table4C-col1"
+        | Nominative Singular
+      when "Table4C-col2"
+        | Genitive Feminine Singular
+      when "Table4C-col3"
+        | Plural
+      when "4-5-title"
+        | The Second Declension
+      when "4-5-p"
+        | This declension includes adjectives that end in #[i -úil], as well as some adjectives that end in #[i -ir], e.g., #[i óir], #[i díacair], #[i socair].
+      when "4-5-1-title"
+        | Form of the Genitive Singular
+      when "4-5-1-a-p"
+        | Adjectives of this declension do not undergo any inflection.
+      when "4-5-1-a-p-sample1"
+        | Where is the father of the #[b just] man?
+      when "4-5-1-a-p-sample2"
+        | I read the start of the #[b interesting] book.
+      when "4-5-1-b-p"
+        | The final consonant is broadened and #[i -a] is added.
+      when "4-5-1-b-p-sample1"
+        | Where is the father of the #[b famous] woman?
+      when "4-5-1-b-p-sample2"
+        | I read the start of the #[b difficult] essay.
+      when "4-5-2-title"
+        | Form of the Plural &mdash; Every Case
+      when "4-5-2-a-p"
+        | The final consonant is broadened and #[i -a] is added as in the feminine genitive singular (but see genitive plurals, #[+link("#sec_4_3_2_b", "4.3.2(b)")]).
+      when "4-5-2-a-p-sample1"
+        | Where are the #[b famous] men and the #[b beautiful] women?
+      when "4-5-2-a-p-sample2"
+        | I read the #[b interesting] poems yesterday.
+      when "4-5-2-b-p"
+        | #[i deacair] #[+tl difficult], #[i deacra] #[+tl difficult]; #[i socair] #[+tl calm], #[i socra] #[+tl calm] are syncopated in the genitive singular and in the plural.
+      when "4-6-title"
+        | The Third Declension
+      when "4-6-1-p"
+        | This declension includes adjectives that end in a vowel, e.g., #[i cliste], #[i cróga].
+      when "4-6-2-p"
+        | Only two adjectives are inflected in this declension: #[i breá] and #[i te]. #[i breá] changes to #[i breátha] in the feminine genitive singular and plural and #[i te] changes to #[i teo] in the plural (but see weak plurals in the genitive plural, #[+link("#sec_4_3_2_b", "4.3.2(b)")]).
+      when "4-6-2-sample-row1"
+        | Nominative singular
+      when "4-6-2-sample-row2"
+        | Genitive singular
+      when "4-6-2-sample-row3"
+        | Nominative plural
+      when "4-6-2-sample1"
+        | It was a #[b lovely, hot] fire.
+      when "4-6-2-sample2"
+        | The color of the #[b lovely, hot] fire.
+      when "4-6-2-sample3"
+        | The #[b lovely, hot] fires were lit.
+      when "4-7-title"
+        | Summary of the Adjectives&rsquo; Declensions
+      when "Table4D-title"
+        | Masculine Singular Noun
+      when "Table4D-caption"
+        | Summary of the Adjectives&rsquo; Declensions &mdash; Masculine Singular
+      when "Table4D-col1"
+        | Case
+      when "Table4D-col2"
+        | The First Declension
+      when "Table4D-col3"
+        | The Second Declension
+      when "Table4D-col4"
+        | The Third Declension
+      when "Table4D-case1"
+        | Nominative
+      when "Table4D-case2"
+        | Vocative
+      when "Table4D-case3"
+        | Dative
+      when "Table4D-case4"
+        | Genitive
+      when "Table4D-footnote"
+        | *But see 1.7 The Lenition System
+      when "Table4E-title"
+        | Feminine Singular Noun
+      when "Table4E-caption"
+        | Summary of the Adjectives&rsquo; Declensions &mdash; Feminine Singular
+      when "Table4F-title"
+        | Masculine Plural Noun
+      when "Table4F-caption"
+        | Summary of the Adjectives&rsquo; Declensions &mdash; Masculine Plural
+      when "Table4G-title"
+        | Feminine Plural Noun
+      when "Table4G-caption"
+        | Summary of the Adjectives&rsquo; Declensions &mdash; Feminine Plural
+      when "4-8-title"
+        | Degrees of Comparison of the Adjectives
+      when "4-8-1-a-p"
+        | The form of the comparative degree and superlative forms of adjectives is usually the same as the feminine genitive singular, e.g., #[i ard], #[i airde]; #[i breá], #[i breátha]; #[i cóir], #[i córa]; #[i dathúil], #[i dathúla]; #[i diacair], #[i diacra]; #[i diríct], #[i diríct].
+      when "4-8-1-a-p-sample1"
+        | Get the #[b ]high#[b ]est value on it.
+      when "4-8-1-a-p-sample2"
+        | Ciara is the most #[b beautiful] girl in the class.
+      when "4-8-1-a-p-sample3"
+        | The #[b ]hard#[b ]est thing about poetry is reading it properly.
+      when "4-8-1-b-p"
+        | The form for the comparative degree and superlative forms of adjectives is also the same as for the feminine genitive singular for adjectives ending in #[i -íoch], e.g., #[i buíoch], #[i buíche]; #[i débhríoch], #[i débhríche]; #[i imníoch], #[i imníche]; #[i impíoch], #[i impíche]; #[i taithíoch], #[i taithíche]; #[i uathoibríoch], #[i uathoibríche].
+      when "4-8-1-b-p-sample1"
+        | They are the most #[b concerned] people in the country.
+      when "4-8-1-b-p-sample2"
+        | He is the most #[b experienced] at this work.
+      when "4-8-1-b-p-sample3"
+        | The most #[b automated] system will be put in place.
+      when "4-8-2-p"
+        | Some adjectives have irregular forms, e.g., 
+        | #[i beag], #[i lú] (#[b EN]: #[i small], #[i smaller]);
+        | #[i dócha], #[i dóichí] (#[b EN]: #[i likely], #[i more likely]);
+        | #[i fada], #[i faide (sia)] (#[b EN]: #[i long], #[i longer]);
+        | #[i fogas], #[i foisce] (#[b EN]: #[i near], #[i nearer]);
+        | #[i furasta], #[i fusa] (#[b EN]: #[i easy], #[i easier]);
+        | #[i gearr], #[i giorra] (#[b EN]: #[i short], #[i shorter]);
+        | #[i iomaí], #[i lia] (#[b EN]: #[i many], #[i more]);
+        | #[i maith], #[i fearr] (#[b EN]: #[i good], #[i better]);
+        | #[i mór], #[i mó] (#[b EN]: #[i big], #[i bigger]);
+        | #[i olc], #[i measa] (#[b EN]: #[i bad], #[i worse]);
+        | #[i te], #[i teo] (#[b EN]: #[i hot], #[i hotter]).
+      when "4-8-2-p-sample1"
+        | Rónán is the #[b best] person in the class.
+      when "4-8-2-p-sample2"
+        | It is the #[b long]est memory (#[b earli]est) in my head.
+      when "4-8-2-p-sample3"
+        | Which one is #[b big]gest?
+      when "4-8-3-title"
+        | Forms following #[i dá] and #[i a]
+      when "4-8-3-a-p"
+        | After #[i dá] #[+tl however] and #[i a] #[+tl how], regardless of whether they have a proleptic or anaphoric function, a form that is the same as the comparative form of the adjective or a form that derives from the comparative or the base form and ends in #[i -cht] is usually used.
+      when "4-8-3-b-p"
+        | Only one form is used for the following adjectives: #[i dócha], #[i dóichí] #[+tl likely]; #[i dona], #[i donacht] #[+tl bad]; #[i furasta], #[i fusacht] #[+tl easy]; #[i gearr], #[i giorracht] #[+tl short]; and for these irregular forms: #[i beag], #[i laghad] #[+tl small]; #[i fada], #[i fad] #[+tl long]; #[i iomaí], #[i liacht] #[+tl many]; #[i maith], #[i feabhas] #[+tl good]; #[i mór], #[i méad/méid] #[+tl big]; #[i olc], #[i olcas] #[+tl bad]; #[i tiubh], #[i tiús] #[+tl thick].
+      when "4-8-3-c-p"
+        | #[i méid] is used instead of #[i méad] in certain contexts, e.g., #[i dá mhéad airgead a bhí aici] but #[i a mhéid is indéanta le réasún]; #[i a mhéid is gá].
+      when "4-8-3-c-p-sample1"
+        | I loved how #[b beautifully] (how sweetly, how accurately, how fluently, how smoothly, how clearly) she spoke.
+      when "4-8-3-c-p-sample2"
+        | You wouldn&rsquo;t believe how #[b difficult] (how wretched, how bad, how slippery, how lonely) the place was.
+      when "4-8-3-c-p-sample3"
+        | He received high praise #[b because of how well] he did the job.
+      when "4-8-3-c-p-sample4"
+        | #[b However wise] (how brave, how good, how clever, how skilled) he was, the business didn&rsquo;t work out for him.
+      when "4-8-3-c-p-sample5"
+        | #[b However bad] (how ugly, how lazy, how bad, how annoying) he was, you have to accept it.
+      when "4-8-3-c-p-sample6"
+        | #[b However much] she wanted him, she didn&rsquo;t buy him in the end.
+      when "4-9-title"
+        | The Possessive Adjective
+      when "4-9-p"
+        | Because the possessive adjectives, #[i mo] #[+tl my], #[i do] #[+tl your], #[i a] (masculine and feminine singular) #[+tl his/her], #[i ár] #[+tl our], #[i bhur] #[+tl your], and #[i a] (plural) #[+tl their] function as pronominals in the genitive, they are discussed in #[+link("./chapter8.html", "Chapter 8")].
+      when "4-10-title"
+        | The Demonstrative Adjective
+      when "4-10-p"
+        | The demonstrative adjectives are #[i seo] #[+tl this], #[i sin] #[+tl that], #[i siúd] #[+tl that over there] and #[i úd] #[+tl that over there]. (Although #[i seo], #[i sin] and #[i siúd] are demonstrative pronominals, they are often referred to as demonstrative adjectives.)
+      when "4-10-p-sample1"
+        | #[b This] man is sick.
+      when "4-10-p-sample2"
+        | #[b This] boy will be coming with me.
+      when "4-10-p-sample3"
+        | #[b These] are with me.
+      when "4-10-p-sample4"
+        | #[b That] door is not closed.
+      when "4-10-p-sample5"
+        | #[b That] girl&rsquo;s name is Síle.
+      when "4-10-p-sample6"
+        | #[b That] house was sold yesterday.
+      when "4-10-p-sample7"
+        | He was #[b the one] that had the money.
+      when "4-10-p-sample8"
+        | Do you see #[b that] field over there?
+      when "4-11-title"
+        | The Predicative Adjective
+      when "4-11-p"
+        | An predicative adjective is an adjective that qualifies the noun as predicate or as part of a predicate, e.g., #[i Nach deas é?] #[+tl Isn&rsquo;t it nice?] ; #[i Tá an aimsir fuar] #[+tl The weather is cold]. The predicative adjective is not inflected or lenited.
+      when "4-11-p-sample1"
+        | The train was #[b empty].
+      when "4-11-p-sample2"
+        | The buses are usually #[b late].
+      when "4-11-p-sample3"
+        | Is that woman #[b rich]?
+      when "4-11-p-sample4"
+        | That wedding will be #[b big].
+      when "4-12-title"
+        | The Verbal Adjective
+      when "4-12-1-p"
+        | The verbal adjective functions as a regular adjective. The verbal adjective is used &mdash;
+      when "4-12-1-a-p"
+        | as a qualifying adjective, e.g., #[i Is bean phósta í] #[+tl She is a married woman];
+      when "4-12-1-b-p"
+        | as a predicative adjective following the copula, e.g., #[i Ní briste atá sé] #[+tl It is not broken];
+      when "4-12-1-c-p"
+        | as a predicative adjective following the verb #[i bí] indicating the state of the object after the action, e.g., #[i Is í atá tugtha don obair] #[+tl It is what has been given to the work];
+      when "4-12-1-d-p"
+        | as a predicative adjective following the verb #[i bí] indicating the state of the agent after the action, e.g., #[i Táimid beirthe go maith leis an socrú sin] #[+tl We have succeeded well with that arrangement].
+      default
+        - throw new Error(`No content for ${key} (en.pug)`)

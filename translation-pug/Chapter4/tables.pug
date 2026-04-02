@@ -1,0 +1,447 @@
+mixin Table4A
+  +markedTable(4, "A", "Table4A-caption")
+    colgroup
+      col(class="w-1/5")
+      col(class="w-2/5")
+      col(class="w-2/5")
+    thead
+      tr
+        th: +renderKey("Table4A-col1")
+        th: +renderKey("Table4A-col2")
+        th: +renderKey("Table4A-col3")
+    tbody
+      tr
+        th: +renderKey("Table4A-row1")
+        td
+          p: i: +renderKey("no-lenition")
+          p an fear #[b beag]
+        td
+          p: i: +renderKey("séimhiú", { getFromCommon: true })
+          p an bhean #[b bheag]
+      tr
+        th: +renderKey("Table4A-row2")
+        td
+          p: i: +renderKey("séimhiú", { getFromCommon: true })
+          p a fhir #[b bhig]
+        td
+          p: i: +renderKey("séimhiú", { getFromCommon: true })
+          p a bhean #[b bheag]
+      tr
+        th: +renderKey("Table4A-row3")
+        td
+          p: i: +renderKey("no-lenition")
+          p ar an bhfear #[b beag]
+        td
+          p: i: +renderKey("séimhiú", { getFromCommon: true })
+          p ar an mbean #[b bheag]
+      tr
+        th: +renderKey("Table4A-row4")
+        td
+          p: i: +renderKey("séimhiú", { getFromCommon: true })
+          p clann an fhir #[b bhig]
+        td
+          p: i: +renderKey("no-lenition")
+          p clann na mná #[b bige]
+
+mixin Table4B
+  +markedTable(4, "B", "4-2-5-title")
+    colgroup
+      col(class="w-1/2")
+      col(class="w-1/2")
+    thead
+      tr
+        th: +renderKey("Table4B-col1-main")
+        th: +renderKey("Table4B-col2-main")
+      tr
+        th: +renderKey("Table4B-col1-sub")
+        th: +renderKey("Table4B-col2-sub")
+    tbody
+      tr
+        td na báid #[b fhada]
+        td na cailíní #[b cliste]
+      tr
+        td na costais #[b shonracha]
+        td na doirse #[b móra]
+      tr
+        td na foirgnimh #[b bhreátha]
+        td na páirceanna #[b móra]
+      tr
+        td na fir #[b bheaga]
+        td na táilliúirí #[b costasacha]
+      tr
+        td na goirt #[b mhóra]
+        td clanna na mban #[b cáiliúil]
+      tr
+        td na héisc #[b gheala]
+        td clanna na bhfear #[b beag]
+      tr
+        td na húdair #[b cháiliúla]
+        td éifeacht na bhforálacha #[b forlíontacha]
+      tr
+        td na nóiméid #[b dheireanacha]
+        td méid na bhfuinneog #[b cearnach]
+      tr
+        td na pinn #[b ghorma]
+        td obair na ngaibhne #[b dubha]
+      tr
+        td na sparáin #[b theanna]
+        td seirbhísí na leabharlann #[b poiblí]
+
+mixin Table4C
+  +markedTable(4, "C", "4-4-4-title")
+    colgroup
+      col(class="w-2/5")
+      col(class="w-2/5")
+      col(class="w-1/5")
+    thead
+      tr
+        th: +renderKey("Table4C-col1")
+        th: +renderKey("Table4C-col2")
+        th: +renderKey("Table4C-col3")
+    tbody
+      tr
+        td álainn 
+        td áille 
+        td áille
+      tr
+        td aoibhinn 
+        td aoibhne 
+        td aoibhne
+      tr
+        td bodhar 
+        td (bodhaire) 
+        td bodhra
+      tr
+        td daibhir 
+        td daibhre 
+        td daibhre
+      tr
+        td daingean 
+        td daingne 
+        td daingne
+      tr
+        td deimhin 
+        td deimhne 
+        td deimhne
+      tr
+        td dílis 
+        td dílse 
+        td dílse
+      tr
+        td doilbhir 
+        td doilbhre 
+        td doilbhre
+      tr
+        td domhain 
+        td doimhne 
+        td doimhne
+      tr
+        td folamh 
+        td foilmhe 
+        td folmha
+      tr
+        td íseal 
+        td ísle 
+        td ísle
+      tr
+        td láidir 
+        td láidre 
+        td láidre
+      tr
+        td milis 
+        td milse 
+        td milse
+      tr
+        td ramhar 
+        td raimhre 
+        td ramhra
+      tr
+        td righin 
+        td righne 
+        td righne
+      tr
+        td saibhir 
+        td saibhre 
+        td saibhre
+      tr
+        td sleamhain 
+        td (sleamhaine) 
+        td sleamhna
+      tr
+        td soilbhir 
+        td soilbhre 
+        td soilbhre
+      tr
+        td uasal 
+        td uaisle 
+        td uaisle
+
+mixin Table4D
+  +markedTable(4, "D", "Table4D-caption")
+    thead
+      tr
+        th(colspan=4 class="text-xl"): +renderKey("Table4D-title")
+      tr
+        th: +renderKey("Table4D-col1")
+        th: +renderKey("Table4D-col2")
+        th: +renderKey("Table4D-col3")
+        th: +renderKey("Table4D-col4")
+    tbody
+      tr
+        th(class="bg-stone-300" rowspan=3): +renderKey("Table4D-case1")
+        td an fear #[b beag]
+        td an fear #[b misniúil]
+        td an cóta #[b buí]
+      tr
+        td an peileadóir #[b clúiteach]
+        td an duine #[b cóir]
+        td an garda #[b cróga]
+      tr(class="black-bottom-divider")
+        td an buachaill #[b ciúin]
+        td an t&#x2011;óstóir #[b flaithiúil]
+        td an duine #[b cuí]
+
+      tr
+        th(class="bg-stone-300" rowspan=3): +renderKey("Table4D-case2")
+        td a fhir #[b bhig]
+        td a fhir #[b mhisniúil]
+        td a gharda #[b chróga]
+      tr
+        td a pheileadóir #[b chlúiteach]
+        td a dhuine #[b chóir]
+        td a dhuine #[b chuí]
+      tr(class="black-bottom-divider")
+        td a bhuachaill #[b chiúin]
+        td a t&#x2011;óstóir #[b fhlaithiúil]
+        td a fhear #[b chliste]
+
+      tr
+        th(class="bg-stone-300" rowspan=3)
+          | #[+renderKey("Table4D-case3")]*
+        td ag an bhfear #[b beag]
+        td don fhear #[b misniúil]
+        td ar an gcóta #[b buí]
+      tr
+        td don pheileadóir #[b clúiteach]
+        td chuig an duine #[b cóir]
+        td ag an ngarda #[b cróga]
+      tr(class="black-bottom-divider")
+        td leis an mbuachaill #[b ciúin]
+        td ón óstóir #[b flaithiúil]
+        td leis an duine #[b cuí]
+
+      tr
+        th(class="bg-stone-300" rowspan=3): +renderKey("Table4D-case4")
+        td caipín an fhir #[b bhig]
+        td eachtra an fhir #[b mhisniúil]
+        td úinéir an chóta #[b bhuí]
+      tr
+        td ainm an pheileadóra #[b chlúitigh]
+        td clann an duine #[b chóir]
+        td thar ceann an duine #[b chuí]
+      tr
+        td rang an bhuachalla #[b chiúin]
+        td comhairle an óstóra #[b fhlaithiúil]
+        td guth an gharda #[b chróga]
+
+mixin Table4E
+  +markedTable(4, "E", "Table4E-caption")
+    thead
+      tr
+        th(colspan=4 class="text-xl"): +renderKey("Table4E-title")
+      tr
+        th: +renderKey("Table4D-col1")
+        th: +renderKey("Table4D-col2")
+        th: +renderKey("Table4D-col3")
+        th: +renderKey("Table4D-col4")
+    tbody
+      tr
+        th(rowspan=3): +renderKey("Table4D-case1")
+        td an bhean #[b bheag]
+        td an bhean #[b ghairmiúil]
+        td an éide #[b ghalánta]
+      tr
+        td an bhó #[b álainn]
+        td an tuairisc #[b mhíosúil]
+        td an aiste #[b ghonta]
+      tr(class="black-bottom-divider")
+        td an mháthair #[b imníoch]
+        td an aiste #[b dheacair]
+        td an mhí #[b fhada]
+
+      tr
+        th(rowspan=3): +renderKey("Table4D-case2")
+        td a bhean #[b bheag]
+        td a bhean #[b ghairmiúil]
+        td a bhean #[b chróga]
+      tr
+        td a aintín #[b álainn]
+        td a aintín #[b fhlaithiúil]
+        td a aintín #[b ghalánta]
+      tr(class="black-bottom-divider")
+        td a mháthair #[b imníoch]
+        td a mháthair #[b chóir]
+        td a mháthair #[b chróga]
+
+      tr
+        th(rowspan=3): +renderKey("Table4D-case3")
+        td don bhean #[b bheag]
+        td don bhean #[b ghairmiúil]
+        td ar an éide #[b ghalánta]
+      tr
+        td ag an aintín #[b álainn]
+        td sa tuairisc #[b mhíosúil]
+        td san aiste #[b ghonta]
+      tr(class="black-bottom-divider")
+        td leis an máthair #[b imníoch]
+        td san aiste #[b dheacair]
+        td den mhí #[b fhada]
+
+      tr
+        th(rowspan=3): +renderKey("Table4D-case4")
+        td teach na mná #[b bige]
+        td maoin na mná #[b gairmiúla]
+        td luach na héide #[b galánta]
+      tr
+        td peata na máthar #[b imníche]
+        td fad na tuairisce #[b mhíosúla]
+        td údar na haiste #[b gonta]
+      tr
+        td ceol na haintín #[b áille]
+        td teideal na haiste #[b deacra]
+        td deireadh na míosa #[b fada]
+
+mixin Table4F
+  +markedTable(4, "F", "Table4F-caption")
+    thead
+      tr
+        th(colspan=4 class="text-xl"): +renderKey("Table4F-title")
+      tr
+        th: +renderKey("Table4D-col1")
+        th: +renderKey("Table4D-col2")
+        th: +renderKey("Table4D-col3")
+        th: +renderKey("Table4D-col4")
+    tbody
+      tr
+        th(class="bg-stone-300" rowspan=3): +renderKey("Table4D-case1")
+        td na fir #[b bheaga]
+        td na leabhair #[b shuimiúla]
+        td na cótaí #[b buí]
+      tr
+        td na peileadóirí #[b clúiteacha]
+        td na daoine #[b córa]
+        td na daoine #[b cuí]
+      tr(class="black-bottom-divider")
+        td na buachaillí #[b ciúine]
+        td na páistí #[b flaithiúla]
+        td na gardaí #[b cróga]
+
+      tr
+        th(class="bg-stone-300" rowspan=3): +renderKey("Table4D-case2")
+        td a fheara #[b beaga]
+        td a fheara #[b misniúla]
+        td a dhaoine #[b cuí]
+      tr
+        td a pheileadóirí #[b clúiteacha]
+        td a dhaoine #[b córa]
+        td a fheara #[b cliste]
+      tr(class="black-bottom-divider")
+        td a bhuachaillí #[b ciúine]
+        td a pháistí #[b flaithiúla]
+        td a ghardaí #[b cróga]
+
+      tr
+        th(class="bg-stone-300" rowspan=3): +renderKey("Table4D-case3")
+        td ar na fir #[b bheaga]
+        td do na fir #[b mhisniúla]
+        td ar na cótaí #[b buí]
+      tr
+        td na peileadóirí #[b clúiteacha]
+        td leis na daoine #[b córa]
+        td leis na daoine #[b cuí]
+      tr(class="black-bottom-divider")
+        td leis na buachaillí #[b ciúine]
+        td ó na páistí #[b flaithiúla]
+        td do na gardaí #[b cróga]
+
+      tr
+        th(class="bg-stone-300" rowspan=3): +renderKey("Table4D-case4")
+        td caipíní na bhfear #[b beag]
+        td bás na bhfear #[b misniúil]
+        td úinéirí na gcótaí #[b buí]
+      tr
+        td bróga na bpeileadóirí #[b clúiteacha]
+        td clann na ndaoine #[b córa]
+        td ar son na ndaoine #[b cuí]
+      tr
+        td rang na mbuachaillí #[b ciúine]
+        td airgead na bpáistí #[b flaithiúla]
+        td hataí na ngardaí #[b cróga]
+
+mixin Table4G
+  +markedTable(4, "G", "Table4G-caption")
+    thead
+      tr
+        th(colspan=4 class="text-xl"): +renderKey("Table4G-title")
+      tr 
+        th: +renderKey("Table4D-col1")
+        th: +renderKey("Table4D-col2")
+        th: +renderKey("Table4D-col3")
+        th: +renderKey("Table4D-col4")
+    tbody
+      tr
+        th(class="bg-stone-300" rowspan=3): +renderKey("Table4D-case1")
+        td na mná #[b beaga]
+        td na mná #[b gairmiúla]
+        td na héidí #[b galánta]
+      tr
+        td na haintíní #[b áille]
+        td na haintíní #[b córa]
+        td na haistí #[b gonta]
+      tr(class="black-bottom-divider")
+        td na máithreacha #[b imníocha]
+        td na hiníonacha #[b flaithiúla]
+        td na míonna #[b fada]
+
+      tr
+        th(class="bg-stone-300" rowspan=3): +renderKey("Table4D-case2")
+        td a mhná #[b beaga]
+        td a mhná #[b gairmiúla]
+        td a mhná #[b galánta]
+      tr
+        td a aintíní #[b áille]
+        td a aintíní #[b córa]
+        td a iníonacha #[b cróga]
+      tr(class="black-bottom-divider")
+        td a mháithreacha #[b imníocha]
+        td a iníonacha #[b flaithiúla]
+        td a aintíní #[b cliste]
+
+      tr
+        th(class="bg-stone-300" rowspan=3): +renderKey("Table4D-case3")
+        td do na mná #[b beaga]
+        td do na mná #[b gairmiúla]
+        td leis na héidí #[b galánta]
+      tr
+        td ag na haintíní #[b áille]
+        td leis na haintíní #[b córa]
+        td sna haistí #[b gonta]
+      tr(class="black-bottom-divider")
+        td leis na máithreacha #[b imníocha]
+        td ó na hiníonacha #[b flaithiúla]
+        td de na míonna #[b fada]
+
+      tr
+        th(class="bg-stone-300" rowspan=3): +renderKey("Table4D-case4")
+        td teach na mban #[b beag]
+        td pá na mban #[b gairmiúil]
+        td luach na n&#x2011;éidí #[b galánta]
+      tr
+        td ceol na n&#x2011;aintíní #[b áille]
+        td clann na n&#x2011;aintíní #[b córa]
+        td údair na n&#x2011;aistí #[b gonta]
+      tr
+        td deifir na máithreacha #[b imníocha]
+        td airgead na n&#x2011;iníonacha #[b flaithiúla]
+        td tús na míonna #[b fada]
+

@@ -1,0 +1,418 @@
+include ../../tlMatter.pug
+
+mixin gaDb(key)
+  case key
+    when "teidealNaCaibidle"
+      | An Aidiacht
+    when "4-1-title"
+      | An Aidiacht Cháilíochta
+    when "4-title"
+      | #[+renderKey("Caibidil", { getFromCommon: true })] 4 | #[+gaDb("teidealNaCaibidle")]
+    when "4-1-1-p"
+      | Roinntear na haidiachtaí ina dtrí dhíochlaonadh.
+    when "4-1-2-p"
+      | Ní dhíochlaontar an aidiacht ach amháin nuair a úsáidtear mar aidiacht cháilíochta í.
+    when "4-1-3-p"
+      | Braitheann foirm aidiachta cáilíochta ar inscne, tuiseal agus uimhir an ainmfhocail atá á cháiliú léi agus ar dhíochlaonadh na haidiachta féin. Féach #[+link("./chapter9.html", "Caibidil 9")] le haghaidh rialacha maidir le haidiachtaí a úsáid le huimhreacha.
+    when "4-2-title"
+      | Inscne, Tuiseal agus Uimhir na hAidiachta Cáilíochta
+    when "4-2-1-p"
+      | Réitíonn an aidiacht cháilíochta leis an ainmfhocal ó thaobh inscne, tuisil agus uimhreach. I gcás sraith ainmfhocal, réitíonn an aidiacht leis an ainmfhocal deiridh, e.g., #[i mná agus fir ghnaíúla]; #[i peann, páipéar agus bileog ghorm]. I gcás sraith aidiachtaí i ndiaidh ainmfhocal amháin, réitíonn gach aidiacht leis an ainmfhocal, e.g., #[i ailt shuimiúla thábhachtacha fhada].
+    when "4-2-1-p-sample1"
+      | Tháinig na mná agus na fir #[b ghnaíúla] isteach.
+    when "4-2-1-p-sample2"
+      | Tháinig na fir agus na mná #[b gnaíúla] isteach.
+    when "4-2-1-p-sample3"
+      | Bhí sciorta, cóta agus scaif #[b ghorm] uirthi.
+    when "4-2-1-p-sample4"
+      | Tá cait #[b mhóra fhiáine] i ngairdín na n&#x2011;ainmhithe.
+    when "4-2-2-a-p"
+      | San uimhir uatha &mdash;
+    when "4-2-2-a-i-p"
+      | i gcás ainmfhocal firinscneach, ní shéimhítear an aidiacht atá á cháiliú, e.g., #[i an fear beag]; #[i ag an bhfear beag]; ach amháin sa tuiseal gairmeach agus sa tuiseal ginideach e.g., #[i a fhir bhig]; #[i hata an fhir bhig];
+    when "4-2-2-a-ii-p"
+      | má tá Córas an tSéimhithe (féach #[+link("./chapter1.html#sec_1_7", "1.7")]) in úsáid, séimhítear an aidiacht a cháilíonn ainmfhocal firinscneach sa tuiseal tabharthach má ghabhann an t&#x2011;alt leis an ainmfhocal sin, e.g., #[i ag an fhear bheag].
+    when "4-2-2-b-p"
+      | San uimhir uatha, i gcás ainmfhocal baininscneach, séimhítear an aidiacht atá á cháiliú sna tuisil go léir, e.g., #[i an bhean bheag]; #[i a bhean bheag]; #[i ag an mbean bheag]; ach amháin sa tuiseal ginideach, e.g., #[i hata na mná bige].
+    when "4-2-3-p"
+      | Tugtar léiriú i #[+link("./chapter9.html", "Caibidil 9")] ar an aidiacht cháilíochta nuair atá uimhir roimh an ainmfhocal atá á cháiliú.
+    when "4-2-4-title"
+      | Séimhiú ar Aidiacht Cháilíochta san Uimhir Uatha
+    when "4-2-4-p"
+      | Fágtar aidiacht lom nó cuirtear séimhiú uirthi bunaithe ar inscne agus tuiseal an ainmfhocail atá á cháiliú léi. Léirítear na cásanna sa tábla thíos. Féach an plé ar dhíochlaonadh na haidiachta (#[+link("#sec_4_3", "4.3")]) chun eolas a fháil ar athrú foirme (seachas séimhiú) ar an aidiacht féin.
+    when "lenition"
+      | séimhiú
+    when "no-lenition"
+      | gan séimhiú
+    when "Table4A-caption"
+      | Séimhiú ar Aidiacht Cháilíochta san Uimhir Uatha
+    when "Table4A-col1"
+      | An Tuiseal
+    when "Table4A-col2"
+      | Ainmfhocal Firinscneach Uatha
+    when "Table4A-col3"
+      | Ainmfhocal Baininscneach Uatha
+    when "Table4A-row1"
+      | Ainmneach agus Cuspóireach
+    when "Table4A-row2"
+      | Gairmeach
+    when "Table4A-row3"
+      | Tabharthach*
+    when "Table4A-row4"
+      | Ginideach
+    when "Table4A-footnote"
+      | Ach féach #[+link("./chapter1.html#sec_1_7", "1.7")] Córas an tSéimhithe
+    when "4-2-5-title"
+      | Séimhiú ar Aidiacht Cháilíochta san Uimhir Iolra
+    when "4-2-5-p"
+      | San uimhir iolra, séimhítear túschonsan aidiachta má chríochnaíonn an t&#x2011;ainmfhocal iolra ar chonsan caol, mar atá sa tábla thíos (féach freisin #[+link("./chapter10.html#sec_10_3_1", "10.3.1")]).
+    when "Table4B-col1-main"
+      | Séimhiú
+    when "Table4B-col2-main"
+      | Gan Séimhiú
+    when "Table4B-col1-sub"
+      | Ainmfhocal dar críoch consan caol san iolra
+    when "Table4B-col2-sub"
+      | Ainmfhocal dar críoch consan leathan nó guta san iolra
+    when "4-3-title"
+      | Díochlaonadh na hAidiachta
+    when "4-3-1-p"
+      | Is ionann foirm don aidiacht sa tuiseal ainmneach, sa tuiseal cuspóireach agus sa tuiseal tabharthach uatha, agus is ionann foirm don aidiacht sa tuiseal ainmneach, sa tuiseal cuspóireach agus sa tuiseal tabharthach iolra.
+    when "4-3-2-p"
+      | Sa tuiseal ginideach iolra &mdash;
+    when "4-3-2-a-p"
+      | más tréaniolra atá ag an ainmfhocal, úsáidtear an fhoirm chéanna den aidiacht a úsáidtear sa tuiseal ainmneach iolra:
+    when "4-3-2-a-sample-row1"
+      | Ainmneach iolra
+    when "4-3-2-a-sample-row2"
+      | Ginideach iolra
+    when "4-3-2-a-sample1"
+      | Is maith liom na filí #[b móra]. 
+    when "4-3-2-a-sample2"
+      | Is maith liom dánta na bhfilí #[b móra].
+    when "4-3-2-b-p"
+      | más lagiolra atá ag an ainmfhocal, úsáidtear an fhoirm chéanna den aidiacht a úsáidtear sa tuiseal ainmneach uatha:
+    when "4-3-2-b-sample-row1"
+      | Ainmneach uatha
+    when "4-3-2-b-sample-row2"
+      | Ginideach iolra
+    when "4-3-2-b-sample1"
+      | Foilsíonn an t&#x2011;údarás #[b áitiúil] tuarascáil gach bliain.
+    when "4-3-2-b-sample2"
+      | Foilsíodh tuarascálacha na n&#x2011;údarás #[b áitiúil].
+    when "4-3-3-a-p"
+      | Ní shéimhítear ná ní infhilltear aidiacht sa ghairmeach firinscneach más ainm ceana nó brí mheafarach atá i gceist.
+    when "4-3-3-a-p-sample1"
+      | Cén chaoi a bhfuil tú, #[b a athair beag]?
+    when "4-3-3-a-p-sample2"
+      | #[b A dheartháir dílis], bhí a fhios agam go maith gur tú a bhí ann.
+    when "4-3-3-a-p-sample3"
+      | #[b A bhéal cumhra], nach muid a bheidh sásta le chéile.
+    when "4-3-3-a-p-sample4"
+      | Conas atá tú, #[b a mhac bán]?
+    when "4-3-3-b-p"
+      | Séimhítear túslitir na haidiachta, áfach, más ainmfhocal baininscneach atá roimpi.
+    when "4-3-3-b-p-sample1"
+      | Cad é mar atá tú inniu, a thaisce #[b mhilis]?
+    when "4-3-3-b-p-sample2"
+      | A mháthair #[b bheag], ní bheidh deireadh go deo le do chuid oibre.
+    when "4-3-4-p"
+      | Ní infhilltear an aidiacht i ndiaidh ainmneacha baiste ban, e.g., #[i Máire Mhór], #[i teach Mháire Mhór].
+    when "4-3-5-p"
+      | Ní infhilltear an aidiacht ná ní dhéantar athrú tosaigh uirthi ar lorg dobhriathra nó aidiachtaí a úsáidtear mar dhobhriathra amhail #[i cuibheasach], #[i sách], #[i measartha], #[i réasúnta], etc.
+    when "4-3-5-p-sample1"
+      | Is bean #[b measartha saibhir] í.
+    when "4-3-5-p-sample2"
+      | Mná #[b measartha saibhir] is ea iad.
+    when "4-3-5-p-sample3"
+      | Fir #[b sách ard] is ea iad.
+    when "4-3-5-p-sample4"
+      | Páistí #[b réasúnta ciúin] is ea iad.
+    when "4-3-5-p-sample5"
+      | Maidin #[b sách fuar] a bhí ann.
+    when "4-3-5-p-sample6"
+      | Bliain #[b cuibheasach tirim] atá uainn.
+    when "4-3-6-p"
+      | Ní infhilltear an aidiacht ar lorg na míre treise #[i an-].
+    when "4-3-6-p-sample1"
+      | Is daoine #[b an-bhreá] iad.
+    when "4-3-6-p-sample2"
+      | Déanfar na gnéithe #[b an-tábhachtach] sin a mheas.
+    when "4-3-6-p-sample3"
+      | Ní páistí #[b an-chiúin] iad.
+    when "4-3-7-p"
+      | Ní infhilltear an aidiacht ná ní chuirtear séimhiú uirthi más cuid de fhrása aidiachtach ilfhoclach í, e.g., #[i athnuachan saor in aisce]; #[i tuarascáil cothrom le dáta].
+    when "4-3-7-p-sample1"
+      | Is bean #[b mór le rá] í i réimse na heolaíochta.
+    when "4-3-7-p-sample2"
+      | Ba é údar na tuarascála #[b cothrom le dáta] a thug an cur i láthair.
+    when "4-3-8-p"
+      | Is faoi gach díochlaonadh ar leithligh a thugtar cur síos ar fhoirm an ghinidigh uatha.
+    when "4-4-title"
+      | An Chéad Díochlaonadh
+    when "4-4-p"
+      | Cuimsítear sa díochlaonadh seo aidiachtaí a chríochnaíonn ar chonsan, leathan nó caol, seachas aidiachtaí a chríochnaíonn ar #[i -úil] agus roinnt aidiachtaí a chríochnaíonn ar #[i -ir] (féach #[+link("#sec_4_5", "4.5")]).
+    when "4-4-1-title"
+      | Foirm an Ghinidigh Uatha
+    when "4-4-1-a-title"
+      | Firinscneach
+    when "4-4-1-a-i-p"
+      | Más consan leathan is críoch don aidiacht, caolaítear an consan mar a dhéantar le hainmfhocail sa Chéad Díochlaonadh (féach #[+link("./chapter2.html#sec_2_2_2", "2.2.2")]).
+    when "4-4-1-a-i-p-sample1"
+      | Cár fhág sé hata an fhir #[b mhóir]?
+    when "4-4-1-a-i-p-sample2"
+      | Caithfear coinníollacha an chonartha #[b bhuain] a léamh go cúramach.
+    when "4-4-1-a-i-p-sample3"
+      | Léigh sé leabhar an imreora #[b chlúitigh] nuair a foilsíodh é.
+    when "4-4-1-a-ii-p"
+      | Ní dhéantar infhilleadh sa ghinideach uatha firinscneach ar aidiachtaí aonsiollacha a chríochnaíonn ar #[i -ch(t)] (ach amháin #[i bocht]), e.g., #[i beacht], #[i caoch], #[i déach], #[i fliuch], #[i lách], #[i moch], #[i nocht].
+    when "4-4-1-a-ii-p-sample1"
+      | Bhí orthu an fhéile a chur ar siúl ag deireadh an tsamhraidh #[b fhliuch].
+    when "4-4-1-a-ii-p-sample2"
+      | Tá na páistí i rang an mhúinteora #[b bheacht] i mbliana.
+    when "4-4-1-a-ii-p-sample3"
+      | Goideadh ba an fheirmeora #[b bhoicht].
+    when "4-4-1-a-iii-p"
+      | Más consan caol nó #[i -íoch] is críoch don aidiacht, ní dhéantar infhilleadh uirthi.
+    when "4-4-1-a-iii-p-sample1"
+      | Ba mhaith liom labhairt le tuismitheoirí an bhuachalla #[b chiúin].
+    when "4-4-1-a-iii-p-sample2"
+      | Bhí gach duine i bhfabhar an fheachtais #[b thionsclaíoch].
+    when "4-4-1-a-iv-p"
+      | Ní dhéantar infhilleadh sa ghinideach uatha firinscneach ar aidiachtaí aonsiollacha a chríochnaíonn ar chonsan dúbailte (ach amháin #[i dall], #[i donn], #[i fionn]), e.g., #[i cearr], #[i corr], #[i gann], #[i gearr], #[i mall], #[i teann], #[i toll].
+    when "4-4-1-a-iv-p-sample1"
+      | Tá praghas an bhia #[b ghann] ag ardú gach lá.
+    when "4-4-1-a-iv-p-sample2"
+      | Chuir costas an turais #[b ghearr] iontas orthu.
+    when "4-4-1-a-iv-p-sample3"
+      | Bhí boladh an aráin #[b dhoinn] ar fud an tí.
+    when "4-4-1-a-v-p"
+      | Ní dhéantar infhilleadh sa ghinideach uatha firinscneach ar na haidiachtaí aonsiollacha seo a leanas: #[i amh], #[i cúng], #[i deas] (sa bhrí #[i cineálta]), #[i leamh], #[i mear], #[i seang], #[i searbh], #[i tearc], #[i tiubh], #[i trom], #[i tur].
+    when "4-4-1-a-v-p-sample1"
+      | Chuir sí ola ar dhoras an bhealaigh #[b chúng].
+    when "4-4-1-a-v-p-sample2"
+      | Labhair mé le húinéir an chapaill #[b mhear].
+    when "4-4-1-b-title"
+      | Baininscneach
+    when "4-4-1-b-i-p"
+      | Cuirtear #[i -e] leis an gconsan deiridh, agus caolaítear é más leathan dó, e.g., #[i gorm], #[i goirme]; #[i maith], #[i maithe] mar a dhéantar le hainmfhocail sa Dara Díochlaonadh (féach #[+link("./chapter2.html#sec_2_3_2", "2.3.2")])).
+    when "4-4-1-b-i-p-sample1"
+      | Féach ar áilleacht na spéire #[b goirme].
+    when "4-4-1-b-i-p-sample2"
+      | Cé hé údar na tuarascála #[b maithe]?
+    when "4-4-1-b-ii-p"
+      | I gcás aidiachtaí a chríochnaíonn ar #[i -(e)ach], cuirtear #[i -(a)í] in ionad #[i -(e)ach], e.g., #[i isteach], #[i aistí]; #[i iontach], #[i iontaí]; mar a dhéantar le hainmfhocail sa Dara Díochlaonadh (féach #[+link("./chapter2.html#sec_2_3_2", "2.3.2")])).
+    when "4-4-1-b-ii-p-sample1"
+      | Tá guth na caillí #[b aistí] le cloisteáil ar an taifead.
+    when "4-4-1-b-ii-p-sample2"
+      | Thaitin téama na haiste #[b iontaí] liom.
+    when "4-4-1-b-iii-p"
+      | I gcás aidiachtaí a chríochnaíonn ar #[i -íoch], athraítear #[i -íoch] go #[i -íche], e.g., #[i eacnamaíoch], #[i eacnamaíche].
+    when "4-4-1-b-iii-p-sample1"
+      | Cathain a bhraithfimid deireadh na géarchéime #[b eacnamaíche]?
+    when "4-4-1-b-iii-p-sample2"
+      | Is maith an rud é fás na hearnála #[b tionsclaíche].
+    when "4-4-1-b-iv-p"
+      | Féach #[+link("./chapter2.html", "Caibidil 2")] don chur síos cuimsitheach ar athrú gutaí.
+    when "4-4-2-title"
+      | Foirm an Ghairmigh Uatha
+    when "4-4-2-p"
+      | Is ionann foirm don ghairmeach uatha agus don ainmneach uatha, ach amháin i gcás aidiachtaí a gcaolaítear a gconsan deiridh sa ghinideach uatha firinscneach. I gcás na n&#x2011;aidiachtaí sin, is gnách gurb ionann foirm an ghairmigh uatha fhirinscnigh agus foirm an ghinidigh uatha fhirinscnigh, e.g., #[i a fhir mhóir]; #[i cóta an fhir mhóir].
+    when "4-4-3-title"
+      | Foirm an Iolra &mdash; Gach Tuiseal
+    when "4-4-3-p"
+      | Cuirtear #[i -a] leis na haidiachtaí a chríochnaíonn ar chonsan leathan agus #[i -e] leis na haidiachtaí a chríochnaíonn ar chonsan caol agus coimrítear aidiachtaí áirithe (ach féach lagiolraí sa ghinideach iolra, #[+link("#sec_4_3_2_b", "4.3.2(b)")]).
+    when "4-4-3-p-sample1"
+      | Cá bhfuil na peileadóirí #[b clúiteacha]?
+    when "4-4-3-p-sample2"
+      | Foilseofar na haistí #[b maithe] san iris bhliantúil.
+    when "4-4-3-p-sample3"
+      | Bhí na daoine #[b uaisle] i láthair inné.
+    when "4-4-4-title"
+      | Coimriú san Uatha agus san Iolra
+    when "4-4-4-p"
+      | Déantar coimriú sa tuiseal ginideach uatha baininscneach agus san uimhir iolra i ngach tuiseal ar na haidiachtaí sa tábla seo a leanas, i measc eile, ach ní choimrítear na foirmeacha idir lúibíní.
+    when "Table4C-col1"
+      | Ainmneach Uatha
+    when "Table4C-col2"
+      | Ginideach Uatha Baininscneach
+    when "Table4C-col3"
+      | Iolra
+    when "4-5-title"
+      | An Dara Díochlaonadh
+    when "4-5-p"
+      | Cuimsítear sa díochlaonadh seo aidiachtaí a chríochnaíonn ar #[i -úil], mar aon le roinnt aidiachtaí a chríochnaíonn ar #[i -ir], e.g., #[i óir], #[i deacair], #[i socair].
+    when "4-5-1-title"
+      | Foirm an Ghinidigh Uatha
+    when "4-5-1-a-p"
+      | Ní théann aon infhilleadh ar aidiachtaí an díochlaonta seo.
+    when "4-5-1-a-p-sample1"
+      | Cá bhfuil athair an fhir #[b chóir]?
+    when "4-5-1-a-p-sample2"
+      | Léigh mé tús an leabhair #[b shuimiúil].
+    when "4-5-1-b-p"
+      | Leathnaítear an consan deiridh agus cuirtear #[i -a] leis.
+    when "4-5-1-b-p-sample1"
+      | Cá bhfuil athair na mná #[b cáiliúla]?
+    when "4-5-1-b-p-sample2"
+      | Léigh mé tús na haiste #[b deacra].
+    when "4-5-2-title"
+      | Foirm an Iolra &mdash; Gach Tuiseal
+    when "4-5-2-a-p"
+      | Leathnaítear an consan deiridh agus cuirtear #[i -a] leis mar a dhéantar sa ghinideach uatha baininscneach (ach féach lagiolraí sa ghinideach iolra, #[+link("#sec_4_3_2_b", "4.3.2(b)")]).
+    when "4-5-2-a-p-sample1"
+      | Cá bhfuil na fir #[b cháiliúla] agus na mná #[b dathúla]?
+    when "4-5-2-a-p-sample2"
+      | Léigh mé na dánta #[b suimiúla] inné.
+    when "4-5-2-b-p"
+      | Coimrítear #[i deacair], #[i deacra]; #[i socair], #[i socra] sa ghinideach uatha agus san uimhir iolra.
+    when "4-6-title"
+      | An Tríú Díochlaonadh
+    when "4-6-1-p"
+      | Cuimsítear sa díochlaonadh seo aidiachtaí a chríochnaíonn ar ghuta, e.g., #[i cliste], #[i cróga].
+    when "4-6-2-p"
+      | Ní dhéantar infhilleadh ach ar dhá aidiacht sa díochlaonadh seo: #[i breá] agus #[i te]. Athraíonn #[i breá] go #[i breátha] sa ghinideach uatha baininscneach agus san uimhir iolra agus athraíonn #[i te] go #[i teo] san uimhir iolra (ach féach lagiolraí sa ghinideach iolra, #[+link("#sec_4_3_2_b", "4.3.2(b)")]).
+    when "4-6-2-sample-row1"
+      | Ainmneach uatha
+    when "4-6-2-sample-row2"
+      | Ginideach uatha
+    when "4-6-2-sample-row3"
+      | Ainmneach iolra
+    when "4-6-2-sample1"
+      | Tine #[b bhreá the] a bhí ann.
+    when "4-6-2-sample2"
+      | Dath na tine #[b breátha te].
+    when "4-6-2-sample3"
+      | Lasadh na tinte #[b breátha teo].
+    when "4-7-title"
+      | Achoimre ar Dhíochlaontaí na nAidiachtaí
+    when "Table4D-title"
+      | Ainmfhocal Firinscneach Uatha
+    when "Table4D-caption"
+      | Achoimre ar Dhíochlaontaí na hAidiachta &mdash; Firinscneach Uatha
+    when "Table4D-col1"
+      | Tuiseal
+    when "Table4D-col2"
+      | An Chéad Díochlaonadh
+    when "Table4D-col3"
+      | An Dara Díochlaonadh
+    when "Table4D-col4"
+      | An Triú Díochlaonadh
+    when "Table4D-case1"
+      | Ainmneach
+    when "Table4D-case2"
+      | Gairmeach
+    when "Table4D-case3"
+      | Tabharthach
+    when "Table4D-case4"
+      | Ginideach
+    when "Table4D-footnote"
+      | *Ach féach 1.7 Córas an tSéimhithe
+    when "Table4E-title"
+      | Ainmfhocal Baininscneach Uatha
+    when "Table4E-caption"
+      | Achoimre ar Dhíochlaontaí na hAidiachta &mdash; Baininscneach Uatha
+    when "Table4F-title"
+      | Ainmfhocal Firinscneach Iolra
+    when "Table4F-caption"
+      | Achoimre ar Dhíochlaontaí na hAidiachta &mdash; Firinscneach Iolra
+    when "Table4G-title"
+      | Ainmfhocal Baininscneach Iolra
+    when "Table4G-caption"
+      | Achoimre ar Dhíochlaontaí na hAidiachta &mdash; Baininscneach Iolra
+    when "4-8-title"
+      | Céimeanna Comparáide na hAidiachta
+    when "4-8-1-a-p"
+      | Is gnách gurb ionann foirm do bhreischéim agus do shárchéim aidiachta agus don ghinideach uatha baininscneach, e.g., #[i ard], #[i airde]; #[i breá], #[i breátha]; #[i cóir], #[i córa]; #[i dathúil], #[i dathúla]; #[i deacair], #[i deacra]; #[i díreach], #[i dírí].
+    when "4-8-1-a-p-sample1"
+      | Faigh an luach is #[b airde] air.
+    when "4-8-1-a-p-sample2"
+      | Is í Ciara an cailín is #[b dathúla] sa rang.
+    when "4-8-1-a-p-sample3"
+      | An rud is #[b deacra] faoin bhfilíocht, a léamh mar is cóir.
+    when "4-8-1-b-p"
+      | Is ionann freisin foirm do bhreischéim agus do shárchéim aidiachta agus don ghinideach uatha baininscneach i gcás aidiachtaí a chríochnaíonn ar #[i -íoch], e.g., #[i buíoch], #[i buíche]; #[i débhríoch], #[i débhríche]; #[i imníoch], #[i imníche]; #[i impíoch], #[i impíche]; #[i taithíoch], #[i taithíche]; #[i uathoibríoch], #[i uathoibríche].
+    when "4-8-1-b-p-sample1"
+      | Is iadsan na daoine is #[b imníche] sa tír.
+    when "4-8-1-b-p-sample2"
+      | Is eisean is #[b taithíche] ar an obair seo.
+    when "4-8-1-b-p-sample3"
+      | Cuirfear an córas is #[b uathoibríche] i bhfeidhm.
+    when "4-8-2-p"
+      | Tá foirmeacha neamhrialta ar roinnt aidiachtaí, e.g., #[i beag], #[i lú]; #[i dócha], #[i dóichí]; #[i fada], #[i faide (sia)]; #[i fogas], #[i foisce]; #[i furasta], #[i fusa]; #[i gearr], #[i giorra]; #[i iomaí], #[i lia]; #[i maith], #[i fearr]; #[i mór], #[i mó]; #[i olc], #[i measa]; #[i te], #[i teo].
+    when "4-8-2-p-sample1"
+      | Is é Rónán an duine is #[b fearr] sa rang.
+    when "4-8-2-p-sample2"
+      | Is í an chuimhne is #[b faide] (is #[b sia]) siar i mo cheann í.
+    when "4-8-2-p-sample3"
+      | Cé acu ceann is #[b mó]?
+    when "4-8-3-title"
+      | Foirmeacha ar lorg #[i dá] agus #[i a]
+    when "4-8-3-a-p"
+      | I ndiaidh #[i dá] agus #[i a], is cuma feidhm réamhthagrach nó feidhm iarthagrach a bheith acu, is gnách go n&#x2011;úsáidtear foirm is ionann agus foirm na breischéime den aidiacht nó foirm a dhíorthaíonn ón mbreischéim nó ón mbunchéim agus a chríochnaíonn ar #[i -cht].
+    when "4-8-3-b-p"
+      | Ní úsáidtear ach foirm amháin i gcás na n&#x2011;aidiachtaí seo a leanas: #[i dócha], #[i dóichí]; #[i dona], #[i donacht]; #[i furasta], #[i fusacht]; #[i gearr], #[i giorracht]; agus i gcás na leaganacha neamhrialta seo: #[i beag], #[i laghad]; #[i fada], #[i fad]; #[i iomaí], #[i liacht]; #[i maith], #[i feabhas]; #[i mór], #[i méad/méid]; #[i olc], #[i olcas]; #[i tiubh], #[i tiús].
+    when "4-8-3-c-p"
+      | Úsáidtear #[i méid] seachas #[i méad] i gcásanna áirithe, e.g., #[i dá mhéad airgead a bhí aici] ach #[i a mhéid is indéanta le réasún]; #[i a mhéid is gá].
+    when "4-8-3-c-p-sample1"
+      | B&rsquo;aoibhinn liom #[b a áille] (a bhinne, a chruinne, a líofa, a réidhe, a shoiléire) a labhair sí.
+    when "4-8-3-c-p-sample2"
+      | Ní chreidfeá #[b a achrannaí] (a dhonacht, a olcas, a shleamhaine, a uaigní) a bhí an áit.
+    when "4-8-3-c-p-sample3"
+      | Fuair sé ardmholadh #[b trína fheabhas] a rinne sé an obair.
+    when "4-8-3-c-p-sample4"
+      | #[b Dá chríonna] (dá chróga, dá fheabhas, dá ghlice, dá oilte) é, níor éirigh an gnó leis.
+    when "4-8-3-c-p-sample5"
+      | #[b Dá dhonacht] (dá ghránna, dá leisciúla, dá olcas, dá shuaraí) é, caithfear glacadh leis.
+    when "4-8-3-c-p-sample6"
+      | #[b Dá mhéad] dúil a bhí aici ann, níor cheannaigh sí sa deireadh é.
+    when "4-9-title"
+      | An Aidiacht Shealbhach
+    when "4-9-p"
+      | De bhrí go bhfeidhmíonn na haidiachtaí sealbhacha, #[i mo], #[i do], #[i a] (firinscneach agus baininscneach uatha), #[i ár], #[i bhur] agus #[i a] (iolra) mar fhorainmneacha sa ghinideach, déantar trácht orthu i #[+link("./chapter8.html", "gCaibidil 8")].
+    when "4-10-title"
+      | An Aidiacht Thaispeántach
+    when "4-10-p"
+      | Is iad #[i seo], #[i sin], #[i siúd] agus #[i úd] na haidiachtaí taispeántacha. (Cé gur forainmnigh thaispeántacha iad #[i seo], #[i sin] agus #[i siúd], is minic a dhéantar tagairt dóibh mar aidiachtaí taispeántacha.)
+    when "4-10-p-sample1"
+      | Tá an fear #[b seo] tinn.
+    when "4-10-p-sample2"
+      | Beidh an buachaill #[b seo] ag teacht liom.
+    when "4-10-p-sample3"
+      | Is liomsa iad #[b seo].
+    when "4-10-p-sample4"
+      | Níl an doras #[b sin] dúnta.
+    when "4-10-p-sample5"
+      | Síle is ainm don chailín #[b sin].
+    when "4-10-p-sample6"
+      | Díoladh a theach #[b siúd] inné.
+    when "4-10-p-sample7"
+      | Is aige #[b siúd] a bhí an t&#x2011;airgead.
+    when "4-10-p-sample8"
+      | An bhfeiceann tú an pháirc #[b úd] thall?
+    when "4-11-title"
+      | An Aidiacht Fhaisnéiseach
+    when "4-11-p"
+      | Is aidiacht fhaisnéiseach aidiacht atá ag cáiliú an ainmní mar fhaisnéis nó mar chuid den fhaisnéis, e.g., #[i Nach deas é?]; #[i Tá an aimsir fuar]. Ní dhéantar an aidiacht fhaisnéiseach a infhilleadh ná ní chuirtear séimhiú uirthi.
+    when "4-11-p-sample1"
+      | Bhí an traein #[b folamh].
+    when "4-11-p-sample2"
+      | Bíonn na busanna #[b déanach].
+    when "4-11-p-sample3"
+      | An bhfuil an bhean sin #[b saibhir]?
+    when "4-11-p-sample4"
+      | Beidh an bhainis sin #[b mór].
+    when "4-12-title"
+      | An Aidiacht Bhriathartha
+    when "4-12-1-p"
+      | Feidhmíonn an aidiacht bhriathartha mar ghnáthaidiacht. Úsáidtear an aidiacht bhriathartha &mdash;
+    when "4-12-1-a-p"
+      | mar aidiacht cháilíochta, e.g., #[i Is bean phósta í];
+    when "4-12-1-b-p"
+      | mar aidiacht fhaisnéiseach ar lorg na copaile, e.g., #[i Ní briste atá sé];
+    when "4-12-1-c-p"
+      | mar aidiacht fhaisnéiseach ar lorg an bhriathair #[i bí] ag léiriú staid an chuspóra tar éis an ghnímh, e.g., #[i Is í atá tugtha don obair];
+    when "4-12-1-d-p"
+      | mar aidiacht fhaisnéiseach ar lorg an bhriathair #[i bí] ag léiriú staid an ghníomhaí tar éis an ghnímh, e.g., #[i Táimid beirthe go maith leis an socrú sin].
+    default
+      - throw new Error(`No content for ${key} (ga.pug)`)

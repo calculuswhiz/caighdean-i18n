@@ -1,8 +1,8 @@
 include ../../tlMatter.pug
 
-if docLang === 'EN'
+if docLang === "EN"
   mixin tl(tlText)
-    +inlineTl('EN', tlText)
+    +inlineTl("EN", tlText)
 
   mixin tlDb(key)
     case key
@@ -267,7 +267,7 @@ if docLang === 'EN'
       when "Table1B-caption"
         | #[+tlDb("1-4-title")] &mdash; #[+tlDb("1-4-1-topic")]
       when "Table1B-header"
-        | #[+renderKey('CoreSystem')] &mdash; #[+tlDb("1-4-1-topic")]
+        | #[+renderKey("CoreSystem")] &mdash; #[+tlDb("1-4-1-topic")]
       when "Table1B-note"
         | #[i BUT where] f #[i precedes a vowel:]
       when "1-4-2-p"
@@ -275,9 +275,9 @@ if docLang === 'EN'
       when "1-4-2-topic"
         | Nouns Starting with #[i s]
       when "Table1C-header"
-        | #[+renderKey('CoreSystem')] &mdash; #[+tlDb("1-4-2-topic")]
+        | #[+renderKey("CoreSystem")] &mdash; #[+tlDb("1-4-2-topic")]
       when "Table1C-caption"
-        | #[+renderKey('CoreSystem')] &mdash; #[+tlDb("1-4-2-topic")]
+        | #[+renderKey("CoreSystem")] &mdash; #[+tlDb("1-4-2-topic")]
       when "Table1C-col2-subheader"
         | #[i t] is put before the #[i s], other than for #[i sc-], #[i sf-], #[i sm-], #[i sp-], #[i st-] or #[i sv-]
       when "1-4-3-p"
@@ -285,7 +285,7 @@ if docLang === 'EN'
       when "1-4-3-topic"
         | Nouns Starting with Vowels
       when "Table1D-header"
-        | #[+renderKey('CoreSystem')] &mdash; #[+tlDb("1-4-3-topic")]
+        | #[+renderKey("CoreSystem")] &mdash; #[+tlDb("1-4-3-topic")]
       when "Table1D-caption"
         | #[+tlDb("1-4-title")] &mdash; #[+tlDb("1-4-3-topic")]
       when "1-4-4-p"
@@ -293,7 +293,7 @@ if docLang === 'EN'
       when "1-4-4-topic"
         | Nouns Starting with #[i d] and #[i t]
       when "Table1E-header"
-        | #[+renderKey('CoreSystem')] &mdash; #[+tlDb("1-4-4-topic")]
+        | #[+renderKey("CoreSystem")] &mdash; #[+tlDb("1-4-4-topic")]
       when "Table1E-caption"
         | #[+tlDb("1-4-title")] &mdash; #[+tlDb("1-4-4-topic")]
       when "1-4-4-NB-p1"

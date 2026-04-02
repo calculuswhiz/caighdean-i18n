@@ -22,9 +22,13 @@ include tables.pug`, 'utf-8');
   const dbsPath = path.join(chapterPath, 'dbs');
   const enDbPath = path.join(dbsPath, 'en.pug');
   await fs.writeFile(enDbPath, `include ../../tlMatter.pug
-if docLang === 'EN'
+if docLang === "EN"
   mixin tl(tlText)
-    +inlineTl('EN', tlText)
+    if tlText != null
+      +inlineTl("EN", tlText)
+    else
+      +inlineTl("EN")
+        block
     
   mixin tlDb(key)
     case key

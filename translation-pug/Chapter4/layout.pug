@@ -1,0 +1,271 @@
+include ../bodyMatter.pug
+include ./dbs/index.pug
+include tables.pug
+
++chapterTemplate(4)
+  +hx(2, "4.1", "4-1-title")
+    +hx(3, "4.1.1")
+      p: +renderKey("4-1-1-p")
+    +hx(3, "4.1.2")
+      p: +renderKey("4-1-2-p")
+    +hx(3, "4.1.3")
+      p: +renderKey("4-1-3-p")
+  hr
+
+  +hx(2, "4.2", "4-2-title")
+    +hx(3, "4.2.1")
+      p: +renderKey("4-2-1-p")
+      +sampleBox("4-2-1-p-sample", 4)
+    +hx(3, "4.2.2")
+      ol(class="list-[lower-alpha]")
+        li#sec_4_2_2_a
+          p: +renderKey("4-2-2-a-p")
+          ol(class="list-[lower-roman]")
+            li#sec_4_2_2_a_i
+              p: +renderKey("4-2-2-a-i-p")
+            li#sec_4_2_2_a_ii
+              p: +renderKey("4-2-2-a-ii-p")
+        li#sec_4_2_2_b
+          p: +renderKey("4-2-2-b-p")
+    +hx(3, "4.2.3")
+      p: +renderKey("4-2-3-p")
+    +hx(3, "4.2.4", "4-2-4-title")
+      p: +renderKey("4-2-4-p")
+      +Table4A
+      p *#[+renderKey("Table4A-footnote")]
+    +hx(3, "4.2.5", "4-2-5-title")
+      p: +renderKey("4-2-5-p")
+      +Table4B
+  hr
+
+  +hx(2, "4.3", "4-3-title")
+    +hx(3, "4.3.1")
+      p: +renderKey("4-3-1-p")
+    +hx(3, "4.3.2")
+      p: +renderKey("4-3-2-p")
+      ol(class="list-[lower-alpha]")
+        li#sec_4_3_2_a
+          p: +renderKey("4-3-2-a-p")
+          table.samplebox
+            colgroup
+              col(class="w-1/3")
+              col(class="w-1/3")
+              col(class="w-1/3")
+            tbody
+              tr
+                td: i: +renderKey("4-3-2-a-sample-row1")
+                if docLang === 'GA'
+                  td: +renderKey("4-3-2-a-sample1")
+                else
+                  td: +renderKey("4-3-2-a-sample1", { getFromGa: true })
+                  td: +renderKey("4-3-2-a-sample1")
+              tr
+                td: i: +renderKey("4-3-2-a-sample-row2")
+                if docLang === 'GA'
+                  td: +renderKey("4-3-2-a-sample2")
+                else
+                  td: +renderKey("4-3-2-a-sample2", { getFromGa: true })
+                  td: +renderKey("4-3-2-a-sample2")
+        li#sec_4_3_2_b
+          p: +renderKey("4-3-2-b-p")
+          table.samplebox
+            colgroup
+              col(class="w-1/3")
+              col(class="w-1/3")
+            tbody
+              tr
+                td: i: +renderKey("4-3-2-b-sample-row1")
+                if docLang === 'GA'
+                  td: +renderKey("4-3-2-b-sample1")
+                else
+                  td: +renderKey("4-3-2-b-sample1", { getFromGa: true })
+                  td: +renderKey("4-3-2-b-sample1")
+              tr
+                td: i: +renderKey("4-3-2-b-sample-row2")
+                if docLang === 'GA'
+                  td: +renderKey("4-3-2-b-sample2")
+                else
+                  td: +renderKey("4-3-2-b-sample2", { getFromGa: true })
+                  td: +renderKey("4-3-2-b-sample2")
+    +hx(3, "4.3.3")
+      ol(class="list-[lower-alpha]")
+        li#sec_4_3_3_a
+          p: +renderKey("4-3-3-a-p")
+          +sampleBox("4-3-3-a-p-sample", 4)
+        li#sec_4_3_3_b
+          p: +renderKey("4-3-3-b-p")
+          +sampleBox("4-3-3-b-p-sample", 2)
+    +hx(3, "4.3.4")
+      p: +renderKey("4-3-4-p")
+    +hx(3, "4.3.5")
+      p: +renderKey("4-3-5-p")
+      +sampleBox("4-3-5-p-sample", 6)
+    +hx(3, "4.3.6")
+      p: +renderKey("4-3-6-p")
+      +sampleBox("4-3-6-p-sample", 3)
+    +hx(3, "4.3.7")
+      p: +renderKey("4-3-7-p")
+      +sampleBox("4-3-7-p-sample", 2)
+    +hx(3, "4.3.8")
+      p: +renderKey("4-3-8-p")
+  hr
+
+  +hx(2, "4.4", "4-4-title")
+    p: +renderKey("4-4-p")
+    +hx(3, "4.4.1", "4-4-1-title")
+      ol(class="list-[lower-alpha]")
+        li#sec_4_4_1_a
+          p: b: +renderKey("4-4-1-a-title")
+          ol(class="list-[lower-roman]")
+            li#sec_4_4_1_a_i
+              p: +renderKey("4-4-1-a-i-p")
+              +sampleBox("4-4-1-a-i-p-sample", 3)
+            li#sec_4_4_1_a_ii
+              p: +renderKey("4-4-1-a-ii-p")
+              +sampleBox("4-4-1-a-ii-p-sample", 3)
+            li#sec_4_4_1_a_iii
+              p: +renderKey("4-4-1-a-iii-p")
+              +sampleBox("4-4-1-a-iii-p-sample", 2)
+            li#sec_4_4_1_a_iv
+              p: +renderKey("4-4-1-a-iv-p")
+              +sampleBox("4-4-1-a-iv-p-sample", 3)
+            li#sec_4_4_1_a_v
+              p: +renderKey("4-4-1-a-v-p")
+              +sampleBox("4-4-1-a-v-p-sample", 2)
+        li#sec_4_4_1_b
+          p: b: +renderKey("4-4-1-b-title")
+          ol(class="list-[lower-roman]")
+            li#sec_4_4_1_b_i
+              p: +renderKey("4-4-1-b-i-p")
+              +sampleBox("4-4-1-b-i-p-sample", 2)
+            li#sec_4_4_1_b_ii
+              p: +renderKey("4-4-1-b-ii-p")
+              +sampleBox("4-4-1-b-ii-p-sample", 2)
+            li#sec_4_4_1_b_iii
+              p: +renderKey("4-4-1-b-iii-p")
+              +sampleBox("4-4-1-b-iii-p-sample", 2)
+            li#sec_4_4_1_b_iv
+              p: +renderKey("4-4-1-b-iv-p")
+    +hx(3, "4.4.2", "4-4-2-title")
+      p: +renderKey("4-4-2-p")
+    +hx(3, "4.4.3", "4-4-3-title")
+      p: +renderKey("4-4-3-p")
+      +sampleBox("4-4-3-p-sample", 3)
+    +hx(3, "4.4.4", "4-4-4-title")
+      p: +renderKey("4-4-4-p")
+      +Table4C
+  hr
+
+  +hx(2, "4.5", "4-5-title")
+    p: +renderKey("4-5-p")
+    +hx(3, "4.5.1", "4-5-1-title")
+      ol(class="list-[lower-alpha]")
+        li#sec_4_5_1_a
+          p: b: +renderKey("Firinscneach", { getFromCommon: true })
+          p: +renderKey("4-5-1-a-p")
+          +sampleBox("4-5-1-a-p-sample", 2)
+        li#sec_4_5_1_b
+          p: b: +renderKey("Baininscneach", { getFromCommon: true })
+          p: +renderKey("4-5-1-b-p")
+          +sampleBox("4-5-1-b-p-sample", 2)
+    +hx(3, "4.5.2", "4-5-2-title")
+      ol(class="list-[lower-alpha]")
+        li#sec_4_5_2_a
+          p: +renderKey("4-5-2-a-p")
+          +sampleBox("4-5-2-a-p-sample", 2)
+        li#sec_4_5_2_b
+          p: +renderKey("4-5-2-b-p")
+  hr
+
+  +hx(2, "4.6", "4-6-title")
+    +hx(3, "4.6.1")
+      p: +renderKey("4-6-1-p")
+    +hx(3, "4.6.2")
+      p: +renderKey("4-6-2-p")
+      table.samplebox
+        colgroup
+          col(class="w-1/3")
+          col(class="w-1/3")
+          col(class="w-1/3")
+        tbody
+          tr
+            td: i: +renderKey("4-6-2-sample-row1")
+            if docLang === 'GA'
+              td: +renderKey("4-6-2-sample1")
+            else
+              td: +renderKey("4-6-2-sample1", { getFromGa: true })
+              td: +renderKey("4-6-2-sample1")
+          tr
+            td: i: +renderKey("4-6-2-sample-row2")
+            if docLang === 'GA'
+              td: +renderKey("4-6-2-sample2")
+            else
+              td: +renderKey("4-6-2-sample2", { getFromGa: true })
+              td: +renderKey("4-6-2-sample2")
+          tr
+            td: i: +renderKey("4-6-2-sample-row3")
+            if docLang === 'GA'
+              td: +renderKey("4-6-2-sample3")
+            else
+              td: +renderKey("4-6-2-sample3", { getFromGa: true })
+              td: +renderKey("4-6-2-sample3")
+  hr
+
+  +hx(2, "4.7", "4-7-title")
+    +Table4D
+    p *#[+renderKey("Table4D-footnote")]
+    +Table4E
+    +Table4F
+    +Table4G
+  hr
+
+  +hx(2, "4.8", "4-8-title")
+    +hx(3, "4.8.1")
+      ol(class="list-[lower-alpha]")
+        li#sec_4_8_1_a
+          p: +renderKey("4-8-1-a-p")
+          +sampleBox("4-8-1-a-p-sample", 3)
+        li#sec_4_8_1_b
+          p: +renderKey("4-8-1-b-p")
+          +sampleBox("4-8-1-b-p-sample", 3)
+    +hx(3, "4.8.2")
+      p: +renderKey("4-8-2-p")
+      +sampleBox("4-8-2-p-sample", 3)
+    +hx(3, "4.8.3", "4-8-3-title")
+      ol(class="list-[lower-alpha]")
+        li#sec_4_8_3_a
+          p: +renderKey("4-8-3-a-p")
+        li#sec_4_8_3_b
+          p: +renderKey("4-8-3-b-p")
+        li#sec_4_8_3_c
+          p: +renderKey("4-8-3-c-p")
+      +sampleBox("4-8-3-c-p-sample", 6)
+  hr
+
+  +hx(2, "4.9", "4-9-title")
+    p: +renderKey("4-9-p")
+  hr
+
+  +hx(2, "4.10", "4-10-title")
+    p: +renderKey("4-10-p")
+    +sampleBox("4-10-p-sample", 8)
+  hr
+
+  +hx(2, "4.11", "4-11-title")
+    p: +renderKey("4-11-p")
+    +sampleBox("4-11-p-sample", 4)
+  hr
+
+  +hx(2, "4.12", "4-12-title")
+    +hx(3, "4.12.1")
+      p: +renderKey("4-12-1-p")
+      ol(class="list-[lower-alpha]")
+        li#sec_4_12_1_a
+          p: +renderKey("4-12-1-a-p")
+        li#sec_4_12_1_b
+          p: +renderKey("4-12-1-b-p")
+        li#sec_4_12_1_c
+          p: +renderKey("4-12-1-c-p")
+        li#sec_4_12_1_d
+          p: +renderKey("4-12-1-d-p")
+  hr

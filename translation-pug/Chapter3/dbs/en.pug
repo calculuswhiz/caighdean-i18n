@@ -1,10 +1,10 @@
 include ../../tlMatter.pug
-if docLang === 'EN'
+if docLang === "EN"
   mixin tl(tlText)
     if tlText != null
-      +inlineTl('EN', tlText)
+      +inlineTl("EN", tlText)
     else
-      +inlineTl('EN')
+      +inlineTl("EN")
         block
     
   mixin tlDb(key)
