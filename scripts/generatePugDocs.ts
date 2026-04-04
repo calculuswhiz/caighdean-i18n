@@ -2,12 +2,19 @@ import * as pug from 'pug';
 import * as fs from 'fs/promises';
 import * as path from 'path';
 
-/* TODO dev flag
-   TODO watch/all flags
-   TODO Add ids to lists (may do this in pug files)
-*/
+// TODO Build mode script
 
 const translationRoot = "./translation-pug";
+const devMode = process.argv.includes("--dev");
+
+function render(layoutPath: string, lang: string) {
+  const options = {
+    docLang: lang,
+    pretty: true,
+    rootRef: devMode ? "/" : "/caighdean-i18n/"
+  };
+  return pug.renderFile(layoutPath, options);
+}
 
 /** Scan chapters and languages, compile Pug files, and write to entrypoints. */
 async function generatePugDocs() {
@@ -15,8 +22,13 @@ async function generatePugDocs() {
     console.log("Watching for changes...");
     const watcher = fs.watch(translationRoot, { recursive: true });
     for await (const event of watcher) {
-      if (event.filename == null || !event.filename.endsWith(".pug"))
+      if (
+        event.filename == null
+        || !event.filename.endsWith(".pug")
+        // Ignore db files
+        || path.dirname(event.filename).endsWith("dbs")) {
         continue;
+      }
 
       console.log(`File changed: ${event.filename}`);
 
@@ -35,7 +47,7 @@ async function generatePugDocs() {
         const layoutPath = path.join(translationRoot, chapterFolder, "layout.pug");
         // console.log(layoutPath);
         try {
-          const result = pug.renderFile(layoutPath, { docLang: lang, pretty: true });
+          const result = render(layoutPath, lang);
           await fs.writeFile(
             `./entrypoints/${lang}/${chapterFolder.toLocaleLowerCase()}-pug.html`,
             result,
@@ -63,7 +75,7 @@ async function generatePugDocs() {
       for (const lang of availableLangs) {
         const layoutPath = path.join(translationRoot, chapterFolder.name, "layout.pug");
         // console.log(layoutPath);
-        const result = pug.renderFile(layoutPath, { docLang: lang, pretty: true });
+        const result = render(layoutPath, lang);
         await fs.writeFile(
           `./entrypoints/${lang}/${chapterFolder.name.toLocaleLowerCase()}-pug.html`,
           result,

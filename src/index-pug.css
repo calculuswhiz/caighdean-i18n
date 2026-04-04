@@ -232,10 +232,6 @@
     @apply bg-white;
   }
 
-  .compass-block > div {
-    @apply flex flex-row mx-[15%];
-  }
-
   .chapter-7 {
     & thead tr:first-child th {
       @apply bg-pink-600 text-white;

@@ -1,0 +1,253 @@
+include ../../tlMatter.pug
+if docLang === "EN"
+  mixin tl(tlText)
+    if tlText != null
+      +inlineTl("EN", tlText)
+    else
+      +inlineTl("EN")
+        block
+    
+  mixin tlDb(key)
+    case key
+      when "teidealNaCaibidle"
+        | The Adverb
+      when "6-1-title"
+        | Main Types of Adverbs
+      when "6-title"
+        | #[+renderKey("Caibidil", { getFromCommon: true })] 6 | #[+renderKey("teidealNaCaibidle")]
+      when "6-1-1-p1"
+        | The adverb is used to qualify a verb, verbal noun, adjective, preposition, conjunction or another adverb.
+      when "6-1-1-p2"
+        | The following are the main types of adverbs according to function &mdash;
+      when "6-1-1-a-p"
+        | #[b adverb of manner], e.g., #[i amhlaidh] #[+tl thus], #[i ar chor ar bith] #[+tl at all], #[i go breá] #[+tl well], #[i go dona] #[+tl badly], #[i go hard] #[+tl loudly], #[i freisin] #[+tl also], #[i os íseal] (#[b EN]: #[i lowly] i.e. #[i whispering]):
+      when "6-1-1-a-SampleBox-eg1"
+        | She walked #[b slowly].
+      when "6-1-1-a-SampleBox-eg2"
+        | She is saying it #[b lowly].
+      when "6-1-1-b-p"
+        | #[b adverbs of time and frequency], e.g., #[i amárach] #[+tl tomorrow], #[i anois] #[+tl now], #[i arís] #[+tl again], #[i arú inné] #[+tl the day before yesterday], #[i choíche] #[+tl ever], #[i Dé Sathairn] #[+tl on Saturday], #[i go hannamh] #[+tl rarely], #[i go minic] #[+tl often], #[i go míosúil] #[+tl monthly], #[i inné] #[+tl yesterday], #[i riamh] #[+tl never]:
+      when "6-1-1-b-SampleBox-eg1"
+        | She will be here #[b tomorrow].
+      when "6-1-1-b-SampleBox-eg2"
+        | I #[b rarely] see them now.
+      when "6-1-1-c-p"
+        | #[b adverbs of place and direction], e.g., #[i abhaile] #[+tl home], #[i abhus] #[+tl here], #[i amach] #[+tl out], #[i amú] #[+tl in vain], #[i amuigh] #[+tl outside], #[i ann] #[+tl there], #[i anseo] #[+tl here], #[i ansin] #[+tl then], #[i isteach] #[+tl inside], #[i ó thuaidh] #[+tl northwards], #[i siar] #[+tl westwards], #[i soir] #[+tl eastwards]:
+      when "6-1-1-c-SampleBox-eg1"
+        | I didn&rsquo;t see her #[b there].
+      when "6-1-1-c-SampleBox-eg2"
+        | He went #[b out].
+      when "6-1-1-d-p"
+        | #[b interrogative adverb] (although these clauses are interrogative particles (see #[+link("./chapter8.html#sec_8_5", "8.5")]), they are often referred to as interrogative adverbs), e.g., #[i cá] #[+tl where] (#[i cá bhfuil], #[i cá háit]), #[i cad] #[+tl what] (#[i cad a…], #[i cad as], #[i cad chuige], #[i cad é], #[i cad é mar]), #[i cathain] #[+tl when] (#[i cathain a…]), #[i céard] #[+tl what] (#[i céard a…], #[i céard é]), #[i cén] #[+tl which] (#[i cén chaoi], #[i cén uair]), #[i conas] #[+tl how] (#[i conas a…]):
+      when "6-1-1-d-SampleBox-eg1"
+        | #[b Where] shall we go?
+      when "6-1-1-d-SampleBox-eg2"
+        | #[b How] are you?
+      when "6-1-1-e-p"
+        | #[b adverb of quantity], e.g., #[i ar fad] #[+tl for the length of], #[i beagnach] #[+tl almost], #[i sách] #[+tl quite]:
+      when "6-1-1-e-SampleBox-eg1"
+        | It&rsquo;s not #[b quite] hot yet.
+      when "6-1-1-e-SampleBox-eg2"
+        | You were #[b almost] on time.
+      when "6-1-1-f-p1"
+        | #[b adverb of comparative degree], e.g., #[i níos], #[i ní ba] (#[b EN]: #[i more] or #[i -er]):
+      when "6-1-1-f-SampleBox-eg1"
+        | Seán is tall#[b ]er#[b ] than Mary.
+      when "6-1-1-f-SampleBox-eg2"
+        | They were whit#[b ]er#[b ] than snow.
+      when "6-1-1-f-p2"
+        | Note that #[i níos] can be used in all tenses but #[i ní b&rsquo;]/#[i ní ba] is only used in the past tense, the past habitual tense and the conditional mood. #[i ní b&rsquo;] is used before an adjective beginning with a vowel or #[i fh-] + #[i vowel], e.g., #[i Ba ghá dóibh dréimire níos fearr]/#[i ní b&rsquo;fhearr a fháil anuraidh] #[+tl it would have been better for them to get a ladder last year]; #[i Dá mbeinn bliain níos óige]/#[i ní b&rsquo;óige], #[i d&rsquo;imreoinn an cluiche] #[+tl If I were a year younger, I would play the game]; and #[i ní ba] is used before a consonant, e.g., #[i Bhí na braillíní níos gile]/#[i ní ba ghile ná an sneachta] #[+tl The sheets were whiter than the snow].
+      when "6-1-1-g-p"
+        | #[b emphatic adverb], e.g., #[i féin]:
+      when "6-1-1-g-SampleBox-eg1"
+        | If he was tired him#[b ]self#[b ], he went to the Oireachtas.
+      when "6-1-1-g-SampleBox-eg2"
+        | It is an important event; the President him#[b ]self#[b ] will be there.
+      when "6-1-1-h-p"
+        | #[b noun used as an adverb in measurement], e.g., #[i ar leithead]; #[i ar fad]:
+      when "6-1-1-h-SampleBox-eg1"
+        | The room was located six meters #[b in length].
+      when "6-1-1-h-SampleBox-eg2"
+        | The road is three meters #[b in width].
+      when "6-1-1-i-p"
+        | #[b adjective used as an adverb], e.g., #[i gann], #[i gearr]:
+      when "6-1-1-i-SampleBox-eg1"
+        | They were #[b short] a person.
+      when "6-1-1-i-SampleBox-eg2"
+        | We were #[b short] of milk.
+      when "6-1-1-j-p"
+        | #[b adverb used as an adjective], e.g., #[i amach], #[i aniar], #[i anuas], #[i isteach]:
+        | #[br]
+        | (#[b TL Note]: Similar constructions do not exist in English. These imply direction or origin. E.g. a literal translation of #[i fear amach] would be #[i outwardly man], but that is not idiomatic English. Translations here will just give the meaning without attempting to parallel.)
+      when "6-1-1-j-SampleBox-eg1"
+        | Do you see the man who went out?
+      when "6-1-1-j-SampleBox-eg2"
+        | Here comes the woman who came in.
+      when "6-1-1-j-SampleBox-eg3"
+        | The woman from the west is on TV.
+      when "6-1-1-j-SampleBox-eg4"
+        | There is a seepage from above in the bedroom.
+      when "6-1-1-j-SampleBox-eg5"
+        | Tomás is the man that married into the household.
+      when "6-1-1-j-SampleBox-eg6"
+        | The wind from the east tonight tonight and the rain is from the west.
+      when "6-1-1-k-p"
+        | #[b a noun or a verb based on an adverb], e.g., #[i ganfhiosaíocht], #[i istoícheadóireacht]:
+      when "6-1-1-k-SampleBox-eg1"
+        | The detective is #[b acting surreptitiously] to everyone. (#[b ganfhiosach] means "secret")
+      when "6-1-1-k-SampleBox-eg2"
+        | There is too much #[b night-activity] going on in this place. (#[b istoíche] - "at night" + #[b -adóireachta] - "activities")
+      when "6-2-title"
+        | Adverbs of Manner and Adverbs of Time and Frequency
+      when "6-2-p"
+        | For the adverbs of manner and the adverbs of time and frequency based on an adjective, in the following contexts #[i go] is not added &mdash;
+      when "6-2-a-p"
+        | in the comparative degree:
+      when "6-2-a-SampleBox-eg1-left"
+        | carefully
+      when "6-2-a-SampleBox-eg1-right"
+        | Drive #[b more carefully] later.
+      when "6-2-a-SampleBox-eg2-left"
+        | loudly
+      when "6-2-a-SampleBox-eg2-right"
+        | Speak #[b louder] from now on.
+      when "6-2-b-p"
+        | if the adverb is being qualified by another adverb:
+      when "6-2-b-SampleBox-eg1-left"
+        | often
+      when "6-2-b-SampleBox-eg1-right"
+        | The system was not examined #[b often enough].
+      when "6-2-b-SampleBox-eg2-left"
+        | quickly
+      when "6-2-b-SampleBox-eg2-right"
+        | He drove #[b well and quickly].
+      when "6-2-c-p"
+        | if an adjectival adverb comes before the adverb:
+      when "6-2-c-SampleBox-eg1-left"
+        | smoothly
+      when "6-2-c-SampleBox-eg1-right"
+        | Do it #[b nicely and smoothly] now.
+      when "6-2-c-SampleBox-eg2-left"
+        | generously
+      when "6-2-c-SampleBox-eg2-right"
+        | The food was distributed #[b generously].
+      when "6-2-d-p"
+        | after the adverbs #[i cuibheasach] and #[i sách], if they are qualifying a word immediately following them:
+      when "6-2-d-SampleBox-eg1-left"
+        | severely
+      when "6-2-d-SampleBox-eg1-right"
+        | He worked #[b moderately hard].
+      when "6-2-d-SampleBox-eg2-left"
+        | well
+      when "6-2-d-SampleBox-eg2-right"
+        | She played #[b quite well].
+      when "6-3-title"
+        | Adverbs of Place and Direction
+      when "6-3-tables-col1"
+        | Movement towards the location
+      when "6-3-tables-col2"
+        | The location
+      when "6-3-tables-col3"
+        | Movement from the location
+      when "Table6A-caption"
+        | Adverbs of Place
+      when "Table6A-row1-suas-sample"
+        | #[i EN]: He&rsquo;s going #[b up] the stairs.
+      when "Table6A-row1-thuas"
+        | Above
+      when "Table6A-row1-thuas-sample"
+        | #[i EN]: He&rsquo;s #[b up] the stairs.
+      when "Table6A-row1-anuas-sample"
+        | #[i EN]: He&rsquo;s coming #[b from up] the stairs.
+      when "Table6A-row2-síos-sample"
+        | #[i EN]: She&rsquo;s going #[b down] the stairs.
+      when "Table6A-row2-thíos"
+        | Below
+      when "Table6A-row2-thíos-sample"
+        | #[i EN]: She&rsquo;s #[b down] the stairs.
+      when "Table6A-row2-aníos-sample"
+        | #[i EN]: She&rsquo;s coming #[b up] the stairs.
+      when "Table6A-row3-amach-sample-1"
+        | #[i EN]: Are you going #[b out] for the night?
+      when "Table6A-row3-amuigh"
+        | Outside
+      when "Table6A-row3-amuigh-sample"
+        | #[i EN]: I&rsquo;m #[b outside].
+      when "Table6A-row3-amach-sample-2"
+        | #[i EN]: She&rsquo;s coming #[b out] as far as you.
+      when "Table6A-row4-isteach-sample-1"
+        | #[i EN]: Are you going #[b in] the house?
+      when "Table6A-row4-istigh"
+        | Inside
+      when "Table6A-row4-istigh-sample"
+        | #[i EN]: The accident happened #[b inside] the house.
+      when "Table6A-row4-isteach-sample-2"
+        | #[i EN]: Come #[b in] to me!
+      when "Table6B-caption"
+        | Adverbs of Direction
+      when "Table6B-row1-ó thuaidh-sample"
+        | #[i EN]: We will go #[b north] tomorrow.
+      when "Table6B-row1-ó thuaidh/thuaidh"
+        | North
+      when "Table6B-row1-ó thuaidh/thuaidh-sample"
+        | #[i EN]: That shop is on the #[b north] side of the county.
+      when "Table6B-row1-aduaidh-sample"
+        | #[i EN]: They came #[b from the north] yesterday.
+      when "Table6B-row2-ó dheas-sample"
+        | #[i EN]: He went #[b south] this morning.
+      when "Table6B-row2-ó dheas/theas"
+        | South
+      when "Table6B-row2-ó dheas/theas-sample"
+        | #[i EN]: They have a house on the #[b south] coast.
+      when "Table6B-row2-aneas-sample"
+        | #[i EN]: She is coming #[b south] at present.
+      when "Table6B-row3-soir-sample"
+        | #[i EN]: Did you go #[b east] to them?
+      when "Table6B-row3-thoir"
+        | East
+      when "Table6B-row3-thoir-sample"
+        | #[i EN]: They went, but there was no one #[b east].
+      when "Table6B-row3-anoir-sample"
+        | #[i EN]: I had to come #[b east] again.
+      when "Table6B-row4-siar-sample"
+        | #[i EN]: Are you going #[b west] tonight?
+      when "Table6B-row4-thiar"
+        | West
+      when "Table6B-row4-thiar-sample"
+        | #[i EN]: Were you #[b west] last night?
+      when "Table6B-row4-aniar-sample"
+        | #[i EN]: Will they be coming #[b west] on a visit?
+      when "Table6B-row5-anonn/sall-sample"
+        | #[i EN]: Did Áine go #[b over] to England yesterday?
+      when "Table6B-row5-thall"
+        | Over (e.g. there)
+      when "Table6B-row5-thall-sample"
+        | #[i EN]: She went, she is #[b over] for a week.
+      when "Table6B-row5-anall-sample"
+        | #[i EN]: When will she be coming #[b over] again?
+      when "6-4-title"
+        | Points on the Compass
+      when "6-4-p1"
+        | In order to distinguish between the directions, the main compass point is presented in the diagram below with the initial letter of the word:
+      when "6-4-p2"
+        | Below are the abbreviations for the sub-points associated with the quadrant of the compass above.
+      when "Table6C-caption"
+        | Points on the Compass
+      when "Table6C-col1"
+        | Abbreviation
+      when "Table6C-col2"
+        | Movement towards the location
+      when "Table6C-col3"
+        | The simple location
+      when "Table6C-col4"
+        | Movement from the location
+      when "CompassT"
+        | the north
+      when "CompassD"
+        | the south
+      when "CompassO"
+        | the east
+      when "CompassI"
+        | the west
+      default
+        - throw new Error(`No content for ${key} (en.pug)`)

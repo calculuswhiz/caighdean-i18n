@@ -1,0 +1,166 @@
+mixin AdverbExampleTable(prefix, count)
+  table.samplebox
+    colgroup
+      col(class="1/4")
+      col(class="1/8")
+      col(class="5/8")
+    tbody
+      each row in range(1, count)
+        tr
+          if docLang === 'GA'
+            td: +renderKey(`${prefix}${row}-left`)
+            td &rarr;
+            td: +renderKey(`${prefix}${row}-right`)
+          else
+            td
+              +renderKey(`${prefix}${row}-left`, { getFromGa: true })
+              | #[br]
+              | (#[i #[+renderKey(`${prefix}${row}-left`)]])
+            td &rarr;
+            td
+              +renderKey(`${prefix}${row}-right`, { getFromGa: true })
+              | #[br]
+              | (#[i #[+renderKey(`${prefix}${row}-right`)]])
+
+mixin sampleCell(prefix, contentKey, suffix = "")
+  td(class="align-top")
+    p: b #{contentKey}
+    if docLang === 'GA'
+      p: +renderKey(`${prefix}-${contentKey}-sample${suffix}`)
+    else
+      p: +renderKey(`${prefix}-${contentKey}-sample${suffix}`, { getFromGa: true })
+      | (#[i #[+renderKey(`${prefix}-${contentKey}-sample${suffix}`)]])
+
+mixin centerCell(prefix, contentKey, suffix = "")
+  td(class="align-top")
+    p
+      b #{contentKey}
+      if docLang !== 'GA'
+        | !{" "}&mdash; #[+renderKey(`${prefix}-${contentKey}`)]
+    if docLang === 'GA'
+      p: +renderKey(`${prefix}-${contentKey}-sample${suffix}`)
+    else
+      p: +renderKey(`${prefix}-${contentKey}-sample${suffix}`, { getFromGa: true })
+      | (#[i #[+renderKey(`${prefix}-${contentKey}-sample${suffix}`)]])
+
+mixin Table6A
+  +markedTable(6, "A", "Table6A-caption")
+    colgroup
+      col(class="w-1/3")
+      col(class="w-1/3")
+      col(class="w-1/3")
+    thead
+      tr
+        th: +renderKey("6-3-tables-col1")
+        th: +renderKey("6-3-tables-col2")
+        th: +renderKey("6-3-tables-col3")
+    tbody
+      tr 
+        +sampleCell("Table6A-row1", "suas")
+        +centerCell("Table6A-row1", "thuas")
+        +sampleCell("Table6A-row1", "anuas")
+      tr
+        +sampleCell("Table6A-row2", "síos")
+        +centerCell("Table6A-row2", "thíos")
+        +sampleCell("Table6A-row2", "aníos")
+      tr 
+        +sampleCell("Table6A-row3", "amach", "-1")
+        +centerCell("Table6A-row3", "amuigh")
+        +sampleCell("Table6A-row3", "amach", "-2")
+      tr
+        +sampleCell("Table6A-row4", "isteach", "-1")
+        +centerCell("Table6A-row4", "istigh")
+        +sampleCell("Table6A-row4", "isteach", "-2")
+
+mixin Table6B
+  +markedTable(6, "B", "Table6B-caption")
+    colgroup
+      col(class="w-1/3")
+      col(class="w-1/3")
+      col(class="w-1/3")
+    thead
+      tr
+        th: +renderKey("6-3-tables-col1")
+        th: +renderKey("6-3-tables-col2")
+        th: +renderKey("6-3-tables-col3")
+    tbody
+      tr
+        +sampleCell("Table6B-row1", "ó thuaidh")
+        +centerCell("Table6B-row1", "ó thuaidh/thuaidh")
+        +sampleCell("Table6B-row1", "aduaidh")
+      tr
+        +sampleCell("Table6B-row2", "ó dheas")
+        +centerCell("Table6B-row2", "ó dheas/theas")
+        +sampleCell("Table6B-row2", "aneas")
+      tr
+        +sampleCell("Table6B-row3", "soir")
+        +centerCell("Table6B-row3", "thoir")
+        +sampleCell("Table6B-row3", "anoir")
+      tr
+        +sampleCell("Table6B-row4", "siar")
+        +centerCell("Table6B-row4", "thiar")
+        +sampleCell("Table6B-row4", "aniar")
+      tr
+        +sampleCell("Table6B-row5", "anonn/sall")
+        +centerCell("Table6B-row5", "thall")
+        +sampleCell("Table6B-row5", "anall")
+
+mixin Table6C
+  +markedTable(6, "C", "Table6C-caption")
+    colgroup
+      col(class="w-1/10")
+      col(class="w-3/10")
+      col(class="w-3/10")
+      col(class="w-3/10")
+    thead
+      tr
+        th: +renderKey("Table6C-col1")
+        th: +renderKey("Table6C-col2")
+        th: +renderKey("Table6C-col3")
+        th: +renderKey("Table6C-col4")
+    tbody
+      tr
+        td #[b I]
+        td siar
+        td an t&#x2011;iarthar
+        td aniar
+      tr
+        td #[b ILD]
+        td siar lámh ó dheas
+        td thiar lámh theas
+        td aniar lámh aneas
+      tr
+        td #[b IID]
+        td siar siar ó dheas
+        td thiar thiar theas
+        td aniar aniar aneas
+      tr
+        td #[b IDLI]
+        td siar ó dheas lámh siar
+        td thiar theas lámh thiar
+        td aniar aneas lámh aniar
+      tr
+        td #[b ID]
+        td siar ó dheas
+        td thiar theas
+        td aniar aneas
+      tr
+        td #[b IDLD]
+        td siar ó dheas lámh ó dheas
+        td thiar theas lámh theas
+        td aniar aneas lámh aneas
+      tr
+        td #[b DID]
+        td ó dheas siar ó dheas
+        td theas thiar theas
+        td aneas aniar aneas
+      tr
+        td #[b DLI]
+        td ó dheas lámh siar
+        td theas lámh thiar
+        td aneas lámh aniar
+      tr
+        td #[b D]
+        td ó dheas
+        td an deisceart
+        td aneas

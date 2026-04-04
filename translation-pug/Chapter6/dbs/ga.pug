@@ -1,0 +1,218 @@
+include ../../tlMatter.pug
+
+mixin gaDb(key)
+  case key
+    when "teidealNaCaibidle"
+      | An Dobhriathar
+    when "6-1-title"
+      | Príomhchineálacha Dobhriathra
+    when "6-title"
+      | #[+renderKey("Caibidil", { getFromCommon: true })] 6 | #[+gaDb("teidealNaCaibidle")]
+    when "6-1-1-p1"
+      | Úsáidtear an dobhriathar mar cháiliú ar bhriathar, ainm briathartha, aidiacht, réamhfhocal, cónasc nó dobhriathar eile.
+    when "6-1-1-p2"
+      | Seo a leanas na príomhchineálacha dobhriathra de réir feidhme &mdash;
+    when "6-1-1-a-p"
+      | #[b dobhriathar modha], e.g., #[i amhlaidh], #[i ar chor ar bith], #[i go breá], #[i go dona], #[i go hard], #[i freisin], #[i os íseal]:
+    when "6-1-1-a-SampleBox-eg1"
+      | Shiúil sí #[b go mall].
+    when "6-1-1-a-SampleBox-eg2"
+      | Tá sí á rá #[b os íseal].
+    when "6-1-1-b-p"
+      | #[b dobhriathar ama agus minicíochta], e.g., #[i amárach], #[i anois], #[i arís], #[i arú inné], #[i choíche], #[i Dé Sathairn], #[i go hannamh], #[i go minic], #[i go míosúil], #[i inné], #[i riamh]:
+    when "6-1-1-b-SampleBox-eg1"
+      | Beidh sí anseo #[b amárach].
+    when "6-1-1-b-SampleBox-eg2"
+      | Is #[b annamh] a fheicim anois iad.
+    when "6-1-1-c-p"
+      | #[b dobhriathar áite agus treo], e.g., #[i abhaile], #[i abhus], #[i amach], #[i amú], #[i amuigh], #[i ann], #[i anseo], #[i ansin], #[i isteach], #[i ó thuaidh], #[i siar], #[i soir]:
+    when "6-1-1-c-SampleBox-eg1"
+      | Ní fhaca mé #[b ann] í.
+    when "6-1-1-c-SampleBox-eg2"
+      | D&rsquo;imigh sé #[b amach].
+    when "6-1-1-d-p"
+      | #[b dobhriathar ceisteach] (cé gur forainmnigh cheisteacha iad na míreanna seo (féach #[+link("./chapter8.html#sec_8_5", "8.5")]), is minic a dhéantar tagairt dóibh mar dhobhriathra ceisteacha), e.g., #[i cá] (#[i cá bhfuil], #[i cá háit]), #[i cad] (#[i cad a…], #[i cad as], #[i cad chuige], #[i cad é], #[i cad é mar]), #[i cathain] (#[i cathain a…]), #[i céard] (#[i céard a…], #[i céard é]), #[i cén] (#[i cén chaoi], #[i cén uair]), #[i conas] (#[i conas a…]):
+    when "6-1-1-d-SampleBox-eg1"
+      | #[b Cá] rachaimid?
+    when "6-1-1-d-SampleBox-eg2"
+      | #[b Cén chaoi] a bhfuil tú?
+    when "6-1-1-e-p"
+      | #[b dobhriathar cainníochta], e.g., #[i ar fad], #[i beagnach], #[i sách]:
+    when "6-1-1-e-SampleBox-eg1"
+      | Níl sé #[b sách] te fós.
+    when "6-1-1-e-SampleBox-eg2"
+      | Bhí sibh #[b beagnach] in am.
+    when "6-1-1-f-p1"
+      | #[b dobhriathar breischéime], e.g., #[i níos], #[i ní ba]:
+    when "6-1-1-f-SampleBox-eg1"
+      | Tá Seán #[b níos] airde ná Máire.
+    when "6-1-1-f-SampleBox-eg2"
+      | Bhí siad #[b ní ba] ghile ná an sneachta.
+    when "6-1-1-f-p2"
+      | Tabhair faoi deara gur féidir #[i níos] a úsáid sna haimsirí go léir ach nach n&#x2011;úsáidtear #[i ní b&rsquo;]/#[i ní ba] ach san aimsir chaite, san aimsir ghnáthchaite agus sa mhodh coinníollach. Déantar #[i ní b&rsquo; a úsáid roimh aidiacht dar tús guta nó _fh-] + #[i guta], e.g., #[i Ba ghá dóibh dréimire níos fearr]/#[i ní b&rsquo;_fhearr a fháil anuraidh]; #[i Dá mbeinn bliain níos óige]/#[i ní b&rsquo;óige], #[i d&rsquo;imreoinn an cluiche]; agus déantar #[i ní ba] a úsáid roimh chonsan, e.g., #[i Bhí na braillíní níos gile]/#[i ní ba ghile ná an sneachta].
+    when "6-1-1-g-p"
+      | #[b dobhriathar treise], e.g., #[i féin]:
+    when "6-1-1-g-SampleBox-eg1"
+      | Má bhí sé tuirseach #[b féin], chuaigh sé chuig an Oireachtas.
+    when "6-1-1-g-SampleBox-eg2"
+      | Is ócáid thábhachtach í; beidh an tUachtarán #[b féin] ann.
+    when "6-1-1-h-p"
+      | #[b ainmfhocal a úsáid go dobhriathartha i gcúrsaí tomhais], e.g., #[i ar leithead]; #[i ar fad]:
+    when "6-1-1-h-SampleBox-eg1"
+      | Bhí an seomra suite sé mhéadar #[b ar fad].
+    when "6-1-1-h-SampleBox-eg2"
+      | Tá an bóithrín trí mhéadar #[b ar leithead].
+    when "6-1-1-i-p"
+      | #[b aidiacht a úsáid go dobhriathartha], e.g., #[i gann], #[i gearr]:
+    when "6-1-1-i-SampleBox-eg1"
+      | Bhí siad duine #[b gearr].
+    when "6-1-1-i-SampleBox-eg2"
+      | Bhí muid #[b gann] i mbainne.
+    when "6-1-1-j-p"
+      | #[b dobhriathar a úsáid go haidiachtach], e.g., #[i amach], #[i aniar], #[i anuas], #[i isteach]:
+    when "6-1-1-j-SampleBox-eg1"
+      | An bhfeiceann tú an fear #[b amach]?
+    when "6-1-1-j-SampleBox-eg2"
+      | Seo chugainn an bhean #[b isteach].
+    when "6-1-1-j-SampleBox-eg3"
+      | Tá an bhean #[b aniar] ar an teilifís.
+    when "6-1-1-j-SampleBox-eg4"
+      | Tá braon #[b anuas] sa seomra codlata.
+    when "6-1-1-j-SampleBox-eg5"
+      | Is é Tomás an cliamhain #[b isteach].
+    when "6-1-1-j-SampleBox-eg6"
+      | Tá an ghaoth #[b anoir] is an fhearthainn #[b aniar] air.
+    when "6-1-1-k-p"
+      | #[b ainmfhocal nó ainm briathartha atá bunaithe ar dhobhriathar], e.g., #[i ganfhiosaíocht], #[i istoícheadóireacht]:
+    when "6-1-1-k-SampleBox-eg1"
+      | Tá an bleachtaire #[b ag ganfhiosaíocht] ar gach duine.
+    when "6-1-1-k-SampleBox-eg2"
+      | Tá an iomarca #[b istoícheadóireachta] ar siúl san áit seo.
+    when "6-2-title"
+      | Dobhriathra Modha agus Dobhriathra Ama agus Minicíochta
+    when "6-2-p"
+      | Maidir leis na dobhriathra modha agus na dobhriathra ama agus minicíochta atá bunaithe ar aidiacht, sna cásanna seo a leanas ní chuirtear #[i go] leo &mdash;
+    when "6-2-a-p"
+      | sa chéim chomparáide:
+    when "6-2-a-SampleBox-eg1-left"
+      | go cúramach
+    when "6-2-a-SampleBox-eg1-right"
+      | Tiomáin #[b níos cúramaí] amach anseo.
+    when "6-2-a-SampleBox-eg2-left"
+      | go hard
+    when "6-2-a-SampleBox-eg2-right"
+      | Labhair #[b níos airde] feasta.
+    when "6-2-b-p"
+      | má tá an dobhriathar á cháiliú le dobhriathar eile:
+    when "6-2-b-SampleBox-eg1-left"
+      | go minic
+    when "6-2-b-SampleBox-eg1-right"
+      | Níor scrúdaíodh an córas #[b minic go leor].
+    when "6-2-b-SampleBox-eg2-left"
+      | go sciobtha
+    when "6-2-b-SampleBox-eg2-right"
+      | Thiomáin sé #[b sciobtha go maith].
+    when "6-2-c-p"
+      | má thagann dobhriathar aidiachtach roimh an dobhriathar:
+    when "6-2-c-SampleBox-eg1-left"
+      | go réidh
+    when "6-2-c-SampleBox-eg1-right"
+      | Déan #[b go deas réidh] anois é.
+    when "6-2-c-SampleBox-eg2-left"
+      | go flaithiúil
+    when "6-2-c-SampleBox-eg2-right"
+      | Roinneadh an bia #[b go fial flaithiúil].
+    when "6-2-d-p"
+      | i ndiaidh na ndobhriathra #[i cuibheasach] agus #[i sách], má tá siad ag cáiliú focal atá díreach ina ndiaidh:
+    when "6-2-d-SampleBox-eg1-left"
+      | go dian
+    when "6-2-d-SampleBox-eg1-right"
+      | D&rsquo;oibrigh sé #[b cuibheasach dian].
+    when "6-2-d-SampleBox-eg2-left"
+      | go maith
+    when "6-2-d-SampleBox-eg2-right"
+      | D&rsquo;imir sí #[b sách maith].
+    when "6-3-title"
+      | Dobhriathra Áite agus Treo
+    when "6-3-tables-col1"
+      | Gluaiseacht i dtreo an tsuímh
+    when "6-3-tables-col2"
+      | An suíomh
+    when "6-3-tables-col3"
+      | Gluaiseacht ón suíomh
+    when "Table6A-caption"
+      | Dobhriathra Áite
+    when "Table6A-row1-suas-sample"
+      | Tá sé ag dul #[b suas] an staighre.
+    when "Table6A-row1-thuas-sample"
+      | Tá sé #[b thuas] staighre.
+    when "Table6A-row1-anuas-sample"
+      | Tá sé ag teacht #[b anuas] an staighre.
+    when "Table6A-row2-síos-sample"
+      | Tá sí ag dul #[b síos] an staighre.
+    when "Table6A-row2-thíos-sample"
+      | Tá sí #[b thíos] staighre.
+    when "Table6A-row2-aníos-sample"
+      | Tá sí ag teacht #[b aníos] an staighre.
+    when "Table6A-row3-amach-sample-1"
+      | An bhfuil tú ag dul #[b amach] don oíche?
+    when "Table6A-row3-amuigh-sample"
+      | Tá mé #[b amuigh].
+    when "Table6A-row3-amach-sample-2"
+      | Tá sí ag teacht #[b amach] chomh fada leat.
+    when "Table6A-row4-isteach-sample-1"
+      | An bhfuil tú ag dul #[b isteach] sa teach?
+    when "Table6A-row4-istigh-sample"
+      | Is #[b istigh] sa teach a tharla an timpiste.
+    when "Table6A-row4-isteach-sample-2"
+      | Tar #[b isteach] chugam!
+    when "Table6B-caption"
+      | Dobhriathra Treo
+    when "Table6B-row1-ó thuaidh-sample"
+      | Rachaimid #[b ó thuaidh] amárach.
+    when "Table6B-row1-ó thuaidh/thuaidh-sample"
+      | Tá an siopa sin ar an taobh #[b ó thuaidh]/#[b thuaidh] den chontae.
+    when "Table6B-row1-aduaidh-sample"
+      | Tháinig siad #[b aduaidh] inné.
+    when "Table6B-row2-ó dheas-sample"
+      | D&rsquo;imigh sé #[b ó dheas] ar maidin. 
+    when "Table6B-row2-ó dheas/theas-sample"
+      | Tá teach acu ar an gcósta #[b ó dheas]/#[b theas].
+    when "Table6B-row2-aneas-sample"
+      | Tá sí ag teacht #[b aneas] faoi láthair.
+    when "Table6B-row3-soir-sample"
+      | An ndeachaigh tú #[b soir] chucu?
+    when "Table6B-row3-thoir-sample"
+      | Chuaigh, ach ní raibh aon duine #[b thoir].
+    when "Table6B-row3-anoir-sample"
+      | Bhí orm teacht #[b anoir] arís.
+    when "Table6B-row4-siar-sample"
+      | An bhfuil tú ag dul #[b siar] anocht?
+    when "Table6B-row4-thiar-sample"
+      | An raibh tú #[b thiar] aréir?
+    when "Table6B-row4-aniar-sample"
+      | An mbeidh siad ag teacht #[b aniar] ar cuairt?
+    when "Table6B-row5-anonn/sall-sample"
+      | An ndeachaigh Áine #[b sall/anonn] go Sasana inné?
+    when "Table6B-row5-thall-sample"
+      | Chuaigh, tá sí #[b thall] le seachtain.
+    when "Table6B-row5-anall-sample"
+      | Cén uair a thiocfaidh sí #[b anall] arís?
+    when "6-4-title"
+      | Airde an Chompáis
+    when "6-4-p1"
+      | Ionas gur féidir idirdhealú a dhéanamh idir na treonna, cuirtear príomhairde an chompáis i láthair sa léaráid thíos le túslitir an fhocail:
+    when "6-4-p2"
+      | Léirítear thíos noda do na fo-airde a bhaineann leis an gceathramhán den chompás atá thuas.
+    when "Table6C-caption"
+      | Airde an Chompáis
+    when "Table6C-col1"
+      | Nod
+    when "Table6C-col2"
+      | Gluaiseacht i dtreo an tsuímh
+    when "Table6C-col3"
+      | An suíomh simplí
+    when "Table6C-col4"
+      | Gluaiseacht ón suíomh
+    default
+      - throw new Error(`No content for ${key} (ga.pug)`)

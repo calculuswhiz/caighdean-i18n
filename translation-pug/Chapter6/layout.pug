@@ -1,0 +1,119 @@
+include ../bodyMatter.pug
+include ./dbs/index.pug
+include tables.pug
+
++chapterTemplate(6)
+  +hx(2, "6.1", "6-1-title")
+    +hx(3, "6.1.1")
+      p: +renderKey("6-1-1-p1")
+      p: +renderKey("6-1-1-p2")
+      ol(class="list-[lower-alpha]")
+        li#sec_6_1_1_a
+          p: +renderKey("6-1-1-a-p")
+          +sampleBox("6-1-1-a-SampleBox-eg", 2)
+        li#sec_6_1_1_b
+          p: +renderKey("6-1-1-b-p")
+          +sampleBox("6-1-1-b-SampleBox-eg", 2)
+        li#sec_6_1_1_c
+          p: +renderKey("6-1-1-c-p")
+          +sampleBox("6-1-1-c-SampleBox-eg", 2)
+        li#sec_6_1_1_d
+          p: +renderKey("6-1-1-d-p")
+          +sampleBox("6-1-1-d-SampleBox-eg", 2)
+        li#sec_6_1_1_e
+          p: +renderKey("6-1-1-e-p")
+          +sampleBox("6-1-1-e-SampleBox-eg", 2)
+        li#sec_6_1_1_f
+          p: +renderKey("6-1-1-f-p1")
+          +sampleBox("6-1-1-f-SampleBox-eg", 2)
+          .paragraph
+            p: +renderKey("6-1-1-f-p2")
+        li#sec_6_1_1_g
+          p: +renderKey("6-1-1-g-p")
+          +sampleBox("6-1-1-g-SampleBox-eg", 2)
+        li#sec_6_1_1_h
+          p: +renderKey("6-1-1-h-p")
+          +sampleBox("6-1-1-h-SampleBox-eg", 2)
+        li#sec_6_1_1_i
+          p: +renderKey("6-1-1-i-p")
+          +sampleBox("6-1-1-i-SampleBox-eg", 2)
+        li#sec_6_1_1_j
+          p: +renderKey("6-1-1-j-p")
+          +sampleBox("6-1-1-j-SampleBox-eg", 6)
+        li#sec_6_1_1_k
+          p: +renderKey("6-1-1-k-p")
+          +sampleBox("6-1-1-k-SampleBox-eg", 2)
+  hr
+
+  +hx(2, "6.2", "6-2-title")
+    p: +renderKey("6-2-p")
+    ol(class="list-[lower-alpha]")
+      li#sec_6_2_a
+        p: +renderKey("6-2-a-p")
+        +AdverbExampleTable("6-2-a-SampleBox-eg", 2)
+      li#sec_6_2_b
+        p: +renderKey("6-2-b-p")
+        +AdverbExampleTable("6-2-b-SampleBox-eg", 2)
+      li#sec_6_2_c
+        p: +renderKey("6-2-c-p")
+        +AdverbExampleTable("6-2-c-SampleBox-eg", 2)
+      li#sec_6_2_d
+        p: +renderKey("6-2-d-p")
+        +AdverbExampleTable("6-2-d-SampleBox-eg", 2)
+  hr
+
+  +hx(2, "6.3", "6-3-title")
+    +Table6A
+    +Table6B
+  hr
+
+  +hx(2, "6.4", "6-4-title")
+    p: +renderKey("6-4-p1")
+    div(class="flex flex-row mx-[15%]")
+      img(
+        class="w-1/2"
+        src=`${rootRef}Compass-full.svg`
+        alt="Static"
+      )
+      p(class="flex-grow")
+      img(
+        class="w-1/3 flex justify-center items-center"
+        src=`${rootRef}Compass-quarter.svg`
+        alt="Static"
+      )
+    table(class="w-full")
+      colgroup
+        col(class="w-1/4")
+        col(class="w-1/4")
+        col(class="w-1/4")
+        col(class="w-1/4")
+      tbody
+        tr
+          td(class="bg-white")
+            b
+              | T (an tuaisceart
+              if docLang !== 'GA'
+                | !{" "}&mdash; #[+renderKey("CompassT")]
+              | )
+          td(class="bg-white")
+            b
+              | D (an deisceart
+              if docLang !== 'GA'
+                | !{" "}&mdash; #[+renderKey("CompassD")]
+              | )
+          td(class="bg-white")
+            b
+              | O (an t&#x2011;oirthear
+              if docLang !== 'GA'
+                | !{" "}&mdash; #[+renderKey("CompassO")]
+              | )
+          td(class="bg-white")
+            b
+              | I (an t&#x2011;iarthar
+              if docLang !== 'GA'
+                | !{" "}&mdash; #[+renderKey("CompassI")]
+              | )
+    p: +renderKey("6-4-p2")
+    +Table6C
+  hr
+      
