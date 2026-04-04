@@ -1,5 +1,5 @@
 mixin link(url, text)
-  a(href=`${url}`) #{text}
+  a(href=`${url}`)&attributes(attributes) #{text}
 
 //- Allows both plain text or blocks (for more complex content)
 mixin inlineTl(lang, tlText)

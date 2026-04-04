@@ -1,0 +1,1973 @@
+//- Verb table template verbs following normal conjugation patterns
+  i.e. All the regular verbs + a couple irregular verbs.
+  tableKey is the letter to go in the id (e.g. Table 5A, 5B, etc.)
+    All verb tables are marked tables
+  verbData is an object formatted as follows:
+    root: string
+    present: array of 7 strings, including autonomous form
+    past: array of 7 strings, including autonomous form
+    pastHabitual: array of 7 strings, including autonomous form
+    future: array of 7 strings, including autonomous form
+    conditional: array of 7 strings, including autonomous form
+    subjunctive: array of 7 strings, including autonomous form
+    imperative: array of 7 strings, including autonomous form
+    verbalNoun: string
+    verbalAdjective: string
+  e.g. Template:
+  +StandardVerbTable("", {
+    root: "",
+    present: [
+    ],
+    past: [
+    ],
+    pastHabitual: [
+    ],
+    future: [
+    ],
+    conditional: [
+    ],
+    subjunctive: [
+    ],
+    imperative: [
+    ],
+    verbalNoun: "",
+    verbalAdjective: ""
+  })
+
+mixin StandardVerbTable(tableKey, verbData)
+  +markedTable(5, tableKey, `Table5${tableKey}-caption`)(class="verb-table")
+    thead
+      tr.primary-header-row
+        th
+          if docLang === "GA"
+            | #{verbData.root}
+          else
+            | #{verbData.root} #[+tl: +renderKey(`briathar-${verbData.root}`)]
+    tbody
+      //- Indicative Mood
+      tr: td: table
+        colgroup
+          col(class="w-[25%]")
+          col(class="w-[25%]")
+          col(class="w-[25%]")
+          col(class="w-[25%]")
+        thead
+          tr.secondary-header-row
+            th(colspan=4): +renderKey("IndicativeMood")
+          tr.tense-row
+            th: +renderKey("PresentTense")
+            th: +renderKey("PastTense")
+            th: +renderKey("PastHabitualTense")
+            th: +renderKey("FutureTense")
+        tbody
+          each idx in range(0, 6)
+            tr
+              each tense in ["present", "past", "pastHabitual", "future"]
+                - const form = verbData[tense][idx];
+                if idx < 6
+                  td !{form}
+                else
+                  //- This is the autonomous form
+                  td #[i: +renderKey("nod-sb", { getFromCommon: true })] !{form}
+      //- Conditional Mood, Present Subjunctive Mood, Imperative Mood
+      tr: td: table
+        colgroup
+          col(class="w-1/3")
+          col(class="w-1/3")
+          col(class="w-1/3")
+        thead
+          tr.secondary-header-row
+            th: +renderKey("ConditionalMood")
+            th: +renderKey("PresentSubjunctiveMood")
+            th: +renderKey("ImperativeMood")
+        tbody
+          each idx in range(0, 6)
+            tr
+              each mood in ["conditional", "subjunctive", "imperative"]
+                - const form = verbData[mood][idx];
+                if idx < 6
+                  td !{form}
+                else
+                  //- This is the autonomous form
+                  td #[i: +renderKey("nod-sb", { getFromCommon: true })] !{form}
+      //- Verbal Noun, Verbal Adjective
+      tr: td: table
+        colgroup
+          col(class="w-1/2")
+          col(class="w-1/2")
+        thead
+          tr.secondary-header-row
+            th: +renderKey("VerbalNoun")
+            th: +renderKey("VerbalAdjective")
+        tbody
+          tr
+            td #{verbData.verbalNoun}
+            td #{verbData.verbalAdjective}
+
+//-
+  verbRows is an array of
+    an array of verb forms in order of
+      root, 1p sg, vn, va
+mixin SimilarConjugationsTable(verbRows)
+  table.chapter-5
+    thead
+      tr
+        th: +renderKey("5-2-2-tables-col1")
+        th: +renderKey("5-2-2-tables-col2")
+        th: +renderKey("5-2-2-tables-col3")
+        th: +renderKey("5-2-2-tables-col4")
+        if docLang !== "GA"
+          th: +renderKey("SaBhrí-title", { getFromCommon: true })
+    tbody
+      each verbRow in verbRows
+        tr
+          each form in verbRow
+            //- Some cells have extra markup, so we have to check for that
+            td #{form.split(" ")[0]}
+              if form.includes(" ")
+                each part in form.split(" ").slice(1)
+                  if part.includes("$")
+                    | !{" "}#{part.replace(/\$(.*)/, "")}#[+renderKey(part.match(/\$(.*)/)[1], { getFromCommon: true })]
+                  else
+                    | !{" "}!{part}
+          if docLang !== "GA"
+            td
+              | #[b EN]: #[i: +renderKey(`briathar-${verbRow[0].split(" ")[0]}`)]
+
+mixin Table5A
+  +markedTable(5, "A", "Table5A-caption")
+    colgroup
+      col(class="w-1/3")
+      col(class="w-1/3")
+      col(class="w-1/3")
+    thead
+      tr
+        th: +renderKey("Table5A-col1")
+        th: +renderKey("Table5A-col2")
+        th: +renderKey("Table5A-col3")
+    tbody
+      tr
+        td: +renderKey("PresentTense")
+        td molann muid #[br] tá muid
+        td molaimid #[br] táimid
+      tr
+        td: +renderKey("PastTense")
+        td cheannaigh muid #[br] ní fhaca muid
+        td cheannaíomar #[br] ní fhacamar
+      tr
+        td: +renderKey("PastHabitualTense")
+        td d&rsquo;itheadh muid #[br] chrádh muid
+        td d&rsquo;ithimis #[br] chráimis
+      tr
+        td: +renderKey("FutureTense")
+        td láimhseoidh muid #[br] rachaidh muid
+        td láimhseoimid #[br] rachaimid
+      tr
+        td: +renderKey("ConditionalMood")
+        td chloisfeadh muid #[br] nífeadh muid
+        td chloisfimis #[br] nífimis
+      tr
+        td: +renderKey("SubjunctiveMood")
+        td go gceanglaí muid #[br] go dtaga muid
+        td go gceanglaímid #[br] go dtagaimid
+      tr
+        td: +renderKey("ImperativeMood")
+        td déanadh muid #[br] fágadh muid
+        td déanaimis #[br] fágaimis
+
+mixin Table5B
+  +StandardVerbTable("B", {
+    root: "Mol",
+    present: [
+      "molaim", "molann tú", "molann sé/sí",
+      "molaimid", "molann sibh", "molann siad",
+      "moltar"
+    ],
+    past: [
+      "mhol mé", "mhol tú", "mhol sé/sí",
+      "mholamar", "mhol sibh", "mhol siad",
+      "moladh"
+    ],
+    pastHabitual: [
+      "mholainn", "mholtá", "mholadh sé/sí",
+      "mholaimis", "mholadh sibh", "mholaidís",
+      "mholtaí",
+    ],
+    future: [
+      "molfaidh mé", "molfaidh tú", "molfaidh sé/sí",
+      "molfaimid", "molfaidh sibh", "molfaidh siad",
+      "molfar"
+    ],
+    conditional: [
+      "mholfainn", "mholfá", "mholfadh sé/sí",
+      "mholfaimis", "mholfadh sibh", "mholfaidís",
+      "mholfaí"
+    ],
+    subjunctive: [
+      "go mola mé", "go mola tú", "go mola sé/sí",
+      "go molaimid", "go mola sibh", "go mola siad",
+      "go moltar"
+    ],
+    imperative: [
+      "molaim", "mol", "moladh sé/sí",
+      "molaimis", "molaigí", "molaidís",
+      "moltar"
+    ],
+    verbalNoun: "moladh",
+    verbalAdjective: "molta"
+  })
+
+mixin Table5C
+  +StandardVerbTable("C", {
+    root: "Bris",
+    present: [
+      "brisim", "briseann tú", "briseann sé/sí",
+      "brisimid", "briseann sibh", "briseann siad",
+      "bristear"
+    ],
+    past: [
+      "bhris mé", "bhris tú", "bhris sé/sí",
+      "bhriseamar", "bhris sibh", "bhris siad",
+      "briseadh"
+    ],
+    pastHabitual: [
+      "bhrisinn", "bhristeá", "bhriseadh sé/sí",
+      "bhrisimis", "bhriseadh sibh", "bhrisidís",
+      "bhristí",
+    ],
+    future: [
+      "brisfidh mé", "brisfidh tú", "brisfidh sé/sí",
+      "brisfimid", "brisfidh sibh", "brisfidh siad",
+      "brisfear",
+    ],
+    conditional: [
+      "bhrisfinn", "bhrisfeá", "bhrisfeadh sé/sí",
+      "bhrisfimis", "bhrisfeadh sibh", "bhrisfidís",
+      "bhrisfí",
+    ],
+    subjunctive: [
+      "go mbrise mé", "go mbrise tú", "go mbrise sé/sí",
+      "go mbrisimid", "go mbrise sibh", "go mbrise siad",
+      "go mbristear",
+    ],
+    imperative: [
+      "brisim", "bris", "briseadh sé/sí",
+      "brisimis", "brisigí", "brisidís",
+      "bristear",
+    ],
+    verbalNoun: "briseadh",
+    verbalAdjective: "briste"
+  })
+
+mixin Table5D
+  +StandardVerbTable("D", {
+    root: "Sábháil",
+    present: [
+      "sábhálaim", "sábhálann tú", "sábhálann sé/sí",
+      "sábhálaimid", "sábhálann sibh", "sábhálann siad",
+      "sábháiltear",
+    ],
+    past: [
+      "shábháil mé", "shábháil tú", "shábháil sé/sí",
+      "shábhálamar", "shábháil sibh", "shábháil siad",
+      "sábháladh",
+    ],
+    pastHabitual: [
+      "shábhálainn", "shábháilteá", "shábháladh sé/sí",
+      "shábhálaimis", "shábháladh sibh", "shábhálaidís",
+      "shábháiltí",
+    ],
+    future: [
+      "sábhálfaidh mé", "sábhálfaidh tú", "sábhálfaidh sé/sí",
+      "sábhálfaimid", "sábhálfaidh sibh", "sábhálfaidh siad",
+      "sábhálfar",
+    ],
+    conditional: [
+      "shábhálfainn", "shábhálfá", "shábhálfadh sé/sí",
+      "shábhálfaimis", "shábhálfadh sibh", "shábhálfaidís",
+      "shábhálfaí",
+    ],
+    subjunctive: [
+      "go sábhála mé", "go sábhála tú", "go sábhála sé/sí",
+      "go sábhálaimid", "go sábhála sibh", "go sábhála siad",
+      "go sábháiltear",
+    ],
+    imperative: [
+      "sábhálaim", "sábháil", "sábháladh sé/sí",
+      "sábhálaimis", "sábhálaigí", "sábhálaidís",
+      "sábháiltear",
+    ],
+    verbalNoun: "sábháil",
+    verbalAdjective: "sábháilte"
+  })
+
+mixin Table5E
+  +StandardVerbTable("E", {
+    root: "Tíolaic",
+    present: [
+      "tíolacaim", "tíolacann tú", "tíolacann sé/sí",
+      "tíolacaimid", "tíolacann sibh", "tíolacann siad",
+      "tíolactar",
+    ],
+    past: [
+      "thíolaic mé", "thíolaic tú", "thíolaic sé/sí",
+      "thíolacamar", "thíolaic sibh", "thíolaic siad",
+      "tíolacadh",
+    ],
+    pastHabitual: [
+      "thíolacainn", "thíolactá", "thíolacadh sé/sí",
+      "thíolacaimis", "thíolacadh sibh", "thíolacaidís",
+      "thíolactaí",
+    ],
+    future: [
+      "tíolacfaidh mé", "tíolacfaidh tú", "tíolacfaidh sé/sí",
+      "tíolacfaimid", "tíolacfaidh sibh", "tíolacfaidh siad",
+      "tíolacfar",
+    ],
+    conditional: [
+      "thíolacfainn", "thíolacfá", "thíolacfadh sé/sí",
+      "thíolacfaimis", "thíolacfadh sibh", "thíolacfaidís",
+      "thíolacfaí",
+    ],
+    subjunctive: [
+      "go dtíolaca mé", "go dtíolaca tú", "go dtíolaca sé/sí",
+      "go dtíolacaimid", "go dtíolaca sibh", "go dtíolaca siad",
+      "go dtíolactar",
+    ],
+    imperative: [
+      "tíolacaim", "tíolaic", "tíolacadh sé/sí",
+      "tíolacaimis", "tíolacaigí", "tíolacaidís",
+      "tíolactar",
+    ],
+    verbalNoun: "tíolacadh",
+    verbalAdjective: "tíolactha"
+  })
+
+mixin Table5F
+  +StandardVerbTable("F", {
+    root: "Cráigh",
+    present: [
+      "cráim", "cránn tú", "cránn sé/sí",
+      "cráimid", "cránn sibh", "cránn siad",
+      "cráitear",
+    ],
+    past: [
+      "chráigh mé", "chráigh tú", "chráigh sé/sí",
+      "chrámar", "chráigh sibh", "chráigh siad",
+      "crádh",
+    ],
+    pastHabitual: [
+      "chráinn", "chráiteá", "chrádh sé/sí",
+      "chráimis", "chrádh sibh", "chráidís",
+      "chráití",
+    ],
+    future: [
+      "cráfaidh mé", "cráfaidh tú", "cráfaidh sé/sí",
+      "cráfaimid", "cráfaidh sibh", "cráfaidh siad",
+      "cráfar",
+    ],
+    conditional: [
+      "chráfainn", "chráfá", "chráfadh sé/sí",
+      "chráfaimis", "chráfadh sibh", "chráfaidís",
+      "chráfaí",
+    ],
+    subjunctive: [
+      "go gcrá mé", "go gcrá tú", "go gcrá sé/sí",
+      "go gcráimid", "go gcrá sibh", "go gcrá siad",
+      "go gcráitear",
+    ],
+    imperative: [
+      "cráim", "cráigh", "crádh sé/sí",
+      "cráimis", "cráigí", "cráidís",
+      "cráitear",
+    ],
+    verbalNoun: "crá",
+    verbalAdjective: "cráite"
+  })
+
+mixin Table5G
+  +StandardVerbTable("G", {
+    root: "Dóigh",
+    present: [
+      "dóim", "dónn tú", "dónn sé/sí",
+      "dóimid", "dónn sibh", "dónn siad",
+      "dóitear",
+    ],
+    past: [
+      "dhóigh mé", "dhóigh tú", "dhóigh sé/sí",
+      "dhómar", "dhóigh sibh", "dhóigh siad",
+      "dódh",
+    ],
+    pastHabitual: [
+      "dhóinn", "dhóiteá", "dhódh sé/sí",
+      "dhóimis", "dhódh sibh", "dhóidís",
+      "dhóití",
+    ],
+    future: [
+      "dófaidh mé", "dófaidh tú", "dófaidh sé/sí",
+      "dófaimid", "dófaidh sibh", "dófaidh siad",
+      "dófar",
+    ],
+    conditional: [
+      "dhófainn", "dhófá", "dhófadh sé/sí",
+      "dhófaimis", "dhófadh sibh", "dhófaidís",
+      "dhófaí",
+    ],
+    subjunctive: [
+      "go ndó mé", "go ndó tú", "go ndó sé/sí",
+      "go ndóimid", "go ndó sibh", "go ndó siad",
+      "go ndóitear",
+    ],
+    imperative: [
+      "dóim", "dóigh", "dódh sé/sí",
+      "dóimis", "dóigí", "dóidís",
+      "dóitear",
+    ],
+    verbalNoun: "dó",
+    verbalAdjective: "dóite"
+  })
+
+mixin Table5H
+  +StandardVerbTable("H", {
+    root: "Léigh",
+    present: [
+      "léim", "léann tú", "léann sé/sí",
+      "léimid", "léann sibh", "léann siad",
+      "léitear",
+    ],
+    past: [
+      "léigh mé", "léigh tú", "léigh sé/sí",
+      "léamar", "léigh sibh", "léigh siad",
+      "léadh",
+    ],
+    pastHabitual: [
+      "léinn", "léiteá", "léadh sé/sí",
+      "léimis", "léadh sibh", "léidís",
+      "léití",
+    ],
+    future: [
+      "léifidh mé", "léifidh tú", "léifidh sé/sí",
+      "léifimid", "léifidh sibh", "léifidh siad",
+      "léifear",
+    ],
+    conditional: [
+      "léifinn", "léifeá", "léifeadh sé/sí",
+      "léifimis", "léifeadh sibh", "léifidís",
+      "léifí",
+    ],
+    subjunctive: [
+      "go lé mé", "go lé tú", "go lé sé/sí",
+      "go léimid", "go lé sibh", "go lé siad",
+      "go léitear",
+    ],
+    imperative: [
+      "léim", "léigh", "léadh sé/sí",
+      "léimis", "léigí", "léidís",
+      "léitear",
+    ],
+    verbalNoun: "léamh",
+    verbalAdjective: "léite"
+  })
+
+mixin Table5I
+  +StandardVerbTable("I", {
+    root: "Nigh",
+    present: [
+      "ním", "níonn tú", "níonn sé/sí",
+      "nímid", "níonn sibh", "níonn siad",
+      "nitear",
+    ],
+    past: [
+      "nigh mé", "nigh tú", "nigh sé/sí",
+      "níomar", "nigh sibh", "nigh siad",
+      "níodh",
+    ],
+    pastHabitual: [
+      "nínn", "niteá", "níodh sé/sí",
+      "nímis", "níodh sibh", "nídís",
+      "nití",
+    ],
+    future: [
+      "nífidh mé", "nífidh tú", "nífidh sé/sí",
+      "nífimid", "nífidh sibh", "nífidh siad",
+      "nífear",
+    ],
+    conditional: [
+      "nífinn", "nífeá", "nífeadh sé/sí",
+      "nífimis", "nífeadh sibh", "nífidís",
+      "nífí",
+    ],
+    subjunctive: [
+      "go ní mé", "go ní tú", "go ní sé/sí",
+      "go nímid", "go ní sibh", "go ní siad",
+      "go nitear",
+    ],
+    imperative: [
+      "ním", "nigh", "níodh sé/sí",
+      "nímis", "nígí", "nídís",
+      "nitear",
+    ],
+    verbalNoun: "ní",
+    verbalAdjective: "nite"
+  })
+
+mixin Table5J
+  +StandardVerbTable("J", {
+    root: "Beannaigh",
+    present: [
+      "beannaím", "beannaíonn tú", "beannaíonn sé/sí",
+      "beannaímid", "beannaíonn sibh", "beannaíonn siad",
+      "beannaítear",
+    ],
+    past: [
+      "bheannaigh mé", "bheannaigh tú", "bheannaigh sé/sí",
+      "bheannaíomar", "bheannaigh sibh", "bheannaigh siad",
+      "beannaíodh",
+    ],
+    pastHabitual: [
+      "bheannaínn", "bheannaíteá", "bheannaíodh sé/sí",
+      "bheannaímis", "bheannaíodh sibh", "bheannaídís",
+      "bheannaítí",
+    ],
+    future: [
+      "beannóidh mé", "beannóidh tú", "beannóidh sé/sí",
+      "beannóimid", "beannóidh sibh", "beannóidh siad",
+      "beannófar",
+    ],
+    conditional: [
+      "bheannóinn", "bheannófá", "bheannódh sé/sí",
+      "bheannóimis", "bheannódh sibh", "bheannóidís",
+      "bheannófaí",
+    ],
+    subjunctive: [
+      "go mbeannaí mé", "go mbeannaí tú", "go mbeannaí sé/sí",
+      "go mbeannaímid", "go mbeannaí sibh", "go mbeannaí siad",
+      "go mbeannaítear",
+    ],
+    imperative: [
+      "beannaím", "beannaigh", "beannaíodh sé/sí",
+      "beannaímis", "beannaígí", "beannaídís",
+      "beannaítear",
+    ],
+    verbalNoun: "beannú",
+    verbalAdjective: "beannaithe"
+  })
+
+mixin Table5K
+  +StandardVerbTable("K", {
+    root: "Cruinnigh",
+    present: [
+      "cruinním", "cruinníonn tú", "cruinníonn sé/sí",
+      "cruinnímid", "cruinníonn sibh", "cruinníonn siad",
+      "cruinnítear",
+    ],
+    past: [
+      "chruinnigh mé", "chruinnigh tú", "chruinnigh sé/sí",
+      "chruinníomar", "chruinnigh sibh", "chruinnigh siad",
+      "cruinníodh",
+    ],
+    pastHabitual: [
+      "chruinnínn", "chruinníteá", "chruinníodh sé/sí",
+      "chruinnímis", "chruinníodh sibh", "chruinnídís",
+      "chruinnítí",
+    ],
+    future: [
+      "cruinneoidh mé", "cruinneoidh tú", "cruinneoidh sé/sí",
+      "cruinneoimid", "cruinneoidh sibh", "cruinneoidh siad",
+      "cruinneofar",
+    ],
+    conditional: [
+      "chruinneoinn", "chruinneofá", "chruinneodh sé/sí",
+      "chruinneoimis", "chruinneodh sibh", "chruinneoidís",
+      "chruinneofaí",
+    ],
+    subjunctive: [
+      "go gcruinní mé", "go gcruinní tú", "go gcruinní sé/sí",
+      "go gcruinnímid", "go gcruinní sibh", "go gcruinní siad",
+      "go gcruinnítear",
+    ],
+    imperative: [
+      "cruinním", "cruinnigh", "cruinníodh sé/sí",
+      "cruinnímis", "cruinnígí", "cruinnídís",
+      "cruinnítear",
+    ],
+    verbalNoun: "cruinniú",
+    verbalAdjective: "cruinnithe"
+  })
+
+mixin Table5L
+  +StandardVerbTable("L", {
+    root: "Ceangail",
+    present: [
+      "ceanglaím", "ceanglaíonn tú", "ceanglaíonn sé/sí",
+      "ceanglaímid", "ceanglaíonn sibh", "ceanglaíonn siad",
+      "ceanglaítear",
+    ],
+    past: [
+      "cheangail mé", "cheangail tú", "cheangail sé/sí",
+      "cheanglaíomar", "cheangail sibh", "cheangail siad",
+      "ceanglaíodh",
+    ],
+    pastHabitual: [
+      "cheanglaínn", "cheanglaíteá", "cheanglaíodh sé/sí",
+      "cheanglaímis", "cheanglaíodh sibh", "cheanglaídís",
+      "cheanglaítí",
+    ],
+    future: [
+      "ceanglóidh mé", "ceanglóidh tú", "ceanglóidh sé/sí",
+      "ceanglóimid", "ceanglóidh sibh", "ceanglóidh siad",
+      "ceanglófar",
+    ],
+    conditional: [
+      "cheanglóinn", "cheanglófá", "cheanglódh sé/sí",
+      "cheanglóimis", "cheanglódh sibh", "cheanglóidís",
+      "cheanglófaí",
+    ],
+    subjunctive: [
+      "go gceanglaí mé", "go gceanglaí tú", "go gceanglaí sé/sí",
+      "go gceanglaímid", "go gceanglaí sibh", "go gceanglaí siad",
+      "go gceanglaítear",
+    ],
+    imperative: [
+      "ceanglaím", "ceangail", "ceanglaíodh sé/sí",
+      "ceanglaímis", "ceanglaígí", "ceanglaídís",
+      "ceanglaítear",
+    ],
+    verbalNoun: "ceangal",
+    verbalAdjective: "ceangailte"
+  })
+
+mixin Table5M
+  +StandardVerbTable("M", {
+    root: "Díbir",
+    present: [
+      "díbrím", "díbríonn tú", "díbríonn sé/sí",
+      "díbrímid", "díbríonn sibh", "díbríonn siad",
+      "díbrítear",
+    ],
+    past: [
+      "dhíbir mé", "dhíbir tú", "dhíbir sé/sí",
+      "dhíbríomar", "dhíbir sibh", "dhíbir siad",
+      "díbríodh",
+    ],
+    pastHabitual: [
+      "dhíbrínn", "dhíbríteá", "dhíbríodh sé/sí",
+      "dhíbrímis", "dhíbríodh sibh", "dhíbrídís",
+      "dhíbrítí",
+    ],
+    future: [
+      "díbreoidh mé", "díbreoidh tú", "díbreoidh sé/sí",
+      "díbreoimid", "díbreoidh sibh", "díbreoidh siad",
+      "díbreofar",
+    ],
+    conditional: [
+      "dhíbreoinn", "dhíbreofá", "dhíbreodh sé/sí",
+      "dhíbreoimis", "dhíbreodh sibh", "dhíbreoidís",
+      "dhíbreofaí",
+    ],
+    subjunctive: [
+      "go ndíbrí mé", "go ndíbrí tú", "go ndíbrí sé/sí",
+      "go ndíbrímid", "go ndíbrí sibh", "go ndíbrí siad",
+      "go ndíbrítear",
+    ],
+    imperative: [
+      "díbrím", "díbir", "díbríodh sé/sí",
+      "díbrímis", "díbrígí", "díbrídís",
+      "díbrítear",
+    ],
+    verbalNoun: "díbirt",
+    verbalAdjective: "díbeartha"
+  })
+
+mixin Table5N
+  +StandardVerbTable("N", {
+    root: "Abair",
+    present: [
+      "deirim", "deir tú", "deir sé/sí",
+      "deirimid", "deir sibh", "deir siad",
+      "deirtear",
+    ],
+    past: [
+      "dúirt mé", "dúirt tú", "dúirt sé/sí",
+      "dúramar", "dúirt sibh", "dúirt siad",
+      "dúradh",
+    ],
+    pastHabitual: [
+      "deirinn", "deirteá", "deireadh sé/sí",
+      "deirimis", "deireadh sibh", "deiridís",
+      "deirtí",
+    ],
+    future: [
+      "déarfaidh mé", "déarfaidh tú", "déarfaidh sé/sí",
+      "déarfaimid", "déarfaidh sibh", "déarfaidh siad",
+      "déarfar",
+    ],
+    conditional: [
+      "déarfainn", "déarfá", "déarfadh sé/sí",
+      "déarfaimis", "déarfadh sibh", "déarfaidís",
+      "déarfaí",
+    ],
+    subjunctive: [
+      "go ndeire mé", "go ndeire tú", "go ndeire sé/sí",
+      "go ndeirimid", "go ndeire sibh", "go ndeire siad",
+      "go ndeirtear",
+    ],
+    imperative: [
+      "abraim", "abair", "abradh sé/sí",
+      "abraimis", "abraigí", "abraidís",
+      "abraítear",
+    ],
+    verbalNoun: "rá",
+    verbalAdjective: "ráite"
+  })
+
+mixin Table5O
+  +StandardVerbTable("O", {
+    root: "Beir",
+    present: [
+      "beirim", "beireann tú", "beireann sé/sí",
+      "beirimid", "beireann sibh", "beireann siad",
+      "beirtear",
+    ],
+    past: [
+      "rug mé", "rug tú", "rug sé/sí",
+      "rugamar", "rug sibh", "rug siad",
+      "rugadh",
+    ],
+    pastHabitual: [
+      "bheirinn", "bheirteá", "bheireadh sé/sí",
+      "bheirimis", "bheireadh sibh", "bheiridís",
+      "bheirtí",
+    ],
+    future: [
+      "béarfaidh mé", "béarfaidh tú", "béarfaidh sé/sí",
+      "béarfaimid", "béarfaidh sibh", "béarfaidh siad",
+      "béarfar",
+    ],
+    conditional: [
+      "bhéarfainn", "bhéarfá", "bhéarfadh sé/sí",
+      "bhéarfaimis", "bhéarfadh sibh", "bhéarfaidís",
+      "bhéarfaí",
+    ],
+    subjunctive: [
+      "go mbeire mé", "go mbeire tú", "go mbeire sé/sí",
+      "go mbeirimid", "go mbeire sibh", "go mbeire siad",
+      "go mbeirtear",
+    ],
+    imperative: [
+      "beirim", "beir", "beireadh sé/sí",
+      "beirimis", "beirigí", "beiridís",
+      "beirtear",
+    ],
+    verbalNoun: "breith",
+    verbalAdjective: "beirthe"
+  })
+
+//- This table is for Bí, an irregular verb
+mixin Table5P
+  +markedTable(5, "P", `Table5P-caption`)(class="verb-table")
+    thead
+      thead
+      tr.primary-header-row
+        th
+          if docLang === "GA"
+            | Bí
+          else
+            | Bí #[+tl: +renderKey(`briathar-Bí`)]
+    tbody
+      //- Indicative Mood
+      tr: td: table
+        thead
+          tr.secondary-header-row
+            th(colspan="4"): +renderKey("IndicativeMood")
+        tbody
+          //- Indicative Mood - Upper half
+          tr: td: table
+            thead
+              tr.tense-row
+                th(colspan="3"): +renderKey("PresentTense")
+                th(rowspan="2"): +renderKey("OrdinaryPresentTense")
+              tr.tense-row
+                th: +renderKey("PositiveIndependent")
+                th: +renderKey("NegativeIndependent")
+                th: +renderKey("Dependent")
+            tbody
+              tr
+                td táim/tá mé
+                td nílim/níl mé
+                td go bhfuilim/go bhfuil mé
+                td bím
+              tr
+                td tá tú
+                td níl tú
+                td go bhfuil tú
+                td bíonn tú
+              tr
+                td tá sé/sí
+                td níl sé/sí
+                td go bhfuil sé/sí
+                td bíonn sé/sí
+              tr
+                td táimid
+                td nílimid
+                td go bhfuilimid
+                td bímid
+              tr
+                td tá sibh
+                td níl sibh
+                td go bhfuil sibh
+                td bíonn sibh
+              tr
+                td tá siad
+                td níl siad
+                td go bhfuil siad
+                td bíonn siad
+              tr
+                td #[i: +renderKey("nod-sb", { getFromCommon: true })] táthar
+                td #[i: +renderKey("nod-sb", { getFromCommon: true })] níltear
+                td #[i: +renderKey("nod-sb", { getFromCommon: true })] go bhfuiltear
+                td #[i: +renderKey("nod-sb", { getFromCommon: true })] bítear
+          //- Indicative Mood - Lower half
+          tr: td: table
+            thead
+              tr.tense-row
+                th(colspan="2"): +renderKey("PastTense")
+                th(rowspan="2"): +renderKey("PastHabitualTense")
+                th(rowspan="2"): +renderKey("FutureTense")
+              tr.tense-row
+                th: +renderKey("Independent")
+                th: +renderKey("Dependent")
+            tbody
+              tr
+                td bhí mé
+                td ní raibh mé
+                td bhínn
+                td beidh mé
+              tr
+                td bhí tú
+                td ní raibh tú
+                td bhíteá
+                td beidh tú
+              tr
+                td bhí sé/sí
+                td ní raibh sé/sí
+                td bhíodh sé/sí
+                td beidh sé/sí
+              tr
+                td bhíomar
+                td ní rabhamar
+                td bhímis
+                td beimid
+              tr
+                td bhí sibh
+                td ní raibh sibh
+                td bhíodh sibh
+                td beidh sibh
+              tr
+                td bhí siad
+                td ní raibh siad
+                td bhídís
+                td beidh siad
+              tr
+                td #[i: +renderKey("nod-sb", { getFromCommon: true })] bhíothas
+                td #[i: +renderKey("nod-sb", { getFromCommon: true })] ní rabhthas
+                td #[i: +renderKey("nod-sb", { getFromCommon: true })] bhítí
+                td #[i: +renderKey("nod-sb", { getFromCommon: true })] beifear
+      //- Conditional, Subjunctive, Imperative Moods
+      tr: td: table
+        colgroup
+          col(class="w-1/3")
+          col(class="w-1/3")
+          col(class="w-1/3")
+        thead
+          tr.secondary-header-row
+            th: +renderKey("ConditionalMood")
+            th: +renderKey("PresentSubjunctiveMood")
+            th: +renderKey("ImperativeMood")
+        tbody
+          tr
+            td bheinn
+            td go raibh mé
+            td bím
+          tr
+            td bheifeá
+            td go raibh tú
+            td bí
+          tr
+            td bheadh sé/sí
+            td go raibh sé/sí
+            td bíodh sé/sí
+          tr
+            td bheimis
+            td go rabhaimid
+            td bímis
+          tr
+            td bheadh sibh
+            td go raibh sibh
+            td bígí
+          tr
+            td bheidís
+            td go raibh siad
+            td bídís
+          tr
+            td #[i: +renderKey("nod-sb", { getFromCommon: true })] bheifí
+            td #[i: +renderKey("nod-sb", { getFromCommon: true })] go rabhthar
+            td #[i: +renderKey("nod-sb", { getFromCommon: true })] bítear
+      tr: td: table
+        thead
+          tr.secondary-header-row
+            th: +renderKey("VerbalNoun")
+        tbody
+          tr: td a bheith*
+
+mixin Table5Q
+  +StandardVerbTable("Q", {
+    root: "Clois/Cluin",
+    present: [
+      "cloisim/cluinim", "cloiseann/cluineann tú", "cloiseann/cluineann sé/sí",
+      "cloisimid/cluinimid", "cloiseann/cluineann sibh", "cloiseann/cluineann siad",
+      "cloistear/cluintear",
+    ],
+    past: [
+      "chuala mé", "chuala tú", "chuala sé/sí",
+      "chualamar", "chuala sibh", "chuala siad",
+      "chualathas",
+    ],
+    pastHabitual: [
+      "chloisinn/chluininn", "chloisteá/chluinteá", "chloiseadh/chluineadh sé/sí",
+      "chloisimis/chluinimis", "chloiseadh/chluineadh sibh", "chloisidís/chluinidís",
+      "chloistí/chluintí",
+    ],
+    future: [
+      "cloisfidh/cluinfidh mé", "cloisfidh/cluinfidh tú", "cloisfidh/cluinfidh sé/sí",
+      "cloisfimid/cluinfimid", "cloisfidh/cluinfidh sibh", "cloisfidh/cluinfidh siad",
+      "cloisfear/cluinfear",
+    ],
+    conditional: [
+      "chloisfinn/chluinfinn", "chloisfeá/chluinfeá", "chloisfeadh/chluinfeadh sé/sí",
+      "chloisfimis/chluinfimis", "chloisfeadh/chluinfeadh sibh", "chloisfidís/chluinfidís",
+      "chloisfí/chluinfí",
+    ],
+    subjunctive: [
+      "go gcloise/go gcluine mé", "go gcloise/go gcluine tú", "go gcloise/go gcluine sé/sí",
+      "go gcloisimid/go gcluinimid", "go gcloise/go gcluine sibh", "go gcloise/go gcluine siad",
+      "go gcloistear/go gcluintear",
+    ],
+    imperative: [
+      "cloisim/cluinim", "clois/cluin", "cloiseadh/cluineadh sé/sí",
+      "cloisimis/cluinimis", "cloisigí/cluinigí", "cloisidís/cluinidís",
+      "cloistear/cluintear",
+    ],
+    verbalNoun: "cloisteáil/cluinstin",
+    verbalAdjective: "cloiste/cluinte"
+  })
+
+//- This table is for Déan, an irregular verb
+mixin Table5R
+  +markedTable(5, "R", `Table5R-caption`)(class="verb-table")
+    thead
+      thead
+      tr.primary-header-row
+        th
+          if docLang === "GA"
+            | Déan
+          else
+            | Déan #[+tl: +renderKey(`briathar-Déan`)]
+    tbody
+      //- Indicative Mood
+      tr: td: table
+        thead
+          tr.secondary-header-row
+            th(colspan="5"): +renderKey("IndicativeMood")
+        tbody
+          tr.tense-row
+            th(rowspan="2"): +renderKey("PresentTense")
+            th(colspan="2"): +renderKey("PastTense")
+            th(rowspan="2"): +renderKey("PastHabitualTense")
+            th(rowspan="2"): +renderKey("FutureTense")
+          tr.tense-row
+              th: +renderKey("Independent")
+              th: +renderKey("Dependent")
+          tr
+            td déanaim
+            td rinne/dhein mé
+            td ní dhearna/níor dhein mé
+            td dhéanainn
+            td déanfaidh mé
+          tr
+            td déanann tú
+            td rinne/dhein tú
+            td ní dhearna/níor dhein tú
+            td dhéantá
+            td déanfaidh tú
+          tr
+            td déanann sé/sí
+            td rinne/dhein sé/sí
+            td ní dhearna/níor dhein sé/sí
+            td dhéanadh sé/sí
+            td déanfaidh sé/sí
+          tr
+            td déanaimid
+            td rinneamar/dheineamar
+            td ní dhearnamar/níor dheineamar
+            td dhéanaimis
+            td déanfaimid
+          tr
+            td déanann sibh
+            td rinne/dhein sibh
+            td ní dhearna/níor dhein sibh
+            td dhéanadh sibh
+            td déanfaidh sibh
+          tr
+            td déanann siad
+            td rinne/dhein siad
+            td ní dhearna/níor dhein siad
+            td dhéanaidís
+            td déanfaidh siad
+          tr
+            td #[i: +renderKey("nod-sb", { getFromCommon: true })] déantar
+            td #[i: +renderKey("nod-sb", { getFromCommon: true })] rinneadh/deineadh
+            td #[i: +renderKey("nod-sb", { getFromCommon: true })] ní dhearnadh/níor deineadh
+            td #[i: +renderKey("nod-sb", { getFromCommon: true })] dhéantaí
+            td #[i: +renderKey("nod-sb", { getFromCommon: true })] déanfar
+      //- Conditional, Subjunctive, Imperative Moods
+      tr: td: table
+        colgroup
+          col(class="w-1/3")
+          col(class="w-1/3")
+          col(class="w-1/3")
+        thead
+          tr.secondary-header-row
+            th: +renderKey("ConditionalMood")
+            th: +renderKey("PresentSubjunctiveMood")
+            th: +renderKey("ImperativeMood")
+        tbody
+          tr
+            td dhéanfainn
+            td go ndéana mé
+            td déanaim
+          tr
+            td dhéanfá
+            td go ndéana tú
+            td déan
+          tr
+            td dhéanfadh sé/sí
+            td go ndéana sé/sí
+            td déanadh sé/sí
+          tr
+            td dhéanfaimis
+            td go ndéanaimid
+            td déanaimis
+          tr
+            td dhéanfadh sibh
+            td go ndéana sibh
+            td déanaigí
+          tr
+            td dhéanfaidís
+            td go ndéana siad
+            td déanaidís
+          tr
+            td #[i: +renderKey("nod-sb", { getFromCommon: true })] dhéanfaí
+            td #[i: +renderKey("nod-sb", { getFromCommon: true })] go ndéantar
+            td #[i: +renderKey("nod-sb", { getFromCommon: true })] déanta
+      tr: td: table
+        colgroup
+          col(class="w-1/2")
+          col(class="w-1/2")
+        thead
+          tr.secondary-header-row
+            th: +renderKey("VerbalNoun")
+            th: +renderKey("VerbalAdjective")
+        tbody
+          tr
+            td déanamh
+            td déanta
+
+//- This table is for Faigh, an irregular verb
+mixin Table5S
+  +markedTable(5, "S", `Table5S-caption`)(class="verb-table")
+    thead
+      thead
+      tr.primary-header-row
+        th
+          if docLang === "GA"
+            | Faigh
+          else
+            | Faigh #[+tl: +renderKey(`briathar-Faigh`)]
+    tbody
+      //- Indicative Mood
+      tr: td: table
+        colgroup
+          col(class="w-1/5")
+          col(class="w-1/5")
+          col(class="w-1/5")
+          col(class="w-1/5")
+        thead
+          tr.secondary-header-row
+            th(colspan="5"): +renderKey("IndicativeMood")
+          tr.tense-row
+            th(rowspan="2"): +renderKey("PresentTense")
+            th(rowspan="2"): +renderKey("PastTense")
+            th(rowspan="2"): +renderKey("PastHabitualTense")
+            th(colspan="2"): +renderKey("FutureTense")
+          tr.tense-row
+              th: +renderKey("Independent")
+              th: +renderKey("Dependent")
+        tbody
+          tr
+            td faighim
+            td fuair mé
+            td d&rsquo;fhaighinn
+            td gheobhaidh mé
+            td ní bhfaighidh mé
+          tr
+            td faigheann tú
+            td fuair tú
+            td d&rsquo;fhaighteá
+            td gheobhaidh tú
+            td ní bhfaighidh tú
+          tr
+            td faigheann sé/sí
+            td fuair sé/sí
+            td d&rsquo;fhaigheadh sé/sí
+            td gheobhaidh sé/sí
+            td ní bhfaighidh sé/sí
+          tr
+            td faighimid
+            td fuaireamar
+            td d&rsquo;fhaighimis
+            td gheobhaimid
+            td ní bhfaighimid
+          tr
+            td faigheann sibh
+            td fuair sibh
+            td d&rsquo;fhaigheadh sibh
+            td gheobhaidh sibh
+            td ní bhfaighidh sibh
+          tr
+            td faigheann siad
+            td fuair siad
+            td d&rsquo;fhaighidís
+            td gheobhaidh siad
+            td ní bhfaighidh siad
+          tr
+            td #[i: +renderKey("nod-sb", { getFromCommon: true })] faightear
+            td #[i: +renderKey("nod-sb", { getFromCommon: true })] fuarthas
+            td #[i: +renderKey("nod-sb", { getFromCommon: true })] d&rsquo;fhaightí
+            td #[i: +renderKey("nod-sb", { getFromCommon: true })] gheofar
+            td #[i: +renderKey("nod-sb", { getFromCommon: true })] ní bhfaighfear
+      //- Conditional, Subjunctive, Imperative Moods
+      tr: td: table
+        colgroup
+          col(class="w-1/4")
+          col(class="w-1/4")
+          col(class="w-1/4")
+          col(class="w-1/4")
+        thead
+          tr.secondary-header-row
+            th(colspan=2): +renderKey("ConditionalMood")
+            th(rowspan=2): +renderKey("PresentSubjunctiveMood")
+            th(rowspan=2): +renderKey("ImperativeMood")
+          tr.tense-row
+            th: +renderKey("Independent")
+            th: +renderKey("Dependent")
+        tbody
+          tr
+            td gheobhainn
+            td ní bhfaighinn
+            td go bhfaighe mé
+            td faighim
+          tr
+            td gheofá
+            td ní bhfaighfeá
+            td go bhfaighe tú
+            td faigh
+          tr
+            td gheobhadh sé/sí
+            td ní bhfaigheadh sé/sí
+            td go bhfaighe sé/sí
+            td faigheadh sé/sí
+          tr
+            td gheobhaimis
+            td ní bhfaighimis
+            td go bhfaighimid
+            td faighimis
+          tr
+            td gheobhadh sibh
+            td ní bhfaigheadh sibh
+            td go bhfaighe sibh
+            td faighigí
+          tr
+            td gheobhaidís
+            td ní bhfaighidís
+            td go bhfaighe siad
+            td faighidís
+          tr
+            td #[i: +renderKey("nod-sb", { getFromCommon: true })] gheofaí
+            td #[i: +renderKey("nod-sb", { getFromCommon: true })] ní bhfaighfí
+            td #[i: +renderKey("nod-sb", { getFromCommon: true })] go bhfaightear
+            td #[i: +renderKey("nod-sb", { getFromCommon: true })] faightear
+      tr: td: table
+        colgroup
+          col(class="w-1/2")
+          col(class="w-1/2")
+        thead
+          tr.secondary-header-row
+            th: +renderKey("VerbalNoun")
+            th: +renderKey("VerbalAdjective")
+        tbody
+          tr
+            td fáil
+            td faighte
+
+//- This table is for Feic, an irregular verb
+mixin Table5T
+  +markedTable(5, "T", `Table5T-caption`)(class="verb-table")
+    thead
+      thead
+      tr.primary-header-row
+        th
+          if docLang === "GA"
+            | Feic
+          else
+            | Feic #[+tl: +renderKey(`briathar-Feic`)]
+    tbody
+      //- Indicative Mood
+      tr: td: table
+        thead
+          tr.secondary-header-row
+            th(colspan="5"): +renderKey("IndicativeMood")
+        tbody
+          tr.tense-row
+            th(rowspan="2"): +renderKey("PresentTense")
+            th(colspan="2"): +renderKey("PastTense")
+            th(rowspan="2"): +renderKey("PastHabitualTense")
+            th(rowspan="2"): +renderKey("FutureTense")
+          tr.tense-row
+              th: +renderKey("Independent")
+              th: +renderKey("Dependent")
+          tr
+            td feicim
+            td chonaic mé
+            td ní fhaca mé
+            td d&rsquo;fheicinn
+            td feicfidh mé
+          tr
+            td feiceann tú
+            td chonaic tú
+            td ní fhaca tú
+            td d&rsquo;fheicteá
+            td feicfidh tú
+          tr
+            td feiceann sé/sí
+            td chonaic sé/sí
+            td ní fhaca sé/sí
+            td d&rsquo;fheiceadh sé/sí
+            td feicfidh sé/sí
+          tr
+            td feicimid
+            td chonaiceamar
+            td ní fhacamar
+            td d&rsquo;fheicimis
+            td feicfimid
+          tr
+            td feiceann sibh
+            td chonaic sibh
+            td ní fhaca sibh
+            td d&rsquo;fheiceadh sibh
+            td feicfidh sibh
+          tr
+            td feiceann siad
+            td chonaic siad
+            td ní fhaca siad
+            td d&rsquo;fheicidís
+            td feicfidh siad
+          tr
+            td #[i: +renderKey("nod-sb", { getFromCommon: true })] feictear
+            td #[i: +renderKey("nod-sb", { getFromCommon: true })] chonacthas
+            td #[i: +renderKey("nod-sb", { getFromCommon: true })] ní fhacthas
+            td #[i: +renderKey("nod-sb", { getFromCommon: true })] d&rsquo;fheictí
+            td #[i: +renderKey("nod-sb", { getFromCommon: true })] feicfear
+      //- Conditional, Subjunctive, Imperative Moods
+      tr: td: table
+        colgroup
+          col(class="w-1/3")
+          col(class="w-1/3")
+          col(class="w-1/3")
+        thead
+          tr.secondary-header-row
+            th: +renderKey("ConditionalMood")
+            th: +renderKey("PresentSubjunctiveMood")
+            th: +renderKey("ImperativeMood")
+        tbody
+          tr
+            td d&rsquo;fheicfinn
+            td go bhfeice mé
+            td feicim
+          tr
+            td d&rsquo;fheicfeá
+            td go bhfeice tú
+            td feic
+          tr
+            td d&rsquo;fheicfeadh sé/sí
+            td go bhfeice sé/sí
+            td feiceadh sé/sí
+          tr
+            td d&rsquo;fheicfimis
+            td go bhfeicimid
+            td feicimis
+          tr
+            td d&rsquo;fheicfeadh sibh
+            td go bhfeice sibh
+            td feicigí
+          tr
+            td d&rsquo;fheicfidís
+            td go bhfeice siad
+            td feicidís
+          tr
+            td #[i: +renderKey("nod-sb", { getFromCommon: true })] d&rsquo;fheicfí
+            td #[i: +renderKey("nod-sb", { getFromCommon: true })] go bhfeictear
+            td #[i: +renderKey("nod-sb", { getFromCommon: true })] feictear
+      tr: td: table
+        colgroup
+          col(class="w-1/2")
+          col(class="w-1/2")
+        thead
+          tr.secondary-header-row
+            th: +renderKey("VerbalNoun")
+            th: +renderKey("VerbalAdjective")
+        tbody
+          tr
+            td feiceáil
+            td feicthe
+
+mixin Table5U
+  +StandardVerbTable("U", {
+    root: "Ith",
+    present: [
+      "ithim", "itheann tú", "itheann sé/sí",
+      "ithimid", "itheann sibh", "itheann siad",
+      "itear",
+    ],
+    past: [
+      "d&rsquo;ith mé", "d&rsquo;ith tú", "d&rsquo;ith sé/sí",
+      "d&rsquo;itheamar", "d&rsquo;ith sibh", "d&rsquo;ith siad",
+      "itheadh",
+    ],
+    pastHabitual: [
+      "d&rsquo;ithinn", "d&rsquo;iteá", "d&rsquo;itheadh sé/sí",
+      "d&rsquo;ithimis", "d&rsquo;itheadh sibh", "d&rsquo;ithidís",
+      "d&rsquo;ití",
+    ],
+    future: [
+      "íosfaidh mé", "íosfaidh tú", "íosfaidh sé/sí",
+      "íosfaimid", "íosfaidh sibh", "íosfaidh siad",
+      "íosfar",
+    ],
+    conditional: [
+      "d&rsquo;íosfainn", "d&rsquo;íosfá", "d&rsquo;íosfadh sé/sí",
+      "d&rsquo;íosfaimis", "d&rsquo;íosfadh sibh", "d&rsquo;íosfaidís",
+      "d&rsquo;íosfaí",
+    ],
+    subjunctive: [
+      "go n&#x2011;ithe mé", "go n&#x2011;ithe tú", "go n&#x2011;ithe sé/sí",
+      "go n&#x2011;ithimid", "go n&#x2011;ithe sibh", "go n&#x2011;ithe siad",
+      "go n&#x2011;itear",
+    ],
+    imperative: [
+      "ithim", "ith", "itheadh sé/sí",
+      "ithimis", "ithigí", "ithidís",
+      "itear",
+    ],
+    verbalNoun: "ithe",
+    verbalAdjective: "ite"
+  })
+
+mixin Table5V
+  +StandardVerbTable("V", {
+    root: "Tabhair",
+    present: [
+      "tugaim", "tugann tú", "tugann sé/sí",
+      "tugaimid", "tugann sibh", "tugann siad",
+      "tugtar",
+    ],
+    past: [
+      "thug mé", "thug tú", "thug sé/sí",
+      "thugamar", "thug sibh", "thug siad",
+      "tugadh",
+    ],
+    pastHabitual: [
+      "thugainn", "thugtá", "thugadh sé/sí",
+      "thugaimis", "thugadh sibh", "thugaidís",
+      "thugtaí",
+    ],
+    future: [
+      "tabharfaidh mé", "tabharfaidh tú", "tabharfaidh sé/sí",
+      "tabharfaimid", "tabharfaidh sibh", "tabharfaidh siad",
+      "tabharfar",
+    ],
+    conditional: [
+      "thabharfainn", "thabharfá", "thabharfadh sé/sí",
+      "thabharfaimis", "thabharfadh sibh", "thabharfaidís",
+      "thabharfaí",
+    ],
+    subjunctive: [
+      "go dtuga mé", "go dtuga tú", "go dtuga sé/sí",
+      "go dtugaimid", "go dtuga sibh", "go dtuga siad",
+      "go dtugtar",
+    ],
+    imperative: [
+      "tugaim", "tabhair", "tugadh sé/sí",
+      "tugaimis", "tugaigí", "tugaidís",
+      "tugtar",
+    ],
+    verbalNoun: "tabhairt",
+    verbalAdjective: "tugtha"
+  })
+
+mixin Table5W
+  +StandardVerbTable("W", {
+    root: "Tar",
+    present: [
+      "tagaim", "tagann tú", "tagann sé/sí",
+      "tagaimid", "tagann sibh", "tagann siad",
+      "tagtar",
+    ],
+    past: [
+      "tháinig mé", "tháinig tú", "tháinig sé/sí",
+      "thángamar", "tháinig sibh", "tháinig siad",
+      "thángthas",
+    ],
+    pastHabitual: [
+      "thagainn", "thagtá", "thagadh sé/sí",
+      "thagaimis", "thagadh sibh", "thagaidís",
+      "thagtaí",
+    ],
+    future: [
+      "tiocfaidh mé", "tiocfaidh tú", "tiocfaidh sé/sí",
+      "tiocfaimid", "tiocfaidh sibh", "tiocfaidh siad",
+      "tiocfar",
+    ],
+    conditional: [
+      "thiocfainn", "thiocfá", "thiocfadh sé/sí",
+      "thiocfaimis", "thiocfadh sibh", "thiocfaidís",
+      "thiocfaí",
+    ],
+    subjunctive: [
+      "go dtaga mé", "go dtaga tú", "go dtaga sé/sí",
+      "go dtagaimid", "go dtaga sibh", "go dtaga siad",
+      "go dtagtar",
+    ],
+    imperative: [
+      "tagaim", "tar", "tagadh sé/sí",
+      "tagaimis", "tagaigí", "tagaidís",
+      "tagtar",
+    ],
+    verbalNoun: "teacht",
+    verbalAdjective: "tagtha"
+  })
+
+//- This table is for téigh, an irregular verb
+mixin Table5X
+  +markedTable(5, "X", `Table5X-caption`)(class="verb-table")
+    thead
+      thead
+      tr.primary-header-row
+        th
+          if docLang === "GA"
+            | Téigh
+          else
+            | Téigh #[+tl: +renderKey(`briathar-Téigh`)]
+    tbody
+      //- Indicative Mood
+      tr: td: table
+        thead
+          tr.secondary-header-row
+            th(colspan="5"): +renderKey("IndicativeMood")
+        tbody
+          tr.tense-row
+            th(rowspan="2"): +renderKey("PresentTense")
+            th(colspan="2"): +renderKey("PastTense")
+            th(rowspan="2"): +renderKey("PastHabitualTense")
+            th(rowspan="2"): +renderKey("FutureTense")
+          tr.tense-row
+            th: +renderKey("Independent")
+            th: +renderKey("Dependent")
+          tr
+            td téim
+            td chuaigh mé
+            td ní dheachaigh mé
+            td théinn
+            td rachaidh mé
+          tr
+            td téann tú
+            td chuaigh tú
+            td ní dheachaigh tú
+            td théiteá
+            td rachaidh tú
+          tr
+            td téann sé/sí
+            td chuaigh sé/sí
+            td ní dheachaigh sé/sí
+            td théadh sé/sí
+            td rachaidh sé/sí
+          tr
+            td téimid
+            td chuamar
+            td ní dheachamar
+            td théimis
+            td rachaimid
+          tr
+            td téann sibh
+            td chuaigh sibh
+            td ní dheachaigh sibh
+            td théadh sibh
+            td rachaidh sibh
+          tr
+            td téann siad
+            td chuaigh siad
+            td ní dheachaigh siad
+            td théidís
+            td rachaidh siad
+          tr
+            td #[i: +renderKey("nod-sb", { getFromCommon: true })] téitear
+            td #[i: +renderKey("nod-sb", { getFromCommon: true })] chuathas
+            td #[i: +renderKey("nod-sb", { getFromCommon: true })] ní dheachthas
+            td #[i: +renderKey("nod-sb", { getFromCommon: true })] théití
+            td #[i: +renderKey("nod-sb", { getFromCommon: true })] rachfar
+      //- Conditional, Subjunctive, Imperative Moods
+      tr: td: table
+        colgroup
+          col(class="w-1/3")
+          col(class="w-1/3")
+          col(class="w-1/3")
+        thead
+          tr.secondary-header-row
+            th: +renderKey("ConditionalMood")
+            th: +renderKey("PresentSubjunctiveMood")
+            th: +renderKey("ImperativeMood")
+        tbody
+          tr
+            <td>rachainn
+            <td>go dté mé
+            <td>téim
+          tr
+            td rachfá
+            td go dté tú
+            td téigh
+          tr
+            td rachadh sé/sí
+            td go dté sé/sí
+            td téadh sé/sí
+          tr
+            td rachaimis
+            td go dtéimid
+            td téimis
+          tr
+            td rachadh sibh
+            td go dté sibh
+            td téigí
+          tr
+            td rachaidís
+            td go dté siad
+            td téidís
+          tr
+            td #[i: +renderKey("nod-sb", { getFromCommon: true })] rachfaí
+            td #[i: +renderKey("nod-sb", { getFromCommon: true })] go dtéitear
+            td #[i: +renderKey("nod-sb", { getFromCommon: true })] téitear
+      tr: td: table
+        colgroup
+          col(class="w-1/2")
+          col(class="w-1/2")
+        thead
+          tr.secondary-header-row
+            th: +renderKey("VerbalNoun")
+            th: +renderKey("VerbalAdjective")
+        tbody
+          tr
+            td dul
+            td dulta
+
+mixin Table5Y
+  +markedTable(5, "Y", `Table5Y-caption`)
+    thead
+      thead
+        tr
+          th: +renderKey("Trait")
+          th: +renderKey("Table5Y-col2")
+    tbody
+      tr
+        td: +renderKey("Table5Y-trait1")
+        td blaiseadh, briseadh, ceapadh, glanadh, meascadh, pósadh
+      tr
+        td: +renderKey("Table5Y-trait2")
+        td bualadh, fáscadh, loscadh, rúscadh, troscadh
+      tr
+        td: +renderKey("Table5Y-trait3")
+        td brath, cumasc, cur, gol, lot, siúl, toirmeasc, tomhas
+      tr
+        td: +renderKey("Table5Y-trait4")
+        td amharc, crith, díol, fás, íoc, ól, ríomh, scríobh, teagasc, teip
+      tr
+        td: +renderKey("Table5Y-trait5")
+        td fágáil, féadachtáil, gabháil, maireachtáil, tógáil
+      tr
+        td: +renderKey("Table5Y-trait6")
+        td adhaint, baint, ceilt, deighilt, meilt, roinnt
+      tr
+        td: +renderKey("Table5Y-trait7")
+        td buaireamh, caitheamh, fónamh, léamh, seasamh, téamh
+      tr
+        td: +renderKey("Table5Y-trait8")
+        td airleacan, leagan, ligean, teilgean, tionlacan, tréigean
+      tr
+        td: +renderKey("Table5Y-trait9")
+        td athnuachan, beochan, buíochan, buachan, cruachan
+      tr
+        td: +renderKey("Table5Y-trait10")
+        td éisteacht, fanacht, gluaiseacht
+      tr
+        td: +renderKey("Table5Y-trait11")
+        td druidim, léim, titim
+      tr
+        td: +renderKey("Table5Y-trait12")
+        td creidiúint, feiliúint, giniúint, leanúint, oiliúint
+      tr
+        td: +renderKey("Table5Y-trait13")
+        td bá, brú, cloí, dlí, feo, guí, lí, lua, meá, ní, plé, reo, sleá, sní, sú, suí, trá, treá
+      tr
+        td: +renderKey("Table5Y-trait14")
+        td bleán, faire, fóirithint, iarraidh, screadach, seinm, tuiscint
+
+mixin Table5Z
+  +markedTable(5, "Z", `Table5Z-caption`)
+    thead
+      thead
+        tr
+          th: +renderKey("Trait")
+          th: +renderKey("Table5Y-col2")
+    tbody
+      tr
+        td: +renderKey("Table5Z-trait-1")
+        td achoimriú, bailiú, cabhrú, daingniú, eagrú, fuarú, gríosú, oibriú
+      tr
+        td: +renderKey("Table5Z-trait-2")
+        td cónaí, corraí, eachtraí, fiafraí, ionsaí
+      tr
+        td: +renderKey("Table5Z-trait-3")
+        td achainí, éirí, impí, taithí
+      tr
+        td: +renderKey("Table5Z-trait-4")
+        td aithint, bagairt, cosaint, eitilt, fógairt, imirt, oscailt, seachaint
+      tr
+        td: +renderKey("Table5Z-trait-5")
+        td ceangal, cogar, freastal, iompar, rómhar, soláthar, taisteal
+      tr
+        td: +renderKey("Table5Z-trait-6")
+        td áireamh, cúiteamh, éileamh, iomramh, machnamh, smaoineamh
+      tr
+        td: +renderKey("Table5Z-trait-7")
+        td ceannach, cnuasach, eiteach, réiteach, taifeach
+      tr
+        td: +renderKey("Table5Z-trait-8")
+        td aoireacht, dúiseacht, fortacht, imeacht, tairngreacht
+      tr
+        td: +renderKey("Table5Z-trait-9")
+        td admháil, athchúrsáil, teagmháil
+      tr
+        td: +renderKey("Table5Z-trait-10")
+        td marcaíocht, ráthaíocht, tóraíocht
+      tr
+        td: +renderKey("Table5Z-trait-11")
+        td damhsa, dúchan, eisiúint, insint, tiúchan
+
+mixin Table5AA
+  +markedTable(5, "AA", `Table5AA-caption`)
+    thead
+      thead
+        tr
+          th: +renderKey("Trait")
+          th: +renderKey("Table5AA-Col2")
+          th: +renderKey("Table5AA-Col3")
+    tbody
+      tr
+        td: +renderKey("Table5AA-trait1")
+        td: ul
+          li bearradh
+          li cáineadh
+          li folcadh
+          li moladh
+        td: ul
+          li scian bhearrtha
+          li rún cáinte
+          li dabhach folctha
+          li dán molta
+
+      tr
+        td: +renderKey("Table5AA-trait2")
+        td: ol
+          li cló
+          li reo
+          li sú
+        td: ol
+          li leabhar clóite
+          li uachtar reoite
+          li páipéar súite
+
+      tr
+        td: +renderKey("Table5AA-trait3")
+        td: ol
+          li cónaí
+          li éalú
+          li ionsaí
+        td: ol
+          li áit chónaithe
+          li bealach éalaithe
+          li lucht ionsaithe
+
+      tr
+        td: +renderKey("Table5AA-trait4")
+        td: ol
+          li cuimilt
+          li cosaint
+          li labhairt
+        td: ol
+          li barr cuimilte
+          li gléas cosanta
+          li deis labhartha
+
+      tr
+        td: +renderKey("Table5AA-trait5")
+        td: ol
+          li coimeád
+          li léamh
+          li scríobh
+        td: ol
+          li fear coimeádta
+          li lucht léite
+          li an focal scríofa
+
+      tr
+        td: +renderKey("Table5AA-trait6")
+        td: ol
+          li bruith
+          li druidim
+        td: ol
+          li práta bruite
+          li dorn druidte
+
+mixin Table5BB
+  +markedTable(5, "BB", `Table5BB-caption`)
+    thead
+      thead
+        tr
+          th: +renderKey("Trait")
+          th: +renderKey("Table5AA-Col2")
+          th: +renderKey("Table5AA-Col3")
+    tbody
+      tr
+        td: +renderKey("Table5BB-trait1")
+        td: ul
+          li gol
+          li machnamh
+        td: ul
+          li fonn goil
+          li ag déanamh a machnaimh
+      tr
+        td: +renderKey("Table5BB-trait2")
+        td fóirithint
+        td foireann fóirithinte
+      tr
+        td: +renderKey("Table5BB-trait3")
+        td: ul
+          li admháil
+          li dúiseacht
+          li iomáint
+          li lúbarnaíl
+          li oiliúint
+          li díolaim
+          li éag
+          li tuiscint
+        td: ul
+          li páipéar admhála
+          li clog dúiseachta
+          li foireann iomána
+          li le teann lúbarnaíola
+          li coláiste oiliúna
+          li fear díolama
+          li ar chúl éaga
+          li bua tuisceana
+
+mixin Table5CC
+  +markedTable(5, "CC", `Table5CC-caption`)
+    thead
+      tr
+        th: +renderKey("Trait")
+        th: +renderKey("Table5AA-Col2")
+        th: +renderKey("Table5AA-Col3")
+    tbody
+      tr
+        td: +renderKey("Table5CC-trait-1")
+        td: ul
+          li ag magadh
+          li ag seanchas
+        td: ul
+          li cúis mhagaidh
+          li fear seanchais
+      tr
+        td: +renderKey("Table5CC-trait-2")
+        td: ul
+          li ag báisteach
+          li ag fearthainn
+          li fuadar
+        td: ul
+          li cuma bháistí
+          li fearthainne
+      tr
+        td: +renderKey("Table5CC-trait-3")
+        td: ul
+          li ag bádóireacht
+          li ag peataireacht
+          li ag bradaíl
+          li ag feadaíl
+        td: ul
+          li cumann bádóireachta
+          li an iomarca peataireachta
+          li bó bhradaíola
+          li port feadaíola
+
+mixin Table5DD
+  +markedTable(5, "DD", `Table5DD-caption`)
+    thead
+      tr
+        th: +renderKey("Trait")
+        th: +renderKey("Table5AA-Col2")
+        th: +renderKey("Table5AA-Col3")
+    tbody
+      tr
+        td: +renderKey("Table5DD-trait-1")
+        td níochán
+        td meaisín níocháin
+      tr
+        td: +renderKey("Table5DD-trait-2")
+        td preabarnach
+        td rás preabarnaí
+      tr
+        td: +renderKey("Table5DD-trait-3")
+        td léitheoireacht
+        td ábhar léitheoireachta
+
+mixin Table5EE
+  +markedTable(5, "EE", `Table5EE-caption`)
+    colgroup
+      col(class="w-1/3")
+      col(class="w-1/3")
+      col(class="w-1/3")
+    thead
+      tr
+        th: +renderKey("Trait")
+        th: +renderKey("Table5AA-Col2")
+        th: +renderKey("Table5EE-col3")
+    tbody
+      tr
+        td: +renderKey("Table5EE-trait-1")
+        td: ul
+          li brath
+          li ceannach
+          li comhrac
+          li gearán
+          li iompar
+          li tochas
+        td: ul
+          li lucht braith
+          li árthach ceannaigh
+          li céile comhraic
+          li cúis ghearáin
+          li gléas iompair
+          li cuaille tochais
+      tr
+        td: +renderKey("Table5EE-trait-2")
+        td: ul
+          li aithris
+          li breith
+          li insint
+          li léim
+          li titim
+          li úsáid
+        td: ul
+          li cóir aithrise
+          li lá breithe
+          li an sórt insinte
+          li ag caitheamh léime
+          li fonn titime
+          li easpa úsáide
+      tr
+        td: +renderKey("Table5EE-trait-3")
+        td: ul
+          li beochan
+          li crith
+          li foghlaim
+          li íoc
+          li reic
+          li rith
+          li seinm
+          li sníomh
+          li trácht
+          li troid
+        td: ul
+          li deoch bheochana
+          li galar creatha
+          li aos foghlama
+          li fear íoca
+          li stalla reaca
+          li ligean reatha
+          li lucht seanma
+          li fearsaid sníomha
+          li brú tráchta
+          li babhta troda
+
+mixin Table5FF
+  +markedTable(5, "FF", `Table5FF-caption`)
+    colgroup
+      col(class="w-1/3")
+      col(class="w-1/3")
+      col(class="w-1/3")
+    thead
+      tr
+        th: +renderKey("Table5FF-col1")
+        th: +renderKey("Table5FF-col2")
+        th: +renderKey("Table5FF-col3")
+    tbody
+      tr
+        td brath
+        td fear a bhraite
+        td lucht braith
+      tr
+        td ceannach
+        td fear ceannaithe na mbeithíoch
+        td árthach ceannaigh
+      tr
+        td déan
+        td fear déanta brící
+        td sórt déanaimh
+      tr
+        td insint
+        td fear inste scéil
+        td an sórt insinte
+      tr
+        td íoc
+        td lá íoctha na rátaí
+        td fear íoca
+      tr
+        td iompar
+        td tar éis a iompartha
+        td gléas iompair
+      tr
+        td ól
+        td lucht ólta poitín
+        td boladh óil
+      tr
+        td úsáid
+        td modh a úsáidte
+        td easpa úsáide
+

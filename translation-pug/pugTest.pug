@@ -1,11 +1,4 @@
 include ./bodyMatter.pug
 include ./tlMatter.pug
 
-mixin tl(tlText)
-  if tlText != null
-    +inlineTl('EN', tlText)
-  else
-    +inlineTl('EN')
-      block
-
-p abcde #[+tl a]
++link("https://www.teanglann.ie/en/fgb/diabhal", "FGB entry")(target="blank")

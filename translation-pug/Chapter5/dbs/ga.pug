@@ -1,0 +1,458 @@
+include ../../tlMatter.pug
+
+mixin gaDb(key)
+  case key
+    when "PresentTense"
+      | An Aimsir Láithreach
+    when "OrdinaryPresentTense"
+      | An Aimsir Ghnáthláithreach
+    when "PastTense"
+      | An Aimsir Chaite
+    when "PastHabitualTense"
+      | An Aimsir Ghnáthchaite
+    when "FutureTense"
+      | An Aimsir Fháistineach
+    when "ConditionalMood"
+      | An Modh Coinníollach
+    when "SubjunctiveMood"
+      | An Modh Foshuiteach
+    when "PresentSubjunctiveMood"
+      | An Modh Foshuiteach Láithreach
+    when "ImperativeMood"
+      | An Modh Ordaitheach
+    when "IndicativeMood"
+      | An Modh Táscach
+    when "VerbalNoun"
+      | An tAinm Briathartha
+    when "VerbalAdjective"
+      | An Aidiacht Bhriathartha
+    when "teidealNaCaibidle"
+      | An Briathar
+    when "5-1-title"
+      | Na Briathra Rialta
+    when "5-title"
+      | #[+renderKey("Caibidil", { getFromCommon: true })] 5 | #[+gaDb("teidealNaCaibidle")]
+    when "5-1-1-p"
+      | Tá dhá réimniú ar na briathra rialta.
+    when "5-1-2-p"
+      | Baineann leis an gCéad Réimniú:
+    when "5-1-2-a-p"
+      | briathra ó fhréamhacha aonsiollacha, e.g., #[i bog], #[i bris], #[i caith], #[i mol], lena n&#x2011;áirítear briathra a chríochnaíonn ar #[i -igh], e.g., #[i breoigh], #[i clóigh], #[i cráigh], #[i iaigh], #[i luaigh], #[i reoigh], #[i sáigh];
+    when "5-1-2-b-p"
+      | briathra ó fhréamhacha ilsiollacha a chríochnaíonn ar #[i -áil], e.g., #[i sábháil], #[i tarrtháil], agus roinnt briathra ilsiollacha ar leith, e.g., #[i adhlaic], #[i ceiliúir], #[i gearán], #[i seachaid], #[i taispeáin], #[i tíolaic].
+    when "5-1-3-p"
+      | Baineann leis an Dara Réimniú:
+    when "5-1-3-a-p"
+      | briathra ó fhréamhacha ilsiollacha a chríochnaíonn ar #[i -(a)igh], e.g., #[i ceannaigh], #[i imigh]
+    when "5-1-3-b-p"
+      | briathra ó fhréamhacha ilsiollacha a chríochnaíonn ar #[i -(a)il], #[i -(a)in], #[i -(a)ir], #[i -(a)is] agus a choimrítear sa réimniú, e.g., #[i agair], #[i codail], #[i cogain], #[i iompair], #[i tochail];
+    when "5-1-3-c-p"
+      | líon beag briathra ar leith ar nós #[i foghlaim], #[i fulaing], #[i tarraing], #[i tuirling].
+    when "5-1-4-p"
+      | Is ionann réimniú de ghnáth do bhriathar comhshuite agus don bhriathar ónar cumadh é:
+    when "5-1-4-a-p"
+      | tá #[i aisíoc], #[i athdhear] agus #[i comhlíon] sa chéad réimniú ar aon dul le #[i íoc], #[i dear] agus #[i líon]; agus
+    when "5-1-4-b-p"
+      | tá #[i athchomhairligh], #[i comhdhlúthaigh] agus #[i comhshínigh] sa dara réimniú ar aon dul le #[i comhairligh], #[i dlúthaigh] agus #[i sínigh].
+    when "5-1-5-title"
+      | An Modh Foshuiteach
+    when "5-1-5-a-p"
+      | Má tá feidhm ghuítheach ag abairt is sa mhodh foshuiteach a bhíonn sí i gcónaí, e.g., #[i Go raibh maith agat]; #[i Go dté tú slán]. Bíonn rogha idir an modh foshuiteach láithreach agus an aimsir fháistineach nuair is aimsir phríomha atá ag briathar an phríomhchlásail sna cásanna seo a leanas:
+    when "5-1-5-a-i-p"
+      | i ndiaidh na gcónasc ama #[i ach a], #[i go], #[i nó go], #[i sula], e.g., #[i Gheobhaimid an scéal ceart ach a dtaga] (#[i a dtiocfaidh]) #[i Pól]; #[i Ná beannaigh don diabhal go mbeannaí] (#[i go mbeannóidh]) #[i sé duit]; #[i Beidh tú ann nó go bhfása] (#[i nó go bhfásfaidh]) #[i coincleach ort]; #[i Beidh siad ann sula mbuailtear] (#[i sula mbuailfear]) #[i clog an aingil];
+    when "5-1-5-a-ii-p"
+      | i ndiaidh na gcónasc aidhme #[i go], #[i nó go], e.g., #[i Féach é go bhfeice] (#[i go bhfeicfidh]) #[i tú]; #[i Suigh nó go raibh] (#[i nó go mbeidh]) #[i do scíth déanta agat];
+    when "5-1-5-a-iii-p"
+      | i gcéadbheart oscailte i ndiaidh #[i mura], e.g., #[i Mura gcuire] (#[i mura gcuirfidh]) #[i tú], #[i ní bhainfidh tú].
+    when "5-1-5-b-i-p"
+      | Is ionann foirmeacha an mhodha fhoshuitigh chaite agus foirmeacha na haimsire gnáthchaite spleáiche (ach amháin i gcás an bhriathair #[i bí]) (féach an Fhoirm Spleách, #[+link("#sec_5_1_8", "5.1.8")]). Is féidir freisin foirm an mhodha choinníollaigh a úsáid thar ceann an fhoshuitigh chaite más san aimsir chaite, san aimsir ghnáthchaite nó sa mhodh coinníollach atá an príomhchlásal, e.g., #[i Tháinig] (#[i thagadh], #[i thiocfadh]) #[i sí isteach sula bhfeictí] (#[i bhfeicfí]) #[i í]. I gcás an bhriathair #[i bí] is ionann foirmeacha don mhodh foshuiteach caite agus don mhodh coinníollach.
+    when "5-1-5-b-ii-p"
+      | Sna táblaí sa chaibidil seo, léirítear an modh foshuiteach láithreach leis an mír #[i go]. Bíodh go leanann urú an mhír sin agus roinnt eile, ní hamhlaidh i gcás gach míre a ghabhann leis an modh foshuiteach. Séimhiú a leanann #[i nár], e.g., #[i Nár fhana sé i bhfad].
+    when "5-1-6-title"
+      | An Mhír Dhiúltach
+    when "5-1-6-p"
+      | Is í #[i ní] (#[i níor]) an mhír dhiúltach agus léirítear í sna táblaí ina dtugtar an fhoirm dhiúltach.
+    when "5-1-7-title"
+      | An Fhoirm Neamhspleách
+    when "5-1-7-p"
+      | Is í an fhoirm neamhspleách an fhoirm den bhriathar a úsáidtear i bpríomhchlásal ráiteasach dearfach, e.g., #[i bhí mé]; #[i ceannóidh sé]; #[i mholfadh sí]. Mura bhfuil a mhalairt ráite, is í an fhoirm neamhspleách a thugtar sa réimniú sa chuid eile den chaibidil seo, ach amháin sa Mhodh Foshuiteach Láithreach.
+    when "5-1-8-title"
+      | An Fhoirm Spleách
+    when "5-1-8-p"
+      | Is í an fhoirm spleách a leanann na cónaisc, na forainmneacha coibhneasta agus na míreanna briathartha seo: #[i a/ar] (= an mhír choibhneasta), #[i a/ar] (= #[i an méid a/ar]), #[i an/ar], #[i cá/cár], #[i dá/dár], (#[i de] nó #[i do] + #[i a] (#[i ar])) agus #[i dá] (coinníollach), #[i go/gur], #[i mura/murar], #[i nach/nár], #[i ní/níor], #[i sula/sular] (féach #[+link("./chapter10.html#sec_10_4_2", "10.4.2")] agus #[+link("./chapter10.html#sec_10_8_2", "10.8.2")]).
+    when "5-1-8-note"
+      | San aimsir chaite amháin a úsáidtear na leaganacha a chríochnaíonn ar #[i -r] thuas (ach féach #[+link("./chapter5.html#sec_5_4_5", "5.4.5")]).
+    when "5-1-9-title"
+      | Aimsir an Bhriathair i gcás #[i má] agus #[i nuair]
+    when "5-1-9-p"
+      | Is í an aimsir ghnáthláithreach a leanann #[i má] chun coinníoll sa todhchaí a chur in iúl, e.g., #[i Déanfaidh mé um thráthnóna é má bhíonn deis agam]. Is í an aimsir fháistineach a leanann #[i nuair] má táthar ag trácht ar rud atá le tarlú amach anseo, e.g., #[i Glan é nuair a thiocfaidh tú isteach amárach].
+    when "5-1-10-title"
+      | #[i Muid]
+    when "5-1-10-p"
+      | Is féidir #[i muid] a úsáid leis an bhfoirm scartha den bhriathar sa chéad phearsa iolra de rogha ar na foirmeacha táite den bhriathar (a thugtar sna táblaí) i ngach uile mhodh agus aimsir. Tá comhstádas ag an bhfoirm scartha #[i muid] agus ag na foirmeacha táite den bhriathar sa chéad phearsa iolra.
+    when "Table5A-caption"
+      | An Fhoirm Scartha #[i muid]
+    when "Table5A-col1"
+      | An Aimsir/Modh
+    when "Table5A-col2"
+      | An Fhoirm Scartha + #[i muid]
+    when "Table5A-col3"
+      | An Fhoirm Tháite den Bhriathar
+    when "5-2-title"
+      | An Chéad Réimniú
+    when "5-2-1-title"
+      | Briathra ó fhréamhacha aonsiollacha a chríochnaíonn ar chonsan seachas #[i -gh]
+    when "Table5B-caption"
+      | An Chéad Réimniú &#8212; Réimniú an Bhriathair #[i mol]
+    when "Table5C-caption"
+      | An Chéad Réimniú &#8212; Réimniú an Bhriathair #[i bris]
+    when "Table5C-Note"
+      | Séimhítear an briathar neamhspleách rialta sa mhodh táscach, aimsir chaite (seachas an saorbhriathar) agus aimsir ghnáthchaite, agus sa mhodh coinníollach. Tá tuilleadh eolais in #[+link("./chapter10.html#sec_10_4", "10.4")] faoi na cásanna eile ina séimhítear an briathar spleách agus neamhspleách agus pléitear na cásanna ina n&#x2011;uraítear an briathar in #[+link("./chapter10.html#sec_10_8", "10.8")].
+    when "5-2-1-a-p"
+      | Is ar an gcuma chéanna le #[i mol] a réimnítear briathra rialta ó fhréamhacha aonsiollacha a chríochnaíonn ar chonsan leathan, agus is ar an gcuma chéanna le #[i bris] a réimnítear briathra rialta ó fhréamhacha aonsiollacha a chríochnaíonn ar chonsan caol.
+    when "5-2-1-b-p"
+      | Má ghabhann fréamh a chríochnaíonn ar #[i -t] nó #[i -th] (e.g., #[i at], #[i loit], #[i caith], #[i leath]) foirceann dar tús #[i -t] (e.g., #[i -tar/-tear], #[i -taí/-tí], #[i -tá/-teá], #[i -ta/-te]), déantar #[i -t-] den #[i -t(h)t-]:
+    when "5-2-1-b-Table-col1"
+      | Críochnaíonn ar #[i -t(h)] leathan
+    when "5-2-1-b-Table-col2"
+      | Críochnaíonn ar #[i -t(h)] caol
+    when "5-2-1-c-p"
+      | Má ghabhann fréamh a chríochnaíonn ar #[i -bh] nó #[i -mh] (e.g., #[i gabh], #[i ríomh]) foirceann dar tús #[i -th-] (e.g., #[i -tha] san aidiacht bhriathartha), déantar #[i -f-] den #[i -bhth-] nó den #[i -mhth-]:
+    when "EndsWith"
+      | Críochnaíonn ar
+    when "5-2-1-d-p"
+      | Coinnítear #[i -bh], #[i -mh] agus #[i -th] roimh #[i -f-], e.g., #[i scríobhfaí], #[i ríomhfá], #[i chaithfeá]:
+    when "5-2-2-title"
+      | Briathra ó Fhréamhacha Ilsiollacha
+    when "Table5D-caption"
+      | An Chéad Réimniú &mdash; Réimniú an Bhriathair #[i sábháil]
+    when "Table5D-note"
+      | Maidir le briathra a chríochnaíonn ar #[i -áil], tabhair faoi deara go mbíonn na leaganacha le #[i -t-] caol, e.g., #[i athchúrsáiltear], #[i d&rsquo;athchúrsáiltí], #[i athchúrsáilte]; #[i sábháiltear], #[i shábháiltí], #[i sábháilte], ach go mbíonn na leaganacha le #[i -f-] leathan, e.g., #[i athchúrsálfar], #[i d&rsquo;athchúrsálfaí]; #[i sábhálfar], #[i shábhálfaí].
+    when "Table5E-caption"
+      | An Chéad Réimniú &mdash; Réimniú an Bhriathair #[i tíolaic]
+    when "5-2-2-tables-col1"
+      | An Fhréamh
+    when "5-2-2-tables-col2"
+      | An Chéad Phearsa Uatha <br /> An Aimsir Láithreach
+    when "5-2-2-tables-col3"
+      | An tAinm Briathartha
+    when "5-2-2-tables-col4"
+      | An Aidiacht Bhriathartha
+    when "5-2-2-a-p"
+      | Briathra a réimnítear ar nós #[i sábháil]:
+    when "5-2-2-b-p"
+      | Briathra a réimnítear ar nós #[i tíolaic]:
+    when "5-2-2-c-p"
+      | Briathra a choinnítear caol tríd síos (gan an t&#x2011;ainm briathartha a áireamh) ina réimniú:
+    when "5-2-2-d-p"
+      | Briathra a choinnítear leathan tríd síos ina réimniú:
+    when "5-2-2-note"
+      | Coimrítear na briathra ó na fréamhacha #[i adhain], #[i adhair] agus #[i sleabhac] ina réimniú amhail is dá mba #[i adhn-], #[i adhr-], #[i sleabhc-], ba fhréamh dóibh, e.g., #[i adhnann sé], #[i adhrfaidh sí], #[i sleabhctha], ach amháin san aimsir chaite scartha, e.g., #[i d&rsquo;adhain sé], #[i d&rsquo;adhair sí], #[i shleabhac siad], agus in aidiachtaí briathartha #[i adhain], #[i adhair], e.g., #[i adhainte], #[i adhartha].
+    when "5-2-3-title"
+      | Briathra ó fhréamhacha aonsiollacha a chríochnaíonn ar #[i -gh]
+    when "Table5F-caption"
+      | An Chéad Réimniú &mdash; Réimniú an Bhriathair #[i cráigh]
+    when "Table5F-note"
+      | Maidir le briathra a réimnítear ar nós #[i cráigh] agus #[i dóigh], tabhair faoi deara go mbíonn na leaganacha le #[i -t-] caol, e.g., #[i chráiteá], #[i cráitear]; #[i dhóiteá], #[i dóitear], ach go mbíonn na leaganacha le #[i -f-] leathan, e.g., #[i cráfaidh tú], #[i chráfaí]; #[i dófaidh tú], #[i dhófaí].
+    when "Table5G-caption"
+      | An Chéad Réimniú &mdash; Réimniú an Bhriathair #[i dóigh]
+    when "5-2-3-A-a-p"
+      | Briathra a réimnítear ar nós #[i cráigh], #[i dóigh]:
+    when "5-2-3-A-b-p"
+      | Briathra a bhfuil ainm briathartha ar leith acu:
+    when "5-2-3-B-p"
+      | I gcás briathra a bhfuil guta gearr sa fhréamh iontu, fágtar an guta gan fadú roimh #[i -t], e.g., #[i nitear], #[i niteá], #[i nite], ach #[i ním], #[i níodh], #[i nífí], etc. Is guta fada, áfach, a bhíonn ag #[i léigh] etc. síos tríd, e.g., #[i léitear], #[i léiteá], #[i léite].
+    when "Table5H-caption"
+      | An Chéad Réimniú &mdash; Réimniú an Bhriathair #[i léigh]
+    when "Table5I-caption"
+      | An Chéad Réimniú &mdash; Réimniú an Bhriathair #[i nigh]
+    when "5-2-3-B-a-p"
+      | Briathra a réimnítear ar nós #[i léigh]:
+    when "5-2-3-B-b-p"
+      | Briathra a réimnítear ar nós #[i nigh]:
+    when "5-2-3-B-c-p"
+      | Briathra a bhfuil ainm briathartha ar leith acu:
+    when "5-3-title"
+      | An Dara Réimniú
+    when "5-3-1-title"
+      | Briathra ó fhréamhacha ilsiollacha a chríochnaíonn ar #[i -(a)igh]
+    when "Table5J-caption"
+      | An Dara Réimniú &mdash; Réimniú an Bhriathair #[i beannaigh]
+    when "Table5K-caption"
+      | An Dara Réimniú &mdash; Réimniú an Bhriathair #[i cruinnigh]
+    when "5-3-1-note"
+      | Tabhair faoi deara gur ar an gcuma chéanna le #[i beannaigh] a réimnítear briathra ó fhréamhacha ilsiollacha a chríochnaíonn ar #[i -aigh], agus gur ar an gcuma chéanna le #[i cruinnigh] a réimnítear briathra ó fhréamhacha ilsiollacha a chríochnaíonn ar #[i -igh]; ach tá eisceachtaí san ainm briathartha (féach #[+link("#sec_5_5_2", "5.5.2")]) agus correisceacht san aidiacht bhriathartha, e.g., #[i dathaigh], #[i daite]; #[i dlúthaigh], #[i dlúite]; #[i táthaigh], #[i táite].
+    when "5-3-2-title"
+      | Briathra ó fhréamhacha ilsiollacha a chríochnaíonnar #[i -(a)il], #[i -(a)in], #[i -(a)ir], #[i -(a)is] agus a choimrítear sa réimniú
+    when "Table5L-caption"
+      | An Dara Réimniú &mdash; Réimniú an Bhriathair #[i ceangail]
+    when "Table5M-caption"
+      | An Dara Réimniú &mdash; Réimniú an Bhriathair #[i díbir]
+    when "5-3-2-a-p"
+      | Briathra a réimnítear ar nós #[i ceangail]:
+    when "5-3-2-b-p"
+      | Briathra a réimnítear ar nós #[i díbir]:
+    when "5-3-3-title"
+      | Briathra Eile sa Dara Réimniú
+    when "5-3-3-a-p"
+      | Ní choimrítear briathra ó fhréamhacha a chríochnaíonn ar #[i -aim], #[i -(a)ing]:
+    when "5-3-3-b-p"
+      | Briathra eile nach gcoimrítear:
+    when "5-4-title"
+      | Na Briathra Neamhrialta
+    when "5-4-1-p"
+      | Aon bhriathar déag neamhrialta atá ann. Is iad seo a leanas na briathra neamhrialta: #[i abair], #[i beir], #[i bí], #[i clois/cluin], #[i déan], #[i faigh], #[i feic], #[i ith], #[i tabhair], #[i tar], #[i téigh].
+    when "5-4-2-p"
+      | Ní choinníonn na briathra neamhrialta an fhréamh chéanna tríd síos ina réimniú agus tá leaganacha ar leith ar chuid acu san fhoirm spleách.
+    when "5-4-3-p"
+      | Is ionann fréamh an bhriathair san aimsir ghnáthláithreach agus san aimsir ghnáthchaite sna briathra neamhrialta go léir, e.g., #[i cloisimid], #[i chloisimis]; #[i deirim], #[i deirinn]; #[i tugann sí], #[i thugadh sí]. Seachas i gcás an bhriathair #[i bí], bíonn an fhréamh chéanna leis an modh foshuiteach láithreach freisin, e.g., #[i go gcloise]; #[i go ndeire]; #[i go dtuga].
+    when "5-4-4-p"
+      | Is ionann fréamh an bhriathair san aimsir fháistineach agus sa mhodh coinníollach sna briathra neamhrialta go léir, e.g., #[i déarfaidh mé], #[i déarfainn]; #[i déanfaidh tú], #[i dhéanfá]; #[i tabharfaidh siad], #[i thabharfaidís].
+    when "5-4-5-title"
+      | An Fhoirm Spleách
+    when "5-4-5-p"
+      | Is í an fhoirm spleách a leanann na cónaisc, na forainmneacha coibhneasta agus na míreanna briathartha seo: #[i a/ar] (= an mhír choibhneasta), #[i a/ar] (= #[i an méid a/ar]), #[i an/ar], #[i cá/cár], #[i dá/dár] (#[i de] nó #[i do+a] (#[i ar])) agus #[i dá] (coinníollach), #[i go/gur], #[i mura/murar], #[i nach/nár], #[i ní/níor], #[i sula/sular] (féach #[+link("./chapter10.html#sec_10_4_2", "10.4.2")] agus #[+link("./chapter10.html#sec_10_8_2", "10.8.2")]). Is le #[i ní] nó #[i go] a léirítear an fhoirm spleách sna táblaí.
+    when "5-4-5-a-p"
+      | Úsáidtear na míreanna sin leis na briathra neamhrialta ar an modh céanna ar a n&#x2011;úsáidtear iad leis na briathra rialta.
+    when "5-4-5-SampleBox-1"
+      | #[b An dtabharfadh] sí síob chun na scoile duit?
+    when "5-4-5-SampleBox-2"
+      | Dúirt siad #[b go dtagann] sí ar cuairt gach Satharn.
+    when "5-4-5-SampleBox-3"
+      | #[b Níor rug] siad ar na gadaithe go fóill.
+    when "5-4-5-SampleBox-4"
+      | #[b Nár chuala] tú faoin gcruinniú?
+    when "5-4-5-SampleBox-5"
+      | #[b Ar ith] sé a dhóthain?
+    when "5-4-5-a-p2"
+      | Ach ní úsáidtear na leaganacha a chríochnaíonn ar #[i -r] de na míreanna sin san aimsir chaite, modh táscach, leis na briathra #[i abair], #[i bí], #[i déan] (i gcás foirmeacha dar tús #[i dearn-]), #[i faigh], #[i feic], #[i téigh].
+    when "5-4-5-SampleBox2-1"
+      | #[b Nach ndeachaigh] sibh abhaile fós?
+    when "5-4-5-SampleBox2-2"
+      | #[b Cá bhfacamar] cheana é?
+    when "5-4-5-SampleBox2-3"
+      | #[b An ndúirt] sé dada leatsa faoi?
+    when "5-4-5-SampleBox2-4"
+      | Deir sí #[b go raibh] siad ann.
+    when "5-4-5-SampleBox2-5"
+      | #[b Ní bhfuair] sé an t&#x2011;airgead fós.
+    when "5-4-5-b-p"
+      | Ní shéimhítear an briathar #[i abair] in aon chás, e.g., #[i ní deirim] (#[i deirimis], #[i dúirt sé], #[i déarfainn]), #[i má deir tú] (#[i deiridís]), #[i na rudaí a déarfaidh] (#[i a déarfadh]) #[i sé].
+    when "5-4-5-c-p"
+      | Táthaítear an mhír choibhneasta #[i a] leis an mbriathar #[i bí] san aimsir láithreach &mdash; #[i atáim], #[i atá], #[i atáimid], #[i atáthar]. Cuirtear #[i ná], in ionad #[i nár], roimh fhoirmeacha an mhodha fhoshuitigh de #[i bí], e.g., #[i Ná raibh maith agat].
+    when "Table5N-caption"
+      | Na Briathra Neamhrialta &mdash; Réimniú an Bhriathair #[i abair]
+    when "Table5N-Note"
+      | Mar a luadh in #[+link("#sec_5_4_5_b", "5.4.5(b)")], ní shéimhítear an briathar #[i abair] in aon chás.
+    when "Table5O-caption"
+      | Na Briathra Neamhrialta &mdash; Réimniú an Bhriathair #[i beir]
+    when "Table5P-caption"
+      | Na Briathra Neamhrialta &mdash; Réimniú an Bhriathair #[i bí]
+    when "PositiveIndependent"
+      | Neamhspleách Dearfach
+    when "NegativeIndependent"
+      | Neamhspleách Diúltach
+    when "Dependent"
+      | Spleách
+    when "Independent"
+      | Neamhspleách
+    when "Table5P-footnote"
+      | #[i a bheith] a bhíonn ann seachas i ndiaidh #[i chun] nó réamhfhocail shimplí áirithe, e.g., #[i chun bheith], #[i as bheith], #[i gan bheith], #[i le bheith].
+    when "Table5Q-caption"
+      | Na Briathra Neamhrialta &mdash; Réimniú an Bhriathair #[i clois/cluin]
+    when "Table5R-caption"
+      | Na Briathra Neamhrialta &mdash; Réimniú an Bhriathair #[i déan]
+    when "Table5R-Note"
+      | Tabhair faoi deara gur briathar rialta é #[i déan] ach amháin san aimsir chaite agus go ndéantar an aimsir chaite a réimniú ar dhá bhealach éagsúla, mar a léirítear sa tábla thuas. Sa chéad cheann díobh sin, tá foirmeacha éagsúla spleácha agus neamhspleácha ar an mbriathar.
+    when "Table5S-caption"
+      | Na Briathra Neamhrialta &mdash; Réimniú an Bhriathair #[i faigh]
+    when "Table5T-caption"
+      | Na Briathra Neamhrialta &mdash; Réimniú an Bhriathair #[i feic]
+    when "Table5T-Note"
+      | Is briathar rialta é #[i feic] ach amháin san aimsir chaite.
+    when "Table5U-caption"
+      | Na Briathra Neamhrialta &mdash; Réimniú an Bhriathair #[i ith]
+    when "Table5U-note"
+      | Is briathar rialta é #[i ith] ach amháin san aimsir fháistineach agus sa mhodh coinníollach.
+    when "Table5V-caption"
+      | Na Briathra Neamhrialta &mdash; Réimniú an Bhriathair #[i tabhair]
+    when "Table5W-caption"
+      | Na Briathra Neamhrialta &mdash; Réimniú an Bhriathair #[i tar]
+    when "Table5X-caption"
+      | Na Briathra Neamhrialta &mdash; Réimniú an Bhriathair #[i téigh]
+    when "5-5-title"
+      | An tAinm Briathartha
+    when "5-5-1-title"
+      | Ainmneacha Briathartha sa Chéad Réimniú
+    when "5-5-1-p"
+      | Sa tábla thíos, taispeántar na cineálacha éagsúla ainmneacha briathartha atá sa chéad réimniú.
+    when "Table5Y-caption"
+      | Ainmneacha Briathartha &mdash; An Chéad Réimniú
+    when "Trait"
+      | Tréith
+    when "Table5Y-col2"
+      | Samplaí
+    when "Table5Y-trait1"
+      | An deireadh #[i -(e)adh]
+    when "Table5Y-trait2"
+      | Leathnú ar an bhfréamh agus an deireadh #[i -adh]
+    when "Table5Y-trait3"
+      | Leathnú ar an bhfréamh
+    when "Table5Y-trait4"
+      | Ionann is an fhréamh
+    when "Table5Y-trait5"
+      | An deireadh #[i -áil]
+    when "Table5Y-trait6"
+      | #[i -t] a chur leis an bhfréamh
+    when "Table5Y-trait7"
+      | An deireadh #[i -(e)amh]
+    when "Table5Y-trait8"
+      | An deireadh #[i -(e)an]
+    when "Table5Y-trait9"
+      | An deireadh #[i -chan]
+    when "Table5Y-trait10"
+      | An deireadh #[i -(e)acht]
+    when "Table5Y-trait11"
+      | An deireadh #[i -im]
+    when "Table5Y-trait12"
+      | An deireadh #[i úint]
+    when "Table5Y-trait13"
+      | Guta fada nó défhoghar (fréamh a chríochnaíonn ar #[i -igh], #[i -ígh])
+    when "Table5Y-trait14"
+      | Ainmneacha briathartha eile
+    when "5-5-2-title"
+      | Ainmneacha Briathartha sa Dara Réimniú
+    when "5-5-2-p"
+      | Sa tábla thíos, taispeántar na cineálacha éagsúla ainmneacha briathartha atá sa dara réimniú.
+    when "Table5Z-caption"
+      | Ainmneacha Briathartha &mdash; An Dara Réimniú
+    when "Table5Z-trait-1"
+      | An deireadh #[i -(i)ú]
+    when "Table5Z-trait-2"
+      | An deireadh #[i aí]
+    when "Table5Z-trait-3"
+      | An deireadh #[i -í]
+    when "Table5Z-trait-4"
+      | #[i -t] a chur leis an bhfréamh
+    when "Table5Z-trait-5"
+      | Leathnú ar an bhfréamh
+    when "Table5Z-trait-6"
+      | An deireadh #[i -(e)amh]
+    when "Table5Z-trait-7"
+      | An deireadh #[i -(e)ach]
+    when "Table5Z-trait-8"
+      | An deireadh #[i -(e)acht]
+    when "Table5Z-trait-9"
+      | An deireadh #[i -áil]
+    when "Table5Z-trait-10"
+      | An deireadh #[i -aíocht]
+    when "Table5Z-trait-11"
+      | Ainmneacha briathartha eile
+    when "5-6-title"
+      | Díochlaonadh an Ainm Bhriathartha
+    when "5-6-1-title"
+      | An Ginideach
+    when "5-6-1-a-p"
+      | Is ionann foirm de ghnáth do ghinideach an ainm bhriathartha agus don aidiacht bhriathartha sna cásanna a léirítear sa tábla thíos:
+    when "Table5AA-caption"
+      | Díochlaonadh an Ainm Bhriathartha &mdash; Ginideach an Ainm Bhriathartha ar Aon Fhoirm leis an Aidiacht Bhriathartha
+    when "Table5AA-Col2"
+      | Ainm Briathartha
+    when "Table5AA-Col3"
+      | Foirm an Ghinidigh
+    when "Table5AA-trait1"
+      | Ainmneacha briathartha a chríochnaíonn ar #[i -(e)adh]
+    when "Table5AA-trait2"
+      | Ainmneacha briathartha aonsiollacha a chríochnaíonn ar ghuta fada nó ar dhéfhoghar
+    when "Table5AA-trait3"
+      | Ainmneacha briathartha ilsiollacha a chríochnaíonn ar ghuta fada
+    when "Table5AA-trait4"
+      | Ainmneacha briathartha a chríochnaíonn ar #[i -ilt], #[i -in(g)t], (ach amháin #[i -áint], #[i -úint]), #[i -irt]
+    when "Table5AA-trait5"
+      | Roinnt ainmneacha briathartha firinscneacha a chríochnaíonn ar chonsan leathan
+    when "Table5AA-trait6"
+      | Corrainm briathartha eile
+    when "Table5AA-Note"
+      | Níl gnáthghinideach de réir ceann de na díochlaontaí (féach #[+link("./chapter3.html#sec_3_3_4", "3.3.4")]) ag ainmneacha briathartha a chríochnaíonn ar #[i -(e)adh] nó a chríochnaíonn ar ghuta fada, e.g., #[i bearradh], #[i cló], #[i cónaí].
+    when "5-6-1-b-p"
+      | Is é ginideach an ainmfhocail, de réir an díochlaonta lena mbaineann, a bhíonn &mdash;
+    when "5-6-1-b-i-p"
+      | ar ainmneacha briathartha áirithe:
+    when "Table5BB-caption"
+      | Díochlaonadh an Ainm Bhriathartha &mdash; Ainmneacha Briathartha Áirithe
+    when "Table5BB-trait1"
+      | Amhail ainmfhocal den Chéad Díochlaonadh (féach #[+link("./chapter2.html#sec_2_2_2", "2.2.2")])
+    when "Table5BB-trait2"
+      | Amhail ainmfhocal den Dara Díochlaonadh (féach #[+link("./chapter2.html#sec_2_3_2", "2.3.2")])
+    when "Table5BB-trait3"
+      | Amhail ainmfhocal den Tríú Díochlaonadh, i gcás ainmneacha briathartha a chríochnaíonn ar #[i -áil], #[i -aíl], #[i -áint], #[i -úint], #[i -cht] agus corrainm briathartha eile (féach #[+link("./chapter2.html#sec_2_4_2", "2.4.2")])
+    when "5-6-1-b-ii-p"
+      | ar ghnáth-ainmfhocail a úsáidtear chun feidhmeanna de chuid ainm briathartha a dhéanamh ach nach dtéann réimniú briathair thairis sin orthu:
+    when "Table5CC-caption"
+      | Díochlaonadh an Ainm Bhriathartha &mdash; Gnáth-Ainmfhocail a úsáidtear chun Feidhmeanna de chuid Ainm Briathartha a dhéanamh
+    when "Table5CC-trait-1"
+      | Amhail ainmfhocal den Chéad Díochlaonadh (féach #[+link("./chapter2.html#sec_2_2_2", "2.2.2")])
+    when "Table5CC-trait-2"
+      | Amhail ainmfhocal den Dara Díochlaonadh (féach #[+link("./chapter2.html#sec_2_3_2", "2.3.2")])
+    when "Table5CC-trait-3"
+      | Amhail ainmfhocal den Tríú Díochlaonadh, i gcásanna ina gcuirtear foirceann leis an mbun-ainmfhocal, e.g., #[i bádóir], #[i bádóireacht]; #[i peata], #[i peataireacht] agus i gcás corrainm briathartha eile (féach #[+link("./chapter2.html#sec_2_4_2", "2.4.2")])
+    when "Table5CC-Note"
+      | Ainmneacha briathartha de na cineálacha sin atá luaite in #[+link("#sec_5_6_1_b_ii", "5.6.1(b)(ii)")] roimhe seo, ní bhíonn foirm don aidiacht bhriathartha orthu. Tá foirm na haidiachta briathartha in easnamh freisin ar ghnáthainmneacha briathartha áirithe, e.g., #[i achainí], #[i uair na hachainí]; #[i fónamh], #[i fear fónaimh]; #[i gol], #[i racht goil]; #[i guí], #[i faoi bhrí na guí]; #[i maireachtáil], #[i slí mhaireachtála].
+    when "5-6-1-b-iii-p"
+      | ar na hathleaganacha atá ar mhórán ainmneacha briathartha chun leanúnachas, minicíocht, teibíocht, torann, treise, fochiall nó beart aonair a chur in iúl, e.g., #[i aistriú] go #[i aistriúchán]; #[i liú] go #[i liúireach]:
+    when "Table5DD-caption"
+      | Díochlaonadh an Ainm Bhriathartha &mdash; Athleaganacha ar Ainmneacha Briathartha
+    when "Table5DD-col1"
+      | Athleagan ar Ainm Briathartha
+    when "Table5DD-trait-1"
+      | Amhail ainmfhocal den Chéad Díochlaonadh (féach #[+link("./chapter2.html#sec_2_2_2", "2.2.2")])
+    when "Table5DD-trait-2"
+      | Amhail ainmfhocal den Dara Díochlaonadh (féach #[+link("./chapter2.html#sec_2_3_2", "2.3.2")])
+    when "Table5DD-trait-3"
+      | Amhail ainmfhocal den Tríú Díochlaonadh (féach #[+link("./chapter2.html#sec_2_4_2", "2.4.2")])
+    when "5-6-1-c-p"
+      | Tá roinnt ainmneacha briathartha ann a bhfuil dhá fhoirm orthu sa ghinideach &mdash; foirm na haidiachta briathartha agus foirm de réir ceann de dhíochlaontaí na n&#x2011;ainmfhocal:
+    when "Table5EE-caption"
+      | Díochlaonadh Ainmneacha Briathartha a bhfuil Dhá Fhoirm orthu sa Ghinideach &mdash; Foirm de réir Ceann de na Díochlaontaí
+    when "Table5EE-col3"
+      | Foirm an Ghinidigh de réir Ceann de na Díochlaontaí
+    when "Table5EE-trait-1"
+      | Amhail ainmfhocal den Chéad Díochlaonadh (formhór na n&#x2011;ainmneacha briathartha firinscneacha a chríochnaíonn ar chonsan leathan) (féach #[+link("./chapter2.html#sec_2_2_2", "2.2.2")])
+    when "Table5EE-trait-2"
+      | Amhail ainmfhocal den Dara Díochlaonadh (beagán ainmneacha briathartha baininscneacha) (féach #[+link("./chapter2.html#sec_2_3_2", "2.3.2")])
+    when "Table5EE-trait-3"
+      | Amhail ainmfhocal den Tríú Díochlaonadh (ainmneacha briathartha baininscneacha a chríochnaíonn ar #[i -chan] agus #[i crith], #[i foghlaim], #[i íoc], #[i reic], #[i rith], #[i seinm], #[i slad], #[i snámh], #[i sníomh], #[i tairiscint], #[i tál], #[i trácht], #[i triall], #[i troid], #[i tuiscint]) (féach #[+link("./chapter2.html#sec_2_4_2", "2.4.2")])
+    when "5-6-1-c-i-p"
+      | Is í foirm na haidiachta briathartha a úsáidtear nuair atá cuspóir ag gabháil leis an ainm briathartha.
+    when "5-6-1-c-ii-p"
+      | Is í an fhoirm eile a úsáidtear nuair is feidhm ainmfhocail nó feidhm aidiachta a bhíonn ag an ainm briathartha.
+    when "Table5FF-caption"
+      | Díochlaonadh Ainmneacha Briathartha a bhfuil Dhá Fhoirm orthu sa Ghinideach &mdash; Foirm na hAidiachta Briathartha agus Foirm de réir Ceann de na Díochlaontaí
+    when "Table5FF-col1"
+      | Ainm Briathartha
+    when "Table5FF-col2"
+      | Ginideach &mdash; Foirm na hAidiachta Briathartha
+    when "Table5FF-col3"
+      | Ginideach &mdash; Foirm de réir Ceann de na Díochlaonta
+    when "5-6-2-title"
+      | An tIolra
+    when "5-6-2-p"
+      | Tá roinnt ainmneacha briathartha ann a úsáidtear mar ghnáth-ainmfhocail freisin. Bíonn foirm iolra orthu sin de réir an díochlaonta lena mbaineann siad.
+    when "5-6-2-a-p"
+      | I gcás ainmneacha briathartha a chríochnaíonn ar #[i -(e)adh], is gnách #[i -taí] (#[i -tí]) a chur in ionad an #[i -(e)adh] más #[i -ch], #[i -d], #[i -l], #[i -ll], #[i -n], #[i -rr], #[i -s] nó #[i -t] is críoch don fhréamh, agus #[i -thaí] (#[i -thí]), más consan eile is críoch di, e.g., #[i baisteadh], #[i baistí]; #[i casadh], #[i castaí]; #[i cinneadh], #[i cinntí]; #[i moladh], #[i moltaí]; #[i pósadh], #[i póstaí]; #[i tarscaoileadh], #[i tarscaoiltí]; #[i bloscadh], #[i bloscthaí]; #[i colscaradh], #[i colscarthaí]; #[i crapadh], #[i crapthaí]; #[i loscadh], #[i loscthaí]; #[i madhmadh], #[i madhmthaí]; #[i scríobadh], #[i scríobthaí]; #[i speireadh], #[i speirthí]; #[i tíolacadh], #[i tíolacthaí], nó corruair #[i -teacha], #[i -thacha], e.g., #[i filleadh], #[i fillteacha]; #[i gearradh], #[i gearrthacha].
+    when "5-6-2-b-p"
+      | I gcás ainmneacha briathartha ilsiollacha a chríochnaíonn ar #[i -(i)ú], cuirtear #[i -(u)ithe] in ionad an #[i -(i)ú], e.g., #[i athrú], #[i athruithe]; #[i ceartú], #[i ceartuithe]; #[i cruinniú], #[i cruinnithe]; #[i fiosrú], #[i fiosruithe]; #[i míniú], #[i mínithe]; #[i ordú], #[i orduithe]; #[i scrúdú], #[i scrúduithe]; #[i toiliú], #[i toilithe].
+    when "5-6-2-c-p"
+      | I gcás ainmneacha briathartha a chríochnaíonn ar #[i -áil], leathnaítear an #[i l] agus cuirtear #[i -acha] leis, e.g., #[i admháil], #[i admhálacha]; #[i ofráil], #[i ofrálacha].
+    when "5-6-2-d-p"
+      | I gcás ainmneacha briathartha a chríochnaíonn ar #[i cht], cuirtear #[i -aí] leo, e.g., #[i gluaiseacht], #[i gluaiseachtaí], agus cuirtear #[i -í] le hainmneacha briathartha a chríochnaíonn ar #[i -lt], #[i -nt], #[i -rt], e.g., #[i bagairt], #[i bagairtí]; #[i creidiúint], #[i creidiúintí]; #[i oscailt], #[i oscailtí]; #[i tairiscint], #[i tairiscintí].
+    when "5-6-2-e-p"
+      | I gcás ainmneacha briathartha aonsiollacha a chríochnaíonn ar ghuta, cuirtear #[i -nna] nó, corruair, #[i -ite] leo, e.g., #[i breo], #[i breonna]; #[i brú], #[i brúnna]; #[i cló], #[i clónna]; #[i dó], #[i dónna]; #[i liú], #[i liúnna]; #[i meá], #[i meánna]; #[i sú], #[i súnna]; #[i crú], #[i crúite]; #[i rá], #[i ráite]; #[i sá], #[i sáite].
+    when "5-7-title"
+      | An Aidiacht Bhriathartha
+    when "5-7-1-title"
+      | Réimíreanna leis an Aidiacht Bhriathartha
+    when "5-7-1-p"
+      | Úsáidtear na réimíreanna #[i do-], #[i in-], #[i so-] le foirm na haidiachta briathartha chun rangabhálacha a dhéanamh, e.g., #[i dochoiscthe], #[i dofheicthe], #[i doghluaiste], #[i dothuigthe], #[i indéanta], #[i inscrúdaithe], #[i sofheicthe], #[i sofhoghlamtha], #[i sophacáilte]. (Féach #[+link("./chapter4.html#sec_4_12", "4.12")] le haghaidh tuilleadh eolais ar an aidiacht bhriathartha.)
+    default
+      - throw new Error(`No content for ${key} (ga.pug)`)

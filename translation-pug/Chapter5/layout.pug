@@ -1,0 +1,455 @@
+include ../bodyMatter.pug
+include ./dbs/index.pug
+include tables.pug
+
++chapterTemplate(5)
+  +hx(2, '5.1', '5-1-title')
+    +hx(3, '5.1.1')
+      p: +renderKey('5-1-1-p')
+    +hx(3, '5.1.2')
+      p: +renderKey('5-1-2-p')
+      ol(class="list-[lower-alpha]")
+        li#sec_5_1_2_a
+          +renderKey('5-1-2-a-p')
+        li#sec_5_1_2_b
+          +renderKey('5-1-2-b-p')
+    +hx(3, '5.1.3')
+      p: +renderKey('5-1-3-p')
+      ol(class="list-[lower-alpha]")
+        li#sec_5_1_3_a
+          +renderKey('5-1-3-a-p')
+        li#sec_5_1_3_b
+          +renderKey('5-1-3-b-p')
+        li#sec_5_1_3_c
+          +renderKey('5-1-3-c-p')
+    +hx(3, '5.1.4')
+      p: +renderKey('5-1-4-p')
+      ol(class="list-[lower-alpha]")
+        li#sec_5_1_4_a
+          +renderKey('5-1-4-a-p')
+        li#sec_5_1_4_b
+          +renderKey('5-1-4-b-p')
+    +hx(3, '5.1.5', '5-1-5-title')
+      ol(class="list-[lower-alpha]")
+        li#sec_5_1_5_a
+          p: +renderKey('5-1-5-a-p')
+          ol(class="list-[lower-roman]")
+            li#sec_5_1_5_a_i
+              +renderKey('5-1-5-a-i-p')
+            li#sec_5_1_5_a_ii
+              +renderKey('5-1-5-a-ii-p')
+            li#sec_5_1_5_a_iii
+              +renderKey('5-1-5-a-iii-p')
+        li#sec_5_1_5_b
+          p &nbsp;
+          ol(class="list-[lower-roman]")
+            li#sec_5_1_5_b_i
+              +renderKey('5-1-5-b-i-p')
+            li#sec_5_1_5_b_ii
+              +renderKey('5-1-5-b-ii-p')
+    +hx(3, '5.1.6', '5-1-6-title')
+      p: +renderKey('5-1-6-p')
+    +hx(3, '5.1.7', '5-1-7-title')
+      p: +renderKey('5-1-7-p')
+    +hx(3, '5.1.8', '5-1-8-title')
+      p: +renderKey('5-1-8-p')
+      aside
+        b: +renderKey('Nóta', { getFromCommon: true })
+        | : #[+renderKey('5-1-8-note')]
+    +hx(3, '5.1.9', '5-1-9-title')
+      p: +renderKey('5-1-9-p')
+    +hx(3, '5.1.10', '5-1-10-title')
+      p: +renderKey('5-1-10-p')
+      +Table5A
+  hr
+  
+  +hx(2, "5.2", "5-2-title")
+    +hx(3, "5.2.1", "5-2-1-title")
+      +Table5B
+      +Table5C
+      aside
+        b: +renderKey('Nóta', { getFromCommon: true })
+        | : #[+renderKey('Table5C-Note')]
+      ol(class="list-[lower-alpha]")
+        li#sec_5_2_1_a
+          +renderKey('5-2-1-a-p')
+        li#sec_5_2_1_b
+          p: +renderKey('5-2-1-b-p')
+          table(class="chapter-5")
+            thead
+              tr
+                th
+                th(colspan=2): +renderKey('5-2-1-b-Table-col1')
+                th(colspan=2): +renderKey('5-2-1-b-Table-col2')
+              tr
+                th(class="bg-stone-300 text-black")
+                th(class="bg-stone-300 text-black") -t(h) + t-
+                th(class="bg-stone-300 text-black") -t-
+                th(class="bg-stone-300 text-black") -t(h) + t-
+                th(class="bg-stone-300 text-black") -t-
+            tbody
+              tr
+                th(class="font-bold" rowspan="2"): +renderKey('PresentTense')
+                td at + tar
+                td atar
+                td loit + tear
+                td loitear
+              tr
+                td leath + tar
+                td leatar
+                td caith + tear
+                td caitear
+              tr
+                th(class="font-bold" rowspan="2"): +renderKey('PastHabitualTense')
+                td d&#8217;at + taí
+                td d&#8217;ataí
+                td loit + tí
+                td loití
+              tr
+                td leath + taí
+                td leataí
+                td caith + tí
+                td chaití
+              tr
+                th(class="font-bold" rowspan="2"): +renderKey('VerbalAdjective')
+                td at + ta
+                td ata
+                td loit + te
+                td loite
+              tr
+                td leath + ta
+                td leata
+                td caith + te
+                td caite
+        li#sec_5_2_1_c
+          p: +renderKey('5-2-1-c-p')
+          table(class="chapter-5")
+            thead
+              tr
+                th
+                th(colspan=2)
+                  +renderKey('EndsWith')
+                  | &nbsp;#[i -bh]
+                th(colspan=2)
+                  +renderKey('EndsWith')
+                  | &nbsp;#[i -mh]
+              tr
+                th(class="bg-stone-300 text-black")
+                th(class="bg-stone-300 text-black") -bh + th-
+                th(class="bg-stone-300 text-black") -f-
+                th(class="bg-stone-300 text-black") -mh + th-
+                th(class="bg-stone-300 text-black") -f-
+            tbody
+              tr
+                th(class="font-bold" rowspan="2"): +renderKey('VerbalNoun')
+                td gabh + tha
+                td gafa
+                td ríomh + tha
+                td ríofa
+              tr
+                td scríobh + tha
+                td scríofa
+                td promh + tha
+                td profa
+        li#sec_5_2_1_d
+          p: +renderKey('5-2-1-d-p')
+          table(class="chapter-5")
+            thead
+              tr
+                th
+                th(colspan=2)
+                  +renderKey('EndsWith')
+                  | &nbsp;#[i -bh]
+                th(colspan=2)
+                  +renderKey('EndsWith')
+                  | &nbsp;#[i -mh]
+                th(colspan=2)
+                  +renderKey('EndsWith')
+                  | &nbsp;#[i -th]
+              tr
+                th(class="bg-stone-300 text-black")
+                th(class="bg-stone-300 text-black") -bh + f-
+                th(class="bg-stone-300 text-black") -bhf-
+                th(class="bg-stone-300 text-black") -mh + f-
+                th(class="bg-stone-300 text-black") -mhf-
+                th(class="bg-stone-300 text-black") -th + f-
+                th(class="bg-stone-300 text-black") -thf-
+            tbody
+              tr
+                th(class="font-bold"): +renderKey('ConditionalMood')
+                td scríobh + fá
+                td scríobhfá
+                td ríomh + fá
+                td ríomhfá
+                td chaith + fí
+                td chaithfí
+    +hx(3, "5.2.2", "5-2-2-title")
+      +Table5D
+      aside
+        b: +renderKey('Nóta', { getFromCommon: true })
+        | : #[+renderKey('Table5D-note')]
+      +Table5E
+      ol(class="list-[lower-alpha]")
+        li#sec_5_2_2_a
+          +renderKey('5-2-2-a-p')
+          +SimilarConjugationsTable([
+            ["bácáil", "bácálaim", "bácáil", "bácáilte"],
+            ["cóipeáil", "cóipeálaim", "cóipeáil", "cóipeáilte"],
+            ["nótáil", "nótálaim", "nótáil", "nótáilte"],
+            ["péinteáil", "péinteálaim", "péinteáil", "péinteáilte"]
+          ])
+        li#sec_5_2_2_b
+          +renderKey('5-2-2-b-p')
+          +SimilarConjugationsTable([
+            ["adhair", "adhraim", "adhradh", "adhartha"],
+            ["adhlaic", "adhlacaim", "adhlacadh", "adhlactha"],
+            ["ceiliúir", "ceiliúraim", "ceiliúradh", "ceiliúrtha"],
+            ["seachaid", "seachadaim", "seachadadh", "seachadta"],
+            ["tionóil", "tionólaim", "tionól", "tionólta"]
+          ])
+        li#sec_5_2_2_c
+          +renderKey('5-2-2-c-p')
+          +SimilarConjugationsTable([
+            ["toirmisc", "toirmiscim", "toirmeasc", "toirmiscthe"],
+            ["tiomáin", "tiomáinim", "tiomáint", "tiomáinte"]
+          ])
+        li#sec_5_2_2_d
+          +renderKey('5-2-2-d-p')
+          +SimilarConjugationsTable([
+            ["coimeád", "coimeádaim", "coimeád", "coimeádta"],
+            ["gearán", "gearánaim", "gearán", "gearánta"]
+          ])
+      aside
+        b: +renderKey('Nóta', { getFromCommon: true })
+        | : #[+renderKey('5-2-2-note')]
+    +hx(3, "5.2.3", "5-2-3-title")
+      ol(class="list-[upper-alpha]")
+        li#sec_5_2_3_A
+          p #[b Cráigh], #[b dóigh]
+          +Table5F
+          aside
+            b: +renderKey('Nóta', { getFromCommon: true })
+            | : #[+renderKey('Table5F-note')]
+          +Table5G
+          ol(class="list-[lower-alpha]")
+            li#sec_5_2_3_A_a
+              p: +renderKey('5-2-3-A-a-p')
+              +SimilarConjugationsTable([
+                ["báigh", "báim", "bá", "báite"],
+                ["cneáigh", "cneáim", "cneá", "cneáite"],
+                ["meáigh", "meáim", "meá", "meáite"],
+                ["leáigh", "leáim", "leá", "leáite"],
+                ["clóigh", "clóim", "cló", "clóite"],
+                ["breoigh", "breoim", "breo", "breoite"],
+                ["dreoigh", "dreoim", "dreo", "dreoite"],
+                ["feoigh", "feoim", "feo", "feoite"],
+                ["reoigh", "reoim", "reo", "reoite"],
+                ["brúigh", "brúim", "brú", "brúite"],
+                ["crúigh", "crúim", "crú", "crúite"],
+                ["liúigh", "liúim", "liú", "liúite"],
+                ["súigh", "súim", "sú", "súite"],
+                ["luaigh", "luaim", "lua", "luaite"]
+              ])
+            li#sec_5_2_3_A_b
+              p: +renderKey('5-2-3-A-b-p')
+              +SimilarConjugationsTable([
+                ["beoigh", "beoim", "beochan", "beoite"],
+                ["buaigh", "buaim", "buachan", "buaite"],
+                ["cruaigh", "cruaim", "cruachan", "cruaite"],
+                ["fuaigh", "fuaim", "fuáil", "fuaite"],
+                ["glaoigh", "glaoim", "glaoch", "glaoite"],
+                ["iaigh", "iaim", "iamh", "iata"]
+              ])
+        li#sec_5_2_3_B
+          p #[b Léigh], #[b nigh] 
+          P: +renderKey('5-2-3-B-p')
+          +Table5H
+          +Table5I
+          ol(class="list-[lower-alpha]")
+            li#sec_5_2_3_B_a
+              p: +renderKey('5-2-3-B-a-p')
+              +SimilarConjugationsTable([
+                ["éigh", "éim", "éamh", "éite"],
+                ["téigh ($saBhrí <i>teas</i>)", "téim", "téamh", "téite"],
+                ["pléigh", "pléim", "plé", "pléite"],
+                ["spréigh", "spréim", "spré", "spréite"],
+                ["caígh", "caím", "caí", "caíte"],
+                ["cloígh", "cloím", "cloí", "cloíte"],
+                ["cnaígh", "cnaím", "cnaí", "cnaíte"]
+              ])
+            li#sec_5_2_3_B_b
+              p: +renderKey('5-2-3-B-b-p')
+              +SimilarConjugationsTable([
+                ["dligh", "dlím", "dlí", "dlite"],
+                ["figh", "fím", "fí", "fite"],
+                ["guigh", "guím", "guí", "guite"],
+                ["ligh", "lím", "lí", "lite"],
+                ["luigh", "luím", "luí", "luite"],
+                ["snigh", "sním", "sní", "snite"],
+                ["snoigh", "snoím", "snoí", "snoite"],
+                ["suigh", "suím", "suí", "suite"]
+              ])
+            li#sec_5_2_3_B_c
+              p: +renderKey('5-2-3-B-c-p')
+              +SimilarConjugationsTable([
+                ["bligh", "blím", "bleán", "blite"],
+                ["buígh", "buím", "buíochan", "buíte"],
+                ["righ", "rím", "ríochan", "rite"]
+              ])
+  hr
+
+  +hx(2, "5.3", "5-3-title")
+    +hx(3, "5.3.1", "5-3-1-title")
+      +Table5J
+      +Table5K
+      aside
+        b: +renderKey('Nóta', { getFromCommon: true })
+        | : #[+renderKey('5-3-1-note')]
+    +hx(3, "5.3.2", "5-3-2-title")
+      +Table5L
+      +Table5M
+      ol(class="list-[lower-alpha]")
+        li#sec_5_3_2_a
+          p: +renderKey('5-3-2-a-p')
+          +SimilarConjugationsTable([
+            ["codail", "codlaím", "codladh", "codalta"],
+            ["fógair", "fógraím", "fógairt", "fógartha"],
+            ["labhair", "labhraím", "labhairt", "labhartha"],
+            ["oscail", "osclaím", "oscailt", "oscailte"],
+            ["tionscain", "tionscnaím", "tionscnamh", "tionscanta"]
+          ])
+        li#sec_5_3_2_b
+          p: +renderKey('5-3-2-b-p')
+          +SimilarConjugationsTable([
+            ["aithin", "aithním", "aithint", "aitheanta"],
+            ["eitil", "eitlím", "eitilt", "eitilte"],
+            ["imir", "imrím", "imirt", "imeartha"],
+            ["inis", "insím", "insint", "inste"]
+          ])
+    +hx(3, "5.3.3", "5-3-3-title")
+      ol(class="list-[lower-alpha]")
+        li#sec_5_3_3_a
+          p: +renderKey('5-3-3-a-p')
+          +SimilarConjugationsTable([
+            ["foghlaim", "foghlaimím", "foghlaim", "foghlamtha"],
+            ["fulaing", "fulaingím", "fulaingt", "fulaingthe"],
+            ["tarraing", "tarraingím", "tarraingt", "tarraingthe"],
+            ["tuirling", "tuirlingím", "tuirlingt", "tuirlingthe"]
+          ])
+        li#sec_5_3_3_b
+          p: +renderKey('5-3-3-b-p')
+          +SimilarConjugationsTable([
+            ["aithris", "aithrisím", "aithris", "aithriste"],
+            ["freastail", "freastalaím", "freastal", "freastalta"],
+            ["taistil", "taistealaím", "taisteal", "taistealta"]
+          ])
+  hr
+
+  +hx(2, "5.4", "5-4-title")
+    +hx(3, "5.4.1")
+      p: +renderKey('5-4-1-p')
+    +hx(3, "5.4.2")
+      p: +renderKey('5-4-2-p')
+    +hx(3, "5.4.3")
+      p: +renderKey('5-4-3-p')
+    +hx(3, "5.4.4")
+      p: +renderKey('5-4-4-p')
+    +hx(3, "5.4.5", "5-4-5-title")
+      p: +renderKey('5-4-5-p')
+      ol(class="list-[lower-alpha]")
+        li#sec_5_4_5_a
+          p: +renderKey('5-4-5-a-p')
+          +sampleBox("5-4-5-SampleBox-", 5)
+          p: +renderKey('5-4-5-a-p2')
+          +sampleBox("5-4-5-SampleBox2-", 5)
+        li#sec_5_4_5_b
+          p: +renderKey('5-4-5-b-p')
+        li#sec_5_4_5_c
+          p: +renderKey('5-4-5-c-p')
+    +Table5N
+    aside
+      b: +renderKey('Nóta', { getFromCommon: true })
+      | : #[+renderKey('Table5N-Note')]
+    +Table5O
+    +Table5P
+    p *#[+renderKey('Table5P-footnote')]
+    +Table5Q
+    +Table5R
+    aside
+      b: +renderKey('Nóta', { getFromCommon: true })
+      | : #[+renderKey('Table5R-Note')]
+    +Table5S
+    +Table5T
+    aside
+      b: +renderKey('Nóta', { getFromCommon: true })
+      | : #[+renderKey('Table5T-Note')]
+    +Table5U
+    aside
+      b: +renderKey('Nóta', { getFromCommon: true })
+      | : #[+renderKey('Table5U-note')]
+    +Table5V
+    +Table5W
+    +Table5X
+  hr
+
+  +hx(2, "5.5", "5-5-title")
+    +hx(3, "5.5.1", "5-5-1-title")
+      p: +renderKey('5-5-1-p')
+      +Table5Y
+    +hx(3, "5.5.2", "5-5-2-title")
+      p: +renderKey('5-5-2-p')
+      +Table5Z
+  hr
+
+  +hx(2, "5.6", "5-6-title")
+    +hx(3, "5.6.1", "5-6-1-title")
+      ol(class="list-[lower-alpha]")
+        li#sec_5_6_1_a
+          p: +renderKey('5-6-1-a-p')
+          +Table5AA
+          aside
+            b: +renderKey('Nóta', { getFromCommon: true })
+            | : #[+renderKey('Table5AA-Note')]
+        li#sec_5_6_1_b
+          p: +renderKey('5-6-1-b-p')
+          ol(class="list-[lower-roman]")
+            li#sec_5_6_1_b_i
+              p: +renderKey('5-6-1-b-i-p')
+              +Table5BB
+            li#sec_5_6_1_b_ii
+              p: +renderKey('5-6-1-b-ii-p')
+              +Table5CC
+              aside
+                b: +renderKey('Nóta', { getFromCommon: true })
+                | : #[+renderKey('Table5CC-Note')]
+            li#sec_5_6_1_b_iii
+              p: +renderKey('5-6-1-b-iii-p')
+              +Table5DD
+        li#sec_5_6_1_c
+          p: +renderKey('5-6-1-c-p')
+          +Table5EE
+          ol(class="list-[lower-roman]")
+            li#sec_5_6_1_c_i
+              +renderKey('5-6-1-c-i-p')
+            li#sec_5_6_1_c_ii
+              p: +renderKey('5-6-1-c-ii-p')
+              +Table5FF
+    +hx(3, "5.6.2", "5-6-2-title")
+      p: +renderKey('5-6-2-p')
+      ol(class="list-[lower-alpha]")
+        li#sec_5_6_2_a
+          +renderKey('5-6-2-a-p')
+        li#sec_5_6_2_b
+          +renderKey('5-6-2-b-p')
+        li#sec_5_6_2_c
+          +renderKey('5-6-2-c-p')
+        li#sec_5_6_2_d
+          +renderKey('5-6-2-d-p')
+        li#sec_5_6_2_e
+          +renderKey('5-6-2-e-p')
+  hr
+
+  +hx(2, "5.7", "5-7-title")
+    +hx(3, "5.7.1", "5-7-1-title")
+      p: +renderKey('5-7-1-p')
+  hr

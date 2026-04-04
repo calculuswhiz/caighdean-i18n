@@ -15,6 +15,31 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
+	"StandardVerbTable": {
+		"scope": "jade",
+		"prefix": "svt",
+		"body": [
+			"+StandardVerbTable(\"$1\", {",
+			"\troot: \"\",",
+			"\tpresent: [",
+			"\t],",
+			"\tpast: [",
+			"\t],",
+			"\tpastHabitual: [",
+			"\t],",
+			"\tfuture: [",
+			"\t],",
+			"\tconditional: [",
+			"\t],",
+			"\tsubjunctive: [",
+			"\t],",
+			"\timperative: [",
+			"\t],",
+			"\tverbalNoun: \"\",",
+			"\tverbalAdjective: \"\"",
+			"})"
+		]
+	},
 	"sampleBox": {
 		"scope": "asciidoc",
 		"prefix": "sampleBox",

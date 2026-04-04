@@ -1,0 +1,647 @@
+include ../../tlMatter.pug
+if docLang === "EN"
+  mixin tl(tlText)
+    if tlText != null
+      +inlineTl("EN", tlText)
+    else
+      +inlineTl("EN")
+        block
+    
+  mixin tlDb(key)
+    case key
+      when "PresentTense"
+        | Present Tense
+      when "OrdinaryPresentTense"
+        | Present Habitual Tense
+      when "PastTense"
+        | Past Tense
+      when "PastHabitualTense"
+        | Past Habitual Tense
+      when "FutureTense"
+        | Future Tense
+      when "ConditionalMood"
+        | Conditional Mood
+      when "SubjunctiveMood"
+        | Subjunctive Mood
+      when "PresentSubjunctiveMood"
+        | Present Subjunctive Mood
+      when "ImperativeMood"
+        | Imperative Mood
+      when "IndicativeMood"
+        | Indicative Mood
+      when "VerbalNoun"
+        | Verbal Noun
+      when "VerbalAdjective"
+        | Verbal Adjective
+      when "teidealNaCaibidle"
+        | The Verb
+
+      when "5-1-title"
+        | The Regular Verbs
+      when "5-title"
+        | #[+renderKey("Caibidil", { getFromCommon: true })] 5 | #[+renderKey("teidealNaCaibidle")]
+      when "5-1-1-p"
+        | There are two conjugations for regular verbs.
+      when "5-1-2-p"
+        | The First Conjugation applies to:
+      when "5-1-2-a-p"
+        | verbs of monosyllabic roots, e.g., #[i bog], #[i bris], #[i caith], #[i mol], including verbs ending in #[i igh], e.g., #[i breoigh], #[i clóigh], #[i cráigh], #[i iaigh], #[i luaigh], #[i reoigh], #[i sáigh];
+      when "5-1-2-b-p"
+        | verbs of polysyllabic roots ending in #[i áil], e.g., #[i sábháil], #[i tarrtháil], and some particular polysyllabic verbs, e.g., #[i adhlaic], #[i ceiliúir], #[i gearán], #[i seachaid], #[i taispeáin], #[i tíolaic].
+      when "5-1-3-p"
+        | The Second Conjugation applies to:
+      when "5-1-3-a-p"
+        | verbs with polysyllabic roots ending in #[i -(a)igh], e.g., #[i ceannaigh], #[i imigh]
+      when "5-1-3-b-p"
+        | verbs with polysyllabic roots ending in #[i -(a)il], #[i -(a)in], #[i -(a)ir], #[i -(a)is] and syncopated in the conjugation, e.g., #[i agair], #[i codail], #[i cogain], #[i iompair], #[i tochail];
+      when "5-1-3-c-p"
+        | a small number of particular verbs such as #[i foghlaim], #[i fulaing], #[i tarraing], #[i tuirling].
+      when "5-1-4-p"
+        | The conjugation of a compound verb is usually the same as that of the verb from which it is formed:
+      when "5-1-4-a-p"
+        | #[i aisíoc], #[i athdhear] and #[i comhlíon] in the first conjugation are similar to #[i íoc], #[i dear] and #[i líon]; and
+      when "5-1-4-b-p"
+        | #[i athchomhairligh], #[i comhdhlúthaigh] and #[i comhshínigh] in the second conjugation are similar to #[i comhairligh], #[i dlúthaigh] and #[i sínigh].
+      when "5-1-5-title"
+        | The Subjunctive Mood
+      when "5-1-5-a-p"
+        | If a sentence has a optative function, it is always in the subjunctive mood, e.g., #[i Go raibh maith agat] #[+tl Thank you (lit. may goodness be at you)]; #[i Go dté tú slán] #[+tl May you go safely]. There is a choice between the present subjunctive mood and the future tense when the verb of the main clause is in the primary tense in the following contexts:
+      when "5-1-5-a-i-p"
+        | after the temporal conjuctions #[i ach a] #[+tl as soon as], #[i go] #[+tl until], #[i nó go] #[+tl until], #[i sula] #[+tl before], e.g., #[i Gheobhaimid an scéal ceart ach a dtaga] (#[i a dtiocfaidh]) #[i Pól] #[+tl We will get the right story as soon as Paul comes]; #[i Ná beannaigh don diabhal go mbeannaí] (#[i go mbeannóidh]) #[i sé duit] (#[b EN]: #[i Do not greet the devil until he greets you] (see #[+link("https://www.teanglann.ie/en/fgb/diabhal", "FGB entry")(target="blank")])); #[i Beidh tú ann nó go bhfása] (#[i nó go bhfásfaidh]) #[i coincleach ort] #[+tl You will be there until mold will grow on you]; #[i Beidh siad ann sula mbuailtear] (#[i sula mbuailfear]) #[i clog an aingil] #[+tl They will be there before the angel&rsquo;s bell is struck].
+      when "5-1-5-a-ii-p"
+        | after the conjunction of purpose #[+tl so that] #[i go], #[i nó go], e.g., #[i Féach é go bhfeice] (#[i go bhfeicfidh]) #[i tú] #[+tl Look at it so that you may see it]; #[i Suigh nó go raibh] (#[i nó go mbeidh]) #[i do scíth déanta agat] #[+tl Sit so that you may have rested];
+      when "5-1-5-a-iii-p"
+        | in the first open clause after #[i mura] #[+tl if not], e.g., #[i Mura gcuire] (#[i mura gcuirfidh]) #[i tú], #[i ní bhainfidh tú] #[+tl If you do not put, you will not gain].
+      when "5-1-5-b-i-p"
+        | The forms of the past subjunctive mood are the same as the forms of the dependent past habitual tense (except for the verb #[i bí]) (see the Dependent Form, #[+link("#sec_5_1_8", "5.1.8")]). The conditional mood&rsquo;s form can also be used instead of the past subjunctive if the main clause is in the past tense, the past habitual tense or the conditional mood, e.g., #[i Tháinig] (#[i thagadh], #[i thiocfadh]) #[i sí aír preo fíctí] (#[i bhfécfí]) #[i í] #[+tl She came in before she would have seen it]. For the verb #[i bí], the forms of the past subjunctive mood are the same as the conditional mood.
+      when "5-1-5-b-ii-p"
+        | In the tables in this chapter, the present subjunctive mood is indicated by the particle #[i go]. Although eclipsis follows that particle and some others, this is not true for every particle accompanying the subjunctive mood. Lenition follows #[i nár], e.g., #[i Nár fhana sé i bhfad] #[+tl He did not stay long].
+      when "5-1-6-title"
+        | The Negative Particle
+      when "5-1-6-p"
+        | #[i ní] (#[i níor]) is the negative particle and is shown in the tables where the negative form is given.
+      when "5-1-7-title"
+        | The Independent Form
+      when "5-1-7-p"
+        | The independent form is the form of the verb used in an affirmative explicative principal clause, e.g., #[i bhí mé] #[+tl I was]; #[i ceannóidh sé] #[+tl He will buy]; #[i mholfadh sí] #[+tl She would praise]. Unless otherwise stated, it is the independent form that is given in the conjugations in the rest of this chapter, except in the Present Subjunctive Mood.
+      when "5-1-8-title"
+        | The Dependent Form
+      when "5-1-8-p"
+        | The dependent form follows these conjunctions, relative pronominals and verbs: #[i a/ar] (= the relative particle), #[i a/ar] (= #[i an méid a/ar] #[+tl the size/extent]), #[i an/ar], #[i cá/cár], #[i dá/dár], (#[i de] or #[i do] + #[i a] (#[i ar])) and #[i dá] (conditional), #[i go/gur], #[i mura/murar], #[i nach/nár], #[i ní/níor], #[i sula/sular] (see #[+link("./chapter10.html#sec_10_4_2", "10.4.2")] and #[+link("./chapter10.html#sec_10_8_2", "10.8.2")]).
+      when "5-1-8-note"
+        | The forms ending in #[i -r] above are used only in the past tense (but see #[+link("./chapter5-en.html#sec_5_4_5", "5.4.5")]).
+      when "5-1-9-title"
+        | Verb Tense for #[i má] and #[i nuair]
+      when "5-1-9-p"
+        | The present habitual tense is followed by #[i má] to express a future condition, e.g., #[i Déanfaidh mé um thráthnóna é má bhíonn deis agam] #[+tl I will do it in the evening if I have the opportunity]. The future tense is what follows #[i nuair] if it is something that will be happening in the future, e.g., #[i Glan é nuair a thiocfaidh tú isteach amárach] #[+tl Clean it when you come in tomorrow].
+      when "5-1-10-title"
+        | #[i Muid]
+      when "5-1-10-p"
+        | #[i muid] #[+tl we] can be used with the analytic form of the verb in the first person plural in preference to the conjugated forms of the verb (given in the tables) in all moods and tenses. The analytic form #[i muid] and the conjugated forms of the verb in the first person plural have the same status.
+      when "Table5A-caption"
+        | The Analytic Form #[i muid]
+      when "Table5A-col1"
+        | Tense/Mood
+      when "Table5A-col2"
+        | Analytic Form + #[i muid]
+      when "Table5A-col3"
+        | Conjugated Form of the Verb
+      when "briathar-Mol"
+        | Praise
+      when "briathar-Bris"
+        | Break
+      when "5-2-title"
+        | The First Conjugation
+      when "5-2-1-title"
+        | Verbs from monosyllabic roots ending in a consonant other than #[i -gh]
+      when "Table5B-caption"
+        | The First Conjugation &#8212; Conjugation of the Verb #[i mol]
+      when "Table5C-caption"
+        | The First Conjugation &#8212; Conjugation of the Verb #[i bris]
+      when "Table5C-Note"
+        | The independent verb is lenited in the indicative mood for past tense (other than the autonomous verb) and for past habitual tense, and in the conditional mood. There is more information in #[+link("./chapter10.html#sec_10_4", "10.4")] about the other contexts in which the dependent and independent verb is lenited and the contexts in which the verb is eclipsed are discussed in #[+link("./chapter10.html#sec_10_8", "10.8")].
+      when "briathar-Sábháil"
+        | Save
+      when "briathar-Tíolaic"
+        | Show
+      when "5-2-1-a-p"
+        | Regular verbs from monosyllabic roots ending in a broad consonant are formed in the same way as #[i mol], and regular verbs are formed from monosyllabic roots ending in a slender consonant in the same way as #[i bris].
+      when "5-2-1-b-p"
+        | If a root ending in #[i -t] or #[i -th] (e.g., #[i at], #[i loit], #[i caith], #[i leath]) joins an affix beginning with #[i -t] (e.g., #[i -tar/-tear], #[i -taí/-tí], #[i -tá/-tá], #[i -ta/-te]), the #[i -t(h)t-] becomes #[i -t-]:
+      when "5-2-1-b-Table-col1"
+        | Ends in broad #[i -t(h)]
+      when "5-2-1-b-Table-col2"
+        | Ends in slender #[i -t(h)]
+      when "5-2-1-c-p"
+        | If a root ending in #[i -bh] or #[i -mh] (e.g., #[i gabh], #[i ríomh]) joins an affix beginning with #[i -th-] (e.g., #[i -tha] in the verbal adjective), the #[i -bhth-] or #[i -mhth-] becomes #[i -f-]:
+      when "EndsWith"
+        | Ends with
+      when "5-2-1-d-p"
+        | #[i -bh], #[i -mh] and #[i -th] are retained before #[i -f-], e.g., #[i scríobhfaí], #[i ríomhfá], #[i chaithfeá]:
+      when "5-2-2-title"
+        | Verbs from Polysyllabic Roots
+      when "Table5D-caption"
+        | The First Conjugation &mdash; Conjugation of the Verb #[i sábháil]
+      when "Table5D-note"
+        | As for verbs ending in #[i -áil], note that these forms with #[i -t-] are slender, e.g., #[i athchúrsáiltear], #[i d&rsquo;athchúrsáiltí], #[i athchúrsáilte]; #[i sábháiltear], #[i shábháiltí], #[i sábháilte], but the forms with #[i -f-] are broad, e.g., #[i athchúrsálfar], #[i d&rsquo;athchúrsálfaí]; #[i sábhálfar], #[i shábhálfaí].
+      when "Table5E-caption"
+        | The First Conjugation &mdash; Conjugation of the Verb #[i tíolaic]
+      when "5-2-2-tables-col1"
+        | Root
+      when "5-2-2-tables-col2"
+        | First Person Singular <br /> Present Tense
+      when "5-2-2-tables-col3"
+        | Verbal Noun
+      when "5-2-2-tables-col4"
+        | Verbal Adjective
+      when "briathar-bácáil"
+        | bake
+      when "briathar-cóipeáil"
+        | copy
+      when "briathar-nótáil"
+        | note
+      when "briathar-péinteáil"
+        | paint
+      when "briathar-adhair"
+        | worship
+      when "briathar-adhlaic"
+        | bury
+      when "briathar-ceiliúir"
+        | celebrate
+      when "briathar-seachaid"
+        | deliver
+      when "briathar-tionóil"
+        | assemble
+      when "briathar-toirmisc"
+        | forbid
+      when "briathar-tiomáin"
+        | drive
+      when "briathar-coimeád"
+        | keep
+      when "briathar-gearán"
+        | complain
+      when "5-2-2-a-p"
+        | Verbs conjugated like #[i sábháil]:
+      when "5-2-2-b-p"
+        | Verbs conjugated like #[i tíolaic]:
+      when "5-2-2-c-p"
+        | Verbs that are kept slender throughout (excluding the verbal noun) in their conjugation:
+      when "5-2-2-d-p"
+        | Verbs that are kept broad throughout in their conjugation:
+      when "5-2-2-note"
+        | The verbs from the roots #[i adhain], #[i adhair] and #[i sleabhac] are syncopated as if #[i adhn-], #[i adhr-], #[i sleabhc-], were their root, e.g., #[i adhnann sé], #[i adhrfaidh sí], #[i sleabhctha], except in the analytic past tense, e.g., #[i d&rsquo;adhain sé], #[i d&rsquo;adhair sí], #[i shleabhac siad], and in verbal adjectives #[i adhain], #[i adhair], e.g., #[i adhainte], #[i adhartha].
+      when "5-2-3-title"
+        | Verbs from monosyllabic roots ending in #[i -gh]
+      when "briathar-Cráigh"
+        | Torment
+      when "briathar-Dóigh"
+        | Burn
+      when "Table5F-caption"
+        | The First Conjugation &mdash; Conjugation of the Verb #[i cráigh]
+      when "Table5F-note"
+        | For verbs that are conjugated like #[i cráigh] and #[i dóigh], note that the forms with #[i -t-] are slender, e.g., #[i chráiteá], #[i cráitear]; #[i dhóiteá], #[i dóitear], but the forms with #[i -f-] are broad, e.g., #[i cráfaidh tú], #[i chráfaí]; #[i dófaidh tú], #[i dhófaí].
+      when "Table5G-caption"
+        | The First Conjugation &mdash; Conjugation of the Verb #[i dóigh]
+      when "briathar-báigh"
+        | drown
+      when "briathar-cneáigh"
+        | wound
+      when "briathar-meáigh"
+        | weigh
+      when "briathar-leáigh"
+        | melt
+      when "briathar-clóigh"
+        | print
+      when "briathar-breoigh"
+        | heat
+      when "briathar-dreoigh"
+        | decay
+      when "briathar-feoigh"
+        | wither
+      when "briathar-reoigh"
+        | freeze
+      when "briathar-brúigh"
+        | press
+      when "briathar-crúigh"
+        | milk
+      when "briathar-liúigh"
+        | yell
+      when "briathar-súigh"
+        | absorb
+      when "briathar-luaigh"
+        | mention
+      when "briathar-beoigh"
+        | live
+      when "briathar-buaigh"
+        | win
+      when "briathar-cruaigh"
+        | harden
+      when "briathar-fuaigh"
+        | blow
+      when "briathar-glaoigh"
+        | call
+      when "briathar-iaigh"
+        | shut
+      when "5-2-3-A-a-p"
+        | Verbs conjugated like #[i cráigh], #[i dóigh]:
+      when "5-2-3-A-b-p"
+        | Verbs with a specific verbal noun:
+      when "5-2-3-B-p"
+        | When verbs have a short vowel in the root, the vowel is left unlengthened before #[i -t], e.g., #[i nitear], #[i niteá], #[i nite], but #[i ním], #[i níodh], #[i nífí], etc. However, #[i léigh] etc. have long vowels throughout, e.g., #[i léitear], #[i léiteá], #[i léite].
+      when "briathar-Léigh"
+        | read
+      when "Table5H-caption"
+        | The First Conjugation &mdash; Conjugation of the Verb #[i léigh]
+      when "briathar-Nigh"
+        | wash
+      when "Table5I-caption"
+        | The First Conjugation &mdash; Conjugation of the Verb #[i nigh]
+      when "briathar-éigh"
+        | scream
+      //- Careful, there is an upper case one later that means "go"
+      when "briathar-téigh"
+        | heat
+      when "briathar-pléigh"
+        | discuss
+      when "briathar-spréigh"
+        | spread
+      when "briathar-caígh"
+        | fall
+      when "briathar-cloígh"
+        | stick to
+      when "briathar-cnaígh"
+        | gnaw
+      when "briathar-dligh"
+        | be entitled to
+      when "briathar-figh"
+        | weave
+      when "briathar-guigh"
+        | pray
+      when "briathar-ligh"
+        | lick
+      when "briathar-luigh"
+        | lie (down)
+      when "briathar-snigh"
+        | pour
+      when "briathar-snoigh"
+        | cut
+      when "briathar-suigh"
+        | sit
+      when "briathar-bligh"
+        | milk
+      when "briathar-buígh"
+        | tan
+      when "briathar-righ"
+        | stretch
+      when "5-2-3-B-a-p"
+        | Verbs conjugated like #[i léigh]:
+      when "5-2-3-B-b-p"
+        | Verbs conjugated like #[i nigh]:
+      when "5-2-3-B-c-p"
+        | Verbs with a specific verbal noun:
+      when "5-3-title"
+        | The Second Conjugation
+      when "5-3-1-title"
+        | Verbs from polysyllabic roots ending in #[i -(a)igh]
+      when "briathar-Beannaigh"
+        | Bless
+      when "Table5J-caption"
+        | The Second Conjugation &mdash; Conjugation of the Verb #[i beannaigh]
+      when "briathar-Cruinnigh"
+        | Gather
+      when "Table5K-caption"
+        | The Second Conjugation &mdash; Conjugation of the Verb #[i cruinnigh]
+      when "5-3-1-note"
+        | Note that verbs from polysyllabic roots ending in #[i -aigh] are conjugated in the same way as #[i beannaigh], and that verbs from polysyllabic roots ending in #[i -igh] are formed in the same way as #[i cruinnigh]; but there are exceptions in the verbal noun (see #[+link("#sec_5_5_2", "5.5.2")]) and the verbal adjective, e.g., #[i dathaigh], #[i daite] (#[b EN]: #[i color], #[i colored]); #[i dlúthaigh], #[i dlúite] (#[b EN]: #[i compress], #[i compressed]); #[i táthaigh], #[i táite] (#[b EN]: #[i weld], #[i welded]).
+      when "5-3-2-title"
+        | Verbs from polysyllabic roots ending in #[i -(a)il], #[i -(a)in], #[i -(a)ir], #[i -(a)is] and syncopated in the conjugation
+      when "briathar-Ceangail"
+        | Tie
+      when "briathar-Díbir"
+        | Banish
+      when "Table5L-caption"
+        | The Second Conjugation &mdash; Conjugation of the Verb #[i ceangail]
+      when "Table5M-caption"
+        | The Second Conjugation &mdash; Conjugation of the Verb #[i díbir]
+      when "briathar-codail"
+        | sleep
+      when "briathar-fógair"
+        | announce
+      when "briathar-labhair"
+        | speak
+      when "briathar-oscail"
+        | open
+      when "briathar-tionscain"
+        | originate
+      when "briathar-aithin"
+        | recognize
+      when "briathar-eitil"
+        | fly
+      when "briathar-imir"
+        | play
+      when "briathar-inis"
+        | tell
+      when "briathar-foghlaim"
+        | learn
+      when "briathar-fulaing"
+        | endure
+      when "briathar-tarraing"
+        | pull
+      when "briathar-tuirling"
+        | descend
+      when "briathar-aithris"
+        | narrate
+      when "briathar-freastail"
+        | attend
+      when "briathar-taistil"
+        | travel
+      when "5-3-2-a-p"
+        | Verbs conjugated like #[i ceangail]:
+      when "5-3-2-b-p"
+        | Verbs conjugated like #[i díbir]:
+      when "5-3-3-title"
+        | Other Verbs in the Second Conjugation
+      when "5-3-3-a-p"
+        | Verbs from roots ending in #[i -aim], #[i -(a)ing] are not conjugated:
+      when "5-3-3-b-p"
+        | Other non-syncopated verbs:
+      when "5-4-title"
+        | The Irregular Verbs
+      when "5-4-1-p"
+        | There are eleven irregular verbs. The following are the irregular verbs: #[i abair] #[+tl say], #[i beir] #[+tl bear], #[i bí] #[+tl be], #[i clois/cluin] #[+tl hear], #[i déan] #[+tl do/make], #[i faigh] #[+tl get], #[i feic] #[+tl see], #[i ith] #[+tl eat], #[i tabhair] #[+tl give], #[i tar] #[+tl come], #[i téigh] #[+tl go].
+      when "5-4-2-p"
+        | The irregular verbs do not keep the same root throughout their formation and some of them have separate forms in the dependent form.
+      when "5-4-3-p"
+        | The root of the verb in the present habitual and past habitual tenses is the same in all irregular verbs, e.g., #[i cloisimid], #[i chloisimis] (#[b EN]: #[i we hear], #[i we used to hear]); #[i deirim], #[i deirinn] (#[b EN]: #[i I say], #[i I used to say]); #[i tugann sí], #[i thugadh sí] (#[b EN]: #[i she gives], #[i she used to give]). Except for the verb #[i bí] #[+tl be], the present subjunctive also has the same root, e.g., #[i go gcloise] #[+tl that we hear]; #[i go ndeire] #[+tl that I say]; #[i go dtuga] #[+tl that she gives].
+      when "5-4-4-p"
+        | The root of the verb in the future tense and the conditional mood is the same in all irregular verbs, e.g., #[i déarfaidh mé] #[+tl I will say], #[i déarfainn] #[+tl I would say]; #[i déanfaidh tú] #[+tl you will do/make], #[i dhéanfá] #[+tl you would do/make]; #[i tabharfaidh siad] #[+tl they will give], #[i thabharfaidís] #[+tl they would give].
+      when "5-4-5-title"
+        | The Dependent Form
+      when "5-4-5-p"
+        | The dependent form follows these conjunctions, relative pronominals and verbs: #[i a/ar] (= the relative clause), #[i a/ar] (= #[i an méid a/ar], #[b EN]: #[i the size/extent]), #[i an/ar], #[i cá/cár], #[i dá/dár] (#[i de] or #[i do+a] (#[i ar])) and #[i dá] (conditional), #[i go/gur], #[i mura/murar], #[i nach/nár], #[i ní/níor], #[i sula/sular] (see #[+link("./chapter10-en.html#sec_10_4_2", "10.4.2")] and #[+link("./chapter10-en.html#sec_10_8_2", "10.8.2")]). The dependent form in the tables is represented by #[i ní] or #[i go].
+      when "5-4-5-a-p"
+        | These particles are used with the irregular verbs in the same way as they are used with the regular verbs.
+      when "5-4-5-SampleBox-1"
+        | #[b Would] she #[b bring] you to school?
+      when "5-4-5-SampleBox-2"
+        | They said #[b that] she #[b comes] to visit every Saturday.
+      when "5-4-5-SampleBox-3"
+        | They #[b have not caught] the thieves yet.
+      when "5-4-5-SampleBox-4"
+        | #[b Didn&rsquo;t] you #[b hear] about the meeting?
+      when "5-4-5-SampleBox-5"
+        | #[b Has] he #[b eaten] enough?
+      when "5-4-5-a-p2"
+        | But the forms ending in #[i -r] of those particles are not used in the past tense, indicative mood, with the verbs #[i abair], #[i bí], #[i déan] (for forms starting with #[i dearn-]), #[i faigh], #[i feic], #[i téigh].
+      when "5-4-5-SampleBox2-1"
+        | #[b Didn&rsquo;t] you #[b go] home yet?
+      when "5-4-5-SampleBox2-2"
+        | #[b Where have we seen] it before?
+      when "5-4-5-SampleBox2-3"
+        | #[b Did] he #[b say] anything to you about it?
+      when "5-4-5-SampleBox2-4"
+        | She says #[b that] they #[b were] there.
+      when "5-4-5-SampleBox2-5"
+        | He #[b did not get] the money yet.
+      when "5-4-5-b-p"
+        | The verb #[i abair] is never lenited, e.g., #[i ní deirim] (#[i deirimis], #[i dúirt sé], #[i déarfainn]), #[i má deir tú] (#[i deiridís]), #[i na rudaí a déarfaidh] (#[i a déarfadh]) #[i sé].
+      when "5-4-5-c-p"
+        | The relative particle #[i a] is combined with the verb #[i bí] in the present tense &mdash; #[i atáim], #[i atá], #[i atáimid], #[i atáthar]. #[i ná], instead of #[i nár], is put before forms of the subjunctive mood of #[i bí], e.g., #[i Ná raibh maith agat] #[+tl Don&rsquo;t be grateful].
+      when "Table5N-caption"
+        | The Irregular Verbs &mdash; Conjugation of the Verb #[i abair]
+      when "briathar-Abair"
+        | say
+      when "briathar-Beir"
+        | bear
+      when "briathar-Bí"
+        | be
+      when "briathar-Clois/Cluin"
+        | hear
+      when "briathar-Déan"
+        | do/make
+      when "briathar-Faigh"
+        | get
+      when "briathar-Feic"
+        | see
+      when "briathar-Ith"
+        | eat
+      when "briathar-Tabhair"
+        | give
+      when "briathar-Tar"
+        | come
+      when "briathar-Téigh"
+        | go
+      when "Table5N-Note"
+        | As mentioned in #[+link("#sec_5_4_5_b", "5.4.5(b)")], the verb #[i abair] is never lenited.
+      when "Table5O-caption"
+        | The Irregular Verbs &mdash; Conjugation of the Verb #[i beir]
+      when "Table5P-caption"
+        | The Irregular Verbs &mdash; Conjugation of the Verb #[i bí]
+      when "PositiveIndependent"
+        | Affirmative Independent
+      when "NegativeIndependent"
+        | Negative Independent
+      when "Dependent"
+        | Dependent
+      when "Independent"
+        | Independent
+      when "Table5P-footnote"
+        | #[i a bheith] occurs except after #[i chun] or certain simple prepositions, e.g., #[i chun bheith], #[i as bheith], #[i gan bheith], #[i le bheith].
+      when "Table5Q-caption"
+        | The Irregular Verbs &mdash; Conjugation of the Verb #[i clois/cluin]
+      when "Table5R-caption"
+        | The Irregular Verbs &mdash; Conjugation of the Verb #[i déan]
+      when "Table5R-Note"
+        | Note that #[i déan] is a regular verb except in the past tense and that the past tense is conjugated in two different ways, as shown in the table above. In the first of these, there are different dependent and independent forms of the verb.
+      when "Table5S-caption"
+        | The Irregular Verbs &mdash; Conjugation of the Verb #[i faigh]
+      when "Table5T-caption"
+        | The Irregular Verbs &mdash; Conjugation of the Verb #[i feic]
+      when "Table5T-Note"
+        | #[i feic] is a regular verb except in the past tense.
+      when "Table5U-caption"
+        | The Irregular Verbs &mdash; Conjugation of the Verb #[i ith]
+      when "Table5U-note"
+        | #[i ith] is a regular verb except in the future tense and the conditional mood.
+      when "Table5V-caption"
+        | The Irregular Verbs &mdash; Conjugation of the Verb #[i tabhair]
+      when "Table5W-caption"
+        | The Irregular Verbs &mdash; Conjugation of the Verb #[i tar]
+      when "Table5X-caption"
+        | The Irregular Verbs &mdash; Conjugation of the Verb #[i téigh]
+      when "5-5-title"
+        | The Verbal Noun
+      when "5-5-1-title"
+        | Verbal Nouns in the First Conjugation
+      when "5-5-1-p"
+        | In the table below, the different types of verbal nouns in the first conjugation are shown.
+      when "Table5Y-caption"
+        | Verbal Nouns &mdash; The First Conjugation
+      when "Trait"
+        | Trait
+      when "Table5Y-col2"
+        | Examples
+      when "Table5Y-trait1"
+        | The ending #[i -(e)adh]
+      when "Table5Y-trait2"
+        | Broadening of the root and the ending #[i -adh]
+      when "Table5Y-trait3"
+        | Broadening of the root
+      when "Table5Y-trait4"
+        | Same as the root
+      when "Table5Y-trait5"
+        | The ending #[i -áil]
+      when "Table5Y-trait6"
+        | #[i -t] added to the root
+      when "Table5Y-trait7"
+        | The ending #[i -(e)amh]
+      when "Table5Y-trait8"
+        | The ending #[i -(e)an]
+      when "Table5Y-trait9"
+        | The ending #[i -chan]
+      when "Table5Y-trait10"
+        | The ending #[i -(e)acht]
+      when "Table5Y-trait11"
+        | The ending #[i -im]
+      when "Table5Y-trait12"
+        | The ending #[i úint]
+      when "Table5Y-trait13"
+        | Long or diphthong vowel (root ending in #[i -igh], #[i -ígh])
+      when "Table5Y-trait14"
+        | Other verbal nouns
+      when "5-5-2-title"
+        | Verbal Nouns in the Second Conjugation
+      when "5-5-2-p"
+        | In the table below, the different types of verbal nouns in the second conjugation are shown.
+      when "Table5Z-caption"
+        | Verbal Nouns &mdash; The Second Conjugation
+      when "Table5Z-trait-1"
+        | The ending #[i -(i)ú]
+      when "Table5Z-trait-2"
+        | The ending #[i aí]
+      when "Table5Z-trait-3"
+        | The ending #[i -í]
+      when "Table5Z-trait-4"
+        | #[i -t] added to the root
+      when "Table5Z-trait-5"
+        | Broadening of the root
+      when "Table5Z-trait-6"
+        | The ending #[i -(e)amh]
+      when "Table5Z-trait-7"
+        | The ending #[i -(e)ach]
+      when "Table5Z-trait-8"
+        | The ending #[i -(e)acht]
+      when "Table5Z-trait-9"
+        | The ending #[i -áil]
+      when "Table5Z-trait-10"
+        | The ending #[i -aíocht]
+      when "Table5Z-trait-11"
+        | Other verbal nouns
+      when "5-6-title"
+        | Declension of the Verbal Noun
+      when "5-6-1-title"
+        | The Genitive
+      when "5-6-1-a-p"
+        | The genitive form of the verbal noun is usually the same as the verbal adjective in the contexts shown in the table below:
+      when "Table5AA-caption"
+        | Declension of the Verb Noun &mdash; Genitive of the Verbal Noun in Any Form with the Verbal Adjective
+      when "Table5AA-Col2"
+        | Verbal Noun
+      when "Table5AA-Col3"
+        | Form of the Genitive
+      when "Table5AA-trait1"
+        | Verbal nouns ending in #[i -(e)adh]
+      when "Table5AA-trait2"
+        | Monosyllabic verbal nouns ending in a long vowel or a diphthong
+      when "Table5AA-trait3"
+        | Polysyllabic verb nouns ending in a long vowel
+      when "Table5AA-trait4"
+        | Verbal nouns ending in #[i -ilt], #[i -in(g)t], (except #[i -áint], #[i -úint]), #[i -irt]
+      when "Table5AA-trait5"
+        | Some masculine verbal nouns that end in a broad consonant
+      when "Table5AA-trait6"
+        | A few other verbal nouns
+      when "Table5AA-Note"
+        | Verbal nouns ending in #[i -(e)adh] or ending in a long vowel do not have a normal genitive according to one of the declensions (see #[+link("./chapter3.html#sec_3_3_4", "3.3.4")]), e.g., #[i bearradh], #[i cló], #[i cónaí].
+      when "5-6-1-b-p"
+        | The genitive of the noun, according to the related declension, may belong to &mdash;
+      when "5-6-1-b-i-p"
+        | certain verbal nouns:
+      when "Table5BB-caption"
+        | Declension of the Verbal Noun &mdash; Certain Verb Nouns
+      when "Table5BB-trait1"
+        | As a noun in the First Declension (see #[+link("./chapter2.html#sec_2_2_2", "2.2.2")])
+      when "Table5BB-trait2"
+        | As a noun in the Second Declension (see #[+link("./chapter2.html#sec_2_3_2", "2.3.2")])
+      when "Table5BB-trait3"
+        | As a noun in the Third Declension, for verbal nouns ending in #[i -áil], #[i -áíl], #[i -áint], #[i -únt], #[i -cht] and other verbal nouns (see #[+link("./chapter2.html#sec_2_4_2", "2.4.2")])
+      when "5-6-1-b-ii-p"
+        | common nouns which are used to perform the functions of a verbal noun but which do not undergo verbal conjugation beyond that:
+      when "Table5CC-caption"
+        | Declension of the Verbal Noun &mdash; Common Nouns used to Perform Verbal Noun Functions
+      when "Table5CC-trait-1"
+        | As a noun in the First Declension (see #[+link("./chapter2.html#sec_2_2_2", "2.2.2")])
+      when "Table5CC-trait-2"
+        | As a noun in the Second Declension (see #[+link("./chapter2.html#sec_2_3_2", "2.3.2")])
+      when "Table5CC-trait-3"
+        | As a noun in the Third Declension, where a suffix is added to the base noun, e.g., #[i bádóir], #[i bádóireacht]; #[i peata], #[i peataireacht] and for other verbal nouns (see #[+link("./chapter2.html#sec_2_4_2", "2.4.2")])
+      when "Table5CC-Note"
+        | Verbal nouns of the types mentioned in #[+link("#sec_5_6_1_b_ii", "5.6.1(b)(ii)")] above do not have a form for the verbal adjective. Some regular nouns also lack the verbal adjective form, e.g., #[i achainí], #[i uair na hachainí] (#[b EN]: #[i request], #[i psychological moment]); #[i fónamh], #[i fear fónaimh] (#[b EN]: #[i service], #[i man of service]); #[i gol], #[i racht goil] (#[b EN]: #[i cry], #[i fit of crying]); #[i guí], #[i faoi bhrí na guí] (#[b EN]: #[i prayer], #[i under the influence of prayer]); #[i maireachtáil], #[i slí mhaireachtála] (#[b EN]: #[i living], #[i way of living]).
+      when "5-6-1-b-iii-p"
+        | the alternate versions of many verbal nouns to express continuity, frequency, abstractness, noise, emphasis, a second meaning or single action, e.g., #[i aistriú] #[+tl translation] to #[i aistriúchán] #[+tl translation]; #[i liú] #[+tl yell] to #[i liúireach] #[+tl yell]:
+      when "Table5DD-caption"
+        | Declension of the Verbal Noun &mdash; Alternate Versions of Verbal Nouns
+      when "Table5DD-col1"
+        | Alternate Version of the Verbal Noun
+      when "Table5DD-trait-1"
+        | As a noun in the First Declension (see #[+link("./chapter2.html#sec_2_2_2", "2.2.2")])
+      when "Table5DD-trait-2"
+        | As a noun in the Second Declension (see #[+link("./chapter2.html#sec_2_3_2", "2.3.2")])
+      when "Table5DD-trait-3"
+        | As a noun in the Third Declension (see #[+link("./chapter2.html#sec_2_4_2", "2.4.2")])
+      when "5-6-1-c-p"
+        | There are some verbal nouns that have two forms in the genitive &mdash; the form of the verbal adjective and the form according to one of the noun declensions:
+      when "Table5EE-caption"
+        | Declension of Verbal Nouns with Two Forms in the Genitive &mdash; Form according to One of the Declensions
+      when "Table5EE-col3"
+        | Form of the Genitive according to One of the Declensions
+      when "Table5EE-trait-1"
+        | As a noun in the First Declension (most masculine verbal nouns ending in a broad consonant) (see #[+link("./chapter2.html#sec_2_2_2", "2.2.2")])
+      when "Table5EE-trait-2"
+        | As a noun in the Second Declension (a few feminine verbal nouns) (see #[+link("./chapter2.html#sec_2_3_2", "2.3.2")])
+      when "Table5EE-trait-3"
+        | As a noun in the Third Declension (feminine nouns ending in #[i -chan] and #[i crith], #[i foghlaim], #[i íoc], #[i reic], #[i rith], #[i seinm], #[i slad], #[i snámh], #[i sníomh], #[i tairiscint], #[i tál], #[i trácht], #[i triall], #[i troid], #[i tuiscint]) (see #[+link("./chapter2-en.html#sec_2_4_2", "2.4.2")])
+      when "5-6-1-c-i-p"
+        | The form of the verbal adjective is used when the verbal noun is accompanied by an object.
+      when "5-6-1-c-ii-p"
+        | The other form is used when the verbal noun functions as a noun or an adjective.
+      when "Table5FF-caption"
+        | Declension of Verbal Nouns with Two Forms in the Genitive &mdash; Form of the Verbal Adjective and Form according to One of the Declensions
+      when "Table5FF-col1"
+        | Verbal Noun
+      when "Table5FF-col2"
+        | Genitive &mdash; Form of the Verbal Adjective
+      when "Table5FF-col3"
+        | Genitive &mdash; Form according to One of the Declensions
+      when "5-6-2-title"
+        | The Plural
+      when "5-6-2-p"
+        | There are some verbal nouns that are also used as common nouns. These have a plural form according to the declension to which they belong.
+      when "5-6-2-a-p"
+        | For verbal nouns ending in #[i -(e)adh], #[i -taí] (#[i -tí]) is usually replaced by #[i -(e)adh] if the root ends in #[i -ch], #[i -d], #[i -l], #[i -ll], #[i -n], #[i -rr], #[i -s] or #[i -t], and #[i -thaí] (#[i -thí]), if it ends with another consonant, e.g., #[i baisteadh], #[i baistí]; #[i casadh], #[i castaí]; #[i cinneadh], #[i cinntí]; #[i moladh], #[i moltaí]; #[i pósadh], #[i póstaí]; #[i tarscaoileadh], #[i tarscaoiltí]; #[i bloscadh], #[i bloscthaí]; #[i colscaradh], #[i colscarthaí]; #[i crapadh], #[i crapthaí]; #[i loscadh], #[i loscthaí]; #[i madhmadh], #[i madhmthaí]; #[i scríobadh], #[i scríobthaí]; #[i speireadh], #[i speirthí]; #[i tíolacadh], #[i tíolacthaí], or occasionally #[i -teacha], #[i -thacha], e.g., #[i filleadh], #[i fillteacha]; #[i gearradh], #[i gearrthacha].
+      when "5-6-2-b-p"
+        | For polysyllabic verbal nouns ending in #[i -(i)ú], #[i -(u)ithe] is replaced by #[i -(i)ú], e.g., #[i athrú], #[i athruithe]; #[i ceartú], #[i ceartuithe]; #[i cruinniú], #[i cruinnithe]; #[i fiosrú], #[i fiosruithe]; #[i míniú], #[i mínithe]; #[i ordú], #[i orduithe]; #[i scrúdú], #[i scrúduithe]; #[i toiliú], #[i toilithe].
+      when "5-6-2-c-p"
+        | For nouns ending in #[i -áil], the #[i l] is broadened and #[i -acha] is added, e.g., #[i admháil], #[i admhálacha]; #[i ofráil], #[i ofrálacha].
+      when "5-6-2-d-p"
+        | For verbal nouns ending in #[i cht], #[i -áí] is added, e.g., #[i gluaiseacht], #[i gluaiseachtaí], and add #[i -í] to verbal nouns ending in #[i -lt], #[i -nt], #[i -rt], e.g., #[i bagairt], #[i bagairtí]; #[i creidiúint], #[i creidiúintí]; #[i oscailt], #[i oscailtí]; #[i tairiscint], #[i tairiscintí].
+      when "5-6-2-e-p"
+        | For monosyllabic verbal nouns ending in a vowel, #[i -nna] or, occasionally, #[i -ite] are added, e.g., #[i breo], #[i breonna]; #[i brú], #[i brúnna]; #[i cló], #[i clónna]; #[i dó], #[i dónna]; #[i liú], #[i liúnna]; #[i meá], #[i meánna]; #[i sú], #[i súnna]; #[i crú], #[i crúite]; #[i rá], #[i ráite]; #[i sá], #[i sáite].
+      when "5-7-title"
+        | The Verbal Adjective
+      when "5-7-1-title"
+        | Prefixes with the Verbal Adjective
+      when "5-7-1-p"
+        | The prefixes #[i do-], #[i in-], #[i so-] are used with the form of the verbal adjective to make classifications, e.g., #[i dochoiscthe], #[i dofheicthe], #[i doghluaiste], #[i dothuigthe], #[i indéanta], #[i inscrúdaithe], #[i sofheicthe], #[i sofhoghlamtha], #[i sophacáilte]. (See #[+link("./chapter4.html#sec_4_12", "4.12")] for more information on the verbal adjective.)
+      default
+        - throw new Error(`No content for ${key} (en.pug)`)
