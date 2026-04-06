@@ -89,7 +89,7 @@
 
     & th,
     & td {
-      @apply px-2 py-1 outline-2 outline-white;
+      @apply px-2 py-1 outline-2 outline-white align-top;
     }
 
     & td {
@@ -108,7 +108,7 @@
     }
   }
 
-  .list-dots ul {
+  ul.list-dots {
     @apply list-disc;
 
     & > li > p {
@@ -226,10 +226,6 @@
     & thead tr:nth-of-type(2) th {
       @apply bg-gray-700 text-white;
     }
-  }
-
-  .compass-basic-table td {
-    @apply bg-white;
   }
 
   .chapter-7 {

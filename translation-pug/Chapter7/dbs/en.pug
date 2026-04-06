@@ -1,0 +1,805 @@
+include ../../tlMatter.pug
+if docLang === "EN"
+  mixin tl(tlText)
+    if tlText != null
+      +inlineTl("EN", tlText)
+    else
+      +inlineTl("EN")
+        block
+    
+  mixin tlDb(key)
+    case key
+      when "teidealNaCaibidle"
+        | The Copula
+      when "7-1-title"
+        | General
+      when "7-title"
+        | #[+renderKey("Caibidil", { getFromCommon: true })] 7 | #[+renderKey("teidealNaCaibidle")]
+      when "7-1-p1"
+        | The copula is used to link two words or two phrases together.
+      when "7-1-p2"
+        | The form of the copula used in the present tense is the same as that used in the future tense. Moreover, the form of the copula, when used in the past tense, the past habitual tense, and the conditional mood, is the same. Bear in mind, if the predicate of the sentence is in the past tense, the present tense, or the conditional mood, the tense of the copula and the tense of the predicate would not necessarily agree with each other. See #[+link("#sec_7_2", "7.2")] for simple forms of the copula.
+      when "7-1-1-title"
+        | Functions of the Copula
+      when "7-1-1-p"
+        | The primary functions of the copula are &mdash;
+        | #[br]
+        | (#[b TL Note]: The copula does not always translate directly, so no attempt will be made to parallel.)
+      when "7-1-1-a-p"
+        | classification of the subject:
+      when "7-1-1-a-sample1"
+        | She is an excellent actor.
+      when "7-1-1-a-sample2"
+        | The seagull is a bird.
+      when "7-1-1-a-sample3"
+        | They are strangers.
+      when "7-1-1-a-sample4"
+        | He is a man.
+      when "7-1-1-b-p"
+        | identification of the subject:
+      when "7-1-1-b-sample1"
+        | Úna was the manager.
+      when "7-1-1-b-sample2"
+        | Dublin is the capital of Ireland.
+      when "7-1-1-c-p"
+        | qualification of the subject with a predicate adjective or with a phrase starting with a preposition:
+      when "7-1-1-c-sample1"
+        | Isn&rsquo;t it nice?
+      when "7-1-1-c-sample2"
+        | That is true.
+      when "7-1-1-c-sample3"
+        | Five Euro is enough.
+      when "7-1-1-c-sample4"
+        | She is from Mullingar.
+      when "7-1-1-d-p"
+        | qualification of a noun or clause, or with a noun plus a prepositional pronominal:
+      when "7-1-1-d-sample1"
+        | She likes basketball.
+      when "7-1-1-d-sample2"
+        | He must leave.
+      when "7-1-1-d-sample3"
+        | Can he do it?
+      when "7-1-1-d-sample4"
+        | That is enough for me.
+      when "7-1-1-d-sample5"
+        | Do you remember that house?
+      when "7-1-1-d-sample6"
+        | We are sorry for this break.
+      when "7-1-1-e-p"
+        | qualification of a noun with a comparative adjective:
+      when "7-1-1-e-sample1"
+        | Take the one you like best.
+      when "7-1-1-e-sample2"
+        | The nicest sweets were eaten before I arrived at the party.
+      when "7-1-1-f-p"
+        | expression of ownership or relationship between people using the preposition #[i le]:
+      when "7-1-1-f-sample1"
+        | It was mine.
+      when "7-1-1-f-sample2"
+        | That one is not Sorcha&rsquo;s.
+      when "7-1-1-f-sample3"
+        | Take any one you like.
+      when "7-1-1-f-sample4"
+        | She is Seán&rsquo;s daughter.
+      when "7-1-1-f-sample5"
+        | He is Cáit&rsquo;s colleague.
+      when "7-1-1-g-p"
+        | qualification of a clause with an adjective:
+      when "7-1-1-g-sample1"
+        | Soon we will know.
+      when "7-1-1-g-sample2"
+        | It has been a long time since he was there.
+      when "7-1-1-g-sample3"
+        | You know it well.
+      when "7-1-1-g-sample4"
+        | Many people come this way.
+      when "7-1-1-g-sample5"
+        | He was a long time coming.
+      when "7-1-1-h-p"
+        | emphasizing part of the sentence:
+      when "7-1-1-h-sample1"
+        | He was not born today or yesterday.
+      when "7-1-1-h-sample2"
+        | I was buying milk.
+      when "7-1-1-h-sample3"
+        | It was to Spain she went.
+      when "7-1-1-h-sample4"
+        | It was not Muireann that lost the key.
+      when "7-1-1-h-sample5"
+        | Nóra translated that.
+      when "7-1-1-h-sample6"
+        | She was right.
+      when "7-1-1-h-sample7"
+        | That was not the kind of competition that was there in 1998.
+      when "7-1-1-h-sample8"
+        | Yesterday they came.
+      when "7-1-1-h-sample9"
+        | Peadar would make the move if he were here.
+      when "7-1-1-i-p"
+        | using it in sentences that express a comparison:
+      when "7-1-1-i-sample1"
+        | A twopence is heavier than a penny.
+      when "7-1-1-i-sample2"
+        | The sun is brighter than either the moon or the planets.
+      when "7-1-1-i-sample3"
+        | Countries aren&rsquo;t more numerous than customs. (#[i figuratively: so many men, so many minds])
+      when "7-1-1-i-sample4"
+        | Isn&rsquo;t nature stronger than nurture?
+      when "7-1-1-i-sample5"
+        | Wouldn&rsquo;t a car be better than a bicycle?
+      when "7-2-title"
+        | Simple Forms of the Copula and Initial Mutation
+      when "7-2-a-p"
+        | A simple form is a form of the copula that is not composed with an interrogative pronominal, preposition or conjunction.
+      when "7-2-b-p1"
+        | The simple forms of copula are given here:
+      when "7-2-b-i-p"
+        | in a main clause;
+      when "7-2-b-ii-p"
+        | at the beginning of a subordinate clause, rather than a relative clause;
+      when "7-2-b-iii-p"
+        | in a direct relative clause;
+      when "7-2-b-iv-p"
+        | in an indirect relative clause.
+      when "7-2-b-p2"
+        | The forms are refined by their tense. In each situation, the present tense and the future tense are given first followed by the past tense, the past habitual tense and the conditional mood.
+      when "7-2-1-title"
+        | Simple Forms in Main Clauses
+      when "7-2-1-A-title"
+        | The Present Tense and The Future Tense
+      when "7-2-1-A-p"
+        | The following table lays out the positive form, the negative form, the positive interrogative form and the negative interrogative form of the copula in the present tense or the future tense.
+      when "Table7A-caption"
+        | Simple Forms in Main Clauses &mdash; The Present Tense and Future Tense
+      when "Table7A-header"
+        | The Present Tense and Future Tense
+      when "Table7A-subheader"
+        | before every consonant and every vowel
+      when "Table7A-example1"
+        | #[b EN]: #[i It is good land now.]
+      when "Table7A-example2"
+        | #[b EN]: #[i She is a good artist.]
+      when "Table7A-example3"
+        | #[b EN]: #[i It is not milk, and it is not buttermilk.]
+      when "Table7A-example4"
+        | #[b EN]: #[i He is not the one who told that lie.]
+      when "Table7A-example5"
+        | #[b EN]: #[i Is Bríd the teacher?]
+      when "Table7A-example6"
+        | #[b EN]: #[i Is it long until he arrives?]
+      when "Table7A-example7"
+        | #[b EN]: #[i Isn&rsquo;t Seán the teacher?]
+      when "Table7A-example8"
+        | #[b EN]: #[i Isn&rsquo;t Siobhán going to be there tomorrow?]
+      when "Positive"
+        | Positive
+      when "Negative"
+        | Negative
+      when "Interrogative"
+        | Interrogative
+      when "7-2-1-B-title"
+        | The Past Tense, the Past Habitual Tense and the Conditional Mood
+      when "7-2-1-B-p1"
+        | Lenition follows with the forms of the copula in the past tense, the past habitual tense and the conditional mood. #[i ba] or #[i b&rsquo;] is used in the past tense, past habitual tense or conditional mood as follows:
+      when "7-2-1-B-a-p"
+        | #[i ba] is always placed before #[i fh-] + #[i consonant], e.g., #[i Ba mhúinteoir lách é] #[+tl He was a pleasant teacher]; #[i Ba fhreagra cruinn é] #[+tl It was an accurate answer].
+      when "7-2-1-B-b-p"
+        | #[i ba] is placed before #[i fh-] + #[i vowel] in the following contexts:
+      when "7-2-1-B-b-i-p"
+        | the pronominals #[i é], #[i í], #[i ea], #[i éard], #[i eisean], #[i ise], #[i iad] and #[i iadsan], e.g., #[i Ba iad a bhuaigh an corn] #[+tl They were the ones who won the cup];
+      when "7-2-1-B-b-ii-p"
+        | prepositions, e.g., #[i Ba ar theacht i bhfeidhm an Achta a tharla sé] #[+tl It was on the coming into effect of the Act that it happened];
+      when "7-2-1-B-b-iii-p"
+        | prepositional pronominals, e.g., #[i Ba ann a bhí sé] #[+tl It was there that he was];
+      when "7-2-1-B-b-iv-p"
+        | adverbs that are not adjectival adverbs, e.g., #[i Ba arú inné a d&rsquo;ith siad an cáca] #[+tl It was the day before yesterday that they ate the cake].
+      when "7-2-1-B-c-p"
+        | #[i b&rsquo;] is placed before a vowel or before #[i fh-] + #[i vowel] in the following contexts:
+      when "7-2-1-B-c-i-p"
+        | nouns, e.g., #[i B&rsquo;innealtóir maith í] #[+tl She was a good engineer];
+      when "7-2-1-B-c-ii-p"
+        | adjectives, e.g., #[i B&rsquo;fhearúil an duine é] #[+tl He was a manly person];
+      when "7-2-1-B-c-iii-p"
+        | the demonstrative pronominals #[i eo], #[i in] and #[i iúd], e.g., #[i B&rsquo;in é é] #[+tl It was he]; #[i B&rsquo;eo amach é] #[+tl It was he who went out].
+      when "7-2-1-B-c-iv-p"
+        | adjectival adverbs, e.g., #[i B&rsquo;annamh a dhéanadh sé é] #[+tl It was rarely that he did it].
+      when "7-2-1-B-d-p"
+        | The forms #[i ba] or #[i ab] are allowed to be used before the neuter pronominal #[i ea] in the middle of a sentence that is in the past tense, the past habitual tense or the conditional mood, e.g., #[i Saighdiúirí ab ea iad] or #[i Saighdiúirí ba ea iad] (#[b EN]: both #[i They were soldiers]).
+      when "7-2-1-B-p2"
+        | The table below shows the positive form of the copula in a main clause that is in the past tense, the past habitual tense or the conditional mood.
+      when "Table7B-header"
+        | The Past Tense, Past Habitual Tense and Conditional Mood &mdash; Positive
+      when "Table7B-caption"
+        | Simple Forms in Main Clauses &mdash; The Past Tense, Past Habitual Tense and Conditional Mood &mdash; Positive Form
+      when "Table7B-ba-example1"
+        | #[b EN]: #[i I wanted to speak.]
+      when "Table7B-ba-example2"
+        | #[b EN]: #[i They were very generous with me.]
+      when "Table7B-ba-example3"
+        | #[b EN]: #[i It would have been a little help to me if I had gotten it in time.]
+      when "Table7B-b-example1"
+        | #[b EN]: #[i The picture would be beautiful if that hole weren&rsquo;t in the background.]
+      when "Table7B-b-example2"
+        | #[b EN]: #[i We would love to be listening to him every night.]
+      when "Table7B-b-example3"
+        | #[b EN]: #[i We knew that she would go nearby when it was dry.]
+      when "Table7B-ba-ab-example1"
+        | #[b EN]: #[i The Secretary would be the one to correct it in that case.]
+      when "Table7B-ba-ab-example2"
+        | #[b EN]: #[i She was a good leader.]
+      when "Table7B-ba-ab-example3"
+        | #[b EN]: #[i She was the one who was right.]
+      when "Table7B-ba-ab-example4"
+        | #[b EN]: #[i He was from Galway.]
+      when "Table7B-ba-ab-example5"
+        | #[b EN]: #[i She was from Dublin.]
+      when "BeforeConsonant"
+        | before a consonant
+      when "BeforeConsonantQualified"
+        | before a consonant or before #[i fh-] + #[i consonant]
+      when "BeforeVowel"
+        | before a vowel
+      when "BeforeVowelQualified"
+        | before a vowel or before #[i fh-] + #[i vowel]
+      when "BeforeConsonantAndVowel"
+        | before every consonant and every vowel
+      when "7-2-1-B-p3"
+        | The table below shows the negative form, the positive interrogative form and the negative interrogative form of the copula in a main clause that is in the past tense, the past habitual tense or the conditional mood.
+      when "Table7C-caption"
+        | Simple Forms in Main Clauses &mdash; The Past Tense, Past Habitual Tense and Conditional Mood &mdash; The Negative Form and The Interrogative Form
+      when "Table7C-header"
+        | The Past Tense, Past Habitual Tense and Conditional Mood
+      when "Table7C-Níor-example"
+        | #[b EN]: #[i She wouldn&rsquo;t like that to happen.]
+      when "Table7C-Níorbh-example"
+        | #[b EN]: #[i He was not to be imposed upon.]
+      when "Table7C-Ar-example"
+        | #[b EN]: #[i Was it difficult for you?]
+      when "Table7C-Arbh-example"
+        | #[b EN]: #[i Would it be better as it is?]
+      when "Table7C-Nár-example"
+        | #[b EN]: #[i He wouldn&rsquo;t dare to do it!]
+      when "Table7C-Nárbh-example"
+        | #[b EN]: #[i Wouldn&rsquo;t it be the devil?]
+      when "7-2-2-title"
+        | Simple Forms at the beginning of Subordinate Clauses, other than a Relative Clause
+      when "7-2-2-A-title"
+        | The Present Tense and Future Tense
+      when "7-2-2-A-p1"
+        | #[i gur] or #[i gurb] is used in the present or future tense as follows:
+      when "7-2-2-A-a-p"
+        | #[i gur] is always placed before a consonant, e.g., #[i Is dóigh leo gur teagascóir gairmiúil é Cian].
+      when "7-2-2-A-b-p"
+        | #[i gur] is placed before a vowel in the following contexts:
+      when "7-2-2-A-b-i-p"
+        | nouns (other than nouns in prepositional copula phrases mentioned under #[i gurb] below), e.g., #[i Is dóigh liom gur áit dheas an t&#x2011;óstán sin] #[+tl I hope that that hotel is a nice place]; #[i Síleann an tAire gur acmhainn theoranta an ciste sin] #[+tl The Minister thinks that that fund is a limited resource]; #[i Dúirt sí gur oifigeach maith é] #[+tl She said that he is a good officer].
+      when "7-2-2-A-b-ii-p"
+        | prepositions, e.g., #[i Deir sí gur ag an rince a bheidh sí] #[+tl She says that she will be at the dance].
+      when "7-2-2-A-b-iii-p"
+        | prepositional pronominals, e.g., #[i Dúradh liom gur uait a tháinig an leabhar sin] #[+tl I was told that the book came from you].
+      when "7-2-2-A-b-iv-p"
+        | adverbs (other than #[i amhlaidh] #[+tl as such]) which are not adjectival adverbs, e.g., #[i Síltear gur amach anseo atá i gceist] #[+tl It is thought that it is in the future]; #[i Tuigtear dom gur amuigh sa ghairdín atá an ceiliúradh ar bun] #[+tl It is understood by me that the celebration is taking place in the garden].
+      when "7-2-2-A-b-v-p"
+        | the pronominals #[i é], #[i í], #[i eisean], #[i ise], #[i iad] and #[i iadsan] if the pronominal is the agent or object of a verbal noun, e.g., #[i Síleann sí gur #[+underline é a bhailiú] is fearr] #[+tl She thinks that it is better to collect it]; #[i Dar leis gur #[+underline iad a fhoilsiú] is fearr] #[+tl He thinks that it is better to publish them].
+      when "7-2-2-A-c-p"
+        | #[i gurb] is placed before a vowel in the following contexts:
+      when "7-2-2-A-c-i-p"
+        | adjectives, e.g., #[i Sílim gurb iontach an deis duit é] #[+tl I think that it is a wonderful opportunity for you]; #[i Ceapaim gurb eolach an bhean í] #[+tl I think that the woman is knowledgeable];
+      when "7-2-2-A-c-ii-p"
+        | #[i amhlaidh (gurb amhlaidh)], or adjectival adverbs (#[i go hard], #[i gurb ard]; #[i go hannamh], #[i gurb annamh]), e.g., #[i Measaim gurb amhlaidh atá] #[+tl I consider that it is like that]; #[i Sílim gurb annamh a tharlaíonn a leithéid] #[+tl I think that such a thing happens rarely];
+      when "7-2-2-A-c-iii-p"
+        | the pronominals #[i é], #[i í], #[i ea], #[i eisean], #[i ise], #[i iad] and #[i iadsan] when the pronominal is neither the agent nor the object of the verb noun, e.g., #[i Deir sí gurb í a hiníon í] #[+tl She says that it is her daughter]; #[i Dar le hAoife gurb eisean a rinne é] #[+tl Aoife says that he is the one who did it]; #[i Dúirt sise gurb é Sorcha an t&#x2011;ainm a bhí uirthi féin] #[+tl She said that her name was Sorcha]; #[i D&rsquo;admhaigh sí gurb í féin a rinne é] #[+tl She admitted that she herself did it];
+      when "7-2-2-A-c-iv-p"
+        | the demonstrative pronominals #[i eo], #[i in] and #[i iúd], e.g., #[i Deir sí gurb in é an fear] #[+tl She says that it is the man];
+      when "7-2-2-A-c-v-p"
+        | the following prepositional copular phrases: #[i acmhainn do] #[+tl ability to], #[i áil le] #[+tl desire to], #[i aitheanta do] #[+tl known to], #[i aithnid do] #[+tl acquainted with], #[i eagal do/le] #[+tl fear of/by], #[i éadáil le] #[+tl benefit to], #[i ealaín do] #[+tl art of], #[i éigean do] #[+tl necessity for], #[i eol do] #[+tl knowledge of], #[i oircheas do] #[+tl proper to], e.g., #[i Dar leo gurb acmhainn dóibh teach a cheannach] #[+tl They say that they have the ability to buy a house];
+      when "7-2-2-A-c-vi-p"
+        | these particular words: #[i áibhéil] #[+tl exaggeration], #[i éard] #[+tl the one that], #[i ionadh] #[+tl surprise], #[i iontas] #[+tl astonishment] and #[i ualach] #[+tl burden], e.g., #[i Dúirt sé liom gurb ionadh leis an ní a tharla] #[+tl He told me that he was surprised by what happened].
+      when "7-2-2-A-p2"
+        | In the following table, the positive and negative forms of copula are given at the beginning of a subordinate clause (other than a relative clause) that is in the present tense or the future tense.
+      when "Table7D-header"
+        | The Present Tense and Future Tense
+      when "Table7D-caption"
+        | Simple Forms at the beginning of Subordinate Clauses, other than Relative Clauses &mdash; Present and Future Tense
+      when "Table7D-gur-cons-example1"
+        | #[b EN]: #[i They think #[b that] Seán is a good teacher.]
+      when "Table7D-gur-cons-example2"
+        | #[b EN]: #[i I think #[b that] the meeting will be in the afternoon tomorrow.]
+      when "Table7D-gur-vow-example1"
+        | #[b EN]: #[i They think #[b that] he is a nurse.]
+      when "Table7D-gur-vow-example2"
+        | #[b EN]: #[i I think #[b that] they will win.]
+      when "Table7D-gurb-example1"
+        | #[b EN]: #[i He thinks #[b that] it is a beautiful day.]
+      when "Table7D-gurb-example2"
+        | #[b EN]: #[i I don&rsquo;t think #[b that] they are the same.]
+      when "Table7D-gurb-example3"
+        | #[b EN]: #[i It is necessary #[b that] they have the ability.]
+      when "Table7D-gurb-example4"
+        | #[b EN]: #[i If it is necessary #[b that] they do it.]
+      when "Table7D-nach-example1"
+        | #[b EN]: #[i He says #[b that] the game will be played tomorrow.]
+      when "Table7D-nach-example2"
+        | #[b EN]: #[i We understand #[b that] it is not the end of the world if we lose.]
+      when "Table7D-nach-example3"
+        | #[b EN]: #[i They think #[b that] he is not a good researcher.]
+      when "Table7D-nach-example4"
+        | #[b EN]: #[i I think #[b that] it is not a safe harbor.]
+      when "7-2-2-B-title"
+        | The Past Tense, the Past Habitual Tense and the Conditional Mood
+      when "7-2-2-B-p"
+        | Lenition follows with the forms of the copula in the past tense, the past habitual tense and the conditional mood. There is an option for the positive forms &mdash; see #[+link("#sec_7_2_2_B_a", "(a)")] and #[+link("#sec_7_2_2_B_b", "(b)")] below.
+      when "7-2-2-B-a-title"
+        | #[i gur] or #[i gurbh]
+      when "7-2-2-B-a-p1"
+        | The positive forms #[i gur] or #[i gurbh] are used in the past tense, the past habitual tense or the conditional mood as follows:
+      when "7-2-2-B-a-i"
+        | #[i gur] is placed before a consonant or before #[i fh-] + #[i consonant] in all situations, e.g., #[i D&rsquo;ainneoin an méid a d&rsquo;impigh sí air, níor dhóigh leis gur chóir an madra a choinneáil] #[+tl Despite all she asked of him, he did not think it was right to keep the dog].
+      when "7-2-2-B-a-ii"
+        | #[i gurbh] is placed before a vowel or before #[i fh-] + #[i vowel] in all situations, e.g., #[i Creidtear gurbh ealaíontóir cumasach ab ea é] #[+tl It is believed that he was a talented artist]; #[i Dúirt sé gurbh iomaí cleas glic a d&rsquo;imir Seán air] #[+tl He said that Seán played many clever tricks on him].
+      when "7-2-2-B-a-p2"
+        | The table below lays out the positive form of the copula in a main clause that is in the past tense, the past habitual tense or the conditional mood.
+      when "Table7E-header"
+        | The Past Tense, Past Habitual Tense and Conditional Mood
+      when "Table7E-caption"
+        | Simple Forms at the beginning of Subordinate Clauses, except Relative Clauses &mdash; Past Tense, Past Habitual Tense and Conditional Mood &mdash; #[i gur] and #[i gurbh]
+      when "Table7E-gur-example1"
+        | #[b EN]: #[i Eoin said #[b that] it was right to sell it.]
+      when "Table7E-gur-example2"
+        | #[b EN]: #[i We thought #[b that] he was the most generous person.]
+      when "Table7E-gurbh-example1"
+        | #[b EN]: #[i He confirmed #[b that] he was bankrupt.]
+      when "Table7E-gurbh-example2"
+        | #[b EN]: #[i She said #[b that] it was for the public good.]
+      when "7-2-2-B-b-title"
+        | #[i go mba] or #[i go mb&rsquo;]
+      when "7-2-2-B-b-p1"
+        | It is also optional to use the positive forms #[i go mba] or #[i go mb&rsquo;] in the past tense, the past habitual tense or the conditional mood as follows:
+      when "7-2-2-B-b-i"
+        | #[i go mba] is placed before a consonant or before #[i fh-] + #[i consonant] in all situations, e.g., #[i Cé gur impigh sí air, níor dhóigh leis go mba chóir an madra a choinneáil] #[+tl Although she begged him, he did not think it right to keep the dog].
+      when "7-2-2-B-b-ii"
+        | #[i go mba] is placed before a vowel or before #[i fh-] + #[i vowel] in the following contexts:
+      when "7-2-2-B-b-ii-1"
+        | the pronominals #[i é], #[i í], #[i ea], #[i eisean], #[i ise], #[i iad] and #[i iadsan], e.g., #[i Ba dhóigh liomsa go mba iad an fhoireann ab fhearr ar an lá] #[+tl I would like it if they were the best team on the day];
+      when "7-2-2-B-b-ii-2"
+        | prepositions, e.g., #[i Mheas mé go mba ar an mbád a tháinig siad] #[+tl I thought that they came on the boat];
+      when "7-2-2-B-b-ii-3"
+        | prepositional pronominals, e.g., #[i Shíl mé go mba ann dó] #[+tl I thought that it was there for him];
+      when "7-2-2-B-b-ii-4"
+        | adverbs that are not adjectival adverbs, e.g., #[i Dúirt sé go mba arú inné a réitigh sí an dinnéar] #[+tl He said that she arranged the dinner yesterday].
+      when "7-2-2-B-b-iii"
+        | #[i go mb&rsquo;] is placed before a vowel or before #[i fh-] + #[i vowel] in the following contexts:
+      when "7-2-2-B-b-iii-1"
+        | nouns, e.g., #[i Bronnadh teastas uirthi á rá go mb&rsquo;altra cáilithe in Éirinn í] #[+tl She was awarded a certificate saying that she is a qualified nurse in Ireland];
+      when "7-2-2-B-b-iii-2"
+        | adjectives, e.g., #[i Dúirt na gasúir go mb&rsquo;aoibhinn leo an cáca milis] #[+tl The children said that they loved the sweet cake];
+      when "7-2-2-B-b-iii-3"
+        | the demonstrative pronominals #[i eo], #[i in] and #[i úd], e.g., #[i Dúirt sé go mb&rsquo;in a raibh aige];
+      when "7-2-2-B-b-iii-4"
+        | adjectival adverbs, e.g., #[i Dúirt sé go mb&rsquo;annamh a théadh sé ann] #[+tl He said that he rarely went there].
+      when "7-2-2-B-b-p2"
+        | In the table below, the positive form of the copula is set out in a main clause that is in the past tense, the past habitual tense or the conditional mood.
+      when "Table7F-header"
+        | The Past Tense, Past Habitual Tense and Conditional Mood
+      when "Table7F-caption"
+        | Simple Forms at the beginning of Subordinate Clauses, except Relative Clauses &mdash; the Past Tense, Past Habitual Tense and Conditional Mood &mdash; #[i go mba] and #[i go mb&rsquo;]
+      when "Table7F-go-mba-cons-example1"
+        | #[b EN]: #[i Eoin said #[b that] it was right to sell it.]
+      when "Table7F-go-mba-cons-example2"
+        | #[b EN]: #[i I think #[b that] he bought an expensive flute.]
+      when "Table7F-go-mba-vow-example1"
+        | #[b EN]: #[i He confirmed #[b that] he was bankrupt.]
+      when "Table7F-go-mba-vow-example2"
+        | #[b EN]: #[i She said #[b that] it was for the public good.]
+      when "7-2-2-B-c-title"
+        | #[i nár] or #[i nárbh]
+      when "7-2-2-B-c-p1"
+        | The negative forms #[i nár] and #[i nárbh] are used in the past tense, the past habitual past tense or the conditional mood as follows:
+      when "7-2-2-B-c-i"
+        | #[i nár] is placed before a consonant or before #[i fh-] + #[i consonant] in all situations, e.g., #[i Bhí mise den tuairim nár mhiste leis cabhrú leat] #[+tl I was of the opinion that it was not right to help you].
+      when "7-2-2-B-c-ii"
+        | #[i nárbh] is placed before a vowel or before #[i fh-] + #[i vowel] in all situations, e.g., #[i Ba léir nárbh ionann an dá stoca ar chor ar bith] #[+tl It was clear that the two stocks were not equal at all].
+      when "7-2-2-B-c-p2"
+        | In the table below, the negative form of the copula is set out in a main clause that is in the past tense, the past habitual tense or the conditional mood.
+      when "Table7G-header"
+        | The Past Tense, Past Habitual Tense and Conditional Mood
+      when "Table7G-caption"
+        | Simple Forms at the beginning of Subordinate Clauses, except Relative Clauses &mdash; the Past Tense, Past Habitual Tense and Conditional Mood &mdash; #[i nár] and #[i nárbh]
+      when "Table7G-nár-example1"
+        | #[b EN]: #[i It was clear that he was not a qualified doctor.]
+      when "Table7G-nár-example2"
+        | #[b EN]: #[i She said that it should not sleet.]
+      when "Table7G-nárbh-example1"
+        | #[b EN]: #[i He said that it was not possible to do it.]
+      when "Table7G-nárbh-example2"
+        | #[b EN]: #[i Wasn&rsquo;t that documentary amazing?]
+      when "7-2-3-title"
+        | Simple Forms in Direct Relative Clauses
+      when "7-2-3-A-title"
+        | The Present Tense and the Future Tense
+      when "7-2-3-A-p"
+        | In the table below, the positive and negative forms of the copula in a direct relative clause that is in the present tense or the future tense are given.
+      when "Table7H-header"
+        | The Present Tense and Future Tense
+      when "Table7H-subheader"
+        | before every consonant and every vowel
+      when "Table7H-caption"
+        | Simple Forms in Direct Relative Clauses &mdash; The Present Tense and Future Tense
+      when "Table7H-is-example1"
+        | #[b EN]: #[i Talk to that man who is an uncle to you.]
+      when "Table7H-is-example2"
+        | #[b EN]: #[i The woman who is your friend organized it.]
+      when "Table7H-nach-example1"
+        | #[b EN]: #[i No one who is not a member will be allowed to stay in the room.]
+      when "Table7H-nach-example2"
+        | #[b EN]: #[i What about the people who are not members?]
+      when "7-2-3-B-title"
+        | The Past Tense, Past Habitual Tense and Conditional Mood
+      when "7-2-3-B-p"
+        | In the table below, the positive and negative forms of the copula in a direct relative clause that is in the past tense, the past habitual tense or the conditional mood are given.
+      when "Table7I-header"
+        | The Past Tense, Past Habitual Tense and Conditional Mood
+      when "Table7I-caption"
+        | Simple Forms in Direct Relative Clauses &mdash; The Past Tense, Past Habitual Tense and Conditional Mood
+      when "Table7I-ba-example1"
+        | #[b EN]: #[i What would you like?]
+      when "Table7I-ba-example2"
+        | #[b EN]: #[i That&rsquo;s the car you should buy.]
+      when "Table7I-ab-example1"
+        | #[b EN]: #[i That&rsquo;s something easy to say.]
+      when "Table7I-ab-example2"
+        | #[b EN]: #[i If there was ever a book worth reading, this is it.]
+      when "Table7I-nár-example1"
+        | #[b EN]: #[i They did not burn any fuel that was not coal.]
+      when "Table7I-nár-example2"
+        | #[b EN]: #[i They didn&rsquo;t buy a cow that was not a good cow.]
+      when "Table7I-nárbh-example1"
+        | #[b EN]: #[i That&rsquo;s the Deputy who was never a Minister.]
+      when "Table7I-nárbh-example2"
+        | #[b EN]: #[i They didn&rsquo;t buy apples that were not red.]
+      when "7-2-4-title"
+        | Simple Forms in an Indirect Relative Clause
+      when "7-2-4-A-title"
+        | The Present Tense and the Future Tense
+      when "7-2-4-A-p"
+        | In the table below, the positive and negative forms of the copula in an indirect relative clause that is in the present tense or the future tense are given.
+      when "Table7J-caption"
+        | Simple Forms in an Indirect Relative Clause &mdash; The Present Tense and the Future Tense
+      when "Table7J-ar-example1"
+        | #[b EN]: #[i Don&rsquo;t mind that; that&rsquo;s information #[b that] is of no importance.]
+      when "Table7J-ar-example2"
+        | #[b EN]: #[i That&rsquo;s the person #[b that] the book belongs to.]
+      when "Table7J-arb-example1"
+        | #[b EN]: #[i That&rsquo;s the woman #[b that] is a journalist&rsquo;s sister.]
+      when "Table7J-arb-example2"
+        | #[b EN]: #[i Is the one #[b that] knows the answer in the room?]
+      when "Table7J-nach-example1"
+        | #[b EN]: #[i Where did the person #[b that] cannot be spoken to go?]
+      when "Table7J-nach-example2"
+        | #[b EN]: #[i Those are the people #[b that] don&rsquo;t want to continue.]
+      when "Table7J-nach-example3"
+        | #[b EN]: #[i That&rsquo;s the woman #[b that] is not a journalist&rsquo;s sister.]
+      when "Table7J-nach-example4"
+        | #[b EN]: #[i That&rsquo;s the actor #[b that] doesn&rsquo;t know his lines.]
+      when "Table7J-header"
+        | The Present Tense and Future Tense
+      when "7-2-4-B-title"
+        | The Past Tense, Past Habitual Tense and Conditional Mood
+      when "7-2-4-B-p"
+        | In the table below, the positive and negative forms of the copula in an indirect relative clause that is in the past tense, the past habitual tense or the conditional mood are given.
+      when "Table7K-header"
+        | The Past Tense, Past Habitual Tense and Conditional Mood
+      when "Table7K-caption"
+        | Simple Forms in an Indirect Relative Clause &mdash; The Past Tense, Past Habitual Tense and Conditional Mood
+      when "Table7K-ar-example"
+        | #[b EN]: #[i That&rsquo;s the woman #[b who] would be very helpful to you.]
+      when "Table7K-arbh-example"
+        | #[b EN]: #[i She read every book #[b that] was worth mentioning.]
+      when "Table7K-nár-example"
+        | #[b EN]: #[i Where are the people #[b that] they don&rsquo;t like to talk to?]
+      when "Table7K-nárbh-example"
+        | #[b EN]: #[i The children #[b who did not] want to go to school were bold.]
+      when "7-2-5-title"
+        | Initial Mutations after the Copula
+      when "7-2-5-A-title"
+        | The Present Tense and the Future Tense
+      when "7-2-5-A-a-p"
+        | No initial mutation is made after the following forms of the copula:
+      when "7-2-5-A-a-i-p"
+        | the positive form of the copula #[i is], e.g., #[i Is bréag é] #[+tl It is a lie];
+      when "7-2-5-A-a-ii-p"
+        | the positive interrogative form #[i an], e.g., #[i An cuimhin leat an cluiche sin?] #[+tl Do you remember that game?];
+      when "7-2-5-A-a-iii-p"
+        | the negative interrogative form #[i nach], e.g., #[i Nach buachaill atá ann?] #[+tl Isn&rsquo;t that a boy?]
+      when "7-2-5-A-b-p"
+        | #[i h] is placed before a vowel after the negative form of the copula #[i ní]:
+      when "7-2-5-A-b-i-p"
+        | on the pronominals #[i é], #[i í], #[i ea], #[i iad], #[i eo], #[i in] and #[i iúd], e.g., #[i Ní hiad a ghoid do mhála] #[+tl They did not steal your bag]; #[i Ní hin é mo theachsa] #[+tl It is not my house];
+      when "7-2-5-A-b-ii-p"
+        | on these adjectives: #[i amháin], #[i aon], #[i ionann], #[i iondúil], e.g., #[i Ní hionann an dá chás] #[+tl The two cases are not the same];
+      when "7-2-5-A-b-iii-p"
+        | on these adverbs: #[i amhlaidh], #[i annamh], e.g., #[i Ní hannamh dó a bheith luath] #[+tl It is not often that he is early];
+      when "7-2-5-A-b-iv-p"
+        | on these prepositional copula phrases: #[i acmhainn do], #[i áil le, aitheanta do], #[i aithnid do], #[i eagal do/le], #[i éadáil le], #[i ealaín do], #[i éigean do], #[i eol do], #[i oircheas do], e.g., #[i Ní hacmhainn dó bille eile a íoc] #[+tl He is not able to pay another bill];
+      when "7-2-5-A-b-v-p"
+        | on these particular words: #[i áibhéil], #[i éard], #[i ionadh], #[i iontas] and #[i ualach], e.g., #[i Ní hionadh ar bith é go gcuireann siad fáilte roimh chách] #[+tl It is no wonder that they welcome everyone];
+      when "7-2-5-A-b-vi-p"
+        | in an odd proverb, e.g., #[i Ní heolas go haontíos] #[+tl No knowledge without cohabitation]; #[i Ní haithne go haontíos] #[+tl No acquaintance without cohabitation].
+      when "7-2-5-A-c-p"
+        | #[i h] is not placed before a vowel after the negative form of the copula #[i ní]:
+      when "7-2-5-A-c-i-p"
+        | on nouns in general, e.g., #[i Ní eagrán nua den pháipéar atá á léamh agat] #[+tl It is not a new edition of the paper that you are reading];
+      when "7-2-5-A-c-ii-p"
+        | on adjectives in general, e.g., #[i Ní uaigneach fear i gcomhluadar] #[+tl A man is not lonely in company];
+      when "7-2-5-A-c-iii-p"
+        | on adverbs except #[i amhlaidh], #[i annamh], e.g., #[i Ní inné a tharla an timpiste] #[+tl The accident did not happen yesterday]; #[i Ní ansin a thit mé] #[+tl I did not fall then].
+      when "7-2-5-A-c-p2"
+        | In the table below, the initial vowel changes after the negative form of the copula #[i ní] are given.
+      when "Table7L-header"
+        | Initial Vowel Mutations After the Negative Form of the Copula #[i ní]
+      when "Table7L-caption"
+        | Initial Vowel Mutations After the Negative Form of the Copula #[i ní]
+      when "Table7L-subheader-col1"
+        | #[i h] is put before vowel after #[i ní]
+      when "Table7L-subheader-col2"
+        | #[i h] is not put before vowel after #[i ní]
+      when "Table7L-row1-col1"
+        | on these pronominals: #[i é], #[i í], #[i ea], #[i iad], #[i eo], #[i in], #[i iúd]
+      when "Table7L-row1-col2"
+        | on nouns in general
+      when "Table7L-row2-col1"
+        | on these adjectives: #[i amháin], #[i aon], #[i ionann], #[i iondúil]
+      when "Table7L-row2-col2"
+        | on adjectives in general
+      when "Table7L-row3-col1"
+        | on these adverbs: #[i amhlaidh], #[i annamh]
+      when "Table7L-row3-col2"
+        | on adverbs (except #[i amhlaidh], #[i annamh])
+      when "Table7L-row4-col1"
+        | on these prepositional copula phrases: #[i acmhainn do], #[i áil le], #[i aitheanta do], #[i aithnid do], #[i éadáil le], #[i eagal do/le], #[i ealaín do], #[i éigean do], #[i eol do], #[i oircheas do]
+      when "Table7L-row5-col1"
+        | on these specific words: #[i áibhéil], #[i éard], #[i ionadh], #[i iontas], #[i ualach]
+      when "Table7L-row6-col1"
+        | in an odd proverb
+      when "7-2-5-B-title"
+        | The Past Tense, the Past Habitual Tense and the Conditional Mood
+      when "7-2-5-B-p"
+        | Lenition follows the forms of the copula in the past tense, the past habitual tense and the conditional mood, e.g., #[i Ba dheas liom an seans a bheith faighte againn] #[+tl I would have liked for us to have had the chance]; #[i Níor bheag an méid a bhí le scrúdú] #[+tl There was not a small amount to examine].
+      when "7-3-title"
+        | Compound Forms of the Copula
+      when "7-3-1-title"
+        | Interrogative Pronominals composed with the copula
+      when "7-3-1-A-title"
+        | The Present Tense and the Future Tense
+      when "7-3-1-A-p"
+        | In the table below, examples of interrogative pronominals composed with the copula in the present tense or future tense are given (see #[+link("./chapter8.html#sec_8_5_4", "8.5.4")]).
+      when "Table7M-header"
+        | The Present Tense and Future Tense
+      when "Table7M-caption"
+        | Interrogative Pronominals composed with the copula &mdash; The Present Tense and Future Tense
+      when "Table7M-Cá-example"
+        | #[b EN]: #[i What does it matter to you?]
+      when "Table7M-Cárb-example"
+        | #[b EN]: #[i Where is it from? / What is it to you?]
+      when "Table7M-Cé-example"
+        | #[b EN]: #[i Who will give it to him?]
+      when "Table7M-Cérb-example"
+        | #[b EN]: #[i Who are they?]
+      when "7-3-1-B-title"
+        | The Past Tense, Past Habitual Tense and Conditional Mood
+      when "7-3-1-B-p1"
+        | In the table below, examples of interrogative pronominals composed with the copula in the past tense, the past habitual tense or the conditional mood are given.
+      when "Table7N-header"
+        | The Past Tense, Past Habitual Tense and Conditional Mood
+      when "Table7N-caption"
+        | Interrogative Pronominals composed with the Copula &mdash; The Past Tense, Past Habitual Tense and Conditional Mood
+      when "Table7N-example1"
+        | #[b EN]: #[i What does it profit you?]
+      when "Table7N-example2"
+        | #[b EN]: #[i How old is he?]
+      when "Table7N-example3"
+        | #[b EN]: #[i Who is she of?] lit. asking for surname
+      when "Table7N-example4"
+        | #[b EN]: #[i Who was that man?]
+      when "7-3-1-B-p2"
+        | Note that the compound #[i cérbh] is only used before #[i é], #[i í], #[i eisean], #[i ise], #[i iad] and #[i iadsan]. #[i cé] does not merge with the #[i ab] or #[i ba] forms of the copula when #[i cé] is not followed by a personal pronominal: #[i cérbh é]; but #[i cé ab fhearr]?; #[i cé ba chaptaen oraibh]?
+      when "7-3-2-title"
+        | Prepositions composed with the Copula
+      when "7-3-2-A-title"
+        | The Present Tense and the Future Tense
+      when "7-3-2-A-p"
+        | In the table below, examples of prepositions composed with the copula in the present tense or future tense are given.
+      when "Table7O-header"
+        | The Present Tense and Future Tense
+      when "Table7O-caption"
+        | Prepositions composed with the Copula &mdash; The Present Tense and Future Tense
+      when "Table7O-dar-example"
+        | #[b EN]: #[i The investigation will be concluded in the period ending on the 1st of July.]
+      when "Table7O-darb-example"
+        | #[b EN]: #[i I know a woman named Máire Ní Chiarragáin.]
+      when "Table7O-faoinar-example"
+        | #[b EN]: #[i Which law can she be charged under?]
+      when "Table7O-faoinarb-example"
+        | #[b EN]: #[i That is a matter easy to talk about.]
+      when "Table7O-inar-example"
+        | #[b EN]: #[i That&rsquo;s the office she wants to work in.]
+      when "Table7O-inarb-example"
+        | #[b EN]: #[i That is a building that is rarely visited.]
+      when "Table7O-lenar-example"
+        | #[b EN]: #[i There are many systems available with which control can be exercised.]
+      when "Table7O-lenarb-example"
+        | #[b EN]: #[i She said what she wanted, regardless of whom it may offend.]
+      when "Table7O-ónar-example"
+        | #[b EN]: #[i They will be in writing or in a form from which a written record can be produced.]
+      when "Table7O-ónarb-example"
+        | #[b EN]: #[i He was in the company of the group that wanted to escape.]
+      when "Table7O-trínar-example"
+        | #[b EN]: #[i All other means by which anything of this nature can be destroyed are eliminated.]
+      when "Table7O-trínarb-example"
+        | #[b EN]: #[i What formula do you have through which it is easy to answer the question?]
+      when "7-3-2-B-title"
+        | The Past Tense, Past Habitual Tense and Conditional Mood
+      when "7-3-2-B-p"
+        | In the table below, examples of prepositions composed with the copula in the past tense, the past habitual tense or the conditional mood are given.
+      when "Table7P-header"
+        | The Past Tense, Past Habitual Tense and Conditional Mood
+      when "Table7P-caption"
+        | Prepositions composed with the Copula &mdash; The Past Tense, Past Habitual Tense and Conditional Mood
+      when "Table7P-dar-example"
+        | #[b EN]: #[i The investigation was concluded in the period ending on the 8th of March 1998.]
+      when "Table7P-darbh-example"
+        | #[b EN]: #[i That is a boy named Gearóid who was present.]
+      when "Table7P-faoinar-example"
+        | #[b EN]: #[i The conditions under which those people were members were listed.]
+      when "Table7P-faoinarbh-example"
+        | #[b EN]: #[i The date under which a letter can be submitted to the Minister was mentioned.]
+      when "Table7P-inar-example"
+        | #[b EN]: #[i The case could be heard in the case of that person&rsquo;s respondent.]
+      when "Table7P-inarbh-example"
+        | #[b EN]: #[i That is a case in which an employee of the vehicle&rsquo;s owner was charged.]
+      when "Table7P-lenar-example"
+        | #[b EN]: #[i That is the organization with which he is an agent.]
+      when "Table7P-lenarbh-example"
+        | #[b EN]: #[i That is the team with which I wanted to play.]
+      when "Table7P-ónar-example"
+        | #[b EN]: #[i He returned to the country from which he was deported.]
+      when "Table7P-ónarbh-example"
+        | #[b EN]: #[i Give me information about the loan and the date on which it was paid.]
+      when "Table7P-trínar-example"
+        | #[b EN]: #[i There was a forum through which the team usually raised questions.]
+      when "Table7P-trínarbh-example"
+        | #[b EN]: #[i The tunnel through which it was possible to drive was closed.]
+      when "7-3-3-title"
+        | Conjunctions composed with the Copula
+      when "7-3-3-A-title"
+        | The Present Tense and the Future Tense
+      when "7-3-3-A-p"
+        | In the table below, examples of conjunctions composed with the copula in the present tense or future tense are given.
+      when "Table7Q-header"
+        | The Present Tense and Future Tense
+      when "Table7Q-caption"
+        | Conjunctions composed with the Copula &mdash; The Present Tense and Future Tense
+      when "Table7Q-example1"
+        | #[b EN]: #[i Before he can buy a car, he has to save money.]
+      when "Table7Q-example2"
+        | #[b EN]: #[i Before she knows it is there, the cat will be gone.]
+      when "Table7Q-example3"
+        | #[b EN]: #[i Since you have the keys to the car, you will go to the shop.]
+      when "Table7Q-example4"
+        | #[b EN]: #[i Since she will have the room, she has to arrange it herself.]
+      when "7-3-3-B-title"
+        | The Past Tense, Past Habitual Tense and Conditional Mood
+      when "7-3-3-B-p"
+        | In the table below, examples of conjunctions composed with the copula in the past tense, the past habitual tense or the conditional mood are given.
+      when "Table7R-header"
+        | The Past Tense, Past Habitual Tense and Conditional Mood
+      when "Table7R-caption"
+        | Conjunctions composed with the Copula &mdash; The Past Tense, Past Habitual Tense and Conditional Mood
+      when "Table7R-example1"
+        | #[b EN]: #[i He had to get his manager&rsquo;s signature before he could take a holiday.]
+      when "Table7R-example2"
+        | #[b EN]: #[i Before I could leave, the gate was closed.]
+      when "Table7R-example3"
+        | #[b EN]: #[i The savings came about because spending was less than expected.]
+      when "Table7R-example4"
+        | #[b EN]: #[i Since it was there, it could not be denied.]
+      when "7-3-4-title"
+        | #[i má] composed with the Copula
+      when "7-3-4-p"
+        | #[i má] is used in the present tense, the future tense, the past tense and the past habitual tense.
+      when "7-3-4-A-title"
+        | The Present Tense and Future Tense
+      when "7-3-4-A-p"
+        | In the table below, examples of #[i má] composed with the copula in the present tense or future tense are given.
+      when "Table7S-header"
+        | The Present Tense and Future Tense
+      when "Table7S-caption"
+        | #[i má] composed with the copula &mdash; The Present Tense and Future Tense
+      when "Table7S-más-example1"
+        | #[b EN]: #[i If you want to leave, you can.]
+      when "Table7S-más-example2"
+        | #[b EN]: #[i If it&rsquo;s late, it&rsquo;s about time.]
+      when "Table7S-más-example3"
+        | #[b EN]: #[i Stay at home, if that&rsquo;s what you prefer.]
+      when "Table7S-más-example4"
+        | #[b EN]: #[i If it&rsquo;s Séamas, tell him to come here.]
+      when "Table7S-mura-example1"
+        | #[b EN]: #[i If she doesn&rsquo;t want to stay, she doesn&rsquo;t have to.]
+      when "Table7S-mura-example2"
+        | #[b EN]: #[i Give me another example, if you don&rsquo;t mind.]
+      when "Table7S-murab-example1"
+        | #[b EN]: #[i She was a tall woman, unlike Cáit.]
+      when "Table7S-murab-example2"
+        | #[b EN]: #[i If he didn&rsquo;t want to listen, he didn&rsquo;t have to.]
+      when "7-3-4-B-title"
+        | The Past Tense and the Past Habitual Tense
+      when "7-3-4-B-p"
+        | In the table below, examples of #[i má] composed with the copula in the past tense or past habitual tense are given. The rules for the use of #[i ba] and #[i b&rsquo;] also apply here (see #[+link("#sec_7_2_1_B", "7.2.1B")]).
+      when "Table7T-caption"
+        | #[i má] composed with the copula &mdash; The Past Tense and the Past Habitual Tense
+      when "Table7T-header"
+        | The Past Tense and Past Habitual Tense
+      when "Table7T-positive-example1"
+        | #[b EN]: #[i If he was an honest person, the business he had going was strange.]
+      when "Table7T-positive-example2"
+        | #[b EN]: #[i If he was a well-known man, I didn&rsquo;t know it.]
+      when "Table7T-positive-example3"
+        | #[b EN]: #[i If it was her, she didn&rsquo;t recognize me.]
+      when "Table7T-negative-example1"
+        | #[b EN]: #[i If he was not a registered member, he had no chance.]
+      when "Table7T-negative-example2"
+        | #[b EN]: #[i If she was not a registered subscriber, she wouldn&rsquo;t receive the magazine in the mail.]
+      when "Table7T-negative-example3"
+        | #[b EN]: #[i If it wasn&rsquo;t a bird, it was a bat.]
+      when "Table7T-negative-example4"
+        | #[b EN]: #[i She wouldn&rsquo;t play if it wasn&rsquo;t to her liking.]
+      when "7-3-5-title"
+        | #[i dá] and the Copula
+      when "7-3-5-p"
+        | In the table below, examples of #[i dá] combined with the copula are given. #[i dá] is used only in the conditional mood. The rules for the use of #[i ba] and #[i b&rsquo;] also apply here (see #[+link("#sec_7_2_1_B", "7.2.1B")]).
+      when "Table7U-caption"
+        | #[i dá] and the Copula &mdash; The Conditional Mood
+      when "Table7U-header"
+        | The Conditional Mood
+      when "Table7U-example1"
+        | #[b EN]: #[i If you would like it, I could get it for you.]
+      when "Table7U-example2"
+        | #[b EN]: #[i If it were your father who would say that, I would believe it.]
+      when "Table7U-example3"
+        | #[b EN]: #[i If he were a rich man, he would give a generous donation.]
+      when "Table7U-example4"
+        | #[b EN]: #[i If she were a waitress, she would be working on the weekend.]
+      when "7-4-title"
+        | The Subjunctive Mood
+      when "7-4-p"
+        | In the table below, examples of the copula in the subjunctive mood, present tense or future tense are given. The copula is not normally used in the past subjunctive mood. <br /> (#[b TL Note]: #[i These were really hard to translate. Please submit suggestions on improvements.])
+      when "Table7V-caption"
+        | The Subjunctive Mood &mdash; The Present Tense and Future Tense
+      when "Table7V-header"
+        | The Subjunctive Mood
+      when "Table7V-gura-example1"
+        | #[b EN]: #[i May you be long-lived.]
+      when "Table7V-gura-example2"
+        | #[b EN]: #[i May it be good for him.]
+      when "Table7V-gura-example3"
+        | #[b EN]: #[i May the story be safe.]
+      when "Table7V-gurab-example1"
+        | #[b EN]: #[i That it will be there before us.]
+      when "Table7V-gurab-example2"
+        | #[b EN]: #[i May it be so for you.]
+      when "Table7V-gurab-example3"
+        | #[b EN]: #[i That it is in your best interest.]
+      when "Table7V-nára-example1"
+        | #[b EN]: #[i That it is not true.]
+      when "Table7V-nára-example2"
+        | #[b EN]: #[i That it would not be better for you.]
+      when "Table7V-nára-example3"
+        | #[b EN]: #[i That it is not long until we would see each other again.]
+      when "Table7V-nárab-example1"
+        | #[b EN]: #[i That it is not a waste of time.]
+      when "Table7V-nárab-example2"
+        | #[b EN]: #[i That it is not for your benefit.]
+      when "Table7V-nárab-example3"
+        | #[b EN]: #[i That it is not so for you.]
+      default
+        - throw new Error(`No content for ${key} (en.pug)`)

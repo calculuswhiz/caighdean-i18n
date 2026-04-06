@@ -1,0 +1,297 @@
+include ../bodyMatter.pug
+include ./dbs/index.pug
+include tables.pug
+
++chapterTemplate(7)
+  +hx(2, "7.1", "7-1-title")
+    p: +renderKey("7-1-p1")
+    p: +renderKey("7-1-p2")
+    +hx(3, "7.1.1", "7-1-1-title")
+      p: +renderKey("7-1-1-p")
+      ol(class="list-[lower-alpha]")
+        li#sec_7_1_1_a
+          p: +renderKey("7-1-1-a-p")
+          +sampleBox("7-1-1-a-sample", 4)
+        li#sec_7_1_1_b
+          p: +renderKey("7-1-1-b-p")
+          +sampleBox("7-1-1-b-sample", 2)
+        li#sec_7_1_1_c
+          p: +renderKey("7-1-1-c-p")
+          +sampleBox("7-1-1-c-sample", 4)
+        li#sec_7_1_1_d
+          p: +renderKey("7-1-1-d-p")
+          +sampleBox("7-1-1-d-sample", 6)
+        li#sec_7_1_1_e
+          p: +renderKey("7-1-1-e-p")
+          +sampleBox("7-1-1-e-sample", 2)
+        li#sec_7_1_1_f
+          p: +renderKey("7-1-1-f-p")
+          +sampleBox("7-1-1-f-sample", 5)
+        li#sec_7_1_1_g
+          p: +renderKey("7-1-1-g-p")
+          +sampleBox("7-1-1-g-sample", 5)
+        li#sec_7_1_1_h
+          p: +renderKey("7-1-1-h-p")
+          +sampleBox("7-1-1-h-sample", 9)
+        li#sec_7_1_1_i
+          p: +renderKey("7-1-1-i-p")
+          +sampleBox("7-1-1-i-sample", 5)
+  hr
+
+  +hx(2, "7.2", "7-2-title")
+    ol(class="list-[lower-alpha]")
+      li#sec_7_2_a
+        +renderKey("7-2-a-p")
+      li#sec_7_2_b
+        +renderKey("7-2-b-p1")
+        ol(class="list-[lower-roman]")
+          li#sec_7_2_b_i
+            +renderKey("7-2-b-i-p")
+          li#sec_7_2_b_ii
+            +renderKey("7-2-b-ii-p")
+          li#sec_7_2_b_iii
+            +renderKey("7-2-b-iii-p")
+          li#sec_7_2_b_iv
+            +renderKey("7-2-b-iv-p")
+        +renderKey("7-2-b-p2")
+    +hx(3, "7.2.1", "7-2-1-title")
+      ol(class="list-[upper-alpha]")
+        li#sec_7_2_1_A
+          p: b: +renderKey("7-2-1-A-title")
+          p: +renderKey("7-2-1-A-p")
+          +Table7A
+        li#sec_7_2_1_B
+          p: b: +renderKey("7-2-1-B-title")
+          p: +renderKey("7-2-1-B-p1")
+          ol(class="list-[lower-alpha]")
+            li#sec_7_2_1_B_a
+              +renderKey("7-2-1-B-a-p")
+            li#sec_7_2_1_B_b
+              +renderKey("7-2-1-B-b-p")
+              ol(class="list-[lower-roman]")
+                li#sec_7_2_1_B_b_i
+                  +renderKey("7-2-1-B-b-i-p")
+                li#sec_7_2_1_B_b_ii
+                  +renderKey("7-2-1-B-b-ii-p")
+                li#sec_7_2_1_B_b_iii
+                  +renderKey("7-2-1-B-b-iii-p")
+                li#sec_7_2_1_B_b_iv
+                  +renderKey("7-2-1-B-b-iv-p")
+            li#sec_7_2_1_B_c
+              +renderKey("7-2-1-B-c-p")
+              ol(class="list-[lower-roman]")
+                li#sec_7_2_1_B_c_i
+                  +renderKey("7-2-1-B-c-i-p")
+                li#sec_7_2_1_B_c_ii
+                  +renderKey("7-2-1-B-c-ii-p")
+                li#sec_7_2_1_B_c_iii
+                  +renderKey("7-2-1-B-c-iii-p")
+                li#sec_7_2_1_B_c_iv
+                  +renderKey("7-2-1-B-c-iv-p")
+            li#sec_7_2_1_B_d
+              +renderKey("7-2-1-B-d-p")
+          +renderKey("7-2-1-B-p2")
+          +Table7B
+          +renderKey("7-2-1-B-p3")
+          +Table7C
+
+    +hx(3, "7.2.2", "7-2-2-title")
+      ol(class="list-[upper-alpha]")
+        li#sec_7_2_2_A
+          p: b: +renderKey("7-2-2-A-title")
+          p: +renderKey("7-2-2-A-p1")
+          ol(class="list-[lower-alpha]")
+            li#sec_7_2_2_A_a
+              +renderKey("7-2-2-A-a-p")
+            li#sec_7_2_2_A_b
+              +renderKey("7-2-2-A-b-p")
+              ol(class="list-[lower-roman]")
+                li#sec_7_2_2_A_b_i
+                  +renderKey("7-2-2-A-b-i-p")
+                li#sec_7_2_2_A_b_ii
+                  +renderKey("7-2-2-A-b-ii-p")
+                li#sec_7_2_2_A_b_iii
+                  +renderKey("7-2-2-A-b-iii-p")
+                li#sec_7_2_2_A_b_iv
+                  +renderKey("7-2-2-A-b-iv-p")
+                li#sec_7_2_2_A_b_v
+                  +renderKey("7-2-2-A-b-v-p")
+            li#sec_7_2_2_A_c
+              +renderKey("7-2-2-A-c-p")
+              ol(class="list-[lower-roman]")
+                li#sec_7_2_2_A_c_i
+                  +renderKey("7-2-2-A-c-i-p")
+                li#sec_7_2_2_A_c_ii
+                  +renderKey("7-2-2-A-c-ii-p")
+                li#sec_7_2_2_A_c_iii
+                  +renderKey("7-2-2-A-c-iii-p")
+                li#sec_7_2_2_A_c_iv
+                  +renderKey("7-2-2-A-c-iv-p")
+                li#sec_7_2_2_A_c_v
+                  +renderKey("7-2-2-A-c-v-p")
+                li#sec_7_2_2_A_c_vi
+                  +renderKey("7-2-2-A-c-vi-p")
+          p: +renderKey("7-2-2-A-p2")
+          +Table7D
+        li#sec_7_2_2_B
+          p: b: +renderKey("7-2-2-B-title")
+          p: +renderKey("7-2-2-B-p")
+          ol(class="list-[lower-alpha]")
+            li#sec_7_2_2_B_a
+              p: +renderKey("7-2-2-B-a-title")
+              p: +renderKey("7-2-2-B-a-p1")
+              ol(class="list-[lower-roman]")
+                li#sec_7_2_2_B_a_i
+                  +renderKey("7-2-2-B-a-i")
+                li#sec_7_2_2_B_a_ii
+                  +renderKey("7-2-2-B-a-ii")
+              p: +renderKey("7-2-2-B-a-p2")
+              +Table7E
+            li#sec_7_2_2_B_b
+              p: +renderKey("7-2-2-B-b-title")
+              p: +renderKey("7-2-2-B-b-p1")
+              ol(class="list-[lower-roman]")
+                li#sec_7_2_2_B_b_i
+                  +renderKey("7-2-2-B-b-i")
+                li#sec_7_2_2_B_b_ii
+                  +renderKey("7-2-2-B-b-ii")
+                  ul(class="list-dots")
+                    li: +renderKey("7-2-2-B-b-ii-1")
+                    li: +renderKey("7-2-2-B-b-ii-2")
+                    li: +renderKey("7-2-2-B-b-ii-3")
+                    li: +renderKey("7-2-2-B-b-ii-4")
+                li#sec_7_2_2_B_b_iii
+                  +renderKey("7-2-2-B-b-iii")
+                  ul(class="list-dots")
+                    li: +renderKey("7-2-2-B-b-iii-1")
+                    li: +renderKey("7-2-2-B-b-iii-2")
+                    li: +renderKey("7-2-2-B-b-iii-3")
+                    li: +renderKey("7-2-2-B-b-iii-4")
+              p: +renderKey("7-2-2-B-b-p2")
+              +Table7F
+            li#sec_7_2_2_B_c
+              p: +renderKey("7-2-2-B-c-title")
+              p: +renderKey("7-2-2-B-c-p1")
+              ol(class="list-[lower-roman]")
+                li#sec_7_2_2_B_c_i
+                  +renderKey("7-2-2-B-c-i")
+                li#sec_7_2_2_B_c_ii
+                  +renderKey("7-2-2-B-c-ii")
+              p: +renderKey("7-2-2-B-c-p2")
+              +Table7G
+    +hx(3, "7.2.3", "7-2-3-title")
+      ol(class="list-[upper-alpha]")
+        li#sec_7_2_3_A
+          p: b: +renderKey("7-2-3-A-title")
+          p: +renderKey("7-2-3-A-p")
+          +Table7H
+        li#sec_7_2_3_B
+          p: b: +renderKey("7-2-3-B-title")
+          p: +renderKey("7-2-3-B-p")
+          +Table7I
+    +hx(3, "7.2.4", "7-2-4-title")
+      ol(class="list-[upper-alpha]")
+        li#sec_7_2_4_A
+          p: b: +renderKey("7-2-4-A-title")
+          p: +renderKey("7-2-4-A-p")
+          +Table7J
+        li#sec_7_2_4_B
+          p: b: +renderKey("7-2-4-B-title")
+          p: +renderKey("7-2-4-B-p")
+          +Table7K
+    +hx(3, "7.2.5", "7-2-5-title")
+      ol(class="list-[upper-alpha]")
+        li#sec_7_2_5_A
+          p: b: +renderKey("7-2-5-A-title")
+          ol(class="list-[lower-alpha]")
+            li#sec_7_2_5_A_a
+              p: +renderKey("7-2-5-A-a-p")
+              ol(class="list-[lower-roman]")
+                li#sec_7_2_5_A_a_i
+                  +renderKey("7-2-5-A-a-i-p")
+                li#sec_7_2_5_A_a_ii
+                  +renderKey("7-2-5-A-a-ii-p")
+                li#sec_7_2_5_A_a_iii
+                  +renderKey("7-2-5-A-a-iii-p")
+            li#sec_7_2_5_A_b
+              p: +renderKey("7-2-5-A-b-p")
+              ol(class="list-[lower-roman]")
+                li#sec_7_2_5_A_b_i
+                  +renderKey("7-2-5-A-b-i-p")
+                li#sec_7_2_5_A_b_ii
+                  +renderKey("7-2-5-A-b-ii-p")
+                li#sec_7_2_5_A_b_iii
+                  +renderKey("7-2-5-A-b-iii-p")
+                li#sec_7_2_5_A_b_iv
+                  +renderKey("7-2-5-A-b-iv-p")
+                li#sec_7_2_5_A_b_v
+                  +renderKey("7-2-5-A-b-v-p")
+                li#sec_7_2_5_A_b_vi
+                  +renderKey("7-2-5-A-b-vi-p")
+            li#sec_7_2_5_A_c
+              p: +renderKey("7-2-5-A-c-p")
+              ol(class="list-[lower-roman]")
+                li#sec_7_2_5_A_c_i
+                  +renderKey("7-2-5-A-c-i-p")
+                li#sec_7_2_5_A_c_ii
+                  +renderKey("7-2-5-A-c-ii-p")
+                li#sec_7_2_5_A_c_iii
+                  +renderKey("7-2-5-A-c-iii-p")
+              p: +renderKey("7-2-5-A-c-p2")
+              +Table7L
+        li#sec_7_2_5_B
+          p: b: +renderKey("7-2-5-B-title")
+          p: +renderKey("7-2-5-B-p")
+  hr
+
+  +hx(2, "7.3", "7-3-title")
+    +hx(3, "7.3.1", "7-3-1-title")
+      ol(class="list-[upper-alpha]")
+        li#sec_7_3_1_A
+          p: b: +renderKey("7-3-1-A-title")
+          p: +renderKey("7-3-1-A-p")
+          +Table7M
+        li#sec_7_3_1_B
+          p: b: +renderKey("7-3-1-B-title")
+          p: +renderKey("7-3-1-B-p1")
+          +Table7N
+          p: +renderKey("7-3-1-B-p2")
+    +hx(3, "7.3.2", "7-3-2-title")
+      ol(class="list-[upper-alpha]")
+        li#sec_7_3_2_A
+          p: b: +renderKey("7-3-2-A-title")
+          p: +renderKey("7-3-2-A-p")
+          +Table7O
+        li#sec_7_3_2_B
+          p: b: +renderKey("7-3-2-B-title")
+          p: +renderKey("7-3-2-B-p")
+          +Table7P
+    +hx(3, "7.3.3", "7-3-3-title")
+      ol(class="list-[upper-alpha]")
+        li#sec_7_3_3_A
+          p: b: +renderKey("7-3-3-A-title")
+          p: +renderKey("7-3-3-A-p")
+          +Table7Q
+        li#sec_7_3_3_B
+          p: b: +renderKey("7-3-3-B-title")
+          p: +renderKey("7-3-3-B-p")
+          +Table7R
+    +hx(4, "7.3.4", "7-3-4-title")
+      ol(class="list-[upper-alpha]")
+        li#sec_7_3_4_A
+          p: b: +renderKey("7-3-4-A-title")
+          p: +renderKey("7-3-4-A-p")
+          +Table7S
+        li#sec_7_3_4_B
+          p: b: +renderKey("7-3-4-B-title")
+          p: +renderKey("7-3-4-B-p")
+          +Table7T
+    +hx(4, "7.3.5", "7-3-5-title")
+      p: +renderKey("7-3-5-p")
+      +Table7U
+  hr
+
+  +hx(2, "7.4", "7-4-title")
+    p: +renderKey("7-4-p")
+    +Table7V
+  hr

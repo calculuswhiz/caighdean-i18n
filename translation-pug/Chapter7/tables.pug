@@ -1,0 +1,689 @@
+mixin lineBreakExample(exampleKey)
+  if docLang === 'GA'
+    li: +renderKey(exampleKey)
+  else
+    li
+      +renderKey(exampleKey, { getFromGa: true })
+      | #[br]
+      | (#[+renderKey(exampleKey)])
+
+mixin Table7A
+  +markedTable(7, "A", "Table7A-caption")
+    colgroup
+      col(class="w-3/16")
+      col(class="w-3/16")
+      col(class="w-10/16")
+    thead
+      tr: th(colspan=3 class="text-xl py-2")
+        +renderKey("Table7A-header")
+      tr: th(colspan=3)
+        +renderKey("Table7A-subheader")
+    tbody
+      tr
+        td: +renderKey("Positive")
+        th is
+        td: ul
+          +lineBreakExample("Table7A-example1")
+          +lineBreakExample("Table7A-example2")
+      tr
+        td: +renderKey("Negative")
+        th ní
+        td: ul
+          +lineBreakExample("Table7A-example3")
+          +lineBreakExample("Table7A-example4")
+      tr
+        td
+          +renderKey("Interrogative")
+          | !{" "}
+          +renderKey("Positive")
+        th an
+        td: ul
+          +lineBreakExample("Table7A-example5")
+          +lineBreakExample("Table7A-example6")
+      tr
+        td
+          +renderKey("Interrogative")
+          | !{" "}
+          +renderKey("Negative")
+        th nach
+        td: ul
+          +lineBreakExample("Table7A-example7")
+          +lineBreakExample("Table7A-example8")
+
+
+mixin Table7B
+  +markedTable(7, "B", "Table7B-caption")
+    colgroup
+      col(class="w-1/3")
+      col(class="w-1/3")
+      col(class="w-1/3")
+    thead
+      tr: th(colspan=3 class="text-xl py-2")
+        +renderKey("Table7B-header")
+      tr
+        th: +renderKey("BeforeConsonantQualified")
+        th(colspan=2): +renderKey("BeforeVowelQualified")
+      tr
+        th ba
+        th b&rsquo;
+        th ba (ab)
+    tbody
+      tr
+        td
+          ul
+            +lineBreakExample("Table7B-ba-example1")
+            +lineBreakExample("Table7B-ba-example2")
+            +lineBreakExample("Table7B-ba-example3")
+        td
+          ul
+            +lineBreakExample("Table7B-b-example1")
+            +lineBreakExample("Table7B-b-example2")
+            +lineBreakExample("Table7B-b-example3")
+        td
+          ul
+            +lineBreakExample("Table7B-ba-ab-example1")
+            +lineBreakExample("Table7B-ba-ab-example2")
+            +lineBreakExample("Table7B-ba-ab-example3")
+            +lineBreakExample("Table7B-ba-ab-example4")
+            +lineBreakExample("Table7B-ba-ab-example5")
+
+mixin Table7C
+  +markedTable(7, "C", "Table7C-caption")
+    thead
+      tr: th(colspan=5 class="text-xl py-2")
+        +renderKey("Table7C-header")
+      tr
+        th
+        th(colspan=2)
+          +renderKey("BeforeConsonantQualified")
+        th(colspan=2)
+          +renderKey("BeforeVowelQualified")
+    tbody
+      tr
+        td: +renderKey("Negative")
+        th níor
+        td: ul: +lineBreakExample("Table7C-Níor-example")
+        th níorbh
+        td: ul: +lineBreakExample("Table7C-Níorbh-example")
+      tr
+        td
+          +renderKey("Interrogative")
+          | !{" "}#[+renderKey("Positive")]
+        th ar
+        td: ul: +lineBreakExample("Table7C-Ar-example")
+        th arbh
+        td: ul: +lineBreakExample("Table7C-Arbh-example")
+      tr
+        td
+          +renderKey("Interrogative")
+          | !{" "}#[+renderKey("Negative")]
+        th nár
+        td: ul: +lineBreakExample("Table7C-Nár-example")
+        th nárbh
+        td: ul: +lineBreakExample("Table7C-Nárbh-example")
+
+mixin Table7D
+  +markedTable(7, "D", "Table7D-caption")
+    colgroup
+      col(class="w-1/7")
+      col(class="w-2/7")
+      col(class="w-2/7")
+      col(class="w-2/7")
+    thead
+      tr: th(colspan=4 class="text-xl py-2")
+        +renderKey("Table7D-header")
+      tr
+        th
+        th: +renderKey("BeforeConsonant")
+        th(colspan=2): +renderKey("BeforeVowel")
+    tbody
+      tr
+        th
+        th gur
+        th gur
+        th gurb
+      tr
+        td: +renderKey("Positive")
+        td: ul
+          +lineBreakExample("Table7D-gur-cons-example1")
+          +lineBreakExample("Table7D-gur-cons-example2")
+        td: ul
+          +lineBreakExample("Table7D-gur-vow-example1")
+          +lineBreakExample("Table7D-gur-vow-example2")
+        td: ul
+          +lineBreakExample("Table7D-gurb-example1")
+          +lineBreakExample("Table7D-gurb-example2")
+          +lineBreakExample("Table7D-gurb-example3")
+          +lineBreakExample("Table7D-gurb-example4")
+      tr
+        th
+        th(colspan=3) nach
+      tr
+        td: +renderKey("Negative")
+        td(class="align-top" colspan=3): ul
+          +lineBreakExample("Table7D-nach-example1")
+          +lineBreakExample("Table7D-nach-example2")
+          +lineBreakExample("Table7D-nach-example3")
+          +lineBreakExample("Table7D-nach-example4")
+        
+mixin Table7E
+  +markedTable(7, "E", "Table7E-caption")
+    thead
+      tr
+        th(colspan="3" class="text-xl py-2"): +renderKey("Table7E-header")
+      tr
+        th
+        th: +renderKey("BeforeConsonantQualified")
+        th: +renderKey("BeforeVowelQualified")
+    tbody
+      tr
+        th
+        th gur
+        th gurbh
+      tr
+        td: +renderKey("Positive")
+        td: ul
+          +lineBreakExample("Table7E-gur-example1")
+          +lineBreakExample("Table7E-gur-example2")
+        td: ul
+          +lineBreakExample("Table7E-gurbh-example1")
+          +lineBreakExample("Table7E-gurbh-example2")
+
+mixin Table7F
+  +markedTable(7, "F", "Table7F-caption")
+    thead
+      tr: th(colspan=3 class="text-xl py-2")
+        +renderKey("Table7F-header")
+      tr
+        th
+        th: +renderKey("BeforeConsonantQualified")
+        th: +renderKey("BeforeVowelQualified")
+    tbody
+      tr
+        th
+        th go mba
+        th
+          | go mba 
+          span(class="font-normal"): +renderKey("nó", { getFromCommon: true })
+          |  go mb'
+      tr
+        td: +renderKey("Positive")
+        td: ul
+          +lineBreakExample("Table7F-go-mba-cons-example1")
+          +lineBreakExample("Table7F-go-mba-cons-example2")
+        td: ul
+          +lineBreakExample("Table7F-go-mba-vow-example1")
+          +lineBreakExample("Table7F-go-mba-vow-example2")
+
+mixin Table7G
+  +markedTable(7, "G", "Table7G-caption")
+    thead
+      tr: th(colspan=3 class="text-xl py-2")
+        +renderKey("Table7G-header")
+      tr
+        th
+        th: +renderKey("BeforeConsonantQualified")
+        th: +renderKey("BeforeVowelQualified")
+    tbody
+      tr
+        th
+        th nár
+        th nárbh
+      tr
+        td: +renderKey("Positive")
+        td: ul
+          +lineBreakExample("Table7G-nár-example1")
+          +lineBreakExample("Table7G-nár-example2")
+        td: ul
+          +lineBreakExample("Table7G-nárbh-example1")
+          +lineBreakExample("Table7G-nárbh-example2")
+
+mixin Table7H
+  +markedTable(7, "H", "Table7H-caption")
+    thead
+      tr: th(colspan=3 class="text-xl py-2")
+        +renderKey("Table7H-header")
+      tr: th(colspan=3)
+        +renderKey("Table7H-subheader")
+    tbody
+      tr
+        td: +renderKey("Positive")
+        th is
+        td: ul
+          +lineBreakExample("Table7H-is-example1")
+          +lineBreakExample("Table7H-is-example2")
+      tr
+        td: +renderKey("Negative")
+        th nach
+        td: ul
+          +lineBreakExample("Table7H-nach-example1")
+          +lineBreakExample("Table7H-nach-example2")
+
+mixin Table7I
+  +markedTable(7, "I", "Table7I-caption")
+    thead
+      tr: th(colspan=5 class="text-xl py-2")
+        +renderKey("Table7I-header")
+      tr
+        th
+        th(colspan=2): +renderKey("BeforeConsonantQualified")
+        th(colspan=2): +renderKey("BeforeVowelQualified")
+    tbody
+      tr
+        td: +renderKey("Positive")
+        th ba
+        td: ul
+          +lineBreakExample("Table7I-ba-example1")
+          +lineBreakExample("Table7I-ba-example2")
+        th ab
+        td: ul
+          +lineBreakExample("Table7I-ab-example1")
+          +lineBreakExample("Table7I-ab-example2")
+      tr
+        td: +renderKey("Negative")
+        th nár
+        td: ul
+          +lineBreakExample("Table7I-nár-example1")
+          +lineBreakExample("Table7I-nár-example2")
+        th nárbh
+        td: ul
+          +lineBreakExample("Table7I-nárbh-example1")
+          +lineBreakExample("Table7I-nárbh-example2")
+
+mixin Table7J
+  +markedTable(7, "J", "Table7J-caption")
+    thead
+      tr: th(colspan=5 class="text-xl py-2")
+        +renderKey("Table7J-header")
+      tr
+        th
+        th(colspan=2): +renderKey("BeforeConsonant")
+        th(colspan=2): +renderKey("BeforeVowel")
+    tbody
+      tr
+        td: +renderKey("Positive")
+        th ar
+        td: ul
+          +lineBreakExample("Table7J-ar-example1")
+          +lineBreakExample("Table7J-ar-example2")
+        th arb
+        td: ul
+          +lineBreakExample("Table7J-arb-example1")
+          +lineBreakExample("Table7J-arb-example2")
+      tr
+        td: +renderKey("Negative")
+        th nach
+        td: ul
+          +lineBreakExample("Table7J-nach-example1")
+          +lineBreakExample("Table7J-nach-example2")
+        th nach
+        td: ul
+          +lineBreakExample("Table7J-nach-example3")
+          +lineBreakExample("Table7J-nach-example4")
+
+mixin Table7K
+  +markedTable(7, "K", "Table7K-caption")
+    thead
+      tr: th(colspan=5 class="text-xl py-2")
+        +renderKey("Table7K-header")
+      tr
+        th
+        th(colspan=2): +renderKey("BeforeConsonantQualified")
+        th(colspan=2): +renderKey("BeforeVowelQualified")
+    tbody
+      tr
+        td: +renderKey("Positive")
+        th ar
+        td: ul
+          +lineBreakExample("Table7K-ar-example")
+        th arbh
+        td: ul
+          +lineBreakExample("Table7K-arbh-example")
+      tr
+        td: +renderKey("Negative")
+        th nár
+        td: ul
+          +lineBreakExample("Table7K-nár-example")
+        th nárbh
+        td: ul
+          +lineBreakExample("Table7K-nárbh-example")
+
+mixin Table7L
+  +markedTable(7, "L", "Table7L-caption")
+    colgroup
+      col(class="w-1/2")
+      col(class="w-1/2")
+    thead
+      tr: th(colspan=2 class="text-xl py-2")
+        +renderKey("Table7L-header")
+      tr
+        th: +renderKey("Table7L-subheader-col1")
+        th: +renderKey("Table7L-subheader-col2")
+    tbody
+      tr
+        td: +renderKey("Table7L-row1-col1")
+        td: +renderKey("Table7L-row1-col2")
+      tr
+        td: +renderKey("Table7L-row2-col1")
+        td: +renderKey("Table7L-row2-col2")
+      tr
+        td: +renderKey("Table7L-row3-col1")
+        td: +renderKey("Table7L-row3-col2")
+      tr
+        td: +renderKey("Table7L-row4-col1")
+        td
+      tr
+        td: +renderKey("Table7L-row5-col1")
+        td
+      tr
+        td: +renderKey("Table7L-row6-col1")
+        td
+
+mixin Table7M
+  +markedTable(7, "M", "Table7M-caption")
+    thead
+      tr: th(colspan=3 class="text-xl py-2")
+        +renderKey("Table7M-header")
+      tr
+        th
+        th: +renderKey("BeforeConsonant")
+        th: +renderKey("BeforeVowel")
+    tbody
+      tr
+        th cá
+        td: ul
+          +lineBreakExample("Table7M-Cá-example")
+        td: ul
+          +lineBreakExample("Table7M-Cárb-example")
+      tr
+        th cé
+        td: ul
+          +lineBreakExample("Table7M-Cé-example")
+        td: ul
+          +lineBreakExample("Table7M-Cérb-example")
+
+mixin Table7N
+  +markedTable(7, "N", "Table7N-caption")
+    thead
+      tr: th(colspan=3 class="text-xl py-2")
+        +renderKey("Table7N-header")
+      tr
+        th
+        th: +renderKey("BeforeConsonantQualified")
+        th: +renderKey("BeforeVowelQualified")
+    tbody
+      tr
+        th cá
+        td: ul
+          +lineBreakExample("Table7N-example1")
+        td: ul
+          +lineBreakExample("Table7N-example2")
+      tr
+        th cé
+        td: ul
+          +lineBreakExample("Table7N-example3")
+        td: ul
+          +lineBreakExample("Table7N-example4")
+
+mixin Table7O
+  +markedTable(7, "O", "Table7O-caption")
+    thead
+      tr: th(colspan=3 class="text-xl py-2")
+        +renderKey("Table7O-header")
+      tr
+        th
+        th: +renderKey("BeforeConsonant")
+        th: +renderKey("BeforeVowel")
+    tbody
+      tr
+        th(class="whitespace-nowrap") de/do
+        td: ul
+          +lineBreakExample("Table7O-dar-example")
+        td: ul
+          +lineBreakExample("Table7O-darb-example")
+      tr
+        th faoi
+        td: ul
+          +lineBreakExample("Table7O-faoinar-example")
+        td: ul
+          +lineBreakExample("Table7O-faoinarb-example")
+      tr
+        th i
+        td: ul
+          +lineBreakExample("Table7O-inar-example")
+        td: ul
+          +lineBreakExample("Table7O-inarb-example")
+      tr
+        th le
+        td: ul
+          +lineBreakExample("Table7O-lenar-example")
+        td: ul
+          +lineBreakExample("Table7O-lenarb-example")
+      tr
+        th ó
+        td: ul
+          +lineBreakExample("Table7O-ónar-example")
+        td: ul
+          +lineBreakExample("Table7O-ónarb-example")
+      tr
+          th trí
+           td: ul
+             +lineBreakExample("Table7O-trínar-example")
+           td: ul
+             +lineBreakExample("Table7O-trínarb-example")
+
+mixin Table7P
+  +markedTable(7, "P", "Table7P-caption")
+    thead
+      tr: th(colspan=3 class="text-xl py-2")
+        +renderKey("Table7P-header")
+      tr
+        th
+        th: +renderKey("BeforeConsonantQualified")
+        th: +renderKey("BeforeVowelQualified")
+    tbody
+      tr
+        th(class="whitespace-nowrap") de/do
+        td: ul
+          +lineBreakExample("Table7P-dar-example")
+        td: ul
+          +lineBreakExample("Table7P-darbh-example")
+      tr
+        th faoi
+        td: ul
+          +lineBreakExample("Table7P-faoinar-example")
+        td: ul
+          +lineBreakExample("Table7P-faoinarbh-example")
+      tr
+        th i
+        td: ul
+          +lineBreakExample("Table7P-inar-example")
+        td: ul
+          +lineBreakExample("Table7P-inarbh-example")
+      tr
+        th le
+        td: ul
+          +lineBreakExample("Table7P-lenar-example")
+        td: ul
+          +lineBreakExample("Table7P-lenarbh-example")
+      tr
+        th ó
+        td: ul
+          +lineBreakExample("Table7P-ónar-example")
+        td: ul
+          +lineBreakExample("Table7P-ónarbh-example")
+      tr
+        th trí
+        td: ul
+          +lineBreakExample("Table7P-trínar-example")
+        td: ul
+          +lineBreakExample("Table7P-trínarbh-example")
+
+mixin Table7Q
+  +markedTable(7, "Q", "Table7Q-caption")
+    thead
+      tr: th(colspan=3 class="text-xl py-2")
+        +renderKey("Table7Q-header")
+      tr
+        th
+        th: +renderKey("BeforeConsonant")
+        th: +renderKey("BeforeVowel")
+    tbody
+      tr
+        th sula
+        td: ul
+          +lineBreakExample("Table7Q-example1")
+        td: ul
+          +lineBreakExample("Table7Q-example2")
+      tr
+        th ó
+        td: ul
+          +lineBreakExample("Table7Q-example3")
+        td: ul
+          +lineBreakExample("Table7Q-example4")
+
+mixin Table7R
+  +markedTable(7, "R", "Table7R-caption")
+    thead
+      tr: th(colspan=3 class="text-xl py-2")
+        +renderKey("Table7R-header")
+      tr
+        th
+        th: +renderKey("BeforeConsonantQualified")
+        th: +renderKey("BeforeVowelQualified")
+    tbody
+      tr
+        th sula
+        td: ul
+          +lineBreakExample("Table7R-example1")
+        td: ul
+          +lineBreakExample("Table7R-example2")
+      tr
+        th ó
+        td: ul
+          +lineBreakExample("Table7R-example3")
+        td: ul
+          +lineBreakExample("Table7R-example4")
+          
+mixin Table7S
+  +markedTable(7, "S", "Table7S-caption")
+    thead
+      tr: th(colspan=5 class="text-xl py-2")
+        +renderKey("Table7S-header")
+      tr
+        th
+        th(colspan=2): +renderKey("BeforeConsonant")
+        th(colspan=2): +renderKey("BeforeVowel")
+    tbody
+      tr
+        td: +renderKey("Positive")
+        th más
+        td: ul
+          +lineBreakExample("Table7S-más-example1")
+          +lineBreakExample("Table7S-más-example2")
+        th más
+        td: ul
+          +lineBreakExample("Table7S-más-example3")
+          +lineBreakExample("Table7S-más-example4")
+      tr
+        td: +renderKey("Negative")
+        th mura
+        td: ul
+          +lineBreakExample("Table7S-mura-example1")
+          +lineBreakExample("Table7S-mura-example2")
+        th murab
+        td: ul
+          +lineBreakExample("Table7S-murab-example1")
+          +lineBreakExample("Table7S-murab-example2")
+      
+mixin Table7T
+  +markedTable(7, "T", "Table7T-caption")
+    thead
+      tr: th(colspan=4 class="text-xl py-2")
+        +renderKey("Table7T-header")
+      tr
+        th
+        th: +renderKey("BeforeConsonantQualified")
+        th(colspan=2): +renderKey("BeforeVowelQualified")
+    tbody
+      tr
+        th
+        th má ba
+        th má b&rsquo;
+        th má ba
+      tr
+        td: +renderKey("Positive")
+        td: ul
+          +lineBreakExample("Table7T-positive-example1")
+        td: ul
+          +lineBreakExample("Table7T-positive-example2")
+        td: ul
+          +lineBreakExample("Table7T-positive-example3")
+      tr
+        th
+        th murar
+        th(colspan="2") murarbh
+      tr
+        td: +renderKey("Negative")
+        td: ul
+          +lineBreakExample("Table7T-negative-example1")
+          +lineBreakExample("Table7T-negative-example2")
+        td(colspan="2"): ul
+          +lineBreakExample("Table7T-negative-example3")
+          +lineBreakExample("Table7T-negative-example4")
+
+mixin Table7U
+  +markedTable(7, "U", "Table7U-caption")
+    thead
+      tr: th(colspan=4 class="text-xl py-2")
+        +renderKey("Table7U-header")
+      tr
+        th(colspan=2)
+          +renderKey("BeforeConsonantAndVowel")
+    tbody
+      tr
+        th
+          | Dá + ba &rarr; Dá mba&nbsp;
+          span(class="font-normal")
+            +renderKey("nó", { getFromCommon: true })
+          | &nbsp;Dá mb&rsquo;
+        td: ul
+          +lineBreakExample("Table7U-example1")
+          +lineBreakExample("Table7U-example2")
+          +lineBreakExample("Table7U-example3")
+          +lineBreakExample("Table7U-example4")
+
+mixin Table7V
+  +markedTable(7, "V", "Table7V-caption")
+    thead
+      tr: th(colspan=5 class="text-xl py-2")
+        +renderKey("Table7V-header")
+      tr
+        th
+        th(colspan=2): +renderKey("BeforeConsonant")
+        th(colspan=2): +renderKey("BeforeVowel")
+    tbody
+      tr
+        td: +renderKey("Positive")
+        th gura
+        td: ul
+          +lineBreakExample("Table7V-gura-example1")
+          +lineBreakExample("Table7V-gura-example2")
+          +lineBreakExample("Table7V-gura-example3")
+        th gurab
+        td: ul
+          +lineBreakExample("Table7V-gurab-example1")
+          +lineBreakExample("Table7V-gurab-example2")
+          +lineBreakExample("Table7V-gurab-example3")
+      tr
+        td: +renderKey("Negative")
+        th nára
+        td: ul
+          +lineBreakExample("Table7V-nára-example1")
+          +lineBreakExample("Table7V-nára-example2")
+          +lineBreakExample("Table7V-nára-example3")
+        th nárab
+        td: ul
+          +lineBreakExample("Table7V-nárab-example1")
+          +lineBreakExample("Table7V-nárab-example2")
+          +lineBreakExample("Table7V-nárab-example3")

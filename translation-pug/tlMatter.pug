@@ -10,3 +10,7 @@ mixin inlineTl(lang, tlText)
       | (#[b #{lang}]:!{' '}
       i: block
       | )
+
+mixin underline
+  span(class="underline")&attributes(attributes)
+    block

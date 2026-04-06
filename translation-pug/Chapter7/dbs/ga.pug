@@ -1,0 +1,796 @@
+include ../../tlMatter.pug
+
+mixin gaDb(key)
+  case key
+    when "teidealNaCaibidle"
+      | An Chopail
+    when "7-1-title"
+      | Ginearálta
+    when "7-title"
+      | #[+renderKey("Caibidil", { getFromCommon: true })] 7 | #[+gaDb("teidealNaCaibidle")]
+    when "7-1-p1"
+      | Úsáidtear an chopail chun dhá fhocal nó dhá abairtín a cheangal le chéile.
+    when "7-1-p2"
+      | Is ionann an leagan den chopail a úsáidtear san aimsir láithreach agus an leagan a úsáidtear san aimsir fháistineach. Ina theannta sin, is ionann an leagan den chopail a úsáidtear san aimsir chaite agus an leagan a úsáidtear san aimsir ghnáthchaite agus sa mhodh coinníollach. Tabhair faoi deara, más san aimsir chaite, san aimsir ghnáthchaite nó sa mhodh coinníollach atá faisnéis na habairte, nach gá go mbeadh aimsir na copaile agus aimsir fhaisnéis na habairte ag aontú le chéile. Féach #[+link("#sec_7_2", "7.2")] le haghaidh fhoirmeacha simplí na copaile.
+    when "7-1-1-title"
+      | Feidhmeanna na Copaile
+    when "7-1-1-p"
+      | Is iad príomhfheidhmeanna na copaile &mdash;
+    when "7-1-1-a-p"
+      | an t&#x2011;ainmní a aicmiú:
+    when "7-1-1-a-sample1"
+      | #[b Is] sáraisteoir í. 
+    when "7-1-1-a-sample2"
+      | #[b Is] éan é an faoileán. 
+    when "7-1-1-a-sample3"
+      | Strainséirí #[b is] ea iad. 
+    when "7-1-1-a-sample4"
+      | #[b Is] fear é. 
+    when "7-1-1-b-p"
+      | an t&#x2011;ainmní a ionannú:
+    when "7-1-1-b-sample1"
+      | #[b Ba] í Úna an bainisteoir. 
+    when "7-1-1-b-sample2"
+      | #[b Is] é Baile Átha Cliath príomhchathair na hÉireann. 
+    when "7-1-1-c-p"
+      | an t&#x2011;ainmní a cháiliú le faisnéis aidiachtach nó le frása a thosaíonn ar réamhfhocal:
+    when "7-1-1-c-sample1"
+      | #[b Nach] deas é? 
+    when "7-1-1-c-sample2"
+      | #[b Is] fíor sin. 
+    when "7-1-1-c-sample3"
+      | #[b Is] leor cúig euro. 
+    when "7-1-1-c-sample4"
+      | #[b Is] as an Muileann gCearr di. 
+    when "7-1-1-d-p"
+      | ainmfhocal nó clásal a cháiliú le haidiacht, nó le hainmfhocal, móide forainmneach réamhfhoclach:
+    when "7-1-1-d-sample1"
+      | #[b Is] maith léi an chispheil. 
+    when "7-1-1-d-sample2"
+      | #[b Ní] mór dó imeacht. 
+    when "7-1-1-d-sample3"
+      | #[b An] féidir leis é a dhéanamh? 
+    when "7-1-1-d-sample4"
+      | #[b Is] leor liom an méid sin. 
+    when "7-1-1-d-sample5"
+      | #[b An] cuimhin leat an teach sin? 
+    when "7-1-1-d-sample6"
+      | #[b Is] dona linn an briseadh seo. 
+    when "7-1-1-e-p"
+      | ainmfhocal a cháiliú le breischéim aidiachta:
+    when "7-1-1-e-sample1"
+      | Tabhair leat an ceann #[b is] fearr leat. 
+    when "7-1-1-e-sample2"
+      | Bhí na milseáin #[b ba] dheise ite sular shroich mé an chóisir. 
+    when "7-1-1-f-p"
+      | úinéireacht nó gaol idir daoine a chur in iúl trína húsáid leis an réamhfhocal #[i le]:
+    when "7-1-1-f-sample1"
+      | #[b Ba] liomsa é. 
+    when "7-1-1-f-sample2"
+      | #[b Ní] le Sorcha an ceann sin. 
+    when "7-1-1-f-sample3"
+      | Tóg ceann ar bith #[b is] leat. 
+    when "7-1-1-f-sample4"
+      | #[b Is] iníon le Seán ise. 
+    when "7-1-1-f-sample5"
+      | #[b Is] comhghleacaí le Cáit eisean. 
+    when "7-1-1-g-p"
+      | clásal a cháiliú le haidiacht:
+    when "7-1-1-g-sample1"
+      | #[b Is] gearr go mbeidh a fhios againn. 
+    when "7-1-1-g-sample2"
+      | #[b Is] fada ó bhí sé ann. 
+    when "7-1-1-g-sample3"
+      | #[b Is] maith is eol duit é. 
+    when "7-1-1-g-sample4"
+      | #[b Is] iomaí duine a thagann an treo seo. 
+    when "7-1-1-g-sample5"
+      | #[b B&rsquo;]fhada ag teacht é. 
+    when "7-1-1-h-p"
+      | béim a leagan ar chuid den abairt:
+    when "7-1-1-h-sample1"
+      | #[b Ní] inniu ná inné a saolaíodh eisean. 
+    when "7-1-1-h-sample2"
+      | #[b Is] ag ceannach bainne a bhí mé. 
+    when "7-1-1-h-sample3"
+      | #[b Is] chun na Spáinne a chuaigh sí. 
+    when "7-1-1-h-sample4"
+      | #[b Ní] hí Muireann a chaill an eochair. 
+    when "7-1-1-h-sample5"
+      | #[b Ba] í Nóra a d&rsquo;aistrigh é sin. 
+    when "7-1-1-h-sample6"
+      | #[b Is] aici a bhí an ceart. 
+    when "7-1-1-h-sample7"
+      | #[b Níorbh] é sin an cineál comórtais a bhí ann in 1998. 
+    when "7-1-1-h-sample8"
+      | #[b Is] inné a tháinig siad. 
+    when "7-1-1-h-sample9"
+      | #[b Is] é Peadar a dhéanfadh an beart dá mbeadh sé anseo. 
+    when "7-1-1-i-p"
+      | í a úsáid in abairtí a chuireann comparáid in iúl:
+    when "7-1-1-i-sample1"
+      | #[b Is] troime bonn dhá phingin ná bonn pingine. 
+    when "7-1-1-i-sample2"
+      | #[b Is] gile an ghrian ná an ghealach agus ná na pláinéid. 
+    when "7-1-1-i-sample3"
+      | #[b Ní] lia tír ná nós. 
+    when "7-1-1-i-sample4"
+      | #[b Nach] treise dúchas ná oiliúint? 
+    when "7-1-1-i-sample5"
+      | #[b Nárbh] fhearr gluaisteán ná rothar? 
+    when "7-2-title"
+      | Foirmeacha Simplí na Copaile agus Athruithe Tosaigh
+    when "7-2-a-p"
+      | Is ionann foirm shimplí agus foirm den chopail nach bhfuil i gcumasc le forainmneach ceisteach, réamhfhocal nó cónasc.
+    when "7-2-b-p1"
+      | Leagtar amach anseo foirmeacha simplí na copaile:
+    when "7-2-b-i-p"
+      | i bpríomhchlásal;
+    when "7-2-b-ii-p"
+      | i dtús fochlásail, seachas clásal coibhneasta;
+    when "7-2-b-iii-p"
+      | i gclásal coibhneasta díreach;
+    when "7-2-b-iv-p"
+      | i gclásal coibhneasta indíreach.
+    when "7-2-b-p2"
+      | Déantar na foirmeacha a scagadh de réir aimsire. I ngach cás, tugtar an aimsir láithreach agus an aimsir fháistineach ar dtús agus tugtar an aimsir chaite, an aimsir ghnáthchaite agus an modh coinníollach ina dhiaidh sin.
+    when "7-2-1-title"
+      | Foirmeacha Simplí i bPríomhchlásal
+    when "7-2-1-A-title"
+      | An Aimsir Láithreach agus an Aimsir Fháistineach
+    when "7-2-1-A-p"
+      | Sa tábla ina dhiaidh seo, leagtar amach an fhoirm dheimhneach, an fhoirm dhiúltach, an fhoirm cheisteach dheimhneach agus an fhoirm cheisteach dhiúltach den chopail san aimsir láithreach nó san aimsir fháistineach.
+    when "Table7A-caption"
+      | Foirmeacha Simplí i bPríomhchlásal &mdash; An Aimsir Láithreach agus an Aimsir Fháistineach
+    when "Table7A-header"
+      | An Aimsir Láithreach Agus An Aimsir Fháistineach
+    when "Table7A-subheader"
+      | roimh gach consan agus gach guta
+    when "Table7A-example1"
+      | #[b Is] talamh maith anois é.
+    when "Table7A-example2"
+      | Ealaíontóir maith #[b is] ea ise.
+    when "Table7A-example3"
+      | #[b Ní] bia bainne is #[b ní] bainne bláthach.
+    when "Table7A-example4"
+      | #[b Ní] hé a d&rsquo;inis an bhréag sin.
+    when "Table7A-example5"
+      | #[b An] í Bríd an múinteoir?
+    when "Table7A-example6"
+      | #[b An] fada go dtiocfaidh sé?
+    when "Table7A-example7"
+      | #[b Nach] (é) Seán atá ina mhúinteoir?
+    when "Table7A-example8"
+      | #[b Nach] (í) Siobhán a bheidh ann amárach?
+    when "Positive"
+      | Deimhneach
+    when "Negative"
+      | Diúltach
+    when "Interrogative"
+      | Ceisteach
+    when "7-2-1-B-title"
+      | An Aimsir Chaite, an Aimsir Ghnáthchaite agus an Modh Coinníollach
+    when "7-2-1-B-p1"
+      | Leanann séimhiú foirmeacha na copaile san aimsir chaite, san aimsir ghnáthchaite agus sa mhodh coinníollach. Úsáidtear #[i ba] nó #[i b&rsquo;] san aimsir chaite, san aimsir ghnáthchaite nó sa mhodh coinníollach mar seo a leanas:
+    when "7-2-1-B-a-p"
+      | Cuirtear #[i ba] roimh chonsan nó roimh #[i fh-] + #[i consan] i ngach cás, e.g., #[i Ba mhúinteoir lách é]; #[i Ba fhreagra cruinn é].
+    when "7-2-1-B-b-p"
+      | Cuirtear #[i ba] roimh ghuta nó roimh #[i fh-] + #[i guta] sna cásanna seo a leanas:
+    when "7-2-1-B-b-i-p"
+      | na forainmnigh #[i é], #[i í], #[i ea], #[i éard], #[i eisean], #[i ise], #[i iad] agus #[i iadsan], e.g., #[i Ba iad a bhuaigh an corn];
+    when "7-2-1-B-b-ii-p"
+      | réamhfhocail, e.g., #[i Ba ar theacht i bhfeidhm an Achta a tharla sé];
+    when "7-2-1-B-b-iii-p"
+      | forainmnigh réamhfhoclacha, e.g., #[i Ba ann a bhí sé];
+    when "7-2-1-B-b-iv-p"
+      | dobhriathra nach dobhriathra aidiachtacha iad, e.g., #[i Ba arú inné a d&rsquo;ith siad an cáca].
+    when "7-2-1-B-c-p"
+      | Cuirtear #[i b&rsquo;] roimh ghuta nó roimh #[i fh-] + #[i guta] sna cásanna seo a leanas:
+    when "7-2-1-B-c-i-p"
+      | ainmfhocail, e.g., #[i B&rsquo;innealtóir maith í];
+    when "7-2-1-B-c-ii-p"
+      | aidiachtaí, e.g., #[i B&rsquo;fhearúil an duine é];
+    when "7-2-1-B-c-iii-p"
+      | na forainmnigh thaispeántacha #[i eo], #[i in] agus #[i iúd], e.g., #[i B&rsquo;in é é]; #[i B&rsquo;eo amach é].
+    when "7-2-1-B-c-iv-p"
+      | dobhriathra aidiachtacha, e.g., #[i B&rsquo;annamh a dhéanadh sé é].
+    when "7-2-1-B-d-p"
+      | Ceadaítear na foirmeacha #[i ba] nó #[i ab] a úsáid roimh an bhforainmneach neodrach #[i ea] i lár abairt atá san aimsir chaite, san aimsir ghnáthchaite nó sa mhodh coinníollach, e.g., #[i Saighdiúirí ab ea iad] nó #[i Saighdiúirí ba ea iad].
+    when "7-2-1-B-p2"
+      | Sa tábla thíos, leagtar amach an fhoirm dheimhneach den chopail i bpríomhchlásal atá san aimsir chaite, san aimsir ghnáthchaite nó sa mhodh coinníollach.
+    when "Table7B-header"
+      | An Aimsir Chaite, An Aimsir Ghnáthchaite Agus An Modh Coinníollach &mdash; Deimhneach
+    when "Table7B-caption"
+      | Foirmeacha Simplí i bPríomhchlásal &mdash; An Aimsir Chaite, an Aimsir Ghnáthchaite agus an Modh Coinníollach &mdash; An Fhoirm Dheimhneach
+    when "Table7B-ba-example1"
+      | #[b Ba] mhian liomsa labhairt.
+    when "Table7B-ba-example2"
+      | #[b Ba] fhlaithiúil go deo a chaith siad liom.
+    when "Table7B-ba-example3"
+      | #[b Ba] bheag an chabhair dom é dá bhfaighinn in am é fiú.
+    when "Table7B-b-example1"
+      | #[b B&rsquo;]álainn an pictiúr é mura mbeadh an polla sin sa chúlra.
+    when "Table7B-b-example2"
+      | #[b B&rsquo;]aoibhinn linn a bheith ag éisteacht leis gach oíche.
+    when "Table7B-b-example3"
+      | #[b B&rsquo;]eol dúinn go dtéadh sí an cóngar nuair a bhíodh sé tirim.
+    when "Table7B-ba-ab-example1"
+      | #[b Ba] é an Rúnaí a cheartódh é sa chás sin.
+    when "Table7B-ba-ab-example2"
+      | Ceannaire maith #[b ba/ab] ea í siúd.
+    when "Table7B-ba-ab-example3"
+      | #[b Ba] aici a bhí an ceart.
+    when "Table7B-ba-ab-example4"
+      | #[b Ba] as Gaillimh é.
+    when "Table7B-ba-ab-example5"
+      | #[b Ba] ó Bhaile Átha Cliath í.
+    when "BeforeConsonant"
+      | roimh chonsan
+    when "BeforeConsonantQualified"
+      | roimh chonsan nó roimh #[i fh-] + #[i consan]
+    when "BeforeVowel"
+      | roimh ghuta
+    when "BeforeVowelQualified"
+      | roimh ghuta nó roimh #[i fh-] + #[i ghuta]
+    when "BeforeConsonantAndVowel"
+      | roimh gach consan agus gach guta
+    when "7-2-1-B-p3"
+      | Sa tábla thíos, leagtar amach an fhoirm dhiúltach, an fhoirm cheisteach dheimhneach agus an fhoirm cheisteach dhiúltach den chopail i bpríomhchlásal atá san aimsir chaite, san aimsir ghnáthchaite nó sa mhodh coinníollach.
+    when "Table7C-caption"
+      | Foirmeacha Simplí i bPríomhchlásal &mdash; An Aimsir Chaite, an Aimsir Ghnáthchaite agus an Modh Coinníollach &mdash; An Fhoirm Dhiúltach agus an Fhoirm Cheisteach
+    when "Table7C-header"
+      | An Aimsir Chaite, An Aimsir Ghnáthchaite Agus An Modh Coinníollach
+    when "Table7C-Níor-example"
+      | #[b Níor] mhaith léi go dtarlódh sé sin.
+    when "Table7C-Níorbh-example"
+      | #[b Níorbh] aon dóithín é.
+    when "Table7C-Ar-example"
+      | #[b Ar] dheacair leat é?
+    when "Table7C-Arbh-example"
+      | #[b Arbh] fhearr é mar atá sé?
+    when "Table7C-Nár-example"
+      | #[b Nár] dhána an mhaise dó é!
+    when "Table7C-Nárbh-example"
+      | #[b Nárbh] é an diabhal é?
+    when "7-2-2-title"
+      | Foirmeacha Simplí i dtús Fochlásail, seachas Clásal Coibhneasta
+    when "7-2-2-A-title"
+      | An Aimsir Láithreach agus an Aimsir Fháistineach
+    when "7-2-2-A-p1"
+      | Úsáidtear #[i gur] nó #[i gurb] san aimsir láithreach nó san aimsir fháistineach mar seo a leanas:
+    when "7-2-2-A-a-p"
+      | Cuirtear #[i gur] roimh chonsan i ngach cás, e.g., #[i Is dóigh leo gur teagascóir gairmiúil é Cian].
+    when "7-2-2-A-b-p"
+      | Cuirtear #[i gur] roimh ghuta sna cásanna seo a leanas:
+    when "7-2-2-A-b-i-p"
+      | ainmfhocail (seachas ainmfhocail sna frásaí copaile réamhfhoclacha a luaitear faoi #[i gurb] thíos), e.g., #[i Is dóigh liom gur áit dheas an t&#x2011;óstán sin]; #[i Síleann an tAire gur acmhainn theoranta an ciste sin]; #[i Dúirt sí gur oifigeach maith é];
+    when "7-2-2-A-b-ii-p"
+      | réamhfhocail, e.g., #[i Deir sí gur ag an rince a bheidh sí];
+    when "7-2-2-A-b-iii-p"
+      | forainmnigh réamhfhoclacha, e.g., #[i Dúradh liom gur uait a tháinig an leabhar sin];
+    when "7-2-2-A-b-iv-p"
+      | dobhriathra (seachas #[i amhlaidh]) nach dobhriathra aidiachtacha iad, e.g., #[i Síltear gur amach anseo atá i gceist]; #[i Tuigtear dom gur amuigh sa ghairdín atá an ceiliúradh ar bun];
+    when "7-2-2-A-b-v-p"
+      | na forainmnigh #[i é], #[i í], #[i eisean], #[i ise], #[i iad] agus #[i iadsan] más gníomhaí nó cuspóir ainm bhriathartha an forainmneach, e.g., #[i Síleann sí gur #[+underline é a bhailiú] is fearr]; #[i Dar leis gur #[+underline iad a fhoilsiú] is fearr].
+    when "7-2-2-A-c-p"
+      | Cuirtear #[i gurb] roimh ghuta sna cásanna seo a leanas:
+    when "7-2-2-A-c-i-p"
+      | aidiachtaí, e.g., #[i Sílim gurb iontach an deis duit é]; #[i Ceapaim gurb eolach an bhean í];
+    when "7-2-2-A-c-ii-p"
+      | #[i amhlaidh (gurb amhlaidh)], nó dobhriathra aidiachtacha (#[i go hard], #[i gurb ard]; #[i go hannamh], #[i gurb annamh]), e.g., #[i Measaim gurb amhlaidh atá]; #[i Sílim gurb annamh a tharlaíonn a leithéid];
+    when "7-2-2-A-c-iii-p"
+      | na forainmnigh #[i é], #[i í], #[i ea], #[i eisean], #[i ise], #[i iad] agus #[i iadsan] nuair nach gníomhaí ná cuspóir ainm bhriathartha an forainmneach, e.g., #[i Deir sí gurb í a hiníon í]; #[i Dar le hAoife gurb eisean a rinne é]; #[i Dúirt sise gurb é Sorcha an t&#x2011;ainm a bhí uirthi féin]; #[i D&rsquo;admhaigh sí gurb í féin a rinne é];
+    when "7-2-2-A-c-iv-p"
+      | na forainmnigh thaispeántacha #[i eo], #[i in] agus #[i iúd], e.g., #[i Deir sí gurb in é an fear];
+    when "7-2-2-A-c-v-p"
+      | na frásaí copaile réamhfhoclacha seo a leanas: #[i acmhainn do], #[i áil le], #[i aitheanta do], #[i aithnid do], #[i eagal do/le], #[i éadáil le], #[i ealaín do], #[i éigean do], #[i eol do], #[i oircheas do], e.g., #[i Dar leo gurb acmhainn dóibh teach a cheannach];
+    when "7-2-2-A-c-vi-p"
+      | na focail ar leith seo: #[i áibhéil], #[i éard], #[i ionadh], #[i iontas] agus #[i ualach], e.g., #[i Dúirt sé liom gurb ionadh leis an ní a tharla].
+    when "7-2-2-A-p2"
+      | Sa tábla ina dhiaidh seo, leagtar amach an fhoirm dheimhneach agus an fhoirm dhiúltach den chopail i dtús fochlásal (seachas clásal coibhneasta) atá san aimsir láithreach nó san aimsir fháistineach.
+    when "Table7D-header"
+      | An Aimsir Láithreach agus An Aimsir Fháistineach
+    when "Table7D-caption"
+      | Foirmeacha Simplí i dtús Fochlásail, seachas Clásal Coibhneasta &mdash; An Aimsir Láithreach agus an Aimsir Fháistineach
+    when "Table7D-gur-cons-example1"
+      | Ceapann siad #[b gur] múinteoir maith é Seán.
+    when "Table7D-gur-cons-example2"
+      | Is dóigh liom #[b gur] tráthnóna amárach a bheidh an cruinniú ann.
+    when "Table7D-gur-vow-example1"
+      | Ceapann siad #[b gur] altra é.
+    when "Table7D-gur-vow-example2"
+      | Sílim #[b gur] acu a bheidh an bua.
+    when "Table7D-gurb-example1"
+      | Is dóigh leis #[b gurb] álainn an lá é.
+    when "Table7D-gurb-example2"
+      | Ní dóigh liom #[b gurb] ionann iad.
+    when "Table7D-gurb-example3"
+      | Ní foláir #[b gurb] acmhainn dóibh.
+    when "Table7D-gurb-example4"
+      | Más rud é #[b gurb] éigean dóibh.
+    when "Table7D-nach-example1"
+      | Deir sé #[b nach] amárach a bheidh an cluiche ar siúl.
+    when "Table7D-nach-example2"
+      | Tuigimid #[b nach] é deireadh an domhain é má chaillimid.
+    when "Table7D-nach-example3"
+      | Síleann siad #[b nach] taighdeoir maith é.
+    when "Table7D-nach-example4"
+      | Dar liom #[b nach] cuan sábháilte é.
+    when "7-2-2-B-title"
+      | An Aimsir Chaite, an Aimsir Ghnáthchaite agus an Modh Coinníollach
+    when "7-2-2-B-p"
+      | Leanann séimhiú foirmeacha na copaile san aimsir chaite, san aimsir ghnáthchaite agus sa mhodh coinníollach. Tá rogha ann i gcás na bhfoirmeacha deimhneacha &mdash; féach #[+link("#sec_7_2_2_B_a", "(a)")] agus #[+link("#sec_7_2_2_B_b", "(b)")] ina dhiaidh seo.
+    when "7-2-2-B-a-title"
+      | #[i gur] nó #[i gurbh]
+    when "7-2-2-B-a-p1"
+      | Úsáidtear na foirmeacha deimhneacha #[i gur] nó #[i gurbh] san aimsir chaite, san aimsir ghnáthchaite nó sa mhodh coinníollach mar seo a leanas:
+    when "7-2-2-B-a-i"
+      | Cuirtear #[i gur] roimh chonsan nó roimh #[i fh-] + #[i consan] i ngach cás, e.g., #[i D&rsquo;ainneoin an méid a d&rsquo;impigh sí air, níor dhóigh leis gur chóir an madra a choinneáil].
+    when "7-2-2-B-a-ii"
+      | Cuirtear #[i gurbh] roimh ghuta nó roimh #[i fh-] + #[i guta] i ngach cás, e.g., #[i Creidtear gurbh ealaíontóir cumasach ab ea é]; #[i Dúirt sé gurbh iomaí cleas glic a d&rsquo;imir Seán air].
+    when "7-2-2-B-a-p2"
+      | Sa tábla thíos, leagtar amach an fhoirm dheimhneach den chopail i bpríomhchlásal atá san aimsir chaite, san aimsir ghnáthchaite nó sa mhodh coinníollach.
+    when "Table7E-header"
+      | An Aimsir Chaite, An Aimsir Ghnáthchaite agus An Modh Coinníollach
+    when "Table7E-caption"
+      | Foirmeacha Simplí i dtús Fochlásail, seachas Clásal Coibhneasta &mdash; An Aimsir Chaite, an Aimsir Ghnáthchaite agus an Modh Coinníollach &mdash; #[i gur] agus #[i gurbh]
+    when "Table7E-gur-example1"
+      | Dúirt Eoin #[b gur] cheart é a dhíol.
+    when "Table7E-gur-example2"
+      | Cheapamar #[b gur] fhlaithiúil an duine ab ea é.
+    when "Table7E-gurbh-example1"
+      | Dhearbhaigh sé #[b gurbh] fhéimheach é.
+    when "Table7E-gurbh-example2"
+      | Dúirt sí #[b gurbh] é leas an phobail é.
+    when "7-2-2-B-b-title"
+      | #[i go mba] nó #[i go mb&rsquo;]
+    when "7-2-2-B-b-p1"
+      | Tá sé de rogha freisin na foirmeacha deimhneacha #[i go mba] nó #[i go mb&rsquo;] a úsáid san aimsir chaite, san aimsir ghnáthchaite nó sa mhodh coinníollach mar seo a leanas:
+    when "7-2-2-B-b-i"
+      | Cuirtear #[i go mba] roimh chonsan nó roimh #[i fh- + consan] i ngach cás, e.g., #[i Cé gur impigh sí air, níor dhóigh leis go mba chóir an madra a choinneáil].
+    when "7-2-2-B-b-ii"
+      | Cuirtear #[i go mba] roimh ghuta nó roimh #[i fh-] + #[i guta] sna cásanna seo a leanas:
+    when "7-2-2-B-b-ii-1"
+      | na forainmnigh #[i é], #[i í], #[i ea], #[i eisean], #[i ise], #[i iad] agus #[i iadsan], e.g., #[i Ba dhóigh liomsa go mba iad an fhoireann ab fhearr ar an lá];
+    when "7-2-2-B-b-ii-2"
+      | réamhfhocail, e.g., #[i Mheas mé go mba ar an mbád a tháinig siad];
+    when "7-2-2-B-b-ii-3"
+      | forainmnigh réamhfhoclacha, e.g., #[i Shíl mé go mba ann dó];
+    when "7-2-2-B-b-ii-4"
+      | dobhriathra nach dobhriathra aidiachtacha iad, e.g., #[i Dúirt sé go mba arú inné a réitigh sí an dinnéar].
+    when "7-2-2-B-b-iii"
+      | Cuirtear #[i go mb&rsquo;] roimh ghuta nó roimh #[i fh-] + #[i guta] sna cásanna seo a leanas:
+    when "7-2-2-B-b-iii-1"
+      | ainmfhocail, e.g., #[i Bronnadh teastas uirthi á rá go mb&rsquo;altra cáilithe in Éirinn í];
+    when "7-2-2-B-b-iii-2"
+      | aidiachtaí, e.g., #[i Dúirt na gasúir go mb&rsquo;aoibhinn leo an cáca milis];
+    when "7-2-2-B-b-iii-3"
+      | na forainmnigh thaispeántacha #[i eo], #[i in] agus #[i úd], e.g., #[i Dúirt sé go mb&rsquo;in a raibh aige];
+    when "7-2-2-B-b-iii-4"
+      | dobhriathra aidiachtacha, e.g., #[i Dúirt sé go mb&rsquo;annamh a théadh sé ann].
+    when "7-2-2-B-b-p2"
+      | Sa tábla thíos, leagtar amach an fhoirm dheimhneach den chopail i bpríomhchlásal atá san aimsir chaite, san aimsir ghnáthchaite nó sa mhodh coinníollach.
+    when "Table7F-header"
+      | An Aimsir Chaite, an Aimsir Ghnáthchaite agus an Modh Coinníollach
+    when "Table7F-caption"
+      | Foirmeacha Simplí i dtús Fochlásail, seachas Clásal Coibhneasta &mdash; An Aimsir Chaite, an Aimsir Ghnáthchaite agus an Modh Coinníollach &mdash; #[i go mba] agus #[i go mb&rsquo;]
+    when "Table7F-go-mba-cons-example1"
+      | Dúirt Eoin #[b go mba] cheart é a dhíol.
+    when "Table7F-go-mba-cons-example2"
+      | Sílim #[b go mba] fhliúit dhaor a cheannaigh sé.
+    when "Table7F-go-mba-vow-example1"
+      | Dhearbhaigh sé #[b ]go mb&rsquo;#[b ]fhéimheach é.
+    when "Table7F-go-mba-vow-example2"
+      | Dúirt sí #[b go mba] é leas an phobail é.
+    when "7-2-2-B-c-title"
+      | #[i nár] nó #[i nárbh]
+    when "7-2-2-B-c-p1"
+      | Úsáidtear na foirmeacha diúltacha #[i nár] agus #[i nárbh] san aimsir chaite, san aimsir ghnáthchaite nó sa mhodh coinníollach mar seo a leanas:
+    when "7-2-2-B-c-i"
+      | Cuirtear #[i nár] roimh chonsan nó roimh #[i fh-] + #[i consan] i ngach cás, e.g., #[i Bhí mise den tuairim nár mhiste leis cabhrú leat].
+    when "7-2-2-B-c-ii"
+      | Cuirtear #[i nárbh] roimh ghuta nó roimh #[i fh-] + #[i guta] i ngach cás, e.g., #[i Ba léir nárbh ionann an dá stoca ar chor ar bith].
+    when "7-2-2-B-c-p2"
+      | Sa tábla thíos, leagtar amach an fhoirm dhiúltach den chopail i bpríomhchlásal atá san aimsir chaite, san aimsir ghnáthchaite nó sa mhodh coinníollach.
+    when "Table7G-header"
+      | An Aimsir Chaite, an Aimsir Ghnáthchaite agus an Modh Coinníollach
+    when "Table7G-caption"
+      | Foirmeacha Simplí i dtús Fochlásail, seachas Clásal Coibhneasta &mdash; An Aimsir Chaite, an Aimsir Ghnáthchaite agus an Modh Coinníollach &mdash; #[i nár] agus #[i nárbh]
+    when "Table7G-nár-example1"
+      | Ba léir #[b nár] dhochtúir cáilithe é.
+    when "Table7G-nár-example2"
+      | Dúirt sí #[b nár] fhlichshneachta ceart é.
+    when "Table7G-nárbh-example1"
+      | Dúirt sé #[b nárbh] fhéidir é a dhéanamh.
+    when "Table7G-nárbh-example2"
+      | #[b Nárbh] iontach an clár faisnéise é sin?
+    when "7-2-3-title"
+      | Foirmeacha Simplí i gClásal Coibhneasta Díreach
+    when "7-2-3-A-title"
+      | An Aimsir Láithreach agus an Aimsir Fháistineach
+    when "7-2-3-A-p"
+      | Sa tábla thíos, leagtar amach an fhoirm dheimhneach agus an fhoirm dhiúltach den chopail i gclásal coibhneasta díreach atá san aimsir láithreach nó san aimsir fháistineach.
+    when "Table7H-header"
+      | An Aimsir Láithreach agus an Aimsir Fháistineach
+    when "Table7H-subheader"
+      | roimh gach consan agus gach guta
+    when "Table7H-caption"
+      | Foirmeacha Simplí i gClásal Coibhneasta Díreach &mdash; An Aimsir Láithreach agus an Aimsir Fháistineach
+    when "Table7H-is-example1"
+      | Labhair leis an bhfear sin #[b is] uncail leat.
+    when "Table7H-is-example2"
+      | An bhean #[b is] cara leat a d&rsquo;eagraigh é.
+    when "Table7H-nach-example1"
+      | Ní cheadófar d&rsquo;aon duine #[b nach] ball é nó í fanacht sa seomra.
+    when "Table7H-nach-example2"
+      | Céard faoi na daoine #[b nach] comhaltaí iad?
+    when "7-2-3-B-title"
+      | An Aimsir Chaite, an Aimsir Ghnáthchaite agus an Modh Coinníollach
+    when "7-2-3-B-p"
+      | Sa tábla thíos, leagtar amach an fhoirm dheimhneach agus an fhoirm dhiúltach den chopail i gclásal coibhneasta díreach atá san aimsir chaite, san aimsir ghnáthchaite nó sa mhodh coinníollach.
+    when "Table7I-header"
+      | An Aimsir Chaite, an Aimsir Ghnáthchaite agus an Modh Coinníollach
+    when "Table7I-caption"
+      | Foirmeacha Simplí i gClásal Coibhneasta Díreach &mdash; An Aimsir Chaite, an Aimsir Ghnáthchaite agus an Modh Coinníollach
+    when "Table7I-ba-example1"
+      | Cad é #[b ba] mhaith leat?
+    when "Table7I-ba-example2"
+      | Sin an carr #[b ba] cheart duit a cheannach.
+    when "Table7I-ab-example1"
+      | Sin rud #[b ab] éasca a rá.
+    when "Table7I-ab-example2"
+      | Má bhí leabhar ann riamh #[b ab] fhiú a léamh, seo é.
+    when "Table7I-nár-example1"
+      | Níor dhóigh siad aon bhreosla #[b nár] ghual (é).
+    when "Table7I-nár-example2"
+      | Níor ceannaíodh bó #[b nár] bhó mhaith (í).
+    when "Table7I-nárbh-example1"
+      | Is é sin an Teachta #[b nárbh] Aire riamh (é).
+    when "Table7I-nárbh-example2"
+      | Níor cheannaigh siad úlla #[b nárbh] úlla dearga (iad).
+    when "7-2-4-title"
+      | Foirmeacha Simplí i gClásal Coibhneasta Indíreach
+    when "7-2-4-A-title"
+      | An Aimsir Láithreach agus an Aimsir Fháistineach
+    when "7-2-4-A-p"
+      | Sa tábla thíos, leagtar amach an fhoirm dheimhneach agus an fhoirm dhiúltach den chopail i gclásal coibhneasta indíreach atá san aimsir láithreach nó san aimsir fháistineach.
+    when "Table7J-caption"
+      | Foirmeacha Simplí i gClásal Coibhneasta Indíreach &mdash; An Aimsir Láithreach agus an Aimsir Fháistineach
+    when "Table7J-ar-example1"
+      | Ná bac leis sin; sin eolas #[b ar] cuma faoi.
+    when "Table7J-ar-example2"
+      | Is é sin an té #[b ar] dó an leabhar.
+    when "Table7J-arb-example1"
+      | Is í sin an bhean #[b arb] iriseoir a deartháir.
+    when "Table7J-arb-example2"
+      | An bhfuil an té #[b arb] eol dó an freagra sa seomra?
+    when "Table7J-nach-example1"
+      | Cár imigh an duine #[b nach] féidir labhairt leis?
+    when "Table7J-nach-example2"
+      | Is iad sin na daoine #[b nach] mian leo leanúint ar aghaidh.
+    when "Table7J-nach-example3"
+      | Is í sin an bhean #[b nach] iriseoir a deartháir.
+    when "Table7J-nach-example4"
+      | Sin é an t&#x2011;aisteoir #[b nach] eol dó a chuid línte.
+    when "Table7J-header"
+      | An Aimsir Láithreach agus an Aimsir Fháistineach
+    when "7-2-4-B-title"
+      | An Aimsir Chaite, an Aimsir Ghnáthchaite agus an Modh Coinníollach
+    when "7-2-4-B-p"
+      | Sa tábla thíos, leagtar amach an fhoirm dheimhneach agus an fhoirm dhiúltach den chopail i gclásal coibhneasta indíreach atá san aimsir chaite, san aimsir ghnáthchaite nó sa mhodh coinníollach.
+    when "Table7K-header"
+      | An Aimsir Chaite, an Aimsir Ghnáthchaite agus an Modh Coinníollach
+    when "Table7K-caption"
+      | Foirmeacha Simplí i gClásal Coibhneasta Indíreach &mdash; An Aimsir Chaite, an Aimsir Ghnáthchaite agus an Modh Coinníollach
+    when "Table7K-ar-example"
+      | Sin í an bhean #[b ar] mhór aici do chabhair.
+    when "Table7K-arbh-example"
+      | Léigh sí gach leabhar #[b arbh] fhiú trácht air.
+    when "Table7K-nár-example"
+      | Cá bhfuil na daoine #[b nár] mhaith leo labhairt?
+    when "Table7K-nárbh-example"
+      | Ba dhána iad na páistí #[b nárbh] áil leo dul ar scoil.
+    when "7-2-5-title"
+      | Athruithe Tosaigh i nDiaidh na Copaile
+    when "7-2-5-A-title"
+      | An Aimsir Láithreach agus an Aimsir Fháistineach
+    when "7-2-5-A-a-p"
+      | Ní dhéantar aon athrú tosaigh i ndiaidh na bhfoirmeacha seo a leanas den chopail:
+    when "7-2-5-A-a-i-p"
+      | an fhoirm dheimhneach den chopail #[i is], e.g., #[i Is bréag é];
+    when "7-2-5-A-a-ii-p"
+      | an fhoirm cheisteach dheimhneach #[i an], e.g., #[i An cuimhin leat an cluiche sin?];
+    when "7-2-5-A-a-iii-p"
+      | an fhoirm cheisteach dhiúltach #[i nach], e.g., #[i Nach buachaill atá ann?]
+    when "7-2-5-A-b-p"
+      | Cuirtear #[i h] roimh ghuta i ndiaidh an leagain dhiúltaigh den chopail #[i ní]:
+    when "7-2-5-A-b-i-p"
+      | ar na forainmnigh #[i é], #[i í], #[i ea], #[i iad], #[i eo], #[i in] agus #[i iúd], e.g., #[i Ní hiad a ghoid do mhála]; #[i Ní hin é mo theachsa];
+    when "7-2-5-A-b-ii-p"
+      | ar na haidiachtaí seo: #[i amháin], #[i aon], #[i ionann], #[i iondúil], e.g., #[i Ní hionann an dá chás];
+    when "7-2-5-A-b-iii-p"
+      | ar na dobhriathra seo: #[i amhlaidh], #[i annamh], e.g., #[i Ní hannamh dó a bheith luath];
+    when "7-2-5-A-b-iv-p"
+      | ar na frásaí copaile réamhfhoclacha seo: #[i acmhainn do], #[i áil le, aitheanta do], #[i aithnid do], #[i eagal do/le], #[i éadáil le], #[i ealaín do], #[i éigean do], #[i eol do], #[i oircheas do], e.g., #[i Ní hacmhainn dó bille eile a íoc];
+    when "7-2-5-A-b-v-p"
+      | ar na focail ar leith seo: #[i áibhéil], #[i éard], #[i ionadh], #[i iontas] agus #[i ualach], e.g., #[i Ní hionadh ar bith é go gcuireann siad fáilte roimh chách];
+    when "7-2-5-A-b-vi-p"
+      | i gcorr-sheanfhocal, e.g., #[i Ní heolas go haontíos]; #[i Ní haithne go haontíos].
+    when "7-2-5-A-c-p"
+      | Ní chuirtear #[i h] roimh ghuta i ndiaidh an leagain dhiúltaigh den chopail #[i ní]:
+    when "7-2-5-A-c-i-p"
+      | ar ainmfhocail i gcoitinne, e.g., #[i Ní eagrán nua den pháipéar atá á léamh agat];
+    when "7-2-5-A-c-ii-p"
+      | ar aidiachtaí i gcoitinne, e.g., #[i Ní uaigneach fear i gcomhluadar];
+    when "7-2-5-A-c-iii-p"
+      | ar dhobhriathra ach amháin #[i amhlaidh], #[i annamh], e.g., #[i Ní inné a tharla an timpiste]; #[i Ní ansin a thit mé].
+    when "7-2-5-A-c-p2"
+      | Sa tábla thíos, leagtar amach na hathruithe tosaigh a dhéantar ar ghuta i ndiaidh an leagain dhiúltaigh den chopail #[i ní].
+    when "Table7L-header"
+      | Athruithe Tosaigh ar Ghuta i nDiaidh an Leagain Dhiúltaigh den Chopail #[i ní]
+    when "Table7L-caption"
+      | Athruithe Tosaigh i ndiaidh an Leagain Dhiúltaigh den Chopail #[i ní]
+    when "Table7L-subheader-col1"
+      | Cuirtear #[i h] roimh ghuta i ndiaidh #[i ní]
+    when "Table7L-subheader-col2"
+      | Ní chuirtear #[i h] roimh ghuta i ndiaidh #[i ní]
+    when "Table7L-row1-col1"
+      | ar na forainmnigh seo: #[i é], #[i í], #[i ea], #[i iad], #[i eo], #[i in], #[i iúd]
+    when "Table7L-row1-col2"
+      | ar ainmfhocail i gcoitinne
+    when "Table7L-row2-col1"
+      | ar na haidiachtaí seo: #[i amháin], #[i aon], #[i ionann], #[i iondúil]
+    when "Table7L-row2-col2"
+      | ar aidiachtaí i gcoitinne
+    when "Table7L-row3-col1"
+      | ar na dobhriathra seo: #[i amhlaidh], #[i annamh]
+    when "Table7L-row3-col2"
+      | ar dhobhriathra (ach amháin #[i amhlaidh], #[i annamh])
+    when "Table7L-row4-col1"
+      | ar na frásaí copaile réamhfhoclacha seo: #[i acmhainn do], #[i áil le], #[i aitheanta do], #[i aithnid do], #[i éadáil le], #[i eagal do/le], #[i ealaín do], #[i éigean do], #[i eol do], #[i oircheas do]
+    when "Table7L-row5-col1"
+      | ar na focail ar leith seo: #[i áibhéil], #[i éard], #[i ionadh], #[i iontas], #[i ualach]
+    when "Table7L-row6-col1"
+      | i gcorr-sheanfhocal
+    when "7-2-5-B-title"
+      | An Aimsir Chaite, an Aimsir Ghnáthchaite agus an Modh Coinníollach
+    when "7-2-5-B-p"
+      | Leanann séimhiú foirmeacha na copaile san aimsir chaite, san aimsir ghnáthchaite agus sa mhodh coinníollach, e.g., #[i Ba dheas liom an seans a bheith faighte againn]; #[i Níor bheag an méid a bhí le scrúdú].
+    when "7-3-title"
+      | Foirmeacha Cumaisc na Copaile
+    when "7-3-1-title"
+      | Forainmnigh Cheisteacha i gcumasc leis an gCopail
+    when "7-3-1-A-title"
+      | An Aimsir Láithreach agus an Aimsir Fháistineach
+    when "7-3-1-A-p"
+      | Sa tábla thíos, leagtar amach samplaí d&rsquo;fhorainmnigh cheisteacha i gcumasc leis an gcopail san aimsir láithreach nó san aimsir fháistineach (féach #[+link("./chapter8.html#sec_8_5_4", "8.5.4")]).
+    when "Table7M-header"
+      | An Aimsir Láithreach agus an Aimsir Fháistineach
+    when "Table7M-caption"
+      | Forainmnigh Cheisteacha i gcumasc leis an gCopail &mdash; An Aimsir Láithreach agus an Aimsir Fháistineach
+    when "Table7M-Cá-example"
+      | #[b Cá] miste duit?
+    when "Table7M-Cárb-example"
+      | #[b Cárb] as é?/#[b Cárb] as duit?
+    when "Table7M-Cé-example"
+      | #[b Cé] dó a dtabharfaidh sé é?
+    when "Table7M-Cérb-example"
+      | #[b Cérb] iad?
+    when "7-3-1-B-title"
+      | An Aimsir Chaite, an Aimsir Ghnáthchaite agus an Modh Coinníollach
+    when "7-3-1-B-p1"
+      | Sa tábla thíos, leagtar amach samplaí d&rsquo;fhorainmnigh cheisteacha i gcumasc leis an gcopail san aimsir chaite, san aimsir ghnáthchaite nó sa mhodh coinníollach.
+    when "Table7N-header"
+      | An Aimsir Chaite, an Aimsir Ghnáthchaite agus an Modh Coinníollach
+    when "Table7N-caption"
+      | Forainmnigh Cheisteacha i gcumasc leis an gCopail &mdash; An Aimsir Chaite, an Aimsir Ghnáthchaite agus an Modh Coinníollach
+    when "Table7N-example1"
+      | #[b Cár] thairbhe duit é?
+    when "Table7N-example2"
+      | #[b Cárbh] aois é?
+    when "Table7N-example3"
+      | #[b Cér] díobh í?
+    when "Table7N-example4"
+      | #[b Cérbh] é an fear sin?
+    when "7-3-1-B-p2"
+      | Tabhair faoi deara nach n&#x2011;úsáidtear an cumasc #[i cérbh] ach roimh #[i é], #[i í], #[i eisean], #[i ise], #[i iad] agus #[i iadsan]. Ní dhéantar cumasc idir #[i cé] agus na foirmeacha #[i ab] nó #[i ba] den chopail nuair nach forainmneach pearsanta a leanann #[i cé]: #[i cérbh é]; ach #[i cé ab fhearr]?; #[i cé ba chaptaen oraibh]?
+    when "7-3-2-title"
+      | Réamhfhocail i gcumasc leis an gCopail
+    when "7-3-2-A-title"
+      | An Aimsir Láithreach agus an Aimsir Fháistineach
+    when "7-3-2-A-p"
+      | Sa tábla thíos, leagtar amach samplaí de réamhfhocail i gcumasc leis an gcopail san aimsir láithreach nó san aimsir fháistineach.
+    when "Table7O-header"
+      | An Aimsir Láithreach agus an Aimsir Fháistineach
+    when "Table7O-caption"
+      | Réamhfhocail i gcumasc leis an gCopail &mdash; An Aimsir Láithreach agus an Aimsir Fháistineach
+    when "Table7O-dar-example"
+      | Cuirfear deireadh leis an imscrúdú an tréimhse #[b dar] críoch an 1ú lá de mhí Iúil.
+    when "Table7O-darb-example"
+      | Tá aithne agam ar bhean #[b darb] ainm Máire Ní Chiarragáin.
+    when "Table7O-faoinar-example"
+      | Cé acu dlí an dlí #[b faoinar] féidir í a chúiseamh?
+    when "Table7O-faoinarb-example"
+      | Is ábhar é sin #[b faoinarb] éasca labhairt.
+    when "Table7O-inar-example"
+      | Is í sin an oifig #[b inar] mian léi a bheith ag obair.
+    when "Table7O-inarb-example"
+      | Is foirgneamh é sin #[b inarb] annamh ar cuairt é.
+    when "Table7O-lenar-example"
+      | Is iomaí córas atá ar fáil #[b lenar] féidir rialú a dhéanamh.
+    when "Table7O-lenarb-example"
+      | Dúirt sí a rogha rud, ar neamhchead don té #[b lenarb] olc.
+    when "Table7O-ónar-example"
+      | Beidh siad i scríbhinn nó i bhfoirm #[b ónar] féidir taifead scríofa a tháirgeadh.
+    when "Table7O-ónarb-example"
+      | Bhí sé i dteannta an dreama #[b ónarb] áil leis teitheadh.
+    when "Table7O-trínar-example"
+      | Faightear réidh le gach meán eile #[b trínar] féidir aon ní den sórt sin a scriosadh.
+    when "Table7O-trínarb-example"
+      | Cén fhoirmle atá agat #[b trínarb] éasca an cheist a fhreagairt?
+    when "7-3-2-B-title"
+      | An Aimsir Chaite, an Aimsir Ghnáthchaite agus an Modh Coinníollach
+    when "7-3-2-B-p"
+      | Sa tábla thíos, leagtar amach samplaí de réamhfhocail i gcumasc leis an gcopail san aimsir chaite, san aimsir ghnáthchaite nó sa mhodh coinníollach.
+    when "Table7P-header"
+      | An Aimsir Chaite, an Aimsir Ghnáthchaite agus an Modh Coinníollach
+    when "Table7P-caption"
+      | Réamhfhocail i gcumasc leis an gCopail &mdash; An Aimsir Chaite, an Aimsir Ghnáthchaite agus an Modh Coinníollach
+    when "Table7P-dar-example"
+      | Cuireadh iniúchadh i gcrích don bhliain #[b dar] chríoch an 8 Márta 1998.
+    when "Table7P-darbh-example"
+      | Is buachaill #[b darbh] ainm Gearóid a bhí i láthair.
+    when "Table7P-faoinar-example"
+      | Liostaíodh na coinníollacha #[b faoinar] chomhaltaí iad na daoine sin.
+    when "Table7P-faoinarbh-example"
+      | Luadh an dáta #[b faoinarbh] fhéidir litir a chur faoi bhráid an Aire.
+    when "Table7P-inar-example"
+      | D&rsquo;fhéadfaí an cás a éisteacht i gcás #[b inar] fhreagróir an duine sin.
+    when "Table7P-inarbh-example"
+      | Is cás é sin #[b inarbh] fhostaí d&rsquo;úinéir na feithicle a cúisíodh.
+    when "Table7P-lenar-example"
+      | Is í sin an eagraíocht #[b lenar] ghníomhaire é.
+    when "Table7P-lenarbh-example"
+      | Sin í an fhoireann #[b lenarbh] áil liom imirt.
+    when "Table7P-ónar-example"
+      | Chuaigh sé ar ais go dtí an tír #[b ónar] dhíbeartach é.
+    when "Table7P-ónarbh-example"
+      | Tabhair faisnéis dom faoin iasacht agus faoin dáta #[b ónarbh] iníoctha í.
+    when "Table7P-trínar-example"
+      | Bhí fóram ann #[b trínar] ghnách leis an bhfoireann ceisteanna a ardú.
+    when "Table7P-trínarbh-example"
+      | Dúnadh an tollán #[b trínarbh] fhéidir tiomáint.
+    when "7-3-3-title"
+      | Cónaisc i gcumasc leis an gCopail
+    when "7-3-3-A-title"
+      | An Aimsir Láithreach agus an Aimsir Fháistineach
+    when "7-3-3-A-p"
+      | Sa tábla thíos, leagtar amach samplaí de chónaisc i gcumasc leis an gcopail san aimsir láithreach nó san aimsir fháistineach.
+    when "Table7Q-header"
+      | An Aimsir Láithreach agus an Aimsir Fháistineach
+    when "Table7Q-caption"
+      | Cónaisc i gcumasc leis an gCopail &mdash; An Aimsir Láithreach agus an Aimsir Fháistineach
+    when "Table7Q-example1"
+      | #[b Sular] féidir leis carr a cheannach, caithfidh sé airgead a shábháil.
+    when "Table7Q-example2"
+      | #[b Sularb] eol di é a bheith ann, beidh an cat imithe.
+    when "Table7Q-example3"
+      | #[b Ós] rud é gur agat atá eochracha an chairr, is tú a rachaidh chuig an siopa.
+    when "Table7Q-example4"
+      | #[b Ós] aici a bheidh an seomra, caithfidh sí féin é a réiteach.
+    when "7-3-3-B-title"
+      | An Aimsir Chaite, an Aimsir Ghnáthchaite agus an Modh Coinníollach
+    when "7-3-3-B-p"
+      | Sa tábla thíos, leagtar amach samplaí de chónaisc i gcumasc leis an gcopail san aimsir chaite, san aimsir ghnáthchaite nó sa mhodh coinníollach.
+    when "Table7R-header"
+      | An Aimsir Chaite, an Aimsir Ghnáthchaite agus an Modh Coinníollach
+    when "Table7R-caption"
+      | Cónaisc i gcumasc leis an gCopail &mdash; An Aimsir Chaite, an Aimsir Ghnáthchaite agus an Modh Coinníollach
+    when "Table7R-example1"
+      | Ba ghá dó síniú a bhainisteora a fháil #[b sular] cheadmhach dó saoire a ghlacadh. 
+    when "Table7R-example2"
+      | #[b Sularbh] fhéidir liom imeacht, dúnadh an geata.
+    when "Table7R-example3"
+      | Tháinig ann don choigilteas #[b ó ba] lú an caiteachas ná mar a bhíothas ag súil. 
+    when "Table7R-example4"
+      | #[b Ó ba] ann dó, níorbh fhéidir é a shéanadh.
+    when "7-3-4-title"
+      | #[i má] i gcumasc leis an gCopail
+    when "7-3-4-p"
+      | Úsáidtear #[i má] san aimsir láithreach, san aimsir fháistineach, san aimsir chaite agus san aimsir ghnáthchaite.
+    when "7-3-4-A-title"
+      | An Aimsir Láithreach agus an Aimsir Fháistineach
+    when "7-3-4-A-p"
+      | Sa tábla thíos, leagtar amach samplaí de #[i má] i gcumasc leis an gcopail san aimsir láithreach nó san aimsir fháistineach.
+    when "Table7S-header"
+      | An Aimsir Láithreach agus an Aimsir Fháistineach
+    when "Table7S-caption"
+      | #[i má] i gcumasc leis an gCopail &mdash; An Aimsir Láithreach agus an Aimsir Fháistineach
+    when "Table7S-más-example1"
+      | #[b Más] mian leat imeacht, is féidir leat.
+    when "Table7S-más-example2"
+      | #[b Más] mall, is mithid.
+    when "Table7S-más-example3"
+      | Fan sa bhaile, #[b más] amhlaidh is fearr leat é.
+    when "Table7S-más-example4"
+      | #[b Más] é Séamas atá ann, abair leis teacht anseo.
+    when "Table7S-mura-example1"
+      | #[b Mura] mian léi fanacht, ní gá di.
+    when "Table7S-mura-example2"
+      | Tabhair sampla eile dom, #[b mura] miste leat.
+    when "Table7S-murab-example1"
+      | Bean ard ab ea í, #[b murab] ionann agus Cáit.
+    when "Table7S-murab-example2"
+      | #[b Murab] áil leis éisteacht, ní gá dó.
+    when "7-3-4-B-title"
+      | An Aimsir Chaite agus an Aimsir Ghnáthchaite
+    when "7-3-4-B-p"
+      | Sa tábla thíos, leagtar amach samplaí de #[i má] i gcumasc leis an gcopail san aimsir chaite nó san aimsir ghnáthchaite. Is iad na rialacha atá i bhfeidhm maidir le húsáid #[i ba] agus #[i b&rsquo;] atá i bhfeidhm anseo freisin (féach #[+link("#sec_7_2_1_B", "7.2.1B")]).
+    when "Table7T-caption"
+      | #[i má] i gcumasc leis an gCopail &mdash; An Aimsir Chaite agus an Aimsir Ghnáthchaite
+    when "Table7T-header"
+      | An Aimsir Chaite agus an Aimsir Ghnáthchaite
+    when "Table7T-positive-example1"
+      | #[b Má ba] dhuine macánta é, b&rsquo;ait an gnó a bhí ar siúl aige.
+    when "Table7T-positive-example2"
+      | #[b ]Má b&rsquo;#[b ]fhear aitheanta é, ní raibh a fhios agam é.
+    when "Table7T-positive-example3"
+      | #[b Má ba] í a bhí ann, níor aithin sí mé.
+    when "Table7T-negative-example1"
+      | #[b Murar] chomhalta cláraithe é, ní raibh aon seans aige.
+    when "Table7T-negative-example2"
+      | #[b Murar] shíntiúsóir cláraithe í, ní bhfaigheadh sí an iris sa phost.
+    when "Table7T-negative-example3"
+      | #[b Murarbh] éan é, b&rsquo;ialtóg a bhí ann.
+    when "Table7T-negative-example4"
+      | Ní bhíodh sí ag imirt #[b murarbh] áil léi féin é.
+    when "7-3-5-title"
+      | #[i dá] agus an Chopail
+    when "7-3-5-p"
+      | Sa tábla thíos, leagtar amach samplaí de #[i dá] leis an gcopail. Is sa mhodh coinníollach amháin a úsáidtear #[i dá]. Is iad na rialacha atá i bhfeidhm maidir le húsáid #[i ba] agus #[i b&rsquo;] atá i bhfeidhm anseo freisin (féach #[+link("#sec_7_2_1_B", "7.2.1B")]).
+    when "Table7U-caption"
+      | #[i dá] agus an Chopail &mdash; An Modh Coinníollach
+    when "Table7U-header"
+      | An Modh Coinníollach
+    when "Table7U-example1"
+      | #[b Dá mba] mhaith leat é, d&rsquo;fhéadfainn é a fháil duit.
+    when "Table7U-example2"
+      | #[b Dá mba] é d&rsquo;athair a déarfadh sin, chreidfinn é.
+    when "Table7U-example3"
+      | #[b ]Dá mb&rsquo;#[b ]fhear saibhir é, thabharfadh sé síntiús fial uaidh.
+    when "Table7U-example4"
+      | #[b Dá mba] fhreastalaí í, bheadh sí ag obair ar an deireadh seachtaine.
+    when "7-4-title"
+      | An Modh Foshuiteach
+    when "7-4-p"
+      | Sa tábla thíos, leagtar amach foirmeacha na copaile sa mhodh foshuiteach, aimsir láithreach nó aimsir fháistineach. Ní gnách an chopail a úsáid sa mhodh foshuiteach caite.
+    when "Table7V-caption"
+      | An Modh Foshuiteach &mdash; An Aimsir Láithreach agus an Aimsir Fháistineach
+    when "Table7V-header"
+      | An Modh Foshuiteach
+    when "Table7V-gura-example1"
+      | #[b Gura] fada buan tú.
+    when "Table7V-gura-example2"
+      | #[b Gura] maith an mhaise dó é.
+    when "Table7V-gura-example3"
+      | #[b Gura] slán an scéal é.
+    when "Table7V-gurab-example1"
+      | #[b Gurab] ann romhainn a bheidh sé.
+    when "Table7V-gurab-example2"
+      | #[b Gurab] amhlaidh duit.
+    when "Table7V-gurab-example3"
+      | #[b Gurab] é barr do leasa é.
+    when "Table7V-nára-example1"
+      | #[b Nára] fíor é.
+    when "Table7V-nára-example2"
+      | #[b Nára] fearrde sibh é.
+    when "Table7V-nára-example3"
+      | #[b Nára] fada go bhfeicfimid a chéile arís.
+    when "Table7V-nárab-example1"
+      | #[b Nárab] am amú é.
+    when "Table7V-nárab-example2"
+      | #[b Nárab] é a leas é.
+    when "Table7V-nárab-example3"
+      | #[b Nárab] é duit.
+    default
+      - throw new Error(`No content for ${key} (ga.pug)`)
