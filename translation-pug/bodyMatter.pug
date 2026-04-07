@@ -81,6 +81,12 @@ mixin renderKey(key, options = { getFromGa: false, getFromCommon: false })
       //- - console.log(docLang, options);
       +tlDb(key)
 
+//- 
+  Sampleboxes for example sentences. If the document is not in Irish, the Irish version of the sentence is also included in the box for reference.
+  - samplePrefix is the prefix for the keys to retrieve (e.g. "8-1-1-sample")
+  - sampleCount is the number of sentences to include
+  - startAt is the number to start at (default 1)
+    This is useful if you have samples interrupted by other content
 mixin sampleBox(samplePrefix, sampleCount, startAt = 1)
   table.samplebox(class="my-1")
     tbody

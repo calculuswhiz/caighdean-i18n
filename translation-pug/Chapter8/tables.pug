@@ -1,0 +1,441 @@
+mixin Table8A
+  +markedTable(8, "A", "8A-caption")
+    thead
+      tr
+        th
+        th(colspan="2"): +renderKey("Table8A-col1")
+        th(colspan="2"): +renderKey("Table8A-col2")
+      tr
+        th
+        th: +renderKey("TheSingularNumber")
+        th: +renderKey("ThePluralNumber")
+        th: +renderKey("TheSingularNumber")
+        th: +renderKey("ThePluralNumber")
+    tbody
+      tr
+        td: +renderKey("TheFirstPerson")
+        td mé
+        td sinn, muid
+        td mise
+        td sinne, muidne
+      tr
+        td: +renderKey("TheSecondPerson")
+        td tú, thú
+        td sibh
+        td tusa, thusa
+        td sibhse
+      tr
+        td: +renderKey("TheThirdPersonMasc")
+        td sé, é
+        td(rowspan="2" class="align-middle") siad, iad
+        td seisean, eisean
+        td(rowspan="2" class="align-middle") siadsan, iadsan
+      tr
+        td: +renderKey("TheThirdPersonFem")
+        td sí, í
+        td sise, ise
+
+mixin Table8B
+  +markedTable(8, "B", "8B-caption")
+    thead
+      tr
+        th
+        th: +renderKey("TheSingular")
+        th: +renderKey("ThePlural")
+    tbody
+      tr
+        td: +renderKey("TheFirstPerson")
+        td
+          ul
+            li mo chapallsa
+            li mo phas-sa
+            li mo bhailese
+            li m&rsquo;athairse
+        td
+          ul
+            li ár mbádna
+            li ár n&#x2011;arán-na
+            li ár bpáircne
+            li ár n&#x2011;earraíne
+      tr
+        td: +renderKey("TheSecondPerson")
+        td
+          ul
+            li do chapallsa
+            li do phas-sa
+            li do bhailese
+            li d&rsquo;athairse
+        td
+          ul
+            li bhur mbádsa
+            li bhur n&#x2011;aránsa
+            li bhur bpáircse
+            li bhur n&#x2011;earraíse
+      tr
+        td: +renderKey("TheThirdPersonMasc")
+        td
+          ul
+            li a chapallsan
+            li a phas-san
+            li a bhailesean
+            li a athairsean
+        td(rowspan="2" class="align-middle")
+          ul
+            li a mbádnasan
+            li a n&#x2011;aránsan
+            li a bpáircnsan
+            li a n&#x2011;earráinsan
+      tr
+        td: +renderKey("TheThirdPersonFem")
+        td
+          ul
+            li a capallsa
+            li a pas-sa
+            li a bailese
+            li a hathairse
+
+mixin Table8C
+  +markedTable(8, "C", "8C-caption")
+    thead
+      tr
+        th
+        th
+          +renderKey("TheSingular")
+          br
+          +renderKey("FollowingDha")
+        th
+          +renderKey("ThePlural")
+          br
+          +renderKey("FollowingDha")
+    tbody
+      tr
+        td: +renderKey("TheFirstPerson")
+        td
+          ul
+            li mo dhá charr
+            li mo dhá úll
+            li mo dhá fheirm
+        td
+          ul
+            li ár dhá gcarr
+            li ár dhá n&#x2011;úll
+            li ár dhá bhfeirm
+      tr
+        td: +renderKey("TheSecondPerson")
+        td
+          ul
+            li do dhá charr
+            li do dhá úll
+            li do dhá fheirm
+        td
+          ul
+            li bhur dhá gcarr
+            li bhur dhá n&#x2011;úll
+            li bhur dhá bhfeirm
+      tr
+        td: +renderKey("TheThirdPersonMasc")
+        td
+          ul
+            li a dhá charr
+            li a dhá úll
+            li a dhá fheirm
+        td(rowspan="2" class="align-middle")
+          ul
+            li a dhá gcarr
+            li a dhá n&#x2011;úll
+            li a dhá bhfeirm
+      tr
+        td: +renderKey("TheThirdPersonFem")
+        td
+          ul
+            li a dhá carr
+            li a dhá húll
+            li a dhá feirm
+
+mixin Table8D
+  +markedTable(8, "D", "8D-caption")
+    thead
+      tr
+        th
+        th: +renderKey("TheSingular")
+        th: +renderKey("ThePlural")
+        th: +renderKey("TheSingular")
+        th: +renderKey("ThePlural")
+      tbody
+        tr
+          td: +renderKey("TheFirstPerson")
+          td mo cheannsa
+          td ár gceann-na
+          td mo chuidse
+          td ár gcuidne
+        tr
+          td: +renderKey("TheSecondPerson")
+          td do cheannsa
+          td bhur gceannsa
+          td do chuidse
+          td bhur gcuidse
+        tr
+          td: +renderKey("TheThirdPersonMasc")
+          td a cheannsan
+          td(rowspan="2" class="align-middle") a gceannsan
+          td a chuidsean
+          td(rowspan="2" class="align-middle") a gcuidsean
+        tr
+          td: +renderKey("TheThirdPersonFem")
+          td a cheannsa
+          td a cuidse
+
+mixin Table8E
+  +markedTable(8, "E", "8E-caption")
+    thead
+      tr
+        th
+        th: +renderKey("TheSingular")
+        th: +renderKey("ThePlural")
+        th: +renderKey("TheSingular")
+        th: +renderKey("ThePlural")
+    tbody
+      tr
+        td: +renderKey("TheFirstPerson")
+        td do m&rsquo;ainmniú
+        td dár n&#x2011;ainmniú
+        td do mo thástáil
+        td dár dtástáil
+      tr
+        td: +renderKey("TheSecondPerson")
+        td do d&rsquo;ainmniú
+        td do bhur n&#x2011;ainmniú
+        td do do thástáil
+        td do bhur dtástáil
+      tr
+        td: +renderKey("TheThirdPersonMasc")
+        td á ainmniú
+        td(rowspan="2" class="align-middle") á n&#x2011;ainmniú
+        td á thástáil
+        td(rowspan="2" class="align-middle") á dtástáil
+      tr
+        td: +renderKey("TheThirdPersonFem")
+        td á hainmniú
+        td á tástáil
+
+mixin Table8F
+  +markedTable(8, "F", "8F-caption")
+    thead
+      tr
+        th
+        th(colspan=4): +renderKey("TheSingular")
+        th(colspan=3): +renderKey("ThePlural")
+      tr
+        th
+        th: +renderKey("TheFirstPerson")
+        th: +renderKey("TheSecondPerson")
+        th: +renderKey("TheThirdPersonMasc")
+        th: +renderKey("TheThirdPersonFem")
+        th: +renderKey("TheFirstPerson")
+        th: +renderKey("TheSecondPerson")
+        th: +renderKey("TheThirdPerson")
+    tbody
+      tr
+        td(class="font-bold")
+          | ag
+          if docLang !== 'GA'
+            | !{" "}#[+tl: +renderKey("Table8F-ag")]
+          td agam
+          td agat
+          td aige
+          td aici
+          td againn
+          td agaibh
+          td acu
+      tr
+        td(class="font-bold")
+          | ar
+          if docLang !== 'GA'
+            | !{" "}#[+tl: +renderKey("Table8F-ar")]
+          td orm
+          td ort
+          td air
+          td uirthi
+          td orainn
+          td oraibh
+          td orthu
+      tr
+        td(class="font-bold")
+          | as
+          if docLang !== 'GA'
+            | !{" "}#[+tl: +renderKey("Table8F-as")]
+          td asam
+          td asat
+          td as
+          td aisti
+          td asainn
+          td asaibh
+          td astu
+      tr
+        td(class="font-bold")
+          | chuig
+          if docLang !== 'GA'
+            | !{" "}#[+tl: +renderKey("Table8F-chuig")]
+          td chugam
+          td chugat
+          td chuige
+          td chuici
+          td chugainn
+          td chugaibh
+          td chucu
+      tr
+        td(class="font-bold")
+          | de
+          if docLang !== 'GA'
+            | !{" "}#[+tl: +renderKey("Table8F-de")]
+          td díom
+          td díot
+          td de
+          td di
+          td dínn
+          td díbh
+          td díobh
+      tr
+        td(class="font-bold")
+          | do
+          if docLang !== 'GA'
+            | !{" "}#[+tl: +renderKey("Table8F-do")]
+          td dom
+          td duit
+          td dó
+          td di
+          td dúinn
+          td daoibh
+          td dóibh
+      tr
+        td(class="font-bold")
+          | faoi
+          if docLang !== 'GA'
+            | !{" "}#[+tl: +renderKey("Table8F-faoi")]
+          td fúm
+          td fút
+          td faoi
+          td fúithi
+          td fúinn
+          td fúibh
+          td fúthu
+      tr
+        td(class="font-bold")
+          | fara
+          if docLang !== 'GA'
+            | !{" "}#[+tl: +renderKey("Table8F-fara")]
+          td faram
+          td farat
+          td fairis
+          td farae
+          td farainn
+          td faraibh
+          td faru
+      tr
+        td(class="font-bold")
+          | i
+          if docLang !== 'GA'
+            | !{" "}#[+tl: +renderKey("Table8F-i")]
+          td ionam
+          td ionat
+          td ann
+          td inti
+          td ionainn
+          td ionaibh
+          td iontu
+      tr
+        td(class="font-bold")
+          | idir
+          if docLang !== 'GA'
+            | !{" "}#[+tl: +renderKey("Table8F-idir")]
+          td -
+          td -
+          td -
+          td -
+          td eadrainn
+          td eadraibh
+          td eatarthu
+      tr
+        td(class="font-bold")
+          | ionsar
+          if docLang !== 'GA'
+            | !{" "}#[+tl: +renderKey("Table8F-ionsar")]
+          td ionsorm
+          td ionsort
+          td ionsair
+          td ionsuirthi
+          td ionsorainn
+          td ionsoraibh
+          td ionsorthu
+      tr
+        td(class="font-bold")
+          | le
+          if docLang !== 'GA'
+            | !{" "}#[+tl: +renderKey("Table8F-le")]
+          td liom
+          td leat
+          td leis
+          td léi
+          td linn
+          td libh
+          td leo
+      tr
+        td(class="font-bold")
+          | ó
+          if docLang !== 'GA'
+            | !{" "}#[+tl: +renderKey("Table8F-ó")]
+          td uaim
+          td uait
+          td uaidh
+          td uaithi
+          td uainn
+          td uaibh
+          td uathu
+      tr
+        td(class="font-bold")
+          | roimh
+          if docLang !== 'GA'
+            | !{" "}#[+tl: +renderKey("Table8F-roimh")]
+          td romham
+          td romhat
+          td roimhe
+          td roimpi
+          td romhainn
+          td romhaibh
+          td rompu
+      tr
+        td(class="font-bold")
+          | thar
+          if docLang !== 'GA'
+            | !{" "}#[+tl: +renderKey("Table8F-thar")]
+          td tharam
+          td tharat
+          td thairis
+          td thairsti
+          td tharainn
+          td tharaibh
+          td tharstu
+      tr
+        td(class="font-bold")
+          | trí
+          if docLang !== 'GA'
+            | !{" "}#[+tl: +renderKey("Table8F-trí")]
+          td tríom
+          td tríot
+          td tríd
+          td tríthi
+          td trínn
+          td tríbh
+          td tríothu
+      tr
+        td(class="font-bold")
+          | um
+          if docLang !== 'GA'
+            | !{" "}#[+tl: +renderKey("Table8F-um")]
+          td umam
+          td umat
+          td uime
+          td uimpi
+          td umainn
+          td umaibh
+          td umpu

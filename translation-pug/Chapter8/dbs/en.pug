@@ -1,0 +1,431 @@
+include ../../tlMatter.pug
+if docLang === "EN"
+  mixin tl(tlText)
+    if tlText != null
+      +inlineTl("EN", tlText)
+    else
+      +inlineTl("EN")
+        block
+    
+  mixin tlDb(key)
+    case key
+      when "teidealNaCaibidle"
+        | The Pronominal
+      when "8-1-title"
+        | General
+      when "8-title"
+        | #[+renderKey("Caibidil", { getFromCommon: true })] 8 | #[+renderKey("teidealNaCaibidle")]
+      when "8-1-1-p"
+        | Pronominals include personal pronominals, possessive adjectives (which act as both adjectives and pronominals), prepositional pronominals, interrogative pronominals and demonstrative pronominals.
+      when "8-2-title"
+        | The Personal Pronominals
+      when "8-2-1-p"
+        | The following are the forms of the personal pronominals.
+      when "8A-caption"
+        | The Personal Pronominals
+      when "Table8A-col1"
+        | Basic Forms
+      when "Table8A-col2"
+        | Emphatic Forms
+      when "TheSingularNumber"
+        | Singular
+      when "ThePluralNumber"
+        | Plural
+      when "TheFirstPerson"
+        | First Person
+      when "TheSecondPerson"
+        | Second Person
+      when "TheThirdPersonMasc"
+        | Third Person (#[i masc.])
+      when "TheThirdPersonFem"
+        | Third Person (#[i fem.])
+      when "8-2-2-p"
+        | #[i thú] (#[i thusa]) is used as the object of a verb, e.g., #[i aithním thú]; #[i molaim thú]; and when it is a subject following a predicate in a copular sentence, e.g., #[i Mo náire thú] #[+tl Shame on you]; #[i Is oibrí díograiseach thú] #[+tl You are a diligent worker].
+      when "8-2-2-sample1"
+        | He never forgot #[b you].
+      when "8-2-2-sample2"
+        | Is that where #[b you] were born?
+      when "8-2-2-sample3"
+        | She abandoned #[b you] for another man.
+      when "8-2-2-sample4"
+        | I don&rsquo;t know #[b you].
+      when "8-2-2-sample5"
+        | #[b You] come from the west! (idiom meaning #[i Bravo!])
+      when "8-2-2-sample6"
+        | #[b You] better take a break.
+      when "8-2-3-p"
+        | #[i tú] (#[i tusa]) is used elsewhere.
+      when "8-2-3-sample1"
+        | Did #[b you] see the results board last night?
+      when "8-2-3-sample2"
+        | We wouldn&rsquo;t have won without #[b you].
+      when "8-2-3-sample3"
+        | #[b You] are the captain.
+      when "8-2-3-sample4"
+        | #[b You] are stronger than him.
+      when "8-2-3-sample5"
+        | Aren&rsquo;t #[b you] the fire marshal?
+      when "8-2-4-p"
+        | In the third person singular and plural, the forms #[i sé] (#[i seisean]), #[i sí] (#[i sise]) and #[i siad] (#[i siadsan]) are used as subjects (other than the copula).
+      when "8-2-4-sample1"
+        | #[b He] (she, they) came in.
+      when "8-2-4-sample2"
+        | #[b He] (she, they) is/are often late.
+      when "8-2-4-sample3"
+        | Did #[b he] (she, they) make the dinner?
+      when "8-2-5-p"
+        | #[i é] (#[i eisean]), #[i í] (#[i ise]) and #[i iad] (#[i iadsan]) are used elsewhere.
+      when "8-2-5-sample1"
+        | The wind knocked #[b it] down.
+      when "8-2-5-sample2"
+        | #[b It] is better that way.
+      when "8-2-5-sample3"
+        | Is #[b it] Micheál who lost the money?
+      when "8-2-5-sample4"
+        | There is only #[b him] in the office today.
+      when "8-2-5-sample5"
+        | Tomás and #[b her] went on holiday yesterday.
+      when "8-2-5-sample6"
+        | He did kiss #[b her].
+      when "8-2-5-sample7"
+        | Who is #[b she]?
+      when "8-2-5-sample8"
+        | I would have won if not for #[b her].
+      when "8-2-5-sample9"
+        | Did he go out to buy #[b them]?
+      when "8-2-5-sample10"
+        | Ultimately, he found #[b them].
+      when "8-2-5-sample11"
+        | I remember #[b them] talking about it.
+      when "8-2-5-sample12"
+        | #[b They] did it.
+      when "8-2-6-p"
+        | The singular masculine pronominal #[i é] is used in sentences like the following despite containing a feminine noun: #[i is é mo thuairim] #[+tl It is my opinion]; #[i is é an aidhm] #[+tl It is the aim]; #[i is é an bhrí] #[+tl It is the meaning]; #[i is é mo bharúil] #[+tl It is my opinion]. The pronominal refers to the opinion, the aim, the meaning, etc. rather than the noun itself.
+      when "8-2-6-sample1"
+        | #[b It] is my opinion that it is worth leaving now.
+      when "8-2-6-sample2"
+        | #[b It] is the aim to increase the number of students.
+      when "8-2-6-sample3"
+        | #[b It], the "Commission," means the European Commission.
+      when "8-2-6-sample4"
+        | #[b It] is my opinion that he should not quit.
+      when "8-2-6-sample5"
+        | #[b It] is the problem that he is too lazy.
+      when "8-2-7-p"
+        | The pronominals of the third person are not lenited after a preposition where lenition follows.
+      when "8-2-7-sample1"
+        | Did he leave without #[b us]?
+      when "8-2-7-sample2"
+        | I&rsquo;ve never met people like #[b you].
+      when "8-3-title"
+        | The Possessive Adjectives
+      when "8-3-1-p"
+        | In the table below, the possessive adjectives and their initial mutations are listed. These are the emphatic forms, and they are followed by nouns. A hyphen is placed between two #[i s]&rsquo;s, e.g., #[i mo phas-sa], and between two #[i n]&rsquo;s, e.g., #[i ár n&#x2011;arán-na]. If there is no lenition, the possessive endings #[i -sa] (#[i -se]), #[i -san] (#[i -sean]), #[i -na] (#[i -ne]) are left in the middle.
+      when "8B-caption"
+        | The Possessive Adjectives
+      when "TheSingular"
+        | Singular
+      when "ThePlural"
+        | Plural
+      when "8-3-1-sample1"
+        | Have you seen #[b my bag]?
+      when "8-3-1-sample2"
+        | What happened to #[b our gift]?
+      when "8-3-1-sample3"
+        | They lost #[b their game].
+      when "8-3-2-p"
+        | The emphatic forms of the third person pronominal (#[i seisean], #[i sise], #[i siadsan]) can also be used to express emphasis, e.g., #[i a gheansaí seisean] #[+tl his sweater]; #[i a cóta sise] #[+tl her coat]; #[i a dteach siadsan] #[+tl their house].
+      when "8-3-2-sample1"
+        | There wasn&rsquo;t much to #[b #[i his] module].
+      when "8-3-2-sample2"
+        | Did you see #[b #[i her] car]?
+      when "8-3-2-sample3"
+        | There is plenty to do on #[b #[i their] farm].
+      when "8-3-3-p"
+        | When the number #[i dhá] #[+tl two] appears between a possessive adjective and a noun, it is the noun that undergoes the initial mutation, not the possessive adjective.
+      when "8C-caption"
+        | The Possessive Adjective and #[i dhá]
+      when "FollowingDha"
+        | (following #[i dhá])
+      when "8-3-3-sample1"
+        | Clap #[b your two palms] together.
+      when "8-3-3-sample2"
+        | She fell on #[b her two knees]. (#[i fem.])
+      when "8-3-3-sample3"
+        | Did they sell #[b their two flats]? (#[i pl.])
+      when "8-3-4-p"
+        | To complete the function of possessive pronominal &mdash;
+      when "8-3-4-a-p"
+        | a possessive adjective plus #[i ceann] #[+tl one] or #[i cuid] #[+tl part] reinforced with a suffix is used, e.g., #[i mo cheannsa] #[+tl mine]; #[i a gcuidsean] #[+tl theirs]; or
+      when "8-3-4-b-p"
+        | a possessive adjective plus #[i cuid] reinforced with a suffix is used, e.g., #[i ár gcuidne airgid] #[+tl our money]; #[i bhur gcuidse iarrachtaí] #[+tl your efforts].
+      when "8D-caption"
+        | The Possessive Adjective and #[i ceann] or #[i cuid]
+      when "8-3-4-sample1"
+        | That is #[b mine].
+      when "8-3-4-sample2"
+        | Which one is #[b hers]?
+      when "8-3-4-sample3"
+        | Where is #[b yours]?
+      when "8-3-4-sample4"
+        | They didn&rsquo;t get #[b theirs].
+      when "8-3-4-sample5"
+        | Do #[b your work].
+      when "8-3-4-sample6"
+        | He spoiled #[b his hair].
+      when "8-3-4-sample7"
+        | It&rsquo;s #[b our money].
+      when "8-3-4-sample8"
+        | Have you seen #[b mine]?
+      when "8-3-5-p"
+        | To use a possessive adjective as a possessive verbal noun, the preposition #[i do] is placed before the possessive adjective in the first and second person singular and plural, and #[i á] is placed before the third person singular and plural, as follows:
+      when "8E-caption"
+        | The Possessive Adjective as a Possessive Verbal Noun
+      when "8-3-5-sample1"
+        | Don&rsquo;t #[b torture me]!
+      when "8-3-5-sample2"
+        | Are you #[b doing the work]?
+      when "8-3-5-sample3"
+        | It was #[b our search].
+      when "8-3-6-p"
+        | When a possessive adjective is following a preposition, no compound is formed between the preposition and the possessive adjective in such contexts.
+      when "8-3-6-sample1"
+        | #[b My] mother #[b had] a car when she was young.
+      when "8-3-6-sample2"
+        | Did you give #[b to your] mother a present?
+      when "8-3-6-sample3"
+        | What did you give #[b to your] father?
+      when "8-3-6-sample4"
+        | He had a hat #[b on his] head. (#[i masc.])
+      when "8-3-6-sample5"
+        | There was a cap #[b on her] head. (#[i fem.])
+      when "8-3-6-sample6"
+        | The water was brought #[b from our] well.
+      when "8-3-6-sample7"
+        | Is it a photo #[b of your] house?
+      when "8-3-6-sample8"
+        | They are sharp #[b off their] top.
+      when "8-3-7-p"
+        | When a possessive adjective follows the prepositions #[i de] and #[i do], compound is made between the preposition and the possessive adjective in the third person singular and plural, and in the first person plural as follows:
+      when "8-3-7-sample1"
+        | He removed the hat #[b from his head]. (#[i masc.])
+      when "8-3-7-sample2"
+        | She removed the hat #[b from her head]. (#[i fem.])
+      when "8-3-7-sample3"
+        | They removed the hats #[b from their heads]. (#[i pl.])
+      when "8-3-7-sample4"
+        | He gave it #[b to his father]. (#[i masc.])
+      when "8-3-7-sample5"
+        | She gave it #[b to her father]. (#[i fem.])
+      when "8-3-7-sample6"
+        | They gave it #[b to their father]. (#[i pl.])
+      when "8-3-7-sample7"
+        | We released #[b our grip].
+      when "8-3-7-sample8"
+        | We gave them #[b to our aunts].
+      when "8-3-8-p"
+        | #[i n] is placed between the prepositions #[i faoi], #[i i], #[i le], #[i ó] and #[i trí] and the possessive adjective or the particle #[i a] in the following contexts:
+      when "8-3-8-a-p"
+        | the possessive adjective;
+      when "8-3-8-a-sample1"
+        | He found it #[b in our] car.
+      when "8-3-8-a-sample2"
+        | He talked #[b about his] son.
+      when "8-3-8-b-p"
+        | the numerical particle #[i a];
+      when "8-3-8-b-sample1"
+        | I&rsquo;ll be there #[b about] six o&rsquo;clock.
+      when "8-3-8-b-sample2"
+        | The film will be held #[b from] four o&rsquo;clock.
+      when "8-3-8-c-p"
+        | the abstract particle #[i a];
+      when "8-3-8-c-sample1"
+        | He received high praise #[b by] how well he did the work.
+      when "8-3-8-c-sample2"
+        | I wasn&rsquo;t happy #[b with] how long it took.
+      when "8-3-8-d-p"
+        | in phrases such as #[i a lán] #[+tl a lot]; #[i a leithéid] #[+tl such]; #[i a thuilleadh] #[+tl more];
+      when "8-3-8-d-sample1"
+        | A full-time position will be allowed #[b in such] an instance.
+      when "8-3-8-d-sample2"
+        | She got bills #[b from a lot] of shoppers.
+      when "8-3-8-e-p"
+        | the relative particle #[i a];
+      when "8-3-8-e-sample1"
+        | That&rsquo;s the building #[b where] the book will be sent.
+      when "8-3-8-e-sample2"
+        | Email me #[b about] what you have set up.
+      when "8-3-8-e-note"
+        | #[i n] is never placed between #[i go dtí] and the possessive adjective or the particle #[i a].
+      when "8-3-8-e-sample3"
+        | She went #[b to her] house after work.
+      when "8-3-8-e-sample4"
+        | We didn&rsquo;t go #[b to our] own party.
+      when "8-3-8-e-sample5"
+        | The lecture didn&rsquo;t start #[b until] five o&rsquo;clock.
+      when "8-3-8-e-sample6"
+        | We were there #[b until] twelve.
+      when "8-3-9-p"
+        | #[i n] is placed between the preposition #[i ar] and the possessive adjective #[i a] to form #[i arna]. The verbal noun agrees with the gender and number of the noun that precedes it, e.g., #[i leabhar arna eisiúint] #[+tl book issued]; #[i tuarascáil arna seoladh] #[+tl report sent]; #[i doiciméid arna bhfoilsiú] #[+tl documents published].
+      when "8-3-9-sample1"
+        | He shall be deemed to have been #[b elected] under this Act. (#[i masc.])
+      when "8-3-9-sample2"
+        | "Circuit Court" means the Circuit Court #[b established] by law. (#[i fem.])
+      when "8-3-9-sample3"
+        | It will be subject to regulations #[b made] under subsection 7. (#[i pl.])
+      when "8-4-title"
+        | The Prepositional Pronominals
+      when "8F-caption"
+        | The Prepositional Pronominals
+      when "Table8F-ag"
+        | at
+      when "Table8F-ar"
+        | on
+      when "Table8F-as"
+        | from
+      when "Table8F-chuig"
+        | toward
+      when "Table8F-de"
+        | of
+      when "Table8F-do"
+        | to
+      when "Table8F-faoi"
+        | under
+      when "Table8F-fara"
+        | besides
+      when "Table8F-i"
+        | in
+      when "Table8F-idir"
+        | between
+      when "Table8F-ionsar"
+        | towards
+      when "Table8F-le"
+        | with
+      when "Table8F-ó"
+        | from
+      when "Table8F-roimh"
+        | before
+      when "Table8F-thar"
+        | over
+      when "Table8F-trí"
+        | through
+      when "Table8F-um"
+        | around
+      when "TheThirdPerson"
+        | Third Person
+      when "8-4-p"
+        | Note that:
+      when "8-4-a-p"
+        | To express emphasis with the prepositional pronominals, a compound is made between the prepositional pronominals and the endings #[i -sa] (#[i -se]), #[i -san] (#[i -sean]), #[i -ne], e.g., #[i agamsa], #[i agatsa], #[i aigesean], #[i aicise], #[i againne], #[i agaibhse], #[i acusan].
+      when "8-4-b-p"
+        | #[i -nne] is formed from #[i -nn] + #[i -ne], e.g., #[i againne], #[i orainne], etc., and a hyphen is placed between the two #[i s], e.g., #[i as-san], #[i leis-sean], #[i thairis-sean].
+      when "8-5-title"
+        | The Interrogative Pronominals
+      when "8-5-1-p"
+        | The interrogative pronominals are #[i cá], #[i cad], #[i cé] and #[i céard].
+      when "8-5-1-sample1"
+        | #[b Where] are you going?
+      when "8-5-1-sample2"
+        | #[b Where] did he go this morning?
+      when "8-5-1-sample3"
+        | #[b Where] are you from?
+      when "8-5-1-sample4"
+        | #[b What] about this one?
+      when "8-5-1-sample5"
+        | #[b Who] is coming?
+      when "8-5-1-sample6"
+        | #[b What] questions do you have?
+      when "8-5-1-sample7"
+        | #[b What] happened last night?
+      when "8-5-1-sample8"
+        | #[b What] did they do after the work?
+      when "8-5-2-p"
+        | #[i h] is placed before a word at the beginning of a sentence when #[i cá] is used (see #[+link("./chapter10.html#sec_10_11_4", "10.11.4")]).
+      when "8-5-2-sample1"
+        | #[b Where] did they go?
+      when "8-5-2-sample2"
+        | #[b What time] will you be returning?
+      when "8-5-2-sample3"
+        | #[b What a surprise].
+      when "8-5-2-sample4"
+        | #[b What age] is he?
+      when "8-5-3-p"
+        | #[i h] is placed before the pronominals #[i é] (#[i eisean]), #[i í] (#[i ise]) and #[i iad] (#[i iadsan]) when used with #[i cé] (see #[+link("./chapter10.html#sec_10_13_1", "10.13.1")])).
+      when "8-5-3-sample1"
+        | #[b Who] is that man?
+      when "8-5-3-sample2"
+        | #[b Who] is she?
+      when "8-5-3-sample3"
+        | #[b Who] are the experts?
+      when "8-5-3-sample4"
+        | #[b Who are they]?
+      when "8-5-4-p"
+        | The interrogative pronominals are not lenited (see #[+link("./chapter10.html#sec_10_5_2", "10.5.2")]), but compounds are made between #[i cá], #[i cé] and the copula to make the forms #[i cár], #[i cárb], #[i cárbh], #[i cér], #[i cérb] and #[i cérbh] (see #[+link("./chapter7.html#sec_7_3_1", "7.3.1")]). A compound is made between #[i cé] and the singular article to form #[i cén].
+      when "8-5-4-sample1"
+        | #[b Where] did you put it?
+      when "8-5-4-sample2"
+        | #[b Where] are you from?
+      when "8-5-4-sample3"
+        | #[b How] tall is it?
+      when "8-5-4-sample4"
+        | #[b Which] of them is it?
+      when "8-5-4-sample5"
+        | #[b What] is that?
+      when "8-5-4-sample6"
+        | #[b Who] are the visitors?
+      when "8-5-4-sample7"
+        | #[b How] far from here are you?
+      when "8-5-4-sample8"
+        | #[b What] harm is it?
+      when "8-5-5-p"
+        | The masculine singular form of the prepositional pronominal or possessive adjective #[i a] is used in interrogative sentences, regardless of the number or gender of the thing or things being referred to, e.g., #[i Cé leis a raibh tú ag caint?] #[+tl Who were you talking to?] (referring to a man or a woman or a group with #[i leis]); #[i Cé ina aghaidh a raibh siad ag imirt?] #[+tl Who were they playing against?] (referring to a man or a woman or a group with the possessive adjective #[i a]).
+      when "8-5-5-sample1"
+        | What #[b did] you put there?
+      when "8-5-5-sample2"
+        | Who #[b has] the tickets?
+      when "8-5-5-sample3"
+        | What #[b are] you talking about?
+      when "8-6-title"
+        | The Demonstrative Pronominals
+      when "8-6-1-p"
+        | These are demonstrative pronominals #[i seo], #[i sin] and #[i siúd]. The demonstrative pronominals are used in four ways:
+      when "8-6-1-a-p"
+        | in combination with a preceding pronominal, e.g., #[i Is bronntanas é sin] #[+tl That is a gift]; #[i Tabhair cabhair dóibh seo] #[+tl Give them this help]; #[i Cá bhfuil a cóipleabhar siúd]? #[+tl Where is that copybook?]; #[i dá rachaidís siúd] #[+tl If they went there];
+      when "8-6-1-b-p"
+        | in combination before a personal pronominal, e.g., #[i Sin é an bronntanas] #[+tl That is the gift]; #[i Seo é an cóipleabhar] #[+tl This is the copybook]; #[i Siúd iad na múinteoirí] #[+tl Those are the teachers]; #[i Siúd í an traein chugainn] #[+tl That is the train coming towards us];
+      when "8-6-1-c-p"
+        | in combination with a personal pronominal, e.g., #[i Tá sin álainn] #[+tl That is beautiful]; #[i Ith seo] #[+tl Eat this]; #[i An bhfuil siúd amhlaidh?] #[+tl Is that so?]; #[i D&rsquo;imigh siúd leis an mbus] #[+tl They left with the bus]; #[i Sin madra] #[+tl That is a dog]; #[i Seo an mála] #[+tl This is the bag]; #[i Siúd an fhírinne] #[+tl That is the truth]; #[i Cad seo?] #[+tl What is this?]; #[i Cé sin?] #[+tl Who is that?]; #[i Sin sin] #[+tl That is that]; #[i mar seo] #[+tl Like this]; #[i go dtí sin] #[+tl Until then]; #[i gan siúd a ól] #[+tl Without drinking that];
+      when "8-6-1-d-p"
+        | with an adverbial function, e.g., #[i chomh híseal seo] (#[i sin], #[i siúd]) #[+tl this low]; #[i chomh mór seo] (#[i sin], #[i siúd]) #[+tl this big].
+      when "8-6-2-p"
+        | The forms #[i eo], #[i in] and #[i iúd] are often used instead of #[i seo], #[i sin] and #[i siúd] in the copula. Note that the forms #[i eo], #[i in] and #[i iúd] are not used after #[i is]. (#[b TL Note]: #[i eo], #[i in], and #[i iúd] are secondary forms in dialectical Irish according to #[a(href="https://en.wikisource.org/wiki/Graim%C3%A9ar_na_Gaedhilge/Part_II_Chapter_IV") Graiméar na Gaedhilge, Part II Chapter IV]. These entries are not found in FGB.)
+      when "8-6-2-sample1"
+        | #[b This] was the place.
+      when "8-6-2-sample2"
+        | #[b This] is not the book.
+      when "8-6-2-sample3"
+        | Isn&rsquo;t #[b this] my coat?
+      when "8-6-2-sample4"
+        | #[b That] was him.
+      when "8-6-2-sample5"
+        | #[b That] is not how it would be.
+      when "8-6-2-sample6"
+        | She said that #[b that] was the man.
+      when "8-6-2-sample7"
+        | #[b They] were leaving on a gallop.
+      when "8-6-2-sample8"
+        | It was probably #[b you].
+      when "8-6-2-sample9"
+        | Are #[b those] the neighbours?
+      when "8-6-3-p"
+        | The demonstrative pronominal #[i éard] used in the copula is a compound of #[i é] and #[i rud].
+      when "8-6-3-sample1"
+        | Lending money is #[b what] concerns us.
+      when "8-6-3-sample2"
+        | It was #[b what] I was saying that it will be finished soon.
+      when "8-6-3-sample3"
+        | People would think that #[b what] you are pretending is that it was done on purpose.
+      when "8-6-3-sample4"
+        | Is it #[b what] is intended to build a new building there?
+      default
+        - throw new Error(`No content for ${key} (en.pug)`)

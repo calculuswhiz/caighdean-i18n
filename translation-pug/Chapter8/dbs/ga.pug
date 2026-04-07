@@ -1,0 +1,390 @@
+include ../../tlMatter.pug
+
+mixin gaDb(key)
+  case key
+    when "teidealNaCaibidle"
+      | An Forainmneach
+    when "8-1-title"
+      | Ginearálta
+    when "8-title"
+      | #[+renderKey("Caibidil", { getFromCommon: true })] 8 | #[+gaDb("teidealNaCaibidle")]
+    when "8-1-1-p"
+      | Ar na forainmnigh, áirítear na forainmnigh phearsanta, na haidiachtaí sealbhacha (a fheidhmíonn mar aidiachtaí agus mar fhorainmnigh), na forainmnigh réamhfhoclacha, na forainmnigh cheisteacha agus na forainmnigh thaispeántacha.
+    when "8-2-title"
+      | Na Forainmnigh Phearsanta
+    when "8-2-1-p"
+      | Is iad seo a leanas foirmeacha na bhforainmneach pearsanta.
+    when "8A-caption"
+      | Na Forainmnigh Phearsanta
+    when "Table8A-col1"
+      | Na Bunfhoirmeacha
+    when "Table8A-col2"
+      | Na Foirmeacha Treise
+    when "TheSingularNumber"
+      | An Uimhir Uatha
+    when "ThePluralNumber"
+      | An Uimhir Iolra
+    when "TheFirstPerson"
+      | An Chéad Phearsa
+    when "TheSecondPerson"
+      | An Dara Pearsa
+    when "TheThirdPersonMasc"
+      | An Triú Pearsa (#[i fir.])
+    when "TheThirdPersonFem"
+      | An Tríú Pearsa (#[i bain.])
+    when "8-2-2-p"
+      | Úsáidtear #[i thú] (#[i thusa]) mar chuspóir briathair, e.g., #[i aithním thú]; #[i molaim thú]; agus nuair is ainmní é ar lorg na faisnéise in abairt chopaileach, e.g., #[i Mo náire thú]; #[i Is oibrí díograiseach thú].
+    when "8-2-2-sample1"
+      | Níor dhearmad sé #[b thú] riamh.
+    when "8-2-2-sample2"
+      | An é sin an áit ar rugadh #[b thú]?
+    when "8-2-2-sample3"
+      | Thréig sí #[b thú] ar fhear eile.
+    when "8-2-2-sample4"
+      | Ní aithnímse #[b thusa].
+    when "8-2-2-sample5"
+      | Chugam aniar #[b thú]!
+    when "8-2-2-sample6"
+      | Is fearrde #[b thú] an sos.
+    when "8-2-3-p"
+      | Úsáidtear #[i tú] (#[i tusa]) i ngach cás eile.
+    when "8-2-3-sample1"
+      | An bhfaca #[b tú] clár na dtorthaí aréir?
+    when "8-2-3-sample2"
+      | Ní bheadh an bua againn gan #[b tú].
+    when "8-2-3-sample3"
+      | Is #[b tusa] an captaen.
+    when "8-2-3-sample4"
+      | Tá #[b tusa] níos láidre ná eisean.
+    when "8-2-3-sample5"
+      | Nach #[b tusa] an maor dóiteáin?
+    when "8-2-4-p"
+      | Sa tríú pearsa uatha agus iolra, is iad na foirmeacha #[i sé] (#[i seisean]), #[i sí] (#[i sise]) agus #[i siad] (#[i siadsan]) a úsáidtear mar ainmní an bhriathair (seachas an chopail).
+    when "8-2-4-sample1"
+      | Tháinig #[b sé] (sí, siad) isteach.
+    when "8-2-4-sample2"
+      | Bíonn #[b seisean] (sise, siadsan) déanach go minic.
+    when "8-2-4-sample3"
+      | An ndearna #[b sé] (sí, siad) an dinnéar?
+    when "8-2-5-p"
+      | Úsáidtear #[i é] (#[i eisean]), #[i í] (#[i ise]) agus #[i iad] (#[i iadsan]) i ngach cás eile.
+    when "8-2-5-sample1"
+      | Leag an ghaoth #[b é].
+    when "8-2-5-sample2"
+      | Is mar sin is fearr #[b é].
+    when "8-2-5-sample3"
+      | An #[b é] Micheál a chaill an t&#x2011;airgead?
+    when "8-2-5-sample4"
+      | Níl san oifig inniu ach #[b eisean].
+    when "8-2-5-sample5"
+      | Chuaigh Tomás agus #[b í] ar saoire inné.
+    when "8-2-5-sample6"
+      | #[b Í] a phógadh is ea a rinne sé.
+    when "8-2-5-sample7"
+      | Cé #[b hí] féin?
+    when "8-2-5-sample8"
+      | Bhí buaite agam murach #[b ise].
+    when "8-2-5-sample9"
+      | An ndeachaigh sé amach chun #[b iad] a cheannach?
+    when "8-2-5-sample10"
+      | Ar deireadh thiar thall, fuair sé #[b iad].
+    when "8-2-5-sample11"
+      | Is cuimhin liom #[b iadsan] ag caint air.
+    when "8-2-5-sample12"
+      | #[b Iadsan] a rinne é.
+    when "8-2-6-p"
+      | Is é an forainmneach firinscneach uatha #[i é] a úsáidtear in abairtí mar seo a leanas d&rsquo;ainneoin ainmfhocal baininscneach a bheith iontu: #[i is é mo thuairim]; #[i is é an aidhm]; #[i is é an bhrí]; #[i is é mo bharúil]. Is ag tagairt don tuairim, don aidhm, don bhrí, etc. seachas don ainmfhocal féin atá an forainmneach.
+    when "8-2-6-sample1"
+      | Is #[b é] mo thuairimse gur fiú imeacht anois.
+    when "8-2-6-sample2"
+      | Is #[b é] an aidhm atá leis líon na mac léinn a mhéadú.
+    when "8-2-6-sample3"
+      | Is #[b é] an bhrí atá le “Coimisiún” an Coimisiún Eorpach.
+    when "8-2-6-sample4"
+      | Is #[b é] mo bharúilse nár chóir dó éirí as.
+    when "8-2-6-sample5"
+      | Is #[b é] an fhadhb go bhfuil sé ró-leisciúil.
+    when "8-2-7-p"
+      | Ní shéimhítear na forainmnigh phearsanta i ndiaidh réamhfhocal a dtagann séimhiú ar a lorg.
+    when "8-2-7-sample1"
+      | Ar imigh sé gan #[b sinn]?
+    when "8-2-7-sample2"
+      | Níor bhuail mé riamh le daoine mar #[b sibh].
+    when "8-3-title"
+      | Na hAidiachtaí Sealbhacha
+    when "8-3-1-p"
+      | Sa tábla thíos, léirítear na haidiachtaí sealbhacha agus na hathruithe tosaigh a leanann iad. Is iad na leaganacha treise, agus ainmfhocail ag gabháil leo, atá leagtha amach sa tábla. Cuirtear fleiscín idir dhá #[i s], e.g., #[i mo phas-sa], agus idir dhá #[i n], e.g., #[i ár n&#x2011;arán-na]. Mura mbíonn treise i gceist, fágtar na hiarmhíreanna #[i -sa] (#[i -se]), #[i -san] (#[i -sean]), #[i -na] (#[i -ne]) ar lár.
+    when "8B-caption"
+      | Na hAidiachtaí Sealbhacha
+    when "TheSingular"
+      | An tUatha
+    when "ThePlural"
+      | An tIolra
+    when "8-3-1-sample1"
+      | An bhfaca tú #[b mo mhálasa]?
+    when "8-3-1-sample2"
+      | Cad a tharla #[b dár mbronntanaisne]?
+    when "8-3-1-sample3"
+      | Chaill siad #[b a gcluichesean].
+    when "8-3-2-p"
+      | Is féidir na foirmeacha treise den fhorainmneach pearsanta (#[i seisean], #[i sise], #[i siadsan]) a úsáid freisin chun treise a chur in iúl, e.g., #[i a gheansaí seisean]; #[i a cóta sise]; #[i a dteach siadsan].
+    when "8-3-2-sample1"
+      | Ní raibh mórán i gceist #[b lena mhodúil seisean].
+    when "8-3-2-sample2"
+      | An bhfaca tú #[b a carr sise]?
+    when "8-3-2-sample3"
+      | Tá neart le déanamh ar #[b a bhfeirm siadsan].
+    when "8-3-3-p"
+      | I gcás ina bhfuil an bhunuimhir #[i dhá] idir an aidiacht shealbhach agus an t&#x2011;ainmfhocal, ní ar an mbunuimhir ach ar an ainmfhocal a dhéantar na hathruithe tosaigh.
+    when "8C-caption"
+      | An Aidiacht Shealbhach agus #[i dhá]
+    when "FollowingDha"
+      | (i ndiaidh #[i dhá])
+    when "8-3-3-sample1"
+      | Buail #[b do dhá bhos] ar a chéile.
+    when "8-3-3-sample2"
+      | Thit sí ar #[b a dhá glúin]. (#[i bain.])
+    when "8-3-3-sample3"
+      | Ar dhíol siad #[b a dhá n&#x2011;árasán]? (#[i iol.])
+    when "8-3-4-p"
+      | Chun feidhm forainmnigh shealbhaigh a chomhlíonadh &mdash;
+    when "8-3-4-a-p"
+      | úsáidtear aidiacht shealbhach móide #[i ceann] nó #[i cuid] arna threisiú le hiarmhír, e.g., #[i mo cheannsa]; #[i a gcuidsean]; nó
+    when "8-3-4-b-p"
+      | úsáidtear aidiacht shealbhach móide #[i cuid] arna threisiú le hiarmhír agus leis an ainmfhocal, e.g., #[i ár gcuidne airgid]; #[i bhur gcuidse iarrachtaí].
+    when "8D-caption"
+      | An Aidiacht Shealbhach agus #[i ceann] nó #[i cuid]
+    when "8-3-4-sample1"
+      | Is é sin #[b mo cheannsa].
+    when "8-3-4-sample2"
+      | Cé acu ceann #[b a ceannsa]?
+    when "8-3-4-sample3"
+      | Cá bhfuil #[b bhur gcuidse]?
+    when "8-3-4-sample4"
+      | Ní bhfuair siad #[b a gcuidsean].
+    when "8-3-4-sample5"
+      | Déan #[b do chuidse oibre].
+    when "8-3-4-sample6"
+      | Mhill sé #[b a chuidsean gruaige].
+    when "8-3-4-sample7"
+      | Is é #[b ár gcuidne airgid] é.
+    when "8-3-4-sample8"
+      | An bhfaca tú #[b mo chinnse]?
+    when "8-3-5-p"
+      | Chun aidiacht shealbhach a úsáid mar chuspóir ainm bhriathartha, cuirtear an réamhfhocal #[i do] roimh an aidiacht shealbhach sa chéad agus sa dara pearsa, uatha agus iolra, agus cuirtear #[i á] roimh an tríú pearsa, uatha agus iolra, mar seo a leanas:
+    when "8E-caption"
+      | An Aidiacht Shealbhach mar Chuspóir Ainm Bhriathartha
+    when "8-3-5-sample1"
+      | Ná bí #[b do mo chéasadh]!
+    when "8-3-5-sample2"
+      | An bhfuil an #[b obair á déanamh] agaibh?
+    when "8-3-5-sample3"
+      | Bhí sé #[b dár gcuardach].
+    when "8-3-6-p"
+      | Má tá aidiacht shealbhach ar lorg réamhfhocail, ní dhéantar cumasc idir an réamhfhocal agus an aidiacht shealbhach i gcásanna den sórt seo a leanas.
+    when "8-3-6-sample1"
+      | Bhí carr #[b ag mo] mháthair nuair a bhí sí óg.
+    when "8-3-6-sample2"
+      | Ar thug tú bronntanas #[b do do] mháthair?
+    when "8-3-6-sample3"
+      | Cad a thug tú #[b ]do d&rsquo;#[b ]athair?
+    when "8-3-6-sample4"
+      | Bhí hata #[b ar a] cheann. (#[i fir.])
+    when "8-3-6-sample5"
+      | Bhí caipín #[b ar a] ceann. (#[i bain.])
+    when "8-3-6-sample6"
+      | Tugadh an t&#x2011;uisce #[b as ár] dtobarna.
+    when "8-3-6-sample7"
+      | An grianghraf #[b de bhur] dteach é?
+    when "8-3-6-sample8"
+      | Tá siad géar #[b as a] mbarr.
+    when "8-3-7-p"
+      | I gcás na réamhfhocal #[i de] agus #[i do], déantar cumasc idir an réamhfhocal agus an aidiacht shealbhach sa tríú pearsa, uatha agus iolra, agus sa chéad phearsa iolra mar a leanas:
+    when "8-3-7-sample1"
+      | Bhain sé an hata #[b dá cheann]. (#[i fir.])
+    when "8-3-7-sample2"
+      | Bhain sí an hata #[b dá ceann]. (#[i bain.])
+    when "8-3-7-sample3"
+      | Bhain siad na hataí #[b dá gceann]. (#[i iol.])
+    when "8-3-7-sample4"
+      | Thug sé #[b dá athair] é. (#[i fir.])
+    when "8-3-7-sample5"
+      | Thug sí #[b dá hathair] é. (#[i bain.])
+    when "8-3-7-sample6"
+      | Thug siad #[b dá n&#x2011;athair] é. (#[i iol.])
+    when "8-3-7-sample7"
+      | Scaoileamar #[b dár ngreim].
+    when "8-3-7-sample8"
+      | Thugamar #[b dár n&#x2011;aintíní] iad.
+    when "8-3-8-p"
+      | Cuirtear #[i n] idir na réamhfhocail #[i faoi], #[i i], #[i le], #[i ó] agus #[i trí] agus an aidiacht shealbhach nó an mhír #[i a] sna cásanna seo a leanas:
+    when "8-3-8-a-p"
+      | an aidiacht shealbhach;
+    when "8-3-8-a-sample1"
+      | Fuair sé #[b inár] gcarr é.
+    when "8-3-8-a-sample2"
+      | Labhair sé #[b faoina] mhac.
+    when "8-3-8-b-p"
+      | an mhír uimhriúil #[i a];
+    when "8-3-8-b-sample1"
+      | Beidh mé ann #[b faoina] sé a chlog.
+    when "8-3-8-b-sample2"
+      | Beidh an scannán ar siúl #[b óna] ceathair a chlog.
+    when "8-3-8-c-p"
+      | an mhír theibí #[i a];
+    when "8-3-8-c-sample1"
+      | Fuair sé ardmholadh #[b trína] fheabhas a rinne sé an obair.
+    when "8-3-8-c-sample2"
+      | Ní raibh mé sásta #[b lena] fhad a thóg sé.
+    when "8-3-8-d-p"
+      | i bhfrásaí amhail #[i a lán]; #[i a leithéid]; #[i a thuilleadh];
+    when "8-3-8-d-sample1"
+      | Ceadófar post lánaimseartha #[b ina leithéid] de chás.
+    when "8-3-8-d-sample2"
+      | Fuair sí billí #[b óna lán] siopadóirí.
+    when "8-3-8-e-p"
+      | an mhír choibhneasta #[i a];
+    when "8-3-8-e-sample1"
+      | Sin an t&#x2011;áras #[b ina] seolfar an leabhar.
+    when "8-3-8-e-sample2"
+      | Cuir ríomhphost chugam #[b faoina] bhfuil socraithe agat.
+    when "8-3-8-e-note"
+      | Ní chuirtear #[i n] idir #[i go dtí] agus an aidiacht shealbhach nó an mhír #[i a] in aon chás.
+    when "8-3-8-e-sample3"
+      | Chuaigh sí #[b go dtí a] teach tar éis na hoibre.
+    when "8-3-8-e-sample4"
+      | Ní dheachamar #[b go dtí ár] gcóisir féin.
+    when "8-3-8-e-sample5"
+      | Níor thosaigh an léacht #[b go dtí a] cúig a chlog.
+    when "8-3-8-e-sample6"
+      | Bhíomar ann #[b go dtí a] dó dhéag.
+    when "8-3-9-p"
+      | Cuirtear #[i n] idir an réamhfhocal #[i ar] agus an aidiacht shealbhach #[i a] chun #[i arna] a chruthú. Réitíonn an t&#x2011;ainm briathartha le hinscne agus le huimhir an ainmfhocail a thagann roimhe, e.g., #[i leabhar arna eisiúint]; #[i tuarascáil arna seoladh]; #[i doiciméid arna bhfoilsiú].
+    when "8-3-9-sample1"
+      | Measfar é a bheith #[b arna thoghadh] faoin Acht seo. (#[i fir.])
+    when "8-3-9-sample2"
+      | Ciallaíonn "Cúirt Chuarda" an Chúirt Chuarda #[b arna bunú] le dlí. (#[i bain.])
+    when "8-3-9-sample3"
+      | Déanfar é faoi réir rialacháin #[b arna ndéanamh] faoi fho-alt 7. (#[i iol.])
+    when "8-4-title"
+      | Na Forainmnigh Réamhfhoclacha
+    when "8F-caption"
+      | Na Forainmnigh Réamhfhoclacha
+    when "TheThirdPerson"
+      | An Triú Pearsa
+    when "8-4-p"
+      | Tabhair faoi deara:
+    when "8-4-a-p"
+      | Chun treise a léiriú leis na forainmnigh réamhfhoclacha, déantar cumasc idir na forainmneacha réamhfhoclacha agus na hiarmhíreanna #[i -sa] (#[i -se]), #[i -san] (#[i -sean]), #[i -ne] , e.g., #[i agamsa], #[i agatsa], #[i aigesean], #[i aicise], #[i againne], #[i agaibhse], #[i acusan].
+    when "8-4-b-p"
+      | Déantar #[i -nne] de #[i -nn] + #[i -ne], e.g., #[i againne], #[i orainne], etc., agus cuirtear fleiscín idir dhá #[i s], e.g., #[i as-san], #[i leis-sean], #[i thairis-sean].
+    when "8-5-title"
+      | Na Forainmnigh Cheisteacha
+    when "8-5-1-p"
+      | Is iad #[i cá], #[i cad], #[i cé] agus #[i céard] na forainmnigh cheisteacha.
+    when "8-5-1-sample1"
+      | #[b Cá] bhfuil tú ag dul?
+    when "8-5-1-sample2"
+      | #[b Cá] ndeachaigh sé ar maidin?
+    when "8-5-1-sample3"
+      | #[b Cad] as duit?
+    when "8-5-1-sample4"
+      | #[b Cad] mar gheall ar an gceann seo?
+    when "8-5-1-sample5"
+      | #[b Cé] atá ag teacht?
+    when "8-5-1-sample6"
+      | #[b Cé] na ceisteanna atá agat?
+    when "8-5-1-sample7"
+      | #[b Céard] a tharla aréir?
+    when "8-5-1-sample8"
+      | #[b Céard] a rinne siad tar éis na hoibre?
+    when "8-5-2-p"
+      | Cuirtear #[i h] roimh fhocal dar tús guta ar lorg #[i cá] (féach #[+link("./chapter10.html#sec_10_11_4", "10.11.4")]).
+    when "8-5-2-sample1"
+      | #[b Cá háit] a ndeachaigh siad?
+    when "8-5-2-sample2"
+      | #[b Cá huair] a bheidh tú ag filleadh?
+    when "8-5-2-sample3"
+      | #[b Cá hiontas]?
+    when "8-5-2-sample4"
+      | #[b Cá haois] é?
+    when "8-5-3-p"
+      | Cuirtear #[i h] roimh na forainmnigh #[i é] (#[i eisean]), #[i í] (#[i ise]) agus #[i iad] (#[i iadsan]) ar lorg #[i cé] (féach #[+link("./chapter10.html#sec_10_13_1", "10.13.1")])).
+    when "8-5-3-sample1"
+      | #[b Cé hé] an fear sin?
+    when "8-5-3-sample2"
+      | #[b Cé hí] féin?
+    when "8-5-3-sample3"
+      | #[b Cé hiad] na saineolaithe?
+    when "8-5-3-sample4"
+      | #[b Cé hiadsan]?
+    when "8-5-4-p"
+      | Ní shéimhítear na forainmnigh cheisteacha (féach #[+link("./chapter10.html#sec_10_5_2", "10.5.2")]), ach déantar cumasc idir #[i cá], #[i cé] agus an chopail chun na foirmeacha #[i cár], #[i cárb], #[i cárbh], #[i cér], #[i cérb] agus #[i cérbh] a chruthú (féach #[+link("./chapter7.html#sec_7_3_1", "7.3.1")]). Déantar cumasc idir #[i cé] agus an t&#x2011;alt uatha an chun #[i cén] a chruthú.
+    when "8-5-4-sample1"
+      | #[b Cár] chuir tú é?
+    when "8-5-4-sample2"
+      | #[b Cárb] as thú?
+    when "8-5-4-sample3"
+      | #[b Cárbh] ard é?
+    when "8-5-4-sample4"
+      | #[b Cér] de/díobh é?
+    when "8-5-4-sample5"
+      | #[b Cérb] é sin?
+    when "8-5-4-sample6"
+      | #[b Cérbh] iad na cuairteoirí?
+    when "8-5-4-sample7"
+      | #[b Cén] t-achar anseo tú?
+    when "8-5-4-sample8"
+      | #[b Cén] dochar é?
+    when "8-5-5-p"
+      | Úsáidtear an leagan firinscneach uatha den fhorainmneach réamhfhoclach nó den aidiacht shealbhach #[i a] in abairtí ceisteacha, beag beann ar uimhir nó inscne an ní nó na nithe dá bhfuiltear ag tagairt, e.g., #[i Cé leis a raibh tú ag caint?] (is ag tagairt d&rsquo;fhear, do bhean nó do ghrúpa atá #[i leis]); #[i Cé ina aghaidh a raibh siad ag imirt?] (is ag tagairt d&rsquo;fhear, do bhean nó do ghrúpa atá an aidiacht shealbhach #[i a]).
+    when "8-5-5-sample1"
+      | Cad #[b é] a chuir tú ann?
+    when "8-5-5-sample2"
+      | Cé #[b aige] a bhfuil na ticéid?
+    when "8-5-5-sample3"
+      | Céard #[b faoi] a bhfuil sibh ag caint?
+    when "8-6-title"
+      | Na Forainmnigh Thaispeántacha
+    when "8-6-1-p"
+      | Is forainmnigh thaispeántacha iad #[i seo], #[i sin] agus #[i siúd]. Úsáidtear na forainmnigh thaispeántacha ar cheithre bhealach:
+    when "8-6-1-a-p"
+      | go comhaisnéiseach le forainmneach atá roimhe, e.g., #[i Is bronntanas é sin]; #[i Tabhair cabhair dóibh seo]; #[i Cá bhfuil a cóipleabhar siúd]?; #[i dá rachaidís siúd];
+    when "8-6-1-b-p"
+      | go comhaisnéiseach roimh an bhforainmneach pearsanta, e.g., #[i Sin é an bronntanas]; #[i Seo é an cóipleabhar]; #[i Siúd iad na múinteoirí]; #[i Siúd í an traein chugainn];
+    when "8-6-1-c-p"
+      | thar ceann an fhorainmnigh phearsanta, e.g., #[i Tá sin álainn]; #[i Ith seo]; #[i An bhfuil siúd amhlaidh?]; #[i D&rsquo;imigh siúd leis an mbus]; #[i Sin madra]; #[i Seo an mála]; #[i Siúd an fhírinne]; #[i Cad seo?]; #[i Cé sin?]; #[i Sin sin]; #[i mar seo]; #[i go dtí sin]; #[i gan siúd a ól];
+    when "8-6-1-d-p"
+      | le feidhm dhobhriathair, e.g., #[i chomh híseal seo] (#[i sin], #[i siúd]); #[i chomh mór seo] (#[i sin], #[i siúd]).
+    when "8-6-2-p"
+      | Is minic a úsáidtear na foirmeacha #[i eo], #[i in] agus #[i iúd] in ionad #[i seo], #[i sin] agus #[i siúd] ar lorg na copaile. Tabhair faoi deara nach n&#x2011;úsáidtear na leaganacha #[i eo], #[i in] ná #[i iúd] tar éis #[i is].
+    when "8-6-2-sample1"
+      | B&rsquo;#[b eo] an áit.
+    when "8-6-2-sample2"
+      | Ní #[b heo] é an leabhar.
+    when "8-6-2-sample3"
+      | Nach #[b eo] é mo chótasa?
+    when "8-6-2-sample4"
+      | B&rsquo;#[b in] é é.
+    when "8-6-2-sample5"
+      | Ní #[b hin] mar a bheadh an cás.
+    when "8-6-2-sample6"
+      | Dúirt sí gurb #[b in] é an fear.
+    when "8-6-2-sample7"
+      | B&rsquo;#[b iúd] iad ag imeacht ar cosa in airde.
+    when "8-6-2-sample8"
+      | Is dócha gurbh #[b iúd] é é.
+    when "8-6-2-sample9"
+      | An #[b iúd] iad na comharsana?
+    when "8-6-3-p"
+      | Is cumasc idir #[i é] agus #[i rud] é an forainmneach taispeántach #[i éard] a úsáidtear ar lorg na copaile.
+    when "8-6-3-sample1"
+      | Is #[b éard] is cúram dúinne airgead a thabhairt on loan.
+    when "8-6-3-sample2"
+      | Ba #[b éard] a bhí mé a rá go mbeidh sé críochnaithe go luath.
+    when "8-6-3-sample3"
+      | Shílfeadh duine gurb #[b éard] atá á chur i gcéill agat ná go ndearnadh d&rsquo;aon ghnó é.
+    when "8-6-3-sample4"
+      | An #[b éard] atá beartaithe foirgneamh nua a thógáil ann?
+    default
+      - throw new Error(`No content for ${key} (ga.pug)`)
