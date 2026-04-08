@@ -1,0 +1,568 @@
+include ../../tlMatter.pug
+
+mixin gaDb(key)
+  case key
+    when "teidealNaCaibidle"
+      | An Uimhir
+    when "9-1-title"
+      | Ginearálta
+    when "9-title"
+      | #[+renderKey("Caibidil", { getFromCommon: true })] 9 | #[+gaDb("teidealNaCaibidle")]
+    when "9-1-1-p"
+      | Is iad na príomhleaganacha den uimhir sa Ghaeilge an Mhaoluimhir, an Bhunuimhir, an Uimhir Phearsanta, an Orduimhir, an Codán agus an Uimhir Dheachúlach.
+    when "9-1-1-a-title"
+      | An Mhaoluimhir
+    when "9-1-1-a-p"
+      | Tugtar maoluimhir ar uimhir nach dtagann ainmfhocal go díreach ar a lorg. Úsáidtear an mhaoluimhir i gcomhaireamh lom, e.g., #[i a haon]; #[i a cúig]; #[i a deich] (féach #[+link("#sec_9_2", "9.2")]).
+    when "9-1-1-b-title"
+      | An Bhunuimhir
+    when "9-1-1-b-p"
+      | Tugtar bunuimhir ar uimhir a chuirtear roimh ainmfhocal chun líon rudaí a chur in iúl, e.g., #[i trí leabhar]; #[i seacht gcupán]; #[i naoi mbád] (féach #[+link("#sec_9_3", "9.3")]).
+    when "9-1-1-c-title"
+      | An Uimhir Phearsanta
+    when "9-1-1-c-p"
+      | Tugtar uimhir phearsanta ar uimhir a úsáidtear chun daoine a chomhaireamh, e.g., #[i beirt bhan]; #[i ceathrar daltaí]; #[i ochtar feirmeoirí] (féach #[+link("#sec_9_4", "9.4")]).
+    when "9-1-1-d-title"
+      | An Orduimhir
+    when "9-1-1-d-p"
+      | Tugtar orduimhir ar uimhir lena gcuirtear ionad ruda i sraith rudaí in iúl, e.g., #[i an chéad teach]; #[i an dara bean]; #[i an fichiú haois] (féach #[+link("#sec_9_5", "9.5")]).
+    when "9-1-1-e-title"
+      | An Codán
+    when "9-1-1-e-p"
+      | Cainníocht uimhriúil nach slánuimhir (uimhir iomlán) is ea an codán, e.g., #[i ceathrú (1/4)]; #[i ceithre chúigiú (4/5)]; #[i cúig shéú (5/6)] (féach #[+link("#sec_9_6", "9.6")]).
+    when "9-1-1-f-title"
+      | An Uimhir Dheachúlach
+    when "9-1-1-f-p"
+      | Bealach eile chun cainníocht uimhriúil nach slánuimhir a chur in iúl, agus úsáid á baint as an bpointe deachúlach, is ea an uimhir dheachúlach, e.g., #[i 3.1]; #[i 7.5]; #[i 18.49]; #[i 34.023] (féach #[+link("#sec_9_7", "9.7")]).
+    when "9-1-2-p"
+      | Tugtar rogha idir dhá chóras chun déileáil le bunuimhreacha agus le huimhreacha pearsanta sa scríbhneoireacht: an Córas Seanbhunaithe agus an Córas Simplithe. Úsáidtear an Córas Seanbhunaithe le huimhreacha ó 1&ndash;19 i gcónaí. Is féidir an Córas Seanbhunaithe nó an Córas Simplithe a úsáid le huimhreacha ó 20 ar aghaidh.
+    when "9-2-title"
+      | An Mhaoluimhir
+    when "Table9A-caption"
+      | #[+renderKey("TheBareNumbers")] 0&ndash;19
+    when "Table9B-caption"
+      | #[+renderKey("TheBareNumbers")] 20&ndash;99
+    when "Table9C-caption"
+      | #[+renderKey("TheBareNumbers")] #[+renderKey("TheTens")]
+    when "Table9D-caption"
+      | #[+renderKey("TheBareNumbers")] 100&ndash;9,999
+    when "Table9E-caption"
+      | #[+renderKey("TheBareNumbers")] 10,000+
+    when "9-2-p"
+      | Tugtar maoluimhir ar uimhir a úsáidtear i gcomhaireamh lom nuair nach gcuirtear líon nó ord rudaí nó daoine in iúl, e.g., #[i a haon]; #[i a trí déag]; #[i a tríocha trí]; #[i céad nócha a cúig]; #[i míle, ceithre chéad seachtó a naoi].
+    when "9-2-1-title"
+      | Na Maoluimhreacha 0&ndash;99
+    when "9-2-1-a-p"
+      | Cuirtear an mhír #[i a] roimh uimhreacha ó 1&ndash;19, e.g., #[i a haon]; #[i a dó]; #[i a trí]; #[i bus a ceathair]; #[i a hocht déag]; agus i gcás 20&ndash;99 (seachas na deicheanna), cuirtear í roimh an uimhir dheiridh, e.g., #[i fiche a haon]; #[i daichead a sé]; #[i seachtó a hocht].
+    when "9-2-1-b-p"
+      | Tá comhstádas ag na focail #[i ceathracha] agus #[i daichead].
+    when "9-2-1-p1"
+      | Seo mar a scríobhtar na maoluimhreacha ó 0&ndash;19.
+    when "TheBareNumbers"
+      | Na Maoluimhreacha
+    when "9-2-1-p2"
+      | Tabhair faoi deara go n&#x2011;úsáidtear an mhaoluimhir i gcúrsaí ama, e.g., #[i a haon a chlog]; #[i a seacht a chlog]; #[i a fiche tar éis a cúig]. Seo mar a scríobhtar an t&#x2011;am i bhfoirm figiúirí: #[i 5.30 p.m.]; #[i 4.26 p.m.]; #[i 13:00]; #[i 16:47].
+    when "9-2-1-p3"
+      | Seo mar a scríobhtar na maoluimhreacha ó 20&ndash;99. Tugtar an córas iomlán idir 20 agus 29 sa tábla agus tugtar samplaí i gcás na ndeicheanna eile.
+    when "9-2-2-title"
+      | Na Maoluimhreacha 100+
+    when "9-2-2-a-p"
+      | Is ainmfhocail iad na huimhreacha #[i céad], #[i míle], #[i milliún], #[i billiún], etc. Dá bhrí sin, is é córas na mbunuimhreacha a úsáidtear má tá na huimhreacha 2&ndash;19 roimh shraith náideanna a fhreagraíonn do #[i céad], #[i míle], #[i milliún], #[i billiún], etc., e.g., #[i ceithre chéad]; #[i dhá chéad míle]; #[i naoi milliún déag]; #[i dhá bhilliún]; #[i ocht mbilliún] (féach #[+link("#sec_9_3", "9.3")] An Bhunuimhir).
+    when "9-2-2-b-p"
+      | Ní dhéantar athrú tosaigh ar an ainmfhocal i ndiaidh na ndeicheanna, e.g., #[i fiche míle]; #[i tríocha milliún]; etc.
+    when "TheTens"
+      | Na Deicheanna
+    when "9-2-3-title"
+      | Na Maoluimhreacha 10,000+
+    when "9-2-3-a-p"
+      | Tá dhá chóras ann chun na maoluimhreacha os cionn 10,000 a chur in iúl &mdash; córas na mbunuimhreacha agus córas na maoluimhreacha.
+    when "9-2-3-b-p"
+      | I gcóras na mbunuimhreacha leanann ord na bhfocal rialacha na mbunuimhreacha, e.g., #[i 24,000 &mdash; ceithre mhíle is fiche] (féach #[+link("#table9n", "tábla 9N")]). Faoi chóras na maoluimhreacha, úsáidtear an mhaoluimhir móide an t&#x2011;ainmfhocal lom (#[i céad], #[i míle], etc.) gan chlaochlú, e.g., #[i 24,000 &mdash; fiche a ceathair míle].
+    when "9-2-3-p1"
+      | Tabhair faoi deara go n&#x2011;úsáidtear #[i is] i gcóras na mbunuimhreacha os cionn 10,000 ach nach n&#x2011;úsáidtear é sna maoluimhreacha eile.
+    when "9-2-3-p2"
+      | Seo mar a scríobhtar na maoluimhreacha os cionn 10,000.
+    when "Table9E-col2"
+      | Córas na mBunuimhreacha
+    when "Table9E-col3"
+      | Córas na Maoluimhreacha
+    when "9-3-title"
+      | An Bhunuimhir
+    when "Table9F-caption"
+      | #[+renderKey("TheCardinalNumbers")] 1&ndash;19
+    when "9-3-1-title"
+      | Na Bunuimhreacha 1&ndash;19
+    when "9-3-1-a-p"
+      | Tugtar #[i bunuimhir] ar an uimhir a chuirtear le hainmfhocal chun líon rudaí a chur in iúl.
+    when "9-3-1-b-p"
+      | Tagann an t&#x2011;ainmfhocal ar lorg #[i aon], #[i dhá], #[i trí], #[i ceithre], #[i cúig], #[i sé], #[i seacht], #[i ocht], #[i naoi], #[i deich].
+    when "9-3-1-c-p"
+      | Tabhair faoi deara go n&#x2011;úsáidtear na bunuimhreacha #[i dhá] agus #[i ceithre] seachas na foirmeacha maoluimhreach #[i dó] agus #[i ceathair].
+    when "9-3-1-d-p"
+      | Ní mór an focal #[i amháin] a lua tar éis na bunuimhreach #[i aon] agus an ainmfhocail. Ní gá, áfach, #[i aon] a lua i gcónaí, e.g., #[i aon chapall amháin]; #[i capall amháin].
+    when "9-3-1-e-p"
+      | Ní chuirtear séimhiú ar #[i d], #[i t] nó #[i s] tar éis #[i aon], e.g., #[i aon doras amháin]; #[i aon teach amháin].
+    when "9-3-1-f-p"
+      | I ndiaidh an ainmfhocail a thagann an focal #[i déag], e.g., #[i ceithre leabhar déag]. Séimhítear an focal #[i déag] má chríochnaíonn an focal díreach roimhe ar ghuta (ach féach #[+link("#sec_9_3_2_e", "9.3.2(e)")]), seachas i ndiaidh #[i euro].
+    when "9-3-1-p"
+      | Tabhair faoi deara, más aonad brí ar leith an t&#x2011;ainmfhocal agus an cáilitheoir, e.g., #[i madra rua]; #[i cat crainn]; #[i teach tábhairne]; #[i láthair champála] (seachas gnáth-ainmfhocal agus cáilitheoir, e.g., #[i leabhar dearg]) is i ndiaidh an ainmfhocail agus an cháilitheora a chuirtear #[i déag], e.g., #[i ceithre mhadra rua dhéag]; #[i cúig theach tábhairne dhéag]; #[i sé chat crainn déag]; #[i seacht n&#x2011;iora ghlasa dhéag]. Cuirtear aon cháilitheoir eile i ndiaidh #[i déag], e.g., #[i sé chat crainn déag mhóra]; #[i seacht n&#x2011;iora ghlasa dhéag fhiáine].
+    when "9-3-1-g-p"
+      | Ní shéimhítear #[i dhá] i ndiaidh an ailt, #[i aon] ná #[i céad], e.g., #[i an dá leabhar]; #[i an chéad dá leabhar]; #[i aon dá leabhar].
+    when "9-3-1-h-p"
+      | Cuireann na bunuimhreacha #[i aon], #[i dhá] (ach féach #[+link("./chapter8.html#sec_8_3_3", "8.3.3")]), #[i trí], #[i ceithre], #[i cúig] agus #[i sé] séimhiú ar an ainmfhocal uatha a thagann ina ndiaidh, e.g., #[i trí bhád]; ach ní shéimhítear an focal #[i cent], e.g., #[i trí cent].
+    when "9-3-1-i-p"
+      | Cuireann na bunuimhreacha #[i seacht], #[i ocht], #[i naoi] agus #[i deich] urú ar an ainmfhocal uatha agus iolra a thagann ina ndiaidh, e.g., #[i seacht gcnámh]; #[i deich gcinn]; ach ní uraítear an focal #[i euro], e.g., #[i ocht euro]; #[i naoi euro], ná #[i cent], e.g., #[i ocht cent]; #[i deich cent].
+    when "TheCardinalNumbers"
+      | Na Bunuimhreacha
+    when "9-3-2-title"
+      | Ainmfhocail a bhfuil Leagan Iolra ar leith acu i nDiaidh na mBunuimhreacha
+    when "9-3-2-p"
+      | Tá roinnt ainmfhocal ann arb í foirm an ainmnigh iolra díobh, nó leagan iolra ar leith díobh, a úsáidtear i ndiaidh na mbunuimhreacha 3&ndash;10 agus i ndiaidh uimhreacha a chríochnaíonn ar 3&ndash;9. Léirítear na hainmfhocail sin sa tábla thíos. Cé nach leagan iolra #[i é fichid], áirítear an leagan sin san aicme seo.
+    when "Table9G-caption"
+      | Na Bunuimhreacha &mdash; Foirmeacha na nAinmfhocal a bhfuil Leagan Iolra ar leith acu
+    when "Table9G-exception"
+      | (#[i seachas sa bhrí] ball beatha)
+    when "Table9G-babhta"
+      | babhta
+    when "9-3-2-a-p"
+      | Foirm an ainmnigh uatha de na hainmfhocail a úsáidtear leis na bunuimhreacha 1&ndash;2 agus i ndiaidh uimhreacha a chríochnaíonn ar 1&ndash;2, e.g., #[i aon phingin amháin]; #[i dhá bhliain]; #[i aon uair déag]; #[i dhá cheann is tríocha].
+    when "9-3-2-b-p"
+      | Ní chuirtear séimhiú ar an leagan iolra i ndiaidh 3&ndash;6 ná i ndiaidh uimhreacha a chríochnaíonn ar 3&ndash;6, e.g., #[i trí seachtaine]; #[i ceithre cinn déag].
+    when "9-3-2-c-p"
+      | I ndiaidh 3&ndash;6 agus i ndiaidh uimhreacha a chríochnaíonn ar 3&ndash;6 cuirtear #[i h] roimh an leagan iolra #[i uaire], e.g., #[i cúig huaire].
+    when "9-3-2-d-p"
+      | Cuireann na huimhreacha 7&ndash;10 agus uimhreacha a chríochnaíonn ar 7&ndash;9 urú ar an leagan iolra, e.g., #[i seacht mbliana]; #[i ocht bpingine déag].
+    when "9-3-2-e-p"
+      | Ní chuirtear séimhiú ar #[i déag] i ndiaidh an leagain iolra, fiú amháin sa chás go gcríochnaíonn sé ar ghuta, e.g., #[i trí bliana déag]; #[i ocht n&#x2011;uaire déag].
+    when "9-3-2-f-p"
+      | Is í foirm an ainmnigh uatha a úsáidtear i ndiaidh na ndeicheanna (seachas #[i deich]), e.g., #[i fiche bliain]; #[i tríocha pingin]; #[i ochtó troigh].
+    when "Table9H-caption"
+      | Na Bunuimhreacha &mdash; Samplaí d&rsquo;Fhoirmeacha na nAinmfhocal a bhfuil Leagan Iolra ar leith acu
+    when "Table9H-header"
+      | Na Bunuimhreacha &mdash; Leaganacha Iolra ar leith
+    when "9-3-3-title"
+      | An Aidiacht leis na Bunuimhreacha 1&ndash;19
+    when "9-3-3-a-p"
+      | Ar lorg na bunuimhreach 1, is san uimhir uatha a bhíonn an aidiacht a ghabhann leis an ainmfhocal agus í ar aon inscne leis an ainmfhocal.
+    when "9-3-3-b-p"
+      | Ar lorg na n&#x2011;uimhreacha eile (2&ndash;19), bíonn an aidiacht san uimhir iolra agus séimhítear í.
+    when "9-3-3-c-p"
+      | Cuirtear an focal #[i déag] roimh aidiacht nó aidiachtaí atá ag gabháil leis an ainmfhocal (ach féach #[+link("#sec_9_3_1_f", "9.3.1(f")])).
+    when "Table9I-caption"
+      | Na Bunuimhreacha 1&ndash;19 &mdash; Foirm na hAidiachta
+    when "Table9I-header"
+      | An Aidiacht leis na Bunuimhreacha
+    when "9-3-4-title"
+      | Foirm na hAidiachta leis na hAinmfhocail a bhfuil Leagan Iolra ar leith acu
+    when "9-3-4-a-p"
+      | Ar lorg na bunuimhreach 1, is san uimhir uatha a bhíonn an aidiacht a ghabhann leis an ainmfhocal, agus í ar aon inscne leis an ainmfhocal.
+    when "9-3-4-b-p"
+      | Cuirtear an aidiacht san uimhir iolra i ndiaidh an leagain iolra ach ní chuirtear séimhiú ar an aidiacht sa chás go gcríochnaíonn an leagan iolra sin ar ghuta. Séimhítear an aidiacht i ndiaidh #[i cinn] agus #[i fichid].
+    when "Table9J-caption"
+      | Na Bunuimhreacha 1&ndash;19 &mdash; Foirm na hAidiachta leis na hAinmfhocail a bhfuil Leagan Iolra ar leith acu
+    when "Table9J-header"
+      | An Aidiacht leis na hAinmfhocail a bhfuil Leagan Iolra ar leith acu
+    when "9-3-5-title"
+      | An tAlt leis na Bunuimhreacha 1&ndash;19
+    when "9-3-5-a-p"
+      | Foirm uatha an ailt
+    when "9-3-5-a-i-p"
+      | Cuirtear foirm uatha an ailt roimh an mbunuimhir 1, roimh uimhreacha a chríochnaíonn ar 1, agus roimh iolraithe ar 10 ó 20 ar aghaidh.
+    when "9-3-5-a-ii-p"
+      | Cuirtear #[i t&#x2011;] roimh an mbunuimhir #[i aon] ar lorg an ailt, e.g., #[i an t&#x2011;aon leabhar amháin]; #[i an t&#x2011;aon bhileog amháin]. Baintear an #[i t&#x2011;] i ndiaidh réamhfhocal, e.g., #[i san aon leabhar amháin]; #[i tríd an aon fhuinneog amháin].
+    when "9-3-5-a-iii-p"
+      | Foirm uatha an ailt a chuirtear roimh an mbunuimhir #[i dhá] freisin ach déantar #[i dá] den bhunuimhir, e.g., #[i an dá chapall].
+    when "9-3-5-b-p"
+      | Foirm iolra an ailt
+    when "9-3-5-b-i-p"
+      | Is í foirm iolra an ailt a chuirtear roimh na bunuimhreacha 3&ndash;9 agus 13&ndash;19.
+    when "9-3-5-b-ii-p"
+      | Cuirtear #[i h] roimh bhunuimhir dar tús guta i ndiaidh fhoirm iolra an ailt, e.g., #[i na hocht gcapall].
+    when "9-3-5-c-p"
+      | Ní dhéanann an t&#x2011;alt aon difear d&rsquo;aidiacht ar lorg bunuimhreacha agus ainmfhocal, e.g., #[i an dá chapall mhóra].
+    when "Table9K-caption"
+      | Na Bunuimhreacha 1&ndash;19 &mdash; An tAlt
+    when "Table9K-header"
+      | An tAlt leis na Bunuimhreacha
+    when "9-3-5-note"
+      | Tabhair faoi deara, i gcás na n&#x2011;ainmfhocal a n&#x2011;úsáidtear leagan iolra ar leith díobh i ndiaidh na mbunuimhreacha, go leantar an patrún céanna, e.g., #[i an t&#x2011;aon bhliain amháin]; #[i an dá cheann mhóra]; #[i na hocht dtroithe déag]; etc.
+    when "9-3-6-title"
+      | Na Bunuimhreacha 1&ndash;19 &mdash; An Tuiseal Ginideach gan an tAlt
+    when "9-3-6-a-p"
+      | Téann athrú foirme ar ainmfhocal agus ar aidiacht sa ghinideach i ndiaidh #[i aon], e.g., #[i ualach aon chapaill mhóir amháin]; #[i fráma aon fhuinneoige báine amháin]; ach amháin nuair atá #[i déag] ag gabháil leis, e.g., #[i ualach aon chapall déag mhóra]; #[i fráma aon fhuinneog déag bhána].
+    when "9-3-6-b-p"
+      | I gcás 2&ndash;19, ní théann aon athrú foirme sa ghinideach ar an ainmfhocal ná ar an mbunuimhir, e.g., #[i fad dhá mhéadar]; #[i costas trí fhuinneog]; #[i úinéir seacht ngabhar]; #[i tréimhse naoi n&#x2011;oíche]; #[i tiománaithe trí thacsaí dhéag]; ach cuirtear an aidiacht san uimhir iolra agus séimhítear í, e.g., #[i costas trí fhuinneog dheasa]; #[i úinéir seacht ngabhar chrosta]; #[i tiománaithe trí thacsaí dhéag chostasacha]; ach amháin más leagan iolra ar leith é a chríochnaíonn ar ghuta nó ar chonsan leathan, e.g., #[i trí bliana crua].
+    when "9-3-7-title"
+      | Na Bunuimhreacha 1&ndash;19 &mdash; An Tuiseal Ginideach leis an Alt
+    when "9-3-7-a-p"
+      | Téann athrú foirme ar ainmfhocal agus ar aidiacht sa ghinideach i ndiaidh aon nuair atá an t&#x2011;alt ann faoi réir na bpointí seo a leanas.
+    when "9-3-7-a-i-p"
+      | De réir inscne an ainmfhocail, úsáidtear #[i an] nó #[i na] sa tuiseal ginideach roimh an mbunuimhir #[i aon] nuair nach bhfuil #[i déag] ag gabháil leis, e.g., #[i ualach an aon chapaill amháin]; #[i costas na haon fhuinneoige amháin]; ach #[i ábhar an aon chuntas déag amháin]; #[i ag ceartú an aon aiste dhéag shuimiúla].
+    when "9-3-7-a-ii-p"
+      | Más ainmfhocal baininscneach atá i gceist, ní foláir #[i h] a chur roimh an mbunuimhir #[i aon], e.g., #[i i gcaitheamh na haon oíche amháin sin].
+    when "9-3-7-a-iii-p"
+      | Más ainmfhocal firinscneach atá i gceist, baintear an #[i t&#x2011;] roimh an mbunuimhir #[i aon], e.g., #[i ar feadh an aon lae amháin sin].
+    when "9-3-7-b-p"
+      | Déantar #[i dá] de #[i dhá] i ndiaidh an ailt uatha (#[i an], #[i don], #[i sa], etc.).
+    when "9-3-7-c-p"
+      | I gcás na mbunuimhreacha #[i trí] go #[i deich], uraítear na bunuimhreacha inuraithe (#[i trí], #[i ceithre], #[i cúig], #[i ocht], #[i deich]) sa tuiseal ginideach i ndiaidh an ailt (#[i na]).
+    when "9-3-7-d-p"
+      | Tá na rialacha céanna le cur i bhfeidhm ar na hainmfhocail a bhfuil leagan iolra ar leith acu agus ar na haidiachtaí a ghabhann leo (féach #[+link("#sec_9_3_4", "9.3.4")]) agus a chuirtear i bhfeidhm sa tuiseal ainmneach, e.g., #[i tréimhse na sé bliana fada]; #[i deireadh na naoi seachtaine déag fada]; #[i Cogadh na Naoi mBliana]; #[i costas na dtrí troithe cearnacha eile]; #[i úinéir an dá cheann bhána]; #[i praghas na dtrí cinn mhóra].
+    when "Table9L-caption"
+      | Na Bunuimhreacha 1&ndash;19 &mdash; An Tuiseal Ginideach leis an Alt
+    when "Table9L-header"
+      | Tuiseal Ginideach na mBunuimhreacha leis an Alt
+    when "9-3-8-title"
+      | Na Bunuimhreacha a scríobh ina bhFigiúirí 1&ndash;19
+    when "9-3-8-p"
+      | Is ionann na rialacha a bhaineann leis na bunuimhreacha 1&ndash;19 a scríobh ina bhfigiúirí agus iad a scríobh ina bhfocail, e.g., #[i 1 chapall mór]; #[i 3 bhád bheaga]; #[i 7 n&#x2011;oíche dhorcha]; #[i 13 seachtaine fuara]; #[i 17 ngluaisteán shaora]; #[i 19 mbliana fada].
+    when "9-3-9-title"
+      | Na Bunuimhreacha 20+ &mdash; Na Deicheanna
+    when "9-3-9-a-p"
+      | Is í foirm an ainmnigh uatha den ainmfhocal a chuirtear i ndiaidh na ndeicheanna. Ní dhéantar aon athrú tosaigh ar an ainmfhocal.
+    when "9-3-9-b-p"
+      | Má tá aidiacht leis, réitíonn an aidiacht le hinscne an ainmfhocail.
+    when "9-3-9-c-p"
+      | Cuirtear foirm uatha an ailt roimh na deicheanna, e.g., #[i an fiche teach nua]; #[i an seasca duine cáiliúil].
+    when "9-3-9-d-p"
+      | Sa tuiseal ginideach, mura bhfuil an t&#x2011;alt ann, ní théann aon athrú foirme ar an ainmfhocal ná ar an mbunuimhir.
+    when "9-3-9-e-p"
+      | Má tá an t&#x2011;alt ann sa tuiseal ginideach, imríonn an t&#x2011;alt ar thúslitir na huimhreach mar a d&rsquo;imreodh ar ainmfhocal firinscneach ach ní dhéantar aon athrú tosaigh ar #[i f] ná #[i s].
+    when "Table9M-caption"
+      | Na Bunuimhreacha &mdash; Tuiseal Ainmneach agus Tuiseal Ginideach na nDeicheanna
+    when "TheNominativeCase"
+      | An Tuiseal Ainmneach
+    when "TheGenitiveCase"
+      | An Tuiseal Ginideach
+    when "WithoutArticle"
+      | gan an tAlt
+    when "WithArticle"
+      | leis an Alt
+    when "9-3-9-note-p1"
+      | Nuair a úsáidtear leagan iolra na ndeicheanna is sa ghinideach iolra a bhíonn an t&#x2011;ainmfhocal ina dhiaidh, e.g., #[i na céadta daoine]; #[i na mílte dathanna].
+    when "9-3-9-note-p2"
+      | Leanann an ginideach iolra na hainmfhocail uatha #[i dosaen] agus #[i scór] freisin, e.g., #[i dosaen amhrán]; #[i scór daoine].
+    when "9-3-10-title"
+      | Na Bunuimhreacha eile 20+
+    when "9-3-10-a-p"
+      | Tá dhá chóras ann maidir leis na bunuimhreacha os cionn 20 (seachas na deicheanna roimhe seo, féach #[+link("#sec_9_3_9", "9.3.9")]): an Córas Seanbhunaithe agus an Córas Simplithe. Baineann an dá chóras seo leis na bunuimhreacha agus iad scríofa ina bhfocail agus ina bhfigiúirí. Tá an dá chóras seo ar comhstádas agus inghlactha.
+    when "TheEstablishedSystem"
+      | An Córas Seanbhunaithe
+    when "TheSimplifiedSystem"
+      | An Córas Simplithe
+    when "9-3-10-b-i-p"
+      | Bíonn an t&#x2011;ainmfhocal sa leagan uatha nó sa leagan iolra ar leith atá aige agus déantar an t&#x2011;athrú tosaigh cuí ar an ainmfhocal.
+    when "9-3-10-b-ii-p"
+      | Tar éis uimhreacha a chríochnaíonn ar 1, réitíonn an aidiacht le hinscne an ainmfhocail. I gcás uimhreacha a chríochnaíonn ar 2&ndash;9, bíonn an aidiacht san uimhir iolra agus séimhítear í (ach féach #[+link("#sec_9_3_4", "9.3.4")]).
+    when "9-3-10-c-i-p"
+      | Bíonn an t&#x2011;ainmfhocal san uimhir uatha i gcónaí, fiú más ainmfhocal é a bhfuil leagan iolra ar leith aige, agus ní dhéantar aon athrú tosaigh air. Bíonn an aidiacht san uimhir uatha i gcónaí agus séimhítear í de réir inscne an ainmfhocail.
+    when "9-3-10-c-ii-p"
+      | I gcás uimhreacha a chríochnaíonn ar 2 nó 4, úsáidtear na foirmeacha maoluimhreach #[i dó] agus #[i ceathair] in ionad #[i dhá] agus #[i ceithre].
+    when "9-3-10-d-p"
+      | Más iolraí ar 10 atá i gceist, níl ann ach leagan amháin, e.g., #[i céad is fiche bád].
+    when "9-3-10-e-p"
+      | Maidir leis an alt, leantar an patrún a úsáidtear leis na bunuimhreacha 1&ndash;19 leis na bunuimhreacha os cionn 20, e.g., #[i an t&#x2011;aon leabhar is fiche]; #[i an dá bhord is tríocha]; #[i na cúig pheann is seasca] (féach #[+link("#sec_9_3_5", "9.3.5")]).
+    when "Table9N-caption"
+      | Na Bunuimhreacha 21&ndash;99 &mdash; An Córas Seanbhunaithe agus an Córas Simplithe
+    when "9-3-10-note-p1"
+      | Nuair atá aidiacht ag gabháil le bunuimhir, is féidir úsáid a bhaint as leagan iolra an ainmfhocail #[i ceann] (#[i cinn]) i dteannta an réamhfhocail #[i de], e.g., #[i seacht gcinn déag d&rsquo;oícheanta ciúine]; #[i trí cinn is tríocha de bháid mhóra].
+    when "9-3-10-note-p2"
+      | Rogha eile atá ann ná an mhaoluimhir móide an réamhfhocal #[i de] móide leagan iolra an ainmfhocail agus na haidiachta a ghabhann leis, e.g., #[i a haon déag de bhlianta fada]; #[i tríocha a trí de bháid mhóra].
+    when "9-3-11-title"
+      | Na Bunuimhreacha 100+
+    when "9-3-11-p1"
+      | Sa Chóras Seanbhunaithe, is é malairt na comhréire a úsáidtear faoi bhun 100 a úsáidtear le huimhreacha os cionn 100, e.g., #[i céad fiche is aon chapall amháin]; #[i dhá mhíle, trí chéad is ceithre chapall]; etc.
+    when "9-3-11-p2"
+      | Is ionann na rialacha eile agus na rialacha maidir leis na bunuimhreacha a luaitear in #[+link("#sec_9_3_10", "9.3.10")].
+    when "Table9O-caption"
+      | Na Bunuimhreacha 100+ &mdash; An Córas Seanbhunaithe agus an Córas Simplithe
+    when "9-3-12-title"
+      | Na Bunuimhreacha a scríobh ina bhFigiúirí 20+
+    when "9-3-12-p"
+      | Cuirtear rialacha an Chórais Sheanbhunaithe agus an Chórais Shimplithe, faoi seach, (féach #[+link("#sec_9_3_10", "9.3.10")]) i bhfeidhm nuair a scríobhtar na bunuimhreacha os cionn 20 ina bhfigiúirí.
+    when "Table9P-caption"
+      | Na Bunuimhreacha 20+ ina bhFigiúirí &mdash; An Córas Seanbhunaithe agus an Córas Simplithe
+    when "9-4-title"
+      | An Uimhir Phearsanta
+    when "9-4-p"
+      | Tugtar uimhir phearsanta ar uimhir a chuireann líon daoine in iúl.
+    when "9-4-1-title"
+      | Úsáid na nUimhreacha Pearsanta
+    when "9-4-1-a-p"
+      | Úsáidtear na huimhreacha pearsanta (2&ndash;10 agus 12) chun daoine a chomhaireamh.
+    when "9-4-1-b-p"
+      | Is é gnáthchóras na mbunuimhreacha a úsáidtear chun #[i aon duine dhéag] nó líon daoine is mó ná #[i dháréag] a chomhaireamh, e.g., #[i aon duine dhéag]; #[i trí dhuine dhéag]; #[i ceithre dhuine is daichead].
+    when "Table9Q-caption"
+      | Na hUimhreacha Pearsanta
+    when "Table9Q-header"
+      | Na hUimhreacha Pearsanta
+    when "9-4-2-title"
+      | Úsáid Lom na nUimhreacha Pearsanta
+    when "9-4-2-a-title"
+      | An uimhir phearsanta lom
+    when "9-4-2-a-i-p"
+      | Is féidir uimhir phearsanta a úsáid lom (gan ainmfhocal ar a lorg) chun líon daoine a chomhaireamh, e.g., #[i An bhfaca tú an bheirt?]; #[i Gabhadh seachtar].
+    when "9-4-2-a-ii-p"
+      | Is mar ghnáth-ainmfhocal a chaitear leis an uimhir phearsanta lom sa ghinideach, e.g., #[i cor beirte]; #[i col ceathrair]; #[i col seisir].
+    when "9-4-2-b-title"
+      | an t&#x2011;alt roimh an uimhir phearsanta lom
+    when "9-4-2-b-i-p"
+      | Ainmfhocail fhirinscneacha is ea na huimhreacha pearsanta go léir seachas #[i beirt], e.g., #[i an bheirt]; #[i an ceathrar]; #[i an t&#x2011;ochtar].
+    when "9-4-2-b-ii-p"
+      | Ní shéimhítear #[i dháréag] i ndiaidh an ailt, #[i aon] ná #[i céad], e.g., #[i bhí an dáréag ann]; #[i gach aon dáréag acu]; #[i an chéad dáréag a cháiligh].
+    when "9-4-2-b-iii-p"
+      | Is mar ghnáth-ainmfhocal a chaitear leis an uimhir phearsanta lom sa ghinideach nuair atá an t&#x2011;alt roimhe, e.g., #[i cótaí an tseisir]; #[i ticéid an ochtair]; #[i gluaisteán na beirte].
+    when "Table9R-caption"
+      | Na hUimhreacha Pearsanta Loma &mdash; An Tuiseal Ainmneach agus an Tuiseal Ginideach leis an Alt
+    when "TheNumber"
+      | An Uimhir
+    when "9-4-2-c-title"
+      | An aidiacht leis an uimhir phearsanta lom &mdash; #[i Beirt]
+    when "9-4-2-c-i-p"
+      | Má cháilíonn aidiacht an focal #[i beirt] agus é san ainmneach*, is san ainmneach iolra a bhíonn an aidiacht agus í séimhithe, e.g., #[i an bheirt cháiliúla]; #[i beirt mhisniúla]; #[i don bheirt óga].
+    when "9-4-2-c-ii-p"
+      | Má tá an focal #[i beirt], agus é ar lorg an ailt agus é sa ghinideach, á cháiliú le haidiacht a thagann ina dhiaidh, is sa ghinideach baininscneach uatha a bhíonn an aidiacht, e.g., #[i tuairimí na beirte díograisí]; #[i nótaí na beirte misniúla]; #[i iarrachtaí na beirte cróga].
+    when "9-4-2-c-iii-p"
+      | Má tá an focal #[i beirt], agus é sa ghinideach ach gan an t&#x2011;alt a bheith roimhe, á cháiliú le haidiacht a thagann ina dhiaidh, agus é ar lorg agus faoi réir ag ainmfhocal eile, bíonn an aidiacht san iolra ar lorg #[i beirt] agus í séimhithe (agus ní théann athrú an ghinidigh ar an bhfocal #[i beirt] ach cuirtear séimhiú air), e.g., #[i moltaí bheirt mhisniúla]; #[i tuairimí bheirt cháiliúla]; #[i obair bheirt acadúla].
+    when "9-4-2-c-iv-p"
+      | Má tá an focal #[i beirt], agus é sa ghinideach ach gan an t&#x2011;alt a bheith roimhe, á cháiliú le haidiacht a thagann ina dhiaidh, agus é faoi réir ag réamhfhocal comhshuite nó ainm briathartha, bíonn an aidiacht san iolra ar lorg #[i beirt] agus í séimhithe (agus ní dhéantar aon athrú ar an bhfocal #[i beirt] ach an oiread), e.g., #[i le haghaidh beirt inniúla]; #[i ag moladh beirt mhaithe].
+    when "9-4-2-d-title"
+      | An aidiacht leis an uimhir phearsanta lom &mdash; #[i Triúr] go #[i dháréag]
+    when "9-4-2-d-i-p"
+      | Má tá na huimhreacha pearsanta #[i triúr] go #[i dháréag] (ach féach #[+link("#sec_9_4_1_b", "9.4.1(b)")]), agus iad san ainmneach*, á gcáiliú le haidiacht a thagann ina ndiaidh, is san ainmneach uatha a bhíonn an aidiacht gan aon séimhiú uirthi, e.g., #[i triúr mór]; #[i ceathrar ard]; #[i an cúigear saibhir]; #[i don dáréag clúiteach].
+    when "9-4-2-d-ii-p"
+      | Má tá na huimhreacha pearsanta #[i triúr] go #[i dháréag] (ach féach #[+link("#sec_9_4_1_b", "9.4.1(b)")]), agus iad sa ghinideach, á gcáiliú le haidiacht a thagann ina dhiaidh, cuirtear na gnáthrialacha maidir le haidiacht atá ar lorg ainmfhocal sa ghinideach i bhfeidhm ar na haidiachtaí a ghabhann leo, e.g., #[i éadaí an cheathrair bhig]; #[i meitheal ochtair dhíograisigh]; #[i airgead an dáréag chlúitigh] (féach #[+link("./chapter4.html", "Caibidil 4")]).
+    when "OtherCasesFootnote"
+      | Nó sa ghairmeach, sa chuspóireach nó sa tabharthach.
+    when "9-4-3-title"
+      | Ainmfhocail leis na hUimhreacha Pearsanta
+    when "9-4-3-a-title"
+      | Foirm na huimhreach pearsanta agus foirm an ainmfhocail ar a lorg
+    when "9-4-3-a-i-p"
+      | Má tá an focal #[i beirt], agus é san ainmneach*, á cháiliú le hainmfhocal a thagann ina dhiaidh, is sa ghinideach iolra a bhíonn an t&#x2011;ainmfhocal agus é séimhithe (seachas ainmfhocal a thosaíonn ar #[i d], #[i t] nó #[i s]), e.g., #[i beirt chaptaen]; #[i beirt chumadóirí]; #[i beirt drumadóirí]; #[i ag beirt bhan].
+    when "9-4-3-a-ii-p"
+      | Má tá an focal #[i beirt], agus é sa ghinideach gan an t&#x2011;alt, á cháiliú le hainmfhocal a thagann ina dhiaidh, agus é ar lorg agus faoi réir ag ainmfhocal eile, ní théann athrú an ghinidigh ar an bhfocal #[i beirt] ach cuirtear séimhiú air agus bíonn an t&#x2011;ainmfhocal sa ghinideach iolra agus cuirtear séimhiú air (seachas ainmfhocal a thosaíonn ar #[i d], #[i t] nó #[i s]), e.g., #[i moltaí bheirt chumadóirí]; #[i tuairimí bheirt chaptaen]; #[i obair bheirt saineolaithe].
+    when "9-4-3-a-iii-p"
+      | Má tá an focal #[i beirt], agus é sa ghinideach ach gan an t&#x2011;alt a bheith roimhe, á cháiliú le hainmfhocal a thagann ina dhiaidh, agus é ar lorg agus faoi réir ag réamhfhocal comhshuite nó ainm briathartha, ní dhéantar aon athrú ar an bhfocal #[i beirt] agus bíonn an t&#x2011;ainmfhocal sa ghinideach iolra agus cuirtear séimhiú air (seachas ainmfhocal a thosaíonn ar #[i d], #[i t] nó #[i s]), e.g., #[i le haghaidh beirt mholtóirí]; #[i ag moladh beirt saighdiúirí].
+    when "9-4-3-a-iv-p"
+      | Is é ginideach iolra an ainmfhocail a leanann na huimhreacha pearsanta ó #[i triúr] go #[i dháréag] (ach féach #[+link("#sec_9_4_1_b", "9.4.1(b)")]) nuair atá daoine á gcomhaireamh, e.g., #[i triúr bádóirí]; #[i ceathrar múinteoirí].
+    when "9-4-3-a-v-p"
+      | Ní théann athrú an ghinidigh ar uimhreacha pearsanta ó #[i triúr] go #[i dháréag] (ach féach #[+link("#sec_9_4_1_b", "9.4.1(b)")]) má tá ainmfhocal ar a lorg, e.g., #[i athair ceathrar mac]; #[i máthair cúigear iníonacha]; #[i geansaithe dháréag peileadóirí].
+    when "Table9S-caption"
+      | Na hUimhreacha Pearsanta &mdash; Foirm an Ainmfhocail ar lorg Uimhir Phearsanta
+    when "Table9S-footnote"
+      | Tabhair faoi deara go gcaitear le 11 mar a chaitear leis i gcóras na mbunuimhreacha, agus nach gcuirtear an t&#x2011;ainmfhocal sa ghinideach (féach #[+link("#sec_9_3_6_a", "9.3.6(a)")]).
+    when "9-4-3-b-title"
+      | an t&#x2011;alt roimh uimhir phearsanta a bhfuil ainmfhocal ar a lorg
+    when "9-4-3-b-i-p"
+      | Is é foirm uatha an ailt a úsáidtear roimh na huimhreacha pearsanta. Is firinscneach dóibh go léir ach amháin #[i beirt].
+    when "9-4-3-b-ii-p"
+      | Ní shéimhítear #[i dháréag] i ndiaidh an ailt, #[i aon] ná #[i céad], e.g., #[i an Dáréag Aspal]; #[i gach aon dáréag scoláirí]; #[i an chéad dáréag múinteoirí a cháiligh].
+    when "9-4-3-b-iii-p"
+      | Má tá an focal #[i beirt], agus é sa ghinideach ar lorg an ailt, á cháiliú le hainmfhocal a thagann ina dhiaidh, is sa ghinideach iolra a bhíonn an t&#x2011;ainmfhocal agus ní shéimhítear é (ach téann athrú an ghinidigh ar an bhfocal #[i beirt]), e.g., #[i tuairimí na beirte múinteoirí]; #[i nótaí na beirte saineolaithe]; #[i tuairiscí na beirte comhfhreagraithe]; #[i tithe na beirte deartháireacha].
+    when "9-4-3-b-iv-p"
+      | Ní théann athrú foirme sa ghinideach ar na huimhreacha pearsanta ó #[i triúr] go #[i dháréag] ná ar an ainmfhocal ar a lorg, ach imríonn an t&#x2011;alt ar thúslitir na n&#x2011;uimhreacha pearsanta mar a d&rsquo;imreodh ar ghinideach aon ainmfhocail uatha eile, e.g., #[i cótaí an cheathrar daltaí]; #[i oifig an tseachtar tréidlianna]; #[i Scoil an tSeachtar Laoch].
+    when "Table9T-caption"
+      | Na hUimhreacha Pearsanta &mdash; An tAlt roimh Uimhir Phearsanta a bhfuil Ainmfhocal ar a lorg
+    when "Table9T-footnote"
+      | Tabhair faoi deara go gcaitear le 11 mar a chaitear leis i gcóras na mbunuimhreacha, agus nach gcuirtear an t&#x2011;ainmfhocal sa ghinideach (féach #[+link("#sec_9_3_7_a_i", "9.3.7(a)(i)")]).
+    when "9-4-3-c-title"
+      | An aidiacht le hainmfhocal atá ar lorg uimhir phearsanta
+    when "9-4-3-c-i-p"
+      | Ar lorg na huimhreach pearsanta #[i beirt], is san ainmneach iolra a bhíonn an aidiacht agus séimhítear í, e.g., #[i beirt bhan cháiliúla]; #[i beirt ghirseach chruthaitheacha]; #[i beirt amhránaithe cháiliúla]; #[i beirt mhúinteoirí shealadacha].
+    when "9-4-3-c-ii-p"
+      | Má tá an focal #[i beirt], agus é sa ghinideach ach gan an t&#x2011;alt a bheith roimhe, á cháiliú le #[i hainmfhocal] + #[i aidiacht] a thagann ina dhiaidh, agus é ar lorg agus faoi réir ag ainmfhocal eile, bíonn an aidiacht atá á cháiliú san iolra agus í séimhithe, e.g., #[i moltaí bheirt léachtóirí acadúla]; #[i tuairimí bheirt iriseoirí sheanbhunaithe]; #[i saothar bheirt ghramadóirí chliste].
+    when "9-4-3-c-iii-p"
+      | Má tá an focal #[i beirt], agus é sa ghinideach ach gan an t&#x2011;alt a bheith roimhe, á cháiliú le #[i hainmfhocal] + #[i aidiacht] a thagann ina dhiaidh, agus é ar lorg agus faoi réir ag réamhfhocal comhshuite nó ainm briathartha, bíonn an aidiacht atá á cháiliú san iolra agus í séimhithe, e.g., #[i le haghaidh beirt mholtóirí dheasa]; #[i ag moladh beirt chumadóirí shamhlaíocha].
+    when "9-4-3-c-iv-p"
+      | Ar lorg na n&#x2011;uimhreacha pearsanta #[i triúr] go #[i dháréag] (ach féach #[+link("#sec_9_4_1_b", "9.4.1(b)")]), is sa ghinideach iolra a bhíonn an aidiacht a ghabhann leis an ainmfhocal, e.g., #[i triúr scoláirí díograiseacha]; #[i ceathrar girseach éirimiúil]; #[i bád an triúr bádóirí tuirseacha]; #[i airgead an deichniúr ban bríomhar]. Léirítear samplaí leis an alt agus gan an t&#x2011;alt sa tábla ina dhiaidh seo.
+    when "Table9U-caption"
+      | Na hUimhreacha Pearsanta &mdash; An Aidiacht le hAinmfhocal atá ar lorg Uimhir Phearsanta
+    when "Table9U-footnote"
+      | Tabhair faoi deara go gcaitear le 11 mar a chaitear leis i gcóras na mbunuimhreacha, agus nach gcuirtear an t&#x2011;ainmfhocal sa ghinideach (féach #[+link("#sec_9_3_6_a", "9.3.6(a)")] agus #[+link("#sec_9_3_7_a_i", "9.3.7(a)(i)")]).
+    when "9-4-4-title"
+      | Na hUimhreacha Pearsanta a Scríobh ina bhFigiúirí
+    when "9-4-4-a-p"
+      | Moltar na huimhreacha pearsanta ó 1&ndash;12 a scríobh ina bhfocail seachas ina bhfigiúirí. Má dhéantar iad a scríobh ina bhfigiúirí, is mar bhunuimhreacha a chaitear leo, e.g., #[i 2 bhean bheaga], #[i 4 bhádóir cháiliúla], #[i 7 bhfeirmeoir shaibhre] (féach #[+link("#sec_9_3_8", "9.3.8")]).
+    when "9-4-4-b-p"
+      | Úsáidtear córas na mbunuimhreacha chun líon daoine os cionn #[i dháréag] a chomhaireamh. Féach #[+link("#sec_9_3_1", "9.3.1")] le haghaidh cur síos ar chóras na mbunuimhreacha ó 1&ndash;19, e.g., #[i trí bhean déag]; #[i ceithre ghirseach déag ghalánta]; #[i 17 mbádóir]; #[i 19 bhfear ocracha]; agus féach #[+link("#sec_9_3_10", "9.3.10")] le haghaidh cur síos ar chóras na mbunuimhreacha os cionn 20, e.g., #[i trí bhean arda is caoga]; #[i 49 ngirseach ghalánta].
+    when "9-4-5-title"
+      | Na hUimhreacha Pearsanta &mdash; An Córas Simplithe
+    when "9-4-5-p"
+      | Is féidir córas simplithe a úsáid leis na bunuimhreacha agus leis na huimhreacha pearsanta os cionn fiche. Féach #[+link("#sec_9_3_10_c", "9.3.10(c)")] le haghaidh cur síos ar an gCóras Simplithe sin, e.g., #[i fiche a cúig fear mór]; #[i tríocha a sé bean shaibhir]; #[i 46 bádóir cumasach]; #[i 56 girseach chróga].
+    when "9-5-title"
+      | An Orduimhir
+    when "9-5-p"
+      | Is le horduimhir a chuirtear ionad ruda nó duine i sraith in iúl.
+    when "9-5-1-title"
+      | An Orduimhir 1
+    when "9-5-1-a-p"
+      | Is féidir an orduimhir #[i céad] (#[i an chéad]) a úsáid le hainmfhocal uatha nó iolra. Úsáidtear an t&#x2011;alt uatha nuair atá ainmfhocal uatha ar a lorg, e.g., #[i an chéad chaibidil], agus an t&#x2011;alt iolra nuair atá ainmfhocal iolra ar a lorg, e.g., #[i na chéad chaibidlí].
+    when "9-5-1-b-p"
+      | Bíonn séimhiú ar an orduimhir #[i céad] i ndiaidh an ailt, e.g., #[i an chéad leabhar]; #[i na chéad rialacha], ach ní bhíonn séimhiú uirthi:
+    when "9-5-1-b-i-p"
+      | sna cásanna a luaitear i #[+link("./chapter1.html", "gCaibidil 1")] ina mbíonn urú i ndiaidh an ailt sa tuiseal tabharthach, e.g., #[i ar an gcéad duine]; #[i leis an gcéad cheadúnas];
+    when "9-5-1-b-ii-p"
+      | nuair a úsáidtear #[i céad] mar réimír in ainmfhocal firinscneach nó in ainmfhocal san iolra, e.g., #[i céadainm], #[i an céadainm]; #[i Céad-Aire], #[i an Céad-Aire]; #[i céadonóracha], #[i na céadonóracha]; (ach #[i céadghairm], #[i an chéadghairm]; #[i céadsearc], #[i an chéadsearc]; de réir ghnáthrialacha an ainmfhocail bhaininscnigh); nó mar réimír i mbriathar, e.g., #[i céadbhlaisim], #[i céadbhlaisfidh sé] (ach #[i ón uair a chéadbhlais mé é], de réir ghnáthrialacha na mbriathra san aimsir chaite, modh táscach);
+    when "9-5-1-b-iii-p"
+      | ar lorg na n&#x2011;aidiachtaí sealbhacha a (baininscneach, tríú pearsa uatha), e.g., #[i a céad cheolchoirm agus ár], #[i bhur], #[i a] (tríú pearsa iolra), e.g., #[i ár gcéad teach]; #[i bhur gcéad charr]; #[i a gcéad mhac].
+    when "9-5-1-c-p"
+      | Cuireann an orduimhir #[i céad] séimhiú ar an ainmfhocal nó ar an aidiacht ar a lorg i ngach tuiseal, e.g., #[i an chéad fhear]; #[i an chéad bhean]; #[i na chéad cheithre ghloine]; #[i na chéad bhlianta; clann an chéad fhir]; #[i mac na chéad mhná]; #[i lucht na chéad bhliana]; mura #[i d], #[i t] nó #[i s] a thúslitir, e.g., #[i na chéad daoine], #[i an chéad saighdiúir]; #[i an chéad turas]; #[i ceadúnas an chéad tógálaí]. (Féach #[+link("#sec_9_5_4", "9.5.4")] chun tuilleadh eolais a fháil ar orduimhreacha sa tuiseal ginideach.)
+    when "9-5-1-d-p"
+      | Úsáidtear an orduimhir #[i céad] i gcás 1, ach i gcás na n&#x2011;orduimhreacha eile a chríochnaíonn ar 1, úsáidtear an focal #[i aonú]. Sa tuiseal ainmneach, cuirtear #[i t&#x2011;] roimh #[i aonú] i ndiaidh an ailt, e.g., #[i an t&#x2011;aonú lá is tríocha].
+    when "9-5-2-title"
+      | Na hOrduimhreacha 1&ndash;100 &mdash; Eolas Ginearálta
+    when "Table9V-caption"
+      | #[+renderKey("TheOrdinalNumbers")] 1&ndash;100
+    when "Table9W-caption"
+      | #[+renderKey("TheOrdinalNumbers")] 100+
+    when "9-5-2-a-p"
+      | Is é foirm uatha an ailt a bhíonn roimh na horduimhreacha (seachas an orduimhir 1, féach #[+link("#sec_9_5_1", "9.5.1")]), e.g., #[i an dara bean]; #[i an dóú teach]; #[i an tríú tuarascáil]; #[i an ceathrú bean is fiche]; #[i an cúigiú comhartha is seasca].
+    when "9-5-2-b-p"
+      | I ndiaidh na horduimhreach #[i dara] agus na n&#x2011;orduimhreacha go léir dar críoch #[i -ú], cuirtear #[i h] roimh ainmfhocal dar tús guta, e.g., #[i an dara hoíche]; #[i an tríú hurlár]; #[i an séú hóstán déag]; #[i an t&#x2011;ochtú hurlár is tríocha].
+    when "9-5-2-c-p"
+      | Bíonn an t&#x2011;alt roimh an gcéad uimhir san orduimhir de ghnáth, mura mbíonn aidiacht shealbhach nó #[i gach] roimpi, e.g., #[i an tríú lá ach gach dara bliain]; #[i a tríú bliain].
+    when "9-5-2-d-p"
+      | Úsáidtear córas a leanann comhréir na mbunuimhreacha (An Córas Seanbhunaithe) chun ionad ruda i sraith faoi bhun 100 a chur in iúl, e.g., #[i an dara hábhar is tríocha]; #[i an ceathrú cathaoir is caoga]; #[i an seachtú hoíche is seachtó]; #[i an t&#x2011;ochtú madra is nócha].
+    when "9-5-2-e-p"
+      | Ní chuirtear séimhiú ar an bhfocal #[i déag] san orduimhir, e.g., #[i an tríú duine déag]; #[i an t&#x2011;ochtú bosca déag]; #[i an naoú leabhar déag].
+    when "TheOrdinalNumbers"
+      | Na hOrduimhreacha
+    when "9-5-3-title"
+      | Na hOrduimhreacha 100+
+    when "9-5-3-a-p"
+      | Úsáidtear córas atá bunaithe ar chóras na maoluimhreacha chun ionad ruda i sraith os cionn 100 a chur in iúl, e.g., #[i céad a ceathair &mdash; an céad is ceathrú feirmeoir]; #[i cúig chéad seasca a ceathair &mdash; an cúig chéad seasca is ceathrú heitleán]; #[i seacht míle, ceithre chéad a naoi déag &mdash; an seacht míle, ceithre chéad is naoú hóstán déag].
+    when "9-5-3-b-p"
+      | Cuirtear séimhiú ar an bhfocal #[i déag] i ndiaidh na huimhreach #[i míle], e.g., #[i an trí mhíle dhéag is ceathrú hoileán].
+    when "9-5-4-title"
+      | Na hOrduimhreacha sa Tuiseal Ginideach
+    when "9-5-4-a-p"
+      | I gcás na horduimhreach #[i céad], díochlaontar an t&#x2011;ainmfhocal ina dhiaidh agus géilleann an t&#x2011;alt d&rsquo;uimhir agus d&rsquo;inscne an ainmfhocail, e.g., #[i an chéad fhear], #[i clann an chéad fhir]; #[i an chéad bhean], #[i clann na chéad mhná]; #[i na chéad cheithre bliana], #[i tús na chéad cheithre bliana]; #[i na chéad chúig charr], #[i plátaí clárúcháin na chéad chúig charr]; #[i na chéad taiscéalaithe], #[i eachtraí na chéad taiscéalaithe].
+    when "9-5-4-b-p"
+      | I gcás na n&#x2011;orduimhreacha eile go léir, ní dhéantar díochlaonadh riamh ar an ainmfhocal, e.g., #[i mac an dara bean]; #[i mac an dara fear]; #[i eagraíocht tríú tír]; #[i oideachas tríú leibhéal]; #[i clúdach an cheathrú tuarascáil]; #[i deireadh an fichiú haois]; #[i tús an aonú haois is fiche].
+    when "9-5-4-c-p"
+      | Cailltear an #[i t&#x2011;] roimh #[i aonú], #[i ochtú], #[i ochtódú], etc., e.g., #[i an t&#x2011;aonú bliain déag], #[i tús an aonú bliain déag]; #[i an t&#x2011;ochtú haois déag], #[i tús an ochtú haois déag]; #[i an t&#x2011;ochtódú cruinniú], #[i miontuairiscí an ochtódú cruinniú].
+    when "9-5-4-d-p"
+      | Imríonn an t&#x2011;alt ar thúslitir na horduimhreach mar a d&rsquo;imreodh ar ainmfhocal firinscneach, e.g., #[i bróga an chúigiú girseach]; #[i seoladh an cheathrú teach is daichead]; ach ní dhéantar athrú tosaigh ar #[i f] ná #[i s], e.g., #[i lucht an seachtú hoifig]; #[i bonn an fichiú himreoir]; #[i deireadh an seascadú comhdháil].
+    when "Table9X-caption"
+      | Na hOrduimhreacha sa Tuiseal Ginideach
+    when "Table9X-header"
+      | Na hOrduimhreacha sa Tuiseal Ginideach
+    when "9-5-5-title"
+      | Aidiachtaí leis na hOrduimhreacha
+    when "9-5-5-p"
+      | Díochlaontar an aidiacht de réir an ainmfhocail, e.g., #[i an chéad bhean mhór]; #[i an chéad fhear mór]; #[i seol an chéad bháid ghoirm]; #[i deireadh na chéad tuarascála cuimsithí]; #[i na chéad scoláirí maithe]; #[i eachtraí na chéad taiscéalaithe cáiliúla]; #[i an tríú fear mór is tríocha]; #[i cóta an daicheadú bean mhór].
+    when "9-5-6-title"
+      | Na hOrduimhreacha a Scríobh ina bhFigiúirí
+    when "9-5-6-a-p"
+      | Scríobhtar orduimhreacha ina bhfigiúirí trí #[i ú] a chur i ndiaidh an fhigiúir, e.g., #[i an 1ú], #[i an 2ú], #[i an 19ú], #[i an 123ú].
+    when "9-5-6-b-p"
+      | Is ionann na rialacha a bhaineann le horduimhreacha a scríobh ina bhfigiúirí agus na rialacha a bhaineann le horduimhreacha a scríobh ina bhfocail (féach #[+link("#sec_9_5_1", "9.5.1")] go #[+link("#sec_9_5_5", "9.5.5")] roimhe seo). Tabhair faoi deara go gcuirtear #[i h] roimh ghuta agus nach gcuirtear séimhiú i ndiaidh 1ú toisc gur #[i aonú] atá i gceist (seachas #[i céad]).
+    when "9-6-title"
+      | An Codán
+    when "9-6-p"
+      | Cainníocht uimhriúil nach slánuimhir is ea an codán, e.g., #[i 1/4 &mdash; ceathrú]; #[i 2/3 &mdash; dhá thrian]; #[i 5/6 &mdash; cúig shéú].
+    when "9-6-1-title"
+      | Comhdhéanamh an Chodáin
+    when "9-6-1-a-p"
+      | Bíonn dhá chuid sa ghnáthchodán: #[i an t&#x2011;uimhreoir] agus #[i an t&#x2011;ainmneoir]. Cuirtear an t&#x2011;uimhreoir os cionn na líne agus an t&#x2011;ainmneoir faoi bhun na líne, e.g., i gcás 6/7, is é 6 an t&#x2011;uimhreoir agus is é 7 an t&#x2011;ainmneoir.
+    when "9-6-1-b-p1"
+      | Baintear leas as na horduimhreacha chun an t&#x2011;ainmneoir a chur in iúl seachas i gcás na bhfocal #[i leath] agus #[i trian].
+    when "9-6-1-b-p2"
+      | Tabhair faoi deara go n&#x2011;úsáidtear an fhoirm speisialta iolra #[i treana] den ainmfhocal #[i trian] ar lorg na n&#x2011;uimhreacha 3&ndash;10. Fágtar an t&#x2011;ainmfhocal sin lom i ndiaidh #[i trí], #[i ceithre], #[i cúig], #[i sé], e.g., #[i 3/3 &mdash; trí treana]; #[i 4/3 &mdash; ceithre treana]; agus uraítear é i ndiaidh #[i seacht], #[i ocht], #[i naoi], #[i deich], e.g., #[i 9/3 &mdash; naoi dtreana]; #[i 10/3 &mdash; deich dtreana].
+    when "9-6-1-c-p"
+      | I gcás gur uimhir idir 11&ndash;19 an t&#x2011;ainmneoir, úsáidtear leagan a dhíorthaítear ón orduimhir, e.g., #[i 4/13 &mdash; ceithre thrídéagú]; #[i 6/15 &mdash; sé chúigdéagú].
+    when "9-6-1-d-p"
+      | I gcás gur uimhir os cionn 20 an t&#x2011;ainmneoir, is ionann ord na bhfocal agus ord na bhfocal sna maoluimhreacha ach go gcuirtear orduimhir in ionad na maoluimhreach ag an deireadh, e.g., #[i 1/30 &mdash; tríochadú]; #[i 4/97 &mdash; ceithre nócha seachtú].
+    when "9-6-1-e-p"
+      | Scríobhtar codáin ar roinnt bealaí éagsúla, mar a léirítear thíos. Is í rogha #[+link("#sec_9_6_1_e_i", "(i)")] an struchtúr is minice a úsáidtear.
+    when "9-6-1-e-i-p"
+      | Is féidir leas a bhaint as dhá mhaoluimhir agus an réamhfhocal #[i ar] nó an réamhfhocal comhshuite #[i os cionn] eatarthu chun aon chodán a chur in iúl, e.g., #[i 1/11 &mdash; a haon ar a haon déag]; #[i a haon os cionn a haon déag]; #[i 7/8 &mdash; a seacht ar a hocht]; #[i a seacht os cionn a hocht]; #[i 4/15 &mdash; a ceathair ar a cúig déag]; #[i a ceathair os cionn a cúig déag]; #[i 33/57 &mdash; tríocha a trí ar chaoga a seacht]; #[i tríocha a trí os cionn caoga a seacht]; #[i 136/82 &mdash; céad tríocha a sé ar ochtó dó]; #[i céad tríocha a sé os cionn ochtó dó]. Ní shéimhítear #[i fiche] i gcodáin, e.g., #[i 3/24 &mdash; a trí ar fiche a ceathair].
+    when "9-6-1-e-ii-p"
+      | Más 1 an t&#x2011;uimhreoir, is féidir an focal #[i cuid] a úsáid leis na horduimhreacha chun codáin a chur in iúl, e.g., #[i 1/2 &mdash; leath]; #[i an leathchuid]; #[i 1/3 &mdash; trian]; #[i an tríú cuid]; #[i 1/11 &mdash; aondéagú]; #[i an t&#x2011;aondéagú cuid]. Is gnách an leagan le #[i cuid] a úsáid nuair is uimhir os cionn 20 an t&#x2011;ainmneoir, e.g., #[i 1/27 &mdash; an fiche seachtú cuid]; #[i 1/156 &mdash; an céad caoga séú cuid]. I gcás na ndeicheanna, áfach, is túisce a déarfaí #[i tríochadú], etc. #[i ná an tríochadú cuid].
+    when "9-6-1-e-iii-p"
+      | Má tá an t&#x2011;uimhreoir idir 2 agus 10, úsáidtear na bunuimhreacha agus foirm na horduimhreach (féach #[+link("#sec_9_6_1_b", "(b)")], #[+link("#sec_9_6_1_c", "(c)")] agus #[+link("#sec_9_6_1_d", "(d)")] roimhe seo) chun an codán a chur in iúl. Is gnáth-ainmfhocail iad na codáin agus leantar gnáthrialacha na mbunuimhreacha agus iad á gcomhaireamh, e.g., #[i 7/8 &mdash; seacht n&#x2011;ochtú]; #[i 4/15 &mdash; ceithre chúigdéagú]; ach ní shéimhítear #[i fichiú], e.g., #[i 3/20 &mdash; trí fichiú].
+    when "9-6-1-e-iv-p"
+      | De rogha ar #[+link("#sec_9_6_1_e_iii", "(iii)")] thuas, má tá an t&#x2011;uimhreoir idir 2 agus 10 is féidir an t&#x2011;ainmfhocal #[i ceann]/#[i cinn] a úsáid i dteannta an réamhfhocail de agus an leagain iolra den ainmneoir, e.g., #[i 7/8 &mdash; seacht gcinn d&rsquo;ochtuithe]; #[i 4/15 &mdash; ceithre cinn de chúigdéaguithe];
+    when "9-6-1-e-v-p"
+      | Más mó ná 10 an t&#x2011;uimhreoir, is féidir maoluimhreacha a úsáid mar seo a leanas: #[i an t&#x2011;uimhreoir] (á lua mar mhaoluimhir) + #[i de] + #[i iolra an ainmneora], e.g., #[i 33/57 &mdash; tríocha a trí de chaoga seachtuithe]; #[i 136/82 &mdash; céad tríocha a sé d&rsquo;ochtó dóithe]. Is fearr an leagan sin a úsáid nuair is mó ná 10 an t&#x2011;uimhreoir agus nuair is mó ná 20 an t&#x2011;ainmneoir.
+    when "9-6-2-title"
+      | An tAinmneoir
+    when "9-6-2-a-title"
+      | An tAinmneoir 2&ndash;19
+    when "9-6-2-a-p"
+      | Taispeántar sa tábla seo a leanas dhá rogha chun codáin a scríobh ar codáin iad ina bhfuil ainmneoir ó 2&ndash;19 agus an t&#x2011;uimhreoir 1.
+    when "Table9Y-caption"
+      | Na Codáin &mdash; An tAinmneoir 2&ndash;19
+    when "TheFraction"
+      | An Codán
+    when "TheDenominator"
+      | An tAinmneoir
+    when "TheFormWithCuid"
+      | An Leagan le #[i cuid]
+    when "9-6-2-b-title"
+      | An tAinmneoir 20+
+    when "9-6-2-b-p-1"
+      | Tugtar samplaí sa tábla seo a leanas den tslí a ndéileáiltear le hainmneoirí os cionn 20 (seachas na deicheanna) nuair is 1 an t&#x2011;uimhreoir. Is gnách an leagan le #[i cuid] a úsáid i gcás codáin den sórt sin. Is ionann comhréir an leagain sin agus an chomhréir a úsáidtear sna maoluimhreacha ach go gcuirtear orduimhir in ionad na maoluimhreach ag an deireadh agus go bhfágtar an mhír uimhriúil #[i a] ar lár.
+    when "Table9Z-caption"
+      | Na Codáin &mdash; An tAinmneoir 20+
+    when "9-6-2-b-p-2"
+      | Tabhair faoi deara gurb í an orduimhir a úsáidtear i gcás na ndeicheanna, e.g., #[i fichiú], #[i céadú], #[i míliú], etc. agus nach gnách an leagan le #[i cuid] a úsáid leo, e.g., #[i 1/30 &mdash; tríochadú]; #[i 1/50 &mdash; caogadú].
+    when "9-6-3-title"
+      | An tUimhreoir
+    when "9-6-3-a-title"
+      | An tUimhreoir 2&ndash;10
+    when "9-6-3-a-i"
+      | Leantar córas na mbunuimhreacha nuair is mó ná 1 an t&#x2011;uimhreoir toisc gur gnáth-ainmfhocail iad na hainmneoirí (eisceacht: ní shéimhítear #[i fichiú], e.g., #[i trí fichiú]). Tugtar samplaí sa tábla seo a leanas de chodáin nuair is uimhir idir 2 agus 10 an t&#x2011;uimhreoir.
+    when "Table9AA-caption"
+      | Na Codáin &mdash; An tUimhreoir 2&ndash;10
+    when "9-6-3-a-ii"
+      | De rogha air sin, is féidir an t&#x2011;ainmfhocal #[i ceann]/#[i cinn] a úsáid i dteannta an réamhfhocail de agus an leagain iolra den ainmneoir.
+    when "Table9BB-caption"
+      | Na Codáin &mdash; An tUimhreoir 2&ndash;10 &mdash; An Leagan le #[i ceann]/#[i cinn] agus an Réamhfhocal #[i de]
+    when "9-6-3-b-title"
+      | Na Codáin nuair is mó ná 10 an tUimhreoir
+    when "9-6-3-b-p"
+      | Nuair is mó ná 10 an t&#x2011;uimhreoir úsáidtear na maoluimhreacha mar seo a leanas: #[i an t&#x2011;uimhreoir] (á lua mar mhaoluimhir) + #[i de] + #[i iolra an ainmneora].
+    when "Table9CC-caption"
+      | Nuair is mó ná 10 an t&#x2011;uimhreoir úsáidtear na maoluimhreacha mar seo a leanas: #[i an t&#x2011;uimhreoir] (á lua mar mhaoluimhir) + #[i de] + #[i iolra an ainmneora].
+    when "TheBareNumberModifiedBy"
+      | An Mhaoluimhir Móide
+    when "9-6-4-title"
+      | Uimhreoirí agus Ainmneoirí Móra
+    when "9-6-4-p"
+      | Nuair is mó ná 10 an t&#x2011;uimhreoir agus nuair is mó ná 20 an t&#x2011;ainmneoir, is fearr an leagan leis an maoluimhir móide an réamhfhocal #[i de] agus iolra an ainmneora a úsáid. Is féidir freisin leas a bhaint as dhá mhaoluimhir agus an réamhfhocal #[i ar] nó an réamhfhocal comhshuite #[i os cionn] eatarthu chun codán a chur in iúl, e.g., #[i 61/66 &mdash; seasca a haon ar sheasca a sé]; #[i seasca a haon os cionn seasca a sé]; #[i 74/83 &mdash; seachtó a ceathair ar ochtó a trí]; #[i seachtó a ceathair os cionn ochtó a trí]; #[i 437/500,043 &mdash; ceithre chéad tríocha a seacht ar chúig chéad míle daichead a trí]; #[i ceithre chéad tríocha a seacht os cionn cúig chéad míle daichead a trí].
+    when "Table9DD-caption"
+      | Na Codáin &mdash; Uimhreoirí agus Ainmneoirí Móra
+    when "9-7-title"
+      | An Uimhir Dheachúlach
+    when "9-7-a-p"
+      | Is é córas na maoluimhreacha a úsáidtear i gcás uimhreacha deachúlacha, e.g., #[i 1.7 &mdash; a haon ponc a seacht]; #[i 22.4 &mdash; fiche a dó ponc a ceathair]; #[i 84.22 &mdash; ochtó a ceathair ponc a dó a dó].
+    when "9-7-b-p"
+      | Ní dhéantar infhilleadh ná athrú tosaigh ar ainmfhocal atá ar lorg uimhir dheachúlach, bíodh sí i bhfoirm focal nó figiúirí, e.g., #[i a haon ponc a dó gram]; #[i 1.5 cileagram]; #[i 7.4 méadar ciúbach].
+    when "9-8-title"
+      | Achoimre ar na hUimhreacha
+    when "Table9EE-caption"
+      | Achoimre ar na hUimhreacha 1&ndash;19
+    when "Tabel9EE-col4"
+      | Figiúr
+    when "Table9EE-Row1"
+      | An Bhunuimhir 
+    when "Table9EE-Row2"
+      | An Uimhir Phearsanta
+    when "Table9EE-Row3"
+      | An Orduimhir
+    when "Table9FF-caption"
+      | Achoimre ar na hUimhreacha 20+
+    when "Table9FF-row1"
+      | An Bhunuimhir agus an Uimhir Phearsanta
+    when "Table9FF-row2"
+      | An Orduimhir
+    when "Table9FF-note-p"
+      | Tabhair faoi deara
+    when "Table9FF-note-a-p"
+      | gurb é an Córas Seanbhunaithe amháin a úsáidtear le huimhreacha faoi bhun 20;
+    when "Table9FF-note-b-p"
+      | go moltar, i gcás an phróis, uimhreacha pearsanta suas go #[i dháréag] a scríobh ina bhfocail seachas ina bhfigiúirí.
+    default
+      - throw new Error(`No content for ${key} (ga.pug)`)

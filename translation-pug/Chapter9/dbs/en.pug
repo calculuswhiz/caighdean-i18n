@@ -1,0 +1,590 @@
+include ../../tlMatter.pug
+if docLang === "EN"
+  mixin tl(tlText)
+    if tlText != null
+      +inlineTl("EN", tlText)
+    else
+      +inlineTl("EN")
+        block
+    
+  mixin tlDb(key)
+    case key
+      when "teidealNaCaibidle"
+        | The Number
+      when "9-1-title"
+        | General
+      when "9-title"
+        | #[+renderKey("Caibidil", { getFromCommon: true })] 9 | #[+renderKey("teidealNaCaibidle")]
+      when "9-1-1-p"
+        | The main versions of the number in Irish are the Bare Number, the Cardinal Number, the Personal Number, the Ordinal Number, the Fraction and the Decimal Number.
+      when "9-1-1-a-title"
+        | The Bare Number
+      when "9-1-1-a-p"
+        | A number that is not directly followed by a noun is called a bare number. The bare number is used in counting, e.g., #[i a haon] #[+tl one]; #[i a cúig] #[+tl five]; #[i a deich] #[+tl ten] (see #[+link("#sec_9_2", "9.2")]).
+      when "9-1-1-b-title"
+        | The Cardinal Number
+      when "9-1-1-b-p"
+        | A number that is placed before a noun to express a number of things is called a cardinal number, e.g., #[i trí leabhar] #[+tl three books]; #[i seacht gcupán] #[+tl seven cups]; #[i naoi mbád] #[+tl nine boats] (see #[+link("#sec_9_3", "9.3")]).
+      when "9-1-1-c-title"
+        | The Personal Number
+      when "9-1-1-c-p"
+        | A number that is used to count people is called a personal number, e.g., #[i beirt bhan] #[+tl two women]; #[i ceathrar daltaí] #[+tl four students]; #[i ochtar feirmeoirí] #[+tl eight farmers] (see #[+link("#sec_9_4", "9.4")]).
+      when "9-1-1-d-title"
+        | The Ordinal Number
+      when "9-1-1-d-p"
+        | A number indicating the position of an object in a series of objects is called an ordinal number, e.g., #[i an chéad teach] #[+tl the first house]; #[i an dara bean] #[+tl the second woman]; #[i an fichiú haois] #[+tl the twentieth century] (see #[+link("#sec_9_5", "9.5")]).
+      when "9-1-1-e-title"
+        | The Fraction
+      when "9-1-1-e-p"
+        | A fraction is a numerical quantity that is not an integer (whole number), e.g., #[i ceathrú (1/4)]; #[i ceithre chúigiú (4/5)]; #[i cúig shéú (5/6)] (see #[+link("#sec_9_6", "9.6")]).
+      when "9-1-1-f-title"
+        | The Decimal Number
+      when "9-1-1-f-p"
+        | The decimal number is another way of expressing a non-integer numerical quantity, using the decimal point, e.g., #[i 3.1]; #[i 7.5]; #[i 18.49]; #[i 34.023] (see #[+link("#sec_9_7", "9.7")]).
+      when "9-1-2-p"
+        | A choice is given between two systems for dealing with cardinal numbers and personal numbers in writing: the Established System and the Simplified System. The Established System is always used with numbers from 1&ndash;19. Either the Established System or the Simplified System may be used with numbers from 20 onwards.
+      when "9-2-title"
+        | The Bare Number
+      when "Table9A-caption"
+        | #[+renderKey("TheBareNumbers")] 0&ndash;19
+      when "Table9B-caption"
+        | #[+renderKey("TheBareNumbers")] 20&ndash;99
+      when "Table9C-caption"
+        | #[+renderKey("TheBareNumbers")] #[+renderKey("TheTens")]
+      when "Table9D-caption"
+        | #[+renderKey("TheBareNumbers")] 100&ndash;9,999
+      when "Table9E-caption"
+        | #[+renderKey("TheBareNumbers")] 10,000+
+      when "9-2-p"
+        | A bare number is a number used in counting when the number or order of things or people is not indicated, e.g., #[i a haon] #[+tl one]; #[i a trí déag] #[+tl thirteen]; #[i a tríocha trí] #[+tl thirty-three]; #[i céad nócha a cúig] #[+tl one hundred ninety-five]; #[i míle, ceithre chéad seachtó a naoi] #[+tl one thousand four hundred seventy-nine].
+      when "9-2-1-title"
+        | The Bare Numbers 0&ndash;99
+      when "9-2-1-a-p"
+        | The particle #[i a] is placed before numbers from 1&ndash;19, e.g., #[i a haon] #[+tl one]; #[i a dó] #[+tl two]; #[i a trí] #[+tl three]; #[i bus a ceathair] #[+tl bus four]; #[i a hocht déag] #[+tl eighteen]; and for 20&ndash;99 (other than the tens), it is placed before the last number, e.g., #[i fiche a haon] #[+tl twenty-one]; #[i daichead a sé] #[+tl forty-six]; #[i seachtó a hocht] #[+tl seventy-eight].
+      when "9-2-1-b-p"
+        | The words #[i ceathracha] and #[i daichead] have a similar status. (#[b TL Note]: Both of these mean "forty.")
+      when "9-2-1-p1"
+        | This is how the bare numbers from 0&ndash;19 are written.
+      when "TheBareNumbers"
+        | The Bare Numbers
+      when "9-2-1-p2"
+        | Note that the bare number is used for times of day, e.g., #[i a haon a chlog] #[+tl one o&rsquo;clock]; #[i a seacht a chlog] #[+tl seven o&rsquo;clock]; #[i a fiche tar éis a cúig] #[+tl twenty past five]. This is how time is written in the form of figures: #[i 5.30 p.m.]; #[i 4.26 p.m.]; #[i 13:00]; #[i 16:47].
+      when "9-2-1-p3"
+        | This is how the bare numbers from 20&ndash;99 are written. The entire system between 20 and 29 is given in the table and examples are given for the other tens.
+      when "9-2-2-title"
+        | The Bare Numbers 100+
+      when "9-2-2-a-p"
+        | The numbers #[i céad] #[+tl hundred], #[i míle] #[+tl thousand], #[i milliún] #[+tl million], #[i billiún] #[+tl billion], etc. are nouns. Therefore, the cardinal number system is used if the numbers 2&ndash;19 are followed by a series of zeros corresponding to #[i céad], #[i míle], #[i milliún], #[i billiún], etc., e.g., #[i ceithre chéad] #[+tl four hundred]; #[i dhá chéad míle] #[+tl two hundred thousand]; #[i naoi milliún déag] #[+tl nineteen million]; #[i dhá bhilliún] #[+tl two billion]; #[i ocht mbilliún] #[+tl eight billion] (see #[+link("#sec_9_3", "9.3")] The Cardinal Number).
+      when "9-2-2-b-p"
+        | No initial mutation is made to the noun after the tens, e.g., #[i fiche míle] #[+tl twenty thousand]; #[i tríocha milliún] #[+tl thirty million]; etc.
+      when "TheTens"
+        | The Tens
+      when "9-2-3-title"
+        | The Bare Numbers 10,000+
+      when "9-2-3-a-p"
+        | There are two systems for expressing odd numbers beyond 10,000 &mdash; the cardinal number system and the bare number system.
+      when "9-2-3-b-p"
+        | In the cardinal number system the word order follows the cardinal number rules, e.g., #[i 24,000 &mdash; ceithre mhíle is fiche] (see #[+link("#table9n", "table 9N")]). Under the bare number system, the bare number plus the bare noun is used (#[i céad], #[i míle], etc.) without transformation, e.g., #[i 24,000 &mdash; fiche a ceathair míle].
+      when "9-2-3-p1"
+        | Note that #[i is] is used in the cardinal number system above 10,000 but not in the other bare numbers.
+      when "9-2-3-p2"
+        | This is how the bare numbers over 10,000 are written.
+      when "Table9E-col2"
+        | The Cardinal Number System
+      when "Table9E-col3"
+        | The Bare Number System
+      when "9-3-title"
+        | The Cardinal Number
+      when "Table9F-caption"
+        | #[+renderKey("TheCardinalNumbers")] 1&ndash;19
+      when "9-3-1-title"
+        | The Cardinal Numbers 1&ndash;19
+      when "9-3-1-a-p"
+        | The number added to a noun to express the number of things is called a #[i cardinal number].
+      when "9-3-1-b-p"
+        | The noun comes after #[i aon], #[i dhá], #[i trí], #[i ceithre], #[i cúig], #[i sé], #[i seacht], #[i ocht], #[i naoi], #[i deich]. (#[b EN]: 1&ndash;10 respectively).
+      when "9-3-1-c-p"
+        | Note that the cardinal numbers #[i dhá] and #[i ceithre] are used rather than the bare forms #[i dó] and #[i ceathair] (#[b EN]: #[i two] and #[i four] respectively).
+      when "9-3-1-d-p"
+        | The word #[i amháin] must be mentioned after the original #[i aon] and the noun. It is not, however, always necessary to mention #[i aon], e.g., #[i aon chapall amháin] #[+tl one horse only]; #[i capall amháin] #[+tl one horse].
+      when "9-3-1-e-p"
+        | #[i d], #[i t] or #[i s] is not lenited after #[i aon], e.g., #[i aon doras amháin] #[+tl one door only]; #[i aon teach amháin] #[+tl one house only].
+      when "9-3-1-f-p"
+        | After the noun comes the word #[i déag], e.g., #[i ceithre leabhar déag] #[+tl fourteen books]. The word #[i déag] is lenited if the word directly before it ends in a vowel (but see #[+link("#sec_9_3_2_e", "9.3.2(e)")]), except after #[i euro].
+      when "9-3-1-p"
+        | Note that if the noun and the qualifier are a separate unit of meaning, e.g., #[i madra rua] #[+tl fox]; #[i cat crainn] #[+tl pine marten]; #[i teach tábhairne] #[+tl pub]; #[i láthair champála] #[+tl campsite] (rather than an ordinary noun and qualifier, e.g., #[i leabhar dearg]) #[i déag] is placed after the noun and the qualifier, e.g., #[i ceithre mhadra rua dhéag] #[+tl fourteen foxes]; #[i cúig theach tábhairne dhéag] #[+tl fifteen pubs]; #[i sé chat crainn déag] #[+tl sixteen pine martens]; #[i seacht n&#x2011;iora ghlasa dhéag] #[+tl seventeen gray squirrels]. Any other qualifier is added after #[i déag], e.g., #[i sé chat crainn déag mhóra] #[+tl sixteen large pine martens]; #[i seacht n&#x2011;iora ghlasa dhéag fhiáine] #[+tl seventeen gray squirrels].
+      when "9-3-1-g-p"
+        | #[i two] is not lenited after the article, #[i aon] or #[i céad], e.g., #[i an dá leabhar] #[+tl the two books]; #[i an chéad dá leabhar] #[+tl the first two books]; #[i aon dá leabhar] #[+tl one of the two books].
+      when "9-3-1-h-p"
+        | The cardinal numbers #[i aon], #[i dhá] (but see #[+link("./chapter8.html#sec_8_3_3", "8.3.3")]), #[i trí], #[i ceithre], #[i cúig] and #[i sé] lenite the following singular noun, e.g., #[i trí bhád] #[+tl three boats]; but the word #[i cent] is not lenited, e.g., #[i trí cent] #[+tl three cents].
+      when "9-3-1-i-p"
+        | The cardinal numbers #[i seacht] #[+tl seven], #[i ocht] #[+tl eight], #[i naoi] #[+tl nine] and #[i deich] #[+tl ten] eclipse the following singular and plural nouns, e.g., #[i seacht gcnámh] #[+tl seven bones]; #[i deich gcinn] #[+tl ten heads]; but the word #[i euro] is not eclipsed, e.g., #[i ocht euro] #[+tl eight euros]; #[i naoi euro] #[+tl nine euros], and neither is #[i cent], e.g., #[i ocht cent] #[+tl eight cents]; #[i deich cent] #[+tl ten cents].
+      when "TheCardinalNumbers"
+        | The Cardinal Numbers
+      when "9-3-2-title"
+        | Nouns with a Special Plural Form After the Cardinal Numbers
+      when "9-3-2-p"
+        | There are a number of nouns whose nominative plural form, or a distinct plural form, is used after the cardinal numbers 3&ndash;10 and after numbers ending in 3&ndash;9. Those nouns are shown in the table below. Although #[i é fichid] is not a plural version, that version is included in this class.
+      when "Table9G-caption"
+        | The Cardinal Numbers &mdash; Noun Forms with a Distinct Plural Version
+      when "Table9G-exception"
+        | (#[i except when it means] ball beatha #[+tl vital organ])
+      when "Table9G-babhta"
+        | babhta #[+tl occasion]
+      when "9-3-2-a-p"
+        | The nominative singular form of nouns used with the cardinal numbers 1&ndash;2 and after numbers ending in 1&ndash;2, e.g., #[i aon phingin amháin] #[+tl one penny]; #[i dhá bhliain] #[+tl two years]; #[i aon uair déag] #[+tl eleven times]; #[i dhá cheann is tríocha] #[+tl thirty-two].
+      when "9-3-2-b-p"
+        | The plural form is not lenited after 3&ndash;6 or after numbers ending in 3&ndash;6, e.g., #[i trí seachtaine] #[+tl three weeks]; #[i ceithre cinn déag] #[+tl fourteen heads].
+      when "9-3-2-c-p"
+        | After 3&ndash;6 and after numbers ending in 3&ndash;6 #[i h] is placed before the plural form #[i uaire], e.g., #[i cúig huaire] #[+tl five times].
+      when "9-3-2-d-p"
+        | The numbers 7&ndash;10 and numbers ending in 7&ndash;9 eclipse the plural form, e.g., #[i seacht mbliana] #[+tl seven years]; #[i ocht bpingine déag] #[+tl eighteen pennies].
+      when "9-3-2-e-p"
+        | #[i déag] is not lenited after the plural form, even if it ends in a vowel, e.g., #[i trí bliana déag] #[+tl thirteen years]; #[i ocht n&#x2011;uaire déag] #[+tl eighteen times].
+      when "9-3-2-f-p"
+        | The nominative singular form is used after the tens (other than #[i deich]), e.g., #[i fiche bliain] #[+tl twenty years]; #[i tríocha pingin] #[+tl thirty pennies]; #[i ochtó troigh] #[+tl eighty feet].
+      when "Table9H-caption"
+        | The Cardinal Numbers &mdash; Examples of Noun Forms with Distinct Plural Forms
+      when "Table9H-header"
+        | The Cardinal Numbers &mdash; Distinct Plural Forms
+      when "9-3-3-title"
+        | The Adjective with the Cardinal Numbers 1&ndash;19
+      when "9-3-3-a-p"
+        | Following for the cardinal number 1, the adjective accompanying the noun is in the singular and is of the same gender as the noun.
+      when "9-3-3-b-p"
+        | Following the other numbers (2&ndash;19), the adjective is in the plural and is omitted.
+      when "9-3-3-c-p"
+        | The word #[i déag] is placed before an adjective or adjectives accompanying the noun (but see #[+link("#sec_9_3_1_f", "9.3.1(f)")]).
+      when "Table9I-caption"
+        | The Cardinal Numbers 1&ndash;19 &mdash; Form of the Adjective
+      when "Table9I-header"
+        | The Adjective with the Cardinal Numbers
+      when "9-3-4-title"
+        | Form of the Adjective with the Nouns that have a particular Plural Version
+      when "9-3-4-a-p"
+        | Following the cardinal number 1, the adjective accompanying the noun is in the singular, and is of the same gender as the noun.
+      when "9-3-4-b-p"
+        | The adjective in the plural is placed after the plural form but the adjective is not lenited if that plural form ends in a vowel. The adjective is lenited after #[i cinn] and #[i fichid].
+      when "Table9J-caption"
+        | The Cardinal Numbers 1&ndash;19 &mdash; Adjective Form with Nouns that have a particular Plural Version
+      when "Table9J-header"
+        | The Adjective with the Nouns that have a particular Plural Version
+      when "9-3-5-title"
+        | The Article with the Cardinal Numbers 1&ndash;19
+      when "9-3-5-a-p"
+        | Singular form of the article
+      when "9-3-5-a-i-p"
+        | The singular form of the article is placed before the cardinal number 1, before numbers ending in 1, and before plurals of 10 from 20 onwards.
+      when "9-3-5-a-ii-p"
+        | #[i t&#x2011;] is placed before the cardinal number #[i aon] after the article, e.g., #[i an t&#x2011;aon leabhar amháin] #[+tl the one book]; #[i an t&#x2011;aon bhileog amháin] #[+tl the one sheet]. The #[i t&#x2011;] is removed after a preposition, e.g., #[i san aon leabhar amháin] #[+tl in the one book]; #[i tríd an aon fhuinneog amháin] #[+tl through the one window].
+      when "9-3-5-a-iii-p"
+        | The singular form of the article placed before the cardinal number #[i dhá] also but the cardinal number becomes #[i dá], e.g., #[i an dá chapall] #[+tl the two horses].
+      when "9-3-5-b-p"
+        | Plural form of the article
+      when "9-3-5-b-i-p"
+        | It is the plural form of the article that is placed before the cardinal numbers 3&ndash;9 and 13&ndash;19.
+      when "9-3-5-b-ii-p"
+        | #[i h] is placed before a cardinal number beginning with a vowel after the plural form of the article, e.g., #[i na hocht gcapall] #[+tl the eight horses].
+      when "9-3-5-c-p"
+        | The article does not affect adjectives following cardinal numbers and nouns, e.g., #[i an dá chapall mhóra] #[+tl the two big horses].
+      when "Table9K-caption"
+        | The Cardinal Numbers 1&ndash;19 &mdash; The Article
+      when "Table9K-header"
+        | The Article with the Cardinal Numbers
+      when "9-3-5-note"
+        | Note that for nouns that use a particular plural form after the cardinal numbers, the same pattern is followed, e.g., #[i an t&#x2011;aon bhliain amháin] #[+tl the one year]; #[i an dá cheann mhóra] #[+tl the two big heads]; #[i na hocht dtroithe déag] #[+tl the eighteen feet]; etc.
+      when "9-3-6-title"
+        | The Cardinal Numbers 1&ndash;19 &mdash; The Genitive Case without the Article
+      when "9-3-6-a-p"
+        | Nouns and adjectives change form in the genitive after #[i aon], e.g., #[i ualach aon chapaill mhóir amháin] #[+tl one big horse&rsquo;s load]; #[i fráma aon fhuinneoige báine amháin] #[+tl one white window frame]; except when #[i déag] follows, e.g., #[i ualach aon chapall déag mhóra] #[+tl eighteen big horses&rsquo; load]; #[i fráma aon fhuinneog déag bhána] #[+tl eighteen white window frames].
+      when "9-3-6-b-p"
+        | For 2&ndash;19, the form of the noun or the cardinal number in the genitive does not change, e.g., #[i fad dhá mhéadar] #[+tl two meters long]; #[i costas trí fhuinneog] #[+tl cost of three windows]; #[i úinéir seacht ngabhar] #[+tl owner of seven goats]; #[i tréimhse naoi n&#x2011;oíche] #[+tl period of nine nights]; #[i tiománaithe trí thacsaí dhéag] #[+tl drivers of thirteen taxis]; but the adjective is put in the plural, and it is lenited, e.g., #[i costas trí fhuinneog dheasa] #[+tl cost of three nice windows]; #[i úinéir seacht ngabhar chrosta] #[+tl owner of seven cross goats]; #[i tiománaithe trí thacsaí dhéag chostasacha] #[+tl drivers of thirteen costly taxis]; unless it is a distinct plural form ending in a vowel or a broad consonant, e.g., #[i trí bliana crua] #[+tl three hard years].
+      when "9-3-7-title"
+        | The Cardinal Numbers 1&ndash;19 &mdash; The Genitive Case with the Article
+      when "9-3-7-a-p"
+        | A change of form on a noun and an adjective in the genitive after any place where the article is there is subject to the following points.
+      when "9-3-7-a-i-p"
+        | Subject to the gender of the noun, use #[i an] or #[i na] in the genitive case before the ordinal number #[i aon] when #[i déag] does not follow it, e.g., #[i ualach an aon chapaill amháin] #[+tl the load of the one horse]; #[i costas na haon fhuinneoige amháin] #[+tl the cost of the one window]; but #[i ábhar an aon chuntas déag amháin] #[+tl the content of the one account of ten]; #[i ag ceartú an aon aiste dhéag shuimiúla] #[+tl correcting the one essay of ten significant].
+      when "9-3-7-a-ii-p"
+        | If the noun is feminine, an #[i h] must be placed before the cardinal number #[i aon], e.g., #[i i gcaitheamh na haon oíche amháin sin] #[+tl in the course of that one night].
+      when "9-3-7-a-iii-p"
+        | If the noun is masculine, the #[i t&#x2011;] is removed before the cardinal number #[i aon], e.g., #[i ar feadh an aon lae amháin sin] #[+tl over the course of that one day].
+      when "9-3-7-b-p"
+        | Change #[i dhá] to #[i dá] after the singular article (#[i an], #[i don], #[i sa], etc.).
+      when "9-3-7-c-p"
+        | For the cardinal numbers #[i trí] to #[i deich], the cardinal numbers (#[i trí], #[i ceithre], #[i cúig], #[i ocht], #[i deich]) are eclipsed in the genitive case after the article (#[i na]).
+      when "9-3-7-d-p"
+        | The same rules apply to nouns with a particular plural form and the adjectives accompanying them (see #[+link("#sec_9_3_4", "9.3.4")]) as applied in the nominative case, e.g., #[i tréimhse na sé bliana fada] #[+tl the period of six long years]; #[i deireadh na naoi seachtaine déag fada] #[+tl the end of the nineteen long weeks]; #[i Cogadh na Naoi mBliana] #[+tl the Nine Years&rsquo; War]; #[i costas na dtrí troithe cearnacha eile] #[+tl the cost of the three other square feet]; #[i úinéir an dá cheann bhána] #[+tl the owner of the two white ones]; #[i praghas na dtrí cinn mhóra] #[+tl the price of the three big ones].
+      when "Table9L-caption"
+        | The Cardinal Numbers 1&ndash;19 &mdash; The Genitive Case with the Article
+      when "Table9L-header"
+        | Genitive Case with the Article
+      when "9-3-8-title"
+        | The Cardinal Numbers written in Figures 1&ndash;19
+      when "9-3-8-p"
+        | The rules for writing the cardinal numbers 1&ndash;19 in figures are the same as those for writing them in words, e.g., #[i 1 chapall mór] #[+tl 1 big horse]; #[i 3 bhád bheaga] #[+tl 3 small boats]; #[i 7 n&#x2011;oíche dhorcha] #[+tl 7 dark nights]; #[i 13 seachtaine fuara] #[+tl 13 cold weeks]; #[i 17 ngluaisteán shaora] #[+tl 17 free cars]; #[i 19 mbliana fada] #[+tl 19 long years].
+      when "9-3-9-title"
+        | The Cardinal Numbers 20+ &mdash; The Tens
+      when "9-3-9-a-p"
+        | The nominative singular form of the noun is placed after the tens. No initial mutation is made to the noun.
+      when "9-3-9-b-p"
+        | If there is an adjective, it agrees with the gender of the noun.
+      when "9-3-9-c-p"
+        | The singular form of the article is placed before the tens, e.g., #[i an fiche teach nua] #[+tl the twenty new houses]; #[i an seasca duine cáiliúil] #[+tl the sixty famous people].
+      when "9-3-9-d-p"
+        | In the genitive case, if the article is not present, no change of form is made to the noun or to the cardinal number.
+      when "9-3-9-e-p"
+        | If the article is present in the genitive case, the article affects the initial mutation of the number as it would on a masculine noun, but no initial mutation is made on #[i f] or #[i s].
+      when "Table9M-caption"
+        | The Cardinal Numbers &mdash; Nominative and Genitive Case of the Tens
+      when "TheNominativeCase"
+        | Nominative Case
+      when "TheGenitiveCase"
+        | Genitive Case
+      when "WithoutArticle"
+        | without the Article
+      when "WithArticle"
+        | with the Article
+      when "9-3-9-note-p1"
+        | When the plural form of the tens is used in the genitive plural, the noun following it is also in the plural, e.g., #[i na céadta daoine] #[+tl the hundreds of people]; #[i na mílte dathanna] #[+tl the thousands of colors].
+      when "9-3-9-note-p2"
+        | The genitive plural of the singular nouns also follows #[i dosaen] (dozen) and #[i scór] (score), e.g., #[i dosaen amhrán] #[+tl a dozen songs]; #[i scór daoine] #[+tl a score of people].
+      when "9-3-10-title"
+        | The other Cardinal Numbers 20+
+      when "9-3-10-a-p"
+        | There are two systems for the cardinal numbers above 20 (other than the tens mentioned earlier, see #[+link("#sec_9_3_9", "9.3.9")]): the Established System and the Simplified System. Both systems apply to the cardinal numbers whether written in words or in figures. Both systems are equivalent and acceptable.
+      when "TheEstablishedSystem"
+        | The Established System
+      when "TheSimplifiedSystem"
+        | The Simplified System
+      when "9-3-10-b-i-p"
+        | The noun is in the singular form or in its particular plural form and the appropriate initial mutation is made to the noun.
+      when "9-3-10-b-ii-p"
+        | After numbers ending in 1, the adjective agrees with the gender of the noun. For numbers ending in 2&ndash;9, the adjective is in the plural and is lenited (but see #[+link("#sec_9_3_4", "9.3.4")]).
+      when "9-3-10-c-i-p"
+        | The noun is always in the singular, even if it is a noun that has a particular plural form, and no initial mutation is made to it. The adjective is always in the singular and is lenited according to the gender of the noun.
+      when "9-3-10-c-ii-p"
+        | For numbers ending in 2 or 4, the bare numbers #[i dó] and #[i ceathair] are used instead of #[i dhá] and #[i ceithre].
+      when "9-3-10-d-p"
+        | If multiples of 10 are involved, there is only one form, e.g., #[i céad is fiche bád] #[+tl one hundred and twenty boats].
+      when "9-3-10-e-p"
+        | Regarding the article, the pattern used with the numbers 1&ndash;19 is followed with the numbers above 20, e.g., #[i an t&#x2011;aon leabhar is fiche] #[+tl the twenty-one books]; #[i an dá bhord is tríocha] #[+tl the thirty-two tables]; #[i na cúig pheann is seasca] #[+tl the sixty-five pens] (see #[+link("#sec_9_3_5", "9.3.5")]).
+      when "Table9N-caption"
+        | The Cardinal Numbers 21&ndash;99 &mdash; The Established System and the Simplified System
+      when "9-3-10-note-p1"
+        | When an adjective accompanies a cardinal number, the plural form of the noun #[i ceann] (#[i cinn]) can be used along with the preposition #[i de], e.g., #[i seacht gcinn déag d&rsquo;oícheanta ciúine] #[+tl seventeen quiet nights]; #[i trí cinn is tríocha de bháid mhóra] #[+tl thirty-three big boats].
+      when "9-3-10-note-p2"
+        | Another option is the bare number plus the preposition #[i de] plus the plural form of the noun and the accompanying adjective, e.g., #[i a haon déag de bhlianta fada] #[+tl the eleven long years]; #[i tríocha a trí de bháid mhóra] #[+tl the thirty-three big boats].
+      when "9-3-11-title"
+        | The Cardinal Numbers 100+
+      when "9-3-11-p1"
+        | In the Established System, the reverse order is used below 100 for numbers above 100, e.g., #[i céad fiche is aon chapall amháin] #[+tl one hundred and twenty-one horses]; #[i dhá mhíle, trí chéad is ceithre chapall] #[+tl two thousand, three hundred and four horses]; etc.
+      when "9-3-11-p2"
+        | The other rules are the same as the rules for the cardinal numbers mentioned in #[+link("#sec_9_3_10", "9.3.10")].
+      when "Table9O-caption"
+        | The Cardinal Numbers 100+ &mdash; The Established System and the Simplified System
+      when "9-3-12-title"
+        | The Cardinal Numbers written in Figures 20+
+      when "9-3-12-p"
+        | The rules of the Established System and the Simplified System, respectively, (see #[+link("#sec_9_3_10", "9.3.10")]) are applied when numbers above 20 are written in figures.
+      when "Table9P-caption"
+        | The Cardinal Numbers 20+ in Figures &mdash; The Established System and the Simplified System
+      when "9-4-title"
+        | The Personal Number
+      when "9-4-p"
+        | The personal number is a number that indicates the number of people.
+      when "9-4-1-title"
+        | The Use of Personal Numbers
+      when "9-4-1-a-p"
+        | The personal numbers (2&ndash;10 and 12) are used to count people.
+      when "9-4-1-b-p"
+        | The usual system of numbers is used to count #[i aon duine dhéag] or a number of people greater than #[i dháréag] #[+tl twelve], e.g., #[i aon duine dhéag] #[+tl eleven people]; #[i trí dhuine dhéag] #[+tl thirteen people]; #[i ceithre dhuine is daichead] #[+tl forty-four people].
+      when "Table9Q-caption"
+        | The Personal Numbers
+      when "Table9Q-header"
+        | The Personal Numbers
+      when "9-4-2-title"
+        | The Bare Use of Personal Numbers
+      when "9-4-2-a-title"
+        | The bare personal number
+      when "9-4-2-a-i-p"
+        | The personal number can be used bare (without a noun following) to count the number of people, e.g., #[i An bhfaca tú an bheirt?] #[+tl Did you see the two of them?]; #[i Gabhadh seachtar] #[+tl Seven were captured].
+      when "9-4-2-a-ii-p"
+        | The bare personal number in the genitive is treated as a common noun, e.g., #[i cor beirte] #[+tl a pair of]; #[i col ceathrair] #[+tl a group of four]; #[i col seisir] #[+tl a group of six].
+      when "9-4-2-b-title"
+        | The article before the bare personal number
+      when "9-4-2-b-i-p"
+        | All personal numbers except #[i beirt] are masculine nouns, e.g., #[i an bheirt] #[+tl the two]; #[i an ceathrar] #[+tl the four]; #[i an t&#x2011;ochtar] #[+tl the eight].
+      when "9-4-2-b-ii-p"
+        | #[i Dháréag] is not lenited after the article, #[i aon] or #[i céad], e.g., #[i bhí an dáréag ann] #[+tl there were twelve]; #[i gach aon dáréag acu] #[+tl each of them had twelve]; #[i an chéad dáréag a cháiligh] #[+tl the first twelve qualified].
+      when "9-4-2-b-iii-p"
+        | The bare personal number in the genitive is treated as a common noun when preceded by the article, e.g., #[i cótaí an tseisir] #[+tl the coats of the six]; #[i ticéid an ochtair] #[+tl the tickets of the eight]; #[i gluaisteán na beirte] #[+tl the car of the two].
+      when "Table9R-caption"
+        | The Bare Personal Numbers &mdash; The Nominative and Genitive Cases with the Article
+      when "TheNumber"
+        | Number
+      when "9-4-2-c-title"
+        | The adjective with the bare personal number &mdash; #[i Beirt] #[+tl two (people)]
+      when "9-4-2-c-i-p"
+        | If an adjective qualifies the word #[i beirt] and it is in the nominative*, the adjective is in the nominative plural and lenited, e.g., #[i an bheirt cháiliúla] #[+tl the two famous]; #[i beirt mhisniúla] #[+tl two brave]; #[i don bheirt óga] #[+tl to the two young].
+      when "9-4-2-c-ii-p"
+        | If the word #[i beirt], when following the article and in the genitive, is qualified by an adjective that follows it, the adjective is in the feminine singular genitive, e.g., #[i tuairimí na beirte díograisí] #[+tl the opinions of the two enthusiastic]; #[i nótaí na beirte misniúla] #[+tl the notes of the two brave]; #[i iarrachtaí na beirte cróga] #[+tl the efforts of the two courageous].
+      when "9-4-2-c-iii-p"
+        | If the word #[i beirt], when in the genitive but without the article preceding it, is qualified by an adjective that follows it, and it is following and subject to another noun, the adjective is in the plural following #[i beirt] and lenited (and the genitive change does not apply to the word #[i beirt] but it is lenited), e.g., #[i moltaí bheirt mhisniúla] #[+tl the praises of two brave]; #[i tuairimí bheirt cháiliúla] #[+tl the opinions of two famous]; #[i obair bheirt acadúla] #[+tl the work of two academic].
+      when "9-4-2-c-iv-p"
+        | If the word #[i beirt], when in the genitive but without the article preceding it, is qualified by an adjective that follows it, and it is subject to a compound preposition or a verbal noun, the adjective is in the plural following #[i beirt] and lenited (and no change is made to the word #[i beirt] either), e.g., #[i le haghaidh beirt inniúla] #[+tl for two capable]; #[i ag moladh beirt mhaithe] #[+tl praising two good].
+      when "9-4-2-d-title"
+        | The adjective with the bare personal number &mdash; #[i Triúr] to #[i dháréag]
+      when "9-4-2-d-i-p"
+        | If the personal numbers #[i triúr] to #[i dháréag] (but see #[+link("#sec_9_4_1_b", "9.4.1(b)")]), and they are in the nominative*, are being qualified by an adjective that follows them, the adjective is in the nominative singular without any lenition, e.g., #[i triúr mór] #[+tl three big]; #[i ceathrar ard] #[+tl four tall]; #[i an cúigear saibhir] #[+tl the five rich]; #[i don dáréag clúiteach] #[+tl to the twelve famous].
+      when "9-4-2-d-ii-p"
+        | If the personal numbers #[i triúr] to #[i dháréag] (but see #[+link("#sec_9_4_1_b", "9.4.1(b)")]), and they are in the genitive, are being qualified by an adjective that follows them, the usual rules regarding adjectives in the genitive case that apply to nouns are applied to the adjectives accompanying them, e.g., #[i éadaí an cheathrair bhig] #[+tl the clothes of the four small]; #[i meitheal ochtair dhíograisigh] #[+tl the effort of the eight diligent]; #[i airgead an dáréag chlúitigh] #[+tl the money of the twelve famous] (see #[+link("./chapter4.html", "Chapter 4")]).
+      when "OtherCasesFootnote"
+        | Or in the vocative, dative or accusative.
+      when "9-4-3-title"
+        | Nouns with Personal Numbers
+      when "9-4-3-a-title"
+        | The form of the personal number and the form of the noun following it
+      when "9-4-3-a-i-p"
+        | If the word #[i beirt], when in the nominative*, is being qualified by a noun that follows it, the noun is in the genitive plural and lenited (except for a noun beginning with #[i d], #[i t] or #[i s]), e.g., #[i beirt chaptaen] #[+tl two captains]; #[i beirt chumadóirí] #[+tl two composers]; #[i beirt drumadóirí] #[+tl two drummers]; #[i ag beirt bhan] #[+tl with two women].
+      when "9-4-3-a-ii-p"
+        | If the word #[i beirt], when in the genitive without the article, is being qualified by a noun that follows it, and it is following and subject to another noun, the genitive change does not apply to the word #[i beirt] but it is lenited and the noun is in the genitive plural and lenited (except for a noun beginning with #[i d], #[i t] or #[i s]), e.g., #[i moltaí bheirt chumadóirí] #[+tl the praises of two composers]; #[i tuairimí bheirt chaptaen] #[+tl the opinions of two captains]; #[i obair bheirt saineolaithe] #[+tl the work of two experts].
+      when "9-4-3-a-iii-p"
+        | If the word #[i beirt], when in the genitive but without the article preceding it, is being qualified by a noun that follows it, and it is following and subject to a compound preposition or a verbal noun, no change is made to the word #[i beirt] and the noun is in the genitive plural and lenited (except for a noun beginning with #[i d], #[i t] or #[i s]), e.g., #[i le haghaidh beirt mholtóirí] #[+tl for two evaluators]; #[i ag moladh beirt saighdiúirí] #[+tl praising two soldiers].
+      when "9-4-3-a-iv-p"
+        | The genitive plural of the noun follows the personal numbers from #[i triúr] to #[i dháréag] (but see #[+link("#sec_9_4_1_b", "9.4.1(b)")]) when counting people, e.g., #[i triúr bádóirí] #[+tl three boatmen]; #[i ceathrar múinteoirí] #[+tl four teachers].
+      when "9-4-3-a-v-p"
+        | The genitive change does not apply to the personal numbers from #[i triúr] to #[i dháréag] (but see #[+link("#sec_9_4_1_b", "9.4.1(b)")]) if there is a noun following, e.g., #[i athair ceathrar mac] #[+tl father of four sons]; #[i máthair cúigear iníonacha] #[+tl mother of five daughters]; #[i geansaithe dháréag peileadóirí] #[+tl sweaters of twelve footballers].
+      when "Table9S-caption"
+        | The Personal Numbers &mdash; The Form of the Noun following the Personal Number
+      when "Table9S-footnote"
+        | Note that 11 is treated as it is in the cardinal number system, and that the noun is not put in the genitive (see #[+link("#sec_9_3_6_a", "9.3.6(a)")]).
+      when "9-4-3-b-title"
+        | The article before a personal number with a following noun
+      when "9-4-3-b-i-p"
+        | The singular form of the article is used before the personal numbers. They are all masculine except for #[i beirt].
+      when "9-4-3-b-ii-p"
+        | #[i Dháréag] is not lenited after the article, #[i aon] or #[i céad], e.g., #[i an Dáréag Aspal] #[+tl the twelve apostles]; #[i gach aon dáréag scoláirí] #[+tl each of the twelve students]; #[i an chéad dáréag múinteoirí a cháiligh] #[+tl the first twelve teachers who qualified].
+      when "9-4-3-b-iii-p"
+        | If the word #[i beirt], when in the genitive following the article, is being qualified by a noun that follows it, the noun is in the genitive plural and is not lenited (but the genitive change does apply to the word #[i beirt]), e.g., #[i tuairimí na beirte múinteoirí] #[+tl opinions of the two teachers]; #[i nótaí na beirte saineolaithe] #[+tl notes of the two experts]; #[i tuairiscí na beirte comhfhreagraithe] #[+tl reports of the two correspondents]; #[i tithe na beirte deartháireacha] #[+tl houses of the two brothers].
+      when "9-4-3-b-iv-p"
+        | The genitive form change does not apply to the personal numbers from #[i triúr] to #[i dháréag] nor to the noun following, but the article affects the initial mutations of the personal numbers as it would affect the genitive of any other singular noun, e.g., #[i cótaí an cheathrar daltaí] #[+tl coats of the four students]; #[i oifig an tseachtar tréidlianna] #[+tl office of the seven treasurers]; #[i Scoil an tSeachtar Laoch] #[+tl School of the Seven Heroes].
+      when "Table9T-caption"
+        | The Personal Numbers &mdash; The Article before a Personal Number with a following Noun
+      when "Table9T-footnote"
+        | Note that 11 is treated as it is in the cardinal number system, and that the noun is not put in the genitive (see #[+link("#sec_9_3_7_a_i", "9.3.7(a)(i)")]).
+      when "9-4-3-c-title"
+        | The adjective with a noun following a personal number
+      when "9-4-3-c-i-p"
+        | Following the personal number #[i beirt], the adjective is in the nominative plural and lenited, e.g., #[i beirt bhan cháiliúla] #[+tl two famous women]; #[i beirt ghirseach chruthaitheacha] #[+tl two creative girls]; #[i beirt amhránaithe cháiliúla] #[+tl two famous singers]; #[i beirt mhúinteoirí shealadacha] #[+tl two temporary teachers].
+      when "9-4-3-c-ii-p"
+        | If the word #[i beirt], when in the genitive but without the article preceding it, is being qualified by a #[i noun] + #[i adjective] that follows it, and it is following and subject to another noun, the adjective being qualified is in the plural and lenited, e.g., #[i moltaí bheirt léachtóirí acadúla] #[+tl recommendations of two academic lecturers]; #[i tuairimí bheirt iriseoirí sheanbhunaithe] #[+tl opinions of two established journalists]; #[i saothar bheirt ghramadóirí chliste] #[+tl work of two clever grammarians].
+      when "9-4-3-c-iii-p"
+        | If the word #[i beirt], when in the genitive but without the article preceding it, is being qualified by a #[i noun] + #[i adjective] that follows it, and it is following and subject to a compound preposition or a verbal noun, the adjective being qualified is in the plural and lenited, e.g., #[i le haghaidh beirt mholtóirí dheasa] #[+tl for two nice reviewers]; #[i ag moladh beirt chumadóirí shamhlaíocha] #[+tl praising two imaginative composers].
+      when "9-4-3-c-iv-p"
+        | Following the personal numbers #[i triúr] to #[i dháréag] (but see #[+link("#sec_9_4_1_b", "9.4.1(b)")]), the adjective accompanying the noun is in the genitive plural, e.g., #[i triúr scoláirí díograiseacha] #[+tl three diligent students]; #[i ceathrar girseach éirimiúil] #[+tl four clever girls]; #[i bád an triúr bádóirí tuirseacha] #[+tl the boat of the three tired boatmen]; #[i airgead an deichniúr ban bríomhar] #[+tl the money of the ten lively women]. Examples with and without the article are shown in the table below.
+      when "Table9U-caption"
+        | The Personal Numbers &mdash; The Adjective with a Noun following a Personal Number
+      when "Table9U-footnote"
+        | Note that 11 is treated as it is in the cardinal number system, and that the noun is not put in the genitive (see #[+link("#sec_9_3_6_a", "9.3.6(a)")] and #[+link("#sec_9_3_7_a_i", "9.3.7(a)(i)")]).
+      when "9-4-4-title"
+        | The Personal Numbers written in Figures
+      when "9-4-4-a-p"
+        | It is recommended to write the personal numbers from 1&ndash;12 in words rather than figures. If they are written in figures, they are treated as cardinal numbers, e.g., #[i 2 bhean bheaga] #[+tl 2 small women], #[i 4 bhádóir cháiliúla] #[+tl 4 famous boatmen], #[i 7 bhfeirmeoir shaibhre] #[+tl 7 wealthy farmers] (see #[+link("#sec_9_3_8", "9.3.8")]).
+      when "9-4-4-b-p"
+        | The cardinal number system is used to count numbers of people above #[i dháréag]. See #[+link("#sec_9_3_1", "9.3.1")] for a description of the cardinal number system from 1&ndash;19, e.g., #[i trí bhean déag] #[+tl thirteen women]; #[i ceithre ghirseach déag ghalánta] #[+tl fourteen elegant girls]; #[i 17 mbádóir] #[+tl 17 boatmen]; #[i 19 bhfear ocracha] #[+tl 19 old men]; and see #[+link("#sec_9_3_10", "9.3.10")] for a description of the cardinal number system over 20, e.g., #[i trí bhean arda is caoga] #[+tl fifty-three tall women]; #[i 49 ngirseach ghalánta] #[+tl 49 elegant girls].
+      when "9-4-5-title"
+        | The Personal Numbers &mdash; The Simplified System
+      when "9-4-5-p"
+        | A simplified system can be used with the cardinal numbers and the personal numbers above twenty. See #[+link("#sec_9_3_10_c", "9.3.10(c)")] for a description of that Simplified System, e.g., #[i fiche a cúig fear mór] #[+tl twenty-five big men]; #[i tríocha a sé bean shaibhir] #[+tl thirty-six wealthy women]; #[i 46 bádóir cumasach] #[+tl 46 talented boatmen]; #[i 56 girseach chróga] #[+tl 56 brave girls].
+      when "9-5-title"
+        | The Ordinal Number
+      when "9-5-p"
+        | The ordinal number indicates the position of a thing or person in a series.
+      when "9-5-1-title"
+        | The Ordinal Number 1
+      when "9-5-1-a-p"
+        | The ordinal number #[i céad] (#[i an chéad]) (#[b EN]: #[i first], (#[i the first])) can be used with a singular or plural noun. The singular article is used when a singular noun is following, e.g., #[i an chéad chaibidil] #[+tl the first chapter], and the plural article when a plural noun is following, e.g., #[i na chéad chaibidlí] #[+tl the first chapters].
+      when "9-5-1-b-p"
+        | The ordinal number #[i céad] is lenited after the article, e.g., #[i an chéad leabhar] #[+tl the first book]; #[i na chéad rialacha] #[+tl the first rules], but it is not lenited:
+      when "9-5-1-b-i-p"
+        | in the contexts mentioned in #[+link("./chapter1.html", "Chapter 1")] where there is eclipsis after the article in the dative case, e.g., #[i ar an gcéad duine] #[+tl on the first person]; #[i leis an gcéad cheadúnas] #[+tl with the first license];
+      when "9-5-1-b-ii-p"
+        | when #[i céad] is used as a prefix in a masculine noun or in a plural noun, e.g.,
+        | #[i  céadainm], #[i an céadainm] (#[b EN]: #[i first name, the first name]);
+        | #[i  Céad-Aire], #[i an Céad-Aire] (#[b EN]: #[i First Minister, the First Minister]);
+        | #[i  céadonóracha], #[i na céadonóracha] (#[b EN]: #[i first honors, the first honors]);
+        |  (but #[i céadghairm], #[i an chéadghairm] (#[b EN]: #[i first call, the first call]);
+        | #[i céadsearc], #[i an chéadsearc] (#[b EN]: #[i first love, the first love]);
+        |  according to the usual rules of the feminine noun); or as a prefix in a verb, e.g.,
+        | #[i céadbhlaisim] #[+tl I taste first], #[i céadbhlaisfidh sé] #[+tl he will taste first] (but #[i ón uair a chéadbhlais mé é] #[+tl from the time I first tasted it], according to the usual rules of verbs in the past tense, indicative mood);
+      when "9-5-1-b-iii-p"
+        | following the possessive adjectives (feminine, third person singular), e.g., #[i a céad cheolchoirm] #[+tl her first concert] and #[i ár], #[i bhur], #[i a] (third person plural), e.g., #[i ár gcéad teach] #[+tl our first house]; #[i bhur gcéad charr] #[+tl your first car]; #[i a gcéad mhac] #[+tl their first son].
+      when "9-5-1-c-p"
+        | The ordinal number #[i céad] causes lenition of the noun or adjective it governs in all cases, e.g., #[i an chéad fhear] #[+tl the first man]; #[i an chéad bhean] #[+tl the first woman]; #[i na chéad cheithre ghloine] #[+tl the first four glasses]; #[i na chéad bhlianta] #[+tl the first years]; #[i clann an chéad fhir] #[+tl the children of the first man]; #[i mac na chéad mhná] #[+tl the son of the first woman]; #[i lucht na chéad bhliana] #[+tl the people of the first year]; unless the initial letter is #[i d], #[i t] or #[i s], e.g., #[i na chéad daoine] #[+tl the first people], #[i an chéad saighdiúir] #[+tl the first soldier]; #[i an chéad turas] #[+tl the first journey]; #[i ceadúnas an chéad tógálaí] #[+tl the license of the first builder]. (See #[+link("#sec_9_5_4", "9.5.4")] for more information on ordinal numbers in the genitive case.)
+      when "9-5-1-d-p"
+        | The ordinal number #[i céad] is used in the for 1, but for other ordinals ending in 1, the word #[i aonú] is used. In the nominative case, #[i t&#x2011;] is prefixed to #[i aonú] after the article, e.g., #[i an t&#x2011;aonú lá is tríocha] #[+tl the thirty-first day].
+      when "9-5-2-title"
+        | The Ordinal Numbers 1&ndash;100 &mdash; General Information
+      when "Table9V-caption"
+        | #[+renderKey("TheOrdinalNumbers")] 1&ndash;100
+      when "Table9W-caption"
+        | #[+renderKey("TheOrdinalNumbers")] 100+
+      when "9-5-2-a-p"
+        | The singular form of the article precedes the ordinal numbers (except for the ordinal number 1, see #[+link("#sec_9_5_1", "9.5.1")]), e.g., #[i an dara bean] #[+tl the second woman]; #[i an dóú teach] #[+tl the second house]; #[i an tríú tuarascáil] #[+tl the third report]; #[i an ceathrú bean is fiche] #[+tl the twenty-fourth woman]; #[i an cúigiú comhartha is seasca] #[+tl the sixty-fifth sign].
+      when "9-5-2-b-p"
+        | After the ordinal number #[i dara] and all ordinal numbers ending in #[i -ú], #[i h] is prefixed to a noun beginning with a vowel, e.g., #[i an dara hoíche] #[+tl the second night]; #[i an tríú hurlár] #[+tl the third floor]; #[i an séú hóstán déag] #[+tl the sixteenth hotel]; #[i an t&#x2011;ochtú hurlár is tríocha] #[+tl the thirty-eighth floor].
+      when "9-5-2-c-p"
+        | The article usually precedes the first number in the ordinal number, unless a possessive adjective or #[i gach] precedes it, e.g., #[i an tríú lá ach gach dara bliain] #[+tl the third day but every second year]; #[i a tríú bliain] #[+tl his third year].
+      when "9-5-2-d-p"
+        | A system that follows the rules of the cardinal numbers (The Established System) is used to indicate the position of a thing in a series below 100, e.g., #[i an dara hábhar is tríocha] #[+tl the thirty-second item]; #[i an ceathrú cathaoir is caoga] #[+tl the fifty-fourth chair]; #[i an seachtú hoíche is seachtó] #[+tl the seventy-seventh night]; #[i an t&#x2011;ochtú madra is nócha] #[+tl the ninety-eighth dog].
+      when "9-5-2-e-p"
+        | No lenition is added to the word #[i déag] in the ordinal number, e.g., #[i an tríú duine déag] #[+tl the thirteenth person]; #[i an t&#x2011;ochtú bosca déag] #[+tl the eighteenth box]; #[i an naoú leabhar déag] #[+tl the nineteenth book].
+      when "TheOrdinalNumbers"
+        | The Ordinal Numbers
+      when "9-5-3-title"
+        | The Ordinal Numbers 100+
+      when "9-5-3-a-p"
+        | A system based on the multiplicative number system is used to indicate the position of a thing in a series above 100, e.g., #[i céad a ceathair &mdash; an céad is ceathrú feirmeoir] #[+tl the one hundred and fourth farmer]; #[i cúig chéad seasca a ceathair &mdash; an cúig chéad seasca is ceathrú heitleán] #[+tl the five hundred and sixty-fourth airplane]; #[i seacht míle, ceithre chéad a naoi déag &mdash; an seacht míle, ceithre chéad is naoú hóstán déag] #[+tl the seven thousand, four hundred and nineteenth hotel].
+      when "9-5-3-b-p"
+        | Lenition is added to the word #[i déag] after the number #[i míle], e.g., #[i an trí mhíle dhéag is ceathrú hoileán] #[+tl the three thousand and fourteenth island].
+      when "9-5-4-title"
+        | The Ordinal Numbers in the Genitive Case
+      when "9-5-4-a-p"
+        | For the ordinal number #[i céad], the noun following it is declined and the article agrees with the number and gender of the noun, e.g.,
+        |  #[i an chéad fhear], #[i clann an chéad fhir] (#[b EN]: #[i the first man], #[i the family of the first man]);
+        |  #[i an chéad bhean], #[i clann na chéad mhná] (#[b EN]: #[i the first woman], #[i the family of the first woman]);
+        |  #[i na chéad cheithre bliana], #[i tús na chéad cheithre bliana] (#[b EN]: #[i the first four years], #[i the beginning of the first four years]);
+        |  #[i na chéad chúig charr], #[i plátaí clárúcháin na chéad chúig charr] (#[b EN]: #[i the first five cars], #[i the registration plates of the first five cars]);
+        |  #[i na chéad taiscéalaithe], #[i eachtraí na chéad taiscéalaithe] (#[b EN]: #[i the first explorers], #[i the adventures of the first explorers]).
+      when "9-5-4-b-p"
+        | For all other ordinal numbers, the noun is never declined, e.g., #[i mac an dara bean] #[+tl the son of the second woman]; #[i mac an dara fear] #[+tl the son of the second man]; #[i eagraíocht tríú tír] #[+tl the organization of the third country]; #[i oideachas tríú leibhéal] #[+tl the third level of education]; #[i clúdach an cheathrú tuarascáil] #[+tl the cover of the fourth report]; #[i deireadh an fichiú haois] #[+tl the end of the twentieth century]; #[i tús an aonú haois is fiche] #[+tl the beginning of the twenty-first century].
+      when "9-5-4-c-p"
+        | The #[i t&#x2011;] is dropped before #[i aonú], #[i ochtú], #[i ochtódú], etc., e.g.,
+        |  #[i an t&#x2011;aonú bliain déag], #[i tús an aonú bliain déag] (#[b EN]: #[i the eleventh year], #[i the beginning of the eleventh year]);
+        |  #[i an t&#x2011;ochtú haois déag], #[i tús an ochtú haois déag] (#[b EN]: #[i the eighteenth century], #[i the beginning of the eighteenth century]);
+        |  #[i an t&#x2011;ochtódú cruinniú], #[i miontuairiscí an ochtódú cruinniú] (#[b EN]: #[i the eighteenth meeting], #[i the minutes of the eighteenth meeting]).
+      when "9-5-4-d-p"
+        | The article affects the initial mutations of the ordinal numbers as it would affect a masculine noun, e.g., #[i bróga an chúigiú girseach] #[+tl the shoes of the fifth girl]; #[i seoladh an cheathrú teach is daichead] #[+tl the launch of the forty-fourth house]; but no initial mutation is made to #[i f] or #[i s], e.g., #[i lucht an seachtú hoifig] #[+tl the people of the seventh office]; #[i bonn an fichiú himreoir] #[+tl the base of the twentieth player]; #[i deireadh an seascadú comhdháil] #[+tl the end of the sixteenth conference].
+      when "Table9X-caption"
+        | The Ordinal Numbers in the Genitive Case
+      when "Table9X-header"
+        | The Ordinal Numbers in the Genitive Case
+      when "9-5-5-title"
+        | Adjectives with Ordinal Numbers
+      when "9-5-5-p"
+        | The adjective is declined according to the noun, e.g., #[i an chéad bhean mhór] #[+tl the first big woman]; #[i an chéad fhear mór] #[+tl the first big man]; #[i seol an chéad bháid ghoirm] #[+tl the launch of the first blue boat]; #[i deireadh na chéad tuarascála cuimsithí] #[+tl the end of the first comprehensive report]; #[i na chéad scoláirí maithe] #[+tl the first good students]; #[i eachtraí na chéad taiscéalaithe cáiliúla] #[+tl the adventures of the first famous explorers]; #[i an tríú fear mór is tríocha] #[+tl the thirty-third big man]; #[i cóta an daicheadú bean mhór] #[+tl the coat of the forty-first big woman].
+      when "9-5-6-title"
+        | The Ordinal Numbers written in Figures
+      when "9-5-6-a-p"
+        | Ordinal numbers are written in figures by adding #[i ú] #[+tl st, nd, rd, th] after the figure, e.g., #[i an 1ú], #[i an 2ú], #[i an 19ú], #[i an 123ú].
+      when "9-5-6-b-p"
+        | The rules for writing ordinal numbers in figures are the same as the rules for writing ordinal numbers in words (see #[+link("#sec_9_5_1", "9.5.1")] to #[+link("#sec_9_5_5", "9.5.5")] above). Note that #[i h] is prefixed before a vowel and no lenition is added after 1ú since it is #[i aonú] (not #[i céad]).
+      when "9-6-title"
+        | The Fraction
+      when "9-6-p"
+        | A numerical quantity that is not a whole number is a fraction, e.g., #[i 1/4 &mdash; ceathrú]; #[i 2/3 &mdash; dhá thrian]; #[i 5/6 &mdash; cúig shéú].
+      when "9-6-1-title"
+        | Composition of the Fraction
+      when "9-6-1-a-p"
+        | A standard fraction has two parts: #[i the numerator] and #[i the denominator]. The numerator is placed above the line and the denominator below the line, e.g., for 6/7, 6 is the numerator and 7 is the denominator.
+      when "9-6-1-b-p1"
+        | The ordinal numbers are used to indicate the denominator except for the words #[i leath] and #[i trian].
+      when "9-6-1-b-p2"
+        | Note that a special plural form #[i treana] of the noun #[i trian] is used with the numbers 3&ndash;10. The noun is left unmodified after #[i trí], #[i ceithre], #[i cúig], #[i sé], e.g., #[i 3/3 &mdash; trí treana]; #[i 4/3 &mdash; ceithre treana]; and it is eclipsed after #[i seacht], #[i ocht], #[i naoi], #[i deich], e.g., #[i 9/3 &mdash; naoi dtreana]; #[i 10/3 &mdash; deich dtreana].
+      when "9-6-1-c-p"
+        | When the denominator is a number between 11&ndash;19, a form derived from the ordinal number is used, e.g., #[i 4/13 &mdash; ceithre thrídéagú]; #[i 6/15 &mdash; sé chúigdéagú].
+      when "9-6-1-d-p"
+        | When the denominator is a number over 20, the order of the words is the same as that of the bare numbers but an ordinal number is used instead of a bare number at the end, e.g., #[i 1/30 &mdash; tríochadú]; #[i 4/97 &mdash; ceithre nócha seachtú].
+      when "9-6-1-e-p"
+        | Fractions are written in several different ways, as illustrated below. Option #[+link("#sec_9_6_1_e_i", "(i)")] is the structure most commonly used.
+      when "9-6-1-e-i-p"
+        | It is possible to use two bare numbers with the preposition #[i ar] or the compound preposition #[i os cionn] between them to express any fraction, e.g., #[i 1/11 &mdash; a haon ar a haon déag]; #[i a haon os cionn a haon déag]; #[i 7/8 &mdash; a seacht ar a hocht]; #[i a seacht os cionn a hocht]; #[i 4/15 &mdash; a ceathair ar a cúig déag]; #[i a ceathair os cionn a cúig déag]; #[i 33/57 &mdash; tríocha a trí ar chaoga a seacht]; #[i tríocha a trí os cionn caoga a seacht]; #[i 136/82 &mdash; céad tríocha a sé ar ochtó dó]; #[i céad tríocha a sé os cionn ochtó dó]. #[i Fiche] is not lenited in fractions, e.g., #[i 3/24 &mdash; a trí ar fiche a ceathair].
+      when "9-6-1-e-ii-p"
+        | When the numerator is 1, the word #[i cuid] can be used with the ordinal numbers to express fractions, e.g., #[i 1/2 &mdash; leath]; #[i an leathchuid]; #[i 1/3 &mdash; trian]; #[i an tríú cuid]; #[i 1/11 &mdash; aondéagú]; #[i an t&#x2011;aondéagú cuid]. The form with #[i cuid] is usually used when the denominator is a number over 20, e.g., #[i 1/27 &mdash; an fiche seachtú cuid]; #[i 1/156 &mdash; an céad caoga séú cuid]. For the tens, however, one would rather say #[i tríochadú], etc. #[i ná an tríochadú cuid].
+      when "9-6-1-e-iii-p"
+        | When the numerator is between 2 and 10, the cardinal numbers and the ordinal form (see #[+link("#sec_9_6_1_b", "(b)")], #[+link("#sec_9_6_1_c", "(c)")] and #[+link("#sec_9_6_1_d", "(d)")] above) are used to express the fraction. Fractions are common nouns and the usual rules of the cardinal numbers are followed when counting them, e.g., #[i 7/8 &mdash; seacht n&#x2011;ochtú]; #[i 4/15 &mdash; ceithre chúigdéagú]; but #[i fichiú] is not lenited, e.g., #[i 3/20 &mdash; trí fichiú].
+      when "9-6-1-e-iv-p"
+        | As an alternative to #[+link("#sec_9_6_1_e_iii", "(iii)")] above, when the numerator is between 2 and 10 the noun #[i ceann]/#[i cinn] can be used with the preposition de and the plural form of the denominator, e.g., #[i 7/8 &mdash; seacht gcinn d&rsquo;ochtuithe]; #[i 4/15 &mdash; ceithre cinn de chúigdéaguithe];
+      when "9-6-1-e-v-p"
+        | When the numerator is more than 10, bare numbers can be used as follows: #[i the numerator] (stated as a bare number) + #[i de] + #[i the plural of the denominator], e.g., #[i 33/57 &mdash; tríocha a trí de chaoga seachtuithe]; #[i 136/82 &mdash; céad tríocha a sé d&rsquo;ochtó dóithe]. This form is preferred when the numerator is more than 10 and when the denominator is more than 20.
+      when "9-6-2-title"
+        | The Denominator
+      when "9-6-2-a-title"
+        | The Denominator 2&ndash;19
+      when "9-6-2-a-p"
+        | The following table shows two options for writing fractions with denominators from 2&ndash;19 and numerator 1.
+      when "Table9Y-caption"
+        | The Fractions &mdash; The Denominator 2&ndash;19
+      when "TheFraction"
+        | Fraction
+      when "TheDenominator"
+        | Denominator
+      when "TheFormWithCuid"
+        | Form with #[i cuid]
+      when "9-6-2-b-title"
+        | Denominator 20+
+      when "9-6-2-b-p-1"
+        | The following table gives examples of how to deal with denominators above 20 (except the tens) when the numerator is 1. The form with #[i cuid] is usually used for such fractions. The order of that form is the same as that used in the cardinal numbers but an ordinal number is used instead of a bare number at the end and the numeral #[i a] is left in the middle.
+      when "Table9Z-caption"
+        | The Fractions &mdash; The Denominator 20+
+      when "9-6-2-b-p-2"
+        | Note that an ordinal number is used for the tens, e.g., #[i fichiú], #[i céadú], #[i míliú], etc., and that the form with #[i cuid] is not usually used with them, e.g., #[i 1/30 &mdash; tríochadú]; #[i 1/50 &mdash; caogadú].
+      when "9-6-3-title"
+        | The Numerator
+      when "9-6-3-a-title"
+        | The Numerator 2&ndash;10
+      when "9-6-3-a-i"
+        | The cardinal number system is followed when the numerator is more than 1 since the denominators are common nouns (exception: #[i fichiú] is not lenited, e.g., #[i trí fichiú]). The following table gives examples of fractions when the numerator is a number between 2 and 10.
+      when "Table9AA-caption"
+        | The Fractions &mdash; The Numerator 2&ndash;10
+      when "9-6-3-a-ii"
+        | Alternatively, the noun #[i ceann]/#[i cinn] can be used with the preposition de and the plural form of the denominator.
+      when "Table9BB-caption"
+        | The Fractions &mdash; The Numerator 2&ndash;10 &mdash; The Form with #[i ceann]/#[i cinn] and the Preposition #[i de]
+      when "9-6-3-b-title"
+        | The Fractions when the Numerator is more than 10
+      when "9-6-3-b-p"
+        | When the numerator is more than 10, bare numbers are used as follows: #[i the numerator] (stated as a bare number) + #[i de] + #[i the plural of the denominator].
+      when "Table9CC-caption"
+        | When the numerator is more than 10, bare numbers are used as follows: #[i the numerator] (stated as a bare number) + #[i de] + #[i the plural of the denominator].
+      when "TheBareNumberModifiedBy"
+        | Bare Number Modified by
+      when "9-6-4-title"
+        | Large Numerators and Denominators
+      when "9-6-4-p"
+        | When the numerator is more than 10 and when the denominator is more than 20, the form with the bare number plus the preposition #[i de] and the plural of the denominator is preferred. It is also possible to use two bare numbers with the preposition #[i ar] or the compound preposition #[i os cionn] between them to express a fraction, e.g., #[i 61/66 &mdash; seasca a haon ar sheasca a sé]; #[i seasca a haon os cionn seasca a sé]; #[i 74/83 &mdash; seachtó a ceathair ar ochtó a trí]; #[i seachtó a ceathair os cionn ochtó a trí]; #[i 437/500,043 &mdash; ceithre chéad tríocha a seacht ar chúig chéad míle daichead a trí]; #[i ceithre chéad tríocha a seacht os cionn cúig chéad míle daichead a trí].
+      when "Table9DD-caption"
+        | The Fractions &mdash; Large Numerators and Denominators
+      when "9-7-title"
+        | The Decimal Number
+      when "9-7-a-p"
+        | The bare number system is used for decimal numbers, e.g., #[i 1.7 &mdash; a haon ponc a seacht]; #[i 22.4 &mdash; fiche a dó ponc a ceathair]; #[i 84.22 &mdash; ochtó a ceathair ponc a dó a dó].
+      when "9-7-b-p"
+        | No inflection or initial mutation is made to a noun following a decimal number, whether it is in word or figure form, e.g., #[i a haon ponc a dó gram]; #[i 1.5 cileagram]; #[i 7.4 méadar ciúbach].
+      when "9-8-title"
+        | Summary of the Numbers
+      when "Table9EE-caption"
+        | Summary of the Numbers 1&ndash;19
+      when "Tabel9EE-col4"
+        | Figure
+      when "Table9EE-Row1"
+        | The Cardinal Number
+      when "Table9EE-Row2"
+        | The Personal Number
+      when "Table9EE-Row3"
+        | The Ordinal Number
+      when "Table9FF-caption"
+        | Summary of the Numbers 20+
+      when "Table9FF-row1"
+        | The Cardinal Number and the Personal Number
+      when "Table9FF-row2"
+        | The Ordinal Number
+      when "Table9FF-note-p"
+        | Note
+      when "Table9FF-note-a-p"
+        | that only the Established System is used with numbers under 20;
+      when "Table9FF-note-b-p"
+        | it is recommended, for prose, to write personal numbers up to #[i dháréag] in words rather than figures.
+      default
+        - throw new Error(`No content for ${key} (en.pug)`)

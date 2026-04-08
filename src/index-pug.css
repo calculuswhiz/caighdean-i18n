@@ -96,7 +96,7 @@
       @apply bg-[#f6f1ea];
 
       & li {
-        @apply pb-1 mx-0 px-0;
+        @apply pb-3 mx-0 px-0;
       }
     }
   }
@@ -105,14 +105,6 @@
   ul {
     & > li {
       @apply list-outside ml-6 pb-1 pl-1;
-    }
-  }
-
-  ul.list-dots {
-    @apply list-disc;
-
-    & > li > p {
-      @apply inline;
     }
   }
 
@@ -214,10 +206,6 @@
     }
   }
 
-  .sidebarblock .title {
-    @apply font-bold;
-  }
-
   .chapter-6 {
     & thead tr:first-child th {
       @apply bg-sky-600 text-white;
@@ -267,15 +255,6 @@
 
     & tbody th {
       @apply bg-stone-300 text-black;
-    }
-
-    & tbody td,
-    & tbody th {
-      @apply py-0;
-    }
-
-    & p {
-      @apply my-1;
     }
   }
 

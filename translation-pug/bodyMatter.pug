@@ -43,6 +43,12 @@
 
 //- Mixins
 
+//- Given array of ratios, auto-size them to fit 100% width
+mixin autoColgroup(ratios)
+  colgroup
+    each ratio in ratios
+      col(style=`width: ${ratio / ratios.reduce((a, b) => a + b, 0) * 100}%`)
+
 mixin chapterTemplate(chapterNum)
   html
     head

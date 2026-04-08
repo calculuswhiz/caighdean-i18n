@@ -1,0 +1,1719 @@
+mixin Table9A
+  +markedTable(9, "A", "Table9A-caption")
+    colgroup
+      col(class="w-2/10")
+      col(class="w-8/10")
+    thead
+      tr
+        th(colspan=2)
+          | #[+renderKey("TheBareNumbers")] 0&ndash;19
+    tbody
+      tr
+        th 0&ndash;10
+        td náid/neamhní, a haon, a dó, a trí, a ceathair, a cúig, a sé, a seacht, a hocht, a naoi, a deich
+      tr
+        th 11&ndash;19
+        td a haon déag, a dó dhéag, a trí déag, a ceathair déag, a cúig déag, a sé déag, a seacht déag, a hocht déag, a naoi déag
+
+mixin Table9B
+  +markedTable(9, "B", "Table9B-caption")
+    +autoColgroup([1, 4, 1, 4])
+    thead
+      tr
+        th(colspan=4)
+          | #[+renderKey("TheBareNumbers")] 20&ndash;99
+    tbody
+      tr
+        th 20&ndash;29
+        td fiche, fiche a haon, fiche a dó, fiche a trí, fiche a ceathair, fiche a cúig, fiche a sé, fiche a seacht, fiche a hocht, fiche a naoi
+        th 60&ndash;69
+        td seasca, seasca a haon, seasca a dó, seasca a trí, seasca a ceathair, seasca a cúig, seasca a sé &hellip;
+      tr
+        th 30&ndash;39
+        td tríocha, &hellip; tríocha a ceathair, tríocha a cúig, tríocha a sé &hellip;
+        th 70&ndash;79
+        td seachtó, &hellip; seachtó a seacht, seachtó a hocht, seachtó a naoi
+
+      tr
+        th 40&ndash;49
+        td daichead/ceathracha, daichead a seacht/ceachreacha a seacht, daichead a hocht/ceathracha a hocht, daichead a naoi/ceathracha a naoi
+        th 80&ndash;89
+        td ochtó, ochtó a haon, ochtó a dó, ochtó a trí &hellip;
+
+      tr
+        th 50&ndash;59
+        td caoga, caoga a haon, caoga a dó, caoga a trí&hellip;
+        th 90&ndash;99
+        td nócha, nócha a ceathair, nócha a cúig, nócha a sé &hellip;
+
+mixin Table9C
+  +markedTable(9, "C", "Table9C-caption")
+    +autoColgroup([1, 4, 1, 4])
+    thead
+      tr
+        th(colspan=4)
+          | #[+renderKey("TheBareNumbers")] #[+renderKey("TheTens")]
+    tbody
+      tr
+        th 100
+        td céad
+        th 200
+        td dhá chéad
+      tr
+        th 1,000
+        td míle
+        th 4000
+        td ceithre míle
+      tr
+        th 1,000,000
+        td milliún
+        th 5,000,000
+        td cúig milliún
+      tr
+        th 1,000,000,000
+        td billiún
+        th 17,000,000,000
+        td seacht mbilliún déag
+
+mixin Table9D
+  +markedTable(9, "D", "Table9D-caption")
+    +autoColgroup([1, 4, 1, 4])
+    thead
+      tr
+        th(colspan=4)
+          | #[+renderKey("TheBareNumbers")] 100&ndash;9,999
+    tbody
+      tr
+        th 103
+        td céad trí
+        th 1,001
+        td míle a haon
+      tr
+        th 115
+        td céad a cúig déag
+        th 1,126
+        td míle, céad is fiche a sé
+      tr
+        th 120
+        td céad fiche
+        th 1,230
+        td míle, dhá chéad tríocha
+      tr
+        th 181
+        td céad ochtó a haon
+        th 2,915
+        td dhá mhíle, naoi gcéad a cúig déag
+      tr
+        th 273
+        td dhá chéad seachtó a trí
+        th 3,824
+        td trí mhíle, ocht gcéad fiche a ceathair
+      tr
+        th 355
+        td trí chéad caoga a cúig
+        th 4,733
+        td ceithre mhíle, seacht gcéad tríocha a trí
+      tr
+        th 446
+        td ceithre chéad daichead a sé
+        th 5,642
+        td cúig mhíle, sé chéad daichead a dó
+      tr
+        th 519
+        td cúig chéad a naoi déag
+        th 6,551
+        td sé mhíle, cúig chéad caoga a haon
+      tr
+        th 657
+        td sé chéad caoga a seacht
+        th 7,460
+        td seacht míle, ceithre chéad seasca
+      tr
+        th 734
+        td seacht gcéad tríocha a ceathair
+        th 8,379
+        td ocht míle, trí chéad seachtó a naoi
+      tr
+        th 818
+        td ocht gcéad a hocht déag
+        th 9,288
+        td naoi míle, dhá chéad ochtó a hocht
+      tr
+        th 999
+        td naoi gcéad nócha a naoi
+        th 9,999
+        td naoi míle, naoi gcéad nócha a naoi
+
+mixin Table9E
+  +markedTable(9, "E", "Table9E-caption")
+    thead
+      tr
+        th(colspan="3")
+          | #[+renderKey("TheBareNumbers")] 10,000+
+      tr
+        th
+        th #[+renderKey("Table9E-col2")]
+        th #[+renderKey("Table9E-col3")]
+    tbody
+      tr
+        th 13,452
+        td trí mhíle dhéag, ceithre chéad caoga a dó
+        td trí déag míle, ceithre chéad caoga a dó
+      tr
+        th 18,901
+        td ocht míle dhéag, naoi gcéad a haon
+        td ocht déag míle, naoi gcéad a haon
+      tr
+        th 38,482
+        td ocht míle is tríocha, ceithre chéad ochtó a dó
+        td tríocha a hocht míle, ceithre chéad ochtó a dó
+      tr
+        th 65,155
+        td cúig mhíle is seasca, céad caoga a cúig
+        td seasca a cúig míle, céad caoga a cúig
+      tr
+        th 74,048
+        td ceithre mhíle is seachtó, daichead a hocht
+        td seachtó a ceathair míle, daichead a hocht
+      tr
+        th 92,827
+        td dhá mhíle is nócha, ocht gcéad fiche a seacht
+        td nócha a dó míle, ocht gcéad fiche a seacht
+      tr
+        th 116,104
+        td céad is sé mhíle dhéag, céad a ceathair
+        td céad a sé déag míle, céad a ceathair
+      tr
+        th 520,712
+        td cúig chéad is fiche míle, seacht gcéad a dó dhéag
+        td cúig chéad fiche míle, seacht gcéad a dó dhéag
+      tr
+        th 974,345
+        td naoi gcéad seachtó is ceithre mhíle, trí chéad daichead a cúig
+        td naoi gcéad seachtó a ceathair míle, trí chéad daichead a cúig
+
+mixin Table9F
+  +markedTable(9, "F", "Table9F-caption")
+    +autoColgroup([1, 4, 1, 4])
+    thead
+      tr
+        th(colspan=4)
+          | #[+renderKey("TheCardinalNumbers")] 1&ndash;19
+    tbody
+      tr
+        th 1
+        td bád/bád amháin/aon bhád amháin
+          br
+          | ábhar/ábhar amháin/aon ábhar amháin
+        th 11
+        td aon bhád déag
+          br
+          | aon ábhar déag
+      tr
+        th 2
+        td dhá bhád
+          br
+          | dhá ábhar
+        th 12
+        td dhá bhád déag
+          br
+          | dhá oíche déag
+      tr
+        th 3
+        td trí bhád
+          br
+          | trí ábhar
+        th 13
+        td trí bhád déag
+          br
+          | trí ábhar déag
+      tr
+        th 4
+        td ceithre bhád
+          br
+          | ceithre ábhar
+        th 14
+        td ceithre bhád déag
+          br
+          | ceithre ábhar déag
+      tr
+        th 5
+        td cúig bhád
+          br
+          | cúig ábhar
+        th 15
+        td cúig bhád déag
+          br
+          | cúig oíche déag
+      tr
+        th 6
+        td sé bhairille
+          br
+          | sé oíche
+        th 16
+        td sé bhairille dhéag
+          br
+          | sé ábhar déag
+      tr
+        th 7
+        td seacht mbairille
+          br
+          | seacht n&#x2011;oíche
+        th 17
+        td seacht mbairille dhéag
+          br
+          | seacht n&#x2011;oíche déag
+      tr
+        th 8
+        td ocht mbairille
+          br
+          | ocht n&#x2011;oíche
+        th 18
+        td ocht mbád déag
+          br
+          | ocht n&#x2011;oíche déag
+      tr
+        th 9
+        td naoi mbairille
+          br
+          | naoi n&#x2011;oíche
+        th 19
+        td naoi mbairille dhéag
+          br
+          | naoi n&#x2011;oíche dhéag
+      tr
+        th 10
+        td(colspan=3) deich mbairille
+          br
+          | deich n&#x2011;oíche
+
+mixin Table9G
+  +markedTable(9, "G", "Table9G-caption")
+    +autoColgroup([2, 1, 1, 1])
+    thead
+      tr
+        th
+        th 2
+        th 3&ndash;6
+        th 7&ndash;10
+    tbody
+      tr
+        th bliain
+        td bhliain
+        td bliana
+        td mbliana
+      tr
+        th seachtain
+        td sheachtain
+        td seachtaine
+        td seachtaine
+
+      tr
+        th ceann
+          br
+          +renderKey("Table9G-exception")
+        td ceann
+        td cinn
+        td gcinn
+
+      tr
+        th cloigeann
+          br
+          +renderKey("Table9G-exception")
+        td chloigeann
+        td cloigne
+        td gcloigne
+
+      tr
+        th fiche
+        td fhichead
+        td fichid
+        td bhfichid
+      tr
+        th pingin
+        td phingin
+        td pingine
+        td bpingine
+      tr
+        th trian
+        td thrian
+        td treana
+        td dtreana
+      tr
+        th troigh
+        td throigh
+        td troithe
+        td dtroithe
+      tr
+        th uair
+          br
+          | (#[i: +renderKey("saBhrí", { getFromCommon: true })] #[+renderKey("Table9G-babhta")])
+        td uair
+        td huaire
+        td n&#x2011;uaire
+
+mixin Table9H
+  +markedTable(9, "H", "Table9H-caption")
+    +autoColgroup([1, 4, 1, 4])
+    thead
+      tr
+        th(colspan=4)
+          | #[+renderKey("Table9H-header")]
+    tbody
+      tr
+        th 1
+        td aon bhliain amháin
+        th 11
+        td aon uair déag
+      tr
+        th 2
+        td dhá cheann
+        th 12
+        td dhá phingin déag
+      tr
+        th 3
+        td trí cinn
+        th 13
+        td trí bliana déag
+      tr
+        th 4
+        td ceithre cloigne
+        th 14
+        td ceithre cinn déag
+      tr
+        th 5
+        td cúig fichid
+        th 15
+        td cúig seachtaine déag
+      tr
+        th 6
+        td sé huaire
+        th 16
+        td sé cloigne déag
+      tr
+        th 7
+        td seacht bpingine
+        th 17
+        td seacht bhfichid déag
+      tr
+        th 8
+        td ocht seachtaine
+        th 18
+        td ocht dtroithe déag
+      tr
+        th 9
+        td naoi mbliana
+        th 19
+        td naoi bpingine déag
+      tr
+        th 10
+        td(colspan=3) deich dtroithe
+
+mixin Table9I
+  +markedTable(9, "I", "Table9I-caption")
+    +autoColgroup([1, 4, 1, 4])
+    thead
+      tr
+        th(colspan=4)
+          | #[+renderKey("Table9I-header")]
+    tbody
+      tr
+        th 1
+        td aon leabhar mór amháin
+          br
+          | aon fhuinneog mhór amháin
+        th 11
+        td aon leabhar déag mhóra
+          br
+          | aon fhuinneog déag mhóra
+      tr
+        th 2
+        td dhá leabhar mhóra
+        th 12
+        td dhá oíche dhéag fhuara
+      tr
+        th 3
+        td trí fhuinneog mhóra
+        th 13
+        td trí leabhar déag mhóra
+      tr
+        th 4
+        td ceithre oíche fhuara
+        th 14
+        td ceithre fhuinneog déag mhóra
+      tr
+        th 5
+        td cúig fhuinneog mhóra
+        th 15
+        td cúig leabhar déag mhóra
+      tr
+        th 6
+        td sé leabhar mhóra
+        th 16
+        td sé fhuinneog déag mhóra
+      tr
+        th 7
+        td seacht bhfuinneog mhóra
+        th 17
+        td seacht leabhar déag mhóra
+      tr
+        th 8
+        td ocht leabhar mhóra
+        th 18
+        td ocht bhfuinneog déag mhóra
+      tr
+        th 9
+        td naoi bhfuinneog mhóra
+        th 19
+        td naoi n&#x2011;oíche dhéag fhuara
+      tr
+        th 10
+        td(colspan=3) deich leabhar mhóra
+
+mixin Table9J
+  +markedTable(9, "J", "Table9J-caption")
+    +autoColgroup([1, 4, 1, 4])
+    thead
+      tr
+        th(colspan=4)
+          | #[+renderKey("Table9J-header")]
+    tbody
+      tr
+        th 1
+         td aon bhliain mhaith amháin
+        th 11
+         td aon uair déag chiúine
+        tr
+          th 2
+          td dhá cheann bhána
+          th 12
+          td dhá chloigeann déag mhaola
+        tr
+          th 3
+          td trí cinn dhubha
+          th 13
+          td trí bliana déag maithe
+        tr
+          th 4
+          td ceithre cloigne maola
+          th 14
+          td ceithre cinn déag bhána
+        tr
+          th 5
+          td cúig cinn mhóra
+          th 15
+          td cúig pingine déag salacha
+        tr
+          th 6
+          td sé troithe dearga
+          th 16
+          td sé cloigne déag maola
+        tr
+          th 7
+          td seacht bpingine beaga
+          th 17
+          td seacht gcinn déag mhóra
+        tr
+          th 8
+          td ocht seachtaine fada
+          th 18
+          td ocht dtroithe déag cearnacha
+        tr
+          th 9
+          td naoi mbliana fada
+          th 19
+          td naoi bpingine déag beaga
+        tr
+          th 10
+          td(colspan=3) deich dtroithe cearnacha
+
+mixin Table9K
+  +markedTable(9, "K", "Table9K-caption")
+    +autoColgroup([1, 4, 1, 4])
+    thead
+      tr
+        th(colspan=4)
+          | #[+renderKey("Table9K-header")]
+    tbody
+      tr
+        th 1
+        td an t&#x2011;aon chapall amháin
+          br
+          | an t&#x2011;aon fhuinneog amháin
+        th 11
+        td an t&#x2011;aon chapall déag +
+          br
+          | an t&#x2011;aon fhuinneog déag
+      tr
+        th 2
+        td an dá chapall
+        th 12
+        td an dá chapall déag
+      tr
+        th 3
+        td na trí chapall
+        th 13
+        td na trí chapall déag
+      tr
+        th 4
+        td na ceithre chapall
+        th 14
+        td na ceithre chapall déag
+      tr
+        th 5
+        td na cúig chapall
+        th 15
+        td na cúig chapall déag
+      tr
+        th 6
+        td na sé fhuinneog
+        th 16
+        td na sé fhuinneog déag
+      tr
+        th 7
+        td na seacht bhfuinneog
+        th 17
+        td na seacht bhfuinneog déag
+      tr
+        th 8
+        td na hocht bhfuinneog
+        th 18
+        td na hocht bhfuinneog déag
+      tr
+        th 9
+        td na naoi bhfuinneog
+        th 19
+        td na naoi bhfuinneog déag
+      tr
+        th 10
+        td(colspan=3) na deich bhfuinneog
+
+mixin Table9L
+  +markedTable(9, "L", "Table9L-caption")
+    +autoColgroup([1, 4, 1, 4])
+    thead
+      tr
+        th(colspan=4)
+          | #[+renderKey("Table9L-header")]
+    tbody
+      tr
+        th 1
+        td ualach an aon chapaill mhóir amháin
+          br
+          | tréimhse na haon bhliana fada amháin
+        th 11
+        td stábla an aon chapall déag mhóra
+          br
+          | ag oscailt an aon fhuinneog déag throma
+      tr
+        th 2
+        td luach an dá theach bheaga
+        th 12
+        td tréimhse an dá bhliain déag fhada
+      tr
+        th 3
+        td meáchan na dtrí bhó éagsúla
+        th 13
+        td innill na dtrí ghluaisteán déag chumhachtacha
+      tr
+        th 4
+        td gaois na gceithre cloigne móra
+        th 14
+        td leathanaigh na gceithre leabhar déag ghearra
+      tr
+        th 5
+        td ag dúnadh na gcúig fhuinneog ghlasa
+        th 15
+        td fad na gcúig oíche dhéag ghaofara
+      tr
+        th 6
+        td fad na sé bliana fada
+        th 16
+        td gaois na sé cloigne déag maola
+      tr
+        th 7
+        td ualach na seacht gcapall mhóra
+        th 17
+        td géaga na seacht gcrann déag dhuilleacha
+      tr
+        th 8
+        td seolta na n&#x2011;ocht mbád bheaga
+        th 18
+        td achar na n&#x2011;ocht bpáirc déag mhóra
+      tr
+        th 9
+        td leithead na naoi gcinn dheasa
+        th 19
+        td deireadh na naoi seachtaine déag fada
+      tr
+        th 10
+        td achar na ndeich ngairdín chlocharacha
+
+mixin Table9M
+  +markedTable(9, "M", "Table9M-caption")
+    +autoColgroup([1, 4, 4, 4])
+    thead
+      tr
+        th
+        th: +renderKey("TheNominativeCase")
+        th
+          +renderKey("TheGenitiveCase")
+          br
+          +renderKey("WithoutArticle")
+        th
+          +renderKey("TheGenitiveCase")
+          br
+          +renderKey("WithArticle")
+    tbody
+      tr
+        th 20
+        td fiche leabhar mór
+        td meáchan fiche leabhar mór
+        td meáchan an fiche leabhar mór
+      tr
+        th 30
+        td tríocha méadar glas
+        td achar tríocha méadar glas
+        td achar an tríocha méadar glas
+      tr
+        th 40
+        td daichead bád beag
+        td lastas daichead bád beag
+        td lastas an daichead bád beag
+      tr
+        th 50
+        td caoga císte milis
+        td costas caoga císte milis
+        td costas an chaoga císte milis
+      tr
+        th 60
+        td seasca bó bhán
+        td bainne seasca bó bhán
+        td bainne an seasca bó bhán
+      tr
+        th 70
+        td seachtó bliain fhada
+        td tréimhse seachtó bliain fhada
+        td tréimhse an seachtó bliain fhada
+      tr
+        th 80
+        td ochtó cloigeann maol
+        td gaois ochtó cloigeann maol
+        td gaois an ochtó cloigeann maol
+      tr
+        th 90
+        td nócha pingin bheag
+        td luach nócha pingin bheag
+        td luach an nócha pingin bheag
+
+mixin Table9N
+  +markedTable(9, "N", "Table9N-caption")
+    +autoColgroup([1, 4, 4])
+    thead
+      tr
+        th
+        th: +renderKey("TheEstablishedSystem")
+        th: +renderKey("TheSimplifiedSystem")
+    tbody
+      tr
+        th 21
+        td: ul
+          li aon chapall mór amháin is fiche
+          li capall mór is fiche
+        td fiche a haon capall mór
+      tr
+        th 33
+        td trí oíche dhorcha is tríocha
+        td tríocha a trí oíche dhorcha
+      tr
+        th 42
+        td dhá chapall mhóra is daichead
+        td daichead a dó capall mór
+      tr
+        th 55
+        td cúig fhuinneog dhúnta is caoga
+        td caoga a cúig fuinneog dhúnta
+      tr
+        th 67
+        td seacht leabhar shuimiúla is seasca
+        td seasca a seacht leabhar suimiúil
+      tr
+        th 74
+        td ceithre pingine beaga is seachtó
+        td seachtó a ceathair pingin bheag
+      tr
+        th 86
+        td sé bhó mhóra is ochtó
+        td ochtó a sé bó mhór
+      tr
+        th 99
+        td naoi mbád chostasacha is nócha
+        td nócha a naoi bád costasach
+
+mixin Table9O
+  +markedTable(9, "O", "Table9O-caption")
+    +autoColgroup([1, 4, 4])
+    thead
+      tr
+        th
+        th: +renderKey("TheEstablishedSystem")
+        th: +renderKey("TheSimplifiedSystem")
+    tbody
+      tr
+        th 191
+        td céad nócha is aon mhéadar amháin
+        td céad nócha a haon méadar
+      tr
+        th 282
+        td dhá chéad ochtó is dhá chat fhiáine
+        td dhá chéad ochtó a dó cat fiáin
+      tr
+        th 364
+        td trí chéad seasca is ceithre chapall mhóra
+        td trí chéad seasca a ceathair capall mór
+      tr
+        th 1,446
+        td míle, ceithre chéad daichead is sé bhó chrosta
+        td míle, ceithre chéad daichead a sé bó chrosta
+      tr
+        th 18,437
+        td ocht míle dhéag, ceithre chéad tríocha is seacht gcás chasta
+        td ocht déag míle, ceithre chéad tríocha a seacht cás casta
+      tr
+        th 25,528
+        td cúig mhíle is fiche, cúig chéad fiche is ocht leabhar shuimiúla
+        td fiche a cúig míle, cúig chéad fiche a hocht leabhar suimiúil
+      tr
+        th 100,513
+        td céad míle, cúig chéad is trí mhilseán déag dhearga
+        td céad míle, cúig chéad a trí déag milseán dearg
+
+mixin Table9P
+  +markedTable(9, "P", "Table9P-caption")
+    +autoColgroup([1, 4, 4])
+    thead
+      tr
+        th
+        th: +renderKey("TheEstablishedSystem")
+        th: +renderKey("TheSimplifiedSystem")
+    tbody
+      tr
+        th 21
+        td 21 bhád costasach
+        td 21 bád costasach
+      tr
+        th 22
+        td 22 bhád mhóra
+        td 22 bád mór
+      tr
+        th 37
+        td 37 n&#x2011;ábhar shuimiúla
+        td 37 ábhar suimiúil
+      tr
+        th 44
+        td 44 fhuinneog dhúnta
+        td 44 fuinneog dhúnta
+      tr
+        th 53
+        td 53 bhó mhóra
+        td 53 bó mhór
+      tr
+        th 68
+        td 68 n&#x2011;oíche ghaofara
+        td 68 oíche ghaofar
+      tr
+        th 76
+        td 76 dhuine ghnóthacha
+        td 76 duine gnóthach
+      tr
+        th 89
+        td 89 dtroithe cearnacha
+        td 89 troigh chearnach
+      tr
+        th 95
+        td 95 mhéadar chearnacha
+        td 95 méadar cearnach
+      tr
+        th 191
+        td 191 bhád costasach
+        td 191 bád costasach
+
+mixin Table9Q
+  +markedTable(9, "Q", "Table9Q-caption")
+    +autoColgroup([1, 4, 1, 4])
+    thead
+      tr
+        th(colspan=4)
+          +renderKey("Table9Q-header")
+    tbody
+      tr
+        th 1
+        td duine/aon duine amháin
+        th 7
+        td seachtar
+      tr
+        th 2
+        td beirt
+        th 8
+        td ochtar
+      tr
+        th 3
+        td triúr
+        th 9
+        td naonúr
+      tr
+        th 4
+        td ceathrar
+        th 10
+        td deichniúr
+      tr
+        th 5
+        td cúigear
+        th 11
+        td aon duine dhéag
+      tr
+        th 6
+        td seisear
+        th 12
+        td dháréag
+
+mixin Table9R
+  +markedTable(9, "R", "Table9R-caption")
+    +autoColgroup([2, 4, 4])
+    thead
+      tr
+        th: +renderKey("TheNumber")
+        th: +renderKey("TheNominativeCase")
+        th: +renderKey("TheGenitiveCase")
+    tbody
+      tr
+        th 1
+        td an t&#x2011;aon duine amháin
+        td ainm an aon duine amháin
+      tr
+        th 2
+        td an bheirt
+        td tuairimí na beirte
+      tr
+        th 3
+        td an triúr
+        td éadaí an triúir
+      tr
+        th 4
+        td an ceathrar
+        td táillí an cheathrair
+      tr
+        th 5
+        td an cúigear
+        td bád an chúigir
+      tr
+        th 6
+        td an seisear
+        td teach an tseisir
+      tr
+        th 7
+        td an seachtar
+        td scoil an tseachtair
+      tr
+        th 8
+        td an t&#x2011;ochtar
+        td meitheal an ochtair
+      tr
+        th 9
+        td an naonúr
+        td foireann an naonúir
+      tr
+        th 10
+        td an deichniúr
+        td tithe an deichniúir
+      tr
+        th 11
+        td an t&#x2011;aon duine dhéag
+        td foireann an aon duine dhéag
+      tr
+        th 12
+        td an dáréag
+        td airgead an dáréag
+
+mixin Table9S
+  +markedTable(9, "S", "Table9S-caption")
+    +autoColgroup([2, 4, 4])
+    thead
+      tr
+        th: +renderKey("TheNumber")
+        th: +renderKey("TheNominativeCase")
+        th: +renderKey("TheGenitiveCase")
+    tbody
+      tr
+        th 1
+        td
+          | fear amháin/aon fhear amháin
+          br
+          | bean amháin/aon bhean amháin
+        td
+          | hata aon fhir amháin +
+          br
+          | hata aon mhná amháin
+      tr
+        th 2
+        td beirt bhan
+        td páistí bheirt bhan
+      tr
+        th 3
+        td triúr bádóirí
+        td báid triúr bádóirí
+      tr
+        th 4
+        td ceathrar scoláirí
+        td torthaí ceathrar scoláirí
+      tr
+        th 5
+        td cúigear fear
+        td gaolta cúigear fear
+      tr
+        th 6
+        td seisear ban
+        td páistí seisear ban
+      tr
+        th 7
+        td seachtar bádóirí
+        td long seachtar bádóirí
+      tr
+        th 8
+        td ochtar báicéirí
+        td cístí ochtar báicéirí
+      tr
+        th 9
+        td naonúr fear
+        td talamh naonúr fear
+      tr
+        th 10
+        td deichniúr girseach
+        td airgead deichniúr girseach
+      tr
+        th 11*
+        td aon imreoir déag
+        td cultacha aon imreoir déag
+      tr
+        th 12
+        td dháréag bádóirí
+        td soitheach dháréag bádóirí
+
+mixin Table9T
+  +markedTable(9, "T", "Table9T-caption")
+    +autoColgroup([2, 4, 4])
+    thead
+      tr
+        th: +renderKey("TheNumber")
+        th: +renderKey("TheNominativeCase")
+        th: +renderKey("TheGenitiveCase")
+    tbody
+      tr
+        th 1
+        td
+          | an t&#x2011;aon fhear amháin
+          br
+          | an t&#x2011;aon bhean amháin
+        td
+          | hata an aon fhir amháin
+          br
+          | hata na haon mhná amháin
+      tr
+        th 2
+        td an bheirt bhan
+        td páistí na beirte ban
+      tr
+        th 3
+        td an triúr bádóirí
+        td báid an triúr bádóirí
+      tr
+        th 4
+        td an ceathrar scoláirí
+        td torthaí an cheathrar scoláirí
+      tr
+        th 5
+        td an cúigear fear
+        td gaolta an chúigear fear
+      tr
+        th 6
+        td an seisear ban
+        td páistí an tseisear ban
+      tr
+        th 7
+        td an seachtar bádóirí
+        td long an tseachtar bádóirí
+      tr
+        th 8
+        td an t&#x2011;ochtar báicéirí
+        td cístí an ochtar báicéirí
+      tr
+        th 9
+        td an naonúr fear
+        td talamh an naonúr fear
+      tr
+        th 10
+        td an deichniúr girseach
+        td airgead an deichniúr girseach
+      tr
+        th 11*
+        td an t&#x2011;aon imreoir déag
+        td cluiche an aon imreoir déag
+      tr
+        th 12
+        td an dáréag bádóirí
+        td soitheach an dáréag bádóirí
+
+mixin Table9U
+  +markedTable(9, "U", "Table9U-caption")
+    +autoColgroup([2, 4, 4])
+    thead
+      tr
+        th: +renderKey("TheNumber")
+        th: +renderKey("TheNominativeCase")
+        th: +renderKey("TheGenitiveCase")
+    tbody
+      tr
+        th 1
+        td: ul
+          li fear ciallmhar amháin
+          li bean shaibhir amháin
+          li an t&#x2011;aon fhear cineálta amháin
+          li an t&#x2011;aon bhean dheas amháin
+        td: ul
+          li cóta aon fhir chiallmhair amháin
+          li geansaí aon mhná saibhre amháin
+          li cóta an aon fhir chineálta amháin
+          li geansaí na haon mhná deise amháin
+      tr
+        th 2
+        td: ul
+          li beirt bhan mhisniúla
+          li beirt fhear chróga
+          li beirt scoláirí chumasacha
+          li an bheirt bhan mhisniúla
+          li an bheirt fhear chróga
+        td: ul
+          li an bheirt scoláirí chumasacha
+          li oifig bheirt bhan mhisniúla
+          li páistí bheirt fhear chróga
+          li cóipleabhair bheirt scoláirí chumasacha
+          li oifig na beirte ban mhisniúla
+          li páistí na beirte fear chróga
+          li cóipleabhair na beirte scoláirí chumasacha
+      tr
+        th 3
+        td: ul
+          li triúr fear mór
+          li triúr girseach galánta
+          li an triúr bádóirí tuirseacha
+        td: ul
+          li hataí triúr fear mór
+          li gúnaí triúr girseach galánta
+          li báid an triúr bádóirí tuirseacha
+      tr
+        th 4
+        td ceathrar (an ceathrar) scoláirí maithe
+        td scrúduithe ceathrar (an cheathrar) scoláirí maithe
+      tr
+        th 5
+        td cúigear (an cúigear) fear inniúil
+        td gaolta cúigear (an chúigear) fear inniúil
+      tr
+        th 6
+        td seisear (an seisear) ban cumasach
+        td páistí seisear (an tseisear) ban cumasach
+      tr
+        th 7
+        td seachtar (an seachtar) bádóirí óga
+        td long seachtar (an tseachtar) bádóirí óga
+      tr
+        th 8
+        td ochtar (an t&#x2011;ochtar) báicéirí díograiseacha
+        td cístí ochtar (an ochtar) báicéirí díograiseacha
+      tr
+        th 9
+        td naonúr (an naonúr) fear ocrach
+        td talamh naonúr (an naonúr) fear ocrach
+      tr
+        th 10
+        td deichniúr (an deichniúr) girseach bríomhar
+        td airgead deichniúr (an deichniúr) girseach bríomhar
+      tr
+        th 11*
+        td aon (an t&#x2011;aon) imreoir déag thapa
+        td cultacha aon (an aon) imreoir déag thapa
+      tr
+        th 12
+        td dháréag (an dáréag) scoláirí borba
+        td leabhair dháréag (an dáréag) scoláirí borba
+
+mixin Table9V
+  +markedTable(9, "V", "Table9V-caption")
+    +autoColgroup([1, 2, 1, 2, 1, 2, 1, 2])
+    thead
+      tr
+        th(colspan=8)
+          | #[+renderKey("TheOrdinalNumbers")] 1&ndash;100
+    tbody
+      tr
+        th 1ú
+        td an chéad fhear
+        th 11ú
+        td an t&#x2011;aonú bean déag
+        th 20ú
+        td an fichiú capall
+        th 30ú
+        td an tríochadú bean
+      tr
+        th 2ú
+        td an dara/dóú bean
+        th 12ú
+        td an dara/dóú bosca déag
+        th 21ú
+        td an t&#x2011;aonú capall is fiche
+        th 39ú
+        td an naoú hoíche is tríocha
+      tr
+        th 3ú
+        td an tríú leabhar
+        th 13ú
+        td an tríú méadar déag
+        th 22ú
+        td an dara/dóú bean is fiche
+        th 40ú
+        td an daicheadú/ceathrachadú cuairteoir
+      tr
+        th 4ú
+        td an ceathrú méadar
+        th 14ú
+        td an ceathrú bád déag
+        th 23ú
+        td an tríú leabhar is fiche
+        th 48ú
+        td an t&#x2011;ochtú bó is daichead
+      tr
+        th 5ú
+        td an cúigiú bád
+        th 15ú
+        td an cúigiú hábhar déag
+        th 24ú
+        td an ceathrú méadar is fiche
+        th 57ú
+        td an seachtú fuinneog is caoga
+      tr
+        th 6ú
+        td an séú hábhar
+        th 16ú
+        td an séú bó déag
+        th 25ú
+        td an cúigiú bád is fiche
+        th 66ú
+        td an séú hábhar is seasca
+      tr
+        th 7ú
+        td an seachtú fuinneog
+        th 17ú
+        td an seachtú fuinneog déag
+        th 26ú
+        td an séú hábhar is fiche
+        th 75ú
+        td an cúigiú bád is seachtó
+      tr
+        th 8ú
+        td an t&#x2011;ochtú bó
+        th 18ú
+        td an t&#x2011;ochtú hoíche déag
+        th 27ú
+        td an seachtú fuinneog is fiche
+        th 84ú
+        td an ceathrú méadar is ochtó
+      tr
+        th 9ú
+        td an naoú hoíche
+        th 19ú
+        td an naoú capall déag
+        th 28ú
+        td an t&#x2011;ochtú bó is fiche
+        th 93ú
+        td an tríú leabhar is nócha
+      tr
+        th 10ú
+        td an deichiú capall
+        th
+        td
+        th 29ú
+        td an naoú hoíche is fiche
+        th 100ú
+        td an céadú custaiméir
+
+
+mixin Table9W
+  +markedTable(9, "W", "Table9W-caption")
+    +autoColgroup([1, 4, 1, 4])
+    thead
+      tr
+        th(colspan=4)
+          | #[+renderKey("TheOrdinalNumbers")] 1&ndash;100
+    tbody
+      tr
+        th 104ú
+        td an céad is ceathrú feirmeoir
+        th 1007ú
+        td an míle is seachtú bliain
+      tr
+        th 116ú
+        td an céad is séú babhta déag
+        th 7219ú
+        td an seacht míle, dhá chéad is naoú méadar déag
+      tr
+        th 131ú
+        td an céad tríocha is aonú capall
+        th 10,000ú
+        td an deich míliú lá
+      tr
+        th 132ú
+        td an céad tríocha is dóú hasal
+        th 223,413ú
+        td an dá chéad fiche is trí mhíle, ceithre chéad is tríú cloigeann déag
+      tr
+        th 211ú
+        td an dá chéad is aonú bád déag
+        th 613,564ú
+        td an sé chéad is trí mhíle dhéag, cúig chéad seasca is ceathrú bó
+      tr
+        th 1,000ú
+        td an míliú heitilt
+        th 1,000,000ú
+        td an milliúnú huair
+
+mixin Table9X
+  +markedTable(9, "X", "Table9X-caption")
+    +autoColgroup([1, 4, 1, 4])
+    thead
+      tr
+        th(colspan=4)
+          +renderKey("Table9X-header")
+    tbody
+      tr
+        th 1ú
+        td
+          | marcach an chéad chapaill
+          br
+          | tús na chéad chaibidle
+        th 39ú
+        td deireadh an naoú hoíche is tríocha
+      tr
+        th 14ú
+        td seol an cheathrú bád déag
+        th 100ú
+        td gearán an chéadú custaiméir
+      tr
+        th 20ú
+        td torthaí an fichiú dalta
+        th 104ú
+        td beithígh an chéad is ceathrú feirmeoir
+
+mixin Table9Y
+  +markedTable(9, "Y", "Table9Y-caption")
+    thead
+      tr
+        th: +renderKey("TheFraction")
+        th: +renderKey("TheDenominator")
+        th: +renderKey("TheFormWithCuid")
+        th: +renderKey("TheFraction")
+        th: +renderKey("TheDenominator")
+        th: +renderKey("TheFormWithCuid")
+    tbody
+      tr
+        th 1/2
+        td leath
+        td an leathchuid
+        th 1/11
+        td aondéagú
+        td an t&#x2011;aondéagú cuid
+      tr
+        th 1/3
+        td trian
+        td an tríú cuid
+        th 1/12
+        td dódhéagú
+        td an dódhéagú cuid
+      tr
+        th 1/4
+        td ceathrú
+        td an ceathrú cuid
+        th 1/13
+        td trídéagú
+        td an trídéagú cuid
+      tr
+        th 1/5
+        td cúigiú
+        td an cúigiú cuid
+        th 1/14
+        td ceathairdéagú
+        td an ceathairdéagú cuid
+      tr
+        th 1/6
+        td séú
+        td an séú cuid
+        th 1/15
+        td cúigdéagú
+        td an cúigdéagú cuid
+      tr
+        th 1/7
+        td seachtú
+        td an seachtú cuid
+        th 1/16
+        td sédéagú
+        td an sédéagú cuid
+      tr
+        th 1/8
+        td ochtú
+        td an t&#x2011;ochtú cuid
+        th 1/17
+        td seachtdéagú
+        td an seachtdéagú cuid
+      tr
+        th 1/9
+        td naoú
+        td an naoú cuid
+        th 1/18
+        td ochtdéagú
+        td an t&#x2011;ochtdéagú cuid
+      tr
+        th 1/10
+        td deichiú
+        td an deichiú cuid
+        th 1/19
+        td naoidéagú
+        td an naoidéagú cuid
+
+mixin Table9Z
+  +markedTable(9, "Z", "Table9Z-caption")
+    thead
+      th: +renderKey("TheFraction")
+      th: +renderKey("TheFormWithCuid")
+      th: +renderKey("TheFraction")
+      th: +renderKey("TheFormWithCuid")
+    tbody
+      tr
+        th 1/21
+        td an fiche aonú cuid
+        th 1/87
+        td an t&#x2011;ochtó seachtú cuid
+      tr
+        th 1/32
+        td an tríocha dóú cuid
+        th 1/98
+        td an nócha ochtú cuid
+      tr
+        th 1/43
+        td an daichead tríú cuid
+        th 1/99
+        td an nócha naoú cuid
+      tr
+        th 1/54
+        td an caoga ceathrú cuid
+        th 1/156
+        td an céad caoga séú cuid
+      tr
+        th 1/65
+        td an seasca cúigiú cuid
+        th 1/2,987
+        td an dá mhíle naoi gcéad ochtó seachtú cuid
+      tr
+        th 1/76
+        td an seachtó séú cuid
+        th 1/3,234,567
+        td an trí mhilliún, dhá chéad tríocha is ceithre mhíle, cúig chéad seasca seachtú cuid
+
+mixin Table9AA
+  +markedTable(9, "AA", "Table9AA-caption")
+    thead
+      th: +renderKey("TheFraction")
+      th
+      th: +renderKey("TheFraction")
+      th
+      th: +renderKey("TheFraction")
+      th
+    tbody
+      tr
+        th 3/2
+        td trí leath
+        th 2/11
+        td dhá aondéagú
+        th 4/30
+        td ceithre thríochadú
+      tr
+        th 2/3
+        td dhá thrian
+        th 3/12
+        td trí dhódhéagú
+        th 5/40
+        td cúig dhaicheadú
+      tr
+        th 5/4
+        td cúig cheathrú
+        th 4/13
+        td ceithre thrídéagú
+        th 6/50
+        td sé chaogadú
+      tr
+        th 4/7
+        td ceithre sheachtú
+        th 7/16
+        td seacht sédéagú
+        th 9/80
+        td naoi n&#x2011;ochtódú
+      tr
+        th 8/9
+        td ocht naoú
+        th 9/18
+        td naoi n&#x2011;ochtdéagú
+        th 9/100
+        td naoi gcéadú
+      tr
+        th 9/10
+        td naoi ndeichiú
+        th 6/19
+        td sé naoidéagú
+        th 3/1,000
+        td trí mhíliú
+      tr
+        th 10/3
+        td deich dtreana
+        th 3/20
+        td trí fichiú
+        th 5/1,000,000
+        td cúig mhilliúnú
+
+mixin Table9BB
+  +markedTable(9, "BB", "Table9BB-caption")
+    thead
+      th: +renderKey("TheFraction")
+      th #[i ceann]/#[i cinn] + #[i de]
+      th: +renderKey("TheFraction")
+      th #[i ceann]/#[i cinn] + #[i de]
+    tbody
+      tr
+        th 2/21
+        td dhá cheann de fiche aonuithe
+        th 10/156
+        td deich gcinn de chéad caoga séithe
+      tr
+        th 3/32
+        td trí cinn de thríocha dóithe
+        th 5/209
+        td cúig cinn de dhá chéad naoithe
+      tr
+        th 4/43
+        td ceithre cinn de dhaichead tríthe
+        th 2/2,987
+        td dhá cheann de dhá mhíle, naoi gcéad ochtó seachtuithe
+      tr
+        th 5/54
+        td cúig cinn de chaoga ceathruithe
+        th 3/3,234,567
+        td trí cinn de thrí mhilliún, dhá chéad tríocha is ceithre mhíle, cúig chéad seasca seachtuithe
+
+mixin Table9CC
+  +markedTable(9, "CC", "Table9CC-caption")
+    thead
+      th: +renderKey("TheFraction")
+      th
+        +renderKey("TheBareNumberModifiedBy")
+        |  #[i de]
+      th: +renderKey("TheFraction")
+      th
+        +renderKey("TheBareNumberModifiedBy")
+        |  #[i de]
+    tbody
+      tr
+        th 11/2 
+        td a haon déag de leatha
+        th 19/12 
+        td a naoi déag de dhódhéaguithe
+      tr
+        th 12/3 
+        td a dó dhéag de thrianta
+        th 20/19 
+        td fiche de naoidéaguithe
+      tr
+        th 15/6 
+        td a cúig déag de shéithe
+        th 45/17 
+        td daichead a cúig de sheachtdéaguithe
+      tr
+        th 17/8 
+        td a seacht déag d&rsquo;ochtuithe
+        th 87/13 
+        td ochtó a seacht de thrídéaguithe
+      tr
+        th 18/9 
+        td a hocht déag de naoithe
+        th 123/12 
+        td céad fiche a trí de dhódhéaguithe
+
+mixin Table9DD
+  +markedTable(9, "DD", "Table9DD-caption")
+    thead
+      th: +renderKey("TheFraction")
+      th
+        +renderKey("TheBareNumberModifiedBy")
+        |  #[i de]
+      th
+        +renderKey("TheBareNumberModifiedBy")
+        |  #[i ar]
+      th
+        +renderKey("TheBareNumberModifiedBy")
+        |  #[i os cionn]
+    tbody
+      tr
+        th 23/29 
+        td fiche a trí de fiche naoithe 
+        td fiche a trí ar fiche a naoi 
+        td fiche a trí os cionn fiche a naoi
+      tr
+        th 13/30 
+        td a trí déag de thríochaduithe 
+        td a trí déag ar thríocha 
+        td a trí déag os cionn tríocha
+      tr
+        th 32/81 
+        td tríocha a dó d&rsquo;ochtó aonuithe 
+        td tríocha a dó ar ochtó a haon 
+        td tríocha a dó os cionn ochtó a haon
+      tr
+        th 81/84 
+        td ochtó a haon d&rsquo;ochtó ceathruithe 
+        td ochtó a haon ar ochtó a ceathair 
+        td ochtó a haon os cionn ochtó a ceathair
+
+mixin Table9EE
+  +markedTable(9, "EE", "Table9EE-caption")
+    thead
+      th 0&ndash;19
+      th: +renderKey("TheNominativeCase")
+      th: +renderKey("TheGenitiveCase")
+      th: +renderKey("Tabel9EE-col4")
+    tbody
+      tr
+        th: +renderKey("Table9EE-Row1")
+        td: ul
+          li aon bhileog ghlan amháin
+          li dhá chupán ghlasa
+          li an dá chrann éagsúla
+          li na seacht gcinn dhearga
+          li na cúig bhád déag bheaga
+          li sé oíche Shathairn déag
+          li sé theach tábhairne dhéag
+        td: ul
+          li tús na haon bhileoige glaine amháin
+          li dath an dá chrann éagsúla
+          li costas na seacht gcinn dhearga
+          li bádóirí na gcúig bhád déag bheaga
+          li fuacht na n&#x2011;ocht gcloigne maola
+        td: ul
+          li 1 bhileog ghlan
+          li 2 chupán ghlasa
+          li 3 cinn dhearga
+      tr
+        th: +renderKey("Table9EE-Row2")
+        td: ul
+          li beirt bhan mhisniúla
+          li beirt fhear chróga
+          li an bheirt scoláirí chumasacha
+          li an ceathrar feirmeoirí gnóthacha
+          li an t&#x2011;ochtar aisteoirí maithe
+          li trí fheirmeoir déag Éireannacha
+          li na seacht n&#x2011;oibrí dhéag ghnóthacha
+        td: ul
+          li ainmneacha na beirte ban mhisniúla
+          li muintir an cheathrair
+          li muintir an cheathrar feirmeoirí gnóthacha
+          li róil an ochtair
+          li róil an ochtar aisteoirí maithe
+          li cumas na dtrí fheirmeoir déag Éireannacha
+          li tuarastail na seacht n&#x2011;oibrí dhéag ghnóthacha
+        td: ul
+          li 1 oibrí cáilithe
+          li 3 fheisire shinsearacha
+          li 8 n&#x2011;údar fhoilsithe
+          li 13 fheirmeoir Éireannacha
+          li 17 n&#x2011;oibrí ghnóthacha
+      tr
+        th: +renderKey("Table9EE-Row3")
+        td: ul
+          li an chéad fhear cróga
+          li na chéad cheithre charr mhóra
+          li an tríú cupán tae
+          li an cúigiú hionstraim reachtúil
+          li an seachtú hábhar déag nua
+          li an t&#x2011;ochtú capall déag mór
+        td: ul
+          li ráiteas an chéad fhir chróga
+          li buiséad na chéad dánlainne nua-aoisí
+          li blas an tríú cupán tae
+          li forálacha an chúigiú hionstraim reachtúil
+          li costas an seachtú hábhar déag nua
+          li ualach an ochtú capall déag mór
+        td: ul
+          li an 1ú fear cróga
+          li an 1ú dánlann nua-aoiseach
+          li an 3ú cupán tae
+          li an 5ú hionstraim reachtúil
+          li an 17ú hábhar nua
+          li an 18ú capall mór
+
+mixin Table9FF
+  +markedTable(9, "FF", "Table9FF-caption")
+    thead
+      th 20+
+      th: +renderKey("TheEstablishedSystem")
+      th: +renderKey("TheSimplifiedSystem")
+    tbody
+      tr
+        th(rowspan=2): +renderKey("Table9FF-row1")
+        td: ul 
+          li aon chapall mór amháin is fiche
+          li trí bhean arda is ceathracha
+          li cúig fhuinneog bhriste is caoga
+          li seacht leabhar shuimiúla is seachtó
+          li naoi nduine ghnóthacha is nócha
+          li trí chéad seasca is ceithre bhuidéal fholmha
+        td: ul 
+          li fiche a haon capall mór
+          li ceathracha a trí bean ard
+          li caoga a cúig fuinneog bhriste
+          li seachtó a seacht leabhar suimiúil
+          li nócha a naoi duine gnóthach
+          li trí chéad seasca a ceathair buidéal folamh
+      tr
+        td: ul 
+          li 21 chapall mór
+          li 43 bhean arda
+          li 55 fhuinneog bhriste
+          li 77 leabhar shuimiúla
+          li 99 nduine ghnóthacha
+          li 364 bhuidéal fholmha
+        td: ul 
+          li 21 capall mór
+          li 43 bean ard
+          li 55 fuinneog bhriste
+          li 77 leabhar suimiúil
+          li 99 duine gnóthach
+          li 364 buidéal folamh
+      tr
+        th(rowspan=2): +renderKey("Table9FF-row2")
+        td: ul 
+          li an ceathrú doras dúnta is fiche
+          li an daicheadú leabhar nua
+          li an séú hábhar suimiúil is seasca
+        td
+      tr
+        td: ul 
+          li an 24ú doras dúnta
+          li an 40ú leabhar nua
+          li an 66ú hábhar suimiúil
+        td
+

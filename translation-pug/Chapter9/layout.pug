@@ -1,0 +1,477 @@
+include ../bodyMatter.pug
+include ./dbs/index.pug
+include tables.pug
+
++chapterTemplate(9)
+  +hx(2, "9.1", "9-1-title")
+    +hx(3, "9.1.1")
+      p: +renderKey("9-1-1-p")
+      ol(class="list-[lower-alpha]")
+        li#sec_9_1_1_a
+          p: b: +renderKey("9-1-1-a-title")
+          p: +renderKey("9-1-1-a-p")
+        li#sec_9_1_1_b
+          p: b: +renderKey("9-1-1-b-title")
+          p: +renderKey("9-1-1-b-p")
+        li#sec_9_1_1_c
+          p: b: +renderKey("9-1-1-c-title")
+          p: +renderKey("9-1-1-c-p")
+        li#sec_9_1_1_d
+          p: b: +renderKey("9-1-1-d-title")
+          p: +renderKey("9-1-1-d-p")
+        li#sec_9_1_1_e
+          p: b: +renderKey("9-1-1-e-title")
+          p: +renderKey("9-1-1-e-p")
+        li#sec_9_1_1_f
+          p: b: +renderKey("9-1-1-f-title")
+          p: +renderKey("9-1-1-f-p")
+    +hx(3, "9.1.2")
+      p: +renderKey("9-1-2-p")
+  hr
+
+  +hx(2, "9.2", "9-2-title")
+    p: +renderKey("9-2-p")
+    +hx(3, "9.2.1", "9-2-1-title")
+      ol(class="list-[lower-alpha]")
+        li#sec_9_2_1_a
+          p: +renderKey("9-2-1-a-p")
+        li#sec_9_2_1_b
+          p: +renderKey("9-2-1-b-p")
+      p: +renderKey("9-2-1-p1")
+      +Table9A
+      p: +renderKey("9-2-1-p2")
+      p: +renderKey("9-2-1-p3")
+      +Table9B
+    +hx(3, "9.2.2", "9-2-2-title")
+      ol(class="list-[lower-alpha]")
+        li#sec_9_2_2_a
+          +renderKey("9-2-2-a-p")
+        li#sec_9_2_2_b
+          +renderKey("9-2-2-b-p")
+      +Table9C
+      +Table9D
+    +hx(3, "9.2.3", "9-2-3-title")
+      ol(class="list-[lower-alpha]")
+        li#sec_9_2_3_a
+          +renderKey("9-2-3-a-p")
+        li#sec_9_2_3_b
+          +renderKey("9-2-3-b-p")
+      p: +renderKey("9-2-3-p1")
+      p: +renderKey("9-2-3-p2")
+      +Table9E
+  hr
+
+  +hx(2, "9.3", "9-3-title")
+    +hx(3, "9.3.1", "9-3-1-title")
+      ol(class="list-[lower-alpha]")
+        li#sec_9_3_1_a
+          +renderKey("9-3-1-a-p")
+        li#sec_9_3_1_b
+          +renderKey("9-3-1-b-p")
+        li#sec_9_3_1_c
+          +renderKey("9-3-1-c-p")
+        li#sec_9_3_1_d
+          +renderKey("9-3-1-d-p")
+        li#sec_9_3_1_e
+          +renderKey("9-3-1-e-p")
+        li#sec_9_3_1_f
+          p: +renderKey("9-3-1-f-p")
+          p: +renderKey("9-3-1-p")
+        li#sec_9_3_1_g
+          +renderKey("9-3-1-g-p")
+        li#sec_9_3_1_h
+          +renderKey("9-3-1-h-p")
+        li#sec_9_3_1_i
+          +renderKey("9-3-1-i-p")
+      +Table9F
+    +hx(3, "9.3.2", "9-3-2-title")
+      p: +renderKey("9-3-2-p")
+      +Table9G
+      ol(class="list-[lower-alpha]")
+        li#sec_9_3_2_a
+          +renderKey("9-3-2-a-p")
+        li#sec_9_3_2_b
+          +renderKey("9-3-2-b-p")
+        li#sec_9_3_2_c
+          +renderKey("9-3-2-c-p")
+        li#sec_9_3_2_d
+          +renderKey("9-3-2-d-p")
+        li#sec_9_3_2_e
+          +renderKey("9-3-2-e-p")
+        li#sec_9_3_2_f
+          +renderKey("9-3-2-f-p")
+      +Table9H
+    +hx(3, "9.3.3", "9-3-3-title")
+      ol(class="list-[lower-alpha]")
+        li#sec_9_3_3_a
+          +renderKey("9-3-3-a-p")
+        li#sec_9_3_3_b
+          +renderKey("9-3-3-b-p")
+        li#sec_9_3_3_c
+          +renderKey("9-3-3-c-p")
+      +Table9I
+    +hx(3, "9.3.4", "9-3-4-title")
+      ol(class="list-[lower-alpha]")
+        li#sec_9_3_4_a
+          +renderKey("9-3-4-a-p")
+        li#sec_9_3_4_b
+          +renderKey("9-3-4-b-p")
+      +Table9J
+    +hx(3, "9.3.5", "9-3-5-title")
+      ol(class="list-[lower-alpha]")
+        li#sec_9_3_5_a
+          b: +renderKey("9-3-5-a-p")
+          ol(class="list-[lower-roman]")
+            li#sec_9_3_5_a_i
+              +renderKey("9-3-5-a-i-p")
+            li#sec_9_3_5_a_ii
+              +renderKey("9-3-5-a-ii-p")
+            li#sec_9_3_5_a_iii
+              +renderKey("9-3-5-a-iii-p")
+        li#sec_9_3_5_b
+          b: +renderKey("9-3-5-b-p")
+          ol(class="list-[lower-roman]")
+            li#sec_9_3_5_b_i
+              +renderKey("9-3-5-b-i-p")
+            li#sec_9_3_5_b_ii
+              +renderKey("9-3-5-b-ii-p")
+        li#sec_9_3_5_c
+          +renderKey("9-3-5-c-p")
+      +Table9K
+      aside
+        b: +renderKey("Nóta", { getFromCommon: true })
+        | : #[+renderKey("9-3-5-note")]
+    +hx(3, "9.3.6", "9-3-6-title")
+      ol(class="list-[lower-alpha]")
+        li#sec_9_3_6_a
+          +renderKey("9-3-6-a-p")
+        li#sec_9_3_6_b
+          +renderKey("9-3-6-b-p")
+    +hx(3, "9.3.7", "9-3-7-title")
+      ol(class="list-[lower-alpha]")
+        li#sec_9_3_7_a
+          p: b aon
+          p: +renderKey("9-3-7-a-p")
+          ol(class="list-[lower-roman]")
+            li#sec_9_3_7_a_i
+              +renderKey("9-3-7-a-i-p")
+            li#sec_9_3_7_a_ii
+              +renderKey("9-3-7-a-ii-p")
+            li#sec_9_3_7_a_iii
+              +renderKey("9-3-7-a-iii-p")
+        li#sec_9_3_7_b
+          +renderKey("9-3-7-b-p")
+        li#sec_9_3_7_c
+          +renderKey("9-3-7-c-p")
+        li#sec_9_3_7_d
+          +renderKey("9-3-7-d-p")
+      +Table9L
+    +hx(3, "9.3.8", "9-3-8-title")
+      p: +renderKey("9-3-8-p")
+    +hx(3, "9.3.9", "9-3-9-title")
+      ol(class="list-[lower-alpha]")
+        li#sec_9_3_9_a
+          +renderKey("9-3-9-a-p")
+        li#sec_9_3_9_b
+          +renderKey("9-3-9-b-p")
+        li#sec_9_3_9_c
+          +renderKey("9-3-9-c-p")
+        li#sec_9_3_9_d
+          +renderKey("9-3-9-d-p")
+        li#sec_9_3_9_e
+          +renderKey("9-3-9-e-p")
+      +Table9M
+      aside
+        p: b
+          +renderKey("Nóta", { getFromCommon: true })
+          | :
+        ul(class="list-disc")
+          li: +renderKey("9-3-9-note-p1")
+          li: +renderKey("9-3-9-note-p2")
+    +hx(3, "9.3.10", "9-3-10-title")
+      ol(class="list-[lower-alpha]")
+        li#sec_9_3_10_a
+          +renderKey("9-3-10-a-p")
+        li#sec_9_3_10_b
+          p: b: +renderKey("TheEstablishedSystem")
+          ol(class="list-[lower-roman]")
+            li#sec_9_3_10_b_i
+              +renderKey("9-3-10-b-i-p")
+            li#sec_9_3_10_b_ii
+              +renderKey("9-3-10-b-ii-p")
+        li#sec_9_3_10_c
+          p: b: +renderKey("TheSimplifiedSystem")
+          ol(class="list-[lower-roman]")
+            li#sec_9_3_10_c_i
+              +renderKey("9-3-10-c-i-p")
+            li#sec_9_3_10_c_ii
+              +renderKey("9-3-10-c-ii-p")
+        li#sec_9_3_10_d
+          +renderKey("9-3-10-d-p")
+        li#sec_9_3_10_e
+          +renderKey("9-3-10-e-p")
+      +Table9N
+      aside
+        p: b
+          +renderKey("Nóta", { getFromCommon: true })
+          | :
+        ul(class="list-disc")
+          li: +renderKey("9-3-10-note-p1")
+          li: +renderKey("9-3-10-note-p2")
+
+    +hx(3, "9.3.11", "9-3-11-title")
+      p: +renderKey("9-3-11-p1")
+      p: +renderKey("9-3-11-p2")
+      +Table9O
+
+    +hx(3, "9.3.12", "9-3-12-title")
+      p: +renderKey("9-3-12-p")
+      +Table9P
+  hr
+
+  +hx(2, "9.4", "9-4-title")
+    p: +renderKey("9-4-p")
+    +hx(3, "9.4.1", "9-4-1-title")
+      ol(class="list-[lower-alpha]")
+        li#sec_9_4_1_a
+          +renderKey("9-4-1-a-p")
+        li#sec_9_4_1_b
+          +renderKey("9-4-1-b-p")
+      +Table9Q
+
+    +hx(3, "9.4.2", "9-4-2-title")
+      ol(class="list-[lower-alpha]")
+        li#sec_9_4_2_a
+          b: +renderKey("9-4-2-a-title")
+          ol(class="list-[lower-roman]")
+            li#sec_9_4_2_a_i
+              +renderKey("9-4-2-a-i-p")
+            li#sec_9_4_2_a_ii
+              +renderKey("9-4-2-a-ii-p")
+        li#sec_9_4_2_b
+          b: +renderKey("9-4-2-b-title")
+          ol(class="list-[lower-roman]")
+            li#sec_9_4_2_b_i
+              +renderKey("9-4-2-b-i-p")
+            li#sec_9_4_2_b_ii
+              +renderKey("9-4-2-b-ii-p")
+            li#sec_9_4_2_b_iii
+              +renderKey("9-4-2-b-iii-p")
+          +Table9R
+        li#sec_9_4_2_c
+          b: +renderKey("9-4-2-c-title")
+          ol(class="list-[lower-roman]")
+            li#sec_9_4_2_c_i
+              +renderKey("9-4-2-c-i-p")
+            li#sec_9_4_2_c_ii
+              +renderKey("9-4-2-c-ii-p")
+            li#sec_9_4_2_c_iii
+              +renderKey("9-4-2-c-iii-p")
+            li#sec_9_4_2_c_iv
+              +renderKey("9-4-2-c-iv-p")
+        li#sec_9_4_2_d
+          b: +renderKey("9-4-2-d-title")
+          ol(class="list-[lower-roman]")
+            li#sec_9_4_2_d_i
+              +renderKey("9-4-2-d-i-p")
+            li#sec_9_4_2_d_ii
+              +renderKey("9-4-2-d-ii-p")
+        p * #[+renderKey("OtherCasesFootnote")]
+
+    +hx(3, "9.4.3", "9-4-3-title")
+      ol(class="list-[lower-alpha]")
+        li#sec_9_4_3_a
+          b: +renderKey("9-4-3-a-title")
+          ol(class="list-[lower-roman]")
+            li#sec_9_4_3_a_i
+              +renderKey("9-4-3-a-i-p")
+            li#sec_9_4_3_a_ii
+              +renderKey("9-4-3-a-ii-p")
+            li#sec_9_4_3_a_iii
+              +renderKey("9-4-3-a-iii-p")
+            li#sec_9_4_3_a_iv
+              +renderKey("9-4-3-a-iv-p")
+            li#sec_9_4_3_a_v
+              +renderKey("9-4-3-a-v-p")
+          p * #[+renderKey("OtherCasesFootnote")]
+          +Table9S
+          p * #[+renderKey("Table9S-footnote")]
+        li#sec_9_4_3_b
+          b: +renderKey("9-4-3-b-title")
+          ol(class="list-[lower-roman]")
+            li#sec_9_4_3_b_i
+              +renderKey("9-4-3-b-i-p")
+            li#sec_9_4_3_b_ii
+              +renderKey("9-4-3-b-ii-p")
+            li#sec_9_4_3_b_iii
+              +renderKey("9-4-3-b-iii-p")
+            li#sec_9_4_3_b_iv
+              +renderKey("9-4-3-b-iv-p")
+          +Table9T
+          p * #[+renderKey("Table9T-footnote")]
+        li#sec_9_4_3_c
+          b: +renderKey("9-4-3-c-title")
+          ol(class="list-[lower-roman]")
+            li#sec_9_4_3_c_i
+              +renderKey("9-4-3-c-i-p")
+            li#sec_9_4_3_c_ii
+              +renderKey("9-4-3-c-ii-p")
+            li#sec_9_4_3_c_iii
+              +renderKey("9-4-3-c-iii-p")
+            li#sec_9_4_3_c_iv
+              +renderKey("9-4-3-c-iv-p")
+          +Table9U
+          p * #[+renderKey("Table9U-footnote")]
+
+    +hx(3, "9.4.4", "9-4-4-title")
+      ol(class="list-[lower-alpha]")
+        li#sec_9_4_4_a
+          +renderKey("9-4-4-a-p")
+        li#sec_9_4_4_b
+          +renderKey("9-4-4-b-p")
+
+    +hx(3, "9.4.5", "9-4-5-title")
+      p: +renderKey("9-4-5-p")
+  hr
+
+  +hx(2, "9.5", "9-5-title")
+    p: +renderKey("9-5-p")
+    +hx(3, "9.5.1", "9-5-1-title")
+      ol(class="list-[lower-alpha]")
+        li#sec_9_5_1_a
+          +renderKey("9-5-1-a-p")
+        li#sec_9_5_1_b
+          p: +renderKey("9-5-1-b-p")
+          ol(class="list-[lower-roman]")
+            li#sec_9_5_1_b_i
+              +renderKey("9-5-1-b-i-p")
+            li#sec_9_5_1_b_ii
+              +renderKey("9-5-1-b-ii-p")
+            li#sec_9_5_1_b_iii
+              +renderKey("9-5-1-b-iii-p")
+        li#sec_9_5_1_c
+          +renderKey("9-5-1-c-p")
+        li#sec_9_5_1_d
+          +renderKey("9-5-1-d-p")
+
+    +hx(3, "9.5.2", "9-5-2-title")
+      ol(class="list-[lower-alpha]")
+        li#sec_9_5_2_a
+          +renderKey("9-5-2-a-p")
+        li#sec_9_5_2_b
+          +renderKey("9-5-2-b-p")
+        li#sec_9_5_2_c
+          +renderKey("9-5-2-c-p")
+        li#sec_9_5_2_d
+          +renderKey("9-5-2-d-p")
+        li#sec_9_5_2_e
+          +renderKey("9-5-2-e-p")
+      +Table9V
+
+    +hx(3, "9.5.3", "9-5-3-title")
+      ol(class="list-[lower-alpha]")
+        li#sec_9_5_3_a
+          +renderKey("9-5-3-a-p")
+        li#sec_9_5_3_b
+          +renderKey("9-5-3-b-p")
+      +Table9W
+
+    +hx(3, "9.5.4", "9-5-4-title")
+      ol(class="list-[lower-alpha]")
+        li#sec_9_5_4_a
+          +renderKey("9-5-4-a-p")
+        li#sec_9_5_4_b
+          +renderKey("9-5-4-b-p")
+        li#sec_9_5_4_c
+          +renderKey("9-5-4-c-p")
+        li#sec_9_5_4_d
+          +renderKey("9-5-4-d-p")
+      +Table9X
+
+    +hx(3, "9.5.5", "9-5-5-title")
+      p: +renderKey("9-5-5-p")
+
+    +hx(3, "9.5.6", "9-5-6-title")
+      ol(class="list-[lower-alpha]")
+        li#sec_9_5_6_a
+          +renderKey("9-5-6-a-p")
+        li#sec_9_5_6_b
+          +renderKey("9-5-6-b-p")
+  hr
+
+  +hx(2, "9.6", "9-6-title")
+    +hx(3, "9.6.1", "9-6-1-title")
+      ol(class="list-[lower-alpha]")
+        li#sec_9_6_1_a
+          +renderKey("9-6-1-a-p")
+        li#sec_9_6_1_b
+          p: +renderKey("9-6-1-b-p1")
+          p: +renderKey("9-6-1-b-p2")
+        li#sec_9_6_1_c
+          +renderKey("9-6-1-c-p")
+        li#sec_9_6_1_d
+          +renderKey("9-6-1-d-p")
+        li#sec_9_6_1_e
+          p: +renderKey("9-6-1-e-p")
+          ol(class="list-[lower-roman]")
+            li#sec_9_6_1_e_i(class="border-purple-500 border-1 bg-yellow-50")
+              +renderKey("9-6-1-e-i-p")
+            li#sec_9_6_1_e_ii
+              +renderKey("9-6-1-e-ii-p")
+            li#sec_9_6_1_e_iii
+              +renderKey("9-6-1-e-iii-p")
+            li#sec_9_6_1_e_iv
+              +renderKey("9-6-1-e-iv-p")
+            li#sec_9_6_1_e_v
+              +renderKey("9-6-1-e-v-p")
+    +hx(3, "9.6.2", "9-6-2-title")
+      ol(class="list-[lower-alpha]")
+        li#sec_9_6_2_a
+          b: +renderKey("9-6-2-a-title")
+          p: +renderKey("9-6-2-a-p")
+          +Table9Y
+        li#sec_9_6_2_b
+          b:  +renderKey("9-6-2-b-title")
+          p: +renderKey("9-6-2-b-p-1")
+          +Table9Z
+          p: +renderKey("9-6-2-b-p-2")
+    +hx(3, "9.6.3", "9-6-3-title")
+      ol(class="list-[lower-alpha]")
+        li#sec_9_6_3_a
+          b: +renderKey("9-6-3-a-title")
+          ol(class="list-[lower-roman]")
+            li#sec_9_6_3_a_i
+              +renderKey("9-6-3-a-i")
+              +Table9AA
+            li#sec_9_6_3_a_ii
+              +renderKey("9-6-3-a-ii")
+              +Table9BB
+        li#sec_9_6_3_b
+          b: +renderKey("9-6-3-b-title")
+          p: +renderKey("9-6-3-b-p")
+          +Table9CC
+
+      +hx(3, "9.6.4", "9-6-4-title")
+        p: +renderKey("9-6-4-p")
+        +Table9DD
+  hr
+
+  +hx(2, "9.7", "9-7-title")
+    ol(class="list-[lower-alpha]")
+      li#sec_9_7_a
+        p: +renderKey("9-7-a-p")
+      li#sec_9_7_b
+        p: +renderKey("9-7-b-p")
+  hr
+
+  +hx(2, "9.8", "9-8-title")
+    +Table9EE
+    +Table9FF
+    aside
+      p: b
+        +renderKey("Nóta", { getFromCommon: true })
+        | :
+      ol(class="list-[lower-alpha]")
+        li: +renderKey("Table9FF-note-a-p")
+        li: +renderKey("Table9FF-note-b-p")
+  hr
