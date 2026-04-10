@@ -1,0 +1,1272 @@
+include ../../tlMatter.pug
+
+mixin gaDb(key)
+  case key
+    when "teidealNaCaibidle"
+      | Na hAthruithe Tosaigh
+    when "10-title"
+      | #[+renderKey("Caibidil", { getFromCommon: true })] 10 | #[+gaDb("teidealNaCaibidle")]
+    when "10-1-title"
+      | Ginearálta
+    when "10-1-p"
+      | Is é is athrú tosaigh ann athrú a dhéantar ar thús focail mar gheall ar inscne, tuiseal, aimsir nó cúinsí eile gramadaí. Áirítear ar na hathruithe tosaigh an séimhiú, an t&#x2011;urú, #[i t] roimh ghuta, #[i t] roimh #[i s], #[i h] roimh ghuta agus #[i d&rsquo;] roimh ghuta nó roimh #[i fh&#x2011;]. Tugtar míniú anseo ar úsáid na n&#x2011;athruithe tosaigh, lena n&#x2011;áirítear an séimhiú ar ainmfhocal éiginnte i ndiaidh ainmfhocal baininscneach agus an séimhiú ar ainmfhocal éiginnte i ndiaidh ainmfhocal san iolra a chríochnaíonn ar chonsan caol.
+    when "h2-gp-2-5-title"
+      | An Séimhiú
+    when "h2-gp-2-5-p"
+      | Is iad seo na consain inséimhithe: #[i b], #[i c], #[i d], #[i f], #[i g], #[i m], #[i p], #[i s] (ach amháin i gcás #[i sc-], #[i sf-], #[i sm-], #[i sp-], #[i st-] agus #[i sv-]) agus #[i t].
+    when "10-2-title"
+      | Séimhiú ar an Ainmfhocal
+    when "10-2-p"
+      | Cuirtear séimhiú ar an ainmfhocal sna cásanna seo a leanas.
+    when "10-2-1-title"
+      | I nDiaidh an Ailt
+    when "10-2-1-p"
+      | Cuirtear séimhiú ar an ainmfhocal i ndiaidh an ailt (mura #[i d], #[i t] nó #[i s] an túschonsan) &mdash;
+    when "10-2-1-a-p"
+      | san ainmneach uatha baininscneach, e.g., #[i an chathair]; #[i an ghloine]; #[i an fhuascailt]:
+    when "10-2-1-a-sample-1"
+      | Tá #[b an bhean] ag canadh.
+    when "10-2-1-a-sample-2"
+      | Ar dhún sé #[b an fhuinneog]?
+    when "10-2-1-b-p"
+      | sa ghinideach uatha firinscneach, e.g., #[i mac an fhir]; #[i geata an choláiste]:
+    when "10-2-1-b-sample-1"
+      | Cad a tharla do bhronntanas #[b an pháiste] i ndiaidh na cóisire?
+    when "10-2-1-b-sample-2"
+      | Ba ghá dom imeacht roimh dheireadh #[b an chluiche].
+    when "10-2-1-c-p"
+      | sa tabharthach uatha, firinscneach agus baininscneach, i roinnt cásanna ina ngabhann réamhfhocal leis an alt de réir an Chórais Lárnaigh, e.g., #[i den chapall] (féach #[+link("./chapter1.html#sec_1_4", "1.4")]), nó de réir Chóras an tSéimhithe, e.g., #[i ar an chapall] (féach #[+link("./chapter1.html#sec_1_7", "1.7")]):
+    when "10-2-1-c-sample-1"
+      | Mheallfadh sí an t&#x2011;éan #[b den chrann].
+    when "10-2-1-c-sample-2"
+      | Tugadh maoiniú breise #[b don chuideachta].
+    when "10-2-2-title"
+      | I nDiaidh na Míre Gairmí
+    when "10-2-2-p"
+      | Cuirtear séimhiú i ndiaidh na míre gairmí san uatha agus san iolra, firinscneach agus baininscneach, e.g., #[i a dhuine chóir]; #[i a Ghaela!]; #[i a chairde na páirte]:
+    when "10-2-2-sample-1"
+      | #[b A dhaoine uaisle], tá fáilte romhaibh anseo anocht.
+    when "10-2-2-sample-2"
+      | Maith sibh, #[b a fheara]!
+    when "10-2-3-title"
+      | I nDiaidh Aidiachtaí Áirithe
+    when "10-2-3-p"
+      | Cuirtear séimhiú ar an ainmfhocal i ndiaidh na n&#x2011;aidiachtaí seo a leanas &mdash;
+    when "10-2-3-a-p"
+      | na haidiachtaí sealbhacha #[i mo], #[i do], #[i a] (firinscneach uatha), e.g., #[i mo mhac]; #[i do theach]; #[i a pheann]:
+    when "10-2-3-a-sample-1"
+      | Is é #[b mo mhála] é.
+    when "10-2-3-a-sample-2"
+      | Cár fhág sé #[b a charr]?
+    when "10-2-3-b-p"
+      | an aidiacht rannach #[i uile], e.g., #[i an uile fhocal]; #[i gach uile sheachtain]:
+    when "10-2-3-b-sample-1"
+      | Bíonn an #[b uile chineál] duine ag freastal air.
+    when "10-2-3-b-sample-2"
+      | Tá gach #[b uile chlár] sa tsraith feicthe aici.
+    when "10-2-3-c-p"
+      | an aidiacht éiginnte #[i aon], e.g., #[i aon mhála], #[i aon chóta] (ach amháin má thosaíonn an t&#x2011;ainmfhocal ar #[i d], #[i t] nó #[i s], e.g., #[i aon duine], #[i aon teaghlach]):
+    when "10-2-3-c-sample-1"
+      | Ní raibh #[b aon bhia] sa teach.
+    when "10-2-3-c-sample-2"
+      | An bhfuair tú #[b aon bheart] sa phost?
+    when "10-2-4-title"
+      | I nDiaidh Uimhreacha Áirithe
+    when "10-2-4-p"
+      | Cuirtear séimhiú ar an ainmfhocal i ndiaidh na n&#x2011;uimhreacha seo a leanas &mdash;
+    when "10-2-4-a-p"
+      | an bhunuimhir #[i aon] agus an orduimhir #[i céad], mura #[i d], #[i t] nó #[i s] an túschonsan, e.g., #[i aon chailín amháin]; #[i an chéad bhróg]; #[i aon samhradh amháin]; #[i an chéad teach]:
+    when "10-2-4-a-sample-1"
+      | Níl ach #[b aon bhealach] amháin lena dhéanamh.
+    when "10-2-4-a-sample-2"
+      | Ba é sin an #[b chéad phictiúr] a dhíol sé riamh.
+    when "10-2-4-b-p"
+      | #[i dhá], e.g., #[i dhá chrann]; #[i an dá chóta]; ach amháin má tá an aidiacht shealbhach #[i a] (tríú pearsa uatha, baininscneach agus tríú pearsa iolra), #[i ár] nó #[i bhur] roimhe, e.g., #[i dhá chapall ach a dhá géag] (tríú pearsa uatha baininscneach); #[i ár dhá gcapall]; #[i bhur dhá dteach]; #[i a dhá mbó] (tríú pearsa iolra) (féach #[+link("./chapter8.html#sec_8_3_3", "8.3.3")]):
+    when "10-2-4-b-sample-1"
+      | Ba ise an bhean a raibh #[b dhá mhadra] aici.
+    when "10-2-4-b-sample-2"
+      | Tá an #[b dá thionscadal] críochnaithe anois.
+    when "10-2-4-c-p"
+      | #[i trí], #[i ceithre], #[i cúig], #[i sé], e.g., #[i trí bhád]; #[i ceithre bhó] (ach amháin i gcás na n&#x2011;ainmfhocal a bhfuil leagan iolra ar leith acu i ndiaidh na mbunuimhreacha &mdash; féach #[+link("./chapter9.html#sec_9_3_2", "9.3.2")], agus i gcás an fhocail #[i cent], e.g., #[i dhá cent]; #[i cúig cent]):
+    when "10-2-4-c-sample-1"
+      | Níor sheol mé ach #[b cúig chárta] Nollag i mbliana.
+    when "10-2-4-c-sample-2"
+      | Léigh sí #[b sé chaibidil] roimh an rang.
+    when "10-2-4-note-p"
+      | Tabhair faoi deara:
+    when "10-2-4-note-a-i-p"
+      | gurb é an t&#x2011;athrú tosaigh a ghabhann leis an uimhir dheiridh i sraith a bhíonn le cur ar an bhfocal atá faoina réir, e.g., #[i sé nó seacht mbád];
+    when "10-2-4-note-a-ii-p"
+      | má úsáidtear an Córas Simplithe os cionn fiche (féach #[+link("./chapter9.html#sec_9_3_10", "9.3.10")] &mdash; #[+link("./chapter9.html#sec_9_3_12", "9.3.12")]), nach gcuirtear séimhiú ar an ainmfhocal, e.g., #[i fiche a trí capall]; #[i 56 fuinneog].
+    when "10-2-5-title"
+      | I nDiaidh Réamhfhocail Shimplí Áirithe
+    when "10-2-5-p1"
+      | Cuirtear séimhiú ar an ainmfhocal i ndiaidh na réamhfhocal simplí seo a leanas &mdash;
+    when "10-2-5-a-p1"
+      | #[i de], #[i do] (agus #[i a] as #[i do], e.g., #[i obair a dhéanamh]), #[i faoi], #[i ionsar], #[i mar], #[i ó], #[i roimh], #[i trí], #[i um], e.g., #[i de Shiobhán]; #[i do bhuachaillí]; #[i faoi bhord]; #[i ionsar Sheán, mar dhuine]; #[i ó bhéal]:
+    when "10-2-5-a-sample-1"
+      | Críochnóidh sí an obair #[b roimh mhaidin].
+    when "10-2-5-a-sample-2"
+      | Is #[b de thaisme] a tharla sé.
+    when "10-2-5-a-p2"
+      | Ciorraítear na réamhfhocail #[i do] agus #[i de] go #[i d&rsquo;] roimh ainmfhocail dar tús guta nó #[i f] + #[i guta], e.g., #[i d&rsquo;athair Sheáin], #[i d&rsquo;fhoghlaimeoirí Gaeilge]; ach ní dhéantar sin i gcás #[i f] + #[i consan], e.g., #[i do Fhrancaigh]:
+    when "10-2-5-a-sample-3"
+      | Is #[b d&rsquo;iníon] Úna a thug mé an leabhar.
+    when "10-2-5-a-sample-4"
+      | Níor thug sí #[b de fhreagra] orm ach tosú ag gol.
+    when "10-2-5-note-p"
+      | Ní shéimhítear #[i b], #[i m] ná #[i p] tar éis #[i um], e.g., #[i ordú um praghsanna a chobhsú]; #[i an tÚdarás um Bóithre Náisiúnta].
+    when "10-2-5-b-p1"
+      | #[i ar], e.g., #[i ar bhád], #[i ar chlé], #[i ar dheis], #[i ar dhaoine] (féach freisin #[+link("./chapter10.html#sec_10_6_4_b", "10.6.4(b)")]):
+    when "10-2-5-b-sample-1"
+      | Níl a fhios aici conas cnaipe a chur #[b ar chóta].
+    when "10-2-5-b-sample-2"
+      | D&rsquo;fhág sé a bhróga #[b ar charraig] in aice na farraige.
+    when "10-2-5-b-p2"
+      | Tabhair faoi deara nach séimhítear an t&#x2011;ainmfhocal i gcás abairtíní dobhriathartha ná ainmneacha briathartha lena gcuirtear staid nó suíomh in iúl, e.g., #[i ar ball]; #[i ar bord (loinge)]; #[i ar comhaois]; #[i ar comhchéim]; #[i ar comhscór]; #[i ar comhstádas]; #[i ar deireadh]; #[i ar fad]; #[i ar fiar]; #[i ar meisce]; #[i ar muir agus ar tír]; #[i ar srian]; #[i ar tiús]; #[i ar bogadh]; #[i ar crochadh]; #[i ar fáil]; #[i ar siúl] (sa bhrí #[i ag tarlú]); ach #[i ar fheabhas]; #[i ar shiúl] (sa bhrí #[i imithe]). Cuirtear séimhiú ar an ainmfhocal, áfach, má tá sé cáilithe, e.g., #[i ar chonradh sealadach]; #[i ar shaoire mháithreachais]; #[i ar bharr an tí]; ach amháin i gcás #[i ar bord loinge]; #[i ar ball beag].
+    when "10-2-5-c-p1"
+      | #[i gan], ar ainmfhocal nach bhfuil cáilithe mura #[i d], #[i t], #[i s] nó #[i f] an túschonsan, e.g., #[i gan chuid]; #[i gan chiall]; #[i gan mhaith]; #[i gan mheabhair]; #[i gan bhréag]; ach #[i gan dearmad]; #[i gan sagart]; #[i gan tine]; #[i gan feoirling] (eisceacht: #[i gan fhios]);
+    when "10-2-5-c-sample-1"
+      | D&rsquo;fhág na saighdiúirí an geata isteach #[b gan chosaint].
+    when "10-2-5-c-sample-2"
+      | Tiocfaidh na comhaltaí eile #[b gan mhoill].
+    when "10-2-5-c-p2"
+      | Ní chuirtear séimhiú ar ainmfhocal atá cáilithe, e.g., #[i gan pingin rua]; #[i gan carn aoiligh]; #[i gan bolgán solais]; #[i gan ciall linbh]; #[i gan brí ar bith]; #[i gan misneach a chailleadh]:
+    when "10-2-5-c-sample-3"
+      | Fágadh #[b gan cuan mara] iad.
+    when "10-2-5-c-sample-4"
+      | Dúirt siad nach ndéanfaí an próiseas a athrú #[b gan cúis chóir].
+    when "10-2-5-c-sample-5"
+      | D&rsquo;imigh siad #[b gan pingin a shaothrú].
+    when "10-2-5-c-p3"
+      | Tabhair faoi deara nach gcuirtear séimhiú ar ainmfhocal nach bhfuil cáilithe más ainm dílis cinnte é, e.g., #[i d&rsquo;fhág siad gan Cáit]; nó más ainm briathartha i bhfrása ainmfhoclach é, e.g., #[i b&rsquo;fhearr duit gan pósadh]; #[i moladh dó gan corraí]:
+    when "10-2-5-c-sample-6"
+      | Chríochnaigh sí an obair #[b gan Micheál].
+    when "10-2-5-c-sample-7"
+      | Shocraigh sí #[b gan géilleadh].
+    when "10-2-5-d-p1"
+      | #[i idir], nuair is é #[i araon] atá i gceist, e.g., #[i idir bheag agus mhór]; #[i idir chailíní agus bhuachaillí]. Ní shéimhítear an t&#x2011;ainmfhocal a thagann i ndiaidh agus nó is i gcás gur le #[i d], #[i t] nó #[i s] a thosaíonn sé, e.g., #[i idir shúgradh is dáiríre]; #[i idir mhná rialta agus sagairt]:
+    when "10-2-5-d-sample-1"
+      | Tá #[b idir fhocail] agus #[b phictiúir] sa leabhar.
+    when "10-2-5-d-sample-2"
+      | Beidh #[b idir dhaoine] óga agus #[b seanóirí] i láthair.
+    when "10-2-5-d-p2"
+      | Tabhair faoi deara nach gcuirtear séimhiú ar ainmfhocal i ndiaidh #[i idir] nuair is #[i eatarthu] atá i gceist, e.g., #[i idir Corcaigh agus Gaillimh]; #[i idir breith agus baisteadh]; #[i idir tithe]; #[i idir béilí]:
+    when "10-2-5-d-sample-3"
+      | Bhí an páiste ina dhúiseacht #[b idir meán oíche] agus #[b breacadh] an lae.
+    when "10-2-5-d-sample-4"
+      | Thosaigh troid #[b idir beirt] fhear lasmuigh den siopa.
+    when "10-2-5-e-p1"
+      | #[i thar], e.g., #[i léim sé thar gheata ard]; #[i ní raibh thar chúigear acu ann]:
+    when "10-2-5-e-sample-1"
+      | Ní fiú #[b thar phingin] é.
+    when "10-2-5-e-sample-2"
+      | Níl an leabhar sin #[b thar mholadh beirte].
+    when "10-2-5-e-p2"
+      | Tabhair faoi deara nach gcuirtear séimhiú ar ainmfhocal i ndiaidh #[i thar] in abairtíní áirithe ina bhfuil ainmfhocal éiginnte, e.g., #[i thar barr]; #[i thar bráid]; #[i thar cionn]; #[i thar fóir]; #[i thar sáile]; #[i thar toinn]; ná sa réamhfhocal comhshuite #[i thar ceann]:
+    when "10-2-5-e-sample-3"
+      | Dhíbir siad í #[b thar tír] amach.
+    when "10-2-5-e-sample-4"
+      | Chaith sé tréimhse #[b thar sáile] sular thosaigh sé ag obair anseo.
+    when "10-2-5-e-note-p"
+      | Má tá sraith ainmfhocal faoi réir ag réamhfhocal simplí, ní dhéantar athrú tosaigh ach ar an ainmfhocal a thagann díreach ina dhiaidh, e.g., #[i Rinne siad taighde ar chonarthaí], #[i comhaontuithe], #[i córais] agus #[i scéimeanna]; ach amháin i gcás #[i idir] sa bhrí #[i araon], e.g., #[i idir bheag agus mhór].
+    when "10-2-6-title"
+      | I nDiaidh Réamhfhocal Comhshuite
+    when "10-2-6-p1"
+      | Séimhítear ainmfhocal cinnte (féach #[+link("./chapter3.html#sec_3_1_2", "3.1.2")]) atá faoi réir ag réamhfhocal comhshuite nó #[i cois], #[i dála], #[i fearacht], #[i timpeall], #[i trasna], e.g., #[i ar aghaidh dhoras an tséipéil]; #[i cois Bhóthar na hUaimhe]; #[i de bhun mhír (b)]; #[i fearacht Sheáin]; #[i le haghaidh chlár a ceathair].
+    when "10-2-6-sample-1"
+      | Tá tithe aici #[b ar fud Bhaile Átha Cliath] agus #[b chathair Chorcaí].
+    when "10-2-6-sample-2"
+      | Dúirt sé #[b i láthair bhean] an tí é.
+    when "10-2-6-sample-3"
+      | Is #[b timpeall mhí] na Nollag a tharla sé.
+    when "10-2-6-p2"
+      | Tabhair faoi deara nach séimhítear ainmfhocal cinnte i ndiaidh #[i chun], e.g., #[i chun foirgneamh a seacht]; #[i chun gairdín a gcomharsan]; #[i chun Meiriceá]; #[i chun Gearóid]; #[i chun Parlaimint na hEorpa].
+    when "10-2-6-p3"
+      | Ní shéimhítear ainmfhocail éiginnte ach i gcorrabairt sheanbhunaithe, e.g., #[i tar éis bháis] (sa bhrí #[i tar éis bás a fháil]).
+    when "10-2-7-title"
+      | I nDiaidh Ainmfhocal Baininscneach
+    when "10-2-7-p1"
+      | Má tá ainmfhocal (nach ainmfhocal cinnte) sa ghinideach faoi réir ag ainmfhocal baininscneach uatha (nach bhfuil sa ghinideach), is gnách séimhiú a chur air, e.g., #[i cloch shneachta]; #[i deoir bhainne]; #[i gloine bheorach]; #[i léine chadáis]; #[i tuarascáil pharlaiminte]; #[i bliain bhisigh]; #[i bliain chánach]; #[i bliain mheasúnachta]; #[i mí ghealaí]:
+    when "10-2-7-sample-1"
+      | Chuaigh siad go dtí an #[b pháirc pheile].
+    when "10-2-7-sample-2"
+      | An seinneann tú #[b uirlis cheoil]?
+    when "10-2-7-sample-3"
+      | Ar chríochnaigh tú #[b d&rsquo;obair bhaile]?
+    when "10-2-7-sample-4"
+      | Fan agus ól #[b gloine cheirtlise] linn!
+    when "10-2-7-p2"
+      | Tabhair faoi deara go liostaítear in #[+link("#sec_10_2_7_a", "(a)")] go #[+link("#sec_10_2_7_m", "(m)")] na cásanna go léir nach séimhítear ainmfhocal éiginnte atá faoi réir ag ainmfhocal baininscneach uatha (nach bhfuil sa ghinideach). I ngach cás eile, cuirtear séimhiú ar ainmfhocal éiginnte atá faoi réir ag ainmfhocal baininscneach uatha (nach bhfuil sa ghinideach).
+    when "10-2-7-note-p"
+      | D&rsquo;fhéadfaí sampla a áireamh i gceann amháin nó níos mó de na cásanna ina dhiaidh seo, e.g., le #[+link("#sec_10_2_7_b", "(b)")] agus #[+link("#sec_10_2_7_e", "(e)")] a bhaineann an sampla #[i léim fia].
+    when "10-2-7-a-p"
+      | Ní shéimhítear an dara hainmfhocal má chríochnaíonn an chéad ainmfhocal ar #[i d], #[i n], #[i t], #[i l] nó #[i s] agus má thosaíonn an dara hainmfhocal ar #[i d], #[i t] nó #[i s], e.g., #[i áit dúchais]; #[i bean tí]; #[i cúis dóchais]; #[i maidin samhraidh]; #[i saighead draíochta]; #[i scoil samhraidh]:
+    when "10-2-7-a-sample-1"
+      | Tá sí ag obair sa #[b tsaotharlann taighde].
+    when "10-2-7-a-sample-2"
+      | Cúisíodh an cosantóir sa #[b Chúirt Dúiche].
+    when "10-2-7-b-p1"
+      | Ní shéimhítear an dara hainmfhocal má thosaíonn an t&#x2011;ainmfhocal sin ar #[i f], e.g., #[i buile feirge]; #[i cúirt filíochta]; #[i deoch fuisce]; #[i deoir fola]; #[i pailin féir]; #[i sochaí faisnéise]:
+    when "10-2-7-b-sample-1"
+      | D&rsquo;eagraigh an club #[b oíche filíochta] mar chuid den fhéile.
+    when "10-2-7-b-sample-2"
+      | Níl mórán taithí aige ar #[b an teicneolaíocht faisnéise].
+    when "10-2-7-b-p2"
+      | Tabhair faoi deara gur eisceachtaí iad #[i beirt] agus #[i dís], agus go gcuirtear séimhiú ar ainmfhocal a thosaíonn ar #[i f] ina ndiaidh, e.g., #[i beirt fheirmeoirí]; #[i dís fhear].
+    when "10-2-7-c-p1"
+      | Ní shéimhítear an dara hainmfhocal más sa ghinideach iolra atá sé, e.g., #[i rásaíocht gluaisrothar]; #[i saithe beach]; #[i scoil cailíní]; #[i scuaine gasúr]; #[i sraith giorrúchán]; #[i táin bó]; #[i traein paisinéirí]:
+    when "10-2-7-c-sample-1"
+      | Theastaigh uathu #[b scoil buachaillí] a bhunú san fhoirgneamh sin.
+    when "10-2-7-c-sample-2"
+      | Bhí #[b scuaine gluaisteán] trí mhíle ar fhad sa tranglam tráchta.
+    when "10-2-7-c-p2"
+      | Tabhair faoi deara gur eisceachtaí iad #[i beirt] agus #[i dís], agus go gcuirtear séimhiú ar ainmfhocal sa ghinideach iolra ina ndiaidh, e.g., #[i beirt bhan]; #[i dís bhreithiúna]; agus gur eisceacht an nath #[i clann mhac] freisin.
+    when "10-2-7-d-p"
+      | Ní shéimhítear an dara hainmfhocal má tá brí cainníochta éiginnte leis an gcéad ainmfhocal, e.g., #[i breis bainne]; #[i díobháil céille]; #[i easpa tobac]; #[i iomarca cainte]; #[i roinnt cáise]:
+    when "10-2-7-d-sample-1"
+      | An bhfuair sé #[b barraíocht bia]?
+    when "10-2-7-d-sample-2"
+      | Tá #[b roinnt púdair] fágtha.
+    when "10-2-7-e-p1"
+      | Ní shéimhítear an dara hainmfhocal más #[+link("#sec_10_2_7_e_i", "(i)")] duine, #[+link("#sec_10_2_7_e_ii", "(ii)")] ainmhí, #[+link("#sec_10_2_7_e_iii", "(iii)")] dúil bheo, nó #[+link("#sec_10_2_7_e_iv", "(iv)")] cuid de dhuine, d&rsquo;ainmhí nó de dhúil bheo, an dara hainmfhocal &mdash;
+    when "10-2-7-e-i-p"
+      | #[i aghaidh mná]; #[i casóg buachalla]; #[i culaith garda]; #[i lámh cailín]; #[i scian búistéara]; #[i súil páiste]:
+    when "10-2-7-e-i-sample-1"
+      | Cheannaigh sé #[b casóg fir] nua sa siopa.
+    when "10-2-7-e-i-sample-2"
+      | Ba ghá dóibh #[b leaba páiste] a cheannach dá ngarmhac.
+    when "10-2-7-e-ii-p"
+      | #[i adharc bó]; #[i cáis gabhair]; #[i coiscéim coiligh]; #[i cos capaill]; #[i cráin muice]; #[i eitinn bólachta]; #[i léim capaill]; #[i géimneach bó]; #[i stail capaill]; #[i ubh circe]:
+    when "10-2-7-e-ii-sample-1"
+      | Chonaic mé #[b cearc bradáin] san uisce taobh leis an gcora éisc.
+    when "10-2-7-e-ii-sample-2"
+      | Níor ith mé #[b feoil capaill] riamh.
+    when "10-2-7-e-iii-p"
+      | #[i cill planda]; #[i coirt crainn]; #[i péist cabáiste]:
+    when "10-2-7-e-iii-sample-1"
+      | D&rsquo;iarr sí ar na páistí #[b duilleog cuilinn] a tharraingt.
+    when "10-2-7-e-iii-sample-2"
+      | Ní mór #[b fréamh toir] a bhaint chun fáil réidh leis an tor.
+    when "10-2-7-e-iv-p"
+      | #[i foinse béil]; #[i íde béil]; #[i ionga méire]; #[i péist goile]:
+    when "10-2-7-e-iv-sample-1"
+      | Chuir siad #[b clib cluaise] ar gach ainmhí.
+    when "10-2-7-e-iv-sample-2"
+      | An bhfuil an #[b ordóg coise] do do chrá?
+    when "10-2-7-e-p2"
+      | Tabhair faoi deara gur eisceachtaí iad #[i beirt] agus #[i dís], agus go gcuirtear séimhiú ar ainmfhocal is duine ina ndiaidh, e.g., #[i beirt bhan]; #[i dís bhreithiúna]; agus go gcuirtear séimhiú ar céile i ndiaidh ainmfhocal baininscneach, e.g., #[i bean chéile]; #[i deirfiúr chéile].
+    when "10-2-7-f-p"
+      | Ní shéimhítear an dara hainmfhocal más páirt den dara hainmfhocal an chéad ainmfhocal, e.g., #[i beann píce]; #[i cos cathaoireach]; #[i cluas cupáin]; #[i iall bróige]:
+    when "10-2-7-f-sample-1"
+      | Is éasca #[b lámh buicéid] a bhriseadh.
+    when "10-2-7-f-sample-2"
+      | Níor thuig sé conas an #[b stiúir báid] a úsáid.
+    when "10-2-7-g-p"
+      | Ní shéimhítear an dara hainmfhocal más ainmfhocal teibí atá bunaithe ar aidiacht an chéad ainmfhocal, e.g., #[i áilleacht ceantair]; #[i airde balla]; #[i breáthacht cathrach]; #[i dílseacht pictiúir]; #[i finne maidine]; #[i sábháilteacht bóthair]:
+    when "10-2-7-g-sample-1"
+      | Ní mór d&rsquo;eolaithe #[b láidreacht cumaisc] a thástáil sula ndíoltar é.
+    when "10-2-7-g-sample-2"
+      | Bunaíodh scéimeanna chun #[b sábháilteacht bia] a áirithiú.
+    when "10-2-7-h-p1"
+      | Ní shéimhítear ainmfhocal éiginnte ar lorg ainm briathartha a bhfuil an réamhfhocal #[i ag] roimhe, e.g., #[i ag sábháil comhaid]; #[i ag tiomáint bus]; #[i ag tógáil balla]:
+    when "10-2-7-h-sample-1"
+      | Thosaigh sé #[b ag cniotáil geansaí] aréir.
+    when "10-2-7-h-sample-2"
+      | Is breá le Caoimhe a bheith #[b ag seinm ceoil].
+    when "10-2-7-h-p2"
+      | Tabhair faoi deara go bhfuil líon beag eisceachtaí seanbhunaithe ann, e.g., #[i ag fáil bháis]; #[i ag gabháil fhoinn].
+    when "10-2-7-i-p"
+      | Ní shéimhítear ainmfhocal éiginnte ar lorg ainm briathartha nó ainmfhocal a chuireann gníomh in iúl sa chás gurb é an dara hainmfhocal an cuspóir, e.g., #[i athchúrsáil gloine]; #[i forbairt pobail]; #[i láimhseáil ceimiceáin]; #[i eisiúint preasráitis]:
+    when "10-2-7-i-sample-1"
+      | Tabharfar aird ar #[b oiliúint múinteoirí] sa scéim nua.
+    when "10-2-7-i-sample-2"
+      | Tá rialacha áirithe i gceist le #[b hathchúrsáil páipéir].
+    when "10-2-7-j-p"
+      | Ní shéimhítear an dara hainmfhocal i ndiaidh na bhfocal #[i aicme], #[i comhairle], #[i corparáid], #[i cuideachta], #[i earnáil], #[i feidhmeannacht], #[i foireann], #[i gníomhaireacht], #[i institiúid], #[i oifig], #[i rannóg], #[i roinn], #[i scéim], #[i seirbhís], e.g., #[i aicme ceannais]; #[i comhairle contae]; #[i corparáid baincéireachta]; #[i earnáil gnó]; #[i foireann bainistíochta]; #[i institiúid breisoideachais]; #[i oifig preasa]; #[i rannóg pearsanra]; #[i roinn cosanta]:
+    when "10-2-7-j-sample-1"
+      | Ní foláir dóibh an #[b scéim marcála] a choigeartú.
+    when "10-2-7-j-sample-2"
+      | Cuireann an gnólacht #[b seirbhís comhairleoireachta] ar fáil.
+    when "10-2-7-k-p"
+      | Ní shéimhítear na hainmfhocail #[i dlí] ná #[i sí], i ndiaidh ainmfhocal baininscneach, e.g., #[i feidhm dlí]; #[i bó sí]:
+    when "10-2-7-k-sample-1"
+      | Cuirfidh an rialtas cóip den #[b ionstraim dlí] ar fáil.
+    when "10-2-7-k-sample-2"
+      | Deirtear gur comhartha an mhí-áidh an #[b long sí] a fheiceáil.
+    when "10-2-7-l-p"
+      | Ní shéimhítear an dara hainmfhocal más ceann de na haonaid tomhais bheachta #[i bliain], #[i coicís], #[i mí] nó #[i seachtain] an dara hainmfhocal, e.g., #[i saoire míosa]; #[i tréimhse bliana]; #[i moill bliana]:
+    when "10-2-7-l-sample-1"
+      | Cuireadh tús leis an #[b bhféile seachtaine] le hócáid i dteach an Mhéara.
+    when "10-2-7-l-sample-2"
+      | Bhí #[b scíth coicíse] de dhíth uirthi tar éis na hoibre.
+    when "10-2-7-m-p1"
+      | Ní shéimhítear an dara hainmfhocal má tá an dara hainmfhocal, atá sa ghinideach, cáilithe le hainmfhocal eile nó le haidiacht, e.g., #[i oíche gaoithe móire]; #[i bileog páipéir dúigh]; #[i gloine beorach fuaraithe]:
+    when "10-2-7-m-sample-1"
+      | Ní raibh #[b deoir bainne úir] fágtha sa teach.
+    when "10-2-7-m-sample-2"
+      | Cuireadh an #[b obair tionscadail aistriúcháin] i gcrích inné.
+    when "10-2-7-m-p2"
+      | Eisceacht: nuair is é #[i beirt] nó #[i dís] an chéad ainmfhocal, e.g., #[i beirt bhan mhisniúla] nó nuair is é #[i beirt] an dara hainmfhocal, e.g., #[i páistí bheirt bhan].
+    when "10-2-7-p3"
+      | Tabhair faoi deara go gcuirtear séimhiú, faoi réir na n&#x2011;eisceachtaí in #[+link("#sec_10_2_7_a", "(a)")] go #[+link("#sec_10_2_7_m", "(m)")] roimhe seo, ar gach ainmfhocal atá faoi réir ag ainmfhocal baininscneach, e.g., #[i tuarascáil pharlaiminte agus chomhphobail]. Má tá sraith ainmfhocal i liosta roimh ainmfhocal eile, áfach, is é an t&#x2011;athrú tosaigh a ghabhann leis an ainmfhocal deiridh sa tsraith a chuirtear ar an ainmfhocal nó ar na hainmfhocail eile atá faoina réir, e.g., #[i leabhar nó iris cheoil]; #[i iris nó leabhar ceoil].
+    when "10-2-8-title"
+      | I nDiaidh Ainmfhocal san Iolra a chríochnaíonn ar Chonsan Caol
+    when "10-2-8-p1"
+      | Má tá ainmfhocal (nach ainmfhocal cinnte) sa ghinideach faoi réir ag ainmfhocal san iolra a chríochnaíonn ar chonsan caol, is gnách séimhiú a chur air, e.g., #[i éin chlóis]; #[i dualgais bhreise]; #[i ceadúnais ghnó].
+    when "10-2-8-sample-1"
+      | Bhí cruinniú aici le #[b hoifigigh thithíochta] as Meiriceá.
+    when "10-2-8-sample-2"
+      | Deir sé go bhfuil na #[b leabhair ghramadaí] uile léite aige.
+    when "10-2-8-sample-3"
+      | Is iad na #[b maoir thráchta] a eisíonn #[b ticéid pháirceála].
+    when "10-2-8-p2"
+      | Tabhair faoi deara go liostaítear in #[+link("#sec_10_2_8_a", "(a)")] go #[+link("#sec_10_2_8_f", "(f)")] ina dhiaidh seo na cásanna go léir nach séimhítear ainmfhocal éiginnte atá faoi réir ag ainmfhocal san iolra a chríochnaíonn ar chonsan caol. I ngach cás eile, cuirtear séimhiú ar ainmfhocal éiginnte atá faoi réir ag ainmfhocal iolra a chríochnaíonn ar chonsan caol.
+    when "10-2-8-note-p"
+      | D&rsquo;fhéadfaí sampla a áireamh i gceann amháin nó níos mó de na cásanna ina dhiaidh seo, e.g., le #[+link("#sec_10_2_8_a", "(a)")], #[+link("#sec_10_2_8_c", "(c)")] agus #[+link("#sec_10_2_8_d", "(d)")] a bhaineann an sampla #[i dualgais dochtúirí].
+    when "10-2-8-a-p"
+      | Ní shéimhítear an dara hainmfhocal má chríochnaíonn an chéad ainmfhocal ar #[i d], #[i n], #[i t], #[i l] nó #[i s] agus má thosaíonn an dara hainmfhocal ar #[i d], #[i t] nó #[i s], e.g., #[i báid seoil]; #[i capaill seilge]; #[i turais taighde]:
+    when "10-2-8-a-sample-1"
+      | D&rsquo;iarr an scéalaí ar na leanaí na #[b focail draíochta] a rá in éineacht léi.
+    when "10-2-8-a-sample-2"
+      | D&rsquo;úsáidtí #[b pinn tobair] nuair a bhí seisean ar scoil.
+    when "10-2-8-b-p"
+      | Ní shéimhítear an dara hainmfhocal má thosaíonn sé ar #[i f], e.g., #[i beithígh feirme]; #[i botháin freastail]; #[i buidéil fuisce]:
+    when "10-2-8-b-sample-1"
+      | Tá #[b cláir faisnéise] nua á bhforbairt ag TG4.
+    when "10-2-8-b-sample-2"
+      | Ghlac deich gcinn de #[b chumainn foirgníochta] páirt sa suirbhé.
+    when "10-2-8-c-p"
+      | Ní shéimhítear an dara hainmfhocal más sa ghinideach iolra atá sé, e.g., #[i imill bóithre]; #[i cnuasaigh dánta]:
+    when "10-2-8-c-sample-1"
+      | Taitníonn na #[b leabhair pictiúr] sin leis na leanaí.
+    when "10-2-8-c-sample-2"
+      | Tá #[b oifigigh seirbhísí] á lorg ag an gcomhairle faoi láthair.
+    when "10-2-8-d-p"
+      | Ní shéimhítear an dara hainmfhocal más #[+link("#sec_10_2_8_d_i", "(i)")] duine, #[+link("#sec_10_2_8_d_ii", "(ii)")] ainmhí, #[+link("#sec_10_2_8_d_iii", "(iii)")] dúil bheo, nó #[+link("#sec_10_2_8_d_iv", "(iv)")] cuid de dhuine, d&rsquo;ainmhí nó de dhúil bheo, an dara hainmfhocal &mdash;
+    when "10-2-8-d-i-p"
+      | #[i duáin cailín]; #[i buidéil páiste]:
+    when "10-2-8-d-i-sample-1"
+      | Tá cur síos ar na #[b liúntais cúramóra] ar an suíomh gréasáin.
+    when "10-2-8-d-i-sample-2"
+      | Níor chóir #[b pasfhocail múinteora] a roinnt leis na daltaí riamh.
+    when "10-2-8-d-ii-p"
+      | #[i bréagáin madra]; #[i sciatháin circe]:
+    when "10-2-8-d-ii-sample-1"
+      | D&rsquo;fhéadfadh #[b adharcáin céadchosaigh] a bheith chomh fada lena chorp.
+    when "10-2-8-d-ii-sample-2"
+      | Caitheadh amach na #[b sliogáin bairnigh] i ndiaidh an bhéile.
+    when "10-2-8-d-iii-p"
+      | #[i crainn beithe]; #[i peitil blátha]:
+    when "10-2-8-d-iii-sample-1"
+      | Itheann an panda #[b péacáin bambú].
+    when "10-2-8-d-iii-sample-2"
+      | Moladh do na heolaithe #[b spóir beacán] a bhailiú.
+    when "10-2-8-d-iv-p"
+      | #[i ailt méire]; #[i matáin coise]:
+    when "10-2-8-d-iv-sample-1"
+      | Díoltar #[b cliatháin bagúin] i siopa an bhúistéara.
+    when "10-2-8-d-iv-sample-2"
+      | Bhí fáinní sna #[b maotháin cluaise] aige.
+    when "10-2-8-e-p"
+      | Ní shéimhítear an dara hainmfhocal más páirt den dara hainmfhocal an chéad ainmfhocal, e.g., #[i cláir báid]; #[i méarchláir pianó]:
+    when "10-2-8-e-sample-1"
+      | Is ar na #[b cabair tí] a bhíonn meáchan an dín uile.
+    when "10-2-8-e-sample-2"
+      | Tá na #[b scáileáin gutháin] nua i bhfad níos mó ná mar a bhíodh.
+    when "10-2-8-f-p1"
+      | Ní shéimhítear an dara hainmfhocal má tá an dara hainmfhocal, atá sa ghinideach, cáilithe le hainmfhocal eile nó le haidiacht, e.g., #[i cláir dioplóma iarchéime]; #[i cláir deice báid]:
+    when "10-2-8-f-sample-1"
+      | Ní mór #[b beartais cosanta sonraí] na cuideachta a nuashonrú.
+    when "10-2-8-f-sample-2"
+      | Réiteoidh na #[b hoifigigh teicneolaíochta faisnéise] an fhadhb.
+    when "10-2-8-f-p2"
+      | Eisceacht: nuair is é #[i beirt] an dara hainmfhocal, e.g., #[i gluaisteáin bheirt pheileadóirí].
+    when "10-2-8-p3"
+      | Tabhair faoi deara go gcuirtear séimhiú, faoi réir na n&#x2011;eisceachtaí in #[+link("#sec_10_2_8_a", "(a)")] go #[+link("#sec_10_2_8_f", "(f)")] roimhe seo, ar gach ainmfhocal atá faoi réir ag ainmfhocal san iolra a chríochnaíonn ar chonsan caol, e.g., #[i comórtais idir-ollscoile chadhcála agus bhoghdóireachta]; #[i páipéir bhainc agus pharlaiminte]; #[i limistéir pleanála teanga Ghaeltachta]. Má tá sraith ainmfhocal i liosta roimh ainmfhocal eile, áfach, is é an t&#x2011;athrú tosaigh a ghabhann leis an ainmfhocal deiridh sa tsraith a bhíonn le cur ar an ainmfhocal nó ar na hainmfhocail eile a bhíonn faoina réir, e.g., #[i treoracha nó leabhair ghramadaí]; #[i leabhair nó treoracha gramadaí].
+    when "10-2-9-title"
+      | I nDiaidh Ainmfhocal atá sa Ghinideach
+    when "10-2-9-p"
+      | Ní shéimhítear ainmfhocal éiginnte atá faoi réir ag ainmfhocal atá sa tuiseal ginideach, e.g., #[i bord údaráis creidiúnúcháin]; #[i síniú an choinbhinsiúin cóipchirt]; #[i suíomh an chruinnithe mullaigh]; #[i bord coláiste gairmoideachais]; #[i trasna na sráide cathrach]:
+    when "10-2-9-sample-1"
+      | Is i dteach an #[b tsagairt paróiste] a bhí an cruinniú.
+    when "10-2-9-sample-2"
+      | Bhí sé ag fanacht ag doras an #[b tí tábhairne].
+    when "10-2-10-title"
+      | Ar Ainmfhocal Cinnte i nDiaidh Ainmfhocal Eile
+    when "10-2-10-p1"
+      | Cuirtear séimhiú ar ainmfhocal cinnte sa tuiseal ginideach i ndiaidh ainmfhocal eile, e.g., #[i Cuan Bhaile Átha Cliath]; #[i foireann Dhoire]; #[i muintir Sheáin]; #[i oibrithe Bhéal Feirste]; #[i mac fhear an tábhairne]; #[i obair bhean an tí].
+    when "10-2-10-p2"
+      | Tabhair faoi deara go gcuirtear séimhiú ar ainmfhocal cinnte fiú amháin nuair a thagann #[i d], #[i t] nó #[i s] i ndiaidh #[i d], #[i n], #[i t], #[i l] nó #[i s], e.g., #[i foireann Dhoire]; #[i riail Shasana]; #[i doras Theach an Phiarsaigh]; #[i luas thraein an iarthair]:
+    when "10-2-10-sample-1"
+      | Dúirt siad gur fhreastail siad ar Choláiste #[b Cholmáin].
+    when "10-2-10-sample-2"
+      | Tá poll i ndíon #[b shiopa] an bhúistéara.
+    when "10-2-10-p3"
+      | Ach ní chuirtear séimhiú &mdash;
+    when "10-2-10-a-p"
+      | ar na hainmfhocail seo a leanas:
+    when "10-2-10-a-i-p"
+      | #[i Dé] (#[i Dia] sa ghinideach), e.g., #[i lámh Dé]; #[i trócaire Dé]:
+    when "10-2-10-a-i-sample-1"
+      | Tá leabhar faoi Mhuire, Máthair #[b Dé], scríofa aige.
+    when "10-2-10-a-ii-p"
+      | #[i San] ná an t&#x2011;ainm ar a lorg, e.g., #[i Ord San Proinsias]; #[i Lá San Svaítín]; #[i Lá San Seáin]:
+    when "10-2-10-a-ii-sample-1"
+      | Is i mBaile Átha Cliath atá paróiste #[b San Caitríona].
+    when "10-2-10-a-iii-p"
+      | #[i Dé] i laethanta na seachtaine, e.g., #[i oíche Dé Máirt]; #[i tráthnóna Dé Céadaoin]:
+    when "10-2-10-a-iii-sample-1"
+      | Sroichfidh siad an Fhrainc maidin #[b Dé Sathairn].
+    when "10-2-10-b-p"
+      | ar ainmfhocal cinnte atá ar lorg na n&#x2011;ainmfhocal seo a leanas:
+    when "10-2-10-b-i-p"
+      | #[i Féile] sa ghinideach, e.g., #[i Lá Fhéile Pádraig]; #[i Samhradh beag na Féile Michíl]:
+    when "10-2-10-b-i-sample-1"
+      | Is ar #[b Lá Fhéile Bríde] a rugadh í.
+    when "10-2-10-b-ii-p"
+      | #[i Naomh], e.g., #[i cuimhneachán Naomh Peadar]; #[i Naomh Pól]:
+    when "10-2-10-b-ii-sample-1"
+      | Bhí siad ag imirt i gcoinne #[b Scoil Naomh Fionnbarra].
+    when "10-2-10-c-p"
+      | ar ainm briathartha a bhfuil ainmfhocal cinnte ar a lorg, e.g., #[i madra cosanta na monarcha]; #[i bean fuascailte na ceiste]; #[i beach cealgtha an pháiste]; #[i innill buailte an arbhair]; #[i seachtain bailithe na rátaí] (féach #[+link("./chapter3.html#sec_3_3_1_a", "3.3.1(a)")]).
+    when "10-2-11-title"
+      | I Sloinnte
+    when "10-2-11-p1"
+      | Cuirtear séimhiú ar an ainmfhocal i ndiaidh #[i Mhic], #[i Mhig], #[i Ní], #[i Nic], #[i Uí] i sloinnte, e.g., #[i Bean Mháirtín Uí Bhroin]; #[i Isibéal Nig Fhloinn]; #[i Siobhán Ní Chonchúir]; #[i Úna Nic Shuibhne]; agus i ndiaidh #[i Mac] (#[i Mag]) i sloinnte áirithe, e.g., #[i Mac Pháidín]; #[i Mag Fhinn]:
+    when "10-2-11-sample-1"
+      | Ar bhuail tú riamh le Gobnait #[b Ní Dhúill]?
+    when "10-2-11-sample-2"
+      | Bhí scéal de chuid Phádraic #[b Uí Chonaire] á léamh aici.
+    when "10-2-11-p2"
+      | Tabhair faoi deara nach ndéantar #[i c] ná #[i g] a shéimhiú ar lorg #[i Mhic] ná #[i Nic], e.g., #[i teach Sheáin Mhic Cárthaigh]:
+    when "10-2-11-sample-3"
+      | An bhfaca tú carr #[b Phóil Mhic Cearáin]?
+    when "10-2-11-sample-4"
+      | Ní raibh #[b Sorcha Nic Gearailt] i láthair.
+    when "10-2-12-title"
+      | Sa Chomhfhocal
+    when "10-2-12-p"
+      | Séimhítear an dara focal i gcomhfhocal, e.g., #[i dea-cháil], #[i deargbhuile], #[i rósghairdín], #[i sárdhuine], ach amháin nuair a thagann #[i d], #[i n], #[i t], #[i l] nó #[i s] le chéile, e.g., #[i antráth], #[i catsúil], #[i clostrácht], #[i galltrumpa], #[i ilsiolla], #[i leasdeartháir], #[i seansaighdiúir].
+    when "10-2-12-sample-1"
+      | Cuireadh an #[b dramhpháipéar] i leataobh lena athchúrsáil.
+    when "10-2-12-sample-2"
+      | Is é #[b cúldoras] an tí a úsáideann siad i gcónaí.
+    when "10-2-12-sample-3"
+      | Tá #[b carrchlós] díreach in aice leis an #[b mbunscoil].
+    when "10-2-12-note-p"
+      | Ní shéimhítear an dara focal i gcomhfhocal i ndiaidh #[i an-] (réimír threise) nuair a thagann #[i d], #[i t] nó #[i s] ar a lorg, e.g., #[i An-duine is ea é]; #[i Bhí an-dea-aimsir ann an samhradh sin]; #[i An-drochrud a bhí sa bhean sin] (féach #[+link("./chapter2.html#sec_2_1_7", "2.1.7")]).
+    when "10-2-13-title"
+      | I nDiaidh na Copaile
+    when "10-2-13-p"
+      | Cuirtear séimhiú ar an ainmfhocal i ndiaidh na copaile sa mhodh táscach, aimsir chaite agus aimsir ghnáthchaite, agus sa mhodh coinníollach, e.g., #[i Ba dhuine mór é]; #[i Ar shagart é?]; #[i Níor dhochtúir é]; #[i Nár cheoltóir maith é?]; #[i Is dóigh leis gur ghadaí a bhí ann]; #[i Dúirt sí gurbh fhiú labhairt léi]; #[i Deir sé nár dhochar é]; #[i cér chás é (ach)]; #[i dá mba chailín í]; #[i fear dar shloinne Ó Murchú]; #[i má ba bhithiúnach é]; #[i murar bhréag é] (féach #[+link("./chapter7.html", "Caibidil 7")]):
+    when "10-2-13-sample-1"
+      | #[b Ba mheicneoir] í nuair a bhí sí óg.
+    when "10-2-13-sample-2"
+      | #[b Ba mhian] liom dul ann am éigin.
+    when "10-3-title"
+      | Séimhiú ar an Aidiacht
+    when "10-3-p"
+      | Cuirtear séimhiú ar an aidiacht sna cásanna seo a leanas.
+    when "10-3-1-title"
+      | I nDiaidh Ainmfhocail
+    when "10-3-1-p"
+      | Séimhítear túschonsan aidiachta cáilíochta &mdash;
+    when "10-3-1-a-p1"
+      | i ndiaidh ainmfhocal atá san ainmneach, sa tabharthach nó sa ghairmeach uatha baininscneach, e.g., #[i bean mhór]; #[i don bhean mhór]; #[i a bhean mhór]:
+    when "10-3-1-a-sample-1"
+      | Ceannaíonn sé feoil #[b bhlasta] i gcónaí.
+    when "10-3-1-a-sample-2"
+      | Fan taobh thiar den líne #[b bhuí].
+    when "10-3-1-a-p2"
+      | Tabhair faoi deara nach gcuirtear séimhiú ar fhrásaí aidiachtacha ilfhoclacha, e.g., #[i athnuachan saor in aisce]; #[i bean mór le rá]; #[i tuarascáil cothrom le dáta] (féach #[+link("./chapter4.html#sec_4_3_8", "4.3.8")]).
+    when "10-3-1-b-p"
+      | i ndiaidh ainmfhocal atá sa ghinideach nó sa ghairmeach uatha firinscneach, e.g., #[i mac fir mhóir]; #[i a fhir mhóir]:
+    when "10-3-1-b-sample-1"
+      | Ar bhuail tú le húinéir an chapaill #[b ghlais]?
+    when "10-3-1-b-sample-2"
+      | Dán leis an bPiarsach is ea A Éin #[b Bhig].
+    when "10-3-1-c-p1"
+      | i ndiaidh ainmfhocal atá san ainmneach nó sa tabharthach iolra, má chríochnaíonn an t&#x2011;ainmfhocal ar chonsan caol, e.g., #[i fir mhóra]; #[i do na fir mhóra] (eisceacht: #[i caora] san ainmneach iolra, e.g., #[i caoirigh beaga/bána/móra], etc.):
+    when "10-3-1-c-sample-1"
+      | Ní mór lipéid #[b shothuigthe] a chur ar earraí glantacháin.
+    when "10-3-1-c-sample-2"
+      | Bhí scamaill #[b mhóra dhubha] sa spéir.
+    when "10-3-1-c-p2"
+      | Tabhair faoi deara go mbristear an ceangal gramadaí le lúibíní, e.g., #[i gnóthais (beag nó mór)].
+    when "10-3-1-d-p"
+      | i gcás uimhreacha:
+    when "10-3-1-d-i-p"
+      | i ndiaidh ainmfhocal a bhfuil #[i dá] nó #[i dhá] roimhe, e.g., #[i dhá bhó bhána]; #[i luach an dá bhó bhána]; #[i an dá leabhar déag mhóra]; #[i dhá fhuinneog mhóra is tríocha]; #[i dhá cheann mhóra is ceathracha]:
+    when "10-3-1-d-i-sample-1"
+      | Fuair sé dhá ghadhar #[b fhíochmhara].
+    when "10-3-1-d-i-sample-2"
+      | Ní mór doirse an dá theach #[b bheaga] a chur faoi ghlas.
+    when "10-3-1-d-ii-p1"
+      | i ndiaidh ainmfhocal san uatha a bhfuil uimhir ó #[i trí] go #[i deich] roimhe, e.g., #[i trí (ceithre, cúig, sé) bhád mhóra]; #[i seacht (ocht, naoi, deich) gcapall mhóra]; #[i trí (ceithre, cúig, sé) fhuinneog déag mhóra]; #[i seacht (ocht, naoi, deich) mbád déag mhóra]; #[i ocht gcéad nócha is naoi mbád bheaga]; #[i lucht na dtrí (gceithre, etc.) bhád mhóra]; #[i ainmneacha na seacht (n-ocht, etc.) gcapall mhóra]:
+    when "10-3-1-d-ii-sample-1"
+      | Cheannaigh sí trí leabhar #[b fhada] dá laethanta saoire.
+    when "10-3-1-d-ii-sample-2"
+      | Taispeánadh deich scannán #[b cháiliúla] le linn na féile.
+    when "10-3-1-d-ii-p2"
+      | Tabhair faoi deara, má úsáidtear an Córas Simplithe os cionn fiche (féach #[+link("./chapter9.html#sec_9_3_10", "9.3.10")] &ndash; #[+link("./chapter9.html#sec_9_3_12", "9.3.12")]) nach gcuirtear séimhiú ach amháin ar aidiacht a thagann i ndiaidh ainmfhocal baininscneach, e.g., #[i fiche a trí capall mór]; #[i 45 fuinneog mhór].
+    when "10-3-1-d-iii-p"
+      | i ndiaidh an leagain iolra #[i cinn] nuair atá uimhir ó #[i trí] go #[i deich] roimhe, e.g., #[i trí cinn dhubha]; #[i cúig cinn mhóra is seasca]:
+    when "10-3-1-d-iii-sample-1"
+      | D&rsquo;aimsigh sí trí cinn #[b fholmha] sa chuardach.
+    when "10-3-1-e-p"
+      | sa tabharthach uatha firinscneach, má tá Córas an tSéimhithe á úsáid (féach #[+link("./chapter1.html#sec_1_7", "1.7")]).
+    when "10-3-2-title"
+      | Roimh Ainmfhocal
+    when "10-3-2-p"
+      | Nuair a thagann aidiacht roimh ainmfhocal &mdash;
+    when "10-3-2-a-p"
+      | séimhítear an aidiacht ar lorg réamhfhocal simplí, ar lorg réamhfhocal simplí agus an ailt agus ar lorg aidiacht shealbhach ar an tslí chéanna ar a séimhítear an t&#x2011;ainmfhocal, e.g., #[i ar thrí euro]; #[i don cheathrú bean]; #[i mo shéú hubh] (féach #[+link("./chapter9.html#sec_9_5_1", "9.5.1")]):
+    when "10-3-2-a-sample-1"
+      | Déanfar é laistigh #[b de cheithre] mhí.
+    when "10-3-2-a-sample-2"
+      | Thug siad #[b don chúigiú] cuairteoir é.
+    when "10-3-2-a-sample-3"
+      | Ba é #[b a thríú] hiarracht é.
+    when "10-3-2-b-p1"
+      | cuirtear séimhiú ar an orduimhir sa tuiseal ginideach ar an tslí chéanna a gcuirtear séimhiú ar ainmfhocal firinscneach, e.g., #[i doras an cheathrú seomra], ach ní shéimhítear #[i f], e.g., #[i i dtrátha an fichiú lá] (féach #[+link("./chapter9.html#sec_9_5_4_d", "9.5.4(d)")])
+    when "10-3-2-b-sample-1"
+      | Chuaigh bróga #[b an chúigiú] girseach amú.
+    when "10-3-2-b-sample-2"
+      | Bhí bia #[b an fichiú] fear le dáileadh fós.
+    when "10-3-2-b-p2"
+      | Tabhair faoi deara nach séimhítear &mdash;
+    when "10-3-2-b-i-p"
+      | an orduimhir san ainmneach, ach amháin #[i céad] (féach #[+link("./chapter9.html#sec_9_5_1_b", "9.5.1(b)")]), e.g., #[i an tríú duine]; #[i an cúigiú bean]; #[i ach an chéad áit]; #[i na chéad chéimeanna]:
+    when "10-3-2-b-i-sample-1"
+      | Is tusa #[b an ceathrú] duine a chuir an cheist sin orm.
+    when "10-3-2-b-i-sample-2"
+      | Bhain sí #[b an séú] háit amach sa rás.
+    when "10-3-2-b-ii-p"
+      | #[i cibé], #[i gach] ná #[i pé]:
+    when "10-3-2-b-ii-sample-1"
+      | Ní foláir é a chríochnú laistigh #[b de cibé] tréimhse a cheadóidh an tAire.
+    when "10-3-2-b-ii-sample-2"
+      | Ba cheart #[b do gach] institiúid a rialacha slándála féin a urramú.
+    when "10-3-2-b-ii-sample-3"
+      | Níor fhéad sé cur síos a dhéanamh #[b ar pé] rud a bhí ag cur isteach air.
+    when "10-3-2-b-iii-p"
+      | na haidiachtaí sealbhacha #[i mo] agus #[i do], e.g., #[i ar mo mhála]; #[i faoi do chara]:
+    when "10-3-2-b-iii-sample-1"
+      | Rachadh sé trí #[b do] chroí.
+    when "10-3-2-b-iii-sample-2"
+      | Chonaic mé é ar #[b do] shuíomh gréasáin.
+    when "10-3-3-title"
+      | Ar #[i dhá] agus ar #[i dháréag]
+    when "10-3-3-p"
+      | Bíonn séimhiú ar na haidiachtaí #[i dhá] agus #[i dháréag], e.g., #[i mo dhá bhróg]; #[i bhí dháréag i láthair]; ach amháin i ndiaidh an ailt uatha (#[i an], #[i don], #[i sa], etc.), #[i aon] agus #[i chéad], e.g., #[i an dá áit]; #[i gach aon dá uair an chloig]; #[i an chéad dá bhliain]; #[i an Dáréag Aspal]; #[i gach aon dáréag acu]; #[i an chéad dáréag a cháiligh]; #[i Cogadh an Dá Aodh].
+    when "10-3-3-sample-1"
+      | Chaith siad #[b dhá] uair an chloig ann.
+    when "10-3-3-sample-2"
+      | Roghnaigh siad #[b dháréag] chun bheith páirteach sa chomórtas.
+    when "10-3-3-sample-3"
+      | Bhí an #[b dá] bhronntanas oscailte aici.
+    when "10-3-3-sample-4"
+      | Cén treoir a tugadh don #[b dáréag] ar an ngiúiré?
+    when "10-3-4-title"
+      | Ar #[i déag] agus ar #[i fichead]
+    when "10-3-4-p"
+      | Bíonn séimhiú ar #[i déag] i ndiaidh #[i dó] agus i ndiaidh ainmfhocal uatha a chríochnaíonn ar ghuta, e.g., #[i trí bhó dhéag]; #[i cúig lá dhéag]; ach amháin sna horduimhreacha (féach #[+link("./chapter9.html#sec_9_5_2_e", "9.5.2(e)")]). Séimhítear #[i fichead] i ndiaidh ainmfhocal a bhfuil iolra caol air, e.g., #[i trí cinn fhichead].
+    when "10-3-4-sample-1"
+      | Fuair sé bus uimhir a dó #[b dhéag].
+    when "10-3-4-sample-2"
+      | Mhair an cúrsa seacht mí #[b dhéag].
+    when "10-3-4-sample-3"
+      | Seacht gcinn #[b fhichead] de ghearrscéalta atá sa chnuasach.
+    when "10-3-5-title"
+      | Sa Chomhfhocal
+    when "10-3-5-p"
+      | Séimhítear an dara focal i gcomhfhocal, e.g., #[i beagmhaith], #[i fíordheas], ach amháin nuair a thagann #[i d], #[i t] nó #[i s] i ndiaidh #[i d], #[i n], #[i t], #[i l] nó #[i s], e.g., #[i antrom], #[i bándearg], #[i caolsrónach], #[i casdubh], #[i fadsaolach], #[i ildánach], #[i ilteangach].
+    when "10-3-5-sample-1"
+      | Rinne siad staidéar ar ábhar #[b leathsheoltach] mar chuid den rang fisice.
+    when "10-3-5-sample-2"
+      | Fuair sé íocaíocht #[b ollmhór] as an obair sin.
+    when "10-3-5-sample-3"
+      | Ba léir go raibh sí #[b lánsásta] lena céad lá sa phost.
+    when "10-3-6-title"
+      | I nDiaidh na Copaile
+    when "10-3-6-p"
+      | Cuirtear séimhiú ar an aidiacht i ndiaidh na copaile sa mhodh táscach, aimsir chaite agus aimsir ghnáthchaite, agus sa mhodh coinníollach, e.g., #[i Ba dheas uait é]; #[i Ar mhaith leat é?]; #[i Níor bheag an gaisce é]; #[i Nár dhona an lá é?]; #[i B&rsquo;fhéidir nár chneasta uaim é]; #[i Dá mba mhaith leat teacht, bheadh fáilte romhat]; #[i má ba shaibhir an fear é] (féach #[+link("./chapter7.html", "Caibidil 7")]).
+    when "10-3-6-sample-1"
+      | Dúirt sé #[b gur mhór] an leas dó é.
+    when "10-3-6-sample-2"
+      | #[b Murarbh fhíor] é, #[b níor cheart] a leithéid a rá.
+    when "10-4-title"
+      | Séimhiú ar an mBriathar
+    when "10-4-1-title"
+      | Séimhiú ar an mBriathar Neamhspleách
+    when "10-4-1-p"
+      | Séimhítear an briathar neamhspleách &mdash;
+    when "10-4-1-a-p"
+      | sa mhodh táscach, aimsir chaite agus aimsir ghnáthchaite, agus sa mhodh coinníollach, e.g., #[i mhol mé] (#[i mhol tú], etc.), #[i mholainn] (#[i mholtá], etc.), #[i mholfainn], (#[i mholfá], etc.), #[i mholtaí], #[i mholfaí]:
+    when "10-4-1-a-sample-1"
+      | #[b Shábháil] sí go leor airgid.
+    when "10-4-1-a-sample-2"
+      | #[b Théidís] ann gach lá.
+    when "10-4-1-a-sample-3"
+      | #[b Chuideodh] sé leat dá gcuirfeá ceist air.
+    when "10-4-1-b-p"
+      | i ndiaidh #[i a], coibhneas díreach, agus i ndiaidh na gcónasc #[i má] agus #[i ó]:
+    when "10-4-1-b-sample-1"
+      | Is í sin an bhean #[b a ghlanfaidh] an áit.
+    when "10-4-1-b-sample-2"
+      | An bhfaca tú an gluaisteán #[b a thiomáineann] sí?
+    when "10-4-1-b-sample-3"
+      | #[b Má bhíonn] sé ann tabhair leat é.
+    when "10-4-1-b-sample-4"
+      | #[b Ó chuir] tú i mo cheann é níor smaoinigh mé ar rud ar bith eile.
+    when "10-4-1-c-p1"
+      | san fhochlásal dearfach atá mar ainmní ag an gcopail i leaganacha mar #[i Is ann a chonaic mé é]; #[i Is leis a bheidh mé]:
+    when "10-4-1-c-sample-1"
+      | Is sa siopa sin #[b a cheannaíonn] sé a chuid éadaí.
+    when "10-4-1-c-sample-2"
+      | Is ar líne #[b a chraolfar] é.
+    when "10-4-1-c-p2"
+      | #[b Ach], tabhair faoi deara &mdash;
+    when "10-4-1-c-i-p"
+      | Taobh amuigh de bhriathra neamhrialta áirithe &mdash; #[i bhíothas], #[i chonacthas], #[i chualathas], #[i chuathas], #[i thángthas] &mdash; ní shéimhítear an saorbhriathar san aimsir chaite, e.g., #[i Buaileadh go dona iad]; #[i an geall a briseadh]:
+    when "10-4-1-c-i-sample-1"
+      | Ní raibh sé sa bhaile #[b ó fuarthas] ciontach é.
+    when "10-4-1-c-i-sample-2"
+      | Ba leis #[b a cailleadh] é.
+    when "10-4-1-c-ii-p"
+      | Ní shéimhítear an briathar #[i abair] in aon chás:
+    when "10-4-1-c-ii-sample-1"
+      | #[b Dúirt] siad go mbeidís ann.
+    when "10-4-1-c-ii-sample-2"
+      | Cad #[b a déarfaidh] tú léi?
+    when "10-4-1-c-ii-sample-3"
+      | Má #[b deir] sí nach bhfuil suim aici ann, ná bí buartha faoi.
+    when "10-4-2-title"
+      | Séimhiú ar an mBriathar Spleách
+    when "10-4-2-p1"
+      | Séimhítear an briathar spleách i ndiaidh na gcónasc agus na míreanna briathartha #[i ar], #[i cár], #[i dár], #[i gur], #[i murar], #[i nár], #[i ní], #[i níor], #[i sular]:
+    when "10-4-2-sample-1"
+      | #[b Ar chuir] sé i bhfolach é?
+    when "10-4-2-sample-2"
+      | #[b Cár ghoirtigh] sé é féin?
+    when "10-4-2-sample-3"
+      | Gach duine #[b dár chuir] tú in aithne dom.
+    when "10-4-2-sample-4"
+      | Sílim #[b gur thuig] sé mé.
+    when "10-4-2-sample-5"
+      | #[b Murar mharaigh] sé é chuaigh sé gairid dó.
+    when "10-4-2-sample-6"
+      | #[b Nár phós] sé riamh?
+    when "10-4-2-sample-7"
+      | #[b Ní fhaca] sé mé.
+    when "10-4-2-sample-8"
+      | #[b Níor fhéad] mé é a dhéanamh.
+    when "10-4-2-sample-9"
+      | Bhí mise anseo #[b sular tháinig] Seán.
+    when "10-4-2-p2"
+      | #[b Ach], tabhair faoi deara:
+    when "10-4-2-a-p"
+      | go n&#x2011;uraítear an briathar #[i faigh] sa leagan spleách san aimsir chaite, san aimsir fháistineach agus sa mhodh coinníollach i ndiaidh na míre briathartha #[i ní], e.g., #[i Ní bhfuair tú ansin iad]; #[i Ní bhfaighinn aon chabhair uathu] (féach #[+link("#sec_10_8_2_b", "10.8.2(b)")]).
+    when "10-4-2-b-p"
+      | nach séimhítear an briathar #[i abair] in aon chás, e.g., #[i Ní déarfadh aon duine gur theip ort].
+    when "10-5-title"
+      | Séimhiú ar an bhForainmneach
+    when "10-5-1-title"
+      | I nDiaidh an Réamhfhocail #[i ó]
+    when "10-5-1-p"
+      | Cuirtear séimhiú ar an bhforainmneach taispeántach #[i sin] i ndiaidh an réamhfhocail #[i ó] sa fhrása #[i ó shin] (#[i i leith]).
+    when "10-5-1-sample-1"
+      | Bhisigh an aimsir #[b ó shin].
+    when "10-5-1-sample-2"
+      | Tharla sé tamall maith #[b ó shin].
+    when "10-5-2-title"
+      | I nDiaidh Réamhfhocal
+    when "10-5-2-p"
+      | Ní shéimhítear na forainmnigh cheisteacha #[i cá], #[i cad], #[i cé], etc.:
+    when "10-5-2-sample-1"
+      | Thug sé tuairisc ar #[b cé] a bhí i láthair.
+    when "10-5-2-sample-2"
+      | Níor thrácht sé ar #[b cad] a bhí le déanamh.
+    when "h2-gp-6-8-title"
+      | An tUrú
+    when "h2-gp-6-8-p"
+      | Is iad seo na consain inuraithe: #[i b], #[i c], #[i d], #[i f], #[i g], #[i p] agus #[i t]. Cuirtear #[i n-] roimh ghuta san áit a ndéanfaí urú a chur ar chonsan, ach amháin sa tuiseal tabharthach ar lorg an ailt nó an ailt i gcumasc le réamhfhocal, e.g., #[i ar an uisce], #[i faoin ábhar]; agus i gcás #[i i] (féach #[+link("#sec_10_6_4", "10.6.4")]). Cuirtear fleiscín idir an t&#x2011;urú #[i n] agus guta, e.g., #[i líon na n&#x2011;ospidéal]; ach amháin nuair is ceannlitir an guta, e.g., #[i meon na nAlbanach].
+    when "10-6-title"
+      | Urú ar an Ainmfhocal
+    when "10-6-p"
+      | Cuirtear urú ar an ainmfhocal sna cásanna seo a leanas.
+    when "10-6-1-title"
+      | I nDiaidh an Ailt
+    when "10-6-1-p"
+      | Cuirtear urú ar an ainmfhocal i ndiaidh an ailt &mdash;
+    when "10-6-1-a-p1"
+      | sa tabharthach uatha, firinscneach agus baininscneach, i roinnt cásanna nuair a ghabhann réamhfhocal leis an alt, e.g., #[i ar an gcapall]; #[i faoin bhfoirgneamh] (féach #[+link("./chapter1.html#sec_1_4", "1.4")]):
+    when "10-6-1-a-sample-1"
+      | Fuair sé teachtaireacht bhuíochais #[b ón mbrídeach].
+    when "10-6-1-a-sample-2"
+      | Chuir siad fáilte #[b roimh an gcuairteoir].
+    when "10-6-1-a-p2"
+      | Tabhair faoi deara go mbíonn urú ann i gcónaí sna frásaí #[i mar an gcéanna] agus #[i um an dtaca].
+    when "10-6-1-b-p"
+      | sa tuiseal ginideach iolra, firinscneach agus baininscneach, e.g., #[i seolta na mbád beag]; #[i scoil na gcailíní óga]:
+    when "10-6-1-b-sample-1"
+      | Bhí #[b ceol na n&#x2011;éan] le cloisteáil ar fud na coille.
+    when "10-6-1-b-sample-2"
+      | Tá siad #[b ag maisiú na dtithe] roimh theacht an tsamhraidh.
+    when "10-6-2-title"
+      | I nDiaidh na nAidiachtaí Sealbhacha san Iolra
+    when "10-6-2-p1"
+      | Cuirtear urú ar an ainmfhocal i ndiaidh na n&#x2011;aidiachtaí sealbhacha san iolra, e.g., #[i ár n&#x2011;athair]; #[i bhur bpáistí]; #[i a ngluaisteáin]:
+    when "10-6-2-sample-1"
+      | Bhuail mé le #[b bhur gcairde] ag an mbainis.
+    when "10-6-2-sample-2"
+      | Deirtear gurb iad #[b a gcácaí] siúd na cácaí is deise dá bhfuil ann.
+    when "10-6-2-p2"
+      | Tabhair faoi deara go ndéantar urú i ndiaidh #[i dhá] má tá aidiacht shealbhach san uimhir iolra roimhe, e.g., #[i ár dhá gcapall]; #[i ár dhá gcúigiú cuid]; #[i bhur dhá dteach]; #[i a dhá mbó] (féach #[+link("./chapter8.html#sec_8_3_3", "8.3.3")]).
+    when "10-6-3-title"
+      | I nDiaidh Uimhreacha Áirithe
+    when "10-6-3-p1"
+      | Cuirtear urú ar an ainmfhocal i ndiaidh na mbunuimhreacha #[i seacht] go #[i deich], e.g., #[i seacht ndícheall]; #[i ocht gcinn]; #[i naoi mbliana]; #[i deich n&#x2011;eachtra] (féach #[+link("./chapter9.html#sec_9_3_1_i", "9.3.1(i)")]):
+    when "10-6-3-sample-1"
+      | Cuirfear tús le #[b seacht gclár] faisnéise nua Dé Luain seo chugainn.
+    when "10-6-3-sample-2"
+      | Chonaic sé #[b naoi n&#x2011;éan] sa spéir.
+    when "10-6-3-p2"
+      | Ní dhéantar athrú tosaigh ar na hainmfhocail #[i euro] agus #[i cent], e.g., #[i seacht euro]; #[i naoi euro]; #[i deich cent].
+    when "10-6-3-p3"
+      | Tabhair faoi deara:
+    when "10-6-3-a-p"
+      | gurb é an t&#x2011;athrú tosaigh a ghabhann leis an uimhir dheiridh i sraith a bhíonn le cur ar an bhfocal nó ar na focail eile atá faoina réir, e.g., #[i sé nó seacht mbád];
+    when "10-6-3-b-p"
+      | má úsáidtear an Córas Simplithe os cionn fiche (féach #[+link("./chapter9.html#sec_9_3_10", "9.3.10")] &ndash; #[+link("./chapter9.html#sec_9_3_12", "9.3.12")]), nach gcuirtear urú ar an ainmfhocal, e.g., #[i fiche a seacht capall]; #[i 49 fuinneog].
+    when "10-6-4-title"
+      | I nDiaidh Réamhfhocail Shimplí Áirithe
+    when "10-6-4-p1"
+      | Cuirtear urú ar an ainmfhocal i ndiaidh na réamhfhocal simplí seo a leanas &mdash;
+    when "10-6-4-a-p1"
+      | #[i i], e.g., #[i i mbaile]; #[i i bpáirc]; #[i i mBaile an Fheirtéaraigh]:
+    when "10-6-4-a-sample-1"
+      | Bhí sé #[b i bpriacal] a anama.
+    when "10-6-4-a-sample-2"
+      | Is #[b i mBéal Átha an Ghaorthaidh] a bunaíodh Coláiste na Mumhan.
+    when "10-6-4-a-p2"
+      | Scríobhtar #[i in] roimh fhocail a thosaíonn ar ghuta, e.g., #[i in eaglais]; #[i in Albain]; #[i in Áth Dara]; #[i in Éirinn]; #[i in aon chás]; agus sna cásanna seo a leanas:
+    when "10-6-4-a-i-p"
+      | roimh #[i bhur], #[i dhá] agus #[i go leor], e.g., #[i an áit a bhfuil sibh in bhur gcónaí]; #[i in dhá áit]; #[i in go leor cásanna]:
+    when "10-6-4-a-i-sample-1"
+      | Chuir mé #[b in bhur] gcistin é.
+    when "10-6-4-a-i-sample-2"
+      | Tá an grúpa ceoil ar an ngearrliosta #[b in dhá] chomórtas.
+    when "10-6-4-a-ii-p"
+      | roimh theidil leabhar, irisí nó scannán, etc., agus roimh ghiorrúcháin ar theidil eagraíochtaí, comhaontuithe, scéimeanna, etc., e.g., #[i in] An tOileánach; #[i alt in] Comhar; #[i in AE]; #[i in CAE]; #[i in FSS] (ach féach #[+link("./chapter3.html#sec_3_2_2_B", "3.2.2B")]):
+    when "10-6-4-a-ii-sample-1"
+      | Léigh mé alt suimiúil #[b in #[i Feasta]] an mhí seo caite.
+    when "10-6-4-a-ii-sample-2"
+      | Cá mhéad stát atá #[b in SAM]?
+    when "10-6-4-a-iii-p"
+      | roimh logainmneacha iasachta nach bhfuil gaelaithe, e.g., #[i in Birmingham]; #[i in Barcelona]; #[i in Köln] (ach #[i i Londain], #[i i mBostún]):
+    when "10-6-4-a-iii-sample-1"
+      | Chaith sí seachtain ag obair #[b in Mumbai].
+    when "10-6-4-a-iii-sample-2"
+      | Thuirling an t&#x2011;eitleán #[b in San Francisco] ar a sé a chlog ar maidin.
+    when "10-6-4-a-iv-p"
+      | roimh bhlianta nuair a scríobhtar ina bhfigiúirí iad, e.g., #[i in 1998]; #[i in 2017].
+    when "10-6-4-b-p"
+      | #[i ar] i gcorrleagan, e.g., #[i ar gcúl]; #[i ar ndóigh]; agus i ndiaidh an réamhfhocail #[i go] (nuair nach #[i go dtí] is ciall leis), e.g., #[i go bhfios dom]; #[i go gcuimhin liom]:
+    when "10-6-4-b-sample-1"
+      | Níl lámh #[b ar gcúl] againn.
+    when "10-6-4-b-sample-2"
+      | Cath #[b go ndíth] ab ea é, gan aon agó.
+    when "10-6-5-title"
+      | I nDiaidh #[i cá]
+    when "10-6-5-p"
+      | Cuirtear urú ar an ainmfhocal sa fhrása seanbhunaithe #[i cá bhfios].
+    when "10-6-5-sample-1"
+      | #[b Cá bhfios] dom?
+    when "10-7-title"
+      | Urú ar an Aidiacht
+    when "10-7-p1"
+      | Cuirtear urú ar aidiacht a thagann roimh ainmfhocal ar an tslí chéanna ar a n&#x2011;uraítear an t&#x2011;ainmfhocal (féach #[+link("#sec_10_6", "10.6")]). Is é sin le rá, go n&#x2011;uraítear aidiacht i ndiaidh an ailt sa tabharthach uatha i gcásanna áirithe, e.g., #[i ar an gceathrú hurlár]; sa tuiseal ginideach iolra, e.g., #[i i rith na gcúig oíche]; i ndiaidh na n&#x2011;aidiachtaí sealbhacha san iolra, e.g., #[i ár gcéad mhac]; agus i ndiaidh an réamhfhocail #[i i], e.g., #[i i ngach leabhar].
+    when "10-7-sample-1"
+      | Cá bhfuil #[b bhur dtríú] haiste don tionscadal?
+    when "10-7-sample-2"
+      | Rinne sí scéal mhadra #[b na n&#x2011;ocht] gcos as.
+    when "10-7-sample-3"
+      | Moladh cruinnithe a thionól #[b i ngach] contae.
+    when "10-7-p2"
+      | Tabhair faoi deara nach n&#x2011;uraítear:
+    when "10-7-a-p"
+      | #[i cibé], #[i pé], ná an aidiacht shealbhach #[i do], e.g., #[i i cibé foirm]; #[i i pé páipéar]; #[i i do mhála]:
+    when "10-7-a-sample-1"
+      | Foilseoidh an Chomhairle an clár #[b i cibé] formáid is cuí léi.
+    when "10-7-a-sample-2"
+      | Coimeádfar é #[b i pé] oifig is mian leat.
+    when "10-7-a-sample-3"
+      | Tá dul amú #[b i do] thuairim ort.
+    when "10-7-b-p"
+      | aidiacht ar lorg ainmfhocail, e.g., #[i cumann na bhfear óg]; #[i seolta na mbád dubh].
+    when "10-8-title"
+      | Urú ar an mBriathar
+    when "10-8-p"
+      | Cuirtear urú ar an mbriathar sna cásanna seo a leanas.
+    when "10-8-1-title"
+      | San Fhochlásal Coibhneasta
+    when "10-8-1-p"
+      | Cuirtear urú ar an mbriathar san fhochlásal coibhneasta i ndiaidh &mdash;
+    when "10-8-1-a-p"
+      | #[i a], coibhneas indíreach, agus #[i nach], e.g., #[i an bainne nach n&#x2011;óltar]; #[i an bhean a dtagann a páistí ar scoil]; #[i an duine a gcáintear é]; #[i an duine nach gcáintear é]; #[i an fear nach gcuirtear cúram air]:
+    when "10-8-1-a-sample-1"
+      | Is í sin an bhean #[b nach dtagann] a páistí ar scoil.
+    when "10-8-1-a-sample-2"
+      | Is é sin an fear #[b a dtugtar] aire dó san ionad cónaithe.
+    when "10-8-1-b-p"
+      | réamhfhocal i gcumasc le #[i a], coibhneas indíreach (féach #[+link("./chapter11.html#sec_11_6_1_c", "11.6.1(c)")]), e.g., #[i an tAcht dá] (as #[i do+a]) #[i dtagraítear]; #[i an Bille lena] (as #[i le+a]) #[i ndéantar leasú]:
+    when "10-8-1-b-sample-1"
+      | Is é sin an chuideachta #[b óna bhfuair] mé mo théacsleabhair.
+    when "10-8-1-b-sample-2"
+      | Is é sin an t&#x2011;ainm #[b faoina ndíolann] sé earraí ar líne.
+    when "10-8-1-c-p"
+      | #[i a] (sa bhrí #[i an méid a]) agus #[i dá] (as #[i de+a], #[i do+a]), e.g., #[i d&rsquo;ólfadh sé a bhfeicfeadh sé]; #[i gach aon duine dá dtagann ann]; #[i gach áit dá ndéantar tagairt]:
+    when "10-8-1-c-sample-1"
+      | Tá #[b a dteastódh] uait i mbanna ceoil acu.
+    when "10-8-1-c-sample-2"
+      | Beidh gach duine #[b dá dtabharfar] cuireadh ann.
+    when "10-8-2-title"
+      | I nDiaidh Cónaisc agus Míreanna Áirithe
+    when "10-8-2-p"
+      | Cuirtear urú ar an mbriathar i ndiaidh na gcónasc agus na míreanna briathartha &mdash;
+    when "10-8-2-a-p1"
+      | #[i an], #[i cá], #[i dá] (coinníollach), #[i go], #[i mura], #[i nach], #[i sula]:
+    when "10-8-2-a-sample-1"
+      | #[b An mbeidh] cupán tae agat?
+    when "10-8-2-a-sample-2"
+      | #[b Cá dtéann] an bóthar seo?
+    when "10-8-2-a-sample-3"
+      | #[b Dá mbeadh] an t&#x2011;airgead aige, chaithfeadh sé é.
+    when "10-8-2-a-sample-4"
+      | Abair leis #[b go bhféadfaidh] sé imeacht.
+    when "10-8-2-a-sample-5"
+      | #[b Mura n&#x2011;inseoidh] tú an scéal, cuirfidh mé ceist ar dhuine éigin eile!
+    when "10-8-2-a-sample-6"
+      | #[b Nach n&#x2011;ólann] sé bainne?
+    when "10-8-2-a-sample-7"
+      | Ní mór é a chríochnú #[b sula dtiocfaidh] sé.
+    when "10-8-2-a-p2"
+      | #[b Ach] ní chuirtear #[i n-] roimh ghuta i ndiaidh na míre #[i an], e.g., #[i An ólann tú tae?]; #[i An itheann tú feoil?]; #[i An athróidh tú é?]:
+    when "10-8-2-a-sample-8"
+      | #[b An éisteann] sé le ceol agus é ag staidéar?
+    when "10-8-2-a-sample-9"
+      | #[b An osclóidh] tú an oifig maidin amárach?
+    when "10-8-2-b-p"
+      | #[i ní], i gcás an leagain spleách den bhriathar #[i faigh] san aimsir chaite, san aimsir fháistineach agus sa mhodh coinníollach, e.g., #[i ní bhfuair mé] (#[i tú], etc.), #[i ní bhfaighidh mé] (#[i tú], etc.), #[i ní bhfaighinn] (#[i bhfaighfeá], etc.):
+    when "10-8-2-b-sample-1"
+      | #[b Ní bhfuair] mé aon chaife ar maidin.
+    when "10-8-2-b-sample-2"
+      | Mura n&#x2011;iarrfaidh tú é #[b ní bhfaighidh] tú é.
+    when "10-8-2-b-sample-3"
+      | #[b Ní bhfaighfeá] san ollmhargadh sin é.
+    when "h2-gp-9-10-title"
+      | #[i t] roimh Ghuta nó roimh #[i s]
+    when "h2-gp-9-10-p"
+      | Cuirtear fleiscín idir an réamhlitir #[i t] agus guta, e.g., #[i an t&#x2011;ospidéal]; ach amháin nuair is ceannlitir an guta, e.g., #[i an tAlbanach]. Ní chuirtear fleiscín riamh idir an réamhlitir #[i t] agus #[i s], e.g., #[i an tsatailít]; #[i an tSeapáin].
+    when "10-9-title"
+      | #[i t] roimh Ghuta i nDiaidh an Ailt
+    when "10-9-1-p"
+      | Cuirtear #[i t-] roimh ghuta i ndiaidh an ailt &mdash;
+    when "10-9-1-a-p1"
+      | san ainmneach uatha, roimh ainmfhocal firinscneach más guta atá ina thús, e.g., #[i an t&#x2011;asal]; #[i an t&#x2011;eitleán]:
+    when "10-9-1-a-sample-1"
+      | Cá bhfuair tú #[b an t&#x2011;airgead]?
+    when "10-9-1-a-sample-2"
+      | Bhí eagla orthu go ndéanfaí #[b an t&#x2011;éiceachóras] a scriosadh.
+    when "10-9-1-a-p2"
+      | Tabhair faoi deara nach gcuirtear #[i t-] roimh #[i euro], #[i iomad] ná #[i oiread], e.g., #[i an euro], #[i an iomad], #[i an oiread].
+    when "10-9-1-b-p"
+      | san ainmneach uatha, roimh #[i aon], #[i aonú], #[i ochtó], #[i ochtódú], #[i ochtú], e.g., #[i an t&#x2011;aon bhean déag]; #[i an t&#x2011;aonú háit déag]; #[i an t&#x2011;ochtó bliain]; #[i an t&#x2011;ochtódú huair]:
+    when "10-9-1-b-sample-1"
+      | Is tusa #[b an t&#x2011;aon] duine ar labhair mé leis faoin scéal.
+    when "10-9-1-b-sample-2"
+      | B&rsquo;in é #[b an t&#x2011;ochtú] cluiche aici i mbliana.
+    when "10-10-title"
+      | #[i t] roimh #[i s] i nDiaidh an Ailt
+    when "10-10-1-p"
+      | Cuirtear #[i t] roimh #[i s] i ndiaidh an ailt más guta nó #[i l], #[i n] nó #[i r] atá ar a lorg i gcásanna áirithe i ndiaidh an ailt de réir #[+link("./chapter1.html", "Chaibidil 1")], e.g., #[i an tslat]; #[i an tsnaidhm]; #[i an tsreang]; #[i ar an tsráid]; #[i faoin tsinsearacht]; #[i deireadh an tséasúir]; #[i eochair an tsiopadóra]; #[i cótaí an tseachtair].
+    when "10-10-1-sample-1"
+      | Ná bain #[b an tsrón] díom!
+    when "10-10-1-sample-2"
+      | An bhfaca tú eireaball #[b an tsionnaigh]?
+    when "10-10-2-p"
+      | Ní chuirtear #[i t] roimh #[i s] &mdash;
+    when "10-10-2-a-p"
+      | in uimhreacha, e.g., #[i deireadh an seachtú lá]; #[i agallamh an seascadú duine], ach amháin uimhreacha pearsanta sa ghinideach, e.g., #[i ainmneacha an tseisir]; #[i torthaí an tseisear scoláirí]:
+    when "10-10-2-a-sample-1"
+      | Cad a fuair tú i dteannta #[b an seasca] euro?
+    when "10-10-2-a-sample-2"
+      | Labhair sé faoi ghéarchéim #[b an séú] haois déag.
+    when "10-10-2-b-p"
+      | i ndiaidh #[i aon] agus na horduimhreach #[i céad], e.g., #[i aon salann]; #[i aon seanmóir]; #[i an chéad sagart]:
+    when "10-10-2-b-sample-1"
+      | An bhfuil #[b aon saill] sa bhia sin?
+    when "10-10-2-b-sample-2"
+      | Is í seo an #[b chéad saoire] a bheidh againn le chéile.
+    when "h2-gp-11-14-title"
+      | #[i h] roimh Ghuta
+    when "h2-gp-11-14-p"
+      | Ní chuirtear fleiscín idir an réamhlitir #[i h] agus guta, e.g., #[i le háthas]; #[i go hÉirinn]; #[i na húlla]. Cuirtear #[i h] roimh ghuta sna cásanna seo a leanas.
+    when "10-11-title"
+      | #[i h] Roimh Ghuta &mdash; An tAinmfhocal
+    when "10-11-1-title"
+      | I nDiaidh an Ailt #[i na]
+    when "10-11-1-p"
+      | Cuirtear #[i h] roimh ainmfhocal a thosaíonn ar ghuta i ndiaidh an ailt #[i na] &mdash;
+    when "10-11-1-a-p"
+      | sa ghinideach uatha baininscneach, e.g., #[i ainm na háite]; #[i lár na heitilte]:
+    when "10-11-1-a-sample-1"
+      | Foilsíodh leabhar nua faoi stair #[b na hUachtaránachta].
+    when "10-11-1-a-sample-2"
+      | Bhí glacadh forleathan leis an tuairim sin faoi dheireadh #[b na haoise] seo caite.
+    when "10-11-1-b-p"
+      | san ainmneach iolra agus sa tabharthach iolra, e.g., #[i na hainmneacha]; #[i sna hionaid sin]:
+    when "10-11-1-b-sample-1"
+      | Tá #[b na huimhreacha] go léir ar eolas aige.
+    when "10-11-1-b-sample-2"
+      | Cliceáil faoi dhó ar #[b na híomhánna] chun iad a mhéadú.
+    when "10-11-2-title"
+      | I nDiaidh Uimhreacha Áirithe
+    when "10-11-2-a-p"
+      | Cuirtear #[i h] roimh ainmfhocal a thosaíonn ar ghuta i ndiaidh na n&#x2011;orduimhreacha, e.g., #[i an dara] (#[i tríú], etc.) #[i heochair]; ach amháin #[i céad], e.g., #[i sa chéad áit]; #[i an chéad obráid].
+    when "10-11-2-a-sample-1"
+      | Déanaigí #[b an ceathrú halt] a léamh roimh rang an lae amárach.
+    when "10-11-2-a-sample-2"
+      | Tá #[b an t&#x2011;ochtú heagrán] den iris ar fáil anois.
+    when "10-11-2-b-p1"
+      | Cuirtear #[i h] roimh uaire i ndiaidh #[i trí], #[i ceithre], #[i cúig], #[i sé], e.g., #[i trí] (#[i ceithre], #[i cúig], #[i sé]) #[i huaire] (féach #[+link("./chapter9.html#sec_9_3_2_c", "9.3.2(c)")]).
+    when "10-11-2-b-sample-1"
+      | Theip uirthi #[b trí huaire] as a chéile.
+    when "10-11-2-b-sample-2"
+      | Tá sé déanta aige #[b sé huaire] anois.
+    when "10-11-2-b-p2"
+      | Tabhair faoi deara nach n&#x2011;úsáidtear an leagan iolra ar leith den ainmfhocal #[i uair] nuair is aonad 60 nóiméad atá i gceist, e.g., #[i Thóg sé trí uair an chloig orm an obair a chríochnú].
+    when "10-11-3-title"
+      | I nDiaidh na Réamhfhocal #[i le] agus #[i go]
+    when "10-11-3-p"
+      | Cuirtear h roimh ainmfhocal a thosaíonn ar ghuta i ndiaidh na réamhfhocal le agus go (sa bhrí #[i go dtí]), e.g., #[i ó mhaidin go hoíche]; #[i le hintinn mhaith]; #[i le hÁine]; #[i go hAlasca].
+    when "10-11-3-sample-1"
+      | Is ar an mbád a chuaigh sí #[b go hÁrainn].
+    when "10-11-3-sample-2"
+      | Chuaigh siad ar stailc i bpáirt #[b le hoibrithe] eile.
+    when "10-11-4-title"
+      | I nDiaidh an Fhorainmnigh Cheistigh
+    when "10-11-4-p"
+      | Cuirtear #[i h] roimh ainmfhocal a thosaíonn ar ghuta i ndiaidh an fhorainmnigh cheistigh #[i cá], e.g., #[i cá hiontas?]; #[i cá háit?]
+    when "10-11-4-sample-1"
+      | #[b Cá haois] í anois?
+    when "10-11-4-sample-2"
+      | #[b Cá huair] a bheidh an dráma ag tosú?
+    when "10-11-5-title"
+      | I Sloinnte
+    when "10-11-5-p"
+      | Cuirtear #[i h] roimh ainmfhocal a thosaíonn ar ghuta i ndiaidh #[i Ó] i sloinnte, e.g., #[i Seán Ó hÓgáin]; #[i do Chathal Ó hAodha].
+    when "10-11-5-sample-1"
+      | Máirtín #[b Ó hÉalaí] is ainm dó.
+    when "10-11-5-sample-2"
+      | Dúirt Séamas #[b Ó hUiginn] go raibh sé sásta leis an bpróiseas.
+    when "10-11-6-title"
+      | I nDiaidh #[i Dé]
+    when "10-11-6-p"
+      | Cuirtear #[i h] roimh ghuta i ndiaidh #[i Dé] in #[i Dé hAoine].
+    when "10-11-6-sample-1"
+      | Gheall sí go mbeadh sí ann #[b Dé hAoine].
+    when "10-11-6-sample-2"
+      | Ba oíche #[b Dé hAoine] a tharla sé.
+    when "10-11-7-title"
+      | I nDiaidh na hAidiachta Sealbhaí #[i a]
+    when "10-11-7-p"
+      | Cuirtear #[i h] roimh ainmfhocal a thosaíonn ar ghuta i ndiaidh #[i a], aidiacht shealbhach, sa tríú pearsa uatha baininscneach, e.g., #[i a hathair].
+    when "10-11-7-sample-1"
+      | Ar chuir sí #[b a hathair] in aithne duit go fóill?
+    when "10-11-7-sample-2"
+      | Scríobh sí leabhar álainn #[b faoina haistear] thart timpeall na hEorpa.
+    when "10-11-8-title"
+      | I nDiaidh #[i ní]
+    when "10-11-8-p1"
+      | Cuirtear #[i h] roimh ghuta i ndiaidh #[i ní] (an fhoirm dhiúltach, aimsir láithreach den chopail (féach #[+link("./chapter7.html#sec_7_2_5", "7.2.5")])):
+    when "10-11-8-a-p"
+      | ar na hainmfhocail #[i áibhéil], #[i ionadh], #[i iontas] agus #[i ualach]:
+    when "10-11-8-a-sample-1"
+      | #[b Ní hiontas] ar bith é sin.
+    when "10-11-8-a-sample-2"
+      | #[b Ní hualach] do dhuine an fhoghlaim.
+    when "10-11-8-b-p"
+      | ar an ainmfhocal sna frásaí copaile réamhfhoclacha #[i acmhainn do]; #[i áil le]; #[i aitheanta do]; #[i aithnid do]; #[i éadáil le]; #[i ealaín do]; #[i éigean do]; agus #[i eol do]:
+    when "10-11-8-b-sample-1"
+      | #[b Ní haithnid duit] mé.
+    when "10-11-8-b-sample-2"
+      | #[b Ní healaín do] lucht déanta an dlí iompú ar é a bhriseadh.
+    when "10-11-8-c-p"
+      | ar an ainmfhocal i gcorr-sheanfhocal:
+    when "10-11-8-c-sample-1"
+      | #[b Ní haithne] go haontíos.
+    when "10-11-8-c-sample-2"
+      | #[b Ní heolas] go haontíos.
+    when "10-11-8-p2"
+      | Tabhair faoi deara nach gcuirtear #[i h] roimh ainmfhocal i ndiaidh #[i ní] taobh amuigh de na cásanna thuasluaite, e.g., #[i Ní amadán é]; #[i Ní Eoin is ainm dom]; #[i Ní eolas oideachas].
+    when "10-12-title"
+      | #[i h] roimh Ghuta &mdash; An Aidiacht agus an Dobhriathar
+    when "10-12-1-title"
+      | I nDiaidh #[i chomh], #[i go], #[i le]
+    when "10-12-1-p"
+      | Cuirtear #[i h] roimh aidiacht nó dobhriathar a thosaíonn ar ghuta i ndiaidh #[i chomh], #[i go] agus #[i le], e.g., #[i chomh hard le haon chapall]; #[i Tá sé go hálainn].
+    when "10-12-1-sample-1"
+      | Bhí an crann crónghiúise #[b chomh hard] le foirgneamh tríocha urlár.
+    when "10-12-1-sample-2"
+      | Ní bhíonn sé anseo ach #[b go hannamh].
+    when "10-12-1-sample-3"
+      | Ní ghlacfar #[b le haon] iarratas tar éis 5 p.m. Dé hAoine.
+    when "10-12-2-title"
+      | I nDiaidh #[i ní]
+    when "10-12-2-p"
+      | Cuirtear #[i h] roimh ghuta i ndiaidh #[i ní] (an fhoirm dhiúltach, aimsir láithreach den chopail (féach #[+link("./chapter7.html", "Caibidil 7")])):
+    when "10-12-2-a-p"
+      | ar na haidiachtaí #[i amháin], #[i aon], #[i ionann] agus #[i iondúil], agus ar na dobhriathra #[i amhlaidh] agus #[i annamh]:
+    when "10-12-2-a-sample-1"
+      | #[b Ní hamháin] gur saoire na geansaithe sin ach is fearr iad chomh maith.
+    when "10-12-2-a-sample-2"
+      | #[b Ní hionann] an dá rud ar chor ar bith.
+    when "10-12-2-a-sample-3"
+      | #[b Ní hamhlaidh] nár insíodh di.
+    when "10-12-2-b-p"
+      | ar an aidiacht sna frásaí copaile réamhfhoclacha #[i eagal do]/#[i le] agus #[i oircheas do]:
+    when "10-12-2-b-sample-1"
+      | #[b Ní heagal duit] an madra.
+    when "10-12-2-b-sample-2"
+      | #[b Ní hoircheas duit] labhairt air.
+    when "10-12-3-title"
+      | I nDiaidh #[i a] agus #[i na]
+    when "10-12-3-p"
+      | Cuirtear #[i h] roimh ghuta i ndiaidh #[i a] agus #[i na] sna huimhreacha, e.g., #[i ceacht a haon]; #[i na hocht gcinn].
+    when "10-12-3-sample-1"
+      | Fuair sí bus #[b a haon déag].
+    when "10-12-3-sample-2"
+      | Cár cheannaigh tú #[b na hocht] n&#x2011;úll dhearga sin?
+    when "10-13-title"
+      | #[i h] roimh Ghuta &mdash; An Forainmneach
+    when "10-13-1-title"
+      | I nDiaidh #[i cé] agus #[i ní]
+    when "10-13-1-p"
+      | Cuirtear #[i h] roimh ghuta i ndiaidh #[i cé] agus #[i ní] ar na forainmnigh phearsanta #[i é], #[i í], #[i ea] agus #[i iad], e.g., #[i ní hé]; #[i ní hí]; #[i ní hea]; #[i ní hiad]; #[i cé hé?]; #[i cé hí?]; #[i cé hiad]?
+    when "10-13-1-sample-1"
+      | #[b Ní hé] lá na báistí lá na bpáistí.
+    when "10-13-1-sample-2"
+      | #[b Cé hiad] féin?
+    when "10-13-2-title"
+      | I nDiaidh #[i ní]
+    when "10-13-2-p"
+      | Cuirtear #[i h] roimh ghuta i ndiaidh #[i ní] ar na forainmnigh thaispeántacha #[i éard], #[i eo], #[i in] agus #[i iúd], e.g., #[i ní héard]; #[i ní heo]; #[i ní hin]; #[i ní hiúd].
+    when "10-13-2-sample-1"
+      | #[b Ní heo] é an rud atá le déanamh.
+    when "10-13-2-sample-2"
+      | #[b Ní hin] é.
+    when "10-13-3-title"
+      | I nDiaidh #[i le]
+    when "10-13-3-p"
+      | Cuirtear #[i h] roimh ghuta i ndiaidh #[i le] ar na forainmnigh phearsanta #[i é], #[i í] agus #[i iad], e.g., #[i le hé]; #[i le hí]; #[i le hiad].
+    when "10-13-3-sample-1"
+      | Chuaigh sé ann #[b le hí] a phósadh.
+    when "10-13-3-sample-2"
+      | Rinne sé riail #[b le hiad] a smachtú.
+    when "10-14-title"
+      | #[i h] roimh Ghuta &mdash; An Briathar
+    when "10-14-1-title"
+      | I nDiaidh #[i ná]
+    when "10-14-1-p"
+      | Cuirtear #[i h] roimh ghuta i ndiaidh ná sa mhodh ordaitheach, e.g., #[i ná himigh].
+    when "10-14-1-sample-1"
+      | #[b Ná habair] dada leis faoin gcóisir.
+    when "10-14-1-sample-2"
+      | #[b Ná hosclaígí] an doras mura bhfuil a fhios agaibh cé atá ann.
+    when "10-14-1-sample-3"
+      | #[b Ná hóltar] sa Dánlann.
+    when "h2-gp-15-title"
+      | #[i d&rsquo;] Roimh Ghuta nó Roimh #[i fh]
+    when "10-15-title"
+      | #[i d&rsquo;] roimh Ghuta nó roimh #[i fh] &mdash; An Briathar
+    when "10-15-p"
+      | Cuirtear #[i d&rsquo;] roimh ghuta nó #[i fh&#x2011;] san áit a mbeadh séimhiú ar chonsan san aimsir chaite agus san aimsir ghnáthchaite, modh táscach, agus sa mhodh coinníollach, e.g., #[i d&rsquo;fhágamar]; #[i d&rsquo;fhanadh sibh]; #[i d&rsquo;fhreagróinn]; #[i d&rsquo;imeoinn]; #[i d&rsquo;ithinn]; #[i d&rsquo;ól sé]; #[i an té a d&rsquo;imigh]; #[i d&rsquo;aithneofaí í]; #[i má d&rsquo;fhág sé]; #[i má d&rsquo;fheiceadh sé]; #[i má d&rsquo;imríomar].
+    when "10-15-sample-1"
+      | An í sin an cheist a #[b d&rsquo;fhreagair] sé?
+    when "10-15-sample-2"
+      | Théidís abhaile láithreach nuair a #[b d&rsquo;fhágaidís] an áit.
+    when "10-15-sample-3"
+      | Ní raibh mé cinnte faoin méid a #[b d&rsquo;íosfadh] sé.
+    when "10-16-title"
+      | Achoimre ar na hAthruithe Tosaigh
+    when "10-16-p1"
+      | Mar áis tagartha, tugtar achoimre anseo ar na cásanna ina gcuirtear séimhiú ar ainmfhocail, ar aidiachtaí, ar bhriathra agus ar fhorainmnigh. Tá míniú ar an riail iomlán ar fáil faoi na crostagairtí sa cholún ar chlé.
+    when "Table10A-caption"
+      | Achoimre ar an Séimhiú
+    when "Table10A-header"
+      | An Séimhiú
+    when "Table10A-noun-header"
+      | Cuirtear séimhiú ar an ainmfhocal sna cásanna seo a leanas:
+    when "Examples"
+      | Samplaí
+    when "Table10A-noun-rule-1"
+      | I ndiaidh an ailt #[i an] san ainmneach uatha baininscneach, sa ghinideach uatha firinscneach agus, i roinnt cásanna, sa tabharthach uatha, firinscneach agus baininscneach (#[+link("#sec_10_2_1", "10.2.1")])
+    when "Table10A-noun-rule-2"
+      | I ndiaidh na míre gairmí, uatha nó iolra, firinscneach nó baininscneach (#[+link("#sec_10_2_2", "10.2.2")])
+    when "Table10A-noun-rule-3"
+      | I ndiaidh na n&#x2011;aidiachtaí sealbhacha #[i mo], #[i do] agus #[i a] (fir. uatha); i ndiaidh na haidiachta rannaí #[i uile]; agus i ndiaidh na haidiachta éiginnte #[i aon] (#[+link("#sec_10_2_3", "10.2.3")])
+    when "Table10A-noun-rule-4"
+      | I ndiaidh na n&#x2011;uimhreacha #[i aon], #[i céad]; #[i dhá]; agus #[i trí], #[i ceithre], #[i cúig], #[i sé] (#[+link("#sec_10_2_4", "10.2.4")])
+    when "Table10A-noun-rule-5"
+      | I ndiaidh na réamhfhocal #[i de], #[i do], #[i faoi], #[i ionsar], #[i mar], #[i ó], #[i roimh], #[i trí]; #[i um] mura #[i b], #[i m], #[i p] túslitir an ainmfhocail; agus #[i ar], #[i gan], #[i idir], #[i thar] i gcásanna áirithe (#[+link("#sec_10_2_5", "10.2.5")])
+    when "Table10A-noun-rule-6"
+      | I ndiaidh réamhfhocal comhshuite más ainmfhocal cinnte an t&#x2011;ainmfhocal (#[+link("#sec_10_2_6", "10.2.6")])
+    when "Table10A-noun-rule-7"
+      | I ndiaidh ainmfhocal baininscneach seachas sna cásanna a luaitear in #[+link("#sec_10_2_7_a", "10.2.7(a)")]&ndash;#[+link("#sec_10_2_7_m", "(m)")] (#[+link("#sec_10_2_7", "10.2.7")])
+    when "Table10A-noun-rule-8"
+      | I ndiaidh ainmfhocal san iolra a chríochnaíonn ar chonsan caol i ngach cás nach luaitear in #[+link("#sec_10_2_8_a", "10.2.8(a)")]&ndash;#[+link("#sec_10_2_8_f", "(f)")] (#[+link("#sec_10_2_8", "10.2.8")])
+    when "Table10A-noun-rule-9"
+      | I ndiaidh ainmfhocal atá san uatha nó san iolra, firinscneach nó baininscneach, más ainmfhocal cinnte sa ghinideach é (#[+link("#sec_10_2_10", "10.2.10")])
+    when "Table10A-noun-rule-10"
+      | I sloinnte i ndiaidh #[i Mhic], #[i Mhig], #[i Ní], #[i Nic], #[i Nig], #[i Uí], agus i ndiaidh #[i Mac] (#[i Mag]) i gcásanna áirithe (#[+link("#sec_10_2_11", "10.2.11")])
+    when "Table10A-noun-rule-11"
+      | Más é an dara focal i gcomhfhocal é (#[+link("#sec_10_2_12", "10.2.12")]) 
+    when "Table10A-noun-rule-12"
+      | I ndiaidh na copaile sa mhodh táscach, aimsir chaite agus aimsir ghnáthchaite, agus sa mhodh coinníollach (#[+link("#sec_10_2_13", "10.2.13")])
+    when "Table10A-adjective-header"
+      | Cuirtear séimhiú ar an aidiacht sna cásanna seo a leanas:
+    when "Table10A-adjective-rule-1"
+      | I ndiaidh ainmfhocal atá san ainmneach, tabharthach nó gairmeach uatha baininscneach; sa ghinideach nó sa ghairmeach uatha firinscneach; san ainmneach nó sa tabharthach iolra má chríochnaíonn an t&#x2011;ainmfhocal ar chonsan caol (nó sa tabharthach uatha firinscneach má tá Córas an tSéimhithe in úsáid) nó i ndiaidh ainmfhocal san uatha má tá #[i dhá] nó uimhir ó #[i trí] go #[i deich] roimhe (#[+link("#sec_10_3_1", "10.3.1")])
+    when "Table10A-adjective-rule-2"
+      | Ar an tslí chéanna ar a séimhítear ainmfhocal ar lorg réamhfhocal simplí, ar lorg réamhfhocal simplí agus an ailt, ar lorg aidiacht shealbhach, agus sa tuiseal ginideach firinscneach (#[+link("#sec_10_3_2", "10.3.2")])
+    when "ThirdPersonMasc"
+      | tríú pearsa fir.
+    when "Table10A-adjective-rule-3"
+      | Ar na haidiachtaí #[i dhá] agus #[i dháréag] (#[+link("#sec_10_3_3", "10.3.3")]) 
+    when "Table10A-adjective-rule-4"
+      | Ar #[i déag] i ndiaidh #[i dó] agus ainmfhocal uatha a chríochnaíonn ar ghuta; agus ar #[i fichead] i ndiaidh ainmfhocal iolra a chríochnaíonn ar chonsan caol (#[+link("#sec_10_3_4", "10.3.4")])
+    when "Table10A-adjective-rule-5"
+      | Más é an dara focal i gcomhfhocal é (#[+link("#sec_10_3_5", "10.3.5")]) 
+    when "Table10A-adjective-rule-6"
+      | I ndiaidh na copaile sa mhodh táscach, aimsir chaite agus aimsir ghnáthchaite, agus sa mhodh coinníollach (#[+link("#sec_10_3_6", "10.3.6")])
+    when "Table10A-verb-header"
+      | Cuirtear séimhiú ar an mbriathar sna cásanna seo a leanas:
+    when "Table10A-verb-rule-1"
+      | Ar an mbriathar neamhspleách sa mhodh táscach, aimsir chaite agus aimsir ghnáthchaite, agus sa mhodh coinníollach; i ndiaidh #[i a], coibhneas díreach; i ndiaidh na gcónasc #[i má] agus #[i ó]; agus san fhochlásal dearfach atá mar ainmní ag an gcopail (#[+link("#sec_10_4_1", "10.4.1")])
+    when "Table10A-verb-rule-2"
+      | Ar an mbriathar spleách i ndiaidh na gcónasc agus na míreanna briathartha seo a leanas: #[i ar], #[i cár], #[i dár], #[i gur], #[i murar], #[i nár], #[i ní], #[i níor], #[i sular] (#[+link("#sec_10_4_2", "10.4.2")])
+    when "Table10A-pronominal-header"
+      | Cuirtear séimhiú ar an bhforainmneach taispeántach sna cásanna seo a leanas
+    when "Table10A-pronominal-rule-1"
+      | Ar #[i sin] i ndiaidh #[i ó] sa fhrása #[i ó shin] (#[+link("#sec_10_5_1", "10.5.1")])
+    when "10-16-p2"
+      | Mar áis tagartha, tugtar achoimre anseo ar na cásanna ina gcuirtear urú ar ainmfhocail, ar aidiachtaí agus ar bhriathra.
+    when "ThirdPersonPl"
+      | tríú pearsa iol.
+    when "Table10B-caption"
+      | Achoimre ar an Urú
+    when "Table10B-header"
+      | An tUrú
+    when "Table10B-noun-header"
+      | Cuirtear urú ar an ainmfhocal sna cásanna seo a leanas:
+    when "Table10B-noun-rule-1"
+      | I ndiaidh an ailt #[i an] sa tabharthach uatha, firinscneach agus baininscneach, i roinnt cásanna; sna frásaí #[i mar an gcéanna] agus #[i um an dtaca] agus sa tuiseal ginideach iolra, firinscneach agus baininscneach (#[+link("#sec_10_6_1", "10.6.1")])
+    when "Table10B-noun-rule-2"
+      | I ndiaidh #[i ár], #[i bhur], #[i a] (tríú pearsa iol.) agus i ndiaidh #[i dhá] má thagann sé i ndiaidh #[i ár], #[i bhur], #[i a] (tríú pearsa iol.) (#[+link("#sec_10_6_2", "10.6.2")])
+    when "Table10B-noun-rule-3"
+      | I ndiaidh #[i seacht], #[i ocht], #[i naoi], #[i deich] (#[+link("#sec_10_6_3", "10.6.3")])
+    when "Table10B-noun-rule-4"
+      | I ndiaidh #[i i]; i ndiaidh #[i ar] i roinnt frásaí; agus i ndiaidh #[i go] i gcásanna áirithe (#[+link("#sec_10_6_4", "10.6.4")])
+    when "Table10B-noun-rule-5"
+      | I ndiaidh #[i cá] sa fhrása seanbhunaithe #[i cá bhfios] (#[+link("#sec_10_6_5", "10.6.5")]) 
+    when "Table10B-adjective-header"
+      | Cuirtear urú ar an aidiacht sna cásanna seo a leanas: 
+    when "Table10B-adjective-rule-1"
+      | Ar an tslí chéanna ar a n&#x2011;uraítear ainmfhocal ar lorg réamhfhocal simplí, ar lorg réamhfhocal simplí agus an ailt, ar lorg aidiacht shealbhach agus sa tuiseal ginideach iolra (#[+link("#sec_10_7", "10.7")])
+    when "Table10B-verb-header"
+      | Cuirtear urú ar an mbriathar sna cásanna seo a leanas:
+    when "Table10B-verb-rule-1"
+      | San fhochlásal coibhneasta i ndiaidh #[i a], coibhneas indíreach, agus #[i nach], i ndiaidh réamhfhocal atá i gcumasc le #[i a], coibhneas indíreach, agus i ndiaidh #[i a] (sa bhrí #[i an méid a]) agus #[i dá] (as #[i de+a], #[i do+a]) (#[+link("#sec_10_8_1", "10.8.1")])
+    when "Table10B-verb-rule-2"
+      | Ar an mbriathar spleách i ndiaidh na gcónasc agus na míreanna briathartha seo a leanas: #[i an], #[i cá], #[i dá] (coinníollach), #[i go], #[i mura], #[i nach], #[i sula], agus i ndiaidh #[i ní] i gcás an leagain spleách den bhriathar #[i faigh] san aimsir chaite, san aimsir fháistineach agus sa mhodh coinníollach (#[+link("#sec_10_8_2", "10.8.2")])
+    when "10-16-p3"
+      | Mar áis tagartha, tugtar achoimre anseo ar na cásanna ina gcuirtear #[i t] roimh ghuta ag tús ainmfhocail agus aidiachta.
+    when "Table10C-caption"
+      | Achoimre ar #[i t] roimh Ghuta
+    when "Table10C-header"
+      | #[i t] Roimh Ghuta
+    when "Table10C-Noun-Adjective-Header"
+      | Cuirtear #[i t] roimh ghuta ag tús ainmfhocail agus ag tús aidiachta sna cásanna seo a leanas:
+    when "Table10C-rule-1"
+      | I ndiaidh an ailt #[i an] roimh ainmfhocal firinscneach san ainmneach uatha agus roimh #[i aon], #[i aonú], #[i ochtú], #[i ochtódú], #[i ochtú] (#[+link("#sec_10_9_1", "10.9.1")])
+    when "10-16-p4"
+      | Mar áis tagartha, tugtar achoimre anseo ar na cásanna ina gcuirtear #[i t] roimh #[i s] ag tús ainmfhocail.
+    when "Table10D-caption"
+      | Achoimre ar #[i t] roimh #[i s]
+    when "Table10D-header"
+      | #[i t] Roimh #[i s]
+    when "Table10D-noun-header"
+      | Cuirtear #[i t] roimh #[i s] ag tús ainmfhocail sna cásanna seo a leanas:
+    when "Table10D-rule-1"
+      | I ndiaidh an ailt #[i an] i gcás ainmfhocal baininscneach uatha (agus ainmfhocal firinscneach uatha i gCóras an tSéimhithe) atá san ainmneach nó sa tabharthach agus a thosaíonn ar #[i s] + #[i guta] nó #[i sl-], #[i sn-], #[i sr-]; agus i gcás ainmfhocal firinscneach uatha sa ghinideach a thosaíonn ar #[i s] + #[i guta] nó #[i sl-], #[i sn-], #[i sr-] (#[+link("#sec_10_10_1", "10.10.1")])
+    when "10-16-p5"
+      | Mar áis tagartha, tugtar achoimre anseo ar na cásanna ina gcuirtear #[i h] roimh ghuta ag tús ainmfhocail, aidiachta, dobhriathair, forainmnigh nó briathair.
+    when "Table10E-caption"
+      | Achoimre ar #[i h] roimh Ghuta
+    when "Table10E-header"
+      | #[i h] Roimh Ghuta
+    when "Table10E-noun-header"
+      | Cuirtear #[i h] roimh ghuta ag tús ainmfhocail sna cásanna seo a leanas:
+    when "Table10E-rule-1"
+      | I ndiaidh an ailt #[i na] sa ghinideach uatha baininscneach agus san ainmneach iolra agus sa tabharthach iolra (#[+link("#sec_10_11_1", "10.11.1")]) 
+    when "Table10E-rule-2"
+      | I ndiaidh na n&#x2011;orduimhreacha (ach amháin #[i céad]) (#[+link("#sec_10_11_2_a", "10.11.2(a)")]) 
+    when "Table10E-rule-3"
+      | I ndiaidh na mbunuimhreacha #[i trí], #[i ceithre], #[i cúig], #[i sé] i gcás #[i uaire] (#[+link("#sec_10_11_2_b", "10.11.2(b)")]) 
+    when "Table10E-rule-4"
+      | I ndiaidh #[i le] agus #[i go] (nuair is #[i go dtí] is ciall le #[i go]) (#[+link("#sec_10_11_3", "10.11.3")])
+    when "Table10E-rule-5"
+      | I ndiaidh an fhorainmnigh cheistigh #[i cá] (#[+link("#sec_10_11_4", "10.11.4")]) 
+    when "Table10E-rule-6"
+      | I ndiaidh #[i Ó] i sloinnte (#[+link("#sec_10_11_5", "10.11.5")])
+    when "Table10E-rule-7"
+      | I ndiaidh #[i Dé] in #[i Dé hAoine] (#[+link("#sec_10_11_6", "10.11.6")]) 
+    when "Table10E-rule-8"
+      | I ndiaidh na haidiachta sealbhaí #[i a], tríú pearsa uatha baininscneach (#[+link("#sec_10_11_7", "10.11.7")])
+    when "Table10E-rule-9"
+      | I ndiaidh #[i ní] (foirm dhiúltach, aimsir láithreach den chopail) ar na hainmfhocail #[i áibhéil], #[i áil], #[i éigean], #[i eol], #[i ionadh], #[i iontas], #[i ualach], sna frásaí copaile réamhfhoclacha #[i acmhainn do], #[i aitheanta do], #[i aithnid do], #[i éadáil le], #[i ealaín do], #[i éigean do], #[i eol do], #[i áil le] agus i gcorr-sheanfhocal (#[+link("#sec_10_11_8", "10.11.8")])
+    when "Table10E-adjective-header"
+      | Cuirtear #[i h] roimh ghuta ag tús aidiachta agus dobhriathair sna cásanna seo a leanas:
+    when "Table10E-adjective-rule-1"
+      | I ndiaidh #[i chomh], #[i go], #[i le] (#[+link("#sec_10_12_1", "10.12.1")]) 
+    when "Table10E-adjective-rule-2"
+      | I ndiaidh #[i ní] (foirm dhiúltach, aimsir láithreach den chopail) ar na haidiachtaí #[i amháin], #[i aon], #[i ionann], #[i iondúil], sna frásaí copaile réamhfhoclacha #[i eagal do]/#[i le], #[i oircheas do], agus ar na dobhriathra #[i amhlaidh], #[i annamh] (#[+link("#sec_10_12_2", "10.12.2")])
+    when "Table10E-adjective-rule-3"
+      | I ndiaidh #[i a], #[i na] sna huimhreacha (#[+link("#sec_10_12_3", "10.12.3")]) 
+    when "Table10E-pronominal-header"
+      | Cuirtear #[i h] roimh ghuta ag tús forainmnigh sna cásanna seo a leanas:
+    when "Table10E-pronominal-rule-1"
+      | I ndiaidh #[i cé], #[i ní] ar na forainmnigh phearsanta #[i é], #[i ea], #[i í], #[i iad] (#[+link("#sec_10_13_1", "10.13.1")])
+    when "Table10E-pronominal-rule-2"
+      | I ndiaidh #[i ní] ar na forainmnigh thaispeántacha #[i éard], #[i eo], #[i in], #[i iúd] (#[+link("#sec_10_13_2", "10.13.2")])
+    when "Table10E-pronominal-rule-3"
+      | I ndiaidh #[i le] ar na forainmnigh phearsanta #[i é], #[i í], #[i iad] (#[+link("#sec_10_13_3", "10.13.3")]) 
+    when "Table10E-verb-header"
+      | Cuirtear #[i h] roimh ghuta ag tús briathair sna cásanna seo a leanas:
+    when "Table10E-verb-rule-1"
+      | I ndiaidh #[i ná] sa mhodh ordaitheach (#[+link("#sec_10_14_1", "10.14.1")]) 
+    when "10-16-p6"
+      | Mar áis tagartha, tugtar achoimre anseo ar na cásanna ina gcuirtear #[i d&rsquo;] roimh ghuta nó #[i fh&#x2011;] ag tús briathair.
+    when "Table10F-caption"
+      | Achoimre ar #[i d&rsquo;] roimh Ghuta nó #[i fh]
+    when "Table10F-header"
+      | #[i d&rsquo;] roimh Ghuta nó #[i fh]
+    when "Table10F-verb-header"
+      | Cuirtear #[i d&rsquo;] roimh ghuta nó #[i fh&#x2011;] ag tús briathair sna cásanna seo a leanas:
+    when "Table10F-verb-rule-1"
+      | San aimsir chaite, san aimsir ghnáthchaite agus sa mhodh coinníollach san áit a mbeadh séimhiú ar chonsan (#[+link("#sec_10_15", "10.15")])
+    default
+      - throw new Error(`No content for ${key} (ga.pug)`)

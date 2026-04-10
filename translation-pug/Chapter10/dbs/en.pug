@@ -1,0 +1,1282 @@
+include ../../tlMatter.pug
+if docLang === "EN"
+  mixin tl(tlText)
+    if tlText != null
+      +inlineTl("EN", tlText)
+    else
+      +inlineTl("EN")
+        block
+    
+  mixin tlDb(key)
+    case key
+      when "teidealNaCaibidle"
+        | The Initial Mutations
+      when "10-title"
+        | #[+renderKey("Caibidil", { getFromCommon: true })] 10 | #[+renderKey("teidealNaCaibidle")]
+      when "10-1-title"
+        | General
+      when "10-1-p"
+        | An initial mutation is a change made to the beginning of a word due to gender, case, tense or other grammatical circumstances. The initial mutations include lenition, eclipsis, #[i t] before a vowel, #[i t] before #[i s], #[i h] before a vowel and #[i d&rsquo;] before a vowel or before #[i fh&#x2011;]. The use of initial mutations is explained here, including the lenition of an indefinite noun after a feminine noun and the lenition of an indefinite noun after a plural noun ending in a slender consonant.
+      when "h2-gp-2-5-title"
+        | Lenition
+      when "h2-gp-2-5-p"
+        | These are the lenitable consonants: #[i b], #[i c], #[i d], #[i f], #[i g], #[i m], #[i p], #[i s] (except for #[i sc-], #[i sf-], #[i sm-], #[i sp-], #[i st-] and #[i sv-]) and #[i t].
+      when "10-2-title"
+        | Lenition of the Noun
+      when "10-2-p"
+        | Lenition is applied to the noun in the following contexts.
+      when "10-2-1-title"
+        | After the Article
+      when "10-2-1-p"
+        | Lenition is applied to the noun after the article (unless the initial consonant is #[i d], #[i t] or #[i s]) &mdash;
+      when "10-2-1-a-p"
+        | in the nominative singular feminine, e.g., #[i an chathair] #[+tl the city]; #[i an ghloine] #[+tl the glass]; #[i an fhuascailt] #[+tl the release]:
+      when "10-2-1-a-sample-1"
+        | #[b The woman] is singing.
+      when "10-2-1-a-sample-2"
+        | Did he close #[b the window]?
+      when "10-2-1-b-p"
+        | in the genitive singular masculine, e.g., #[i mac an fhir] #[+tl the man&rsquo;s son]; #[i geata an choláiste] #[+tl the college gate]:
+      when "10-2-1-b-sample-1"
+        | What happened to #[b the child&rsquo;s] gift after the party?
+      when "10-2-1-b-sample-2"
+        | I needed to leave before the end #[b of the game].
+      when "10-2-1-c-p"
+        | in the dative singular, masculine and feminine, in some situations where a preposition takes the article according to the Core System, e.g., #[i den chapall] #[+tl of/off the horse] (see #[+link("./chapter1.html#sec_1_4", "1.4")]), or according to the Lenition System, e.g., #[i ar an chapall] #[+tl on the horse] (see #[+link("./chapter1.html#sec_1_7", "1.7")]):
+      when "10-2-1-c-sample-1"
+        | She would attract the bird #[b off the tree].
+      when "10-2-1-c-sample-2"
+        | Additional funding was given #[b to the company].
+      when "10-2-2-title"
+        | After the Vocative Particle
+      when "10-2-2-p"
+        | Lenition is applied after the vocative particle in the singular and plural, masculine and feminine, e.g., #[i a dhuine chóir] #[+tl O good man]; #[i a Ghaela!] #[+tl O Gael!]; #[i a chairde na páirte] #[+tl O friends of the party]:
+      when "10-2-2-sample-1"
+        | #[b O noble people], you are welcome here tonight.
+      when "10-2-2-sample-2"
+        | Well done, #[b O men]!
+      when "10-2-3-title"
+        | After Certain Adjectives
+      when "10-2-3-p"
+        | Lenition is applied to the noun after the following adjectives &mdash;
+      when "10-2-3-a-p"
+        | the possessive adjectives #[i mo], #[i do], #[i a] (masculine singular), e.g., #[i mo mhac] #[+tl my son]; #[i do theach] #[+tl your house]; #[i a pheann] #[+tl his pen]:
+      when "10-2-3-a-sample-1"
+        | It is #[b my bag].
+      when "10-2-3-a-sample-2"
+        | Where did he leave #[b his car]?
+      when "10-2-3-b-p"
+        | the distributive adjective #[i uile] #[+tl every], e.g., #[i an uile fhocal] #[+tl every word]; #[i gach uile sheachtain] #[+tl every week]:
+      when "10-2-3-b-sample-1"
+        | #[b Every kind] of person attends it.
+      when "10-2-3-b-sample-2"
+        | She has seen #[b every episode] in the series.
+      when "10-2-3-c-p"
+        | the indefinite adjective #[i aon] #[+tl any], e.g., #[i aon mhála] #[+tl one bag], #[i aon chóta] #[+tl one coat] (except when the noun begins with #[i d], #[i t] or #[i s], e.g., #[i aon duine] #[+tl one person], #[i aon teaghlach] #[+tl one family]):
+      when "10-2-3-c-sample-1"
+        | There was not #[b any food] in the house.
+      when "10-2-3-c-sample-2"
+        | Did you get #[b any parcels] in the mail?
+      when "10-2-4-title"
+        | After Certain Numbers
+      when "10-2-4-p"
+        | Lenition is applied to the noun after the following numbers &mdash;
+      when "10-2-4-a-p"
+        | the cardinal number #[i aon] #[+tl one] and the ordinal number #[i céad] #[+tl first], unless the initial consonant is #[i d], #[i t] or #[i s], e.g., #[i aon chailín amháin] #[+tl (only) one girl]; #[i an chéad bhróg] #[+tl the first shoe]; #[i aon samhradh amháin] #[+tl one summer]; #[i an chéad teach] #[+tl the first house]:
+      when "10-2-4-a-sample-1"
+        | There is only #[b one way] to do it.
+      when "10-2-4-a-sample-2"
+        | That was the #[b first picture] he ever sold.
+      when "10-2-4-b-p"
+        | #[i dhá] #[+tl two], e.g., #[i dhá chrann] #[+tl two trees]; #[i an dá chóta] #[+tl the two coats]; except when the possessive adjective #[i a] (third person singular feminine and third person plural), #[i ár] #[+tl our] or #[i bhur] #[+tl your] precedes it, e.g., #[i dhá chapall ach a dhá géag] #[+tl two horses but her two legs] (third person singular feminine); #[i ár dhá gcapall] #[+tl our two horses]; #[i bhur dhá dteach] #[+tl your two houses]; #[i a dhá mbó] #[+tl their two cows] (third person plural) (see #[+link("./chapter8.html#sec_8_3_3", "8.3.3")]):
+      when "10-2-4-b-sample-1"
+        | She was the woman who had #[b two dogs].
+      when "10-2-4-b-sample-2"
+        | The #[b two projects] are finished now.
+      when "10-2-4-c-p"
+        | #[i trí] #[+tl three], #[i ceithre] #[+tl four], #[i cúig] #[+tl five], #[i sé] #[+tl six], e.g., #[i trí bhád] #[+tl three boats]; #[i ceithre bhó] #[+tl four cows] (except for nouns that have a special plural form after the cardinal numbers &mdash; see #[+link("./chapter9.html#sec_9_3_2", "9.3.2")], and for the word #[i cent], e.g., #[i dhá cent] #[+tl two cents]; #[i cúig cent] #[+tl five cents]):
+      when "10-2-4-c-sample-1"
+        | I only sent #[b five Christmas cards] this year.
+      when "10-2-4-c-sample-2"
+        | She read #[b six chapters] before the class.
+      when "10-2-4-note-p"
+        | Note:
+      when "10-2-4-note-a-i-p"
+        | that the initial mutation that applies is that of the final number in a series to be placed before the word it qualifies, e.g., #[i sé nó seacht mbád] #[+tl six or seven boats];
+      when "10-2-4-note-a-ii-p"
+        | that if the Simplified System above twenty (#[i fiche]) is used (see #[+link("./chapter9.html#sec_9_3_10", "9.3.10")] &mdash; #[+link("./chapter9.html#sec_9_3_12", "9.3.12")]), lenition is not applied to the noun, e.g., #[i fiche a trí capall] #[+tl twenty-three horses]; #[i 56 fuinneog] #[+tl fifty-six windows].
+      when "10-2-5-title"
+        | After Certain Simple Prepositions
+      when "10-2-5-p1"
+        | Lenition is applied to the noun after the following simple prepositions &mdash;
+      when "10-2-5-a-p1"
+        | #[i de], #[i do] (and #[i a] from #[i do], e.g., #[i obair a dhéanamh] #[+tl to do work]), #[i faoi], #[i ionsar], #[i mar], #[i ó], #[i roimh], #[i trí], #[i um], e.g., #[i de Shiobhán] #[+tl of Siobhán]; #[i do bhuachaillí] #[+tl to boys]; #[i faoi bhord] #[+tl under a table]; #[i ionsar Sheán, mar dhuine] #[+tl against Seán, as a person]; #[i ó bhéal] #[+tl from a mouth]:
+      when "10-2-5-a-sample-1"
+        | She will finish the work #[b before morning].
+      when "10-2-5-a-sample-2"
+        | It happened #[b by accident].
+      when "10-2-5-a-p2"
+        | The prepositions #[i do] and #[i de] are shortened to #[i d&rsquo;] before nouns beginning with a vowel or #[i f] + #[i vowel], e.g., #[i d&rsquo;athair Sheáin] #[+tl to Seán&rsquo;s father], #[i d&rsquo;fhoghlaimeoirí Gaeilge] #[+tl to Irish learners]; but this is not done for #[i f] + #[i consonant], e.g., #[i do Fhrancaigh] #[+tl to the French]:
+      when "10-2-5-a-sample-3"
+        | It is #[b Úna&rsquo;s daughter] to whom I gave the book.
+      when "10-2-5-a-sample-4"
+        | She did not give me #[b an answer] except to start crying.
+      when "10-2-5-note-p"
+        | #[i b], #[i m] and #[i p] are not lenited after #[i um], e.g., #[i ordú um praghsanna a chobhsú] #[+tl an order to stabilize prices]; #[i an tÚdarás um Bóithre Náisiúnta] #[+tl the National Roads Authority].
+      when "10-2-5-b-p1"
+        | #[i ar], e.g., #[i ar bhád] #[+tl on a boat], #[i ar chlé] #[+tl on the left], #[i ar dheis] #[+tl on the right], #[i ar dhaoine] #[+tl on people] (see also #[+link("./chapter10.html#sec_10_6_4_b", "10.6.4(b)")]):
+      when "10-2-5-b-sample-1"
+        | She does not know how to put a button #[b on a coat].
+      when "10-2-5-b-sample-2"
+        | He left his shoes #[b on a rock] near the sea.
+      when "10-2-5-b-p2"
+        | Note that the noun is not lenited for adverbial phrases or verbal nouns indicating state or position, e.g., #[i ar ball] #[+tl a while ago]; #[i ar bord (loinge)] #[+tl on board (ship)]; #[i ar comhaois] #[+tl of same age]; #[i ar comhchéim] #[+tl in step]; #[i ar comhscór] #[+tl in a tie]; #[i ar comhstádas] #[+tl in equal status]; #[i ar deireadh] #[+tl at the end]; #[i ar fad] #[+tl at length]; #[i ar fiar] #[+tl inclined]; #[i ar meisce] #[+tl in drunkenness]; #[i ar muir agus ar tír] #[+tl by land and sea]; #[i ar srian] #[+tl in reins]; #[i ar tiús] #[+tl in thickness]; #[i ar bogadh] #[+tl in loose]; #[i ar crochadh] #[+tl hanging]; #[i ar fáil] #[+tl available]; #[i ar siúl] (meaning #[i happening]); but #[i ar fheabhas] #[+tl excellent]; #[i ar shiúl] (meaning #[i gone]). However, lenition is applied to the noun if it is qualified, e.g., #[i ar chonradh sealadach] #[+tl on a temporary contract]; #[i ar shaoire mháithreachais] #[+tl on maternity leave]; #[i ar bharr an tí] #[+tl on top of the house]; except for #[i ar bord loinge] #[+tl on board a ship]; #[i ar ball beag] #[+tl a little while ago].
+      when "10-2-5-c-p1"
+        | #[i gan], on an unqualified noun unless the initial consonant is #[i d], #[i t], #[i s] or #[i f], e.g., #[i gan chuid] #[+tl without a part]; #[i gan chiall] #[+tl without sense]; #[i gan mhaith] #[+tl without good]; #[i gan mheabhair] #[+tl without mind]; #[i gan bhréag] #[+tl without a lie]; but #[i gan dearmad] #[+tl without forgetting]; #[i gan sagart] #[+tl without a priest]; #[i gan tine] #[+tl without fire]; #[i gan feoirling] #[+tl without a farthing] (exception: #[i gan fhios] #[+tl without knowledge]);
+      when "10-2-5-c-sample-1"
+        | The soldiers left the gate open #[b without protection].
+      when "10-2-5-c-sample-2"
+        | The other members will arrive #[b without delay].
+      when "10-2-5-c-p2"
+        | Lenition is not applied to a qualified noun, e.g., #[i gan pingin rua] #[+tl without a red penny]; #[i gan carn aoiligh] #[+tl without a heap of lime]; #[i gan bolgán solais] #[+tl without a light bulb]; #[i gan ciall linbh] #[+tl without a child&rsquo;s sense]; #[i gan brí ar bith] #[+tl without any meaning]; #[i gan misneach a chailleadh] #[+tl without losing courage]:
+      when "10-2-5-c-sample-3"
+        | They were left #[b without a safe harbor].
+      when "10-2-5-c-sample-4"
+        | They said the process would not be changed #[b without good reason].
+      when "10-2-5-c-sample-5"
+        | They left #[b without earning a penny].
+      when "10-2-5-c-p3"
+        | Note that lenition is not applied to an unqualified noun if it is a definite proper name, e.g., #[i d&rsquo;fhág siad gan Cáit] #[+tl they left without Cáit]; or if it is a verbal noun in a noun phrase, e.g., #[i b&rsquo;fhearr duit gan pósadh] #[+tl you would prefer without marrying]; #[i moladh dó gan corraí] #[+tl he was praised without anger]:
+      when "10-2-5-c-sample-6"
+        | She finished the work #[b without Micheál].
+      when "10-2-5-c-sample-7"
+        | She decided #[b without surrendering].
+      when "10-2-5-d-p1"
+        | #[i idir], when it means #[i both], e.g., #[i idir bheag agus mhór] #[+tl both small and large]; #[i idir chailíní agus bhuachaillí] #[+tl both girls and boys]. The noun following #[i idir] is not lenited if it begins with #[i d], #[i t] or #[i s], e.g., #[i idir shúgradh is dáiríre] #[+tl both play and serious]; #[i idir mhná rialta agus sagairt] #[+tl both nuns and priests]:
+      when "10-2-5-d-sample-1"
+        | There are #[b both words] and #[b pictures] in the book.
+      when "10-2-5-d-sample-2"
+        | There will be #[b both young people] and #[b seniors] present.
+      when "10-2-5-d-p2"
+        | Note that lenition is not applied to a noun after #[i idir] when it means #[i between], e.g., #[i idir Corcaigh agus Gaillimh] #[+tl between Cork and Galway]; #[i idir breith agus baisteadh] #[+tl between birth and baptism]; #[i idir tithe] #[+tl between houses]; #[i idir béilí] #[+tl between meals]:
+      when "10-2-5-d-sample-3"
+        | The child was awake #[b between midnight] and #[b dawn].
+      when "10-2-5-d-sample-4"
+        | A fight started #[b between two] men outside the shop.
+      when "10-2-5-e-p1"
+        | #[i thar], e.g., #[i léim sé thar gheata ard] #[+tl he jumped over a high gate]; #[i ní raibh thar chúigear acu ann] #[+tl there were no more than five of them there]:
+      when "10-2-5-e-sample-1"
+        | It is not worth #[b more than a penny].
+      when "10-2-5-e-sample-2"
+        | The book is not #[b beyond praise].
+      when "10-2-5-e-p2"
+        | Note that lenition is not applied to a noun after #[i thar] in certain phrases containing an indefinite noun, e.g., #[i thar barr] #[+tl over the top]; #[i thar bráid] #[+tl over the limit]; #[i thar cionn] #[+tl over the head]; #[i thar fóir] #[+tl over the edge]; #[i thar sáile] #[+tl over the sea]; #[i thar toinn] #[+tl over the waves]; nor in the compound preposition #[i thar ceann] #[+tl for the sake of]:
+      when "10-2-5-e-sample-3"
+        | They drove her out #[b beyond the country].
+      when "10-2-5-e-sample-4"
+        | He spent a period #[b overseas] before he started working here.
+      when "10-2-5-e-note-p"
+        | If a series of nouns is subject to a simple preposition, the initial mutation is applied only to the noun immediately following it, e.g., #[i Rinne siad taighde ar chonarthaí, comhaontuithe, córais agus scéimeanna] #[+tl They conducted research on contracts, agreements, systems, and schemes]; except when #[i idir] is used to mean #[i both], e.g., #[i idir bheag agus mhór] #[+tl both small and large].
+      when "10-2-6-title"
+        | After Certain Compound Prepositions
+      when "10-2-6-p1"
+        | A definite noun (see #[+link("./chapter3.html#sec_3_1_2", "3.1.2")]) that is subject to a compound preposition or by #[i cois], #[i dála], #[i fearacht], #[i timpeall], #[i trasna] is lenited, e.g., #[i ar aghaidh dhoras an tséipéil] #[+tl at the front door of the chapel]; #[i cois Bhóthar na hUaimhe] #[+tl by the Road of the Cave]; #[i de bhun mhír (b)] #[+tl under item (b)]; #[i fearacht Sheáin] #[+tl John&rsquo;s ferry]; #[i le haghaidh chlár a ceathair] #[+tl for a four-part plan].
+      when "10-2-6-sample-1"
+        | She has houses #[b all over Dublin] and #[b Cork city].
+      when "10-2-6-sample-2"
+        | He said it #[b in the presence of the woman] of the house.
+      when "10-2-6-sample-3"
+        | It happened #[b around the month] of December.
+      when "10-2-6-p2"
+        | Note that a definite noun is not lenited after #[i chun], e.g., #[i chun foirgneamh a seacht] #[+tl toward seven buildings]; #[i chun gairdín a gcomharsan] #[+tl toward a neighbor&rsquo;s garden]; #[i chun Meiriceá] #[+tl toward America]; #[i chun Gearóid] #[+tl to Gearóid]; #[i chun Parlaimint na hEorpa] #[+tl to the European Parliament].
+      when "10-2-6-p3"
+        | Indefinite nouns are not lenited except in established phrases, e.g., #[i tar éis bháis] (meaning #[i after passing away]).
+      when "10-2-7-title"
+        | After a Feminine Noun
+      when "10-2-7-p1"
+        | If a (non-definite) noun in the genitive is subject to a singular feminine noun (not in the genitive), it is usually lenited, e.g., #[i cloch shneachta] #[+tl snowflake]; #[i deoir bhainne] #[+tl tear of milk]; #[i gloine bheorach] #[+tl glass of beer]; #[i léine chadáis] #[+tl cotton shirt]; #[i tuarascáil pharlaiminte] #[+tl parliamentary report]; #[i bliain bhisigh] #[+tl leap year]; #[i bliain chánach] #[+tl fiscal year]; #[i bliain mheasúnachta] #[+tl assessment year]; #[i mí ghealaí] #[+tl lunar month]:
+      when "10-2-7-sample-1"
+        | They went to the #[b football field].
+      when "10-2-7-sample-2"
+        | Do you play a #[b musical instrument]?
+      when "10-2-7-sample-3"
+        | Did you finish #[b your homework]?<br />(Lit. #[b your work of home])
+      when "10-2-7-sample-4"
+        | Stay and drink a #[b glass of cider] with us!
+      when "10-2-7-p2"
+        | Note that all the contexts in #[+link("#sec_10_2_7_a", "(a)")] to #[+link("#sec_10_2_7_m", "(m)")] list the instances when an indefinite noun subject to a singular feminine noun (not in the genitive) is not lenited. In all other contexts, lenition is applied to an indefinite noun subject to a singular feminine noun (not in the genitive).
+      when "10-2-7-note-p"
+        | An example could be included in one or more of the following contexts, e.g., #[+link("#sec_10_2_7_b", "(b)")] and #[+link("#sec_10_2_7_e", "(e)")] apply to the example #[i léim fia] #[+tl deer leap].
+      when "10-2-7-a-p"
+        | The second noun is not lenited if the first noun ends in #[i d], #[i n], #[i t], #[i l] or #[i s] and the second noun begins with #[i d], #[i t] or #[i s], e.g., #[i áit dúchais] #[+tl place of origin]; #[i bean tí] #[+tl housewife]; #[i cúis dóchais] #[+tl cause of hope]; #[i maidin samhraidh] #[+tl summer morning]; #[i saighead draíochta] #[+tl magic arrow]; #[i scoil samhraidh] #[+tl summer school]:
+      when "10-2-7-a-sample-1"
+        | She is working in the #[b research laboratory].
+      when "10-2-7-a-sample-2"
+        | The defender was charged in the #[b District Court].
+      when "10-2-7-b-p1"
+        | The second noun is not lenited if that noun begins with #[i f], e.g., #[i buile feirge] #[+tl fit of anger]; #[i cúirt filíochta] #[+tl poetry court]; #[i deoch fuisce] #[+tl whiskey drink]; #[i deoir fola] #[+tl tear of blood]; #[i pailin féir] #[+tl grass pollen]; #[i sochaí faisnéise] #[+tl information society]:
+      when "10-2-7-b-sample-1"
+        | The club organized a #[b poetry night] as part of the festival.
+      when "10-2-7-b-sample-2"
+        | He doesn&rsquo;t have much experience with #[b information technology].
+      when "10-2-7-b-p2"
+        | Note that #[i beirt] and #[i dís] are exceptions, and lenition is applied to a noun beginning with #[i f] after them, e.g., #[i beirt fheirmeoirí] #[+tl two farmers]; #[i dís fhear] #[+tl two men].
+      when "10-2-7-c-p1"
+        | The second noun is not lenited if it is in the genitive plural, e.g., #[i rásaíocht gluaisrothar] #[+tl motorcycle(s) racing]; #[i saithe beach] #[+tl beach huts]; #[i scoil cailíní] #[+tl girls&rsquo; school]; #[i scuaine gasúr] #[+tl boys&rsquo; queue]; #[i sraith giorrúchán] #[+tl series of abbreviations]; #[i táin bó] #[+tl cattle driving]; #[i traein paisinéirí] #[+tl passenger(s&rsquo;) train]:
+      when "10-2-7-c-sample-1"
+        | They wanted to establish a #[b boys&rsquo; school] in that building.
+      when "10-2-7-c-sample-2"
+        | There was a three-mile #[b queue of cars] in the traffic jam.
+      when "10-2-7-c-p2"
+        | Note that #[i beirt] and #[i dís] are exceptions, and lenition is applied to a noun in the genitive plural after them, e.g., #[i beirt bhan] #[+tl two women]; #[i dís bhreithiúna] #[+tl two judges]; and that the phrase #[i clann mhac] #[+tl family of sons] is also an exception.
+      when "10-2-7-d-p"
+        | The second noun is not lenited if the first noun has an indefinite quantitative meaning, e.g., #[i breis bainne] #[+tl excess of milk]; #[i díobháil céille] #[+tl lack of sense]; #[i easpa tobac] #[+tl lack of tobacco]; #[i iomarca cainte] #[+tl excess of talk]; #[i roinnt cáise] #[+tl some cheese]:
+      when "10-2-7-d-sample-1"
+        | Did he get #[b an excess of food]?
+      when "10-2-7-d-sample-2"
+        | There is #[b some powder] left.
+      when "10-2-7-e-p1"
+        | The second noun is not lenited if it is #[+link("#sec_10_2_7_e_i", "(i)")] a person, #[+link("#sec_10_2_7_e_ii", "(ii)")] an animal, #[+link("#sec_10_2_7_e_iii", "(iii)")] a living thing, or #[+link("#sec_10_2_7_e_iv", "(iv)")] a part of a person, animal or living thing &mdash;
+      when "10-2-7-e-i-p"
+        | #[i aghaidh mná] #[+tl woman&rsquo;s face]; #[i casóg buachalla] #[+tl boy&rsquo;s coat]; #[i culaith garda] #[+tl guard&rsquo;s uniform]; #[i lámh cailín] #[+tl girl&rsquo;s hand]; #[i scian búistéara] #[+tl butcher&rsquo;s knife]; #[i súil páiste] #[+tl child&rsquo;s eye]:
+      when "10-2-7-e-i-sample-1"
+        | He bought a new #[b men&rsquo;s coat] in the shop.
+      when "10-2-7-e-i-sample-2"
+        | They needed to buy a #[b child&rsquo;s bed] for their grandson.
+      when "10-2-7-e-ii-p"
+        | #[i adharc bó] #[+tl cow&rsquo;s horn]; #[i cáis gabhair] #[+tl goat&rsquo;s cheese]; #[i coiscéim coiligh] #[+tl rooster&rsquo;s step]; #[i cos capaill] #[+tl horse&rsquo;s foot]; #[i cráin muice] #[+tl sow]; #[i eitinn bólachta] #[+tl bovine tuberculosis]; #[i léim capaill] #[+tl horse&rsquo;s jump]; #[i géimneach bó] #[+tl cow&rsquo;s bellow]; #[i stail capaill] #[+tl stallion horse]; #[i ubh circe] #[+tl hen&rsquo;s egg]:
+      when "10-2-7-e-ii-sample-1"
+        | I saw a #[b salmon hen] (#[b female salmon]) in the water next to the fish weir. <br> (Note: this contradicts FGB entry under #[i cearc], which defines #[i cearc bhradáin] as #[i female salmon].)
+      when "10-2-7-e-ii-sample-2"
+        | I have never eaten #[b horse meat].
+      when "10-2-7-e-iii-p"
+        | #[i cill planda] #[+tl plant cell]; #[i coirt crainn] #[+tl tree bark]; #[i péist cabáiste] #[+tl cabbage worm]:
+      when "10-2-7-e-iii-sample-1"
+        | She asked the children to draw a #[b holly leaf].
+      when "10-2-7-e-iii-sample-2"
+        | It is necessary to remove #[b dock roots] to get rid of the dock.
+      when "10-2-7-e-iv-p"
+        | #[i foinse béil] #[+tl oral source]; #[i íde béil] #[+tl verbal abuse]; #[i ionga méire] #[+tl finger nail]; #[i péist goile] #[+tl stomach worm]:
+      when "10-2-7-e-iv-sample-1"
+        | They put a #[b ear tag] on every animal.
+      when "10-2-7-e-iv-sample-2"
+        | Is your #[b big toe] sore?
+      when "10-2-7-e-p2"
+        | Note that #[i beirt] and #[i dís] are exceptions, and lenition is applied to a noun meaning person after them, e.g., #[i beirt bhan] #[+tl two women]; #[i dís bhreithiúna] #[+tl two judges]; and that lenition is applied to #[i céile] after a feminine noun, e.g., #[i bean chéile] #[+tl wife]; #[i deirfiúr chéile] #[+tl sister-in-law].
+      when "10-2-7-f-p"
+        | The second noun is not lenited if the first noun is part of the second noun, e.g., #[i beann píce] #[+tl point of a pike]; #[i cos cathaoireach] #[+tl chair leg]; #[i cluas cupáin] #[+tl cup handle]; #[i iall bróige] #[+tl shoe lace]:
+      when "10-2-7-f-sample-1"
+        | It is easy to break a #[b bucket handle].
+      when "10-2-7-f-sample-2"
+        | He did not understand how to use the #[b boat rudder].
+      when "10-2-7-g-p"
+        | The second noun is not lenited if it is a noun derived from an adjective that describes the first noun, e.g., #[i áilleacht ceantair] #[+tl beauty of the area]; #[i airde balla] #[+tl height of the wall]; #[i breáthacht cathrach] #[+tl urban elegance]; #[i dílseacht pictiúir] #[+tl picture fidelity]; #[i finne maidine] #[+tl morning fairness]; #[i sábháilteacht bóthair] #[+tl road safety]:
+      when "10-2-7-g-sample-1"
+        | It is necessary for scientists to test #[b mixture strength] before it is sold.
+      when "10-2-7-g-sample-2"
+        | Schemes were established to ensure #[b food safety].
+      when "10-2-7-h-p1"
+        | An indefinite noun after a verbal noun with the preposition #[i ag] before it is not lenited, e.g., #[i ag sábháil comhaid] #[+tl saving a file]; #[i ag tiomáint bus] #[+tl driving a bus]; #[i ag tógáil balla] #[+tl building a wall]:
+      when "10-2-7-h-sample-1"
+        | He started #[b knitting a sweater] last night.
+      when "10-2-7-h-sample-2"
+        | Caoimhe loves #[b playing music].
+      when "10-2-7-h-p2"
+        | Note that there are a small number of established exceptions, e.g., #[i ag fáil bháis] #[+tl dying]; #[i ag gabháil fhoinn] #[+tl committing a crime].
+      when "10-2-7-i-p"
+        | An indefinite noun after a verbal noun or noun expressing an action is not lenited when the second noun is the object, e.g., #[i athchúrsáil gloine] #[+tl glass recycling]; #[i forbairt pobail] #[+tl community development]; #[i láimhseáil ceimiceáin] #[+tl chemical handling]; #[i eisiúint preasráitis] #[+tl press release issuance]:
+      when "10-2-7-i-sample-1"
+        | Attention will be paid to #[b teacher training] in the new scheme.
+      when "10-2-7-i-sample-2"
+        | There are certain rules involved in #[b paper recycling].
+      when "10-2-7-j-p"
+        | The second noun is not lenited after the words #[i aicme], #[i comhairle], #[i corparáid], #[i cuideachta], #[i earnáil], #[i feidhmeannacht], #[i foireann], #[i gníomhaireacht], #[i institiúid], #[i oifig], #[i rannóg], #[i roinn], #[i scéim], #[i seirbhís], e.g., #[i aicme ceannais] #[+tl leadership class]; #[i comhairle contae] #[+tl county council]; #[i corparáid baincéireachta] #[+tl banking corporation]; #[i earnáil gnó] #[+tl business sector]; #[i foireann bainistíochta] #[+tl management team]; #[i institiúid breisoideachais] #[+tl further education institution]; #[i oifig preasa] #[+tl press office]; #[i rannóg pearsanra] #[+tl personnel department]; #[i roinn cosanta] #[+tl defense division]:
+      when "10-2-7-j-sample-1"
+        | It is necessary for them to adjust the #[b marking scheme].
+      when "10-2-7-j-sample-2"
+        | The company provides a #[b consultancy service].
+      when "10-2-7-k-p"
+        | The nouns #[i dlí] and #[i sí] are not lenited after a feminine noun, e.g., #[i feidhm dlí] #[+tl legal function]; #[i bó sí] #[+tl fairy cow]:
+      when "10-2-7-k-sample-1"
+        | The government will provide a copy of the #[b legal instrument].
+      when "10-2-7-k-sample-2"
+        | It is said that seeing the #[b phantom ship] is a sign of bad luck.
+      when "10-2-7-l-p"
+        | The second noun is not lenited if it is one of the precise units of measurement #[i bliain], #[i coicís], #[i mí] or #[i seachtain], e.g., #[i saoire míosa] #[+tl month&rsquo;s holiday]; #[i tréimhse bliana] #[+tl year&rsquo;s period]; #[i moill bliana] #[+tl year&rsquo;s delay]:
+      when "10-2-7-l-sample-1"
+        | The #[b week-long festival] was launched with an event in the Mayor&rsquo;s house.
+      when "10-2-7-l-sample-2"
+        | She needed a #[b fortnight&rsquo;s rest] after the work.
+      when "10-2-7-m-p1"
+        | The second noun is not lenited if the second noun, which is in the genitive, is qualified by another noun or an adjective, e.g., #[i oíche gaoithe móire] #[+tl stormy night]; #[i bileog páipéir dúigh] #[+tl sheet of ink paper]; #[i gloine beorach fuaraithe] #[+tl chilled beer glass]:
+      when "10-2-7-m-sample-1"
+        | There was no #[b fresh milk] left in the house.
+      when "10-2-7-m-sample-2"
+        | The #[b translation project work] was completed yesterday.
+      when "10-2-7-m-p2"
+        | Exception: when #[i beirt] or #[i dís] is the first noun, e.g., #[i beirt bhan mhisniúla] #[+tl two brave women] or when #[i beirt] is the second noun, e.g., #[i páistí bheirt bhan] #[+tl children of two women].
+      when "10-2-7-p3"
+        | Note that, subject to the exceptions in #[+link("#sec_10_2_7_a", "(a)")] to #[+link("#sec_10_2_7_m", "(m)")] above, lenition is applied to every noun subject to a feminine noun, e.g., #[i tuarascáil pharlaiminte agus chomhphobail] #[+tl parliamentary and community report]. However, if there is a series of nouns in a list before another noun, the initial mutation associated with the last noun in the series is applied to the noun or nouns subject to it, e.g., #[i leabhar nó iris cheoil] #[+tl music book or magazine]; #[i iris nó leabhar ceoil] #[+tl music magazine or book].
+      when "10-2-8-title"
+        | After a Noun in the Plural Ending in a Slender Consonant
+      when "10-2-8-p1"
+        | If a (non-definite) noun in the genitive is subject to a noun in the plural ending in a slender consonant, it is usually lenited, e.g., #[i éin chlóis] #[+tl enclosed birds]; #[i dualgais bhreise] #[+tl additional duties]; #[i ceadúnais ghnó] #[+tl business licenses].
+      when "10-2-8-sample-1"
+        | She had a meeting with #[b housing officials] from America.
+      when "10-2-8-sample-2"
+        | He says he has read all the #[b grammar books].
+      when "10-2-8-sample-3"
+        | #[b Traffic wardens] issue #[b parking tickets].
+      when "10-2-8-p2"
+        | Note that all the contexts in #[+link("#sec_10_2_8_a", "(a)")] to #[+link("#sec_10_2_8_f", "(f)")] below list the instances when an indefinite noun subject to a noun in the plural ending in a slender consonant is not lenited. In all other contexts, lenition is applied to an indefinite noun subject to a noun in the plural ending in a slender consonant.
+      when "10-2-8-note-p"
+        | An example could be included in one or more of the following contexts, e.g., #[+link("#sec_10_2_8_a", "(a)")], #[+link("#sec_10_2_8_c", "(c)")] and #[+link("#sec_10_2_8_d", "(d)")] apply to the example #[i dualgais dochtúirí] #[+tl duties of doctors].
+      when "10-2-8-a-p"
+        | The second noun is not lenited if the first noun ends in #[i d], #[i n], #[i t], #[i l] or #[i s] and the second noun begins with #[i d], #[i t] or #[i s], e.g., #[i báid seoil] #[+tl sailing boats]; #[i capaill seilge] #[+tl hunting horses]; #[i turais taighde] #[+tl research trips]:
+      when "10-2-8-a-sample-1"
+        | The storyteller asked the children to say the #[b magic words] along with her.
+      when "10-2-8-a-sample-2"
+        | #[b Fountain pens] were used when he was at school.
+      when "10-2-8-b-p"
+        | The second noun is not lenited if it begins with #[i f], e.g., #[i beithígh feirme] #[+tl farm animals]; #[i botháin freastail] #[+tl service huts]; #[i buidéil fuisce] #[+tl whiskey bottles]:
+      when "10-2-8-b-sample-1"
+        | TG4 is developing new #[b documentary programs].
+      when "10-2-8-b-sample-2"
+        | Ten #[b building societies] took part in the survey.
+      when "10-2-8-c-p"
+        | The second noun is not lenited if it is in the genitive plural, e.g., #[i imill bóithre] #[+tl road edges]; #[i cnuasaigh dánta] #[+tl collections of poems]:
+      when "10-2-8-c-sample-1"
+        | The children like those #[b picture books].
+      when "10-2-8-c-sample-2"
+        | The council is currently looking for #[b service officers].
+      when "10-2-8-d-p"
+        | The second noun is not lenited if it is #[+link("#sec_10_2_8_d_i", "(i)")] a person, #[+link("#sec_10_2_8_d_ii", "(ii)")] an animal, #[+link("#sec_10_2_8_d_iii", "(iii)")] a living thing, or #[+link("#sec_10_2_8_d_iv", "(iv)")] a part of a person, animal or living thing, the second noun &mdash;
+      when "10-2-8-d-i-p"
+        | #[i duáin cailín] #[+tl girl&rsquo;s kidneys]; #[i buidéil páiste] #[+tl child&rsquo;s bottles]:
+      when "10-2-8-d-i-sample-1"
+        | There is a description of the #[b carer&rsquo;s allowances] on the website.
+      when "10-2-8-d-i-sample-2"
+        | #[b Teacher passwords] should never be shared with students.
+      when "10-2-8-d-ii-p"
+        | #[i bréagáin madra] #[+tl dog toys]; #[i sciatháin circe] #[+tl chicken wings]:
+      when "10-2-8-d-ii-sample-1"
+        | #[b Centipede antennae] could be as long as their body.
+      when "10-2-8-d-ii-sample-2"
+        | The #[b limpet shells] were distributed after the meal.
+      when "10-2-8-d-iii-p"
+        | #[i crainn beithe] #[+tl birch trees]; #[i peitil blátha] #[+tl flower petals]:
+      when "10-2-8-d-iii-sample-1"
+        | The panda eats #[b bamboo shoots].
+      when "10-2-8-d-iii-sample-2"
+        | Scientists were advised to collect #[b mushroom spores].
+      when "10-2-8-d-iv-p"
+        | #[i ailt méire] #[+tl finger joints]; #[i matáin coise] #[+tl leg muscles]:
+      when "10-2-8-d-iv-sample-1"
+        | #[b Sides of bacon] are sold in the butcher&rsquo;s shop.
+      when "10-2-8-d-iv-sample-2"
+        | He had rings in his #[b ear lobes].
+      when "10-2-8-e-p"
+        | The second noun is not lenited if the first noun is part of the second noun, e.g., #[i cláir báid] #[+tl boat boards]; #[i méarchláir pianó] #[+tl piano keyboards]:
+      when "10-2-8-e-sample-1"
+        | It is on the #[b house beams] that the entire weight of the roof rests.
+      when "10-2-8-e-sample-2"
+        | The new #[b phone screens] are much larger than they used to be.
+      when "10-2-8-f-p1"
+        | The second noun is not lenited if the second noun, which is in the genitive, is qualified by another noun or an adjective, e.g., #[i cláir dioplóma iarchéime] #[+tl postgraduate diploma boards]; #[i cláir deice báid] #[+tl boat deck boards]:
+      when "10-2-8-f-sample-1"
+        | It is necessary to update the company&rsquo;s #[b data protection policies].
+      when "10-2-8-f-sample-2"
+        | The #[b information technology officers] will resolve the problem.
+      when "10-2-8-f-p2"
+        | Exception: when #[i beirt] is the second noun, e.g., #[i gluaisteáin bheirt pheileadóirí] #[+tl two football players&rsquo; cars].
+      when "10-2-8-p3"
+        | Note that, subject to the exceptions in #[+link("#sec_10_2_8_a", "(a)")] to #[+link("#sec_10_2_8_f", "(f)")] above, lenition is applied to every noun subject to a noun in the plural ending in a slender consonant, e.g., #[i comórtais idir-ollscoile chadhcála agus bhoghdóireachta] #[+tl inter-university competitions in kayaking and archery]; #[i páipéir bhainc agus pharlaiminte] #[+tl bank and parliamentary papers]; #[i limistéir pleanála teanga Ghaeltachta] #[+tl Gaeltacht language planning areas]. However, if there is a series of nouns in a list before another noun, the initial mutation associated with the last noun in the series is applied to the noun or nouns subject to it, e.g., #[i treoracha nó leabhair ghramadaí] #[+tl grammar guides or books]; #[i leabhair nó treoracha gramadaí] #[+tl grammar books or guides].
+      when "10-2-9-title"
+        | After a Noun in the Genitive
+      when "10-2-9-p"
+        | An indefinite noun subject to a noun in the genitive is not lenited, e.g., #[i bord údaráis creidiúnúcháin] #[+tl accreditation authority board]; #[i síniú an choinbhinsiúin cóipchirt] #[+tl signing of the copyright convention]; #[i suíomh an chruinnithe mullaigh] #[+tl location of the summit meeting]; #[i bord coláiste gairmoideachais] #[+tl vocational college board]; #[i trasna na sráide cathrach] #[+tl across the city street]:
+      when "10-2-9-sample-1"
+        | The meeting was in the #[b parish priest&rsquo;s] house.
+      when "10-2-9-sample-2"
+        | He was waiting at the #[b pub&rsquo;s] door.
+      when "10-2-10-title"
+        | After a Definite Noun Following Another Noun
+      when "10-2-10-p1"
+        | Lenition is applied to a definite noun in the genitive following another noun, e.g., #[i Cuan Bhaile Átha Cliath] #[+tl Dublin Bay]; #[i foireann Dhoire] #[+tl Derry team]; #[i muintir Sheáin] #[+tl Seán&rsquo;s people]; #[i oibrithe Bhéal Feirste] #[+tl Belfast workers]; #[i mac fhear an tábhairne] #[+tl the pub owner&rsquo;s son]; #[i obair bhean an tí] #[+tl the housewife&rsquo;s work].
+      when "10-2-10-p2"
+        | Note that lenition is applied to a definite noun even when #[i d], #[i t] or #[i s] follows #[i d], #[i n], #[i t], #[i l] or #[i s], e.g., #[i foireann Dhoire] #[+tl Derry team]; #[i riail Shasana] #[+tl English rule]; #[i doras Theach an Phiarsaigh] #[+tl Pearse&rsquo;s House door]; #[i luas thraein an iarthair] #[+tl the west train&rsquo;s speed]:
+      when "10-2-10-sample-1"
+        | They said they attended #[b St. Colman&rsquo;s] College.
+      when "10-2-10-sample-2"
+        | There is a hole in the #[b butcher&rsquo;s] shop.
+      when "10-2-10-p3"
+        | But lenition is not applied &mdash;
+      when "10-2-10-a-p"
+        | to the following nouns:
+      when "10-2-10-a-i-p"
+        | #[i Dé] (#[i Dia] in the genitive), e.g., #[i lámh Dé] #[+tl the hand of God]; #[i trócaire Dé] #[+tl the mercy of God]:
+      when "10-2-10-a-i-sample-1"
+        | The book about Mary, Mother #[b of God], is written by him.
+      when "10-2-10-a-ii-p"
+        | #[i San] or the name it denotes, e.g., #[i Ord San Proinsias] #[+tl Order of St. Francis]; #[i Lá San Svaítín] #[+tl St. Valentine&rsquo;s Day]; #[i Lá San Seáin] #[+tl St. John&rsquo;s Day]:
+      when "10-2-10-a-ii-sample-1"
+        | The parish of #[b St. Catherine] is in Dublin.
+      when "10-2-10-a-iii-p"
+        | #[i Dé] in the days of the week, e.g., #[i oíche Dé Máirt] #[+tl Tuesday night]; #[i tráthnóna Dé Céadaoin] #[+tl Wednesday afternoon]:
+      when "10-2-10-a-iii-sample-1"
+        | They will reach France on #[b Saturday] morning.
+      when "10-2-10-b-p"
+        | to a definite noun that comes after the following nouns:
+      when "10-2-10-b-i-p"
+        | #[i Féile] in the genitive, e.g., #[i Lá Fhéile Pádraig] #[+tl St. Patrick&rsquo;s Day]; #[i Samhradh beag na Féile Michíl] #[+tl Michaelmas]:
+      when "10-2-10-b-i-sample-1"
+        | She was born on #[b St. Brigid&rsquo;s Day].
+      when "10-2-10-b-ii-p"
+        | #[i Naomh], e.g., #[i cuimhneachán Naomh Peadar] #[+tl St. Peter&rsquo;s Memorial]; #[i Naomh Pól] #[+tl St. Paul]:
+      when "10-2-10-b-ii-sample-1"
+        | They were playing against #[b St. Finbar&rsquo;s School].
+      when "10-2-10-c-p"
+        | to a verbal noun whose object is a definite noun, e.g., #[i madra cosanta na monarcha] #[+tl the dog guarding the factory]; #[i bean fuascailte na ceiste] #[+tl the woman answering the question]; #[i beach cealgtha an pháiste] #[+tl the bee stinging the child]; #[i innill buailte an arbhair] #[+tl the machines striking the grain]; #[i seachtain bailithe na rátaí] #[+tl the week of rate collection] (see #[+link("./chapter3.html#sec_3_3_1_a", "3.3.1(a)")]).
+      when "10-2-11-title"
+        | In Surnames
+      when "10-2-11-p1"
+        | Lenition is applied to the noun after #[i Mhic], #[i Mhig], #[i Ní], #[i Nic], #[i Uí] in surnames, e.g., #[i Bean Mháirtín Uí Bhroin]; #[i Isibéal Nig Fhloinn]; #[i Siobhán Ní Chonchúir]; #[i Úna Nic Shuibhne]; and after #[i Mac] (#[i Mag]) in certain surnames, e.g., #[i Mac Pháidín]; #[i Mag Fhinn]:
+      when "10-2-11-sample-1"
+        | Have you ever met Gobnait #[b Ní Dhúill]?
+      when "10-2-11-sample-2"
+        | She was reading a story by Pádraic #[b Uí Chonaire].
+      when "10-2-11-p2"
+        | Note that #[i c] and #[i g] are not lenited after #[i Mhic] or #[i Nic], e.g., #[i teach Sheáin Mhic Cárthaigh]:
+      when "10-2-11-sample-3"
+        | Have you seen #[b Pól Mhic Cearáin]&rsquo;s car?
+      when "10-2-11-sample-4"
+        | #[b Sorcha Nic Gearailt] was not present.
+      when "10-2-12-title"
+        | In the Compound Word
+      when "10-2-12-p"
+        | The second word in a compound word is lenited, e.g., #[i dea-cháil] #[+tl good reputation], #[i deargbhuile] #[+tl stark madness], #[i rósghairdín] #[+tl rose garden], #[i sárdhuine] #[+tl extraordinary person], except when #[i d], #[i n], #[i t], #[i l] or #[i s] come together, e.g., #[i antráth] #[+tl inopportune time], #[i catsúil] #[+tl sidelong glance], #[i clostrácht] #[+tl hearsay], #[i galltrumpa] #[+tl clarion], #[i ilsiolla] #[+tl multi-syllable], #[i leasdeartháir] #[+tl stepbrother], #[i seansaighdiúir] #[+tl veteran soldier].
+      when "10-2-12-sample-1"
+        | The #[b waste paper] was set aside for recycling.
+      when "10-2-12-sample-2"
+        | The #[b back door] is the one the house always uses.
+      when "10-2-12-sample-3"
+        | The #[b car park] is right next to the #[b primary school].
+      when "10-2-12-note-p"
+        | The second word in a compound word is not lenited after #[i an-] (the emphatic prefix) when #[i d], #[i t] or #[i s] follow it, e.g., #[i An-duine is ea é] #[+tl He is a great person]; #[i Bhí an-dea-aimsir ann an samhradh sin] #[+tl There was very good weather that summer]; #[i An-drochrud a bhí sa bhean sin] #[+tl There was a very bad thing in that woman] (see #[+link("./chapter2.html#sec_2_1_7", "2.1.7")]).
+      when "10-2-13-title"
+        | After the Copula
+      when "10-2-13-p"
+        | Lenition is applied to the noun following the copula in the indicative mood, past tense and past habitual tense, and in the conditional mood, e.g., #[i Ba dhuine mór é] #[+tl He was a great person]; #[i Ar shagart é?] #[+tl Was he a priest?]; #[i Níor dhochtúir é] #[+tl He was not a doctor]; #[i Nár cheoltóir maith é?] #[+tl Was he not a good musician?]; #[i Is dóigh leis gur ghadaí a bhí ann] #[+tl He thinks he was a thief]; #[i Dúirt sí gurbh fhiú labhairt léi] #[+tl She said it was worth talking to her]; #[i Deir sé nár dhochar é] #[+tl He says it was not harmful]; #[i cér chás é (ach)] #[+tl What matter (but)]; #[i dá mba chailín í] #[+tl If she were a girl]; #[i fear dar shloinne Ó Murchú] #[+tl A man named Ó Murchú]; #[i má ba bhithiúnach é] #[+tl If he were a scoundrel]; #[i murar bhréag é] #[+tl If it were not a lie] (see #[+link("./chapter7.html", "Chapter 7")]):
+      when "10-2-13-sample-1"
+        | She #[b was a mechanic] when she was young.
+      when "10-2-13-sample-2"
+        | I #[b would like] to go there sometime.
+      when "10-3-title"
+        | Lenition of the Adjective
+      when "10-3-p"
+        | Lenition is applied to the adjective in the following contexts.
+      when "10-3-1-title"
+        | After Nouns
+      when "10-3-1-p"
+        | The initial consonant of a qualifying adjective is lenited &mdash;
+      when "10-3-1-a-p1"
+        | after a noun in the nominative, dative or vocative singular feminine, e.g., #[i bean mhór] #[+tl a big woman]; #[i don bhean mhór] #[+tl to the big woman]; #[i a bhean mhór] #[+tl o big woman]:
+      when "10-3-1-a-sample-1"
+        | He always buys #[b tasty] meat.
+      when "10-3-1-a-sample-2"
+        | Stay behind the #[b yellow] line.
+      when "10-3-1-a-p2"
+        | Note that lenition is not applied to multi-word adjectival phrases, e.g., #[i athnuachan saor in aisce] #[+tl free renewal]; #[i bean mór le rá] #[+tl a well-known woman]; #[i tuarascáil cothrom le dáta] #[+tl an up-to-date report] (see #[+link("./chapter4.html#sec_4_3_8", "4.3.8")]).
+      when "10-3-1-b-p"
+        | after a noun in the genitive or vocative singular masculine, e.g., #[i mac fir mhóir] #[+tl son of a big man]; #[i a fhir mhóir] #[+tl o big man]:
+      when "10-3-1-b-sample-1"
+        | Have you met the owner of the #[b grey] horse?
+      when "10-3-1-b-sample-2"
+        | The poem A Éin #[b Bhig] is by Pearse.
+      when "10-3-1-c-p1"
+        | after a noun in the nominative or dative plural, if the noun ends in a slender consonant, e.g., #[i fir mhóra] #[+tl big men]; #[i do na fir mhóra] #[+tl to the big men] (exception: #[i caora] #[+tl sheep] in the nominative plural, e.g., #[i caoirigh beaga/bána/móra], etc. #[+tl small/white/big sheep]):
+      when "10-3-1-c-sample-1"
+        | Labels for #[b perishable] goods must be affixed.
+      when "10-3-1-c-sample-2"
+        | There were #[b large black] clouds in the sky.
+      when "10-3-1-c-p2"
+        | Note that the grammatical link is broken by brackets, e.g., #[i gnóthais (beag nó mór)] #[+tl businesses (small or large)].
+      when "10-3-1-d-p"
+        | for numbers:
+      when "10-3-1-d-i-p"
+        | after a noun preceded by #[i dá] or #[i dhá], e.g., #[i dhá bhó bhána] #[+tl two white cows]; #[i luach an dá bhó bhána] #[+tl the value of the two white cows]; #[i an dá leabhar déag mhóra] #[+tl the twelve big books]; #[i dhá fhuinneog mhóra is tríocha] #[+tl thirty-two big windows]; #[i dhá cheann mhóra is ceathracha] #[+tl forty-two big items]:
+      when "10-3-1-d-i-sample-1"
+        | He got two #[b fierce] hounds.
+      when "10-3-1-d-i-sample-2"
+        | The doors of the two #[b small] houses must be locked.
+      when "10-3-1-d-ii-p1"
+        | after a noun in the singular preceded by a number from #[i three] to #[i ten], e.g., #[i trí (ceithre, cúig, sé) bhád mhóra] #[+tl three (four, five, six) big boats]; #[i seacht (ocht, naoi, deich) gcapall mhóra] #[+tl seven (eight, nine, ten) big horses]; #[i trí (ceithre, cúig, sé) fhuinneog déag mhóra] #[+tl three (four, five, six) big windows]; #[i seacht (ocht, naoi, deich) mbád déag mhóra] #[+tl seven (eight, nine, ten) big boats]; #[i ocht gcéad nócha is naoi mbád bheaga] #[+tl eight hundred and ninety-nine small boats]; #[i lucht na dtrí (gceithre, etc.) bhád mhóra] #[+tl the people of the three (four, etc.) big boats]; #[i ainmneacha na seacht (n-ocht, etc.) gcapall mhóra] #[+tl the names of the seven (eight, etc.) big horses]:
+      when "10-3-1-d-ii-sample-1"
+        | She bought three #[b long] books for her holidays.
+      when "10-3-1-d-ii-sample-2"
+        | Ten #[b famous] films were shown during the festival.
+      when "10-3-1-d-ii-p2"
+        | Note that, when the Simplified System above twenty is used (see #[+link("./chapter9.html#sec_9_3_10", "9.3.10")] &ndash; #[+link("./chapter9.html#sec_9_3_12", "9.3.12")]), lenition is applied only to an adjective following a feminine noun, e.g., #[i fiche a trí capall mór] #[+tl twenty-three big horses]; #[i 45 fuinneog mhór] #[+tl 45 big windows].
+      when "10-3-1-d-iii-p"
+        | after the plural form #[i cinn] when preceded by a number from #[i trí] to #[i deich], e.g., #[i trí cinn dhubha] #[+tl three black ones]; #[i cúig cinn mhóra is seasca] #[+tl sixty-five big ones]:
+      when "10-3-1-d-iii-sample-1"
+        | She found three #[b empty] ones in the search.
+      when "10-3-1-e-p"
+        | in the masculine dative singular, if the Lenition System is being used (see #[+link("./chapter1.html#sec_1_7", "1.7")]).
+      when "10-3-2-title"
+        | Before a Noun
+      when "10-3-2-p"
+        | When an adjective precedes a noun &mdash;
+      when "10-3-2-a-p"
+        | the adjective is lenited after a simple preposition, after a simple preposition and the definite article, and after a possessive adjective in the same way as the noun is lenited, e.g., #[i ar thrí euro] #[+tl for three euros]; #[i don cheathrú bean] #[+tl to the fourth woman]; #[i mo shéú hubh] #[+tl my sixth egg] (see #[+link("./chapter9.html#sec_9_5_1", "9.5.1")]):
+      when "10-3-2-a-sample-1"
+        | It will be done within #[b four] months.
+      when "10-3-2-a-sample-2"
+        | They gave it to the #[b fifth] visitor.
+      when "10-3-2-a-sample-3"
+        | It was #[b his third] attempt.
+      when "10-3-2-b-p1"
+        | the numeral in the genitive case is lenited in the same way as a masculine noun, e.g., #[i doras an cheathrú seomra] #[+tl the door of the fourth room], but #[i f] is not lenited, e.g., #[i i dtrátha an fichiú lá] #[+tl at the time of the twentieth day] (see #[+link("./chapter9.html#sec_9_5_4_d", "9.5.4(d)")])
+      when "10-3-2-b-sample-1"
+        | The shoes of the #[b fifth] girl got lost.
+      when "10-3-2-b-sample-2"
+        | The food of the #[b twentieth] man was still to be distributed.
+      when "10-3-2-b-p2"
+        | Note that lenition is not applied to &mdash;
+      when "10-3-2-b-i-p"
+        | the ordinal number in the nominative case, except #[i céad] (see #[+link("./chapter9.html#sec_9_5_1_b", "9.5.1(b)")]), e.g., #[i an tríú duine] #[+tl the third person]; #[i an cúigiú bean] #[+tl the fifth woman]; #[i ach an chéad áit] #[+tl but the first place]; #[i na chéad chéimeanna] #[+tl the first steps]:
+      when "10-3-2-b-i-sample-1"
+        | You are the #[b fourth] person to ask me that question.
+      when "10-3-2-b-i-sample-2"
+        | She achieved #[b the sixth] place in the race.
+      when "10-3-2-b-ii-p"
+        | #[i cibé], #[i gach] or #[i pé]:
+      when "10-3-2-b-ii-sample-1"
+        | It must be completed within #[b any] period allowed by the Minister.
+      when "10-3-2-b-ii-sample-2"
+        | #[b All] institutions should respect their own safety rules.
+      when "10-3-2-b-ii-sample-3"
+        | He could not describe #[b any] thing that was bothering him.
+      when "10-3-2-b-iii-p"
+        | the possessive adjectives #[i mo] and #[i do], e.g., #[i ar mo mhála] #[+tl on my bag]; #[i faoi do chara] #[+tl about your friend]:
+      when "10-3-2-b-iii-sample-1"
+        | He would go through #[b your] heart.
+      when "10-3-2-b-iii-sample-2"
+        | I saw it on #[b your] website.
+      when "10-3-3-title"
+        | To #[i dhá] and #[i dháréag]
+      when "10-3-3-p"
+        | The adjectives #[i dhá] and #[i dháréag] are lenited, e.g., #[i mo dhá bhróg] #[+tl my two shoes]; #[i bhí dháréag i láthair] #[+tl twelve were present]; except after the definite article (#[i an], #[i don], #[i sa], etc.), #[i aon] and #[i chéad], e.g., #[i an dá áit] #[+tl the two places]; #[i gach aon dá uair an chloig] #[+tl every two hours]; #[i an chéad dá bhliain] #[+tl the first two years]; #[i an Dáréag Aspal] #[+tl the Twelve Apostles]; #[i gach aon dáréag acu] #[+tl every twelve of them]; #[i an chéad dáréag a cháiligh] #[+tl the first twelve to qualify]; #[i Cogadh an Dá Aodh] #[+tl The War of the Two Aodhs].
+      when "10-3-3-sample-1"
+        | They spent #[b two] hours there.
+      when "10-3-3-sample-2"
+        | They chose #[b twelve] to participate in the competition.
+      when "10-3-3-sample-3"
+        | The #[b two] gifts were open.
+      when "10-3-3-sample-4"
+        | What instructions were given to the #[b twelve] on the jury?
+      when "10-3-4-title"
+        | To #[i déag] and #[i fichead]
+      when "10-3-4-p"
+        | Lenition is applied to #[i déag] after #[i dó] and after a singular noun ending in a vowel, e.g., #[i trí bhó dhéag] #[+tl thirteen cows]; #[i cúig lá dhéag] #[+tl fifteen days]; except in the ordinal numbers (see #[+link("./chapter9.html#sec_9_5_2_e", "9.5.2(e)")]). #[i Fichead] is lenited after a noun in the slender plural, e.g., #[i trí cinn fhichead] #[+tl sixty].
+      when "10-3-4-sample-1"
+        | He got bus number twelve (two #[b ten]).
+      when "10-3-4-sample-2"
+        | The course lasted seven#[b ]teen#[b ] months.
+      when "10-3-4-sample-3"
+        | There are #[b twenty] seven short stories in the collection.
+      when "10-3-5-title"
+        | In the Compound Word
+      when "10-3-5-p"
+        | The second word in a compound word is lenited, e.g., #[i beagmhaith] #[+tl useless], #[i fíordheas] #[+tl truly nice], except when #[i d], #[i t] or #[i s] follow #[i d], #[i n], #[i t], #[i l] or #[i s], e.g., #[i antrom] #[+tl oppression], #[i bándearg] #[+tl pink], #[i caolsrónach] #[+tl narrow-nosed], #[i casdubh] #[+tl black-footed], #[i fadsaolach] #[+tl long-lived], #[i ildánach] #[+tl multi-talented], #[i ilteangach] #[+tl multilingual].
+      when "10-3-5-sample-1"
+        | They studied #[b semiconductor] material as part of the physics class.
+      when "10-3-5-sample-2"
+        | He received a #[b great-big] payment for that work.
+      when "10-3-5-sample-3"
+        | It was clear that she was #[b very happy] with her first day at work.
+      when "10-3-6-title"
+        | After the Copula
+      when "10-3-6-p"
+        | Lenition is applied to the adjective following the copula in the indicative mood, past tense and past habitual tense, and in the conditional mood, e.g., #[i Ba dheas uait é] #[+tl It was nice of you]; #[i Ar mhaith leat é?] #[+tl Would you like it?]; #[i Níor bheag an gaisce é] #[+tl It was no small feat]; #[i Nár dhona an lá é?] #[+tl Wasn&rsquo;t it a bad day?]; #[i B&rsquo;fhéidir nár chneasta uaim é] #[+tl Perhaps it wasn&rsquo;t kind of me]; #[i Dá mba mhaith leat teacht, bheadh fáilte romhat] #[+tl If you would like to come, you would be welcome]; #[i má ba shaibhir an fear é] #[+tl if the man were rich] (see #[+link("./chapter7.html", "Chapter 7")]).
+      when "10-3-6-sample-1"
+        | He said #[b that] it was a #[b great] benefit to him.
+      when "10-3-6-sample-2"
+        | #[b If] it #[b were not true], #[b it is not right] to say such a thing.
+      when "10-4-title"
+        | Lenition on the Verb
+      when "10-4-1-title"
+        | Lenition on the Independent Verb
+      when "10-4-1-p"
+        | The independent verb is lenited &mdash;
+      when "10-4-1-a-p"
+        | in the indicative mood, past tense and past habitual tense, and in the conditional mood, e.g., #[i mhol mé] (#[i mhol tú], etc.) #[+tl I praised], #[i mholainn] (#[i mholtá], etc.) #[+tl I used to praise], #[i mholfainn], (#[i mholfá], etc.) #[+tl I would praise], #[i mholtaí] #[+tl used to be praised], #[i mholfaí] #[+tl would be praised]:
+      when "10-4-1-a-sample-1"
+        | She #[b saved] a lot of money.
+      when "10-4-1-a-sample-2"
+        | They #[b would go] there every day.
+      when "10-4-1-a-sample-3"
+        | He #[b would help] you if you asked him.
+      when "10-4-1-b-p"
+        | after #[i a], direct relative, and after the conjunctions #[i má] and #[i ó]:
+      when "10-4-1-b-sample-1"
+        | That is the woman #[b who will clean] the place.
+      when "10-4-1-b-sample-2"
+        | Did you see the car #[b that she drives]?
+      when "10-4-1-b-sample-3"
+        | #[b If] he #[b is] there, bring it with you.
+      when "10-4-1-b-sample-4"
+        | #[b Since] you put it in my head, I haven&rsquo;t thought about anything else.
+      when "10-4-1-c-p1"
+        | in the affirmative clause functioning as a noun with the copula in forms such as #[i Is ann a chonaic mé é] #[+tl It is there that I saw him]; #[i Is leis a bheidh mé] #[+tl It is his that I will be]:
+      when "10-4-1-c-sample-1"
+        | It is in that shop #[b that he buys] his clothes.
+      when "10-4-1-c-sample-2"
+        | It is online #[b that it will be broadcast].
+      when "10-4-1-c-p2"
+        | #[b But], note &mdash;
+      when "10-4-1-c-i-p"
+        | Outside certain irregular verbs &mdash; #[i bhíothas] (#[b EN]: aut. #[i to be]), #[i chonacthas] #[+tl was seen], #[i chualathas] #[+tl was heard], #[i chuathas] #[+tl was gone], #[i thángthas] #[+tl was come] &mdash; the autonomous verb in the past tense is not lenited, e.g., #[i Buaileadh go dona iad] #[+tl They were badly beaten]; #[i an geall a briseadh] #[+tl the pledge to be broken]:
+      when "10-4-1-c-i-sample-1"
+        | He was not at home #[b since he was found] guilty.
+      when "10-4-1-c-i-sample-2"
+        | He was #[b whose loss] it was.
+      when "10-4-1-c-ii-p"
+        | The verb #[i abair] is not lenited in any context:
+      when "10-4-1-c-ii-sample-1"
+        | They #[b said] they would be there.
+      when "10-4-1-c-ii-sample-2"
+        | What #[b will you say] to her?
+      when "10-4-1-c-ii-sample-3"
+        | If she #[b says] she is not interested, don&rsquo;t worry about it.
+      when "10-4-2-title"
+        | Lenition of the Dependent Verb
+      when "10-4-2-p1"
+        | The dependent verb is lenited after the conjunctions and verbal particles #[i ar], #[i cár], #[i dár], #[i gur], #[i murar], #[i nár], #[i ní], #[i níor], #[i sular]:
+      when "10-4-2-sample-1"
+        | #[b Did] he #[b put] it in hiding?
+      when "10-4-2-sample-2"
+        | #[b Where] did he #[b hurt] himself?
+      when "10-4-2-sample-3"
+        | Everyone #[b that] you #[b introduced] to me.
+      when "10-4-2-sample-4"
+        | I think #[b that] he #[b understood] me.
+      when "10-4-2-sample-5"
+        | #[b If] he #[b had not killed] him, he would have been short of him.
+      when "10-4-2-sample-6"
+        | #[b Did] he #[b never marry]?
+      when "10-4-2-sample-7"
+        | #[b Did not] he #[b see] me?
+      when "10-4-2-sample-8"
+        | #[b Could not] I #[b do] it.
+      when "10-4-2-sample-9"
+        | I was here #[b before] Seán #[b came].
+      when "10-4-2-p2"
+        | #[b But], note:
+      when "10-4-2-a-p"
+        | that the verb #[i faigh] is eclipsed in the dependent form in the past tense, future tense and conditional mood after the verbal particle #[i ní], e.g., #[i Ní bhfuair tú ansin iad] #[+tl You did not get them there]; #[i Ní bhfaighinn aon chabhair uathu] #[+tl I will not get any help from them] (see #[+link("#sec_10_8_2_b", "10.8.2(b)")]).
+      when "10-4-2-b-p"
+        | that the verb #[i abair] is not lenited in any context, e.g., #[i Ní déarfadh aon duine gur theip ort] #[+tl No one would say that you failed].
+      when "10-5-title"
+        | Lenition on the Pronominal
+      when "10-5-1-title"
+        | After the Preposition #[i ó]
+      when "10-5-1-p"
+        | The demonstrative pronominal #[i sin] is lenited after the preposition #[i ó] in the phrase #[i ó shin] (#[i i leith]).
+      when "10-5-1-sample-1"
+        | The weather changed #[b since then].
+      when "10-5-1-sample-2"
+        | It happened quite a while #[b since then].
+      when "10-5-2-title"
+        | After a Preposition
+      when "10-5-2-p"
+        | The interrogative pronominals #[i cá], #[i cad], #[i cé], etc., are not lenited:
+      when "10-5-2-sample-1"
+        | He gave a report on #[b who] was present.
+      when "10-5-2-sample-2"
+        | He did not mention #[b what] was to be done.
+      when "h2-gp-6-8-title"
+        | Eclipsis
+      when "h2-gp-6-8-p"
+        | The eclipsed consonants are: #[i b], #[i c], #[i d], #[i f], #[i g], #[i p] and #[i t]. A vowel is prefixed with #[i n-] where an eclipsis would be applied to a consonant, except in the dative case after the article or the article composed with a preposition, e.g., #[i ar an uisce] #[+tl on the water], #[i faoin ábhar] #[+tl under the matter]; and with #[i i] (see #[+link("#sec_10_6_4", "10.6.4")]). A hyphen is placed between the eclipsing #[i n] and a vowel, e.g., #[i líon na n&#x2011;ospidéal] #[+tl the number of hospitals]; except when the vowel is a proper noun, e.g., #[i meon na nAlbanach] #[+tl the mind of the Scots].
+      when "10-6-title"
+        | Eclipsis on the Noun
+      when "10-6-p"
+        | Eclipsis is applied to the noun in the following contexts.
+      when "10-6-1-title"
+        | After the Article
+      when "10-6-1-p"
+        | Eclipsis is applied to the noun after the article &mdash;
+      when "10-6-1-a-p1"
+        | in the dative singular, masculine and feminine, in certain contexts when a preposition accompanies the article, e.g., #[i ar an gcapall] #[+tl on the horse]; #[i faoin bhfoirgneamh] #[+tl under the building] (see #[+link("./chapter1.html#sec_1_4", "1.4")]):
+      when "10-6-1-a-sample-1"
+        | He received a thank-you message #[b from the bride].
+      when "10-6-1-a-sample-2"
+        | They welcomed #[b the visitor].
+      when "10-6-1-a-p2"
+        | Note that there is always eclipsis in the phrases #[i mar an gcéanna] #[+tl the same way] and #[i um an dtaca] #[+tl in support of].
+      when "10-6-1-b-p"
+        | in the genitive plural, masculine and feminine, e.g., #[i seolta na mbád beag] #[+tl the sails of the small boats]; #[i scoil na gcailíní óga] #[+tl the school of the young girls]:
+      when "10-6-1-b-sample-1"
+        | The #[b music of the birds] was to be heard throughout the forest.
+      when "10-6-1-b-sample-2"
+        | They are #[b decorating the houses] before the arrival of summer.
+      when "10-6-2-title"
+        | After the Possessive Adjectives in the Plural
+      when "10-6-2-p1"
+        | Eclipsis is applied to the noun after the possessive adjectives in the plural, e.g., #[i ár n&#x2011;athair] #[+tl our father]; #[i bhur bpáistí] #[+tl your children]; #[i a ngluaisteáin] #[+tl their cars]:
+      when "10-6-2-sample-1"
+        | I met #[b your friends] at the wedding.
+      when "10-6-2-sample-2"
+        | It is said that #[b their cakes] are the best there are.
+      when "10-6-2-p2"
+        | Note that eclipsis is used after #[i dhá] if there is a possessive adjective in the plural before it, e.g., #[i ár dhá gcapall] #[+tl our two horses]; #[i ár dhá gcúigiú cuid] #[+tl our two fifths]; #[i bhur dhá dteach] #[+tl your two houses]; #[i a dhá mbó] #[+tl their two cows] (see #[+link("./chapter8.html#sec_8_3_3", "8.3.3")]).
+      when "10-6-3-title"
+        | After Certain Numbers
+      when "10-6-3-p1"
+        | Eclipsis is applied to the noun after the cardinal numbers #[i seacht] to #[i deich], e.g., #[i seacht ndícheall] #[+tl seven efforts]; #[i ocht gcinn] #[+tl eight heads]; #[i naoi mbliana] #[+tl nine years]; #[i deich n&#x2011;eachtra] #[+tl ten events] (see #[+link("./chapter9.html#sec_9_3_1_i", "9.3.1(i)")]):
+      when "10-6-3-sample-1"
+        | A new #[b seven-part] documentary series will begin next Monday.
+      when "10-6-3-sample-2"
+        | He saw #[b nine birds] in the sky.
+      when "10-6-3-p2"
+        | No initial mutation is made to the nouns #[i euro] and #[i cent], e.g., #[i seacht euro] #[+tl seven euros]; #[i naoi euro] #[+tl nine euros]; #[i deich cent] #[+tl ten cents].
+      when "10-6-3-p3"
+        | Note:
+      when "10-6-3-a-p"
+        | that the initial mutation that accompanies the final number in a series is applied to the word or words that follow it, e.g., #[i sé nó seacht mbád] #[+tl six or seven boats];
+      when "10-6-3-b-p"
+        | if the Simplified System is used above twenty (see #[+link("./chapter9.html#sec_9_3_10", "9.3.10")] &ndash; #[+link("./chapter9.html#sec_9_3_12", "9.3.12")]), no eclipsis is applied to the noun, e.g., #[i fiche a seacht capall] #[+tl twenty-seven horses]; #[i 49 fuinneog] #[+tl 49 windows].
+      when "10-6-4-title"
+        | After Certain Simple Prepositions
+      when "10-6-4-p1"
+        | Eclipsis is applied to the noun after the following simple prepositions &mdash;
+      when "10-6-4-a-p1"
+        | #[i i], e.g., #[i i mbaile] #[+tl in a town]; #[i i bpáirc] #[+tl in a park]; #[i i mBaile an Fheirtéaraigh] #[+tl in Ballyferriter]:
+      when "10-6-4-a-sample-1"
+        | He was #[b in a spiritual crisis].
+      when "10-6-4-a-sample-2"
+        | It is #[b in Béal Átha an Ghaorthaidh] that Munster College was founded.
+      when "10-6-4-a-p2"
+        | #[i in] is written before words beginning with a vowel, e.g., #[i in eaglais] #[+tl in a church]; #[i in Albain] #[+tl in Scotland]; #[i in Áth Dara] #[+tl in Athy]; #[i in Éirinn] #[+tl in Ireland]; #[i in aon chás] #[+tl in any case]; and in the following contexts:
+      when "10-6-4-a-i-p"
+        | before #[i bhur], #[i dhá] and #[i go leor], e.g., #[i an áit a bhfuil sibh in bhur gcónaí] #[+tl the place of your residence]; #[i in dhá áit] #[+tl in two places]; #[i in go leor cásanna] #[+tl in many cases]:
+      when "10-6-4-a-i-sample-1"
+        | I put it #[b in your] kitchen.
+      when "10-6-4-a-i-sample-2"
+        | The music group is on the shortlist #[b in two] competitions.
+      when "10-6-4-a-ii-p"
+        | before book titles, magazines or films, etc., and before abbreviations of titles of organizations, agreements, schemes, etc., e.g., #[i in] An tOileánach; #[i alt in] Comhar; #[i in AE]; #[i in CAE]; #[i in FSS] (but see #[+link("./chapter3.html#sec_3_2_2_B", "3.2.2B")]):
+      when "10-6-4-a-ii-sample-1"
+        | I read an interesting article #[b in #[i Feasta]] last month.
+      when "10-6-4-a-ii-sample-2"
+        | How many states are there #[b in the USA]?
+      when "10-6-4-a-iii-p"
+        | These are foreign place names that have not been Gaelicized, e.g., #[i in Birmingham]; #[i in Barcelona]; #[i in Köln] (but #[i i Londain], #[i i mBostún]):
+      when "10-6-4-a-iii-sample-1"
+        | She spent a week working #[b in Mumbai].
+      when "10-6-4-a-iii-sample-2"
+        | The plane landed #[b in San Francisco] at six o&rsquo;clock in the morning.
+      when "10-6-4-a-iv-p"
+        | before years when they are written in figures, e.g., #[i in 1998]; #[i in 2017].
+      when "10-6-4-b-p"
+        | #[i ar] in idiomatic expressions, e.g., #[i ar gcúl] #[+tl backwards]; #[i ar ndóigh] #[+tl of course]; and after the preposition #[i go] (when it does not mean #[i go dtí] #[+tl to]), e.g., #[i go bhfios dom] #[+tl how would I know]; #[i go gcuimhin liom] #[+tl as far as I remember]:
+      when "10-6-4-b-sample-1"
+        | We do not have a hand #[b behind our back]. (meaning #[i have a disadvantage])
+      when "10-6-4-b-sample-2"
+        | It was a fight #[b to the finish], without any doubt.
+      when "10-6-5-title"
+        | After #[i cá]
+      when "10-6-5-p"
+        | Eclipsis is applied to the noun in the established phrase #[i cá bhfios].
+      when "10-6-5-sample-1"
+        | #[b How would I know]?
+      when "10-7-title"
+        | Eclipsis on the Adjective
+      when "10-7-p1"
+        | Eclipsis is applied to an adjective that precedes a noun in the same way as the noun is eclipsed (see #[+link("#sec_10_6", "10.6")]). That is to say, the adjective is eclipsed after the article in the dative singular in certain contexts, e.g., #[i ar an gceathrú hurlár] #[+tl on the fourth floor]; in the genitive plural, e.g., #[i i rith na gcúig oíche] #[+tl during the five nights]; after the possessive adjectives in the plural, e.g., #[i ár gcéad mhac] #[+tl our first son]; and after the preposition #[i i], e.g., #[i i ngach leabhar] #[+tl in every book].
+      when "10-7-sample-1"
+        | Where is #[b your third] essay for the project?
+      when "10-7-sample-2"
+        | She told a story about a dog #[b of eight] legs.
+      when "10-7-sample-3"
+        | A meeting was proposed to be held #[b in every] county.
+      when "10-7-p2"
+        | Note that no eclipsis is applied to:
+      when "10-7-a-p"
+        | #[i cibé], #[i pé], nor the possessive adjective #[i do], e.g., #[i i cibé foirm] #[+tl in whatever form]; #[i i pé páipéar] #[+tl in whichever paper]; #[i i do mhála] #[+tl in your bag]:
+      when "10-7-a-sample-1"
+        | The Council will publish the program #[b in whatever] format it deems appropriate.
+      when "10-7-a-sample-2"
+        | It will be kept #[b in whichever] office you want.
+      when "10-7-a-sample-3"
+        | You are mistaken #[b in your] opinion.
+      when "10-7-b-p"
+        | adjective following a noun, e.g., #[i cumann na bhfear óg] #[+tl the association of young men]; #[i seolta na mbád dubh] #[+tl the sails of the black boats].
+      when "10-8-title"
+        | Eclipsis on the Verb
+      when "10-8-p"
+        | Eclipsis is applied to the verb in the following contexts.
+      when "10-8-1-title"
+        | In the Relative Clause
+      when "10-8-1-p"
+        | Eclipsis is applied to the verb in the relative clause after &mdash;
+      when "10-8-1-a-p"
+        | #[i a], indirect relative, and #[i nach], e.g., #[i an bainne nach n&#x2011;óltar] #[+tl the milk that is not drunk]; #[i an bhean a dtagann a páistí ar scoil] #[+tl the woman whose children come to school]; #[i an duine a gcáintear é] #[+tl the person who is fined]; #[i an duine nach gcáintear é] #[+tl the person who is not fined]; #[i an fear nach gcuirtear cúram air] #[+tl the man who is not cared for]:
+      when "10-8-1-a-sample-1"
+        | She is the woman #[b whose children do not come] to school.
+      when "10-8-1-a-sample-2"
+        | That is the man #[b who is given] care in the residential center.
+      when "10-8-1-b-p"
+        | a preposition composed with #[i a], indirect relative (see #[+link("./chapter11.html#sec_11_6_1_c", "11.6.1(c)")]), e.g., #[i an tAcht dá] (from #[i do+a]) #[i dtagraítear] #[+tl the Act to which reference is made]; #[i an Bille lena] (from #[i le+a]) #[i ndéantar leasú] #[+tl the Bill to which amendment is made]:
+      when "10-8-1-b-sample-1"
+        | That is the company #[b from which] I got my textbooks.
+      when "10-8-1-b-sample-2"
+        | That is the name #[b under which] he sells goods online.
+      when "10-8-1-c-p"
+        | #[i a] (meaning #[i an méid a] #[+tl the amount that]) and #[i dá] (from #[i de+a], #[i do+a]), e.g., #[i d&rsquo;ólfadh sé a bhfeicfeadh sé] #[+tl he would drink whatever he saw]; #[i gach aon duine dá dtagann ann] #[+tl every person who comes there]; #[i gach áit dá ndéantar tagairt] #[+tl every place that is referred to]:
+      when "10-8-1-c-sample-1"
+        | They have #[b whatever you would need] in a band.
+      when "10-8-1-c-sample-2"
+        | Everyone #[b who is invited] will be there.
+      when "10-8-2-title"
+        | After Conjunctions and Certain Particles
+      when "10-8-2-p"
+        | Eclipsis is applied to the verb after conjunctions and verbal particles &mdash;
+      when "10-8-2-a-p1"
+        | #[i an], #[i cá], #[i dá] (conditional), #[i go], #[i mura], #[i nach], #[i sula]:
+      when "10-8-2-a-sample-1"
+        | Do you #[b have] a cup of tea?
+      when "10-8-2-a-sample-2"
+        | #[b Where does] this road go?
+      when "10-8-2-a-sample-3"
+        | #[b If he had] the money, he would spend it.
+      when "10-8-2-a-sample-4"
+        | Tell him #[b that he can] leave.
+      when "10-8-2-a-sample-5"
+        | #[b If you do not tell] the story, I will ask someone else!
+      when "10-8-2-a-sample-6"
+        | #[b Does he not drink] milk?
+      when "10-8-2-a-sample-7"
+        | It must be finished #[b before he comes].
+      when "10-8-2-a-p2"
+        | #[b But] the #[i n-] is not placed before a vowel after the particle #[i an], e.g., #[i An ólann tú tae?] #[+tl Do you drink tea?]; #[i An itheann tú feoil?] #[+tl Do you eat meat?]; #[i An athróidh tú é?] #[+tl Will you change it?]:
+      when "10-8-2-a-sample-8"
+        | #[b Does he listen] to music while studying?
+      when "10-8-2-a-sample-9"
+        | #[b Will you open] the office tomorrow morning?
+      when "10-8-2-b-p"
+        | #[i ní], in the dependent form of the verb #[i faigh] in the past tense, future tense and conditional mood, e.g., #[i ní bhfuair mé] (#[i tú], etc.) #[+tl I did not get]; #[i ní bhfaighidh mé] (#[i tú], etc.) #[+tl I will not get]; #[i ní bhfaighinn] (#[i bhfaighfeá], etc.) #[+tl I would not get]:
+      when "10-8-2-b-sample-1"
+        | I #[b did not get] any coffee this morning.
+      when "10-8-2-b-sample-2"
+        | If you do not ask for it, you #[b will not get] it.
+      when "10-8-2-b-sample-3"
+        | You #[b would not get] it in that supermarket.
+      when "h2-gp-9-10-title"
+        | #[i t] before a Vowel or before #[i s]
+      when "h2-gp-9-10-p"
+        | A hyphen is placed between the initial letter #[i t] and a vowel, e.g., #[i an t&#x2011;ospidéal] #[+tl the hospital]; except when the vowel is a proper noun initial, e.g., #[i an tAlbanach] #[+tl the Scot]. A hyphen is never placed between the initial letter #[i t] and #[i s], e.g., #[i an tsatailít] #[+tl the satellite]; #[i an tSeapáin] #[+tl Japan].
+      when "10-9-title"
+        | #[i t] before a Vowel after the Article
+      when "10-9-1-p"
+        | #[i t-] is placed before a vowel after the article &mdash;
+      when "10-9-1-a-p1"
+        | in the nominative singular, before a masculine noun if it begins with a vowel, e.g., #[i an t&#x2011;asal] #[+tl the donkey]; #[i an t&#x2011;eitleán] #[+tl the airplane]:
+      when "10-9-1-a-sample-1"
+        | Where did you get #[b the money]?
+      when "10-9-1-a-sample-2"
+        | They were afraid that #[b the ecosystem] would be destroyed.
+      when "10-9-1-a-p2"
+        | Note that #[i t-] is not placed before #[i euro], #[i iomad], or #[i oiread], e.g., #[i an euro] #[+tl the euro]; #[i an iomad] #[+tl the many]; #[i an oiread] #[+tl the amount].
+      when "10-9-1-b-p"
+        | in the nominative singular, before #[i aon], #[i aonú], #[i ochtó], #[i ochtódú], #[i ochtú], e.g., #[i an t&#x2011;aon bhean déag] #[+tl the eleven women]; #[i an t&#x2011;aonú háit déag] #[+tl the eleventh place]; #[i an t&#x2011;ochtó bliain] #[+tl the eightieth year]; #[i an t&#x2011;ochtódú huair] #[+tl the eightieth time]:
+      when "10-9-1-b-sample-1"
+        | You are #[b the only] person I spoke to about the matter.
+      when "10-9-1-b-sample-2"
+        | It was #[b the eighth] game she had this year.
+      when "10-10-title"
+        | #[i t] before #[i s] after the Article
+      when "10-10-1-p"
+        | #[i t] is placed before #[i s] after the article if a vowel or #[i l], #[i n] or #[i r] is the initial letter in certain contexts after the article according to #[+link("./chapter1.html", "Chapter 1")], e.g., #[i an tslat] #[+tl the stick]; #[i an tsnaidhm] #[+tl the knot]; #[i an tsreang] #[+tl the string]; #[i ar an tsráid] #[+tl on the street]; #[i faoin tsinsearacht] #[+tl under the ancestry]; #[i deireadh an tséasúir] #[+tl the end of the season]; #[i eochair an tsiopadóra] #[+tl the shopkeeper&rsquo;s key]; #[i cótaí an tseachtair] #[+tl the coats of the seven].
+      when "10-10-1-sample-1"
+        | Don&rsquo;t #[b take the nose from me]! (Meaning: Don&rsquo;t bite my nose off!)
+      when "10-10-1-sample-2"
+        | Did you see the tail #[b of the squirrel]?
+      when "10-10-2-p"
+        | #[i t] is not placed before #[i s] &mdash;
+      when "10-10-2-a-p"
+        | in numbers, e.g., #[i deireadh an seachtú lá] #[+tl the end of the seventh day]; #[i agallamh an seascadú duine] #[+tl the interview of the seventh person], except in personal numbers in the genitive, e.g., #[i ainmneacha an tseisir] #[+tl the names of the six]; #[i torthaí an tseisear scoláirí] #[+tl the results of the six students]:
+      when "10-10-2-a-sample-1"
+        | What did you get along with #[b the sixty] euros?
+      when "10-10-2-a-sample-2"
+        | He spoke about the crisis of #[b ]the six#[b ]teenth century.
+      when "10-10-2-b-p"
+        | after #[i aon] and the ordinal #[i céad], e.g., #[i aon salann] #[+tl any salt]; #[i aon seanmóir] #[+tl any sermon]; #[i an chéad sagart] #[+tl the first priest]:
+      when "10-10-2-b-sample-1"
+        | Is there #[b any fat] in that food?
+      when "10-10-2-b-sample-2"
+        | This is the #[b first holiday] we will have together.
+      when "h2-gp-11-14-title"
+        | #[i h] before a Vowel
+      when "h2-gp-11-14-p"
+        | A hyphen is not placed between the initial letter #[i h] and a vowel, e.g., #[i le háthas] #[+tl with joy]; #[i go hÉirinn] #[+tl to Ireland]; #[i na húlla] #[+tl the apples]. #[i h] is placed before a vowel in the following contexts.
+      when "10-11-title"
+        | #[i h] Before a Vowel &mdash; The Noun
+      when "10-11-1-title"
+        | After the Article #[i na]
+      when "10-11-1-p"
+        | #[i h] is placed before a noun beginning with a vowel after the article #[i na] &mdash;
+      when "10-11-1-a-p"
+        | in the genitive singular feminine, e.g., #[i ainm na háite] #[+tl the name of the place]; #[i lár na heitilte] #[+tl the center of the flight]:
+      when "10-11-1-a-sample-1"
+        | A new book about the history of #[b the Presidency] was published.
+      when "10-11-1-a-sample-2"
+        | There was widespread acceptance of that opinion about the end of #[b this age] last past.
+      when "10-11-1-b-p"
+        | in the nominative plural and the dative plural, e.g., #[i na hainmneacha] #[+tl the names]; #[i sna hionaid sin] #[+tl in those places]:
+      when "10-11-1-b-sample-1"
+        | He knows all #[b the numbers].
+      when "10-11-1-b-sample-2"
+        | Double-click on #[b the images] to enlarge them.
+      when "10-11-2-title"
+        | After Certain Numbers
+      when "10-11-2-a-p"
+        | #[i h] is placed before a noun beginning with a vowel after the ordinal numbers, e.g., #[i an dara] (#[i tríú], etc.) #[i heochair] #[+tl the second_ (#[i third], etc.) #[i key]; except _céad], e.g., #[i sa chéad áit] #[+tl in the first place]; #[i an chéad obráid] #[+tl the first work].
+      when "10-11-2-a-sample-1"
+        | Please read #[b the fourth article] before class tomorrow.
+      when "10-11-2-a-sample-2"
+        | #[b The eighth edition] of the magazine is now available.
+      when "10-11-2-b-p1"
+        | #[i h] is placed before hour after #[i trí], #[i ceithre], #[i cúig], #[i sé], e.g.,
+        |  #[i trí] (#[i ceithre], #[i cúig], #[i sé]) #[i huaire]
+        |  (#[b EN]: #[i three] (#[i four], #[i five], #[i six]) #[i hours]) (see #[+link("./chapter9.html#sec_9_3_2_c", "9.3.2(c)")]).
+      when "10-11-2-b-sample-1"
+        | She failed #[b three times] in a row.
+      when "10-11-2-b-sample-2"
+        | He has done it #[b six times] now.
+      when "10-11-2-b-p2"
+        | Note that the specific plural form of the noun #[i uair] is not used when referring to a unit of 60 minutes, e.g., #[i Thóg sé trí uair an chloig orm an obair a chríochnú] #[+tl It took him three hours to finish the work].
+      when "10-11-3-title"
+        | After the Prepositions #[i le] and #[i go]
+      when "10-11-3-p"
+        | #[i h] is placed before a noun beginning with a vowel after the prepositions #[i le] and #[i go] (meaning #[i go dtí] #[+tl to]), e.g., #[i ó mhaidin go hoíche] #[+tl from morning to night]; #[i le hintinn mhaith] #[+tl with good intention]; #[i le hÁine] #[+tl with Áine]; #[i go hAlasca] #[+tl to Alaska].
+      when "10-11-3-sample-1"
+        | It was on the boat that she went #[b to Aran].
+      when "10-11-3-sample-2"
+        | They went on strike in part #[b with other workers].
+      when "10-11-4-title"
+        | After the Interrogative Pronominal
+      when "10-11-4-p"
+        | #[i h] is placed before a noun beginning with a vowel after the interrogative pronominal #[i cá], e.g., #[i cá hiontas?] #[+tl what surprise?]; #[i cá háit?] #[+tl what place?].
+      when "10-11-4-sample-1"
+        | #[b What age] is she now?
+      when "10-11-4-sample-2"
+        | #[b What time] will the play be starting?
+      when "10-11-5-title"
+        | In Surnames
+      when "10-11-5-p"
+        | #[i h] is placed before a noun beginning with a vowel after #[i Ó] in surnames, e.g., #[i Seán Ó hÓgáin]; #[i do Chathal Ó hAodha].
+      when "10-11-5-sample-1"
+        | Máirtín #[b Ó hÉalaí] is his name.
+      when "10-11-5-sample-2"
+        | Séamas #[b Ó hUiginn] said he was satisfied with the process.
+      when "10-11-6-title"
+        | After #[i Dé]
+      when "10-11-6-p"
+        | #[i h] is placed before a vowel after #[i Dé] in #[i Dé hAoine].
+      when "10-11-6-sample-1"
+        | She promised she would be there #[b on Friday].
+      when "10-11-6-sample-2"
+        | It was #[b on Friday night] that it happened.
+      when "10-11-7-title"
+        | After the Possessive Adjective #[i a]
+      when "10-11-7-p"
+        | #[i h] is placed before a noun beginning with a vowel after the possessive adjective #[i a], third person singular feminine, e.g., #[i a hathair].
+      when "10-11-7-sample-1"
+        | Did she introduce you to #[b her father] yet?
+      when "10-11-7-sample-2"
+        | She wrote a beautiful book #[b about her journey] around Europe.
+      when "10-11-8-title"
+        | After #[i ní]
+      when "10-11-8-p1"
+        | #[i h] is placed before a vowel after #[i ní] (the negative form, present tense of the copula (see #[+link("./chapter7.html#sec_7_2_5", "7.2.5")])):
+      when "10-11-8-a-p"
+        | on the nouns #[i áibhéil] #[+tl exaggeration], #[i ionadh] #[+tl wonder], #[i iontas] #[+tl surprise] and #[i ualach] #[+tl burden]:
+      when "10-11-8-a-sample-1"
+        | That is #[b no surprise] at all.
+      when "10-11-8-a-sample-2"
+        | Learning is #[b not a burden] for a person.
+      when "10-11-8-b-p"
+        | on the noun in the copular prepositional phrases #[i acmhainn do] #[+tl ability to]; #[i áil le] #[+tl desire to]; #[i aitheanta do] #[+tl known to]; #[i aithnid do] #[+tl recognized by]; #[i éadáil le] #[+tl profit with]; #[i ealaín do] #[+tl art of]; #[i éigean do] #[+tl necessity for]; and #[i eol do] #[+tl knowledge of]:
+      when "10-11-8-b-sample-1"
+        | You #[b do not know] me.
+      when "10-11-8-b-sample-2"
+        | Breaking the law is #[b not an art] for law makers. (Meaning #[i it is not fit to do so])
+      when "10-11-8-c-p"
+        | on the noun in the odd proverb:
+      when "10-11-8-c-sample-1"
+        | #[b No knowledge] until cohabitation. (Meaning #[i You must live with a person to know a person].
+        | #[br]Credit to #[i: +link("https://daltai.com/ni-heolas-go-haontios/", "Daltaí na Gaeilge")] for this translation.)
+      when "10-11-8-c-sample-2"
+        | (Same as above. This one appears in FGB.)
+      when "10-11-8-p2"
+        | Note that #[i h] is not placed before a noun after #[i ní] outside of the above-mentioned contexts, e.g., #[i Ní amadán é] #[+tl He is not a fool]; #[i Ní Eoin is ainm dom] #[+tl My name is not Eoin]; #[i Ní eolas oideachas] #[+tl Knowledge is not education].
+      when "10-12-title"
+        | #[i h] before a Vowel &mdash; The Adjective and the Adverb
+      when "10-12-1-title"
+        | After #[i chomh], #[i go], #[i le]
+      when "10-12-1-p"
+        | #[i h] is placed before an adjective or adverb beginning with a vowel after #[i chomh], #[i go] and #[i le], e.g., #[i chomh hard le haon chapall] #[+tl as tall as any horse]; #[i Tá sé go hálainn] #[+tl It is beautiful].
+      when "10-12-1-sample-1"
+        | The redwood tree was #[b as tall] as a thirty-story building.
+      when "10-12-1-sample-2"
+        | He is only here #[b rarely].
+      when "10-12-1-sample-3"
+        | Not #[b any] applications will be accepted after 5 p.m. on Friday.
+      when "10-12-2-title"
+        | After #[i ní]
+      when "10-12-2-p"
+        | #[i h] is placed before a vowel after #[i ní] (the negative form, present tense of the copula (see #[+link("./chapter7.html", "Chapter 7")])):
+      when "10-12-2-a-p"
+        | on the adjectives #[i amháin], #[i aon], #[i ionann] and #[i iondúil], and on the adverbs #[i amhlaidh] and #[i annamh]:
+      when "10-12-2-a-sample-1"
+        | #[b Not only] are those sweaters cheap but they are also the best.
+      when "10-12-2-a-sample-2"
+        | The two things are #[b not the same] at all.
+      when "10-12-2-a-sample-3"
+        | It is #[b not so] that she was not told.
+      when "10-12-2-b-p"
+        | on the adjective in the copular prepositional phrases #[i eagal do]/#[i le] #[+tl afraid of] and #[i oircheas do]#[+tl right for]:
+      when "10-12-2-b-sample-1"
+        | You are #[b not afraid] of the dog.
+      when "10-12-2-b-sample-2"
+        | It is not #[b right for you] to speak to him.
+      when "10-12-3-title"
+        | After #[i a] and #[i na]
+      when "10-12-3-p"
+        | #[i h] is placed before a vowel after #[i a] and #[i na] in numbers, e.g., #[i ceacht a haon] #[+tl lesson one]; #[i na hocht gcinn] #[+tl the eight].
+      when "10-12-3-sample-1"
+        | She got bus #[b number eleven].
+      when "10-12-3-sample-2"
+        | Where did you buy #[b those eight] red apples?
+      when "10-13-title"
+        | #[i h] before a Vowel &mdash; The Pronominal
+      when "10-13-1-title"
+        | After #[i cé] and #[i ní]
+      when "10-13-1-p"
+        | #[i h] is placed before a vowel after #[i cé] and #[i ní] on the personal pronominals #[i é], #[i í], #[i ea] and #[i iad], e.g., #[i ní hé] #[+tl he is not]; #[i ní hí] #[+tl she is not]; #[i ní hea] #[+tl it is not]; #[i ní hiad] #[+tl they are not]; #[i cé hé?] #[+tl who is he?]; #[i cé hí?] #[+tl who is she?]; #[i cé hiad?] #[+tl who are they?].
+      when "10-13-1-sample-1"
+        | #[b It is not] a rainy day for the children.
+      when "10-13-1-sample-2"
+        | #[b Who are they] themselves?
+      when "10-13-2-title"
+        | After #[i ní]
+      when "10-13-2-p"
+        | #[i h] is placed before a vowel after #[i ní] on the demonstrative pronominals #[i éard], #[i eo], #[i in] and #[i iúd], e.g., #[i ní héard] #[+tl it is not that]; #[i ní heo] #[+tl this is not]; #[i ní hin] #[+tl that is not]; #[i ní hiúd] #[+tl those are not].
+      when "10-13-2-sample-1"
+        | #[b This] is not the thing to be done.
+      when "10-13-2-sample-2"
+        | #[b That] is not it.
+      when "10-13-3-title"
+        | After #[i le]
+      when "10-13-3-p"
+        | #[i h] is placed before a vowel after #[i le] on the personal pronominals #[i é], #[i í] and #[i iad], e.g., #[i le hé] #[+tl with him]; #[i le hí] #[+tl with her]; #[i le hiad] #[+tl with them].
+      when "10-13-3-sample-1"
+        | He went there #[b with her] to marry.
+      when "10-13-3-sample-2"
+        | He made a rule #[b with them] to control.
+      when "10-14-title"
+        | #[i h] before a Vowel &mdash; The Verb
+      when "10-14-1-title"
+        | After #[i ná]
+      when "10-14-1-p"
+        | #[i h] is placed before a vowel after #[i ná] in the imperative mood, e.g., #[i ná himigh] #[+tl do not go].
+      when "10-14-1-sample-1"
+        | #[b Do not say] anything to him about the party.
+      when "10-14-1-sample-2"
+        | #[b Do not open] the door unless you know who is there.
+      when "10-14-1-sample-3"
+        | #[b Do not drink] in the Library.
+      when "h2-gp-15-title"
+        | #[i d&rsquo;] Before a Vowel or Before #[i fh]
+      when "10-15-title"
+        | #[i d&rsquo;] before a Vowel or before #[i fh] &mdash; The Verb
+      when "10-15-p"
+        | #[i d&rsquo;] is placed before a vowel or #[i fh&#x2011;] in place of lenition on a consonant in the past tense and the habitual past tense, the indicative mood, and the conditional mood, e.g., #[i d&rsquo;fhágamar] #[+tl we left]; #[i d&rsquo;fhanadh sibh] #[+tl you would stay]; #[i d&rsquo;fhreagróinn] #[+tl I would answer]; #[i d&rsquo;imeoinn] #[+tl I would go in]; #[i d&rsquo;ithinn] #[+tl I used to eat]; #[i d&rsquo;ól sé] #[+tl he drank]; #[i an té a d&rsquo;imigh] #[+tl the one who left]; #[i d&rsquo;aithneofaí í] #[+tl she would be recognized]; #[i má d&rsquo;fhág sé] #[+tl if he left]; #[i má d&rsquo;fheiceadh sé] #[+tl if he saw]; #[i má d&rsquo;imríomar] #[+tl if we played].
+      when "10-15-sample-1"
+        | Is that the question that he #[b answered]?
+      when "10-15-sample-2"
+        | They would go home immediately when they #[b left] the place.
+      when "10-15-sample-3"
+        | I was not sure about the amount that he #[b would eat].
+      when "10-16-title"
+        | Summary of the Initial Mutations
+      when "10-16-p1"
+        | As a reference aid, a summary is given here of the contexts in which lenition is applied to nouns, adjectives, verbs and pronominals. A full explanation of the rule is available at the cross-references in the left-hand column.
+      when "Table10A-caption"
+        | Summary of Lenition
+      when "Table10A-header"
+        | Lenition
+      when "Table10A-noun-header"
+        | Lenition is applied to the noun in the following contexts:
+      when "Examples"
+        | Examples
+      when "Table10A-noun-rule-1"
+        | After the articles #[i an] in the nominative singular feminine, the genitive singular masculine, and, in some contexts, the dative singular, masculine and feminine (#[+link("#sec_10_2_1", "10.2.1")])
+      when "Table10A-noun-rule-2"
+        | After the possessive particle, singular or plural, masculine or feminine (#[+link("#sec_10_2_2", "10.2.2")])
+      when "Table10A-noun-rule-3"
+        | After the possessive adjectives #[i mo], #[i do] and #[i a] (masc. singular); after the distributive adjective #[i uile]; and after the indefinite adjective #[i aon] (#[+link("#sec_10_2_3", "10.2.3")])
+      when "Table10A-noun-rule-4"
+        | After the numbers #[i aon], #[i céad]; #[i dhá]; and #[i trí], #[i ceithre], #[i cúig], #[i sé] (#[+link("#sec_10_2_4", "10.2.4")])
+      when "Table10A-noun-rule-5"
+        | After the prepositions #[i de], #[i do], #[i faoi], #[i ionsar], #[i mar], #[i ó], #[i roimh], #[i trí]; #[i um] unless the noun begins with #[i b], #[i m], #[i p]; and #[i ar], #[i gan], #[i idir], #[i thar] in certain contexts (#[+link("#sec_10_2_5", "10.2.5")])
+      when "Table10A-noun-rule-6"
+        | After a compound preposition if the noun is a definite noun (#[+link("#sec_10_2_6", "10.2.6")])
+      when "Table10A-noun-rule-7"
+        | After a feminine noun except in the contexts mentioned in #[+link("#sec_10_2_7_a", "10.2.7(a)")]&ndash;#[+link("#sec_10_2_7_m", "(m)")] (#[+link("#sec_10_2_7", "10.2.7")])
+      when "Table10A-noun-rule-8"
+        | After a noun in the plural ending in a slender consonant in all contexts not mentioned in #[+link("#sec_10_2_8_a", "10.2.8(a)")]&ndash;#[+link("#sec_10_2_8_f", "(f)")] (#[+link("#sec_10_2_8", "10.2.8")])
+      when "Table10A-noun-rule-9"
+        | After a noun that is in the singular or plural, masculine or feminine, if it is a definite noun in the genitive (#[+link("#sec_10_2_10", "10.2.10")])
+      when "Table10A-noun-rule-10"
+        | In surnames after #[i Mhic], #[i Mhig], #[i Ní], #[i Nic], #[i Nig], #[i Uí], and after #[i Mac] (#[i Mag]) in certain contexts (#[+link("#sec_10_2_11", "10.2.11")])
+      when "Table10A-noun-rule-11"
+        | If it is the second word in a compound (#[+link("#sec_10_2_12", "10.2.12")])
+      when "Table10A-noun-rule-12"
+        | After the copula in the indicative mood, past tense and habitual past tense, and in the conditional mood (#[+link("#sec_10_2_13", "10.2.13")])
+      when "Table10A-adjective-header"
+        | Lenition is applied to the adjective in the following contexts:
+      when "Table10A-adjective-rule-1"
+        | After a noun that is in the nominative, dative or vocative singular feminine; in the genitive or vocative singular masculine; in the nominative or dative plural if the noun ends in a slender consonant (or in the dative singular masculine if the Lenition System is in use) or after a noun in the singular if #[i dhá] or a number from #[i trí] to #[i deich] precedes it (#[+link("#sec_10_3_1", "10.3.1")])
+      when "Table10A-adjective-rule-2"
+        | In the same way as a noun is lenited after a simple preposition, after a simple preposition and the articles, after a possessive adjective, and in the masculine genitive case (#[+link("#sec_10_3_2", "10.3.2")])
+      when "ThirdPersonMasc"
+        | third person masc.
+      when "Table10A-adjective-rule-3"
+        | On the adjectives #[i dhá] and #[i dháréag] (#[+link("#sec_10_3_3", "10.3.3")])
+      when "Table10A-adjective-rule-4"
+        | On #[i déag] after #[i dó] and a singular noun ending in a vowel; and on #[i fichead] after a plural noun ending in a slender consonant (#[+link("#sec_10_3_4", "10.3.4")])
+      when "Table10A-adjective-rule-5"
+        | If it is the second word in a compound (#[+link("#sec_10_3_5", "10.3.5")])
+      when "Table10A-adjective-rule-6"
+        | After the copula in the indicative mood, past tense and habitual past tense, and in the conditional mood (#[+link("#sec_10_3_6", "10.3.6")])
+      when "Table10A-verb-header"
+        | Lenition is applied to the verb in the following contexts:
+      when "Table10A-verb-rule-1"
+        | On the independent verb in the indicative mood, past tense and habitual past tense, and in the conditional mood; after #[i a], direct relative; after the conjunctions #[i má] and #[i ó]; and in the affirmative clause that is a noun of the copula (#[+link("#sec_10_4_1", "10.4.1")])
+      when "Table10A-verb-rule-2"
+        | On the dependent verb after the conjunctions and verbal particles: #[i ar], #[i cár], #[i dár], #[i gur], #[i murar], #[i nár], #[i ní], #[i níor], #[i sular] (#[+link("#sec_10_4_2", "10.4.2")])
+      when "Table10A-pronominal-header"
+        | Lenition is applied to the demonstrative pronominal in the following contexts
+      when "Table10A-pronominal-rule-1"
+        | On #[i sin] after #[i ó] in the phrase #[i ó shin] (#[+link("#sec_10_5_1", "10.5.1")])
+      when "10-16-p2"
+        | As a reference aid, a summary is given here of the contexts in which eclipsis is applied to nouns, adjectives, and verbs.
+      when "ThirdPersonPl"
+        | third person pl.
+      when "Table10B-caption"
+        | Summary of Eclipsis
+      when "Table10B-header"
+        | Eclipsis
+      when "Table10B-noun-header"
+        | Eclipsis is applied to the noun in the following contexts:
+      when "Table10B-noun-rule-1"
+        | After the articles #[i an] in the dative singular, masculine and feminine, in some contexts; in the phrases #[i mar an gcéanna] and #[i um an dtaca] and in the masculine and feminine genitive plural (#[+link("#sec_10_6_1", "10.6.1")])
+      when "Table10B-noun-rule-2"
+        | After #[i ár], #[i bhur], #[i a] (third person plural) and after #[i dhá] if it follows #[i ár], #[i bhur], #[i a] (third person plural) (#[+link("#sec_10_6_2", "10.6.2")])
+      when "Table10B-noun-rule-3"
+        | After #[i seacht], #[i ocht], #[i naoi], #[i deich] (#[+link("#sec_10_6_3", "10.6.3")])
+      when "Table10B-noun-rule-4"
+        | After #[i i]; after #[i ar] in some phrases; and after #[i go] in certain situations (#[+link("#sec_10_6_4", "10.6.4")])
+      when "Table10B-noun-rule-5"
+        | After #[i cá] in the established phrase #[i cá bhfios] (#[+link("#sec_10_6_5", "10.6.5")])
+      when "Table10B-adjective-header"
+        | Eclipsis is applied to the adjective in the following contexts:
+      when "Table10B-adjective-rule-1"
+        | In the same way as a noun is eclipsed after a simple preposition, after a simple preposition and the articles, after a possessive adjective and in the genitive plural (#[+link("#sec_10_7", "10.7")])
+      when "Table10B-verb-header"
+        | Eclipsis is applied to the verb in the following contexts:
+      when "Table10B-verb-rule-1"
+        | In the relative clause after #[i a], indirect relative, and #[i nach], after a preposition that is composed with #[i a], indirect relative, and after #[i a] (meaning #[i the amount that]) and #[i dá] (from #[i de+a], #[i do+a]) (#[+link("#sec_10_8_1", "10.8.1")])
+      when "Table10B-verb-rule-2"
+        | On the dependent verb after the conjunctions and verbal particles: #[i an], #[i cá], #[i dá] (conditional), #[i go], #[i mura], #[i nach], #[i sula], and after #[i ní] for the dependent form of the verb #[i faigh] in the past tense, future tense and conditional mood (#[+link("#sec_10_8_2", "10.8.2")])
+      when "10-16-p3"
+        | As a reference aid, a summary is given here of the contexts in which #[i t] is placed before a vowel at the beginning of a noun and an adjective.
+      when "Table10C-caption"
+        | Summary of #[i t] before a Vowel
+      when "Table10C-header"
+        | #[i t] Before a Vowel
+      when "Table10C-Noun-Adjective-Header"
+        | #[i t] is placed before a vowel at the beginning of nouns and at the beginning of adjectives in the following contexts:
+      when "Table10C-rule-1"
+        | After the afticle #[i an] before a masculine noun in the nominative singular and before #[i aon], #[i aonú], #[i ochtú], #[i ochtódú], #[i ochtú] (#[+link("#sec_10_9_1", "10.9.1")])
+      when "10-16-p4"
+        | As a reference aid, a summary is given here of the contexts in which #[i t] is placed before #[i s] at the beginning of a noun.
+      when "Table10D-caption"
+        | Summary of #[i t] before #[i s]
+      when "Table10D-header"
+        | #[i t] Before #[i s]
+      when "Table10D-noun-header"
+        | #[i t] is placed before #[i s] at the beginning of a noun in the following contexts:
+      when "Table10D-rule-1"
+        | After the article #[i an] when a feminine singular noun (and masculine singular noun in the Lenition System) is in the nominative or dative and starts with #[i s] + #[i vowel] or #[i sl-], #[i sn-], #[i sr-]; and when a masculine singular noun in the genitive starts with #[i s] + #[i vowel] or #[i sl-], #[i sn-], #[i sr-] (#[+link("#sec_10_10_1", "10.10.1")])
+      when "10-16-p5"
+        | As a reference aid, a summary is given here of the contexts in which #[i h] is put before a vowel at the start of a noun, adjective, adverb, pronominal or verb.
+      when "Table10E-caption"
+        | Summary of #[i h] before a Vowel
+      when "Table10E-header"
+        | #[i h] Before a Vowel
+      when "Table10E-noun-header"
+        | #[i h] is placed before a vowel at the start of a noun in the following contexts:
+      when "Table10E-rule-1"
+        | After the article #[i na] in the genitive feminine singular and in the nominative plural and in the dative plural (#[+link("#sec_10_11_1", "10.11.1")]) 
+      when "Table10E-rule-2"
+        | After the ordinal numbers (except #[i céad]) (#[+link("#sec_10_11_2_a", "10.11.2(a)")]) 
+      when "Table10E-rule-3"
+        | After the cardinal numbers #[i trí], #[i ceithre], #[i cúig], #[i sé] for #[i uaire] (#[+link("#sec_10_11_2_b", "10.11.2(b)")]) 
+      when "Table10E-rule-4"
+        | After #[i le] and #[i go] (when #[i go] means #[i go dtí]) (#[+link("#sec_10_11_3", "10.11.3")])
+      when "Table10E-rule-5"
+        | After the interrogative pronominal #[i cá] (#[+link("#sec_10_11_4", "10.11.4")]) 
+      when "Table10E-rule-6"
+        | After #[i Ó] in surnames (#[+link("#sec_10_11_5", "10.11.5")])
+      when "Table10E-rule-7"
+        | After #[i Dé] in #[i Dé hAoine] (#[+link("#sec_10_11_6", "10.11.6")]) 
+      when "Table10E-rule-8"
+        | After the Possessive Adjective #[i a], third person femininte singular (#[+link("#sec_10_11_7", "10.11.7")])
+      when "Table10E-rule-9"
+        | After #[i ní] (negative, present tense form of the copula) on the nouns #[i áibhéil], #[i áil], #[i éigean], #[i eol], #[i ionadh], #[i iontas], #[i ualach], int the copular prepositional phrases #[i acmhainn do], #[i aitheanta do], #[i aithnid do], #[i éadáil le], #[i ealaín do], #[i éigean do], #[i eol do], #[i áil le] and in the odd proverb (#[+link("#sec_10_11_8", "10.11.8")])
+      when "Table10E-adjective-header"
+        | #[i h] is placed before a vowel at the start of an adverb in the following contexts: 
+      when "Table10E-adjective-rule-1"
+        | After #[i chomh], #[i go], #[i le] (#[+link("#sec_10_12_1", "10.12.1")]) 
+      when "Table10E-adjective-rule-2"
+        | After #[i ní] (negative, present tense form of the copula) on the adjectives #[i amháin], #[i aon], #[i ionann] and #[i iondúil], in the copular prepositional phrases #[i eagal do]/#[i le], #[i oircheas do], and on the adverbs #[i amhlaidh] and #[i annamh] (#[+link("#sec_10_12_2", "10.12.2")])
+      when "Table10E-adjective-rule-3"
+        | After #[i a], #[i na] in the numbers (#[+link("#sec_10_12_3", "10.12.3")]) 
+      when "Table10E-pronominal-header"
+        | #[i h] is placed before a vowel at the start of a pronominal in the following contexts: 
+      when "Table10E-pronominal-rule-1"
+        | After #[i cé], #[i ní] on the personal pronominals #[i é], #[i ea], #[i í], #[i iad] (#[+link("#sec_10_13_1", "10.13.1")])
+      when "Table10E-pronominal-rule-2"
+        | After #[i ní] on the demonstrative pronominals #[i éard], #[i eo], #[i in], #[i iúd] (#[+link("#sec_10_13_2", "10.13.2")])
+      when "Table10E-pronominal-rule-3"
+        | After #[i le] on the personal pronominals #[i é], #[i í], #[i iad] (#[+link("#sec_10_13_3", "10.13.3")]) 
+      when "Table10E-verb-header"
+        | #[i h] is placed before a vowel at the start of a verb in the following contexts: 
+      when "Table10E-verb-rule-1"
+        | After #[i ná] in the imperative mood (#[+link("#sec_10_14_1", "10.14.1")])
+      when "10-16-p6"
+        | As a reference aid, a summary is given here of the contexts in which #[i d&rsquo;] is placed before a vowel or #[i fh&#x2011;] at the start of a verb.
+      when "Table10F-caption"
+        | Summary of #[i d&rsquo;] before a Vowel or #[i fh]
+      when "Table10F-header"
+        | #[i d&rsquo;] before a Vowel or #[i fh]
+      when "Table10F-verb-header"
+        | #[i d&rsquo;] is placed before a vowel or #[i fh&#x2011;] at the start of a verb in the following contexts:
+      when "Table10F-verb-rule-1"
+        | In the past tense, in the past habitual tense and in the conditional mood in the place where there would be a lenition of a consonant (#[+link("#sec_10_15", "10.15")])
+      default
+        - throw new Error(`No content for ${key} (en.pug)`)
