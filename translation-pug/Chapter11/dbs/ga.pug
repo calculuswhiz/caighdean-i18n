@@ -1,0 +1,734 @@
+include ../../tlMatter.pug
+
+mixin gaDb(key)
+  case key
+    when "teidealNaCaibidle"
+      | An Clásal Coibhneasta
+    when "11-title"
+      | #[+renderKey("Caibidil", { getFromCommon: true })] 11 | #[+gaDb("teidealNaCaibidle")]
+    when "11-1-title"
+      | Ginearálta
+    when "11-1-1-p"
+      | Úsáidtear cónasc ar a dtugtar #[i an mhír choibhneasta] (deimhneach: #[i a], #[i ar]; diúltach: #[i nach], #[i nár]) chun príomhchlásal agus fochlásal coibhneasta a nascadh le chéile.
+    when "11-1-2-p"
+      | Is roimh an mbriathar san fhochlásal a chuirtear an mhír choibhneasta. Más í an chopail atá san fhochlásal, ní úsáidtear mír choibhneasta chun an príomhchlásal agus an fochlásal a nascadh le chéile ach bíonn foirm ar leith ar an gcopail féin (féach #[+link("#sec_11_8", "11.8")]).
+    when "11-1-3-p"
+      | Déantar idirdhealú idir #[i clásal coibhneasta díreach] agus #[i clásal coibhneasta indíreach] (féach #[+link("#sec_11_2", "11.2")] agus #[+link("#sec_11_3", "11.3")]).
+    when "11-1-4-p"
+      | Tugtar #[i réamhtheachtaí] ar an bhfocal nó ar an bhfrása sa phríomhchlásal a thagann go díreach roimh an mír choibhneasta.
+    when "11-1-4-sample-1"
+      | Cá bhfuil #[b an madra] a fuair sí?
+    when "11-1-4-sample-2"
+      | Eagraíodh cóisir #[b dóibh siúd] a chríochnaigh inniu.
+    when "11-1-5-p"
+      | Is #[i iartheachtaí] a thugtar ar fhorainmneach (lena n&#x2011;áirítear aidiacht shealbhach) lena dtagraítear siar don réamhtheachtaí i gclásail choibhneasta indíreacha.
+    when "11-1-5-sample-1"
+      | Tabhair sin don bhuachaill a bhfuil slaghdán #[b air].
+    when "11-1-5-sample-2"
+      | Nach ise an bhean a mbíodh teach ósta #[b aici]?
+    when "11-2-title"
+      | An Clásal Coibhneasta Díreach
+    when "11-2-1-p"
+      | Clásal coibhneasta díreach a bhíonn i gceist sna cásanna seo a leanas. Ní bhíonn iartheachtaí i gclásal coibhneasta díreach &mdash;
+    when "11-2-1-a-p"
+      | más é an réamhtheachtaí ainmní an bhriathair sa chlásal coibhneasta:
+    when "11-2-1-a-sample-1a"
+      | Phóg an bhean sin Gearóid.
+    when "11-2-1-a-sample-1b"
+      | Sin í an bhean #[b a phóg] Gearóid.
+    when "11-2-1-a-sample-2a"
+      | Bhuail carr úrnua an leoraí.
+    when "11-2-1-a-sample-2b"
+      | Ba charr úrnua an carr #[b a bhuail] an leoraí.
+    when "11-2-1-a-sample-3a"
+      | Socróidh an fear sin an cluiche.
+    when "11-2-1-a-sample-3b"
+      | Sin é an fear #[b a shocróidh] an cluiche.
+    when "11-2-1-a-sample-4a"
+      | Bíonn an bhean sin ar an teilifís.
+    when "11-2-1-a-sample-4b"
+      | Sin í an bhean #[b a bhíonn] ar an teilifís.
+    when "11-2-1-b-p"
+      | más cuspóir díreach don bhriathar sa chlásal coibhneasta an réamhtheachtaí:
+    when "11-2-1-b-sample-1a"
+      | Phóg Gearóid an bhean sin.
+    when "11-2-1-b-sample-1b"
+      | Sin í an bhean #[b a phóg] Gearóid.
+    when "11-2-1-b-sample-2a"
+      | Bhuail an leoraí carr úrnua.
+    when "11-2-1-b-sample-2b"
+      | Ba charr úrnua an carr #[b a bhuail] an leoraí.
+    when "11-2-1-b-sample-3a"
+      | Chum an fear an dán sin.
+    when "11-2-1-b-sample-3b"
+      | Sin é an dán #[b a chum] an fear.
+    when "11-2-1-b-sample-4a"
+      | Ceannóidh an teaghlach an teach sin.
+    when "11-2-1-b-sample-4b"
+      | Sin é an teach #[b a cheannóidh] an teaghlach.
+    when "11-2-1-b-note-p"
+      | Mar is léir ó #[+link("#sec_11_2_1_a", "(a)")] agus #[+link("#sec_11_2_1_b", "(b)")] roimhe seo, is abairtí débhríocha iad na habairtí: #[i Sin í an bhean a phóg Gearóid]; #[i Ba charr úrnua an carr a bhuail an leoraí]. D&rsquo;fhéadfadh sé gur ainmní nó cuspóir díreach don bhriathar sa chlásal coibhneasta an réamhtheachtaí i ngach cás. Is fearr clásal coibhneasta indíreach a úsáid i gcásanna den sórt sin más gá débhrí a sheachaint (féach #[+link("#sec_11_3_1_a", "11.3.1(a)")] ina dhiaidh seo). Níl an abairt #[i sin é an dán a chum an fear] débhríoch toisc nach bhféadfadh an réamhtheachtaí (#[i an dán]) a bheith ina ainmní don bhriathar.
+    when "11-2-1-c-p"
+      | más cuspóir d&rsquo;ainm briathartha (cuspóir díreach nó #[i a] (aidiacht shealbhach)) sa chlásal coibhneasta an réamhtheachtaí:
+    when "11-2-1-c-sample-1a"
+      | Sin (é) an leabhar. Tá sé á léamh aige.
+    when "11-2-1-c-sample-1b"
+      | Sin (é) an leabhar #[b atá] á léamh aige.
+    when "11-2-1-c-sample-2a"
+      | Cheannaigh sí an gúna. Bhí mé á iarraidh.
+    when "11-2-1-c-sample-2b"
+      | Cheannaigh sí an gúna #[b a bhí] mé a iarraidh.
+    when "11-2-1-c-note-p"
+      | Is féidir clásal coibhneasta díreach den sórt a úsáidtear sa dara sampla thuas a úsáid i gcás an chéad sampla freisin, e.g., #[i Sin (é) an leabhar a bhí sé a léamh]. Mar an gcéanna: #[i Sin an cineál cairr atá á thiomáint aige]; #[i Sin an cineál cairr atá sé a thiomáint].
+    when "11-2-1-d-p"
+      | más é an dobhriathar ama #[i uair] nó an cónasc #[i nuair] an réamhtheachtaí:
+    when "11-2-1-d-sample-1"
+      | Inseoidh mé an scéal duit nuair #[b a bheidh] deis agam.
+    when "11-2-1-d-sample-2"
+      | An cuimhin leat an uair #[b a chuamar] go dtí an Spáinn?
+    when "11-2-1-e-p"
+      | más dobhriathar ama amhail #[i an tráth], #[i an mhaidin], #[i an dáta], #[i an oíche], #[i an t&#x2011;am], etc. an réamhtheachtaí:
+    when "11-2-1-e-sample-1"
+      | An bhfuil a fhios agat cén tráth #[b a fhoilseofar] é?
+    when "11-2-1-e-sample-2"
+      | An cuimhin leat an lá #[b a thit] an crann?
+    when "11-2-1-e-note-p"
+      | Is féidir an clásal coibhneasta indíreach a úsáid in ionad an chlásail choibhneasta dhírigh i gcás na ndobhriathra ama sin, e.g., #[i An bhfuil a fhios agat cén tráth a bhfoilseofar é?]; #[i An cuimhin leat an lá ar thit an crann?] (féach #[+link("#sec_11_3_1_g", "11.3.1(g)")]).
+    when "11-2-1-f-p"
+      | más é atá sa réamhtheachtaí réamhfhocal simplí, réamhfhocal comhshuite, forainmneach réamhfhoclach nó frása dobhriathartha a thugtar chun tosaigh agus an chopail roimhe chun béim a leagan air (féach #[+link("#sec_11_8_4", "11.8.4")]):
+    when "11-2-1-f-sample-1a"
+      | Déanfar an obair de réir a chéile.
+    when "11-2-1-f-sample-1b"
+      | Is de réir a chéile #[b a dhéanfar] an obair.
+    when "11-2-1-f-sample-2a"
+      | Shábháil mé an t&#x2011;airgead sa chomhar creidmheasa.
+    when "11-2-1-f-sample-2b"
+      | Is sa chomhar creidmheasa #[b a shábháil] mé an t&#x2011;airgead.
+    when "11-2-1-f-sample-3a"
+      | Bíonn sé ag labhairt thar ceann an pholaiteora.
+    when "11-2-1-f-sample-3b"
+      | Is thar ceann an pholaiteora #[b a bhíonn] sé ag labhairt.
+    when "11-2-1-f-sample-4a"
+      | Fuair mé an bronntanas uaidh.
+    when "11-2-1-f-sample-4b"
+      | Is uaidh #[b a fuair] mé an bronntanas.
+    when "11-3-title"
+      | An Clásal Coibhneasta Indíreach
+    when "11-3-1-p"
+      | Clásal coibhneasta indíreach a bhíonn i gceist sna cásanna seo a leanas. Déantar tagairt le hiartheachtaí sa chlásal coibhneasta indíreach don réamhtheachtaí sa phríomhchlásal. Úsáidtear clásal coibhneasta indíreach &mdash;
+    when "11-3-1-a-p"
+      | chun débhrí a sheachaint nuair is cuspóir díreach don bhriathar sa chlásal coibhneasta an réamhtheachtaí (féach #[+link("#sec_11_2_1_b", "11.2.1(b)")] roimhe seo):
+    when "11-3-1-a-sample-1a"
+      | Phóg Gearóid an bhean sin.
+    when "11-3-1-a-sample-1b"
+      | Sin í an bhean #[b ar phóg] Gearóid #[b í].
+    when "11-3-1-a-sample-2a"
+      | Buailfidh an sliotar an fear sin.
+    when "11-3-1-a-sample-2b"
+      | Sin é an fear #[b a mbuailfidh] an sliotar #[b é].
+    when "11-3-1-a-sample-3a"
+      | Chaill an cailín a cóta nua.
+    when "11-3-1-a-sample-3b"
+      | Ba chóta nua an cóta #[b ar chaill] an cailín #[b é].
+    when "11-3-1-b-p"
+      | más cuspóir d&rsquo;ainm briathartha sa chlásal coibhneasta an réamhtheachtaí:
+    when "11-3-1-b-sample-1a"
+      | Cheannaigh sí an gúna. Bhí mé ag iarraidh é a fháil.
+    when "11-3-1-b-sample-1b"
+      | Cheannaigh sí an gúna #[b a raibh] mé ag iarraidh #[b é] a fháil.
+    when "11-3-1-b-sample-2a"
+      | Dhíol siad an chathaoir. Bhí mé ag moladh í a choimeád.
+    when "11-3-1-b-sample-2b"
+      | Dhíol siad an chathaoir #[b a raibh] mé ag moladh #[b í] a choimeád.
+    when "11-3-1-b-note"
+      | Is féidir clásal coibhneasta díreach den sórt seo a leanas a úsáid i gcás #[+link("#sec_11_3_1_b", "(b)")] freisin, e.g., #[i Cheannaigh sí an gúna a bhí mé ag iarraidh a fháil]; #[i Dhíol siad an chathaoir a bhí mé ag moladh a choimeád] (féach #[+link("#sec_11_3_1_c", "11.2.1(c)")])).
+    when "11-3-1-c-p1"
+      | nuair is cuspóir indíreach don bhriathar sa chlásal coibhneasta an réamhtheachtaí:
+    when "11-3-1-c-sample-1a"
+      | Cuireadh an t&#x2011;agallamh ar an mbean sin.
+    when "11-3-1-c-sample-1b"
+      | Sin í an bhean #[b ar cuireadh] an t&#x2011;agallamh #[b uirthi].
+    when "11-3-1-c-sample-2a"
+      | Ceannaím éadaí ón bhfear sin.
+    when "11-3-1-c-sample-2b"
+      | Sin é an fear #[b a gceannaím] éadaí #[b uaidh].
+    when "11-3-1-c-sample-3a"
+      | Déantar tagairt don leabhar sa chlár.
+    when "11-3-1-c-sample-3b"
+      | Sin é an leabhar #[b a ndéantar] tagairt #[b dó] sa chlár.
+    when "11-3-1-c-sample-4a"
+      | Rinneadh ráiteas thar ceann an chomhlachta sin.
+    when "11-3-1-c-sample-4b"
+      | Sin é an comhlacht #[b a ndearnadh] ráiteas #[b thar a cheann].
+    when "11-3-1-c-sample-5a"
+      | Cuireadh iarratas ar chead pleanála isteach i leith an fhoirgnimh.
+    when "11-3-1-c-sample-5b"
+      | Sin é an foirgneamh #[b ar cuireadh] iarratas ar chead pleanála isteach #[b ina leith].
+    when "11-3-1-c-p2"
+      | Tabhair faoi deara:
+    when "11-3-1-c-i-p"
+      | I gcás gur réamhfhocal simplí (#[i as], #[i de], #[i do], etc.) a cheanglaíonn an briathar leis an gcuspóir indíreach, is féidir an réamhfhocal a thabhairt chun tosaigh roimh an mír choibhneasta. Déantar cumasc ansin idir na réamhfhocail #[i de], #[i do], #[i faoi], #[i i], #[i le], #[i ó] agus #[i trí] agus na míreanna coibhneasta #[i a] agus #[i ar], faoi seach (féach #[+link("#sec_11_6_1_c", "11.6.1(c)")]).
+    when "11-3-1-c-i-sample-1a"
+      | Cuireadh an t&#x2011;agallamh ar an mbean sin.
+    when "11-3-1-c-i-sample-1b"
+      | Sin í an bhean #[b ar ar cuireadh] an t&#x2011;agallamh.
+    when "11-3-1-c-i-sample-2a"
+      | Ceannaím éadaí ón bhfear sin.
+    when "11-3-1-c-i-sample-2b"
+      | Sin é an fear #[b óna gceannaím] éadaí.
+    when "11-3-1-c-i-sample-3a"
+      | Déantar tagairt don leabhar sa chlár.
+    when "11-3-1-c-i-sample-3b"
+      | Sin é an leabhar #[b dá ndéantar] tagairt sa chlár.
+    when "11-3-1-c-ii-p"
+      | I gcás gur réamhfhocal comhshuite (#[i ar son], #[i i leith], etc.) a cheanglaíonn an briathar leis an gcuspóir indíreach, is féidir an réamhfhocal comhshuite a thabhairt chun tosaigh. (Murab ionann agus #[+link("#sec_11_3_1_c_i", "(i)")] thuas, i gcás gur réamhfhocal comhshuite a thugtar chun tosaigh is clásal coibhneasta díreach an clásal briathartha a thagann ina dhiaidh.)
+    when "11-3-1-c-ii-sample-1a"
+      | Rinneadh an ráiteas thar ceann an chomhlachta sin.
+    when "11-3-1-c-ii-sample-1b"
+      | Sin é an comhlacht #[b ar thar a cheann] a rinneadh an ráiteas.
+    when "11-3-1-c-ii-sample-2a"
+      | Cuireadh iarratas ar chead pleanála isteach i leith an fhoirgnimh.
+    when "11-3-1-c-ii-sample-2b"
+      | Sin é an foirgneamh #[b ar ina leith] a cuireadh iarratas ar chead pleanála isteach.
+    when "11-3-1-d-p"
+      | nuair atá nasc ginidigh idir an réamhtheachtaí agus ainmní nó cuspóir (díreach nó indíreach) an bhriathair sa chlásal coibhneasta. Sa chás sin, aidiacht shealbhach atá san iartheachtaí:
+    when "11-3-1-d-sample-1a"
+      | Bhí iníon na mná sin ar an teilifís aréir.
+    when "11-3-1-d-sample-1b"
+      | Sin í an bhean #[b a raibh a] hiníon ar an teilifís aréir.
+    when "11-3-1-d-sample-2a"
+      | Ghoid an gadaí carr na mná óige.
+    when "11-3-1-d-sample-2b"
+      | Ba bhean óg an bhean #[b ar ghoid] an gadaí a carr.
+    when "11-3-1-d-sample-3a"
+      | Cuireadh agallamh ar mhac an fhir sin.
+    when "11-3-1-d-sample-3b"
+      | Sin é an fear #[b ar cuireadh] agallamh ar a mhac.
+    when "11-3-1-e-p"
+      | má dhéantar tagairt don réamhtheachtaí i gclásal briathartha ar clásal briathartha é atá faoi réir ag an mbriathar sa chlásal coibhneasta:
+    when "11-3-1-e-sample-1a"
+      | Cheap mé nach n&#x2011;inseodh an duine sin an fhírinne choíche.
+    when "11-3-1-e-sample-1b"
+      | Ba dhuine é #[b ar cheap] mé nach n&#x2011;inseodh #[b sé] an fhírinne choíche.
+    when "11-3-1-e-sample-2a"
+      | Sílim go bhfaca mé iníon na mná sin ar an teilifís aréir.
+    when "11-3-1-e-sample-2b"
+      | Sin í an bhean #[b a sílim] go bhfaca mé #[b a] hiníon ar an teilifís aréir.
+    when "11-3-1-e-sample-3a"
+      | Creideann an t&#x2011;oifigeach gur cuireadh iarratas ar chead pleanála isteach i leith an fhoirgnimh sin.
+    when "11-3-1-e-sample-3b"
+      | Sin é an foirgneamh #[b a gcreideann] an t&#x2011;oifigeach gur cuireadh iarratas ar chead pleanála isteach #[b ina leith].
+    when "11-3-1-e-sample-4a"
+      | Teastaíonn uainn fál a thógáil idir an pháirc sin agus an bóthar.
+    when "11-3-1-e-sample-4b"
+      | Sin í an pháirc #[b a dteastaíonn] uainn fál a thógáil idir í agus an bóthar.
+    when "11-3-1-e-note-p"
+      | Féach freisin an míniú ar chlásal idiraisnéiseach in #[+link("#sec_11_4", "11.4")], e.g., #[i Ba dhuine í a cheap mé a chonaic mé cheana].
+    when "11-3-1-f-p"
+      | i gcás forainmnigh cheisteacha amhail #[i cé], #[i cad] (#[i é]), etc. nuair a dhéantar réamhfhocal simplí, réamhfhocal comhshuite nó forainmneach réamhfhoclach a thabhairt chun tosaigh san abairt chun go dtagann sé go díreach ar lorg an fhorainmnigh cheistigh:
+    when "11-3-1-f-sample-1a"
+      | Cé hé + is ina aghaidh a bheidh sibh ag imirt.
+    when "11-3-1-f-sample-1b"
+      | Cé #[b ina aghaidh a mbeidh] sibh ag imirt?
+    when "11-3-1-f-sample-2a"
+      | Cad (é) + is ina thaobh a rinne tú sin.
+    when "11-3-1-f-sample-2b"
+      | Cad (é) #[b ina thaobh a ndearna] tú sin?
+    when "11-3-1-f-sample-3a"
+      | Cé hé + is leis a bhí tú ag caint.
+    when "11-3-1-f-sample-3b"
+      | Cé #[b leis a raibh] tú ag caint?
+    when "11-3-1-g-p"
+      | nuair is dobhriathar ama ar nós #[i an tráth], #[i an t&#x2011;am], etc. an réamhtheachtaí, is féidir an clásal coibhneasta indíreach a úsáid in ionad an chlásail choibhneasta dhírigh (úsáidtear an clásal coibhneasta díreach i ndiaidh #[i nuair] agus #[i uair] i gcónaí, féach #[+link("#sec_11_2_1_d", "11.2.1(d)")]):
+    when "11-3-1-g-sample-1"
+      | An bhfuil a fhios agat cén tráth #[b a bhfoilseofar] é?
+    when "11-3-1-g-sample-2"
+      | An cuimhin leat an lá #[b ar thit] an crann?
+    when "11-3-1-g-note-p"
+      | Is féidir an clásal coibhneasta díreach a úsáid in ionad an chlásail choibhneasta indírigh i gcás na ndobhriathra ama freisin, e.g., #[i An bhfuil a fhios agat cén tráth a fhoilseofar é?]; #[i An cuimhin leat an lá a thit an crann?] (féach #[+link("#sec_11_2_1_e", "11.2.1(e)")]).
+    when "11-3-1-h-p"
+      | más ceann de na focail #[i áit], #[i bealach], #[i caoi], #[i cúis], #[i dóigh], #[i fáth], #[i réasún], #[i slí] nó #[i treo] (nó focal a bhfuil an bhrí chéanna leis) an réamhtheachtaí agus má tá sé ag feidhmiú mar dhobhriathar atá ag cáiliú an bhriathair sa chlásal coibhneasta:
+    when "11-3-1-h-sample-1"
+      | Sin é an tslí #[b a ndearnadh] é.
+    when "11-3-1-h-sample-2"
+      | Cén chaoi #[b a bhfuil] tú?
+    when "11-3-1-h-sample-3"
+      | Cad é an dóigh #[b ar briseadh] é?
+    when "11-3-1-h-sample-4"
+      | Sin é an chúis #[b ar tháinig] mé.
+    when "11-3-1-h-sample-5"
+      | Cén fáth #[b ar imigh] siad?
+    when "11-3-1-h-sample-6"
+      | Cé na háiteanna #[b a ndeachaigh] sibh?
+    when "11-3-1-h-note-p"
+      | Ní mór clásal díreach a úsáid in abairtí ina bhfuil focal den sórt sin ina chuspóir díreach ag an mbriathar, mar seo a leanas: #[i Seo an áit is deise]; #[i Cad é an áit a cheannaigh sé?]; #[i Ar chuala tú an fáth a thug sí?]; #[i An maith leat an chaoi atáim a chur ar an seomra?]
+    when "11-3-1-i-p1"
+      | nuair atá #[i mar] ag feidhmiú mar dhobhriathar agus an bhrí #[i áit] leis:
+    when "11-3-1-i-sample-1"
+      | Sin an leabharlann dhigiteach nua, #[b mar] a gcuirtear áiseanna taighde ar fáil do mhic léinn.
+    when "11-3-1-i-sample-2"
+      | Gheobhaidh tú san oifig í, #[b mar] a mbíonn sí gach oíche.
+    when "11-3-1-i-sample-3"
+      | Ceadófar achomhairc a dhéanamh, ach amháin #[b mar] a bhforáiltear a mhalairt.
+    when "11-3-1-i-p2"
+      | Ach má tá #[i mar] in úsáid mar chónasc, is é an clásal coibhneasta díreach a leanann é, e.g., #[i Sin mar atá cúrsaí].
+    when "11-4-title"
+      | An Clásal Idiraisnéiseach
+    when "11-4-1-p"
+      | Is clásal é #[i clásal idiraisnéiseach] ina dtugtar faisnéis faoin gclásal a thagann ina dhiaidh gan cur isteach ar mhúnla na habairte. Má bhaintear an clásal idiraisnéiseach den abairt, tá sí fós slán ó thaobh céille agus gramadaí de.
+    when "11-4-2-p"
+      | Briathra a úsáidtear chun tuairim nó caint a chur in iúl, e.g., #[i abair], #[i ceap], #[i maígh], #[i síl], etc., is mó a bhíonn i gclásail idiraisnéiseacha.
+    when "11-4-2-note-p"
+      | Féach freisin #[+link("#sec_11_3_1_e", "11.3.1(e)")] le haghaidh míniú ar chásanna ina ndéantar tagairt don réamhtheachtaí i gclásal briathartha atá faoi réir ag an mbriathar sa chlásal coibhneasta, e.g., #[i Ba dhuine é ar cheap mé nach n&#x2011;inseodh sé an fhírinne choíche].
+    when "11-4-3-p"
+      | Is clásal díreach an clásal idiraisnéiseach, ach féadfaidh an clásal ar a lorg a bheith díreach nó indíreach ag brath ar mhúnla na habairte.
+    when "Table11A-caption"
+      | An Clásal Idiraisnéiseach
+    when "Table11A-header"
+      | An Clásal Idiraisnéiseach
+    when "Table11A-col1"
+      | An dara clásal ina chlásal coibhneasta díreach
+    when "Table11A-col2"
+      | An dara clásal ina chlásal coibhneasta indíreach
+    when "Table11A-row1-col1"
+      | Ba dhuine í #[b a cheap mé] a chonaic mé cheana. 
+    when "Table11A-row1-col2"
+      | Cén fáth a cheapann tú #[b a ndeachaigh siad] ann?
+    when "Table11A-row2-col1"
+      | Cad #[b a shíleann tú] a tharlóidh di? 
+    when "Table11A-row2-col2"
+      | Cén chaoi #[b is dóigh leat] ar tharla a leithéid?
+    when "Table11A-row3-col1"
+      | Chaith sé éadaí #[b nár mheas mé] a chaithfeadh sé go deo. 
+    when "Table11A-row3-col2"
+      | Cén dóigh #[b a mheasann tú] a ndéanfar an obair sin?
+    when "11-4-3-note-p"
+      | Is féidir clásal díreach nó indíreach a úsáid i roinnt cásanna, e.g., #[i Fuair mé é in áit ar mheas mé a gheobhainn é] seachas #[i Fuair mé é in áit a mheas mé a bhfaighinn é].
+    when "11-5-title"
+      | An Clásal Breischéime
+    when "11-5-1-p"
+      | Is clásal dar múnla an chopail agus breischéim aidiachta #[i clásal breischéime]. Má bhaintear an clásal breischéime den abairt, tá sí fós slán ó thaobh céille agus gramadaí de.
+    when "11-5-2-p"
+      | Is clásal díreach an clásal breischéime, ach féadfaidh an clásal ar a lorg a bheith díreach nó indíreach ag brath ar mhúnla na habairte.
+    when "Table11B-caption"
+      | An Clásal Breischéime
+    when "Table11B-header"
+      | An Clásal Breischéime
+    when "Table11B-col1"
+      | An dara clásal ina chlásal coibhneasta díreach 
+    when "Table11B-col2"
+      | An dara clásal ina chlásal coibhneasta indíreach
+    when "Table11B-row1-col1"
+      | Sin (iad) na ceisteanna #[b is minice] a chuirtear. 
+    when "Table11B-row1-col2"
+      | Is í an tUachtarán an duine #[b is cáiliúla] ar bhuail mé léi.
+    when "Table11B-row2-col1"
+      | Ba é an rud #[b ba mhó] é a theastaigh uaithi. 
+    when "Table11B-row2-col2"
+      | Cá háit #[b is fusa] a n&#x2011;eagrófar an cheolchoirm?
+    when "Table11B-row3-col1"
+      | Sin (é) an t&#x2011;amhrán #[b is fearr] a thaitin liom. 
+    when "Table11B-row3-col2"
+      | Is é sin an chaoi #[b is gasta] a ndéanfar é.
+    when "11-5-2-note-p"
+      | Féadfaidh clásal idiraisnéiseach agus clásal breischéime a bheith in aon abairt amháin, e.g., #[i Ba é an banna ceoil ba cháiliúla a shíleann sé a bhainistigh an gnólacht sin riamh].
+    when "11-6-title"
+      | An Mhír Choibhneasta &mdash; Foirmeacha
+    when "11-6-1-title"
+      | An Mhír Choibhneasta Dheimhneach
+    when "11-6-1-a-title"
+      | An Clásal Coibhneasta Díreach
+    when "11-6-1-a-i-p"
+      | Más clásal coibhneasta díreach atá ann, is é #[i a] an fhoirm den mhír choibhneasta a úsáidtear roimh na briathra rialta agus neamhrialta i ngach aimsir (seachas i gcás aimsir láithreach an bhriathair #[i bí] &mdash; féach #[+link("#sec_11_6_1_a_ii", "(ii)")] thíos). Séimhítear an briathar i ndiaidh na míre coibhneasta dírí #[i a] ach amháin i gcás an tsaorbhriathair, aimsir chaite (ach féach #[+link("#sec_11_7_1_b", "11.7.1(b)")]).
+    when "11-6-1-a-i-sample-1"
+      | Sin é an stáisiún raidió #[b a] chraolann cláir do leanaí.
+    when "11-6-1-a-i-sample-2"
+      | Cén uair #[b a] chraolfar an clár?
+    when "11-6-1-a-i-sample-3"
+      | D&rsquo;éirigh leo stáisiún raidió #[b a] chraolfadh popcheol #[b a] bhunú.
+    when "11-6-1-a-i-sample-4"
+      | Nach í sin an tsraith #[b a] chraoltaí gach maidin?
+    when "11-6-1-a-i-sample-5"
+      | Is é sin an clár #[b a] chraol siad inné.
+    when "11-6-1-a-i-sample-6"
+      | An í sin an bhean #[b a] théann go dtí na cluichí go léir?
+    when "11-6-1-a-i-sample-7"
+      | Sin é an bus #[b a] rachaidh go dtí an staid pheile.
+    when "11-6-1-a-i-sample-8"
+      | Sin í an bhean #[b a] rachadh go dtí an cluiche dá bhféadfadh sí.
+    when "11-6-1-a-i-sample-9"
+      | Nach é sin an fear #[b a] théadh go dtí na cluichí go léir?
+    when "11-6-1-a-i-sample-10"
+      | Sin í an bhean #[b a] chuaigh go dtí an staid pheile.
+    when "11-6-1-a-ii-p"
+      | Déantar cumasc idir an mhír choibhneasta #[i a] agus an fhoirm neamhspleách láithreach den bhriathar #[i bí] chun na foirmeacha #[i atá], #[i atáim], #[i atáimid] a chruthú.
+    when "11-6-1-a-ii-sample-1"
+      | Sin iad na leabhair #[b atá] á n&#x2011;iarraidh agam.
+    when "11-6-1-a-ii-sample-2"
+      | Seo iad na héadaí #[b atáim] a cheannach.
+    when "11-6-1-a-ii-sample-3"
+      | Sin é an ní #[b atáimid] chun a dhíol.
+    when "11-6-1-b-title"
+      | An Clásal Coibhneasta Indíreach
+    when "11-6-1-b-i-p"
+      | Más clásal coibhneasta indíreach atá ann, úsáidtear #[i a] roimh na briathra rialta agus neamhrialta i ngach aimsir seachas san aimsir chaite (ach féach #[+link("#sec_11_6_1_b_iii", "(iii)")] ina dhiaidh seo). Uraítear an briathar i ndiaidh na míre coibhneasta indírí #[i a].
+    when "11-6-1-b-i-sample-1"
+      | Sin é an clár #[b a] gcraolann an stáisiún raidió é.
+    when "11-6-1-b-i-sample-2"
+      | Cá háit #[b a] gcraolfar an clár?
+    when "11-6-1-b-i-sample-3"
+      | Cad chuige #[b a] gcraolfadh an stáisiún raidió popcheol?
+    when "11-6-1-b-i-sample-4"
+      | Is sraith í #[b a] gcraoltaí clár dá cuid gach maidin.
+    when "11-6-1-b-i-sample-5"
+      | An í sin an bhean #[b a] dtéann a hiníon go dtí na cluichí go léir?
+    when "11-6-1-b-i-sample-6"
+      | Sin é an fear #[b a] rachaidh a mhac go dtí an staid pheile.
+    when "11-6-1-b-i-sample-7"
+      | Sin í an bhean #[b a] rachadh a hiníon go dtí an cluiche dá bhféadfadh sí.
+    when "11-6-1-b-i-sample-8"
+      | Nach é sin an fear #[b a] dtéadh a pháistí go dtí na cluichí go léir?
+    when "11-6-1-b-i-sample-9"
+      | Sin é an ní #[b a] bhfuilimid chun é a dhíol.
+    when "11-6-1-b-ii-p"
+      | San aimsir chaite, is é #[i ar] an fhoirm den mhír choibhneasta a úsáidtear roimh na briathra rialta agus roimh na briathra neamhrialta #[i beir], #[i clois/cluin], #[i ith], #[i tabhair] agus #[i tar].
+    when "11-6-1-b-ii-sample-1"
+      | Sin é an clár #[b ar] chraol an stáisiún raidió é.
+    when "11-6-1-b-ii-sample-2"
+      | Cheannaigh mé leabhar nua #[b ar] mhol an léirmheastóir é.
+    when "11-6-1-b-ii-sample-3"
+      | Bhuail mé le fear #[b ar] chum a mhac amhráin Ghaeilge.
+    when "11-6-1-b-ii-sample-4"
+      | Sin í an bhean #[b ar] cheannaigh mé na héadaí uaithi.
+    when "11-6-1-b-ii-sample-5"
+      | Céard a tharla don duine #[b ar] rug tú greim air?
+    when "11-6-1-b-ii-sample-6"
+      | Tá an scannán #[b ar] chuala mé faoi ar taispeáint sa phictiúrlann.
+    when "11-6-1-b-ii-sample-7"
+      | Cá bhfuil an bhean #[b ar] bronnadh céim uirthi?
+    when "11-6-1-b-ii-sample-8"
+      | An raibh ionadh ar an mbean #[b ar] tháinig a mac abhaile ón Astráil?
+    when "11-6-1-b-iii-p"
+      | San aimsir chaite, is é #[i a] an fhoirm den mhír choibhneasta a úsáidtear roimh na briathra neamhrialta #[i abair], #[i bí], #[i déan], #[i faigh], #[i feic] agus #[i téigh].
+    when "11-6-1-b-iii-sample-1"
+      | Dar liom gurb é sin an fear #[b a] ndúradh linn é a leanúint.
+    when "11-6-1-b-iii-sample-2"
+      | Tá aithne agam ar an mbean #[b a] raibh a hiníon ar an teilifís.
+    when "11-6-1-b-iii-sample-3"
+      | Arbh é sin an leabhar #[b a] ndearnadh tagairt dó?
+    when "11-6-1-b-iii-sample-4"
+      | Sin é an múinteoir #[b a] bhfuair mé litir uaidh.
+    when "11-6-1-b-iii-sample-5"
+      | Nach í sin an bhean #[b a] bhfaca an fear í?
+    when "11-6-1-b-iii-sample-6"
+      | D&rsquo;fhill mé ar an áit #[b a] ndeachaigh mé fadó.
+    when "11-6-1-c-title"
+      | Foirmeacha cumaisc
+    when "11-6-1-c-p"
+      | Déantar cumasc idir na réamhfhocail #[i de], #[i do], #[i faoi], #[i i], #[i le], #[i ó] agus #[i trí] agus na míreanna coibhneasta #[i a] agus #[i ar], faoi seach, mar a leagtar amach anseo thíos (féach freisin #[+link("#sec_11_3_1_c_i", "11.3.1(c)(i)")]). Tabhair faoi deara nach féidir cumasc a dhéanamh idir an réamhfhocal agus na míreanna coibhneasta diúltacha.
+    when "Table11C-caption"
+      | Foirmeacha Cumaisc &mdash; Réamhfhocail leis na Míreanna Coibhneasta #[i a] agus #[i ar]
+    when "Table11C-header1"
+      | An Réamhfhocal
+    when "Table11C-header2"
+      | + an mhír choibhneasta #[i a]
+    when "Table11C-header3"
+      | + an mhír choibhneasta #[i ar]
+    when "11-6-2-title"
+      | An Mhír Choibhneasta Dhiúltach
+    when "11-6-2-a-title"
+      | An Clásal Coibhneasta Díreach agus Indíreach
+    when "11-6-2-a-i-p"
+      | I gclásail dhiúltacha dhíreacha agus indíreacha, is é #[i nach] an fhoirm den mhír choibhneasta a fhreagraíonn do #[i a] roimh na briathra rialta agus neamhrialta, ach amháin san aimsir chaite (ach féach #[+link("#sec_11_6_2_a_iii", "(iii)")] thíos).
+    when "11-6-2-a-i-sample-1"
+      | Is duine é #[b nach] nglacann comhairle.
+    when "11-6-2-a-i-sample-2"
+      | Sin é an stáisiún #[b nach] gcraoladh an clár.
+    when "11-6-2-a-i-sample-3"
+      | Sin é an clár #[b nach] gcraolfadh an stáisiún raidió é.
+    when "11-6-2-a-i-sample-4"
+      | Is í sin an bhean #[b nach] nglacfaidh a hiníon dea-chomhairle.
+    when "11-6-2-a-i-sample-5"
+      | Sin é an fear #[b nach] gceannaínn aon earraí uaidh.
+    when "11-6-2-a-i-sample-6"
+      | An í sin an cháis #[b nach] n&#x2011;íosfadh an fear?
+    when "11-6-2-a-i-sample-7"
+      | Sin í an bhean #[b nach] dtagann a mac abhaile gach bliain.
+    when "11-6-2-a-ii-p"
+      | San aimsir chaite, freagraíonn #[i nár] do #[i a] agus #[i ar] i gcás na mbriathra rialta agus i gcás na mbriathra neamhrialta #[i beir], #[i clois/cluin], #[i ith], #[i tabhair] agus #[i tar].
+    when "11-6-2-a-ii-sample-1"
+      | Ba dhuine é #[b nár] ghlac comhairle.
+    when "11-6-2-a-ii-sample-2"
+      | Sin é an stáisiún #[b nár] chraol an clár.
+    when "11-6-2-a-ii-sample-3"
+      | Sin é an clár #[b nár] chraol an stáisiún é.
+    when "11-6-2-a-ii-sample-4"
+      | Is í sin an bhean #[b nár] ghlac a hiníon dea-chomhairle.
+    when "11-6-2-a-ii-sample-5"
+      | Sin é an fear #[b nár] cheannaigh mé aon earraí uaidh.
+    when "11-6-2-a-ii-sample-6"
+      | Céard a tharla don duine #[b nár] rug tú greim air?
+    when "11-6-2-a-ii-sample-7"
+      | Tá scannán #[b nár] chuala mé trácht air ar siúl sa phictiúrlann anocht.
+    when "11-6-2-a-ii-sample-8"
+      | Ar chaith tú amach an bia #[b nár] ith an madra?
+    when "11-6-2-a-ii-sample-9"
+      | Sin an bhean #[b nár] thug mé leabhar di.
+    when "11-6-2-a-ii-sample-10"
+      | An bhfuil aon duine #[b nár] tháinig abhaile ón gceolchoirm fós?
+    when "11-6-2-a-iii-p"
+      | San aimsir chaite, freagraíonn #[i nach] do #[i a] i gcás na mbriathra neamhrialta #[i abair], #[i bí], #[i déan], #[i faigh], #[i feic] agus #[i téigh].
+    when "11-6-2-a-iii-sample-1"
+      | Is rud é #[b nach] ndúirt mé riamh.
+    when "11-6-2-a-iii-sample-2"
+      | An í sin an bhean #[b nach] raibh a hiníon i láthair?
+    when "11-6-2-a-iii-sample-3"
+      | Cad a dhéanfar faoin obair #[b nach] ndearnadh?
+    when "11-6-2-a-iii-sample-4"
+      | Sin é an múinteoir #[b nach] bhfuair mé litir uaidh.
+    when "11-6-2-a-iii-sample-5"
+      | Sin í an bhean #[b nach] bhfaca an dochtúir í.
+    when "11-6-2-a-iii-sample-6"
+      | Cad a rinne sibh an uair sin #[b nach] ndeachaigh sibh ar saoire?
+    when "11-7-title"
+      | An Briathar i gClásail Choibhneasta
+    when "11-7-1-title"
+      | An Briathar &mdash; An Clásal Coibhneasta Díreach Deimhneach
+    when "11-7-1-a-p"
+      | Úsáidtear an fhoirm neamhspleách den bhriathar i ndiaidh na míre coibhneasta #[i a] i gclásail choibhneasta dhíreacha dheimhneacha.
+    when "11-7-1-a-sample-1"
+      | An bhfaca tú an cóta nua #[b a fuair] mé?
+    when "11-7-1-a-sample-2"
+      | An é sin an fear #[b a théadh] go dtí na cluichí go léir?
+    when "11-7-1-b-p"
+      | Séimhítear an briathar (seachas #[i abair]) san aimsir láithreach agus san aimsir fháistineach (ach féach #[+link("#sec_11_6_1_a_ii", "11.6.1(a)(ii)")]).
+    when "11-7-1-b-sample-1"
+      | Sin é an sliotar #[b a bhuaileann] sí gach maidin.
+    when "11-7-1-b-sample-2"
+      | Sin é an sliotar #[b a bhuailfear] le linn an chluiche.
+    when "11-7-1-p"
+      | Tabhair faoi deara go séimhítear an saorbhriathar sna cásanna ina séimhítear na foirmeacha eile den bhriathar, e.g., #[i na héadaí a cheannaítear] (#[i a cheannófar], #[i a cheannaítí]) seachas san aimsir chaite, e.g., #[i na héadaí a ceannaíodh]. Ní shéimhítear an saorbhriathar neamhspleách san aimsir chaite ach amháin i gcás #[i chonacthas], #[i chualathas], #[i chuathas] agus #[i thángthas].
+    when "11-7-2-title"
+      | An Briathar &mdash; An Clásal Coibhneasta Indíreach Deimhneach
+    when "11-7-2-p"
+      | Úsáidtear an fhoirm spleách den bhriathar i ndiaidh na míreanna coibhneasta ar agus a i gclásail choibhneasta indíreacha dheimhneacha.
+    when "11-7-2-a-p"
+      | Séimhítear an fhoirm spleách den bhriathar i ndiaidh na míre coibhneasta #[i ar] (ach amháin i gcás an tsaorbhriathair san aimsir chaite, e.g., #[i ar goideadh]; #[i ar buaileadh]).
+    when "11-7-2-a-sample-1"
+      | Sin é an sliotar #[b ar bhuail] an bhean é.
+    when "11-7-2-a-sample-2"
+      | Sin í an bhean #[b ar ghoid] an gadaí a carr.
+    when "11-7-2-b-p"
+      | Uraítear an fhoirm spleách den bhriathar i ndiaidh na míre coibhneasta #[i a].
+    when "11-7-2-b-sample-1"
+      | Sin é an ríomhaire #[b a n&#x2011;úsáideann] an bhean é le haghaidh na hoibre.
+    when "11-7-2-b-sample-2"
+      | Sin í an bhean #[b a gceannóidh] an buachaill a carr.
+    when "11-7-2-b-sample-3"
+      | An í sin an cailín #[b a ndeachaigh] a madra amú uirthi?
+    when "11-7-2-b-sample-4"
+      | Cá ndeachaigh an fear #[b a bhfaca] mé a mhac ag dul isteach san fhoirgneamh?
+    when "11-7-3-title"
+      | An Briathar &mdash; An Clásal Coibhneasta Díreach agus Indíreach Diúltach
+    when "11-7-3-p"
+      | Úsáidtear an fhoirm spleách den bhriathar i ndiaidh na míreanna coibhneasta #[i nach] agus #[i nár] i gclásail choibhneasta dhíreacha agus indíreacha dhiúltacha.
+    when "11-7-3-a-p"
+      | Uraítear an fhoirm spleách den bhriathar i ndiaidh #[i nach].
+    when "11-7-3-a-sample-1"
+      | Sin é an sliotar #[b nach mbuaileann] an bhean.
+    when "11-7-3-a-sample-2"
+      | Sin é an gaothscáth #[b nach mbrisfidh] an buachaill.
+    when "11-7-3-a-sample-3"
+      | Sin é an sliotar #[b nach mbuaileann] an bhean é.
+    when "11-7-3-a-sample-4"
+      | Sin í an bhean #[b nach gceannóidh] an buachaill a carr.
+    when "11-7-3-b-p"
+      | Séimhítear an fhoirm spleách den bhriathar i ndiaidh #[i nár] ach amháin i gcás an tsaorbhriathair, aimsir chaite, e.g., #[i nár ceannaíodh]; #[i nár blaiseadh].
+    when "11-7-3-b-sample-1"
+      | Sin é an sliotar #[b nár bhuail] an bhean.
+    when "11-7-3-b-sample-2"
+      | Sin é an gaothscáth #[b nár bhris] an buachaill.
+    when "11-7-3-b-sample-3"
+      | Sin é an sliotar #[b nár bhuail] an bhean é.
+    when "11-7-3-b-sample-4"
+      | Sin í an bhean #[b nár cheannaigh] an buachaill a carr.
+    when "11-7-4-title"
+      | An Briathar &mdash; An Fhoirm Choibhneasta
+    when "11-7-4-a-p"
+      | Tá foirm choibhneasta neamhspleách ar leith ar an mbriathar san aimsir láithreach, san aimsir ghnáthláithreach agus san aimsir fháistineach. Is féidir an fhoirm sin a úsáid sa chlásal coibhneasta de rogha ar na foirmeacha scartha den bhriathar, e.g., #[i Sin é an chéad leabhar eile a bheas á léamh agam]; #[i Céard a dhéanfas tú anois?]
+    when "11-7-4-b-p"
+      | Is í an fhoirm leithleach choibhneasta neamhspleách den bhriathar #[i lean] a úsáidtear i gcónaí in abairtí mar #[i na focail seo a leanas].
+    when "11-8-title"
+      | An Chopail agus an Clásal Coibhneasta
+    when "11-8-1-p"
+      | Seo thíos foirmeacha na copaile a úsáidtear i gclásail choibhneasta (féach freisin #[+link("./chapter7.html#sec_7_2_3", "7.2.3")] agus #[+link("./chapter7.html#sec_7_2_4", "7.2.4")] le haghaidh tuilleadh faisnéise).
+    when "Table11D-caption"
+      | Foirmeacha na Copaile i gClásal Coibhneasta
+    when "Table11D-header-1"
+      | An Aimsir Láithreach agus An Aimsir Fháistineach
+    when "Table11D-header-2"
+      | An Aimsir Chaite, An Aimsir Ghnáthchaite agus An Modh Coinníollach
+    when "Table11D-subheader-1"
+      | roimh chonsan
+    when "Table11D-subheader-2"
+      | roimh guta
+    when "Table11D-subheader-3"
+      | roimh chonsan nó roimh #[i fh-] + #[i consan]
+    when "Table11D-subheader-4"
+      | roimh guta nó roimh #[i fh-] + #[i guta]
+    when "Table11D-row1-col1"
+      | Díreach Deimhneach 
+    when "Table11D-row2-col1"
+      | Indíreach Deimhneach
+    when "Table11D-row3-col1"
+      | Díreach agus Indíreach Diúltach
+    when "11-8-2-p"
+      | Úsáidtear na foirmeacha a chríochnaíonn ar #[i -b] nó #[i -bh] roimh fhocal dar tús guta nó #[i fh-] roimh ghuta.
+    when "11-8-2-sample-1"
+      | Ba í an bhean #[b ab] éirimiúla í.
+    when "11-8-2-sample-2"
+      | Is é sin an buachaill #[b arb] eol dó an freagra.
+    when "11-8-2-sample-3"
+      | Is í sin an cailín #[b arbh] aoibhinn léi an eolaíocht.
+    when "11-8-2-sample-4"
+      | Níor éist sé leis an ráiteas #[b nárbh] fhíor é.
+    when "11-8-3-p"
+      | Leanann séimhiú foirmeacha na copaile san aimsir chaite agus sa mhodh coinníollach.
+    when "11-8-3-sample-1"
+      | Ba í #[b ba] bhainisteoir orthu.
+    when "11-8-3-sample-2"
+      | Ba é an rud #[b ab] fhusa a dhéanamh é.
+    when "11-8-3-sample-3"
+      | Is í sin an bhean #[b ar] mhór aici do chabhair.
+    when "11-8-3-sample-4"
+      | Níor tharla aon ní #[b arbh] fhiú trácht air.
+    when "11-8-3-sample-5"
+      | Ní dhearna mé aon ní #[b nár] chuí liom.
+    when "11-8-4-p"
+      | I gcás go mbaintear leas as an gcopail chun béim a leagan ar réamhfhocal simplí, réamhfhocal comhshuite, forainmneach réamhfhoclach nó frása dobhriathartha a thugtar chun tosaigh, is clásal coibhneasta díreach an dara clásal.
+    when "11-8-4-sample-1"
+      | Is arú inné #[b a tháinig] siad abhaile.
+    when "11-8-4-sample-2"
+      | Is ón gcomhar creidmheasa #[b a fuair] mé an t&#x2011;airgead.
+    when "11-8-4-sample-3"
+      | Ba leis-sean #[b a bhí] mé ag caint.
+    when "11-8-4-sample-4"
+      | An ar an traein #[b a chuaigh] tú go Sligeach?
+    when "11-8-4-sample-5"
+      | Is chun na Fraince #[b a théann] sé ar saoire.
+    when "11-8-4-sample-6"
+      | Is de réir a chéile #[b a dhéantar] dul chun cinn.
+    when "11-8-5-p"
+      | Déantar cumasc idir na foirmeacha den chopail #[i ar], #[i arb] agus #[i arbh] agus na réamhfhocail #[i de], #[i do], #[i faoi], #[i i], #[i le], #[i ó] agus #[i trí] mar a leagtar amach anseo thíos (féach freisin #[+link("./chapter7.html#sec_7_3_2", "7.3.2")]).
+    when "Table11E-caption"
+      | Foirmeacha Cumaisc &mdash; Réamhfhocail leis na Míreanna #[i ar], #[i arb] agus #[i arbh]
+    when "Table11E-header1"
+      | Réamhfhocal
+    when "Table11E-header2"
+      | + #[i ar] na copaile
+    when "Table11E-header3"
+      | + #[i arb] na copaile
+    when "Table11E-header4"
+      | + #[i arbh] na copaile
+    when "11-9-title"
+      | An Clásal Coibhneasta &mdash; Samplaí Breise
+    when "Table11F-caption"
+      | Focail agus Nathanna a leanann Clásal Coibhneasta Díreach iad
+    when "Table11F-header1"
+      | Coibhneas Díreach
+    when "Table11F-header2"
+      | Sampla
+    when "Table11F-dobhriathar-ama"
+      | dobhriathar ama
+    when "Table11F-cónasc"
+      | cónasc
+    when "Table11F-cad-example1"
+      | Cad a tharla?
+    when "Table11F-cad-example2"
+      | Cad is brí leis sin? 
+    when "Table11F-cathain-example"
+      | Cathain a fuair tú an carr nua?
+    when "Table11F-fhad-example1"
+      | Cá fhad a bhí sibh ann?
+    when "Table11F-fhad-example2"
+      | Cén fhad a mhair an cheolchoirm?
+    when "Table11F-mhéad-example1"
+      | Cá mhéad leabhar atá agat?
+    when "Table11F-mhéad-example2"
+      | Cé mhéad a fuair tú mar íocaíocht?
+    when "Table11F-mhéad-example3"
+      | Cén méid a chosnaíonn sé?
+    when "Table11F-cé-example1"
+      | Cé a bhí leat?
+    when "Table11F-acu-example1"
+      | Cé acu mise nó tusa atá i gceist?
+    when "Table11F-acu-example2"
+      | Is cuma liom cé acu a rinne sé é nó nach ndearna.
+    when "Table11F-acu-example3"
+      | Beidh feidhm ag an socrú cibé acu atá sé sásta nó nach bhfuil.
+    when "Table11F-céard-example1"
+      | Céard atá ar siúl agat?
+    when "Table11F-uair-example1"
+      | Cá huair a tháinig sí?
+    when "Table11F-uair-example2"
+      | Cén uair a chríochnóidh an scannán?
+    when "Table11F-chomh-example1"
+      | Coimeádfar na sonraí sin chomh fada is a bheidh siad riachtanach.
+    when "Table11F-chomh-example2"
+      | Cé chomh minic (is) a bhíonn cóisir agaibh sa teach?
+    when "Table11F-conas-example1"
+      | Conas a dhéanann tú é?
+    when "Table11F-mar-example1"
+      | Cad é mar a chuir tú aithne air?
+    when "Table11F-mar-example2"
+      | Déan mar is ceart é.
+    when "Table11F-nuair-example1"
+      | Cuirfidh mé scairt ort nuair a bheidh deis agam.
+    when "Table-11F-footnote"
+      | Leagan seanbhunaithe is ea #[i cén fhad]. Is ainmfhocal firinscneach é #[i fad] i gcónaí.
+    when "Table11G-caption"
+      | Focail agus Nathanna a leanann Clásal Coibhneasta Indíreach iad
+    when "Table11G-header1"
+      | Coibhneas Indíreach
+    when "Table11G-header2"
+      | Sampla
+    when "Table11G-áit-example1"
+      | Sin an áit a raibh sé.
+    when "Table11G-áit-example2"
+      | Cá háit a mbíonn na ranganna sin ar siúl?
+    when "Table11G-áit-example3"
+      | Cén áit a ndeachaigh sibh ansin?
+    when "Table11G-chaoi-example1"
+      | Ba é sin an chaoi ar chuala mé faoi.
+    when "Table11G-chaoi-example2"
+      | Cén chaoi ar tharla a leithéid?
+    when "Table11G-dóigh-example1"
+      | Sin an dóigh a bhfuil sé anois.
+    when "Table11G-dóigh-example2"
+      | Cén dóigh a ndéantar an obair?
+    when "Table11G-fáth-example1"
+      | Is é sin an fáth a raibh áthas orm.
+    when "Table11G-fáth-example2"
+      | Cén fáth a gcuireann tú do chuid ama amú mar sin?
+    when "Table11G-chuige-example1"
+      | Cad chuige a ndearna tú sin?
+    when "Table11G-ina-thaobh-example1"
+      | Cad ina thaobh ar inis tú bréag?
+    when "Table11G-tslí-example1"
+      | Ní maith liom an tslí a bhfuil sé á chur i bhfeidhm.
+    when "Table11G-tslí-example2"
+      | Cén tslí a dtoghtar comhaltaí an tSeanaid?
+    when "Table11H-misc-example1"
+      | Ólann sé a dtuilleann sé.
+    when "Table11H-misc-example2"
+      | D&rsquo;ól sé ar thuill sé.
+    when "Table11H-misc-example3"
+      | Faigheann sí gach a bhfuil ag teastáil.
+    when "Table11H-misc-example4"
+      | Fuair sí gach ar theastaigh uaithi.
+    when "Table11H-mar-example1"
+      | Chuaigh mé go dtí an siopa éadaí mar a ndíoltar geansaithe áille olla.
+    when "Table11H-mar-example2"
+      | Sin é teach m&rsquo;aintín mar ar mhinic mo chuairt.
+    default
+      - throw new Error(`No content for ${key} (ga.pug)`)

@@ -1,0 +1,359 @@
+mixin arrowSampleBox(samplePrefix, sampleCount, startAt = 1)
+  table.samplebox(class="my-1")
+    tbody
+      each row in range(startAt, startAt + sampleCount - 1)
+        tr
+          if docLang === "GA"
+            td(class="bg-stone-100 border-1 border-[rgba(0,0,0,0.1)] p-1")
+              +renderKey(`${samplePrefix}${row}a`)
+          else
+            td(class="bg-stone-100 border-1 border-[rgba(0,0,0,0.1)] p-1")
+              +renderKey(`${samplePrefix}${row}a`, { getFromGa: true })
+            td(class="bg-stone-100 border-1 border-[rgba(0,0,0,0.1)] p-1")
+              +renderKey(`${samplePrefix}${row}a`)
+        tr
+          if docLang === "GA"
+            td(class="bg-stone-100 border-1 border-[rgba(0,0,0,0.1)] p-1")
+              | &rarr;&nbsp;
+              +renderKey(`${samplePrefix}${row}b`)
+          else
+            td(class="bg-stone-100 border-1 border-[rgba(0,0,0,0.1)] p-1")
+              | &rarr;&nbsp;
+              +renderKey(`${samplePrefix}${row}b`, { getFromGa: true })
+            td(class="bg-stone-100 border-1 border-[rgba(0,0,0,0.1)] p-1")
+              | &rarr;&nbsp;
+              +renderKey(`${samplePrefix}${row}b`)
+
+mixin Table11A
+  +markedTable(11, "A", "Table11A-caption")
+    thead
+      tr
+        th(colspan="2" class="text-xl py-2")
+          +renderKey("Table11A-header")
+      tr
+        th: +renderKey("Table11A-col1")
+        th: +renderKey("Table11A-col2")
+    tbody
+      tr
+        td
+          if docLang !== "GA"
+            +renderKey("Table11A-row1-col1", { getFromGa: true })
+            br
+          +renderKey("Table11A-row1-col1")
+        td
+          if docLang !== "GA"
+            +renderKey("Table11A-row1-col2", { getFromGa: true })
+            br
+          +renderKey("Table11A-row1-col2")
+      tr
+        td
+          if docLang !== "GA"
+            +renderKey("Table11A-row2-col1", { getFromGa: true })
+            br
+          +renderKey("Table11A-row2-col1")
+        td
+          if docLang !== "GA"
+            +renderKey("Table11A-row2-col2", { getFromGa: true })
+            br
+          +renderKey("Table11A-row2-col2")
+      tr
+        td
+          if docLang !== "GA"
+            +renderKey("Table11A-row3-col1", { getFromGa: true })
+            br
+          +renderKey("Table11A-row3-col1")
+        td
+          if docLang !== "GA"
+            +renderKey("Table11A-row3-col2", { getFromGa: true })
+            br
+          +renderKey("Table11A-row3-col2")
+
+mixin Table11B
+  +markedTable(11, "B", "Table11B-caption")
+    thead
+      tr
+        th(colspan="2" class="text-xl py-2")
+          +renderKey("Table11B-header")
+      tr
+        th: +renderKey("Table11B-col1")
+        th: +renderKey("Table11B-col2")
+    tbody
+      tr
+        td
+          if docLang !== "GA"
+            +renderKey("Table11B-row1-col1", { getFromGa: true })
+            br
+          +renderKey("Table11B-row1-col1")
+        td
+          if docLang !== "GA"
+            +renderKey("Table11B-row1-col2", { getFromGa: true })
+            br
+          +renderKey("Table11B-row1-col2")
+      tr
+        td
+          if docLang !== "GA"
+            +renderKey("Table11B-row2-col1", { getFromGa: true })
+            br
+          +renderKey("Table11B-row2-col1")
+        td
+          if docLang !== "GA"
+            +renderKey("Table11B-row2-col2", { getFromGa: true })
+            br
+          +renderKey("Table11B-row2-col2")
+      tr
+        td
+          if docLang !== "GA"
+            +renderKey("Table11B-row3-col1", { getFromGa: true })
+            br
+          +renderKey("Table11B-row3-col1")
+        td
+          if docLang !== "GA"
+            +renderKey("Table11B-row3-col2", { getFromGa: true })
+            br
+          +renderKey("Table11B-row3-col2")
+
+mixin Table11C
+  +markedTable(11, "C", "Table11C-caption")
+    +autoColgroup([1, 1, 1])
+    thead
+      tr
+        th: +renderKey("Table11C-header1")
+        th: +renderKey("Table11C-header2")
+        th: +renderKey("Table11C-header3")
+    tbody
+      tr        
+        td de 
+        td dá 
+        td dár
+      tr        
+        td do 
+        td dá 
+        td dár
+      tr        
+        td faoi 
+        td faoina 
+        td faoinar
+      tr        
+        td i 
+        td ina 
+        td inar
+      tr        
+        td le 
+        td lena 
+        td lenar
+      tr        
+        td ó 
+        td óna 
+        td ónar
+      tr        
+        td trí 
+        td trína 
+        td trínar
+
+mixin Table11D
+  +markedTable(11, "D", "Table11D-caption")
+    thead
+      tr
+        th
+        th(colspan=2): +renderKey("Table11D-header-1")
+        th(colspan=2): +renderKey("Table11D-header-2")
+      tr
+        th
+        th: +renderKey("Table11D-subheader-1")
+        th: +renderKey("Table11D-subheader-2")
+        th: +renderKey("Table11D-subheader-3")
+        th: +renderKey("Table11D-subheader-4")
+    tbody
+      tr
+        td: +renderKey("Table11D-row1-col1")
+        td is
+        td
+        td ba
+        td ab
+      tr
+        td: +renderKey("Table11D-row2-col1")
+        td ar
+        td arb
+        td ar
+        td arbh
+      tr
+        td: +renderKey("Table11D-row3-col1")
+        td nach
+        td
+        td nár
+        td nárbh
+
+mixin Table11E
+  +markedTable(11, "E", "Table11E-caption")
+    +autoColgroup([1, 1, 1, 1])
+    thead
+      tr
+        th: +renderKey("Table11E-header1")
+        th: +renderKey("Table11E-header2")
+        th: +renderKey("Table11E-header3")
+        th: +renderKey("Table11E-header4")
+    tbody
+      tr
+        td de/do
+        td dar
+        td darb
+        td darbh
+      tr
+        td faoi
+        td faoinar
+        td faoinarb
+        td faoinarbh
+      tr
+        td i
+        td inar
+        td inarb
+        td inarbh
+      tr
+        td le
+        td lenar
+        td lenarb
+        td lenarbh
+      tr
+        td ó
+        td ónar
+        td ónarb
+        td ónarbh
+      tr
+        td trí
+        td trínar
+        td trínarb
+        td trínarbh
+
+mixin lineBreakExample(exampleKey)
+  if docLang === "GA"
+    li: +renderKey(exampleKey)
+  else
+    li
+      +renderKey(exampleKey, { getFromGa: true })
+      | #[br]
+      | (#[+renderKey(exampleKey)])
+
+mixin Table11F
+  +markedTable(11, "F", "Table11F-caption")
+    +autoColgroup([1, 3])
+    thead
+      tr
+        th: +renderKey("Table11F-header1")
+        th: +renderKey("Table11F-header2")
+    tbody
+      tr
+        th cad
+        td: ul
+          +lineBreakExample("Table11F-cad-example1")
+          +lineBreakExample("Table11F-cad-example2")
+      tr
+        th cathain
+        td: ul
+          +lineBreakExample("Table11F-cathain-example")
+      tr
+        th cá fhad, cén fhad*
+        td: ul
+          +lineBreakExample("Table11F-fhad-example1")
+          +lineBreakExample("Table11F-fhad-example2")
+      tr
+        th cá mhéad, cé mhéad, cén méid
+        td: ul
+          +lineBreakExample("Table11F-mhéad-example1")
+          +lineBreakExample("Table11F-mhéad-example2")
+          +lineBreakExample("Table11F-mhéad-example3")
+      tr
+        th cé
+        td: ul
+          +lineBreakExample("Table11F-cé-example1")
+      tr
+        th cé acu, cibé acu
+        td: ul
+          +lineBreakExample("Table11F-acu-example1")
+          +lineBreakExample("Table11F-acu-example2")
+          +lineBreakExample("Table11F-acu-example3")
+      tr
+        th céard
+        td: ul
+          +lineBreakExample("Table11F-céard-example1")
+      tr
+        th cá huair, cén uair
+        td: ul
+          +lineBreakExample("Table11F-uair-example1")
+          +lineBreakExample("Table11F-uair-example2")
+      tr
+        th chomh + #[+renderKey("Table11F-dobhriathar-ama")] + is
+        td: ul
+          +lineBreakExample("Table11F-chomh-example1")
+          +lineBreakExample("Table11F-chomh-example2")
+      tr
+        th conas
+        td: ul
+          +lineBreakExample("Table11F-conas-example1")
+      tr
+        th cad é mar, mar (#[i: +renderKey("Table11F-cónasc")])
+        td: ul
+          +lineBreakExample("Table11F-mar-example1")
+          +lineBreakExample("Table11F-mar-example2")
+      tr
+        th nuair
+        td: ul
+          +lineBreakExample("Table11F-nuair-example1")
+
+mixin Table11G
+  +markedTable(11, "G", "Table11G-caption")
+    +autoColgroup([1, 3])
+    thead
+      tr
+        th: +renderKey("Table11G-header1")
+        th: +renderKey("Table11G-header2")
+    tbody
+      tr
+        th an áit, cá háit, cén áit
+        td: ul
+          +lineBreakExample("Table11G-áit-example1")
+          +lineBreakExample("Table11G-áit-example2")
+          +lineBreakExample("Table11G-áit-example3")
+      tr
+        th an chaoi, cén chaoi
+        td: ul
+          +lineBreakExample("Table11G-chaoi-example1")
+          +lineBreakExample("Table11G-chaoi-example2")
+      tr
+        th an dóigh, cén dóigh
+        td: ul
+          +lineBreakExample("Table11G-dóigh-example1")
+          +lineBreakExample("Table11G-dóigh-example2")
+      tr
+        th an fáth, cén fáth
+        td: ul
+          +lineBreakExample("Table11G-fáth-example1")
+          +lineBreakExample("Table11G-fáth-example2")
+      tr
+        th cad chuige
+        td: ul
+          +lineBreakExample("Table11G-chuige-example1")
+      tr
+        th cad ina thaobh
+        td: ul
+          +lineBreakExample("Table11G-ina-thaobh-example1")
+      tr
+        th an tslí, cén tslí
+        td: ul
+          +lineBreakExample("Table11G-tslí-example1")
+          +lineBreakExample("Table11G-tslí-example2")
+      tr
+        th
+          | a, ar (#[i: +renderKey("saBhrí", { getFromCommon: true })]
+          | an méid a, an méid ar);
+          | gach a, gach ar (#[i: +renderKey("saBhrí", { getFromCommon: true })]
+          | gach rud a, gach rud ar)
+        td: ul
+          +lineBreakExample("Table11H-misc-example1")
+          +lineBreakExample("Table11H-misc-example2")
+          +lineBreakExample("Table11H-misc-example3")
+          +lineBreakExample("Table11H-misc-example4")
+      tr
+        th mar (#[i: +renderKey("saBhrí", { getFromCommon: true })] áit)
+        td: ul
+          +lineBreakExample("Table11H-mar-example1")
+          +lineBreakExample("Table11H-mar-example2")

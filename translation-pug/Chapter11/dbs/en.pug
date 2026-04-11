@@ -1,0 +1,741 @@
+include ../../tlMatter.pug
+if docLang === "EN"
+  mixin tl(tlText)
+    if tlText != null
+      +inlineTl("EN", tlText)
+    else
+      +inlineTl("EN")
+        block
+    
+  mixin tlDb(key)
+    case key
+      when "teidealNaCaibidle"
+        | The Relative Clause
+      when "11-1-title"
+        | General
+      when "11-title"
+        | #[+renderKey("Caibidil", { getFromCommon: true })] 11 | #[+renderKey("teidealNaCaibidle")]
+      when "11-1-1-p"
+        | A conjunction called the #[i relative particle] (affirmative: #[i a], #[i ar]; negative: #[i nach], #[i nár]) is used to link a main clause and a relative subordinate clause together.
+      when "11-1-2-p"
+        | The relative particle is placed before the verb in the subordinate clause. If the copula is in the subordinate clause, the relative particle is not used to link the main clause and the subordinate clause together, but the copula itself has a special form (see #[+link("#sec_11_8", "11.8")]).
+      when "11-1-3-p"
+        | A distinction is made between a #[i direct relative clause] and an #[i indirect relative clause] (see #[+link("#sec_11_2", "11.2")] and #[+link("#sec_11_3", "11.3")]).
+      when "11-1-4-p"
+        | The word or phrase in the main clause that comes directly before the relative particle is called the #[i antecedent].
+      when "11-1-4-sample-1"
+        | Where is #[b the dog] that she got?
+      when "11-1-4-sample-2"
+        | A party was organized #[b for those] who finished today.
+      when "11-1-5-p"
+        | Pronominals (including possessive adjectives) that refer back to the antecedent in indirect relative clauses are called #[i subsequents].
+      when "11-1-5-sample-1"
+        | Give that to the boy who has a cold (#[b on him]).
+      when "11-1-5-sample-2"
+        | Isn&rsquo;t she the woman who used to have a pub (#[b at her])?
+      when "11-2-title"
+        | The Direct Relative Clause
+      when "11-2-1-p"
+        | A direct relative clause is involved in the following contexts. There are no subsequents in a direct relative clause &mdash;
+      when "11-2-1-a-p"
+        | if the antecedent is the subject of the verb in the relative clause:
+      when "11-2-1-a-sample-1a"
+        | That woman kissed Gearóid.
+      when "11-2-1-a-sample-1b"
+        | She is the woman #[b who kissed] Gearóid.
+      when "11-2-1-a-sample-2a"
+        | A brand-new car hit the lorry.
+      when "11-2-1-a-sample-2b"
+        | The brand-new car is the car #[b that hit] the lorry.
+      when "11-2-1-a-sample-3a"
+        | That man will settle the game.
+      when "11-2-1-a-sample-3b"
+        | He is the man #[b who will settle] the game.
+      when "11-2-1-a-sample-4a"
+        | That woman is on television.
+      when "11-2-1-a-sample-4b"
+        | She is the woman #[b who is] on television.
+      when "11-2-1-b-p"
+        | if the antecedent is the direct object of the verb in the relative clause:
+      when "11-2-1-b-sample-1a"
+        | Gearóid kissed that woman.
+      when "11-2-1-b-sample-1b"
+        | She is the woman #[b whom] Gearóid kissed.
+      when "11-2-1-b-sample-2a"
+        | The lorry hit a brand-new car.
+      when "11-2-1-b-sample-2b"
+        | The brand-new car is the car #[b that the lorry hit].
+      when "11-2-1-b-sample-3a"
+        | The man composed that poem.
+      when "11-2-1-b-sample-3b"
+        | That is the poem #[b that the man composed].
+      when "11-2-1-b-sample-4a"
+        | The family will buy that house.
+      when "11-2-1-b-sample-4b"
+        | That is the house #[b that the family will buy].
+      when "11-2-1-b-note-p"
+        | As is clear from #[+link("#sec_11_2_1_a", "(a)")] and #[+link("#sec_11_2_1_b", "(b)")] above, the sentences: #[i Sin í an bhean a phóg Gearóid]; #[i Ba charr úrnua an carr a bhuail an leoraí] are ambiguous. In each context, the antecedent could be either the subject or the direct object of the verb in the relative clause. It is preferable to use an indirect relative clause in such contexts if ambiguity needs to be avoided (see #[+link("#sec_11_3_1_a", "11.3.1(a)")] below). The sentence #[i sin é an dán a chum an fear] is not ambiguous because the antecedent (#[i an dán]) could not be the subject of the verb.
+      when "11-2-1-c-p"
+        | if the antecedent is the object of a verbal noun (direct object or #[i a] (possessive adjective)) in the relative clause:
+      when "11-2-1-c-sample-1a"
+        | That is the book. He is reading it.
+      when "11-2-1-c-sample-1b"
+        | That is the book #[b that] he is reading.
+      when "11-2-1-c-sample-2a"
+        | She bought the dress. I was wanting it.
+      when "11-2-1-c-sample-2b"
+        | She bought the dress #[b that] I was wanting.
+      when "11-2-1-c-note-p"
+        | A direct relative clause of the type used in the second example above can also be used for the first example, e.g., #[i Sin (é) an leabhar a bhí sé a léamh]. Similarly: #[i Sin an cineál cairr atá á thiomáint aige]; #[i Sin an cineál cairr atá sé a thiomáint].
+      when "11-2-1-d-p"
+        | if the temporal adverb #[i uair] or the conjunction #[i nuair] is the antecedent:
+      when "11-2-1-d-sample-1"
+        | I will tell you the story when I have the opportunity. (#[i Lit. when the opportunity #[b will be] at me.])
+      when "11-2-1-d-sample-2"
+        | Do you remember the time #[b when we went] to Spain?
+      when "11-2-1-e-p"
+        | if a temporal adverb such as #[i an tráth] #[+tl the time], #[i an mhaidin] #[+tl the morning], #[i an dáta] #[+tl the date], #[i an oíche] #[+tl the night], #[i an t&#x2011;am] #[+tl the time], etc. is the antecedent:
+      when "11-2-1-e-sample-1"
+        | Do you know the time #[b when] it #[b will be published]?
+      when "11-2-1-e-sample-2"
+        | Do you remember the day #[b when] the tree #[b fell]?
+      when "11-2-1-e-note-p"
+        | An indirect relative clause can be used instead of the direct relative clause for those temporal adverbs, e.g., #[i An bhfuil a fhios agat cén tráth a bhfoilseofar é?]; #[i An cuimhin leat an lá ar thit an crann?] (see #[+link("#sec_11_3_1_g", "11.3.1(g)")]).
+      when "11-2-1-f-p"
+        | if the antecedent is a simple preposition, a compound preposition, a prepositional pronominal or a prepositional phrase brought to the front along with the copula before it for emphasis (see #[+link("#sec_11_8_4", "11.8.4")]):
+      when "11-2-1-f-sample-1a"
+        | The work will be done gradually.
+      when "11-2-1-f-sample-1b"
+        | It is gradually #[b that] the work #[b will be done].
+      when "11-2-1-f-sample-2a"
+        | I saved the money in the credit union.
+      when "11-2-1-f-sample-2b"
+        | It is in the credit union #[b that] I #[b saved] the money.
+      when "11-2-1-f-sample-3a"
+        | He is speaking on behalf of the politician.
+      when "11-2-1-f-sample-3b"
+        | It is on behalf of the politician #[b that] he #[b is] speaking.
+      when "11-2-1-f-sample-4a"
+        | I got the gift from him.
+      when "11-2-1-f-sample-4b"
+        | It is from him #[b that] I #[b got] the gift.
+      when "11-3-title"
+        | The Indirect Relative Clause
+      when "11-3-1-p"
+        | An indirect relative clause is involved in the following contexts. Subsequents in the indirect relative clause refer to the antecedent in the main clause. An indirect relative clause is used &mdash;
+      when "11-3-1-a-p"
+        | to avoid ambiguity when the antecedent is the direct object of the verb in the relative clause (see #[+link("#sec_11_2_1_b", "11.2.1(b)")] above):
+      when "11-3-1-a-sample-1a"
+        | Gearóid kissed that woman.
+      when "11-3-1-a-sample-1b"
+        | It is that woman #[b whom] Gearóid #[b kissed].
+      when "11-3-1-a-sample-2a"
+        | The hurley ball will hit that man.
+      when "11-3-1-a-sample-2b"
+        | It is that man #[b whom] the hurley ball #[b will hit].
+      when "11-3-1-a-sample-3a"
+        | The girl lost her new coat.
+      when "11-3-1-a-sample-3b"
+        | It is a new coat #[b that] the girl #[b lost].
+      when "11-3-1-b-p"
+        | if the antecedent is the object of a verbal noun in the relative clause:
+      when "11-3-1-b-sample-1a"
+        | She bought the dress. I was trying to get it.
+      when "11-3-1-b-sample-1b"
+        | She bought the dress #[b that] I #[b was] trying to get.
+      when "11-3-1-b-sample-2a"
+        | They sold the chair. I was recommending keeping it.
+      when "11-3-1-b-sample-2b"
+        | They sold the chair #[b that] I #[b was] recommending keeping.
+      when "11-3-1-b-note"
+        | A direct relative clause of the following type can also be used for #[+link("#sec_11_3_1_b", "(b)")] above, e.g., #[i Cheannaigh sí an gúna a bhí mé ag iarraidh a fháil]; #[i Dhíol siad an chathaoir a bhí mé ag moladh a choimeád] (see #[+link("#sec_11_3_1_c", "11.2.1(c)")]).
+      when "11-3-1-c-p1"
+        | when the antecedent is the indirect object of the verb in the relative clause:
+      when "11-3-1-c-sample-1a"
+        | The interview was put on that woman.
+      when "11-3-1-c-sample-1b"
+        | It is that woman #[b on whom] the interview #[b was put].
+      when "11-3-1-c-sample-2a"
+        | I buy clothes from that man.
+      when "11-3-1-c-sample-2b"
+        | It is that man #[b from whom] I #[b buy] clothes.
+      when "11-3-1-c-sample-3a"
+        | Reference is made to the book in the program.
+      when "11-3-1-c-sample-3b"
+        | It is that book #[b to which] reference #[b is made] in the program.
+      when "11-3-1-c-sample-4a"
+        | A statement was made on behalf of that company.
+      when "11-3-1-c-sample-4b"
+        | It is that company #[b on behalf of which] a statement #[b was made].
+      when "11-3-1-c-sample-5a"
+        | An application for planning permission was submitted in respect of the building.
+      when "11-3-1-c-sample-5b"
+        | It is that building #[b in respect of which] an application for planning permission #[b was submitted].
+      when "11-3-1-c-p2"
+        | Note that:
+      when "11-3-1-c-i-p"
+        | When a simple preposition (#[i as], #[i de], #[i do], etc.) links the verb to the indirect object, the preposition can be brought to the front before the relative particle. A compound is then formed between the prepositions #[i de], #[i do], #[i faoi], #[i i], #[i le], #[i ó] and #[i trí] and the relative particles #[i a] and #[i ar], respectively (see #[+link("#sec_11_6_1_c", "11.6.1(c)")]).
+      when "11-3-1-c-i-sample-1a"
+        | The interview was put on that woman.
+      when "11-3-1-c-i-sample-1b"
+        | It is that woman #[b on whom] the interview #[b was put].
+      when "11-3-1-c-i-sample-2a"
+        | I buy clothes from that man.
+      when "11-3-1-c-i-sample-2b"
+        | It is that man #[b from whom] I #[b buy] clothes.
+      when "11-3-1-c-i-sample-3a"
+        | Reference is made to the book in the program.
+      when "11-3-1-c-i-sample-3b"
+        | It is that book #[b to which] reference #[b is made] in the program.
+      when "11-3-1-c-ii-p"
+        | When a compound preposition (#[i ar son], #[i i leith], etc.) links the verb to the indirect object, the compound preposition can be brought to the front. (Unlike #[+link("#sec_11_3_1_c_i", "(i)")] above, when a compound preposition is brought to the front, the following verbal clause is a direct relative clause.)
+      when "11-3-1-c-ii-sample-1a"
+        | A statement was made on behalf of that company.
+      when "11-3-1-c-ii-sample-1b"
+        | It is that company #[b on behalf of which] the statement was made.
+      when "11-3-1-c-ii-sample-2a"
+        | An application for planning permission was submitted in respect of the building.
+      when "11-3-1-c-ii-sample-2b"
+        | It is that building #[b in respect of which] an application for planning permission was submitted.
+      when "11-3-1-d-p"
+        | when there is a genitive link between the antecedent and a noun or object (direct or indirect) of the verb in the relative clause. In that context, the subsequent is a possessive adjective:
+      when "11-3-1-d-sample-1a"
+        | The daughter of that woman was on television last night.
+      when "11-3-1-d-sample-1b"
+        | It is that woman #[b whose] daughter was on television last night.
+      when "11-3-1-d-sample-2a"
+        | The thief stole the young woman&rsquo;s car.
+      when "11-3-1-d-sample-2b"
+        | She is the young woman #[b whose] car was stolen by the thief.
+      when "11-3-1-d-sample-3a"
+        | An interview was put on that man&rsquo;s son.
+      when "11-3-1-d-sample-3b"
+        | It is that man #[b on whom] an interview was put.
+      when "11-3-1-e-p"
+        | if the antecedent is referred to in a verbal clause that is subordinate to the verb in the relative clause:
+      when "11-3-1-e-sample-1a"
+        | I thought that that person would never tell the truth.
+      when "11-3-1-e-sample-1b"
+        | He was that person #[b whom] I #[b thought] would never tell the truth.
+      when "11-3-1-e-sample-2a"
+        | I think I saw that woman&rsquo;s daughter on television last night.
+      when "11-3-1-e-sample-2b"
+        | It is that woman #[b whom] I #[b think] I saw her daughter on television last night.
+      when "11-3-1-e-sample-3a"
+        | The officer believes that an application for planning permission was submitted in respect of that building.
+      when "11-3-1-e-sample-3b"
+        | It is that building #[b which] the officer #[b believes] an application for planning permission was submitted in respect of.
+      when "11-3-1-e-sample-4a"
+        | We want to build a fence between that field and the road.
+      when "11-3-1-e-sample-4b"
+        | It is that field #[b which] we #[b want] to build a fence between it and the road.
+      when "11-3-1-e-note-p"
+        | See also the explanation of parenthetical clauses in #[+link("#sec_11_4", "11.4")], e.g., #[i Ba dhuine í a cheap mé a chonaic mé cheana] #[+tl She was the person whom I thought I had seen before].
+      when "11-3-1-f-p"
+        | for interrogative pronominals such as #[i cé], #[i cad] (#[i é]), etc. when a simple preposition, a compound preposition or a prepositional pronominal is brought to the front of the sentence so that it comes directly before the interrogative pronominal:
+      when "11-3-1-f-sample-1a"
+        | Who is it + you will be playing against him.
+      when "11-3-1-f-sample-1b"
+        | Who #[b is he who] you #[b will be] playing against?
+      when "11-3-1-f-sample-2a"
+        | What + you did that on his side.
+      when "11-3-1-f-sample-2b"
+        | For what #[b did] you #[b do] that?
+      when "11-3-1-f-sample-3a"
+        | Who is it + you were talking to him.
+      when "11-3-1-f-sample-3b"
+        | Who #[b was it to whom] you #[b were] talking?
+      when "11-3-1-g-p"
+        | when a temporal adverb such as #[i an tráth], #[i an t&#x2011;am], etc. is the antecedent, an indirect relative clause can be used instead of a direct relative clause (a direct relative clause is always used after #[i nuair] and #[i uair], see #[+link("#sec_11_2_1_d", "11.2.1(d)")]):
+      when "11-3-1-g-sample-1"
+        | Do you know the time #[b when] it #[b will be published]?
+      when "11-3-1-g-sample-2"
+        | Do you remember the day #[b when] the tree #[b fell]?
+      when "11-3-1-g-note-p"
+        | A direct relative clause can also be used instead of an indirect relative clause for temporal adverbs, e.g., #[i An bhfuil a fhios agat cén tráth a fhoilseofar é?]; #[i An cuimhin leat an lá a thit an crann?] (see #[+link("#sec_11_2_1_e", "11.2.1(e)")]).
+      when "11-3-1-h-p"
+        | if one of the words #[i áit] #[+tl place], #[i bealach] #[+tl way], #[i caoi] #[+tl manner], #[i cúis] #[+tl reason], #[i dóigh] #[+tl manner], #[i fáth] #[+tl reason], #[i réasún] #[+tl reason], #[i slí] #[+tl way] or #[i treo] #[+tl direction] (or a word with the same meaning) is the antecedent and it is functioning as an adverb qualifying the verb in the relative clause:
+      when "11-3-1-h-sample-1"
+        | That is the way #[b in which] it #[b was done].
+      when "11-3-1-h-sample-2"
+        | How #[b are] you?
+      when "11-3-1-h-sample-3"
+        | What is the way #[b in which] it #[b was broken]?
+      when "11-3-1-h-sample-4"
+        | That is the reason why I #[b came].
+      when "11-3-1-h-sample-5"
+        | Why #[b did] they #[b leave]?
+      when "11-3-1-h-sample-6"
+        | Which places #[b did] you #[b go to]?
+      when "11-3-1-h-note-p"
+        | A direct clause must be used in sentences where such a word is the direct object of the verb, as in the following: #[i Seo an áit is deise] #[+tl This is the nicest place]; #[i Cad é an áit a cheannaigh sé?] #[+tl What is the place that he bought?]; #[i Ar chuala tú an fáth a thug sí?] #[+tl Did you hear the reason why she gave it?]; #[i An maith leat an chaoi atáim a chur ar an seomra?] #[+tl Do you like the way I arranged the room?]
+      when "11-3-1-i-p1"
+        | when #[i mar] is functioning as an adverb with the meaning of #[i áit] #[+tl place]:
+      when "11-3-1-i-sample-1"
+        | That is the new digital library, #[b where] research facilities are provided for students.
+      when "11-3-1-i-sample-2"
+        | You will find her in the office, #[b where] she is every night.
+      when "11-3-1-i-sample-3"
+        | Appeals will be allowed, except #[b where] the contrary is provided.
+      when "11-3-1-i-p2"
+        | But if #[i mar] is used as a conjunction, it is followed by a direct relative clause, e.g., #[i Sin mar atá cúrsaí] #[+tl That&rsquo;s how things are].
+      when "11-4-title"
+        | The Parenthetical Clause
+      when "11-4-1-p"
+        | A #[i parenthetical clause] is a clause that provides information about the clause that follows it without interrupting the structure of the sentence. If the parenthetical clause is removed from the sentence, it remains intact in terms of sense and grammar.
+      when "11-4-2-p"
+        | Verbs used to express opinion or speech, e.g., #[i abair] #[+tl say], #[i ceap] #[+tl think], #[i maígh] #[+tl claim], #[i síl] #[+tl think], etc., are most commonly found in parenthetical clauses.
+      when "11-4-2-note-p"
+        | See also #[+link("#sec_11_3_1_e", "11.3.1(e)")] for an explanation of contexts where the antecedent is referred to in a verbal clause that is subordinate to the verb in the relative clause, e.g., #[i Ba dhuine é ar cheap mé nach n&#x2011;inseodh sé an fhírinne choíche] #[+tl He was a person whom I thought would never tell the truth].
+      when "11-4-3-p"
+        | The parenthetical clause is a direct clause, but the clause it refers to can be either direct or indirect depending on the structure of the sentence.
+      when "Table11A-caption"
+        | The Parenthetical Clause
+      when "Table11A-header"
+        | The Parenthetical Clause
+      when "Table11A-col1"
+        | The second clause in a direct relative clause
+      when "Table11A-col2"
+        | The second clause in an indirect relative clause
+      when "Table11A-row1-col1"
+        | #[+tl She was the person #[b whom I thought] I had seen before.]
+      when "Table11A-row1-col2"
+        | #[+tl Why do you think #[b they went] there?]
+      when "Table11A-row2-col1"
+        | #[+tl What #[b do you think] will happen to her?]
+      when "Table11A-row2-col2"
+        | #[+tl How #[b do you think] such a thing happened?]
+      when "Table11A-row3-col1"
+        | #[+tl He wore clothes #[b that I didn&rsquo;t think] he would ever wear.]
+      when "Table11A-row3-col2"
+        | #[+tl How #[b do you think] that work will be done?]
+      when "11-4-3-note-p"
+        | A direct or indirect clause can be used in some contexts, e.g., #[i Fuair mé é in áit ar mheas mé a gheobhainn é] #[+tl I got it in a place where I thought I would get it] rather than #[i Fuair mé é in áit a mheas mé a bhfaighinn é].
+      when "11-5-title"
+        | The Comparative Degree Clause
+      when "11-5-1-p"
+        | A clause following the copula and an adjective in the comparative degree is a #[i comparative degree clause]. If the comparative degree clause is removed from the sentence, it remains intact in terms of sense and grammar.
+      when "11-5-2-p"
+        | The comparative degree clause is a direct clause, but the clause it refers to can be either direct or indirect depending on the structure of the sentence.
+      when "Table11B-caption"
+        | The Comparative Degree Clause
+      when "Table11B-header"
+        | The Comparative Degree Clause
+      when "Table11B-col1"
+        | The second clause in a direct relative clause
+      when "Table11B-col2"
+        | The second clause in an indirect relative clause
+      when "Table11B-row1-col1"
+        | #[+tl Those are the questions that are asked #[b most often].]
+      when "Table11B-row1-col2"
+        | #[+tl She is the #[b most famous] person I have met.]
+      when "Table11B-row2-col1"
+        | #[+tl It was the thing that she wanted #[b most].]
+      when "Table11B-row2-col2"
+        | #[+tl Where is it #[b easiest] to organize the concert?]
+      when "Table11B-row3-col1"
+        | #[+tl That is the song I liked #[b best].]
+      when "Table11B-row3-col2"
+        | #[+tl That is the way it will be done #[b fastest].]
+      when "11-5-2-note-p"
+        | A parenthetical clause and a comparative degree clause can be in the same sentence, e.g., #[i Ba é an banna ceoil ba cháiliúla a shíleann sé a bhainistigh an gnólacht sin riamh] #[+tl It was the most famous band that he thought ever managed that company].
+      when "11-6-title"
+        | The Relative Particle &mdash; Forms
+      when "11-6-1-title"
+        | The Affirmative Relative Particle
+      when "11-6-1-a-title"
+        | The Direct Relative Clause
+      when "11-6-1-a-i-p"
+        | If it is a direct relative clause, #[i a] is the form of the relative particle used before regular and irregular verbs in all tenses (except in the present tense of the verb #[i bí] &mdash; see #[+link("#sec_11_6_1_a_ii", "(ii)")] below). The verb is lenited after the direct relative particle #[i a] except when it is an autonomous verb in the past tense (but see #[+link("#sec_11_7_1_b", "11.7.1(b)")]).
+      when "11-6-1-a-i-sample-1"
+        | That is the radio station #[b that] broadcasts programs for children.
+      when "11-6-1-a-i-sample-2"
+        | When #[b will] the program be broadcast?
+      when "11-6-1-a-i-sample-3"
+        | They managed to establish a radio station #[b that] would broadcast pop music.
+      when "11-6-1-a-i-sample-4"
+        | Isn&rsquo;t that the series #[b that] is broadcast every morning?
+      when "11-6-1-a-i-sample-5"
+        | That is the program #[b that] they broadcast yesterday.
+      when "11-6-1-a-i-sample-6"
+        | Is that the woman #[b who] goes to all the matches?
+      when "11-6-1-a-i-sample-7"
+        | That is the bus #[b that] will go to the football stadium.
+      when "11-6-1-a-i-sample-8"
+        | That is the woman #[b who] would go to the match if she could.
+      when "11-6-1-a-i-sample-9"
+        | Is that not the man #[b who] would go to all the matches?
+      when "11-6-1-a-i-sample-10"
+        | That is the woman #[b who] went to the football stadium.
+      when "11-6-1-a-ii-p"
+        | A compound is made between the relative particle #[i a] and the independent present tense form of the verb #[i bí] to create the forms #[i atá], #[i atáim], #[i atáimid].
+      when "11-6-1-a-ii-sample-1"
+        | Those are the books #[b that] I am asking for.
+      when "11-6-1-a-ii-sample-2"
+        | These are the clothes #[b that] I am buying.
+      when "11-6-1-a-ii-sample-3"
+        | That is the thing #[b that] we are going to sell.
+      when "11-6-1-b-title"
+        | The Indirect Relative Clause
+      when "11-6-1-b-i-p"
+        | If it is an indirect relative clause, #[i a] is used before regular and irregular verbs in all tenses except in the past tense (but see #[+link("#sec_11_6_1_b_iii", "(iii)")] below). The verb is eclipsed after the indirect relative particle #[i a].
+      when "11-6-1-b-i-sample-1"
+        | That is the program #[b that] the radio station broadcasts.
+      when "11-6-1-b-i-sample-2"
+        | Where is it #[b that] the program be broadcast?
+      when "11-6-1-b-i-sample-3"
+        | Why is it #[b that] the radio station would broadcast pop music?
+      when "11-6-1-b-i-sample-4"
+        | It is a series #[b that] broadcasts a program of its own every morning.
+      when "11-6-1-b-i-sample-5"
+        | Is that the woman #[b who] her daughter goes to all the matches?
+      when "11-6-1-b-i-sample-6"
+        | That is the man #[b who] his son will go to the football stadium.
+      when "11-6-1-b-i-sample-7"
+        | That is the woman #[b who] her daughter would go to the match if she could.
+      when "11-6-1-b-i-sample-8"
+        | Is that not the man #[b who] his children would go to all the matches?
+      when "11-6-1-b-i-sample-9"
+        | That is the thing #[b that] we are going to sell.
+      when "11-6-1-b-ii-p"
+        | In the past tense, #[i ar] is the form of the relative particle used before regular verbs and before the irregular verbs #[i beir], #[i clois/cluin], #[i ith], #[i tabhair] and #[i tar].
+      when "11-6-1-b-ii-sample-1"
+        | That is the program #[b that] the radio station broadcast.
+      when "11-6-1-b-ii-sample-2"
+        | I bought a new book #[b that] the reviewer recommended.
+      when "11-6-1-b-ii-sample-3"
+        | I met a man #[b whose] son composed Irish songs.
+      when "11-6-1-b-ii-sample-4"
+        | That is the woman #[b from whom] I bought the clothes.
+      when "11-6-1-b-ii-sample-5"
+        | What happened to the person #[b whom] you caught?
+      when "11-6-1-b-ii-sample-6"
+        | The movie #[b that] I heard about is showing in the cinema.
+      when "11-6-1-b-ii-sample-7"
+        | Where is the woman #[b who] was awarded a degree?
+      when "11-6-1-b-ii-sample-8"
+        | Was the woman surprised #[b when] her son came home from Australia?
+      when "11-6-1-b-iii-p"
+        | In the past tense, #[i a] is the form of the relative particle used before the irregular verbs #[i abair], #[i bí], #[i déan], #[i faigh], #[i feic] and #[i téigh].
+      when "11-6-1-b-iii-sample-1"
+        | I think that is the man #[b who] we were told to follow.
+      when "11-6-1-b-iii-sample-2"
+        | I know the woman #[b whose] daughter was on television.
+      when "11-6-1-b-iii-sample-3"
+        | Was that the book #[b that] was referred to?
+      when "11-6-1-b-iii-sample-4"
+        | That is the teacher #[b from whom] I received a letter.
+      when "11-6-1-b-iii-sample-5"
+        | Is that not the woman #[b whom] the man saw?
+      when "11-6-1-b-iii-sample-6"
+        | I returned to the place #[b where] I went long ago.
+      when "11-6-1-c-title"
+        | Compound Forms
+      when "11-6-1-c-p"
+        | A compound is made between the prepositions #[i de], #[i do], #[i faoi], #[i i], #[i le], #[i ó] and #[i trí] and the relative particles #[i a] and #[i ar], respectively, as outlined below (see also #[+link("#sec_11_3_1_c_i", "11.3.1(c)(i)")]). Note that a compound cannot be made between the preposition and the negative relative particles.
+      when "Table11C-caption"
+        | Compound Forms &mdash; Prepositions with the Relative Particles #[i a] and #[i ar]
+      when "Table11C-header1"
+        | Preposition
+      when "Table11C-header2"
+        | + relative particle #[i a]
+      when "Table11C-header3"
+        | + relative particle #[i ar]
+      when "11-6-2-title"
+        | The Negative Relative Particle
+      when "11-6-2-a-title"
+        | The Direct and Indirect Relative Clause
+      when "11-6-2-a-i-p"
+        | In direct and indirect negative clauses, #[i nach] is the form of the relative particle corresponding to #[i a] before regular and irregular verbs, except in the past tense (see #[+link("#sec_11_6_2_a_iii", "(iii)")] below).
+      when "11-6-2-a-i-sample-1"
+        | He is a person #[b who] does #[b not] take advice.
+      when "11-6-2-a-i-sample-2"
+        | That is the station #[b that] did #[b not] broadcast the program.
+      when "11-6-2-a-i-sample-3"
+        | That is the program #[b that] the radio station would #[b not] broadcast.
+      when "11-6-2-a-i-sample-4"
+        | She is the woman #[b who] her daughter will #[b not] take good advice.
+      when "11-6-2-a-i-sample-5"
+        | That is the man #[b who] would #[b not] buy any goods from him.
+      when "11-6-2-a-i-sample-6"
+        | Is that the case #[b that] the man would #[b not] accept?
+      when "11-6-2-a-i-sample-7"
+        | That is the woman #[b whose] son does #[b not] come home every year.
+      when "11-6-2-a-ii-p"
+        | In the past tense, #[i nár] corresponds to both #[i a] and #[i ar] for regular verbs and the irregular verbs #[i beir], #[i clois/cluin], #[i ith], #[i tabhair] and #[i tar].
+      when "11-6-2-a-ii-sample-1"
+        | He was a person #[b who] did #[b not] take advice.
+      when "11-6-2-a-ii-sample-2"
+        | That is the station #[b that] did #[b not] broadcast the program.
+      when "11-6-2-a-ii-sample-3"
+        | That is the program #[b that] the radio station did #[b not] broadcast.
+      when "11-6-2-a-ii-sample-4"
+        | That is the woman #[b whose] daughter did #[b not] take good advice.
+      when "11-6-2-a-ii-sample-5"
+        | That is the man #[b who] I did #[b not] buy any goods from.
+      when "11-6-2-a-ii-sample-6"
+        | What happened to the person #[b who] you did #[b not] catch?
+      when "11-6-2-a-ii-sample-7"
+        | There is a movie #[b that] I did #[b not] hear mentioned as playing in the cinema tonight.
+      when "11-6-2-a-ii-sample-8"
+        | Did you throw away the food #[b that] the dog did #[b not] eat?
+      when "11-6-2-a-ii-sample-9"
+        | That is the woman #[b to whom] I did #[b not] give a book.
+      when "11-6-2-a-ii-sample-10"
+        | Is there anyone #[b who] has still not come home from the concert?
+      when "11-6-2-a-iii-p"
+        | In the past tense, #[i nach] corresponds to #[i a] for the irregular verbs #[i abair], #[i bí], #[i déan], #[i faigh], #[i feic] and #[i téigh].
+      when "11-6-2-a-iii-sample-1"
+        | It is a thing #[b that] I never said.
+      when "11-6-2-a-iii-sample-2"
+        | Is that the woman #[b whose] daughter was not present?
+      when "11-6-2-a-iii-sample-3"
+        | What will be done about the work #[b that] was not done?
+      when "11-6-2-a-iii-sample-4"
+        | That is the teacher #[b from whom] I did not receive a letter.
+      when "11-6-2-a-iii-sample-5"
+        | That is the woman #[b whom] the doctor did not see.
+      when "11-6-2-a-iii-sample-6"
+        | What did you do that time #[b when] you did not go on holiday?
+      when "11-7-title"
+        | The Verb in Relative Clauses
+      when "11-7-1-title"
+        | The Verb &mdash; The Direct Affirmative Relative Clause
+      when "11-7-1-a-p"
+        | The independent form of the verb is used after the direct relative particle #[i a] in direct affirmative relative clauses.
+      when "11-7-1-a-sample-1"
+        | Did you see the new coat #[b that] I #[b got]?
+      when "11-7-1-a-sample-2"
+        | Is that the man #[b who went] to all the games?
+      when "11-7-1-b-p"
+        | The verb (except #[i abair]) is lenited in the present and future tenses (but see #[+link("#sec_11_6_1_a_ii", "11.6.1(a)(ii)")]).
+      when "11-7-1-b-sample-1"
+        | That is the hurley ball #[b that] she #[b hits] every morning.
+      when "11-7-1-b-sample-2"
+        | That is the hurley ball #[b that will be hit] during the game.
+      when "11-7-1-p"
+        | Note that the autonomous verb is lenited where the other forms of the verb are lenited, e.g., #[i na héadaí a cheannaítear] (#[i a cheannófar], #[i a cheannaítí]) (#[b EN]: #[i the clothes that are bought] (#[i will be bought], #[i have been bought])) except in the past tense, e.g., #[i na héadaí a ceannaíodh] #[+tl the clothes that were bought]. The independent autonomous verb is only lenited in the past tense for #[i chonacthas], #[i chualathas], #[i chuathas] and #[i thángthas].
+      when "11-7-2-title"
+        | The Verb &mdash; The Indirect Affirmative Relative Clause
+      when "11-7-2-p"
+        | The dependent form of the verb is used after the relative particles #[i ar] and #[i a] in indirect affirmative relative clauses.
+      when "11-7-2-a-p"
+        | The dependent form of the verb is lenited after the relative particle #[i ar] (except for the autonomous verb in the past tense, e.g., #[i ar goideadh]; #[i ar buaileadh]).
+      when "11-7-2-a-sample-1"
+        | That is the hurley ball #[b that] the woman #[b hit].
+      when "11-7-2-a-sample-2"
+        | That is the woman from #[b whom] the thief #[b stole] the car.
+      when "11-7-2-b-p"
+        | The dependent form of the verb is eclipsed after the relative particle #[i a].
+      when "11-7-2-b-sample-1"
+        | That is the computer #[b that] the woman #[b uses] for work.
+      when "11-7-2-b-sample-2"
+        | That is the woman from #[b whom] the boy #[b will buy] a car.
+      when "11-7-2-b-sample-3"
+        | Is that the girl #[b whose] dog #[b went] missing?
+      when "11-7-2-b-sample-4"
+        | Where did the man #[b whose] son I #[b saw] going into the building go?
+      when "11-7-3-title"
+        | The Verb &mdash; The Direct and Indirect Negative Relative Clause
+      when "11-7-3-p"
+        | The dependent form of the verb is used after the relative particles #[i nach] and #[i nár] in direct and indirect negative relative clauses.
+      when "11-7-3-a-p"
+        | The dependent form of the verb is eclipsed after #[i nach].
+      when "11-7-3-a-sample-1"
+        | That is the hurley ball #[b that] the woman #[b does not hit].
+      when "11-7-3-a-sample-2"
+        | That is the windscreen #[b that] the boy #[b will not break].
+      when "11-7-3-a-sample-3"
+        | That is the hurley ball #[b that] the woman #[b does not hit].
+      when "11-7-3-a-sample-4"
+        | That is the woman from #[b whom] the boy #[b will not buy] a car.
+      when "11-7-3-b-p"
+        | The dependent form of the verb is lenited after #[i nár] except for the autonomous verb in the past tense, e.g., #[i nár ceannaíodh]; #[i nár blaiseadh].
+      when "11-7-3-b-sample-1"
+        | That is the hurley ball #[b that] the woman #[b did not hit].
+      when "11-7-3-b-sample-2"
+        | That is the windscreen #[b that] the boy #[b did not break].
+      when "11-7-3-b-sample-3"
+        | That is the hurley ball #[b that] the woman #[b did not hit].
+      when "11-7-3-b-sample-4"
+        | That is the woman from #[b whom] the boy #[b did not buy] a car.
+      when "11-7-4-title"
+        | The Verb &mdash; The Relative Form
+      when "11-7-4-a-p"
+        | There is a special independent relative form of the verb in the present, habitual present and future tenses. This form can be used in the relative clause as an alternative to the separate forms of the verb, e.g., #[i Sin é an chéad leabhar eile a bheas á léamh agam] #[+tl That is the next book that I will be reading]; #[i Céard a dhéanfas tú anois?] #[+tl What will you do now?]
+      when "11-7-4-b-p"
+        | The special independent relative form of the verb #[i lean] #[+tl follow] is always used in phrases such as #[i na focail seo a leanas] #[+tl the following words].
+      when "11-8-title"
+        | The Copula and the Relative Clause
+      when "11-8-1-p"
+        | Below are the forms of the copula used in relative clauses (see also #[+link("./chapter7.html#sec_7_2_3", "7.2.3")] and #[+link("./chapter7.html#sec_7_2_4", "7.2.4")] for further information).
+      when "Table11D-caption"
+        | Forms of the Copula in a Relative Clause
+      when "Table11D-header-1"
+        | Present and Future Tense
+      when "Table11D-header-2"
+        | Past Tense, Habitual Past Tense and Conditional Mood
+      when "Table11D-subheader-1"
+        | before a consonant
+      when "Table11D-subheader-2"
+        | before a vowel
+      when "Table11D-subheader-3"
+        | before a consonant or before #[i fh-] + #[i consonant]
+      when "Table11D-subheader-4"
+        | before a vowel or before #[i fh-] + #[i vowel]
+      when "Table11D-row1-col1"
+        | Direct Affirmative
+      when "Table11D-row2-col1"
+        | Indirect Affirmative
+      when "Table11D-row3-col1"
+        | Direct and Indirect Negative
+      when "11-8-2-p"
+        | The forms ending in #[i -b] or #[i -bh] are used before a word beginning with a vowel or #[i fh-] before a vowel.
+      when "11-8-2-sample-1"
+        | She was the woman #[b who] was intelligent.
+      when "11-8-2-sample-2"
+        | That is the boy #[b who] knows the answer.
+      when "11-8-2-sample-3"
+        | That is the girl #[b who] loves science.
+      when "11-8-2-sample-4"
+        | He did not listen to the statement #[b that] it was true.
+      when "11-8-3-p"
+        | The lenited forms of the copula are followed in the past tense and the conditional mood.
+      when "11-8-3-sample-1"
+        | She was the manager #[b who] they had.
+      when "11-8-3-sample-2"
+        | It was the thing #[b that] was easiest to do.
+      when "11-8-3-sample-3"
+        | That is the woman #[b who] values help greatly.
+      when "11-8-3-sample-4"
+        | Nothing happened #[b that] was worth mentioning.
+      when "11-8-3-sample-5"
+        | I did nothing #[b that] was suitable for me.
+      when "11-8-4-p"
+        | Where the copula is used to emphasize a simple preposition, a compound preposition, a prepositional pronominal or a verbal phrase placed at the beginning, the second clause is a direct relative clause.
+      when "11-8-4-sample-1"
+        | It was yesterday #[b that] they came home.
+      when "11-8-4-sample-2"
+        | It was from the credit union #[b that] I got the money.
+      when "11-8-4-sample-3"
+        | It was with him #[b that] I was talking.
+      when "11-8-4-sample-4"
+        | Was it on the train #[b that] you went to Sligo?
+      when "11-8-4-sample-5"
+        | It is to France #[b that] he goes on holiday.
+      when "11-8-4-sample-6"
+        | It is gradually #[b that] progress is made.
+      when "11-8-5-p"
+        | A compound is made between the forms of the copula #[i ar], #[i arb] and #[i arbh] and the prepositions #[i de], #[i do], #[i faoi], #[i i], #[i le], #[i ó] and #[i trí] as outlined below (see also #[+link("./chapter7.html#sec_7_3_2", "7.3.2")]).
+      when "Table11E-caption"
+        | Compound Forms &mdash; Prepositions with the Particles #[i ar], #[i arb] and #[i arbh]
+      when "Table11E-header1"
+        | Preposition
+      when "Table11E-header2"
+        | + the copula #[i ar]
+      when "Table11E-header3"
+        | + the copula #[i arb]
+      when "Table11E-header4"
+        | + the copula #[i arbh]
+      when "11-9-title"
+        | The Relative Clause &mdash; Additional Examples
+      when "Table11F-caption"
+        | Words and Phrases Followed by a Direct Relative Clause
+      when "Table11F-header1"
+        | Direct Relative
+      when "Table11F-header2"
+        | Example
+      when "Table11F-dobhriathar-ama"
+        | temporal adverb
+      when "Table11F-cónasc"
+        | conjunction
+      when "Table11F-cad-example1"
+        | #[b EN]: What happened?
+      when "Table11F-cad-example2"
+        | #[b EN]: What does that mean?
+      when "Table11F-cathain-example"
+        | #[b EN]: When did you get the new car?
+      when "Table11F-fhad-example1"
+        | #[b EN]: How long were you there?
+      when "Table11F-fhad-example2"
+        | #[b EN]: How long did the concert last?
+      when "Table11F-mhéad-example1"
+        | #[b EN]: How many books do you have?
+      when "Table11F-mhéad-example2"
+        | #[b EN]: How much did you receive as payment?
+      when "Table11F-mhéad-example3"
+        | #[b EN]: How much does it cost?
+      when "Table11F-cé-example1"
+        | #[b EN]: Who was with you?
+      when "Table11F-acu-example1"
+        | #[b EN]: Which one is meant, me or you?
+      when "Table11F-acu-example2"
+        | #[b EN]: I don&rsquo;t care which one did it or didn&rsquo;t do it.
+      when "Table11F-acu-example3"
+        | #[b EN]: The arrangement will work whether he is willing or not.
+      when "Table11F-céard-example1"
+        | #[b EN]: What are you doing?
+      when "Table11F-uair-example1"
+        | #[b EN]: When did she arrive?
+      when "Table11F-uair-example2"
+        | #[b EN]: When will the movie end?
+      when "Table11F-chomh-example1"
+        | #[b EN]: The details will be kept as long as they are necessary.
+      when "Table11F-chomh-example2"
+        | #[b EN]: How often do you have parties at home?
+      when "Table11F-conas-example1"
+        | #[b EN]: How do you do it?
+      when "Table11F-mar-example1"
+        | #[b EN]: How did you get to know him?
+      when "Table11F-mar-example2"
+        | #[b EN]: Do it properly.
+      when "Table11F-nuair-example1"
+        | #[b EN]: I will call you when I have the opportunity.
+      when "Table-11F-footnote"
+        | #[i an fhad] is an established form. #[i Fad] is always a masculine noun.
+      when "Table11G-caption"
+        | Words and Phrases Followed by an Indirect Relative Clause
+      when "Table11G-header1"
+        | Indirect Relative
+      when "Table11G-header2"
+        | Example
+      when "Table11G-áit-example1"
+        | #[b EN]: That is the place where he was.
+      when "Table11G-áit-example2"
+        | #[b EN]: Where are those classes held?
+      when "Table11G-áit-example3"
+        | #[b EN]: Where did you go there?
+      when "Table11G-chaoi-example1"
+        | #[b EN]: That is the way I heard about it.
+      when "Table11G-chaoi-example2"
+        | #[b EN]: How did such a thing happen?
+      when "Table11G-dóigh-example1"
+        | #[b EN]: That is the way it is now.
+      when "Table11G-dóigh-example2"
+        | #[b EN]: How is the work done?
+      when "Table11G-fáth-example1"
+        | #[b EN]: That is the reason I was happy.
+      when "Table11G-fáth-example2"
+        | #[b EN]: Why do you waste your time like that?
+      when "Table11G-chuige-example1"
+        | #[b EN]: Why did you do that?
+      when "Table11G-ina-thaobh-example1"
+        | #[b EN]: In what respect did you lie?
+      when "Table11G-tslí-example1"
+        | #[b EN]: I don&rsquo;t like the way it is being implemented.
+      when "Table11G-tslí-example2"
+        | #[b EN]: How are members of the Senate elected?
+      when "Table11H-misc-example1"
+        | #[b EN]: He drinks what he earns.
+      when "Table11H-misc-example2"
+        | #[b EN]: He drank what he earned.
+      when "Table11H-misc-example3"
+        | #[b EN]: She gets everything she needs.
+      when "Table11H-misc-example4"
+        | #[b EN]: She got everything she wanted.
+      when "Table11H-mar-example1"
+        | #[b EN]: I went to the clothing store where beautiful wool sweaters are sold.
+      when "Table11H-mar-example2"
+        | #[b EN]: That is my aunt&rsquo;s house where I often visit.
+      default
+        - throw new Error(`No content for ${key} (en.pug)`)
