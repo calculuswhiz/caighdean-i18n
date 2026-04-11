@@ -1,0 +1,87 @@
+include ../../tlMatter.pug
+if docLang === "EN"
+  mixin tl(tlText)
+    if tlText != null
+      +inlineTl("EN", tlText)
+    else
+      +inlineTl("EN")
+        block
+    
+  mixin tlDb(key)
+    case key
+      when "ChoisteChomhairligh"
+        | Members of the Advisory Committee
+      when "Cathaoirleach"
+        | Chairman
+      when "name1-line1"
+        | Former Editor of the Historical Dictionary of Modern Irish,
+      when "name1-line2"
+        | Royal Irish Academy, Dublin
+      when "name2-line1"
+        | Former Director, Gaelic Organization of Public Services,
+      when "name2-line2"
+        | Department of Finance.
+      when "name3-line1"
+        | Director of Education and Research,
+      when "name3-line2"
+        | Irish National Teachers&rsquo; Organization.
+      when "name4-line1"
+        | Head of School, School of Irish Language and Literature,
+      when "name4-line2"
+        | University of Ulster.
+      when "name5-line1"
+        | Director of Education,
+      when "name5-line2"
+        | College of Ireland/Gaelchultúr.
+      when "name6-line1"
+        | Former Assistant Editor at An Gúm (1974&ndash;2007);
+      when "name6-line2"
+        | on the Irish-English Dictionary Team (1975&ndash;1978).
+      when "name7-line1"
+        | Head of the Irish Unit, Directorate-General
+      when "name7-line2"
+        | of Translations, European Commission.
+      when "name8-line1"
+        | Freelance Translator and Irish Teacher,
+      when "name8-line2"
+        | St. Nicholas Secondary School, Ringagonagh,
+      when "name8-line3"
+        | Co. Waterford.
+      when "name9-line1"
+        | Translator, Translation Unit.
+      when "name10-line1"
+        | Former Quality Officer, Irish Unit,
+      when "name10-line2"
+        | General Secretariat of the Council of the European Union.
+      when "name11-line1"
+        | Administrator of the Translation and Interpreting Unit,
+      when "name11-line2"
+        | Academy of Irish Studies,
+      when "name11-line3"
+        | National University of Ireland, Galway.
+      when "name12-line1"
+        | Principal Assistant Translator, Translation Unit.
+      when "name13-line1"
+        | Senior Inspector,
+      when "name13-line2"
+        | Department of Education and Skills.
+      when "name14-line1"
+        | Irish Language Translation Service,
+      when "name14-line2"
+        | European Parliament.
+      when "name15-line1"
+        | Freelance Translator and former Principal Assistant Translator,
+      when "name15-line2"
+        | Translation Unit.
+      when "name16-line1"
+        | Head of School, Fiontar and Scoil na Gaeilge,
+      when "name16-line2"
+        | Dublin City University.
+      when "name17-line1"
+        | Director of Europus, Carraroe, Co. Galway.
+      when "name18-line1"
+        | Translator, Translation Unit.
+      when "name19-line1"
+        | Translator, Translation Unit.
+      default
+        - throw new Error(`No content for ${key} (en.pug)`)

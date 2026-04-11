@@ -49,22 +49,26 @@ mixin autoColgroup(ratios)
     each ratio in ratios
       col(style=`width: ${ratio / ratios.reduce((a, b) => a + b, 0) * 100}%`)
 
-mixin chapterTemplate(chapterNum)
+mixin commonTemplate(titleKey)
   html
     head
     meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    title: +renderKey(`${chapterNum}-title`)
+    title: +renderKey(titleKey)
     link(rel="stylesheet" href="/src/index-pug.css")
   body
     header
       #home-menu-container
         a#menu-link(href="../")
     #toc-container
-    +hx(1, chapterNum.toString(), `${chapterNum}-title`)
-      block
+    block
     //- TODO Translate script
     //- script(type="module" src="/src/chapterScripts.ts")
+
+mixin chapterTemplate(chapterNum)
+  +commonTemplate(`${chapterNum}-title`)
+    +hx(1, chapterNum.toString(), `${chapterNum}-title`)
+      block
 
 //- 
   Retrieve key from db.

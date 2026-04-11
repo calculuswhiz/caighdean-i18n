@@ -1,0 +1,38 @@
+include ../bodyMatter.pug
+include ./dbs/index.pug
+
++commonTemplate("prefaceTitle")
+  +hx(1, "Preface", "prefaceTitle")
+    +hx(2, "", "sec1-title")
+      p: +renderKey("sec1-p1")
+      p: +renderKey("sec1-p2")
+    hr
+    +hx(2, "", "sec2-title")
+      p: +renderKey("sec2-p1")
+      p: +renderKey("sec2-p2")
+    hr
+    +hx(2, "", "sec3-title")
+      p: +renderKey("sec3-p1")
+      p: +renderKey("sec3-p2")
+    hr
+    +hx(2, "", "sec4-title")
+      p: +renderKey("sec4-p")
+    hr
+    +hx(2, "", "sec5-title")
+      p: +renderKey("sec5-p")
+    hr
+    +hx(2, "", "sec6-title")
+      p: +renderKey("sec6-p")
+    hr
+    +hx(2, "", "sec7-title")
+      p: +renderKey("sec7-p1")
+      p: +renderKey("sec7-p2")
+      p: +renderKey("sec7-p3")
+      p: +renderKey("sec7-p4")
+    hr
+    div(class="py-10")
+      p: +renderKey("signature-title1")
+      p: +renderKey("signature-title2")
+      p
+        +renderKey("signature-date")
+        | .

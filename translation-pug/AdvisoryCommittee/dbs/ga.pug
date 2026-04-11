@@ -1,0 +1,80 @@
+include ../../tlMatter.pug
+
+mixin gaDb(key)
+  case key
+    when "ChoisteChomhairligh"
+      | Comhaltaí an Choiste Chomhairligh
+    when "Cathaoirleach"
+      | Cathaoirleach
+    when "name1-line1"
+      | iarEagarthóir ar Fhoclóir Stairiúil na Nua-Ghaeilge,
+    when "name1-line2"
+      | Acadamh Ríoga na hÉireann, Baile Átha Cliath
+    when "name2-line1"
+      | iarStiúrthóir, Gaeleagras na Seirbhíse Poiblí,
+    when "name2-line2"
+      | An Roinn Airgeadais.
+    when "name3-line1"
+      | Stiúrthóir Oideachais agus Taighde,
+    when "name3-line2"
+      | Cumann Múinteoirí Éireann.
+    when "name4-line1"
+      | Ceann Scoile, Scoil Theanga agus Litríocht na Gaeilge,
+    when "name4-line2"
+      | Ollscoil Uladh.
+    when "name5-line1"
+      | Stiúrthóir Oideachais,
+    when "name5-line2"
+      | Coláiste na hÉireann/Gaelchultúr.
+    when "name6-line1"
+      | iarEagarthóir Cúnta sa Ghúm (1974&ndash;2007);
+    when "name6-line2"
+      | ar Fhoireann an Fhoclóra Gaeilge-Béarla (1975&ndash;1978).
+    when "name7-line1"
+      | Ceann Aonad na Gaeilge, Ard-Stiúrthóireacht
+    when "name7-line2"
+      | an Aistriúcháin, An Coimisiún Eorpach.
+    when "name8-line1"
+      | Saoraistritheoir agus Múinteoir Gaeilge,
+    when "name8-line2"
+      | Meánscoil San Nioclás, Rinn Ua gCuanach,
+    when "name8-line3"
+      | Co. Phort Láirge.
+    when "name9-line1"
+      | Aistritheoir, Rannóg an Aistriúcháin.
+    when "name10-line1"
+      | iarOifigeach Cáilíochta, Aonad na Gaeilge,
+    when "name10-line2"
+      | Ard-Rúnaíocht Chomhairle an Aontais Eorpaigh.
+    when "name11-line1"
+      | Riarthóir an Aonaid Aistriúcháin agus Ateangaireachta,
+    when "name11-line2"
+      | Acadamh na hOllscolaíochta Gaeilge,
+    when "name11-line3"
+      | Ollscoil na hÉireann, Gaillimh.
+    when "name12-line1"
+      | Príomh-Aistritheoir Cúnta, Rannóg an Aistriúcháin.
+    when "name13-line1"
+      | Cigire Sinsearach,
+    when "name13-line2"
+      | An Roinn Oideachais agus Scileanna.
+    when "name14-line1"
+      | Seirbhís Aistriúcháin na Gaeilge,
+    when "name14-line2"
+      | Parlaimint na hEorpa.
+    when "name15-line1"
+      | Saoraistritheoir agus iarPhríomh-Aistritheoir Cúnta,
+    when "name15-line2"
+      | Rannóg an Aistriúcháin.
+    when "name16-line1"
+      | Ceann Scoile, Fiontar agus Scoil na Gaeilge,
+    when "name16-line2"
+      | Ollscoil Chathair Bhaile Átha Cliath.
+    when "name17-line1"
+      | Stiúrthóir Europus, An Cheathrú Rua, Co. na Gaillimhe.
+    when "name18-line1"
+      | Aistritheoir, Rannóg an Aistriúcháin.
+    when "name19-line1"
+      | Aistritheoir, Rannóg an Aistriúcháin.
+    default
+      - throw new Error(`No content for ${key} (ga.pug)`)
