@@ -1,0 +1,146 @@
+include ../../tlMatter.pug
+
+mixin gaDb(key)
+  case key
+    when "GrammarNotesTitle"
+      | Noda agus Mínithe Gramadaí
+    when "Abbreviation"
+      | Noda
+    when "parens-meaning"
+      | féadtar focail faoi lúibíní cruinne i lár sampla a úsáid nó a fhágáil ar lár
+    when "GrammarNotes"
+      | Mínithe Gramadaí
+    when "row1-term"
+      | #[i a] as #[i do]
+    when "row1-definition"
+      | tagairt don mhír #[i a] a dhíorthaítear as #[i do], e.g., #[i rud a dhéanamh]
+    when "row2-term"
+      | abairt chopaileach
+    when "row2-definition"
+      | abairt ina gceanglaítear an t&#x2011;ainmní leis an bhfaisnéis, e.g., #[i ba cheoltóir é]; #[i is fada liom uaim í]
+    when "row3-term"
+      | abairtín dobhriathartha
+    when "row3-definition"
+      | abairtín a bhfuil feidhm dhobhriathair aige, e.g., #[i chríochnaigh siad #[b ar deireadh]]; #[i níl sé #[b ar fáil]]
+    when "row4-term"
+      | aidiacht
+    when "row4-definition"
+      | focal a cháilíonn ainmfhocal nó forainmneach, e.g., #[i an carr #[b dearg]; an bosca #[b mór]; tá sé #[b fliuch]]
+    when "row5-term"
+      | ainm briathartha
+    when "row5-definition"
+      | focal a bhfuil feidhm ainmfhocail agus feidhm bhriathair araon aige, e.g., #[i deireadh na #[b heitilte]], #[i ag #[b eitilt]]; #[i #[b foghlaim] a fháil], #[i ag #[b foghlaim]]
+    when "row6-term"
+      | ainm dílis
+    when "row6-definition"
+      | ainm duine nó áite áirithe, e.g., #[i Liam]; #[i Éire]
+    when "row7-term"
+      | ainmfhocal
+    when "row7-definition"
+      | focal a úsáidtear chun tagairt do dhuine nó d&rsquo;áit nó do rud nó d&rsquo;idé, e.g., #[i bean]; #[i bóthar]; #[i camán]; #[i díograis]
+    when "row8-term"
+      | ainmní
+    when "row8-definition"
+      | an príomh-ainmfhocal (nó a chothrom) in abairt, e.g., #[i cheannaigh #[b Nuala] mála nua, tá #[b páipéar] ar an mbord]; #[i canfaidh #[b sé] amhrán]
+    when "row9-term"
+      | clásal
+    when "row9-definition"
+      | frása atá nasctha le frása eile, e.g., #[i chuaigh sí chun na hoifige [agus thosaigh sí ag obair]]; #[i [tá an lá tirim] ach níl sé te]
+    when "row10-term"
+      | clásal coibhneasta
+    when "row10-definition"
+      | clásal ina bhfuil mír choibhneasta nó ina bhfuil foirm choibhneasta den bhriathar, e.g., #[i sin í an cailín #[b a dhún an doras ar maidin]]; #[i cá bhfuil an bhróg #[b nár ghlan tú inné]?]
+    when "row11-term"
+      | consan caol
+    when "row11-definition"
+      | consan ar #[i e] nó #[i i] an guta is cóngaraí dó
+    when "row12-term"
+      | consan inséimhithe
+    when "row12-definition"
+      | consan ar féidir séimhiú a chur air &mdash; #[i b], #[i c], #[i d], #[i f], #[i g], #[i m], #[i p], #[i s] (ach amháin i gcás #[i sc-], #[i sf-], #[i sm-], #[i sp-], #[i st-] agus #[i sv-]) agus #[i t]
+    when "row13-term"
+      | consan inuraithe
+    when "row13-definition"
+      | consan ar féidir urú a chur air &mdash; #[i b], #[i c], #[i d], #[i f], #[i g], #[i p] agus #[i t]
+    when "row14-term"
+      | consan leathan
+    when "row14-definition"
+      | consan ar #[i a], #[i o] nó #[i u] an guta is cóngaraí dó
+    when "row15-term"
+      | cuspóir
+    when "row15-definition"
+      | ainmfhocal (nó a chothrom) a sheasann do dhuine (nó rud) ar a ndéantar gníomhú, e.g., #[i léigh mé #[b leabhar]]; #[i tá an #[b leabhar] léite agam]; #[i léigh mé #[b é]];
+    when "row16-term"
+      | díspeagadh
+    when "row16-definition"
+      | iarmhír a dhéanann athrú beag ar ainmfhocal, e.g., #[i -ín]; ainmfhocal a bhfuil iarmhír den saghas sin curtha leis, e.g., #[i buachaillín]
+    when "row17-term"
+      | dobhriathar
+    when "row17-definition"
+      | focal nó grúpa focal a cháilíonn focal eile nach ainmfhocal ná forainmneach é, e.g., #[i rith sé go #[b tapa]]; #[i bhí sé mall #[b go leor]]; #[i bhí sí thuas #[b beagnach] nuair a thit sí]
+    when "row18-term"
+      | dobhriathar aidiachtach
+    when "row18-definition"
+      | dobhriathar a bhfuil foirm aidiachta aige (ar lorg #[i go] nó gan #[i go]), e.g., #[i ní thagann sí #[b minic] go leor]; #[i bhí sé #[b díreach] ag éirí]; #[i d&rsquo;iarr sí air labhairt #[b go cruinn]]
+    when "row19-term"
+      | fochlásal
+    when "row19-definition"
+      | clásal atá spleách ar an bpríomhchlásal lena mbaineann, e.g., #[i chuala mé scéal #[b nuair a bhí mé óg]]
+    when "row20-term"
+      | fochlásal réamhfhoclach
+    when "row20-definition"
+      | fochlásal a thosaíonn ar réamhfhocal, e.g., #[i chun na bainise]; #[i ó dhaltaí scoile]; #[i leis an Roinn]
+    when "row21-term"
+      | forainmneach réamhthagrach
+    when "row21-definition"
+      | forainmneach a thagann roimh an ní dá bhfuil sé ag tagairt, e.g., #[i tá a fhios agam gurb ise a rinne é]; #[i ba mhaith liom a rá go bhfuilim an-bhuíoch díbh]
+    when "row22-term"
+      | feidhm aidiachtach
+    when "row22-definition"
+      | feidhm arb ionann é agus feidhm aidiachta, is é sin le rá, ainmfhocal nó forainmneach a cháiliú, e.g., #[i pingin #[b ar bith]]; #[i turas #[b ar an Afraic]]
+    when "row23-term"
+      | frása réamhfhoclach
+    when "row23-definition"
+      | frása beag (ina bhfuil dhá fhocal, de ghnáth) a thosaíonn ar réamhfhocal, e.g., #[i ar bith]; #[i ar leith]; #[i den scoth]; #[i in aisce]
+    when "row24-term"
+      | ginideach rannaíoch
+    when "row24-definition"
+      | ginideach a cháilíonn ainmfhocal cainníochta nó páirte, e.g., #[i roinnt #[b aráin]]; #[i mo chuid #[b eolais]]; #[i tuilleadh #[b siúcra]]
+    when "row25-term"
+      | iartheachtaí
+    when "row25-definition"
+      | forainmneach, lena n&#x2011;áirítear aidiacht shealbhach, lena dtagraítear siar don réamhtheachtaí i gclásal coibhneasta indíreach, e.g., #[i sin é an fear a bhfuil an carr #[b aige]]
+    when "row26-term"
+      | infhilleadh
+    when "row26-definition"
+      | foirceann focail a athrú chun feidhmeanna éagsúla an fhocail a thaispeáint, e.g., #[i amhrán, amhráin]; #[i beag, bige]; #[i can, canaigí]
+    when "row27-term"
+      | lom
+    when "row27-definition"
+      | sna huimhreacha pearsanta, gan ainmfhocal ar a lorg
+    when "row28-term"
+      | príomhchlásal
+    when "row28-definition"
+      | clásal nach bhfuil spleách ar aon chlásal eile, e.g., #[i #[b chuala mé scéal] nuair a bhí mé óg]
+    when "row29-term"
+      | réamhfhocal comhshuite
+    when "row29-definition"
+      | frása réamhfhoclach ar leith a bhfuil brí mar aonad leis agus arb é #[i réamhfhocal] + #[i ainmfhocal] is múnla dó de ghnáth, e.g., #[i ar nós; d&rsquo;ainneoin]; #[i thar ceann]. <br /> Is réamhfhocal comhshuite é frása réamhfhoclach den mhúnla sin má tá brí eile leis an ainmfhocal i gcomhthéacs eile, mar shampla, is réamhfhocal comhshuite é #[i i gcás] sa bhrí #[i más rud é]; ní réamhfhocal comhshuite #[i i gcás] sa bhrí #[i i mála, in imeachtaí dlí]
+    when "row30-term"
+      | réamhfhocal simplí
+    when "row30-definition"
+      | focal a chuirtear roimh ainmfhocal nó roimh fhorainmneach chun an bhaint atá aige le focal eile san abairt a léiriú, e.g., #[i bhuail mé #[b le] hÁine]; #[i chuir sé fáilte #[b roimh] na haíonna]
+    when "row31-term"
+      | réamhtheachtaí
+    when "row31-definition"
+      | focal nó frása i bpríomhchlásal a thagann go díreach roimh an mír choibhneasta, e.g., #[i #[b na mná] a bhí ag caint]
+    when "row32-term"
+      | réimír threise
+    when "row32-definition"
+      | mír a thagann roimh fhocal chun béim a leagan air, e.g., #[i tá sé #[b an]-chairdiúil]; #[i #[b an]-pheileadóir is ea í]
+    when "row33-term"
+      | tabharthach rannaíoch
+    when "row33-definition"
+      | an múnla #[i réamhfhocal] + #[i tabharthach], a úsáidtear in ionad an ghinidigh rannaíoch, e.g., #[i roinnt den arán]; #[i beirt de na páistí]; #[i cuid d&rsquo;airgead Thomáis]
+    default
+      - throw new Error(`No content for ${key} (ga.pug)`)

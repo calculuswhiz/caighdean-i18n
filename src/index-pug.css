@@ -291,4 +291,14 @@
       @apply bg-gray-800 text-white;
     }
   }
+
+  .book-index {
+    & li {
+      @apply font-bold;
+
+      & a {
+        @apply font-normal ml-4;
+      }
+    }
+  }
 }

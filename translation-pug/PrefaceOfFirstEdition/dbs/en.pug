@@ -1,0 +1,99 @@
+include ../../tlMatter.pug
+if docLang === "EN"
+  mixin tl(tlText)
+    if tlText != null
+      +inlineTl("EN", tlText)
+    else
+      +inlineTl("EN")
+        block
+    
+  mixin tlDb(key)
+    case key
+      when "PrefaceOfFirstEditionTitle"
+        | Preface to the First Edition
+      when "sec1-p1"
+        | From the time that #[i Irish Orthography &mdash; A Handbook of the Official Standard] was published, teachers, writers, and others have been requesting, high and low, that a book be made available which would provide a standard for Irish grammar, especially in matters of noun declension. They are convinced from their experience in its production that there is a great need for uniform practice in basic models such as noun declension and adjectives, verb conjugation, and the rules relating to initial mutations of words, and that it would greatly benefit the language to bring those matters to as much order as possible.
+      when "sec1-p2"
+        | For a long time now, forms and rules that were once practiced in the writing of the language have been falling out of use. The main reasons for this were that certain forms had an antiquated or affected quality about them, or that they had gone, or were going, out of living speech in the Gaeltacht. In the absence of agreement on the forms and variants to be adopted, people were making their own choices, and the inconsistency and uncertainty that accompanies this was increasing in the language.
+      when "sec1-p3"
+        | It is widely recognized that a grammatical standard is needed to prevent those numerous habits from getting out of control, to establish agreement in place of disagreement, to confirm matters that are currently uncertain, and to bring accuracy and order in place of the inaccuracy and disorder that result from disagreement and uncertainty. It is obvious that it is a convenience for the school teacher to be teaching the same basic forms and variants as his colleagues, and that it would reduce the difficulty of learning for the school pupil not to have different basic forms and variants to deal with as he comes under the care of a new teacher. It would be an aid to both, pupils and teachers alike, for the schoolbooks to be in agreement as much as possible regarding the basic framework of grammar.
+      when "sec1-p4"
+        | It has always been clear that some kind of standard is needed for official business, and the majority of Irish speakers are agreed on this point that proper progress cannot be made in drama, journalism, writing, or the development of Irish for Radio and films, without some organization and coordination of Irish grammar and vocabulary so that it may be capable of coping with English and placed on a par with the languages of other cultured peoples.
+      when "sec1-p5"
+        | In the year 1953 #[i Irish Grammar &mdash; Translation Department Standard] was published in order to obtain opinions and suggestions from the public which would help the Department to lay down a system of conjugation suitable for adoption as a common standard. After considering all the opinions and suggestions received, that system was revised and a draft of a revised edition was prepared and submitted to people who were known to have a special interest in Irish grammar and expertise in it.
+      when "sec1-p6"
+        | At the beginning of the year 1957 it was decided to review the original book and that revised edition, and all the opinions and suggestions received on them. A thorough examination and scrutiny of the whole matter was made, and as a result of that a new edition was prepared. Helpful advice was obtained from native speakers from each of the Gaeltacht areas, from teachers, and from other people who had special knowledge of the language, and the Department of Education agreed to publish this book as a standard for official business and as a guide for teachers and the general public. This standard recognizes certain forms and rules in particular but does not exclude or forbid the use of other correct forms.
+      when "sec1-p7"
+        | Anyone who adheres to the forms and rules set out in this book may be assured that the majority of those forms and rules are in accordance with the usage of the living language and that every single form and rule in it (except a few variants in the numbers) corresponds to the usage of good Irish speakers in some area of the Gaeltacht.
+      when "sec1-p8"
+        | Here are the basic guidelines according to which the standard was made: &mdash;
+      when "sec1-li-1-p"
+        | As far as possible, not to accept any form or rule that does not have good authority in the living language of the Gaeltacht;
+      when "sec1-li-2-p"
+        | To choose the most widespread variants in use in the Gaeltacht;
+      when "sec1-li-3-p"
+        | To give due importance to the history and literature of Irish;
+      when "sec1-li-4-p"
+        | To seek regularity and simplicity.
+      when "sec1-p9"
+        | It was often necessary to make compromises between those basic guidelines. Here is a brief outline of the method in which they were implemented:
+      when "sec2-title"
+        | The Nouns
+      when "sec2-p1"
+        | The system of declensions experienced since the publication of Seán Ó Donnabháin&rsquo;s grammar more than a hundred years ago was accepted.
+      when "sec2-p2"
+        | In the First Declension there was a choice to be made between the slender plural and the broad plural found in places for some nouns, e.g., #[i boinn], #[i bonnaí], #[i bonnachaí], #[i bonnúchaí]; #[i capaill], #[i caiple], #[i capaillí]; #[i cuntais], #[i cuntaisí]; #[i páipéir], #[i páipéirí]; #[i tairbh], #[i taraí]. For the sake of regularity and since it is the most widespread usage, and better accords with literary usage, the slender plural was chosen.
+      when "sec2-p3"
+        | A solution also had to be found regarding nouns such as #[i dochtúr], #[i dochtúir]; #[i nádúr], #[i nádúir], which are placed in the First and Third Declensions, and regarding nouns such as #[i rásúr] which is feminine, and has a genitive form #[i rásúrach] in places. It was decided to place those nouns relating to people, e.g., #[i dochtúir], #[i táilliúir], in the Third Declension and the others in the First Declension. In the case of nouns such as #[i siúinéir], #[i siúinéar(a)]; #[i lintéir], #[i lintéar], a similar arrangement was made, that is, #[i -éir] (Third Declension) for those relating to people, and #[i -éar] (First Declension) for the others.
+      when "sec2-p4"
+        | In the Second Declension the biggest problem was to find a solution regarding the singular dative. The distinction between nominative and dative has long been going out of use and it is rare for both forms to be used correctly side by side in the Gaeltacht. It was decided to retain the nominative form in the dative in the case of plural nouns. In the case of singular nouns, lists of nouns were examined and when it was found that the dative form had become so much stronger in the nominative that a plural had been established for it, that form was accepted for both cases.
+      when "sec2-p5"
+        | In the Third and Fourth Declensions, as far as possible, strong plurals were accepted outside the First and Second Declensions, where there are only very few nouns left that do not have the same form in all cases of the plural.
+      when "sec2-p6"
+        | There are many nouns that go back and forth between the Second, Third, Fourth, and Fifth Declensions in the dialects. An attempt was made to assign them to the declensions most suitable for them, according to the basic guidelines mentioned above.
+      when "sec3-title"
+        | The Adjective
+      when "sec3-p1"
+        | Only one declension of the First and Second Declensions that was previously common was made. The special form for the dative case, a form that has almost completely gone out of use in speech, was disregarded. The strongest and simplest usage was accepted regarding the form of the adjective agreeing with the noun in the genitive plural.
+      when "sec4-title"
+        | The Numbers
+      when "sec4-p1"
+        | In matters of numbers, it was not always possible to adhere to the usual speech patterns. A system was needed that would be accessible to people engaged in numeration and mathematics. To devise this, it was necessary to resort to literature, and in the case of fractions, it was necessary to accept some artificial variants.
+      when "sec4-p2"
+        | There is common experience with the cardinal numbers as they are in this booklet and they have good authority. The usual practice in grammar books was broken by adding the plural form of the noun to the numbers, on the grounds that it was found, after examining the matter, that the nominative is very often used with them and that this is easier for the learner. Examples can be found in old manuscripts for the practice allowed, for the sake of ease, for large numbers. #[i No authority was found for variants such as "fiche a dó fear" nor is it considered necessary or required to have them].
+      when "sec5-title"
+        | The Verbs
+      when "sec5-p1"
+        | An alternative form was given for the Past Subjunctive Mood because comparative matters are involved, and although it is not allowed as a standard, the relative form was permitted because it is still very common in two dialects.
+      when "sec5-p2"
+        | The choice previously recommended between the compound forms and the simple forms of the verb was generally accepted and it was considered best to leave them as they are. In the case of the autonomous verb, the strongest usage in the Gaeltacht was yielded to, that is, lenition as applies to other forms being applied to it except in the Past Tense.
+      when "sec5-p3"
+        | There is a strong tendency in one of the main dialects to place the comparative verbs in the First Conjugation but the tendency is very strong in the other two main dialects to place them in the Second Conjugation. Since the latter is better suited to regularity, there were two good reasons for placing them in the Second Conjugation.
+      when "sec5-p4"
+        | Compared with other languages, Irish is quite free from irregular verbs, but because of the frequency of their use there is a strong demand for their simplification. It was usual to always leave #[i deirim] free from lenition, and to discard the compound forms #[i abraim] (or #[i abraím]), etc. This accords with the speech in most of the Gaeltacht to discard some of the simple forms that #[i faighim] has. In the case of #[i feicim] there was a choice to be made between (a) #[i cím], etc. in the simple form and #[i ní chím], etc., in the compound form, (b) #[i chím] or #[i tím], etc., in the simple form and #[i ní fheicim], etc., in the compound form, and (c) #[i feicim], #[i ní fheicim], etc., in those forms. The simplest and most regular arrangement was to choose #[i feicim] as the standard. It was not possible to disregard the particular variants that #[i déanaim], #[i téim], have in the compound form because that would create inconsistency with two main dialects.
+      when "sec5-p5"
+        | In the verbal nouns an attempt was made to bring the various endings to regularity. For the sake of simplicity, and at the request of teachers and others, the alternative spelling for the verbal adjective and the genitive of the verbal noun in the case of verbal nouns of the Second Conjugation ending in #[i -ú] was discontinued. However, #[i -uithe] was retained in the plural of the verbal nouns.
+      when "sec6-title"
+        | Lenition and Eclipsis
+      when "sec6-p1"
+        | It was considered that there is not yet sufficient consensus to definitely settle the conflict between lenition and eclipsis after prepositions with which the article is combined. If they have a prevalence of usage over the other usage, it is at present too much to expect a large number of Irish speakers whose native usage or practice is the other usage to yield to it. It was not possible to go further in compromise between them than to leave #[i d] and #[i t] bare, not to put #[i t] before #[i s] nor to lenite the adjective unless that would have to be done in the nominative, and to accept lenition after #[i den], #[i don], #[i san].
+      when "sec6-p2"
+        | In many cases where lenition would be expected on a noun following another noun, non-lenition is common in the Gaeltacht. An attempt was made to lay down rules explaining that non-lenition but it is not to be understood that an explanation has been given for every single case of it. For that a descriptive grammar for each of the dialects would be necessary.
+      when "sec6-p3"
+        | Lenition, non-lenition, and #[i t] before #[i s] are found in the second part of compound words when #[i d], #[i n], #[i t], #[i l], #[i s] come together. The most regular and simplest is for non-lenition to be the standard.
+      when "sec6-p4"
+        | An attempt was made to seek simplicity and order in the rules regarding the addition of #[i h] before words. It was decided not to write #[i h] after #[i ní] except before the pronouns #[i é], #[i í], #[i iad], #[i ea].
+      when "sec6-p5"
+        | In the past tense of the Autonomous Verb, e.g., #[i Hardaíodh], (or #[i hArdaíodh]), #[i Do hardaíodh] and #[i ardaíodh] are found in speech. It was considered that the last one is the most orderly in writing.
+      when "sec6-p6"
+        | Reference was made to comparative matters in certain cases closely related to conjugation.
+      when "closing-line1"
+        | Translation Department,
+      when "closing-line2"
+        | Office of the Houses of the Oireachtas,
+      when "closing-line3"
+        | House of Leinster,
+      when "closing-line4"
+        | July, 1958.
+      default
+        - throw new Error(`No content for ${key} (en.pug)`)

@@ -1,0 +1,153 @@
+include ../../tlMatter.pug
+if docLang === "EN"
+  mixin tl(tlText)
+    if tlText != null
+      +inlineTl("EN", tlText)
+    else
+      +inlineTl("EN")
+        block
+    
+  mixin tlDb(key)
+    case key
+      when "GrammarNotesTitle"
+        | Abbreviations and Grammar Explanations
+      when "Abbreviation"
+        | Abbreviations
+      when "parens-meaning"
+        | words in parentheses in the middle of an example may be used or omitted
+      when "GrammarNotes"
+        | Grammar Explanations
+      when "row1-term"
+        | #[i a] from #[i do]
+      when "row1-definition"
+        | refers to the particle #[i a] being derived from #[i do] e.g., #[i rud a dhéanamh]
+      when "row2-term"
+        | copular sentence
+      when "row2-definition"
+        | a sentence where the subject is connected to the object, e.g., #[i ba cheoltóir é]; #[i is fada liom uaim í]
+      when "row3-term"
+        | adverbial phrase
+      when "row3-definition"
+        | a phrase that has applications as an adverb, e.g., #[i chríochnaigh siad #[b ar deireadh]]; #[i níl sé #[b ar fáil]]
+      when "row4-term"
+        | adjective
+      when "row4-definition"
+        | a word that qualifies a noun or pronominal, e.g., #[i an carr #[b dearg]; an bosca #[b mór]; tá sé #[b fliuch]]
+      when "row5-term"
+        | verbal noun
+      when "row5-definition"
+        | a word that has applications both as a noun and a verb, e.g., #[i deireadh na #[b heitilte]], #[i ag #[b eitilt]]; #[i #[b foghlaim] a fháil], #[i ag #[b foghlaim]]
+      when "row6-term"
+        | proper noun
+      when "row6-definition"
+        | a name of a certain person or a place, e.g., #[i Liam]; #[i Éire]
+      when "row7-term"
+        | noun
+      when "row7-definition"
+        | word that is used in reference to a person or a place or a thing or an idea, e.g., #[i bean]; #[i bóthar]; #[i camán]; #[i díograis]
+      when "row8-term"
+        | subject
+      when "row8-definition"
+        | the main noun (or its equivalent) in a sentence, e.g., #[i cheannaigh #[b Nuala] mála nua, tá #[b páipéar] ar an mbord]; #[i canfaidh #[b sé] amhrán]
+      when "row9-term"
+        | clause
+      when "row9-definition"
+        | phrase that is linked to another phrase, e.g., #[i chuaigh sí chun na hoifige [agus thosaigh sí ag obair]]; #[i [tá an lá tirim] ach níl sé te]
+      when "row10-term"
+        | relative clause
+      when "row10-definition"
+        | clause in which there is a relative particle or in which there is a relative form of a verb, e.g., #[i sin í an cailín #[b a dhún an doras ar maidin]]; #[i cá bhfuil an bhróg #[b nár ghlan tú inné]?]
+      when "row11-term"
+        | slender consonant
+      when "row11-definition"
+        | consonant to which #[i e] or #[i i] is the closest vowel
+      when "row12-term"
+        | lenitable consonant
+      when "row12-definition"
+        | a consonant that can undergo lenition &mdash; #[i b], #[i c], #[i d], #[i f], #[i g], #[i m], #[i p], #[i s] (except for #[i sc-], #[i sf-], #[i sm-], #[i sp-], #[i st-] and #[i sv-]) and #[i t]
+      when "row13-term"
+        | eclipsable consonant
+      when "row13-definition"
+        | a consonant that can undergo eclipsis &mdash; #[i b], #[i c], #[i d], #[i f], #[i g], #[i p] and #[i t]
+      when "row14-term"
+        | broad consonant
+      when "row14-definition"
+        | consonant where #[i a], #[i o] or #[i u] are the nearest vowels
+      when "row15-term"
+        | accusative
+      when "row15-definition"
+        | a noun (or its equivalent) that represents a person (or thing) on which an action is performed, e.g., #[i léigh mé #[b leabhar]]; #[i tá an #[b leabhar] léite agam]; #[i léigh mé #[b é]];
+      when "row16-term"
+        | diminutive
+      when "row16-definition"
+        | a suffix that makes a noun small, e.g., #[i -ín]; noun to which this suffix is applied, e.g., #[i buachaillín]
+      when "row17-term"
+        | adverb
+      when "row17-definition"
+        | word or word group that qualifies another word that is not a noun or pronominal, e.g., #[i rith sé go #[b tapa]]; #[i bhí sé mall #[b go leor]]; #[i bhí sí thuas #[b beagnach] nuair a thit sí]
+      when "row18-term"
+        | adjectival adverb
+      when "row18-definition"
+        | adverb that has an adjective form (with #[i go] or without #[i go]), e.g., #[i ní thagann sí #[b minic] go leor]; #[i bhí sé #[b díreach] ag éirí]; #[i d&rsquo;iarr sí air labhairt #[b go cruinn]]
+      when "row19-term"
+        | subordinate clause
+      when "row19-definition"
+        | clause that depends on a main clause it is related to, , e.g., #[i chuala mé scéal #[b nuair a bhí mé óg]]
+      when "row20-term"
+        | prepositional clause
+      when "row20-definition"
+        | subordinate clause that starts on a preposition e.g., #[i chun na bainise]; #[i ó dhaltaí scoile]; #[i leis an Roinn]
+      when "row21-term"
+        | proleptic prominal
+      when "row21-definition"
+        | pronominal that comes before the thing to which it refers, e.g., #[i tá a fhios agam gurb ise #[b a] rinne é]; #[i ba mhaith liom #[b a] rá go bhfuilim an-bhuíoch díbh]
+      when "row22-term"
+        | adjectival function
+      when "row22-definition"
+        | a function that is the same as an adjective, that is to say, to qualify a noun or pronomnial, e.g., #[i pingin #[b ar bith]]; #[i turas #[b ar an Afraic]]
+      when "row23-term"
+        | prepositional phrase
+      when "row23-definition"
+        | a small phrase (with two words, at least) that starts with a preposition, e.g., #[i ar bith]; #[i ar leith]; #[i den scoth]; #[i in aisce]
+      when "row24-term"
+        | partitive genitive
+      when "row24-definition"
+        | genitive that qualifies a noun of quantity or part,  e.g., #[i roinnt #[b aráin]]; #[i mo chuid #[b eolais]]; #[i tuilleadh #[b siúcra]]
+      when "row25-term"
+        | subsequent
+      when "row25-definition"
+        | a pronominal, including a possessive adjective, that refers back to the the proleptic in an indirect relative clause, e.g., #[i sin é an fear a bhfuil an carr #[b aige]]
+      when "row26-term"
+        | inflexion
+      when "row26-definition"
+        | change in word affixes to show the different functions of the word, e.g., #[i amhrán, amhráin]; #[i beag, bige]; #[i can, canaigí]
+      when "row27-term"
+        | bare
+      when "row27-definition"
+        | in the personal numbers, no noun following
+      when "row28-term"
+        | main clause
+      when "row28-definition"
+        | a clause that is not dependent on any other clause, e.g., #[i #[b chuala mé scéal] nuair a bhí mé óg]
+      when "row29-term"
+        | compound preposition
+      when "row29-definition"
+        | a specific prepositional phrase that has a meaning as a unit and usually formed by #[i preposition] + #[i noun], e.g., #[i ar nós; d&rsquo;ainneoin; thar ceann]. <br /> A prepositional phrase of this form is a compound preposition if the noun has another meaning in another context, for example, #[i i gcás] (in case) is a prepositional phrase meaning #[i if]; not a prepositional phrase #[i i gcás] meaning #[i in a bag/case, in legal proceedings]
+      when "row30-term"
+        | simple preposition
+      when "row30-definition"
+        | a word placed before a noun or before a pronominal to show its relationship to another word in the sentence, e.g., #[i bhuail mé #[b le] hÁine]; #[i chuir sé fáilte #[b roimh] na haíonna]
+      when "row31-term"
+        | antecedent
+      when "row31-definition"
+        | word or phrase in a main clause that goes directly before the relative particle, e.g., #[i #[b na mná] a bhí ag caint]
+      when "row32-term"
+        | emphatic prefix
+      when "row32-definition"
+        | particle that goes before a word to stress it, e.g., #[i tá sé #[b an]-chairdiúil]; #[i #[b an]-pheileadóir is ea í]
+      when "row33-term"
+        | partitive dative
+      when "row33-definition"
+        | the form #[i preposition] + #[i dative], used in place of the partitive gentive, e.g., #[i roinnt den arán]; #[i beirt de na páistí]; #[i cuid d&rsquo;airgead Thomáis]
+      default
+        - throw new Error(`No content for ${key} (en.pug)`)

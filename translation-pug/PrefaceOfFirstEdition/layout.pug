@@ -1,0 +1,60 @@
+include ../bodyMatter.pug
+include ./dbs/index.pug
+
++commonTemplate("PrefaceOfFirstEditionTitle")
+  +hx(1, "", "PrefaceOfFirstEditionTitle")
+    p: +renderKey("sec1-p1")
+    p: +renderKey("sec1-p2")
+    p: +renderKey("sec1-p3")
+    p: +renderKey("sec1-p4")
+    p: +renderKey("sec1-p5")
+    p: +renderKey("sec1-p6")
+    p: +renderKey("sec1-p7")
+    p: +renderKey("sec1-p8")
+    ol(class="list-[arabic]")
+      li: +renderKey("sec1-li-1-p")
+      li: +renderKey("sec1-li-2-p")
+      li: +renderKey("sec1-li-3-p")
+      li: +renderKey("sec1-li-4-p")
+    p: +renderKey("sec1-p9")
+    
+    +hx(2, "", "sec2-title")
+      p: +renderKey("sec2-p1")
+      p: +renderKey("sec2-p2")
+      p: +renderKey("sec2-p3")
+      p: +renderKey("sec2-p4")
+      p: +renderKey("sec2-p5")
+      p: +renderKey("sec2-p6")
+    hr
+
+    +hx(2, "", "sec3-title")
+      p: +renderKey("sec3-p1")
+    hr
+
+    +hx(2, "", "sec4-title")
+      p: +renderKey("sec4-p1")
+      p: +renderKey("sec4-p2")
+    hr
+
+    +hx(2, "", "sec5-title")
+      p: +renderKey("sec5-p1")
+      p: +renderKey("sec5-p2")
+      p: +renderKey("sec5-p3")
+      p: +renderKey("sec5-p4")
+      p: +renderKey("sec5-p5")
+    hr
+
+    +hx(2, "", "sec6-title")
+      p: +renderKey("sec6-p1")
+      p: +renderKey("sec6-p2")
+      p: +renderKey("sec6-p3")
+      p: +renderKey("sec6-p4")
+      p: +renderKey("sec6-p5")
+      p: +renderKey("sec6-p6")
+    hr
+
+    .py-10
+      p: +renderKey("closing-line1")
+      p: +renderKey("closing-line2")
+      p: +renderKey("closing-line3")
+      p: +renderKey("closing-line4")

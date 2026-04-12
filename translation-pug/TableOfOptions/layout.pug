@@ -1,0 +1,68 @@
+include ../bodyMatter.pug
+include ./dbs/index.pug
+
++commonTemplate("TableOfOptionsTitle")
+  +hx(1, "", "TableOfOptionsTitle")
+    p: +renderKey("p1")
+    table.options-table(class="my-1")
+      caption
+        +renderKey("TableCaption")
+      thead
+        tr
+          th: +renderKey("Col1")
+          th: +renderKey("Col2")
+          th: +renderKey("Col3")
+      tbody
+        tr
+          td(rowspan=2): +renderKey("ch1-link")
+          td: +renderKey("Choice1A")
+          td(class="bg-stone-300"): +renderKey("CrossRef1A")
+        tr
+          td: +renderKey("Choice1B")
+          td(class="bg-stone-300"): +renderKey("CrossRef1B")
+
+        tr
+          td: +renderKey("ch3-link")
+          td: +renderKey("Choice3")
+          td(class="bg-stone-300"): +renderKey("CrossRef3")
+        
+        tr
+          td(rowspan=4): +renderKey("ch5-link")
+          td: +renderKey("Choice5A")
+          td(class="bg-stone-300"): +renderKey("CrossRef5A")
+        tr
+          td: +renderKey("Choice5B")
+          td(class="bg-stone-300"): +renderKey("CrossRef5B")
+        tr
+          td: +renderKey("Choice5C")
+          td(class="bg-stone-300"): +renderKey("CrossRef5C")
+        tr
+          td: +renderKey("Choice5D")
+          td(class="bg-stone-300"): +renderKey("CrossRef5D")
+
+        tr
+          td(rowspan=2): +renderKey("ch7-link")
+          td: +renderKey("Choice7A")
+          td(class="bg-stone-300"): +renderKey("CrossRef7A")
+        tr
+          td: +renderKey("Choice7B")
+          td(class="bg-stone-300"): +renderKey("CrossRef7B")
+
+        tr
+          td(rowspan=3): +renderKey("ch9-link")
+          td: +renderKey("Choice9A")
+          td(class="bg-stone-300"): +renderKey("CrossRef9A")
+        tr
+          td: +renderKey("Choice9B")
+          td(class="bg-stone-300"): +renderKey("CrossRef9B")
+        tr
+          td: +renderKey("Choice9C")
+          td(class="bg-stone-300"): +renderKey("CrossRef9C")
+
+        tr
+          td(rowspan=2): +renderKey("ch11-link")
+          td: +renderKey("Choice11A")
+          td(class="bg-stone-300"): +renderKey("CrossRef11A")
+        tr
+          td: +renderKey("Choice11B")
+          td(class="bg-stone-300"): +renderKey("CrossRef11B")

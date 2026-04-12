@@ -49,14 +49,14 @@ mixin autoColgroup(ratios)
     each ratio in ratios
       col(style=`width: ${ratio / ratios.reduce((a, b) => a + b, 0) * 100}%`)
 
-mixin commonTemplate(titleKey)
+mixin commonTemplate(titleKey, chapterClass = "")
   html
     head
     meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     title: +renderKey(titleKey)
     link(rel="stylesheet" href="/src/index-pug.css")
-  body
+  body(class=chapterClass)
     header
       #home-menu-container
         a#menu-link(href="../")

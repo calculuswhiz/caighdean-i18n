@@ -1,0 +1,8 @@
+include ../../tlMatter.pug
+
+mixin gaDb(key)
+  case key
+    when "teidealNaCaibidle"
+      | An tInnéacs
+    default
+      - throw new Error(`No content for ${key} (ga.pug)`)
