@@ -1,61 +1,44 @@
-import { EasyDOM } from "./EasyDOM";
-import translations from "../translation/json/translations.json";
-
 // This runtime script reads headings and uses them to make Table of Contents for a chapter
 
-function createListItem(heading: HTMLHeadingElement): EasyDOM<HTMLLIElement> {
-  return EasyDOM.createElement("li")
-    .addClasses('toc-item', 'my-1')
-    .append(
-      EasyDOM.createElement("a")
-        .setProperties({ 
-          href: `#${heading.id}`
-        })
-        .setText(heading.textContent ?? "")
-    );
+function createListItem(heading: HTMLHeadingElement): HTMLLIElement {
+  const li = document.createElement("li");
+  li.classList.add('toc-item', 'my-1');
+
+  const a = document.createElement("a");
+  a.href = `#${heading.id}`;
+  a.textContent = heading.querySelector('.heading-title')?.textContent ?? "";
+
+  li.appendChild(a);
+  return li;
 }
 
-function addSectionLinks(heading: EasyDOM<HTMLHeadingElement>) {
-  const sectionLink = EasyDOM.createElement("a")
-    .setProperties({ title: "Link to this section" })
-    .addClasses('mx-2', 'text-blue-400', 'hover:text-blue-600', 'cursor-pointer', 'select-none')
-    .setText('#');
+// Runtime non-null assertion
+function _nn<T>(value: T | null | undefined, message?: string): NonNullable<T> {
+  if (value === null || value === undefined)
+    throw new Error(message ?? "Unexpected null or undefined value");
 
-  sectionLink.element.addEventListener('click', () => {
-    location.href = `${location.origin}${location.pathname}#${heading.element.id}`;
-  });
-
-  heading.prepend(sectionLink);
+  return value as NonNullable<T>;
 }
 
 /** Scan DOM, adding Table of Contents element to the document.
  * Also processes heading IDs for easier reference linking.
  * Will not add TOC if there are no headings.
  */
-export function makeToC(docLang: keyof typeof translations["tableOfContents"] = 'en') {
+export function makeToC() {
   const headings = document.querySelectorAll<HTMLHeadingElement>("h2,h3,h4,h5,h6");
 
   if (headings.length === 0)
     return;
 
-  const showHideSpan = EasyDOM.createElement("span")
-    .addClasses('toc-toggle', 'text-sm', 'ml-4', 'cursor-pointer', 'text-blue-700')
-    .setText("[+/-]");
+  const showHideSpan = _nn(document.querySelector<HTMLSpanElement>("#toc-toggle"));
 
-  showHideSpan.element.addEventListener('click', () => {
-    rootList.element.classList.toggle('hidden');
+  showHideSpan.addEventListener('click', () => {
+    rootList.classList.toggle('hidden');
   });
 
-  const tocContainer = EasyDOM.createElement("div")
-    .addClasses('toc-container', 'border', 'p-4', 'mb-6', 'bg-gray-100')
-    .append(
-      EasyDOM.createElement("h2")
-        .addClasses('toc-title', 'text-xl', 'font-bold', 'mb-4', 'select-none')
-        .setText(translations.tableOfContents[docLang])
-        .append(showHideSpan),
-    );
+  const tocContainer = _nn(document.querySelector<HTMLDivElement>("#toc-container"));
 
-  const rootList = EasyDOM.createElement("ul").addClasses('hidden');
+  const rootList = _nn(document.querySelector<HTMLUListElement>("#toc-container ul"));
   tocContainer.append(rootList);
 
   let writeRef = rootList;
@@ -78,33 +61,31 @@ export function makeToC(docLang: keyof typeof translations["tableOfContents"] = 
 
     if (levelDiff > 0) {
       for (let i = 0; i < levelDiff; i++) {
-        const newList = EasyDOM.createElement("ul")
-          .addClasses('toc-list', 'list-disc', 'ml-4', 'mt-1', 'mb-1', 'pl-4');
+        const newList = document.createElement("ul");
+        newList.classList.add('toc-list', 'list-disc', 'ml-4', 'mt-1', 'mb-1', 'pl-4');
         writeRef.append(newList);
         writeRef = newList;
       }
 
       currentLevel = level;
-      writeRef.append(createListItem(heading));
+      if (heading.querySelector('.title-text') != null)
+        writeRef.append(createListItem(heading));
     } else if (levelDiff < 0) {
       for (let i = 0; i < -levelDiff; i++) {
-        if (writeRef.element.parentElement) {
-          const parent = writeRef.element.parentElement.closest('ul');
+        if (writeRef.parentElement) {
+          const parent = writeRef.parentElement.closest('ul');
           if (parent)
-            writeRef = new EasyDOM(parent);
+            writeRef = parent;
         }
       }
 
       currentLevel = level;
-      writeRef.append(createListItem(heading));
+      if (heading.querySelector('.title-text') != null)
+        writeRef.append(createListItem(heading));
     } else {
       // Same level
-      writeRef.append(createListItem(heading));
+      if (heading.querySelector('.title-text') != null)
+        writeRef.append(createListItem(heading));
     }
   }
-
-  for (const heading of headings)
-    addSectionLinks(new EasyDOM(heading));
-
-  EasyDOM.querySelector<HTMLDivElement>("#toc-container")?.append(tocContainer.element);
 }

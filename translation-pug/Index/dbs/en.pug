@@ -1,0 +1,60 @@
+include ../../tlMatter.pug
+if docLang === "EN"
+  mixin tl(tlText)
+    if tlText != null
+      +inlineTl("EN", tlText)
+    else
+      +inlineTl("EN")
+        block
+    
+  mixin tlDb(key)
+    case key
+      when "documentTitle"
+        | The Official Standard 2017; Irish Grammar &mdash; Web Version
+      when "bookTitle"
+        | The Official Standard 2017
+      when "bookSubtitle"
+        | Irish Grammar
+      when "bookAbout"
+        | The guide for writing in Irish
+      when "bookPublisherInfo"
+        | Published by the Service of the Houses of the Oireachtas
+      when "chapterSelection"
+        | Select Chapter
+      when "prefaceTitle"
+        | Preface
+      when "advisoryCommittee"
+        | Members of the Advisory Committee
+      when "preface1stEd"
+        | Preface to the First Edition
+      when "abbrevAndGrammarTitle"
+        | Abbreviations and Grammar Explanations
+      when "index"
+        | Index
+      
+      when "tableOfOptions"
+        | Table of Options
+      when "Chapter1"
+        | Chapter 1 &mdash; The Article
+      when "Chapter2"
+        | Chapter 2 &mdash; The Noun
+      when "Chapter3"
+        | Chapter 3 &mdash; Definite and Indefinite Nouns, Abbreviations and the Form of the Nominative in the Place of the Genitive
+      when "Chapter4"
+        | Chapter 4 &mdash; The Adjective
+      when "Chapter5"
+        | Chapter 5 &mdash; The Verb
+      when "Chapter6"
+        | Chapter 6 &mdash; The Adverb
+      when "Chapter7"
+        | Chapter 7 &mdash; The Copula
+      when "Chapter8"
+        | Chapter 8 &mdash; The Pronominal
+      when "Chapter9"
+        | Chapter 9 &mdash; The Number
+      when "Chapter10"
+        | Chapter 10 &mdash; The Initial Mutations
+      when "Chapter11"
+        | Chapter 11 &mdash; The Relative Clause
+      default
+        - throw new Error(`No content for ${key} (en.pug)`)

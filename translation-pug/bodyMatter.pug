@@ -41,6 +41,11 @@
     return uppercase ? letters.toUpperCase() : letters;
   }
 
+  // Null-coalesce. Because ?? is not supported in pug code
+  function _c(item, defaultValue) {
+    return item ?? defaultValue;
+  }
+
 //- Mixins
 
 //- Given array of ratios, auto-size them to fit 100% width
@@ -55,15 +60,22 @@ mixin commonTemplate(titleKey, chapterClass = "")
     meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     title: +renderKey(titleKey)
-    link(rel="stylesheet" href="/src/index-pug.css")
+    link(rel="stylesheet" href="/src/index.css")
   body(class=chapterClass)
     header
       #home-menu-container
         a#menu-link(href="../")
-    #toc-container
+          +renderKey('menu', { getFromCommon: true })
+    #toc-container(class="border p-4 mb-6 bg-gray-100")
+      .toc-title(class="text-xl font-bold mb-4 select-none")
+        +renderKey('tableOfContents', { getFromCommon: true })
+        span#toc-toggle(class="text-sm ml-4 cursor-pointer text-blue-700")
+          | [+/-]
+        ul(class="hidden")
     block
-    //- TODO Translate script
-    //- script(type="module" src="/src/chapterScripts.ts")
+    footer(class="fixed bottom-0 w-[100%] p-2 border-y-1 border-black bg-white")
+      +renderKey('footerDisclaimer', { getFromCommon: true })
+    script(type="module" src="/src/chapterScripts.ts")
 
 mixin chapterTemplate(chapterNum)
   +commonTemplate(`${chapterNum}-title`)
@@ -128,17 +140,18 @@ mixin markedTable(chapter, tableLetter, captionKey)
 
 //- 
   Generates heading element. Comes with id, anchor link
-  - The id is formatted as as sec_ + nav with dots replaced by underscores
-  If normal nav string is provided (1.2.3, etc.), 
-    - the nav is displayed before the title text
-  In the case where the nav contains .gp$x-$y
-    - do not display nav before title text
-mixin hx(level, nav, titleKey = null)
+  - The id is formatted as as sec_ + navText with dots replaced by underscores
+  If normal navText is provided (1.2.3, etc.), 
+    - the navText is displayed before the title text
+  In the case where the navText contains .gp$x-$y
+    - do not display navText before title text
+mixin hx(level, navText, titleKey = null)
   -
     if (level < 1 || level > 5)
       throw new Error(`Unsupported heading level: ${level}`);
 
-    const id = `sec_${nav.replace(/\./g, '_')}`;
+    const isSectionGrouping = navText.includes('.gp');
+    const id = `sec_${navText.replace(/\./g, '_')}`;
     const tag = `h${level}`;
 
   //- Main tag
@@ -148,10 +161,17 @@ mixin hx(level, nav, titleKey = null)
       href=`#${id}`, 
       class="mx-2 text-blue-400 hover:text-blue-600 cursor-pointer select-none"
     ) #
-    if (level > 1 && !nav.includes('.gp'))
-      span(class="mr-2") #{nav}
-    if titleKey != null
-      +renderKey(titleKey)
+
+    span.heading-title
+      if (level > 1 && !isSectionGrouping)
+        span.nav-text !{navText}
+
+      if _c(navText, "") != "" && !isSectionGrouping && _c(titleKey, "") != ""
+        | &nbsp;
+
+      if _c(titleKey, "") != ""
+        span.title-text #[+renderKey(titleKey)]
+      
   if level === 1
     //- H1 reserved for chapter, so border just adds noise
     main

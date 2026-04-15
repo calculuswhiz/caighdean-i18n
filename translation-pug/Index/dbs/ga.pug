@@ -1,0 +1,53 @@
+include ../../tlMatter.pug
+
+mixin gaDb(key)
+  case key
+    when "documentTitle"
+      | An Caighdeán Oifigiúil 2017; Gramadach na Gaeilge &mdash; Leagan Gréasáin
+    when "bookTitle"
+      | An Caighdeán Oifigiúil 2017
+    when "bookSubtitle"
+      | Gramadach na Gaeilge
+    when "bookAbout"
+      | An treoir le haghaidh scríbhneoireacht sa Ghaeilge
+    when "bookPublisherInfo"
+      | Arna Fhoilsiú ag Seirbhís Thithe an Oireachtais
+    when "chapterSelection"
+      | Roghnaigh Caibidil
+    when "prefaceTitle"
+      | An Réamhrá
+    when "advisoryCommittee"
+      | Comhaltaí an Choiste Chomhairligh
+    when "preface1stEd"
+      | Réamhrá an Chéad Eagráin
+    when "abbrevAndGrammarTitle"
+      | Noda agus Mínithe Gramadaí
+    when "index"
+      | An tInnéacs
+    when "tableOfOptions"
+      | Tábla na Roghanna
+    
+    when "Chapter1"
+      | Caibidil 1 &mdash; An tAlt
+    when "Chapter2"
+      | Caibidil 2 &mdash; An tAinmfhocal
+    when "Chapter3"
+      | Caibidil 3 &mdash; Ainmfhocail Chinnte agus Éiginnte, Giorrúcháin agus Foirm an Ainmnigh in ionad an Ghinidigh
+    when "Chapter4"
+      | Caibidil 4 &mdash; An Aidiacht
+    when "Chapter5"
+      | Caibidil 5 &mdash; An Briathar
+    when "Chapter6"
+      | Caibidil 6 &mdash; An Dobhriathar
+    when "Chapter7"
+      | Caibidil 7 &mdash; An Chopail
+    when "Chapter8"
+      | Caibidil 8 &mdash; An Forainmneach
+    when "Chapter9"
+      | Caibidil 9 &mdash; An Uimhir
+    when "Chapter10"
+      | Caibidil 10 &mdash; Na hAthruithe Tosaigh
+    when "Chapter11"
+      | Caibidil 11 &mdash; An Clásal Coibhneasta
+    default
+      - throw new Error(`No content for ${key} (ga.pug)`)

@@ -2,8 +2,6 @@ import * as pug from 'pug';
 import * as fs from 'fs/promises';
 import * as path from 'path';
 
-// TODO Build mode script
-
 const translationRoot = "./translation-pug";
 const devMode = process.argv.includes("--dev");
 
@@ -49,7 +47,7 @@ async function generatePugDocs() {
         try {
           const result = render(layoutPath, lang);
           await fs.writeFile(
-            `./entrypoints/${lang}/${chapterFolder.toLocaleLowerCase()}-pug.html`,
+            `./entrypoints/${lang}/${chapterFolder.toLocaleLowerCase()}.html`,
             result,
             "utf-8"
           );
@@ -63,6 +61,7 @@ async function generatePugDocs() {
     const chapterFolders = (await fs.readdir(translationRoot, { withFileTypes: true }))
       .filter(ent => ent.isDirectory() && ent.name !== "common");
     for (const chapterFolder of chapterFolders) {
+      console.log(`Generating docs for chapter: ${chapterFolder.name}`);
       // EN, GA, etc
       const availableLangs = (await fs.readdir(
         path.join(translationRoot, chapterFolder.name, "dbs")
@@ -77,14 +76,13 @@ async function generatePugDocs() {
         // console.log(layoutPath);
         const result = render(layoutPath, lang);
         await fs.writeFile(
-          `./entrypoints/${lang}/${chapterFolder.name.toLocaleLowerCase()}-pug.html`,
+          `./entrypoints/${lang}/${chapterFolder.name.toLocaleLowerCase()}.html`,
           result,
           "utf-8"
         );
       }
     }
   }
-
 }
 
 generatePugDocs().catch(err => {

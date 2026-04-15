@@ -1,6 +1,15 @@
 if docLang === 'EN'
   mixin commonTlDb(key)
     case key
+      when "tableOfContents"
+        | Table of Contents
+      when "showHide"
+        | Show/Hide
+      when "menu"
+        | Menu
+      //- The Irish text will not be translated as it is a disclaimer about the translation itself.
+      when "footerDisclaimer"
+        | This is an unofficial translation of the 2017 Irish Official Standard.
       when "teidealNaCaibidle"
         | Chapter Title
       when "Caibidil"

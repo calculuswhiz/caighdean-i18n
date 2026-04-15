@@ -9,7 +9,7 @@
     "generate-all-docs": "tsx ./scripts/generateDocs.ts --dev --all",
     "generate-pug-docs": "tsx ./scripts/generatePugDocs.ts --dev --watch",
     "generate-all-pug-docs": "tsx ./scripts/generatePugDocs.ts --dev --all",
-    "build": "tsx ./scripts/generateDocs.ts --all && tsc -b && vite build",
+    "build": "tsx ./scripts/generatePugDocs.ts --all && tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
