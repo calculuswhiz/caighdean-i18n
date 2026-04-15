@@ -64,7 +64,7 @@ mixin commonTemplate(titleKey, chapterClass = "")
   body(class=chapterClass)
     header
       #home-menu-container
-        a#menu-link(href="../")
+        a#menu-link(href="./index.html")
           +renderKey('menu', { getFromCommon: true })
     #toc-container(class="border p-4 mb-6 bg-gray-100")
       .toc-title(class="text-xl font-bold mb-4 select-none")
