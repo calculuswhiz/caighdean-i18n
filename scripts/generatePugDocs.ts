@@ -73,13 +73,13 @@ async function generatePugDocs() {
 
       for (const lang of availableLangs) {
         const layoutPath = path.join(translationRoot, chapterFolder.name, "layout.pug");
-        // console.log(layoutPath);
         const result = render(layoutPath, lang);
         await fs.writeFile(
           `./entrypoints/${lang}/${chapterFolder.name.toLocaleLowerCase()}.html`,
           result,
           "utf-8"
         );
+        console.log(`. ${lang} - Done.`);
       }
     }
   }
