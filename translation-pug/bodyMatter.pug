@@ -151,7 +151,9 @@ mixin hx(level, navText, titleKey = null)
       throw new Error(`Unsupported heading level: ${level}`);
 
     const isSectionGrouping = navText.includes('.gp');
-    const id = `sec_${navText.replace(/\./g, '_')}`;
+    const id = navText != ""
+      ? `sec_${navText.replace(/\./g, '_')}`
+      : undefined;
     const tag = `h${level}`;
 
   //- Main tag

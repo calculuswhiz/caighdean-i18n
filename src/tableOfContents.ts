@@ -1,5 +1,7 @@
 // This runtime script reads headings and uses them to make Table of Contents for a chapter
 
+import { _nn } from "./util";
+
 function createListItem(heading: HTMLHeadingElement): HTMLLIElement {
   const li = document.createElement("li");
   li.classList.add('toc-item', 'my-1');
@@ -10,14 +12,6 @@ function createListItem(heading: HTMLHeadingElement): HTMLLIElement {
 
   li.appendChild(a);
   return li;
-}
-
-// Runtime non-null assertion
-function _nn<T>(value: T | null | undefined, message?: string): NonNullable<T> {
-  if (value === null || value === undefined)
-    throw new Error(message ?? "Unexpected null or undefined value");
-
-  return value as NonNullable<T>;
 }
 
 /** Scan DOM, adding Table of Contents element to the document.
