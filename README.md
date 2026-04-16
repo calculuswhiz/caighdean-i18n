@@ -19,7 +19,7 @@ This project will hopefully be a way to get the ball rolling again with multiple
 
 # Why translate?
 
-Often the foreign learners of languages will start their journey into the language by using language learning software. This software very often does not explain any grammar rules and elects instead to just show examples. While this approach may work for eventually, for people with a working understanding of grammar, it is much more efficient to learn the rules explicitly rather than to learn by failure. For Irish, this is especially frustrating.
+Often the foreign learners of languages will start their journey into the language by using language learning software. This software very often does not explain any grammar rules and elects instead to just show examples. While this approach may work eventually, for people with a working understanding of grammar, it is much more efficient to learn the rules explicitly rather than to learn by failure. For Irish, this is especially frustrating.
 
 For example, Duolingo Irish:
 - Does not mention noun gender and declension
@@ -42,15 +42,8 @@ For those interested, the following base will be used:
 
 - Tailwind for CSS
 - Vite for bundling
-- AsciiDoctor.js for markup rendering.
+- Pug for layout and translation
 - Various node.js scripts for quicker text processing (index+layout)
-- If heavy-duty application development is required beyond document generation, we will bring in React, but currently we are not actively using it, despite any project dependencies.
-
-### Amendment
-
-The project is currently transitioning to using Pug for templating instead of AsciiDoc. The original attraction of AsciiDoc was the ability to output both PDF and HTML. However, due to the limiations of AsciiDoc, the table output forced the project into injected HTML anyway. As a result, the benefit of a multi-output markup language was found to be moot.
-
-Pure HTML, however, was also not desired as it comes with a lot of boilerplate and would involve heavy custom JS preprocessing. Pug was chosen as a middle ground, as it allows for easy templating and mixins, while still being able to output clean and semantic HTML.
 
 The architecture is as follows:
 - translation-pug - Root folder for pug-based files.
