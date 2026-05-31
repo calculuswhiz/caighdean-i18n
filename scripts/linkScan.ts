@@ -10,10 +10,6 @@ import { _nn } from '../src/util';
 
 const scanDir = "./entrypoints";
 
-/** [document name] -> [target ID] -> isValid */
-const matchedLinks: Record<string,
-  Record<string, boolean>
-> = {};
 /** [document name] -> Set of seen targets */
 const seenTargets: Record<string, Set<string>> = {};
 
@@ -22,8 +18,9 @@ const seenTargets: Record<string, Set<string>> = {};
     withFileTypes: true, recursive: true
   })).filter(f => f.isFile() && f.name.endsWith('.html'));
 
+  // Scan for link targets
   for (const file of allFiles) {
-    matchedLinks[file.name] = {};
+    // TODO I did not account for languages here. The bookIndex causes problems with false positives
     seenTargets[file.name] = new Set();
 
     const jsdom = await JSDOM.fromFile(path.join(file.parentPath, file.name));
@@ -38,12 +35,13 @@ const seenTargets: Record<string, Set<string>> = {};
       } else {
         seenTargets[file.name].add(id);
       }
-
-      if (matchedLinks[file.name][id] !== undefined) {
-        // Pending validation, mark as true
-        matchedLinks[file.name][id] = true;
-      }
     }
+  }
+
+  // Re-scan for links and validate against seen targets
+  for (const file of allFiles) {
+    const jsdom = await JSDOM.fromFile(path.join(file.parentPath, file.name));
+    const document = jsdom.window.document;
 
     const allLinks = document.querySelectorAll<HTMLAnchorElement>('a[href]');
     for (const link of allLinks) {
@@ -53,42 +51,28 @@ const seenTargets: Record<string, Set<string>> = {};
           - #sec_1_1_5
           - #table11F
        */
-      if (link.href.startsWith('#')) {
+      const href = link.getAttribute('href') ?? "";
+      if (href.startsWith('#')) {
         // In-document anchor. All ids should be scanned now.
-        const targetId = link.href.substring(1);
+        const targetId = href.substring(1);
         const isValid = seenTargets[file.name].has(targetId);
-        matchedLinks[file.name][targetId] = isValid;
         if (!isValid) {
-          console.warn(`Invalid # link in ${file.name}: ${link.href}`);
+          console.warn(`Invalid # link in ${file.name}: ${href}`);
         }
-      } else if (link.href.startsWith('./')) {
+      } else if (href.startsWith('./')) {
         // Link to another document. May still contain an anchor
-        const [targetDoc, targetId] = link.href.slice(2).split('#');
+        const [targetDoc, targetId] = href.slice(2).split('#');
         if (targetId !== undefined) {
-          matchedLinks[targetDoc][targetId ?? ""] 
-            = seenTargets[targetDoc]?.has(targetId) ?? false;
+          if (!(seenTargets[targetDoc]?.has(targetId))) {
+            console.warn(`Invalid link in ${file.name}: ${href}`);
+          }
         } else {
           // No anchor
-          matchedLinks[targetDoc][""] = seenTargets[targetDoc] !== undefined;
+          if (!(seenTargets[targetDoc])) {
+            console.warn(`Invalid link in ${file.name}: ${href}`);
+          }
         }
       }
     }
-  }
-
-  console.log("Link validation results:");
-  const invalidLinks = [];
-  for (const [doc, targets] of Object.entries(matchedLinks)) {
-    for (const [target, isValid] of Object.entries(targets)) {
-      if (!isValid) {
-        invalidLinks.push({ doc, target });
-        console.warn(`Invalid link in ${doc}: #${target}`);
-      }
-    }
-  }
-
-  if (invalidLinks.length === 0) {
-    console.log("All links are valid!");
-  } else {
-    console.warn(`Found ${invalidLinks.length} invalid links.`);
   }
 })();

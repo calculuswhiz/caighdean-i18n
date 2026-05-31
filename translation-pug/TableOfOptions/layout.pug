@@ -2,7 +2,7 @@ include ../bodyMatter.pug
 include ./dbs/index.pug
 
 +commonTemplate("TableOfOptionsTitle")
-  +hx(1, "", "TableOfOptionsTitle")
+  +hx(1, "title", "TableOfOptionsTitle")
     p: +renderKey("p1")
     table.options-table(class="my-1")
       caption

@@ -11,16 +11,18 @@ include tables.pug
     p: +renderKey("h2-gp-2-5-p")
     +hx(3, "10.2", "10-2-title")
       p: +renderKey("10-2-p")
-      ol(class="list-[lower-alpha]")
-        li#sec_10_2_1_a
-          p: +renderKey("10-2-1-a-p")
-          +sampleBox('10-2-1-a-sample-', 2)
-        li#sec_10_2_1_b
-          p: +renderKey("10-2-1-b-p")
-          +sampleBox('10-2-1-b-sample-', 2)
-        li#sec_10_2_1_c
-          p: +renderKey("10-2-1-c-p")
-          +sampleBox('10-2-1-c-sample-', 2)
+      +hx(4, "10.2.1", "10-2-1-title")
+        p: +renderKey("10-2-1-p")
+        ol(class="list-[lower-alpha]")
+          li#sec_10_2_1_a
+            p: +renderKey("10-2-1-a-p")
+            +sampleBox('10-2-1-a-sample-', 2)
+          li#sec_10_2_1_b
+            p: +renderKey("10-2-1-b-p")
+            +sampleBox('10-2-1-b-sample-', 2)
+          li#sec_10_2_1_c
+            p: +renderKey("10-2-1-c-p")
+            +sampleBox('10-2-1-c-sample-', 2)
       +hx(4, "10.2.2", "10-2-2-title")
         p: +renderKey("10-2-2-p")
         +sampleBox('10-2-2-sample-', 2)
@@ -376,8 +378,8 @@ include tables.pug
         aside
           b: +renderKey("Nóta", { getFromCommon: true })
           ol(class="list-[lower-alpha]")
-            li: +renderKey("10-6-3-a-p")
-            li: +renderKey("10-6-3-b-p")
+            li#sec_10_6_3_a: +renderKey("10-6-3-a-p")
+            li#sec_10_6_3_b: +renderKey("10-6-3-b-p")
       +hx(4, "10.6.4", "10-6-4-title")
         p: +renderKey("10-6-4-p1")
         ol(class="list-[lower-alpha]")

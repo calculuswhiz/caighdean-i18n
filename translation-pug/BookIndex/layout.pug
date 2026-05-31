@@ -3,7 +3,7 @@ include ./dbs/index.pug
 include ./links.pug
 
 +commonTemplate("teidealNaCaibidle", "book-index")
-  +hx(1, "", "teidealNaCaibidle")
+  +hx(1, "title", "teidealNaCaibidle")
     //- Every language has include guards, so include all
     include ga-index.pug
     include en-index.pug
