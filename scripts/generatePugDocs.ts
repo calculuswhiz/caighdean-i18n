@@ -14,7 +14,10 @@ function render(layoutPath: string, lang: string) {
   return pug.renderFile(layoutPath, options);
 }
 
-/** Scan chapters and languages, compile Pug files, and write to entrypoints. */
+/** Scan chapters and languages, compile Pug files, and write to entrypoints.
+ * If --watch is provided, watch for changes in the translation-pug directory and regenerate docs on change.
+ * Otherswise, just generate all docs once.
+ */
 async function generatePugDocs() {
   if (process.argv.includes("--watch")) {
     console.log("Watching for changes...");
@@ -29,6 +32,7 @@ async function generatePugDocs() {
       }
 
       console.log(`File changed: ${event.filename}`);
+      const time = performance.now();
 
       // Regenerate the document for the changed chapter
       const chapterFolder = path.dirname(event.filename);
@@ -56,6 +60,7 @@ async function generatePugDocs() {
           continue;
         }
       }
+      console.log(`Regeneration took ${(performance.now() - time).toFixed(2)} ms`);
     }
   } else {
     const chapterFolders = (await fs.readdir(translationRoot, { withFileTypes: true }))
