@@ -1,7 +1,14 @@
 {
   "files": [],
   "references": [
+    { "path": "./tsconfig.bun.json" },
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ]
+  ],
+  "compilerOptions": {
+    /* For the JSX templating */
+    "jsx": "react-jsx",
+    "jsxImportSource": "@kitajs/html",
+    "plugins": [{ "name": "@kitajs/ts-html-plugin" }]
+  }
 }

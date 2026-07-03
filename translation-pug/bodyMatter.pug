@@ -57,10 +57,10 @@ mixin autoColgroup(ratios)
 mixin commonTemplate(titleKey, chapterClass = "")
   html
     head
-    meta(charset="UTF-8")
-    meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    title: +renderKey(titleKey)
-    link(rel="stylesheet" href="/src/index.css")
+      meta(charset="UTF-8")
+      meta(name="viewport" content="width=device-width, initial-scale=1.0")
+      title: +renderKey(titleKey)
+      link(rel="stylesheet" href="/src/index.css")
   body(class=chapterClass)
     header
       #home-menu-container
