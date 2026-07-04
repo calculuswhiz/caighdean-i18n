@@ -51,7 +51,7 @@ async function generatePugDocs() {
         try {
           const result = render(layoutPath, lang);
           await fs.writeFile(
-            `./entrypoints/${lang}/${chapterFolder.toLocaleLowerCase()}.html`,
+            `./_reroute/${lang}/${chapterFolder.toLocaleLowerCase()}.html`,
             result,
             "utf-8"
           );
@@ -80,7 +80,7 @@ async function generatePugDocs() {
         const layoutPath = path.join(translationRoot, chapterFolder.name, "layout.pug");
         const result = render(layoutPath, lang);
         await fs.writeFile(
-          `./entrypoints/${lang}/${chapterFolder.name.toLocaleLowerCase()}.html`,
+          `./_reroute/${lang}/${chapterFolder.name.toLocaleLowerCase()}.html`,
           result,
           "utf-8"
         );

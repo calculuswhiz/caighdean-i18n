@@ -1,13 +1,17 @@
 import { getCommonTranslator, MarkedTable, type SupportedLocales } from "../bodyMatter";
-import { getChapter1Translator } from "./layout";
+import { getChapterTranslator } from "./layout";
 
 export const Table1A = (props: {
   docLang: SupportedLocales;
 }) => {
   const commonDb = getCommonTranslator(props.docLang);
-  const chapter1Db = getChapter1Translator(props.docLang);
+  const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={1} tableLeter="A" caption={chapter1Db["Table1A-caption"]} docLang={props.docLang}>
+  return <MarkedTable
+    chapter={1}
+    tableLeter="A"
+    caption={chapterDb["Table1A-caption"]}
+    docLang={props.docLang}>
     <tbody>
       {/* Top half */}
       <tr>
@@ -27,16 +31,16 @@ export const Table1A = (props: {
               </tr>
               <tr>
                 <th colSpan={2}>
-                  {chapter1Db["ArticleTable-col1-th"]}
+                  {chapterDb["ArticleTable-col1-th"]}
                 </th>
                 <th>
-                  {chapter1Db["ArticleTable-col2-th"]}
+                  {chapterDb["ArticleTable-col2-th"]}
                 </th>
                 <th>
-                  {chapter1Db["ArticleTable-col3-th"]}
+                  {chapterDb["ArticleTable-col3-th"]}
                 </th>
                 <th>
-                  {chapter1Db["ArticleTable-col4-th"]}
+                  {chapterDb["ArticleTable-col4-th"]}
                 </th>
               </tr>
             </thead>
@@ -46,11 +50,11 @@ export const Table1A = (props: {
                   {commonDb.Consan}
                 </th>
                 <td>
-                  {chapter1Db['gachConsan']}
+                  {chapterDb['gachConsan']}
                 </td>
                 <td>an</td>
                 <td>
-                  {chapter1Db['ganAonAthru']}
+                  {chapterDb['ganAonAthru']}
                 </td>
                 <td>
                   <ul>
@@ -68,11 +72,11 @@ export const Table1A = (props: {
                   {commonDb.Guta}
                 </th>
                 <td>
-                  {chapter1Db['gachGuta']}
+                  {chapterDb['gachGuta']}
                 </td>
                 <td>an</td>
                 <td>
-                  {chapter1Db['tRoimhe']}
+                  {chapterDb['tRoimhe']}
                 </td>
                 <td>
                   <ul>
@@ -106,16 +110,16 @@ export const Table1A = (props: {
               </tr>
               <tr>
                 <th colSpan={2}>
-                  {chapter1Db["ArticleTable-col1-th"]}
+                  {chapterDb["ArticleTable-col1-th"]}
                 </th>
                 <th>
-                  {chapter1Db["ArticleTable-col2-th"]}
+                  {chapterDb["ArticleTable-col2-th"]}
                 </th>
                 <th>
-                  {chapter1Db["ArticleTable-col3-th"]}
+                  {chapterDb["ArticleTable-col3-th"]}
                 </th>
                 <th>
-                  {chapter1Db["ArticleTable-col4-th"]}
+                  {chapterDb["ArticleTable-col4-th"]}
                 </th>
               </tr>
             </thead>
@@ -125,7 +129,7 @@ export const Table1A = (props: {
                   {commonDb.Consan}
                 </th>
                 <td>
-                  {chapter1Db['consanInséimhitheSeachasDTS']}
+                  {chapterDb['consanInséimhitheSeachasDTS']}
                 </td>
                 <td>an</td>
                 <td>
@@ -140,11 +144,11 @@ export const Table1A = (props: {
               </tr>
               <tr>
                 <td>
-                  {chapter1Db['dNoT']}
+                  {chapterDb['dNoT']}
                 </td>
                 <td>an</td>
                 <td>
-                  {chapter1Db['ganAonAthru']}
+                  {chapterDb['ganAonAthru']}
                 </td>
                 <td>
                   <ul>
@@ -155,11 +159,11 @@ export const Table1A = (props: {
               </tr>
               <tr>
                 <td>
-                  {chapter1Db['sSeachasCFMPTV']}
+                  {chapterDb['sSeachasCFMPTV']}
                 </td>
                 <td>an</td>
                 <td>
-                  {chapter1Db['tRoimhe']}
+                  {chapterDb['tRoimhe']}
                 </td>
                 <td>
                   <ul>
@@ -173,11 +177,11 @@ export const Table1A = (props: {
                   {commonDb.Guta}
                 </th>
                 <td>
-                  {chapter1Db['gachGuta']}
+                  {chapterDb['gachGuta']}
                 </td>
                 <td>an</td>
                 <td>
-                  {chapter1Db['ganAonAthru']}
+                  {chapterDb['ganAonAthru']}
                 </td>
                 <td>
                   <ul>
@@ -200,13 +204,13 @@ export const Table1B = (props: {
   docLang: SupportedLocales;
 }) => {
   const commonDb = getCommonTranslator(props.docLang);
-  const chapter1Db = getChapter1Translator(props.docLang);
+  const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={1} tableLeter="B" caption={chapter1Db['Table1B-caption']} docLang={props.docLang}>
+  return <MarkedTable chapter={1} tableLeter="B" caption={chapterDb['Table1B-caption']} docLang={props.docLang}>
     <thead>
       <tr>
         <th colSpan={2} className="text-2xl px-4 py-2">
-          {chapter1Db['Table1B-header']}
+          {chapterDb['Table1B-header']}
         </th>
       </tr>
       <tr>
@@ -252,14 +256,14 @@ export const Table1B = (props: {
           sa bhosca buí <br />
           sa fhraoch bán <br />
           <br />
-          {chapter1Db['Table1B-note']} <br />
+          {chapterDb['Table1B-note']} <br />
           san fhéar fliuch
         </td>
         <td>
           sa chomhairle shóisialta <br />
           sa fhrithréabhlóid fhíochmhar <br />
           <br />
-          {chapter1Db['Table1B-note']} <br />
+          {chapterDb['Table1B-note']} <br />
           san fharraige ghlan
         </td>
       </tr>
@@ -295,13 +299,13 @@ export const Table1C = (props: {
   docLang: SupportedLocales;
 }) => {
   const commonDb = getCommonTranslator(props.docLang);
-  const chapter1Db = getChapter1Translator(props.docLang);
+  const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={1} tableLeter="C" caption={chapter1Db['Table1C-caption']} docLang={props.docLang}>
+  return <MarkedTable chapter={1} tableLeter="C" caption={chapterDb['Table1C-caption']} docLang={props.docLang}>
     <thead>
       <tr>
         <th colSpan={2} className="text-2xl px-4 py-2">
-          {chapter1Db['Table1C-header']}
+          {chapterDb['Table1C-header']}
         </th>
       </tr>
       <tr>
@@ -313,7 +317,7 @@ export const Table1C = (props: {
           <b>{commonDb.GanAthrú}</b>
         </th>
         <th className="text-center bg-stone-300">
-          <b>{chapter1Db['Table1C-col2-subheader']}</b>
+          <b>{chapterDb['Table1C-col2-subheader']}</b>
         </th>
       </tr>
     </thead>
@@ -386,13 +390,13 @@ export const Table1D = (props: {
   docLang: SupportedLocales;
 }) => {
   const commonDb = getCommonTranslator(props.docLang);
-  const chapter1Db = getChapter1Translator(props.docLang);
+  const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={1} tableLeter="D" caption={chapter1Db['Table1D-caption']} docLang={props.docLang}>
+  return <MarkedTable chapter={1} tableLeter="D" caption={chapterDb['Table1D-caption']} docLang={props.docLang}>
     <thead>
       <tr>
         <th colSpan={2} className="text-2xl px-4 py-2">
-          {chapter1Db['Table1D-header']}
+          {chapterDb['Table1D-header']}
         </th>
       </tr>
       <tr>
@@ -437,13 +441,13 @@ export const Table1E = (props: {
   docLang: SupportedLocales;
 }) => {
   const commonDb = getCommonTranslator(props.docLang);
-  const chapter1Db = getChapter1Translator(props.docLang);
+  const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={1} tableLeter="E" caption={chapter1Db['Table1E-caption']} docLang={props.docLang}>
+  return <MarkedTable chapter={1} tableLeter="E" caption={chapterDb['Table1E-caption']} docLang={props.docLang}>
     <thead>
       <tr>
         <th colSpan={2} className="text-2xl px-4 py-2">
-          {chapter1Db['Table1E-header']}
+          {chapterDb['Table1E-header']}
         </th>
       </tr>
       <tr>
@@ -492,9 +496,9 @@ export const Table1F = (props: {
   docLang: SupportedLocales;
 }) => {
   const commonDb = getCommonTranslator(props.docLang);
-  const chapter1Db = getChapter1Translator(props.docLang);
+  const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={1} tableLeter="F" caption={chapter1Db['Table1F-caption']} docLang={props.docLang}>
+  return <MarkedTable chapter={1} tableLeter="F" caption={chapterDb['Table1F-caption']} docLang={props.docLang}>
     <tbody>
       {/* First half */}
       <tr>
@@ -513,10 +517,10 @@ export const Table1F = (props: {
                 </th>
               </tr>
               <tr>
-                <th colSpan={2}>{chapter1Db['ArticleTable-col1-th']}</th>
-                <th>{chapter1Db['ArticleTable-col2-th']}</th>
-                <th>{chapter1Db['ArticleTable-col3-th']}</th>
-                <th>{chapter1Db['ArticleTable-col4-th']}</th>
+                <th colSpan={2}>{chapterDb['ArticleTable-col1-th']}</th>
+                <th>{chapterDb['ArticleTable-col2-th']}</th>
+                <th>{chapterDb['ArticleTable-col3-th']}</th>
+                <th>{chapterDb['ArticleTable-col4-th']}</th>
               </tr>
             </thead>
             <tbody>
@@ -524,7 +528,7 @@ export const Table1F = (props: {
                 <th rowSpan={3} className="bg-stone-300">
                   {commonDb['Consan']}
                 </th>
-                <td>{chapter1Db['consanInséimhitheSeachasDTS']}</td>
+                <td>{chapterDb['consanInséimhitheSeachasDTS']}</td>
                 <td>an</td>
                 <td>{commonDb['séimhiú']}</td>
                 <td>
@@ -535,9 +539,9 @@ export const Table1F = (props: {
                 </td>
               </tr>
               <tr>
-                <td>{chapter1Db['dNoT']}</td>
+                <td>{chapterDb['dNoT']}</td>
                 <td>an</td>
-                <td>{chapter1Db['ganAonAthru']}</td>
+                <td>{chapterDb['ganAonAthru']}</td>
                 <td>
                   <ul>
                     <li>chun an diabhail</li>
@@ -546,9 +550,9 @@ export const Table1F = (props: {
                 </td>
               </tr>
               <tr>
-                <td>{chapter1Db['sSeachasCFMPTV']}</td>
+                <td>{chapterDb['sSeachasCFMPTV']}</td>
                 <td>an</td>
-                <td>{chapter1Db['tRoimhe']}</td>
+                <td>{chapterDb['tRoimhe']}</td>
                 <td>
                   <ul>
                     <li>tús an tsaoil</li>
@@ -560,9 +564,9 @@ export const Table1F = (props: {
                 <th className="bg-stone-300">
                   {commonDb['Guta']}
                 </th>
-                <td>{chapter1Db['gachGuta']}</td>
+                <td>{chapterDb['gachGuta']}</td>
                 <td>an</td>
-                <td>{chapter1Db['ganAonAthru']}</td>
+                <td>{chapterDb['ganAonAthru']}</td>
                 <td>
                   <ul>
                     <li>de réir an ailt</li>
@@ -592,10 +596,10 @@ export const Table1F = (props: {
                 </th>
               </tr>
               <tr>
-                <th colSpan={2}>{chapter1Db['ArticleTable-col1-th']}</th>
-                <th>{chapter1Db['ArticleTable-col2-th']}</th>
-                <th>{chapter1Db['ArticleTable-col3-th']}</th>
-                <th>{chapter1Db['ArticleTable-col4-th']}</th>
+                <th colSpan={2}>{chapterDb['ArticleTable-col1-th']}</th>
+                <th>{chapterDb['ArticleTable-col2-th']}</th>
+                <th>{chapterDb['ArticleTable-col3-th']}</th>
+                <th>{chapterDb['ArticleTable-col4-th']}</th>
               </tr>
             </thead>
             <tbody>
@@ -603,9 +607,9 @@ export const Table1F = (props: {
                 <th className="bg-stone-300">
                   {commonDb['Consan']}
                 </th>
-                <td>{chapter1Db['gachConsan']}</td>
+                <td>{chapterDb['gachConsan']}</td>
                 <td>na</td>
-                <td>{chapter1Db['ganAonAthru']}</td>
+                <td>{chapterDb['ganAonAthru']}</td>
                 <td>
                   <ul>
                     <li>leac na fuinneoige</li>
@@ -619,9 +623,9 @@ export const Table1F = (props: {
                 <th className="bg-stone-300">
                   {commonDb['Guta']}
                 </th>
-                <td>{chapter1Db['gachGuta']}</td>
+                <td>{chapterDb['gachGuta']}</td>
                 <td>na</td>
-                <td>{chapter1Db['hRoimhe']}</td>
+                <td>{chapterDb['hRoimhe']}</td>
                 <td>
                   <ul>
                     <li>timpeall na háite</li>
@@ -641,9 +645,9 @@ export const Table1G = (props: {
   docLang: SupportedLocales;
 }) => {
   const commonDb = getCommonTranslator(props.docLang);
-  const chapter1Db = getChapter1Translator(props.docLang);
+  const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={1} tableLeter="G" caption={chapter1Db['Table1G-caption']} docLang={props.docLang}>
+  return <MarkedTable chapter={1} tableLeter="G" caption={chapterDb['Table1G-caption']} docLang={props.docLang}>
     <colgroup>
       <col className="w-2/12" />
       <col className="w-2/12" />
@@ -656,10 +660,10 @@ export const Table1G = (props: {
         </th>
       </tr>
       <tr>
-        <th>{chapter1Db['ArticleTable-col1-th']}</th>
-        <th>{chapter1Db['ArticleTable-col2-th']}</th>
-        <th>{chapter1Db['ArticleTable-col3-th']}</th>
-        <th>{chapter1Db['ArticleTable-col4-th']}</th>
+        <th>{chapterDb['ArticleTable-col1-th']}</th>
+        <th>{chapterDb['ArticleTable-col2-th']}</th>
+        <th>{chapterDb['ArticleTable-col3-th']}</th>
+        <th>{chapterDb['ArticleTable-col4-th']}</th>
       </tr>
     </thead>
     <tbody>
@@ -668,7 +672,7 @@ export const Table1G = (props: {
           {commonDb['Consan']}
         </th>
         <td>na</td>
-        <td>{chapter1Db['ganAonAthru']}</td>
+        <td>{chapterDb['ganAonAthru']}</td>
         <td>
           <ul>
             <li>na capaill ghlasa</li>
@@ -684,7 +688,7 @@ export const Table1G = (props: {
           {commonDb['Guta']}
         </th>
         <td>na</td>
-        <td>{chapter1Db['hRoimhe']}</td>
+        <td>{chapterDb['hRoimhe']}</td>
         <td>
           <ul>
             <li>na hAchtanna tábhachtacha</li>
@@ -703,9 +707,9 @@ export const Table1H = (props: {
   docLang: SupportedLocales;
 }) => {
   const commonDb = getCommonTranslator(props.docLang);
-  const chapter1Db = getChapter1Translator(props.docLang);
+  const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={1} tableLeter="H" caption={chapter1Db['Table1H-caption']} docLang={props.docLang}>
+  return <MarkedTable chapter={1} tableLeter="H" caption={chapterDb['Table1H-caption']} docLang={props.docLang}>
     <colgroup>
       <col className="w-2/8" />
       <col className="w-1/8" />
@@ -719,10 +723,10 @@ export const Table1H = (props: {
         </th>
       </tr>
       <tr>
-        <th>{chapter1Db['ArticleTable-col1-th']}</th>
-        <th>{chapter1Db['ArticleTable-col2-th']}</th>
-        <th>{chapter1Db['ArticleTable-col3-th']}</th>
-        <th>{chapter1Db['ArticleTable-col4-th']}</th>
+        <th>{chapterDb['ArticleTable-col1-th']}</th>
+        <th>{chapterDb['ArticleTable-col2-th']}</th>
+        <th>{chapterDb['ArticleTable-col3-th']}</th>
+        <th>{chapterDb['ArticleTable-col4-th']}</th>
       </tr>
     </thead>
     <tbody>
@@ -731,7 +735,7 @@ export const Table1H = (props: {
           {commonDb['Consan']}
         </th>
         <td>na</td>
-        <td>{chapter1Db['ganAonAthru']}</td>
+        <td>{chapterDb['ganAonAthru']}</td>
         <td>
           <ul>
             <li>ag na fir mhóra</li>
@@ -757,7 +761,7 @@ export const Table1H = (props: {
           {commonDb['Guta']}
         </th>
         <td>na</td>
-        <td>{chapter1Db['hRoimhe']}</td>
+        <td>{chapterDb['hRoimhe']}</td>
         <td>
           <ul>
             <li>ag na hiníonacha fásta</li>
@@ -786,9 +790,9 @@ export const Table1I = (props: {
   docLang: SupportedLocales;
 }) => {
   const commonDb = getCommonTranslator(props.docLang);
-  const chapter1Db = getChapter1Translator(props.docLang);
+  const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={1} tableLeter="I" caption={chapter1Db['Table1I-caption']} docLang={props.docLang}>
+  return <MarkedTable chapter={1} tableLeter="I" caption={chapterDb['Table1I-caption']} docLang={props.docLang}>
     <colgroup>
       <col className="w-2/6" />
       <col className="w-1/6" />
@@ -802,16 +806,16 @@ export const Table1I = (props: {
         </th>
       </tr>
       <tr>
-        <th>{chapter1Db['ArticleTable-col1-th']}</th>
-        <th>{chapter1Db['ArticleTable-col2-th']}</th>
-        <th>{chapter1Db['ArticleTable-col3-th']}</th>
-        <th>{chapter1Db['ArticleTable-col4-th']}</th>
+        <th>{chapterDb['ArticleTable-col1-th']}</th>
+        <th>{chapterDb['ArticleTable-col2-th']}</th>
+        <th>{chapterDb['ArticleTable-col3-th']}</th>
+        <th>{chapterDb['ArticleTable-col4-th']}</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <th className="bg-stone-300">
-          {chapter1Db['ConsanInuraithe']}
+          {chapterDb['ConsanInuraithe']}
         </th>
         <td>na</td>
         <td>{commonDb['urú']}</td>
@@ -845,9 +849,9 @@ export const Table1J = (props: {
   docLang: SupportedLocales;
 }) => {
   const commonDb = getCommonTranslator(props.docLang);
-  const chapter1Db = getChapter1Translator(props.docLang);
+  const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={1} tableLeter="J" caption={chapter1Db['Table1J-caption']} docLang={props.docLang}>
+  return <MarkedTable chapter={1} tableLeter="J" caption={chapterDb['Table1J-caption']} docLang={props.docLang}>
     <colgroup>
       <col className="w-1/2" />
       <col className="w-1/2" />
@@ -855,7 +859,7 @@ export const Table1J = (props: {
     <thead>
       <tr>
         <th colSpan={2} className="text-2xl px-4 py-2">
-          {chapter1Db['Table1J-header']}
+          {chapterDb['Table1J-header']}
         </th>
       </tr>
       <tr>
@@ -901,14 +905,14 @@ export const Table1J = (props: {
           sa bhosca bhuí <br />
           sa fhraoch bhán <br />
           <br />
-          {chapter1Db['Table1B-note']} <br />
+          {chapterDb['Table1B-note']} <br />
           san fhéar fhliuch
         </td>
         <td>
           sa chomhairle shóisialta <br />
           sa fhrithréabhlóid fhíochmhar <br />
           <br />
-          {chapter1Db['Table1B-note']} <br />
+          {chapterDb['Table1B-note']} <br />
           san fharraige ghlan
         </td>
       </tr>
@@ -944,9 +948,9 @@ export const Table1K = (props: {
   docLang: SupportedLocales;
 }) => {
   const commonDb = getCommonTranslator(props.docLang);
-  const chapter1Db = getChapter1Translator(props.docLang);
+  const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={1} tableLeter="K" caption={chapter1Db['Table1K-caption']} docLang={props.docLang}>
+  return <MarkedTable chapter={1} tableLeter="K" caption={chapterDb['Table1K-caption']} docLang={props.docLang}>
     <colgroup>
       <col className="w-1/2" />
       <col className="w-1/2" />
@@ -954,7 +958,7 @@ export const Table1K = (props: {
     <thead>
       <tr>
         <th colSpan={2} className="text-2xl px-4 py-2">
-          {chapter1Db['Table1K-header']}
+          {chapterDb['Table1K-header']}
         </th>
       </tr>
       <tr>
@@ -963,7 +967,7 @@ export const Table1K = (props: {
       </tr>
       <tr>
         <th colSpan={2} className="text-center bg-stone-300">
-          <b>{chapter1Db['Table1K-subheading']}</b>
+          <b>{chapterDb['Table1K-subheading']}</b>
         </th>
       </tr>
     </thead>
@@ -1038,9 +1042,9 @@ export const Table1L = (props: {
   docLang: SupportedLocales;
 }) => {
   const commonDb = getCommonTranslator(props.docLang);
-  const chapter1Db = getChapter1Translator(props.docLang);
+  const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={1} tableLeter="L" caption={chapter1Db['Table1L-caption']} docLang={props.docLang}>
+  return <MarkedTable chapter={1} tableLeter="L" caption={chapterDb['Table1L-caption']} docLang={props.docLang}>
     <colgroup>
       <col className="w-1/2" />
       <col className="w-1/2" />
@@ -1048,7 +1052,7 @@ export const Table1L = (props: {
     <thead>
       <tr>
         <th colSpan={2} className="text-2xl px-4 py-2">
-          {chapter1Db['Table1L-header']}
+          {chapterDb['Table1L-header']}
         </th>
       </tr>
       <tr>
@@ -1093,9 +1097,9 @@ export const Table1M = (props: {
   docLang: SupportedLocales;
 }) => {
   const commonDb = getCommonTranslator(props.docLang);
-  const chapter1Db = getChapter1Translator(props.docLang);
+  const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={1} tableLeter="M" caption={chapter1Db['Table1M-caption']} docLang={props.docLang}>
+  return <MarkedTable chapter={1} tableLeter="M" caption={chapterDb['Table1M-caption']} docLang={props.docLang}>
     <colgroup>
       <col className="w-1/2" />
       <col className="w-1/2" />
@@ -1103,7 +1107,7 @@ export const Table1M = (props: {
     <thead>
       <tr>
         <th colSpan={2} className="text-2xl px-4 py-2">
-          {chapter1Db['Table1M-header']}
+          {chapterDb['Table1M-header']}
         </th>
       </tr>
       <tr>

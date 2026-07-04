@@ -98,10 +98,10 @@ mixin renderKey(key, options = { getFromGa: false, getFromCommon: false })
       +gaDb(key)
   else
     if getFromCommon
-      | {commonDb["#{key}"]}
+      +commonTlDb(key)
     else
       //- - console.log(docLang, options);
-      | {chapterDb["#{key}"]}
+      +tlDb(key)
 
 //- 
   Sampleboxes for example sentences. If the document is not in Irish, the Irish version of the sentence is also included in the box for reference.
@@ -110,26 +110,32 @@ mixin renderKey(key, options = { getFromGa: false, getFromCommon: false })
   - startAt is the number to start at (default 1)
     This is useful if you have samples interrupted by other content
 mixin sampleBox(samplePrefix, sampleCount, startAt = 1)
-  SampleBox(
-    docLang="{props.docLang}"
-    gaDb="{chapterDictionaries.ga_IE}"
-    tlDb="{chapterDb}"
-    sampleCount=`{${sampleCount}}`
-    samplePrefix=samplePrefix
-  )
+  table.samplebox(class="my-1")
+    tbody
+      each row in range(startAt, startAt + sampleCount - 1)
+        tr
+          if docLang === 'GA'
+            td(class="bg-stone-100 border-1 border-[rgba(0,0,0,0.1)] p-1")
+              +renderKey(`${samplePrefix}${row}`)
+          else
+            td(class="bg-stone-100 border-1 border-[rgba(0,0,0,0.1)] p-1")
+              +renderKey(`${samplePrefix}${row}`, { getFromGa: true })
+            td(class="bg-stone-100 border-1 border-[rgba(0,0,0,0.1)] p-1")
+              +renderKey(`${samplePrefix}${row}`)
 
 //- 
   Normal chapter content table (e.g. Table 1A)
   Puts in a caption too.
 mixin markedTable(chapter, tableLetter, captionKey)
-  - const refTag = `Table${chapter}${tableLetter}`;
-  #{refTag}(docLang="{props.docLang}")
-  MarkedTable(
-    chapter=`{${chapter}}`
-    caption=`{chapterDb["${captionKey}"]}`
-    docLang="{props.docLang}"
-    tableLetter=tableLetter
-  )
+  table(
+    class=`chapter-${chapter}`
+    id=`table${chapter}${tableLetter}`
+  )&attributes(attributes)
+    caption
+      b(class="pr-2")
+        +renderKey('Tábla', { getFromCommon: true })
+        | &nbsp;#{chapter}#{tableLetter}
+      +renderKey(captionKey)
     block
 
 //- 
@@ -140,6 +146,38 @@ mixin markedTable(chapter, tableLetter, captionKey)
   In the case where the navText contains .gp$x-$y
     - do not display navText before title text
 mixin hx(level, navText, titleKey = null)
-  - const title = titleKey ? `{chapterDb["${titleKey}"]}` : null;
-  HX(level=`{${level}}`, navText=navText, title=title)
-    block
+  -
+    if (level < 1 || level > 5)
+      throw new Error(`Unsupported heading level: ${level}`);
+
+    const isSectionGrouping = navText.includes('.gp');
+    const id = navText != ""
+      ? `sec_${navText.replace(/\./g, '_')}`
+      : undefined;
+    const tag = `h${level}`;
+
+  //- Main tag
+  #{tag}(id=id)
+    //- Anchor link
+    a(
+      href=`#${id}`, 
+      class="mx-2 text-blue-400 hover:text-blue-600 cursor-pointer select-none"
+    ) #
+
+    span.heading-title
+      if (level > 1 && !isSectionGrouping)
+        span.nav-text !{navText}
+
+      if _c(navText, "") != "" && !isSectionGrouping && _c(titleKey, "") != ""
+        | &nbsp;
+
+      if _c(titleKey, "") != ""
+        span.title-text #[+renderKey(titleKey)]
+      
+  if level === 1
+    //- H1 reserved for chapter, so border just adds noise
+    main
+      block
+  else
+    section(class="pl-1 border-l-3 border-gray-200")
+      block

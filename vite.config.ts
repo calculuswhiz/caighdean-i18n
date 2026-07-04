@@ -27,6 +27,9 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
 
         ...entryPoints
+      },
+      output: {
+        preserveModules: true
       }
     }
   }

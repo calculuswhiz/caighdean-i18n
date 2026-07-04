@@ -1,6 +1,7 @@
 import * as fs from 'fs/promises';
 import * as path from 'path';
 import { Chapter1 } from '../translation-tsx/chapter1/layout';
+import { Chapter2 } from '../translation-tsx/chapter2/layout';
 
 // Add more as needed
 const locales = ["en_US", "ga_IE"] as const;
@@ -9,12 +10,13 @@ const devMode = process.argv.includes("--dev");
 async function generateKitaJsDocs() {
   const timeStart = performance.now();
   for (const locale of locales) {
-    const targets = [
-      <Chapter1 docLang={locale} />
-    ];
-    for (const target of targets) {
+    const targets = {
+      chapter1: <Chapter1 docLang={locale} />,
+      chapter2: <Chapter2 docLang={locale} />
+    };
+    for (const [key, target] of Object.entries(targets)) {
       await fs.writeFile(
-        `./entrypoints/${locale}/chapter1.html`,
+        `./entrypoints/${locale}/${key}.html`,
         target.toString(),
         "utf-8"
       );
