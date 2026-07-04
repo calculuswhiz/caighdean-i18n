@@ -9,7 +9,7 @@ export const Table2A = (props: {
 
   return <MarkedTable
     chapter={2}
-    tableLeter="A"
+    tableLetter="A"
     caption={chapterDb["Table2A-Title"]}
     docLang={props.docLang}>
     <colgroup>
@@ -137,7 +137,7 @@ export const Table2B = (props: {
 
   return <MarkedTable
     chapter={2}
-    tableLeter="B"
+    tableLetter="B"
     caption={chapterDb["Table2B-Title"]}
     docLang={props.docLang}>
     <thead>
@@ -178,7 +178,7 @@ export const Table2C = (props: {
 
   return <MarkedTable
     chapter={2}
-    tableLeter="C"
+    tableLetter="C"
     caption={chapterDb["Table2C-Title"]}
     docLang={props.docLang}>
     <colgroup>
@@ -224,7 +224,7 @@ export const Table2D = (props: {
 
   return <MarkedTable
     chapter={2}
-    tableLeter="D"
+    tableLetter="D"
     caption={chapterDb["Table2D-Title"]}
     docLang={props.docLang}>
     <colgroup>
@@ -331,7 +331,7 @@ export const Table2E = (props: {
 
   return <MarkedTable
     chapter={2}
-    tableLeter="E"
+    tableLetter="E"
     caption={chapterDb["Table2E-Title"]}
     docLang={props.docLang}>
     <tbody>
@@ -587,7 +587,7 @@ export const Table2F = (props: {
 
   return <MarkedTable
     chapter={2}
-    tableLeter="F"
+    tableLetter="F"
     caption={chapterDb["Table2F-Title"]}
     docLang={props.docLang}>
     <colgroup>
@@ -800,7 +800,7 @@ export const Table2G = (props: {
 
   return <MarkedTable
     chapter={2}
-    tableLeter="G"
+    tableLetter="G"
     caption={chapterDb["Table2G-Title"]}
     docLang={props.docLang}>
     <colgroup>
@@ -891,7 +891,7 @@ export const Table2H = (props: {
 
   return <MarkedTable
     chapter={2}
-    tableLeter="H"
+    tableLetter="H"
     caption={chapterDb["Table2H-Title"]}
     docLang={props.docLang}>
     <colgroup>
@@ -1095,7 +1095,7 @@ export const Table2I = (props: {
 
   return <MarkedTable
     chapter={2}
-    tableLeter="I"
+    tableLetter="I"
     caption={chapterDb["Table2I-Title"]}
     docLang={props.docLang}>
     <colgroup>
@@ -1224,7 +1224,7 @@ export const Table2J = (props: {
 
   return <MarkedTable
     chapter={2}
-    tableLeter="J"
+    tableLetter="J"
     caption={chapterDb["Table2J-Title"]}
     docLang={props.docLang}>
     <colgroup>
@@ -1439,7 +1439,7 @@ export const Table2K = (props: {
 
   return <MarkedTable
     chapter={2}
-    tableLeter="K"
+    tableLetter="K"
     caption={chapterDb["Table2K-Title"]}
     docLang={props.docLang}>
     <colgroup>
@@ -1510,7 +1510,7 @@ export const Table2L = (props: {
 
   return <MarkedTable
     chapter={2}
-    tableLeter="L"
+    tableLetter="L"
     caption={chapterDb["Table2L-Title"]}
     docLang={props.docLang}>
     <colgroup>
@@ -1734,7 +1734,7 @@ export const Table2M = (props: {
 
   return <MarkedTable
     chapter={2}
-    tableLeter="M"
+    tableLetter="M"
     caption={chapterDb["Table2M-Title"]}
     docLang={props.docLang}>
     <thead>
@@ -1953,7 +1953,7 @@ export const Table2N = (props: {
 
   return <MarkedTable
     chapter={2}
-    tableLeter="N"
+    tableLetter="N"
     caption={chapterDb["Table2N-Title"]}
     docLang={props.docLang}>
     <colgroup>

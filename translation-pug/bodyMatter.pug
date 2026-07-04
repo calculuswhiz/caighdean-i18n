@@ -116,7 +116,8 @@ mixin sampleBox(samplePrefix, sampleCount, startAt = 1)
     tlDb="{chapterDb}"
     sampleCount=`{${sampleCount}}`
     samplePrefix=samplePrefix
-  )
+    startAt=startAt === 1 ? null : `{${startAt}}`
+  )/
 
 //- 
   Normal chapter content table (e.g. Table 1A)

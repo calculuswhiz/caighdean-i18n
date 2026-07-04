@@ -9,7 +9,7 @@ export const Table1A = (props: {
 
   return <MarkedTable
     chapter={1}
-    tableLeter="A"
+    tableLetter="A"
     caption={chapterDb["Table1A-caption"]}
     docLang={props.docLang}>
     <tbody>
@@ -206,7 +206,7 @@ export const Table1B = (props: {
   const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={1} tableLeter="B" caption={chapterDb['Table1B-caption']} docLang={props.docLang}>
+  return <MarkedTable chapter={1} tableLetter="B" caption={chapterDb['Table1B-caption']} docLang={props.docLang}>
     <thead>
       <tr>
         <th colSpan={2} className="text-2xl px-4 py-2">
@@ -301,7 +301,7 @@ export const Table1C = (props: {
   const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={1} tableLeter="C" caption={chapterDb['Table1C-caption']} docLang={props.docLang}>
+  return <MarkedTable chapter={1} tableLetter="C" caption={chapterDb['Table1C-caption']} docLang={props.docLang}>
     <thead>
       <tr>
         <th colSpan={2} className="text-2xl px-4 py-2">
@@ -392,7 +392,7 @@ export const Table1D = (props: {
   const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={1} tableLeter="D" caption={chapterDb['Table1D-caption']} docLang={props.docLang}>
+  return <MarkedTable chapter={1} tableLetter="D" caption={chapterDb['Table1D-caption']} docLang={props.docLang}>
     <thead>
       <tr>
         <th colSpan={2} className="text-2xl px-4 py-2">
@@ -443,7 +443,7 @@ export const Table1E = (props: {
   const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={1} tableLeter="E" caption={chapterDb['Table1E-caption']} docLang={props.docLang}>
+  return <MarkedTable chapter={1} tableLetter="E" caption={chapterDb['Table1E-caption']} docLang={props.docLang}>
     <thead>
       <tr>
         <th colSpan={2} className="text-2xl px-4 py-2">
@@ -498,7 +498,7 @@ export const Table1F = (props: {
   const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={1} tableLeter="F" caption={chapterDb['Table1F-caption']} docLang={props.docLang}>
+  return <MarkedTable chapter={1} tableLetter="F" caption={chapterDb['Table1F-caption']} docLang={props.docLang}>
     <tbody>
       {/* First half */}
       <tr>
@@ -647,7 +647,7 @@ export const Table1G = (props: {
   const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={1} tableLeter="G" caption={chapterDb['Table1G-caption']} docLang={props.docLang}>
+  return <MarkedTable chapter={1} tableLetter="G" caption={chapterDb['Table1G-caption']} docLang={props.docLang}>
     <colgroup>
       <col className="w-2/12" />
       <col className="w-2/12" />
@@ -709,7 +709,7 @@ export const Table1H = (props: {
   const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={1} tableLeter="H" caption={chapterDb['Table1H-caption']} docLang={props.docLang}>
+  return <MarkedTable chapter={1} tableLetter="H" caption={chapterDb['Table1H-caption']} docLang={props.docLang}>
     <colgroup>
       <col className="w-2/8" />
       <col className="w-1/8" />
@@ -792,7 +792,7 @@ export const Table1I = (props: {
   const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={1} tableLeter="I" caption={chapterDb['Table1I-caption']} docLang={props.docLang}>
+  return <MarkedTable chapter={1} tableLetter="I" caption={chapterDb['Table1I-caption']} docLang={props.docLang}>
     <colgroup>
       <col className="w-2/6" />
       <col className="w-1/6" />
@@ -851,7 +851,7 @@ export const Table1J = (props: {
   const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={1} tableLeter="J" caption={chapterDb['Table1J-caption']} docLang={props.docLang}>
+  return <MarkedTable chapter={1} tableLetter="J" caption={chapterDb['Table1J-caption']} docLang={props.docLang}>
     <colgroup>
       <col className="w-1/2" />
       <col className="w-1/2" />
@@ -950,7 +950,7 @@ export const Table1K = (props: {
   const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={1} tableLeter="K" caption={chapterDb['Table1K-caption']} docLang={props.docLang}>
+  return <MarkedTable chapter={1} tableLetter="K" caption={chapterDb['Table1K-caption']} docLang={props.docLang}>
     <colgroup>
       <col className="w-1/2" />
       <col className="w-1/2" />
@@ -1044,7 +1044,7 @@ export const Table1L = (props: {
   const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={1} tableLeter="L" caption={chapterDb['Table1L-caption']} docLang={props.docLang}>
+  return <MarkedTable chapter={1} tableLetter="L" caption={chapterDb['Table1L-caption']} docLang={props.docLang}>
     <colgroup>
       <col className="w-1/2" />
       <col className="w-1/2" />
@@ -1099,7 +1099,7 @@ export const Table1M = (props: {
   const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={1} tableLeter="M" caption={chapterDb['Table1M-caption']} docLang={props.docLang}>
+  return <MarkedTable chapter={1} tableLetter="M" caption={chapterDb['Table1M-caption']} docLang={props.docLang}>
     <colgroup>
       <col className="w-1/2" />
       <col className="w-1/2" />

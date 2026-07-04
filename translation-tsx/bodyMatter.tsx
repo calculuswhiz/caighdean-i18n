@@ -123,7 +123,7 @@ export const ChapterTemplate = (props: {
  */
 export const MarkedTable = (props: {
   chapter: number;
-  tableLeter: string;
+  tableLetter: string;
   caption: React.ReactNode;
   children: React.ReactNode;
   docLang: SupportedLocales;
@@ -135,12 +135,12 @@ export const MarkedTable = (props: {
 
   return <table
     className={`chapter-${props.chapter}`}
-    id={`table${props.chapter}${props.tableLeter}`}
+    id={`table${props.chapter}${props.tableLetter}`}
   >
     <caption>
       <b className="pr-2">
         {renderCommon('Tábla')}
-        &nbsp;{props.chapter}{props.tableLeter}
+        &nbsp;{props.chapter}{props.tableLetter}
       </b>
       {props.caption}
     </caption>
