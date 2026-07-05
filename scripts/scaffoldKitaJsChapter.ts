@@ -35,7 +35,12 @@ export const ${chapterName[0].toUpperCase() + chapterName.slice(1)} = (props: {
   const chapterDb = getChapterTranslator(props.docLang);
   const commonDb = getCommonTranslator(props.docLang);
   
-  return ;
+  return <ChapterTemplate
+    title={chapterDb[]}
+    chapterNumber={}
+    docLang={props.docLang}>
+
+  </ChapterTemplate>;
 };
 `, 'utf-8');
   const tablesPath = path.join(chapterPath, 'tables.tsx');
@@ -49,13 +54,7 @@ export const TableTemplate = (props: {
   const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable
-    chapter={}
-    tableLetter=
-    caption={chapterDb[""]}
-    docLang={props.docLang}>
-    
-  </MarkedTable>;
+  return ;
 };
 `, 'utf-8');
 
@@ -66,7 +65,7 @@ export const TableTemplate = (props: {
 import { InlineTl } from "../../bodyMatter";
 
 const Tl = (props: { tlText: string }) =>
-  <InlineTl lang="en-US" tlText={props.tlText} />;
+  <<InlineTl lang="en_US" tlText={props.tlText} />;
 
 export const en_US = {
   

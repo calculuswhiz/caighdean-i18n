@@ -200,11 +200,14 @@ export const HX = (props: {
 
 export const InlineTl = (props: {
   lang: string;
-  tlText: string;
+  tlText?: string;
   children?: React.ReactNode;
 }) => {
-  // Since we're specifying locales, e.g. "en-US"
-  const lang = props.lang.split("-")[0].toUpperCase();
+  if (props.lang === "ga_IE") {
+    return null;
+  }
+  // Since we're specifying locales, e.g. "en_US"
+  const lang = props.lang.split("_")[0].toUpperCase();
   if (props.tlText != null) {
     return <span>
       (<b>{lang}</b>: <i>{props.tlText}</i>)

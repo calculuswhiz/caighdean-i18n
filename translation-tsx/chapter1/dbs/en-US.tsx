@@ -2,7 +2,7 @@ import { en_US as en_US_Common } from "../../common/en-US";
 import { InlineTl } from "../../bodyMatter";
 
 const Tl = (props: { tlText: string }) =>
-  <InlineTl lang="en-US" tlText={props.tlText} />;
+  <InlineTl lang="en_US" tlText={props.tlText} />;
 
 export const en_US = {
   "teidealNaCaibidle":

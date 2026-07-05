@@ -4,12 +4,10 @@ mixin link(url, text)
 //- Allows both plain text or blocks (for more complex content)
 mixin inlineTl(lang, tlText)
   if tlText != null
-    span (#[b #{lang}]: #[i #{tlText}])
+    InlineTl(lang="{props.docLang}", tlText=tlText)/
   else
-    span
-      | (#[b #{lang}]:!{' '}
-      i: block
-      | )
+    InlineTl(lang="{props.docLang}")
+      block
 
 mixin underline
   span(class="underline")&attributes(attributes)
