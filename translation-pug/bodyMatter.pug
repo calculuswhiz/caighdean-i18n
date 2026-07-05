@@ -50,9 +50,7 @@
 
 //- Given array of ratios, auto-size them to fit 100% width
 mixin autoColgroup(ratios)
-  colgroup
-    each ratio in ratios
-      col(style=`width: ${ratio / ratios.reduce((a, b) => a + b, 0) * 100}%`)
+  AutoColGroup(ratios=`{${JSON.stringify(ratios)}}`)/
 
 mixin commonTemplate(titleKey, chapterClass = "")
   html
@@ -124,7 +122,7 @@ mixin sampleBox(samplePrefix, sampleCount, startAt = 1)
   Puts in a caption too.
 mixin markedTable(chapter, tableLetter, captionKey)
   - const refTag = `Table${chapter}${tableLetter}`;
-  #{refTag}(docLang="{props.docLang}")
+  #{refTag}(docLang="{props.docLang}")/
   MarkedTable(
     chapter=`{${chapter}}`
     caption=`{chapterDb["${captionKey}"]}`

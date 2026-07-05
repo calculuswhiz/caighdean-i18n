@@ -14,7 +14,6 @@ async function scaffoldChapter(chapterName: string) {
   const layoutPath = path.join(chapterPath, 'layout.tsx');
   await fs.writeFile(layoutPath, 
     `import { ChapterTemplate, HX, SampleBox, type SupportedLocales } from "../bodyMatter";
-import { romanCount } from "../util";
 import { en_US } from "./dbs/en-US";
 import { ga_IE } from "./dbs/ga-IE";
 import { en_US as en_US_common } from "../common/en-US";
@@ -36,12 +35,7 @@ export const ${chapterName[0].toUpperCase() + chapterName.slice(1)} = (props: {
   const chapterDb = getChapterTranslator(props.docLang);
   const commonDb = getCommonTranslator(props.docLang);
   
-  return <ChapterTemplate
-    title={chapterDb[]}
-    chapterNumber={}
-    docLang={props.docLang}>
-
-  </ChapterTemplate>;
+  return ;
 };
 `, 'utf-8');
   const tablesPath = path.join(chapterPath, 'tables.tsx');
@@ -57,7 +51,7 @@ export const TableTemplate = (props: {
 
   return <MarkedTable
     chapter={}
-    tableLeter=
+    tableLetter=
     caption={chapterDb[""]}
     docLang={props.docLang}>
     
