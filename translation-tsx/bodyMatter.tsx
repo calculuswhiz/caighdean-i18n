@@ -126,6 +126,7 @@ export const MarkedTable = (props: {
   tableLetter: string;
   caption: React.ReactNode;
   children: React.ReactNode;
+  className?: string;
   docLang: SupportedLocales;
 }) => {
   const renderCommon = (key: keyof typeof commonDictionaries['ga_IE']) => {
@@ -134,7 +135,7 @@ export const MarkedTable = (props: {
   };
 
   return <table
-    className={`chapter-${props.chapter}`}
+    className={`chapter-${props.chapter} ${props.className ?? ''}`}
     id={`table${props.chapter}${props.tableLetter}`}
   >
     <caption>

@@ -75,7 +75,7 @@ export const Table5B = (props: {
   const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={5} caption={chapterDb["Table5B-caption"]} docLang={props.docLang} tableLetter="B">
+  return <MarkedTable className="verb-table" chapter={5} caption={chapterDb["Table5B-caption"]} docLang={props.docLang} tableLetter="B">
     <thead>
       <tr className="primary-header-row">
         <th>Mol
@@ -249,7 +249,7 @@ export const Table5C = (props: {
   const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={5} caption={chapterDb["Table5C-caption"]} docLang={props.docLang} tableLetter="C">
+  return <MarkedTable className="verb-table" chapter={5} caption={chapterDb["Table5C-caption"]} docLang={props.docLang} tableLetter="C">
     <thead>
       <tr className="primary-header-row">
         <th>Bris
@@ -423,7 +423,7 @@ export const Table5D = (props: {
   const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={5} caption={chapterDb["Table5D-caption"]} docLang={props.docLang} tableLetter="D">
+  return <MarkedTable className="verb-table" chapter={5} caption={chapterDb["Table5D-caption"]} docLang={props.docLang} tableLetter="D">
     <thead>
       <tr className="primary-header-row">
         <th>Sábháil
@@ -597,7 +597,7 @@ export const Table5E = (props: {
   const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={5} caption={chapterDb["Table5E-caption"]} docLang={props.docLang} tableLetter="E">
+  return <MarkedTable className="verb-table" chapter={5} caption={chapterDb["Table5E-caption"]} docLang={props.docLang} tableLetter="E">
     <thead>
       <tr className="primary-header-row">
         <th>Tíolaic
@@ -771,7 +771,7 @@ export const Table5F = (props: {
   const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={5} caption={chapterDb["Table5F-caption"]} docLang={props.docLang} tableLetter="F">
+  return <MarkedTable className="verb-table" chapter={5} caption={chapterDb["Table5F-caption"]} docLang={props.docLang} tableLetter="F">
     <thead>
       <tr className="primary-header-row">
         <th>Cráigh
@@ -945,7 +945,7 @@ export const Table5G = (props: {
   const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={5} caption={chapterDb["Table5G-caption"]} docLang={props.docLang} tableLetter="G">
+  return <MarkedTable className="verb-table" chapter={5} caption={chapterDb["Table5G-caption"]} docLang={props.docLang} tableLetter="G">
     <thead>
       <tr className="primary-header-row">
         <th>Dóigh
@@ -1119,7 +1119,7 @@ export const Table5H = (props: {
   const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={5} caption={chapterDb["Table5H-caption"]} docLang={props.docLang} tableLetter="H">
+  return <MarkedTable className="verb-table" chapter={5} caption={chapterDb["Table5H-caption"]} docLang={props.docLang} tableLetter="H">
     <thead>
       <tr className="primary-header-row">
         <th>Léigh
@@ -1293,7 +1293,7 @@ export const Table5I = (props: {
   const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={5} caption={chapterDb["Table5I-caption"]} docLang={props.docLang} tableLetter="I">
+  return <MarkedTable className="verb-table" chapter={5} caption={chapterDb["Table5I-caption"]} docLang={props.docLang} tableLetter="I">
     <thead>
       <tr className="primary-header-row">
         <th>Nigh
@@ -1467,7 +1467,7 @@ export const Table5J = (props: {
   const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={5} caption={chapterDb["Table5J-caption"]} docLang={props.docLang} tableLetter="J">
+  return <MarkedTable className="verb-table" chapter={5} caption={chapterDb["Table5J-caption"]} docLang={props.docLang} tableLetter="J">
     <thead>
       <tr className="primary-header-row">
         <th>Beannaigh
@@ -1641,7 +1641,7 @@ export const Table5K = (props: {
   const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={5} caption={chapterDb["Table5K-caption"]} docLang={props.docLang} tableLetter="K">
+  return <MarkedTable className="verb-table" chapter={5} caption={chapterDb["Table5K-caption"]} docLang={props.docLang} tableLetter="K">
     <thead>
       <tr className="primary-header-row">
         <th>Cruinnigh
@@ -1815,7 +1815,7 @@ export const Table5L = (props: {
   const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={5} caption={chapterDb["Table5L-caption"]} docLang={props.docLang} tableLetter="L">
+  return <MarkedTable className="verb-table" chapter={5} caption={chapterDb["Table5L-caption"]} docLang={props.docLang} tableLetter="L">
     <thead>
       <tr className="primary-header-row">
         <th>Ceangail
@@ -1989,7 +1989,7 @@ export const Table5M = (props: {
   const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={5} caption={chapterDb["Table5M-caption"]} docLang={props.docLang} tableLetter="M">
+  return <MarkedTable className="verb-table" chapter={5} caption={chapterDb["Table5M-caption"]} docLang={props.docLang} tableLetter="M">
     <thead>
       <tr className="primary-header-row">
         <th>Díbir <InlineTl lang={props.docLang}>{chapterDb["briathar-Díbir"]}</InlineTl>
@@ -2161,10 +2161,10 @@ export const Table5N = (props: {
   const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={5} caption={chapterDb["Table5N-caption"]} docLang={props.docLang} tableLetter="N">
+  return <MarkedTable className="verb-table" chapter={5} caption={chapterDb["Table5N-caption"]} docLang={props.docLang} tableLetter="N">
     <thead>
       <tr className="primary-header-row">
-        <th>Abair 
+        <th>Abair
           <InlineTl lang={props.docLang}>{chapterDb["briathar-Abair"]}</InlineTl>
         </th>
       </tr>
@@ -2334,10 +2334,10 @@ export const Table5O = (props: {
   const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={5} caption={chapterDb["Table5O-caption"]} docLang={props.docLang} tableLetter="O">
+  return <MarkedTable className="verb-table" chapter={5} caption={chapterDb["Table5O-caption"]} docLang={props.docLang} tableLetter="O">
     <thead>
       <tr className="primary-header-row">
-        <th>Beir 
+        <th>Beir
           <InlineTl lang={props.docLang}>{chapterDb["briathar-Beir"]}</InlineTl>
         </th>
       </tr>
@@ -2507,11 +2507,11 @@ export const Table5P = (props: {
   const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={5} caption={chapterDb["Table5P-caption"]} docLang={props.docLang} tableLetter="P">
+  return <MarkedTable className="verb-table" chapter={5} caption={chapterDb["Table5P-caption"]} docLang={props.docLang} tableLetter="P">
     <thead>
       <thead></thead>
       <tr className="primary-header-row">
-        <th>Bí 
+        <th>Bí
           <InlineTl lang={props.docLang}>{chapterDb["briathar-Bí"]}</InlineTl>
         </th>
       </tr>
@@ -2748,10 +2748,10 @@ export const Table5Q = (props: {
   const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={5} caption={chapterDb["Table5Q-caption"]} docLang={props.docLang} tableLetter="Q">
+  return <MarkedTable className="verb-table" chapter={5} caption={chapterDb["Table5Q-caption"]} docLang={props.docLang} tableLetter="Q">
     <thead>
       <tr className="primary-header-row">
-        <th>Clois/Cluin 
+        <th>Clois/Cluin
           <InlineTl lang={props.docLang}>{chapterDb["briathar-Clois/Cluin"]}</InlineTl>
         </th>
       </tr>
@@ -2921,11 +2921,11 @@ export const Table5R = (props: {
   const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={5} caption={chapterDb["Table5R-caption"]} docLang={props.docLang} tableLetter="R">
+  return <MarkedTable className="verb-table" chapter={5} caption={chapterDb["Table5R-caption"]} docLang={props.docLang} tableLetter="R">
     <thead>
       <thead></thead>
       <tr className="primary-header-row">
-        <th>Déan 
+        <th>Déan
           <InlineTl lang={props.docLang}>{chapterDb["briathar-Déan"]}</InlineTl>
         </th>
       </tr>
@@ -3102,11 +3102,11 @@ export const Table5S = (props: {
   const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={5} caption={chapterDb["Table5S-caption"]} docLang={props.docLang} tableLetter="S">
+  return <MarkedTable className="verb-table" chapter={5} caption={chapterDb["Table5S-caption"]} docLang={props.docLang} tableLetter="S">
     <thead>
       <thead></thead>
       <tr className="primary-header-row">
-        <th>Faigh 
+        <th>Faigh
           <InlineTl lang={props.docLang}>{chapterDb["briathar-Faigh"]}</InlineTl>
         </th>
       </tr>
@@ -3303,11 +3303,11 @@ export const Table5T = (props: {
   const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={5} caption={chapterDb["Table5T-caption"]} docLang={props.docLang} tableLetter="T">
+  return <MarkedTable className="verb-table" chapter={5} caption={chapterDb["Table5T-caption"]} docLang={props.docLang} tableLetter="T">
     <thead>
       <thead></thead>
       <tr className="primary-header-row">
-        <th>Feic 
+        <th>Feic
           <InlineTl lang={props.docLang}>{chapterDb["briathar-Feic"]}</InlineTl>
         </th>
       </tr>
@@ -3484,10 +3484,10 @@ export const Table5U = (props: {
   const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={5} caption={chapterDb["Table5U-caption"]} docLang={props.docLang} tableLetter="U">
+  return <MarkedTable className="verb-table" chapter={5} caption={chapterDb["Table5U-caption"]} docLang={props.docLang} tableLetter="U">
     <thead>
       <tr className="primary-header-row">
-        <th>Ith 
+        <th>Ith
           <InlineTl lang={props.docLang}>{chapterDb["briathar-Ith"]}</InlineTl>
         </th>
       </tr>
@@ -3657,10 +3657,10 @@ export const Table5V = (props: {
   const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={5} caption={chapterDb["Table5V-caption"]} docLang={props.docLang} tableLetter="V">
+  return <MarkedTable className="verb-table" chapter={5} caption={chapterDb["Table5V-caption"]} docLang={props.docLang} tableLetter="V">
     <thead>
       <tr className="primary-header-row">
-        <th>Tabhair 
+        <th>Tabhair
           <InlineTl lang={props.docLang}>{chapterDb["briathar-Tabhair"]}</InlineTl>
         </th>
       </tr>
@@ -3830,10 +3830,10 @@ export const Table5W = (props: {
   const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={5} caption={chapterDb["Table5W-caption"]} docLang={props.docLang} tableLetter="W">
+  return <MarkedTable className="verb-table" chapter={5} caption={chapterDb["Table5W-caption"]} docLang={props.docLang} tableLetter="W">
     <thead>
       <tr className="primary-header-row">
-        <th>Tar 
+        <th>Tar
           <InlineTl lang={props.docLang}>{chapterDb["briathar-Tar"]}</InlineTl>
         </th>
       </tr>
@@ -4003,11 +4003,11 @@ export const Table5X = (props: {
   const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
-  return <MarkedTable chapter={5} caption={chapterDb["Table5X-caption"]} docLang={props.docLang} tableLetter="X">
+  return <MarkedTable className="verb-table" chapter={5} caption={chapterDb["Table5X-caption"]} docLang={props.docLang} tableLetter="X">
     <thead>
       <thead></thead>
       <tr className="primary-header-row">
-        <th>Téigh 
+        <th>Téigh
           <InlineTl lang={props.docLang}>{chapterDb["briathar-Téigh"]}</InlineTl>
         </th>
       </tr>
