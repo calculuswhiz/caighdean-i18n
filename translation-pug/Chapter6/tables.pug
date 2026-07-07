@@ -1,47 +1,28 @@
 mixin AdverbExampleTable(prefix, count)
-  table.samplebox
-    colgroup
-      col(class="1/4")
-      col(class="1/8")
-      col(class="5/8")
-    tbody
-      each row in range(1, count)
-        tr
-          if docLang === 'GA'
-            td: +renderKey(`${prefix}${row}-left`)
-            td &rarr;
-            td: +renderKey(`${prefix}${row}-right`)
-          else
-            td
-              +renderKey(`${prefix}${row}-left`, { getFromGa: true })
-              | #[br]
-              | (#[i #[+renderKey(`${prefix}${row}-left`)]])
-            td &rarr;
-            td
-              +renderKey(`${prefix}${row}-right`, { getFromGa: true })
-              | #[br]
-              | (#[i #[+renderKey(`${prefix}${row}-right`)]])
+  AdverbExampleTable(prefix=prefix, count=count, docLang="{props.docLang}")/
 
 mixin sampleCell(prefix, contentKey, suffix = "")
-  td(class="align-top")
-    p: b #{contentKey}
-    if docLang === 'GA'
-      p: +renderKey(`${prefix}-${contentKey}-sample${suffix}`)
-    else
-      p: +renderKey(`${prefix}-${contentKey}-sample${suffix}`, { getFromGa: true })
-      | (#[i #[+renderKey(`${prefix}-${contentKey}-sample${suffix}`)]])
+  SampleCell(prefix=prefix, contentKey=contentKey, suffix=suffix, docLang="{props.docLang}")/
+  //- td(class="align-top")
+  //-   p: b #{contentKey}
+  //-   if docLang === 'GA'
+  //-     p: +renderKey(`${prefix}-${contentKey}-sample${suffix}`)
+  //-   else
+  //-     p: +renderKey(`${prefix}-${contentKey}-sample${suffix}`, { getFromGa: true })
+  //-     | (#[i #[+renderKey(`${prefix}-${contentKey}-sample${suffix}`)]])
 
 mixin centerCell(prefix, contentKey, suffix = "")
-  td(class="align-top")
-    p
-      b #{contentKey}
-      if docLang !== 'GA'
-        | !{" "}&mdash; #[+renderKey(`${prefix}-${contentKey}`)]
-    if docLang === 'GA'
-      p: +renderKey(`${prefix}-${contentKey}-sample${suffix}`)
-    else
-      p: +renderKey(`${prefix}-${contentKey}-sample${suffix}`, { getFromGa: true })
-      | (#[i #[+renderKey(`${prefix}-${contentKey}-sample${suffix}`)]])
+  CenterCell(prefix=prefix, contentKey=contentKey, suffix=suffix, docLang="{props.docLang}")/
+  //- td(class="align-top")
+  //-   p
+  //-     b #{contentKey}
+  //-     if docLang !== 'GA'
+  //-       | !{" "}&mdash; #[+renderKey(`${prefix}-${contentKey}`)]
+  //-   if docLang === 'GA'
+  //-     p: +renderKey(`${prefix}-${contentKey}-sample${suffix}`)
+  //-   else
+  //-     p: +renderKey(`${prefix}-${contentKey}-sample${suffix}`, { getFromGa: true })
+  //-     | (#[i #[+renderKey(`${prefix}-${contentKey}-sample${suffix}`)]])
 
 mixin Table6A
   +markedTable(6, "A", "Table6A-caption")

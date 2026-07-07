@@ -65,7 +65,7 @@ export const TableTemplate = (props: {
 import { InlineTl } from "../../bodyMatter";
 
 const Tl = (props: { tlText: string }) =>
-  <<InlineTl lang="en_US" tlText={props.tlText} />;
+  <InlineTl lang="en_US" tlText={props.tlText} />;
 
 export const en_US = {
   

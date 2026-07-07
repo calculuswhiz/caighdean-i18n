@@ -140,3 +140,4 @@ vite.config.ts.timestamp-*
 scripts/temp.txt
 
 _reroute/**/*
+Helpers.md
