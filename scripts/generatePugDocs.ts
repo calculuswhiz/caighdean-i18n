@@ -63,6 +63,7 @@ async function generatePugDocs() {
       console.log(`Regeneration took ${(performance.now() - time).toFixed(2)} ms`);
     }
   } else {
+    const timeStart = performance.now();
     const chapterFolders = (await fs.readdir(translationRoot, { withFileTypes: true }))
       .filter(ent => ent.isDirectory() && ent.name !== "common");
     for (const chapterFolder of chapterFolders) {
@@ -87,6 +88,7 @@ async function generatePugDocs() {
         console.log(`. ${lang} - Done.`);
       }
     }
+    console.log(`Total generation took ${(performance.now() - timeStart).toFixed(2)} ms`);
   }
 }
 

@@ -20,6 +20,7 @@ export const Chapter6 = (props: {
   devMode?: boolean;
 }) => {
   const chapterDb = getChapterTranslator(props.docLang);
+  const rootRef = props.devMode ? "/" : "/caighdean-i18n/";
 
   return <ChapterTemplate
     title={chapterDb["6-title"]}
@@ -112,9 +113,9 @@ export const Chapter6 = (props: {
       <HX level={2} navText="6.4" title={chapterDb["6-4-title"]}>
         <p>{chapterDb["6-4-p1"]}</p>
         <div className="flex flex-row mx-[15%]">
-          <img className="w-1/2" src="/Compass-full.svg" alt="Static" />
+          <img className="w-1/2" src={`${rootRef}/Compass-full.svg`} alt="Static" />
           <p className="flex-grow"></p>
-          <img className="w-1/3 flex justify-center items-center" src="/Compass-quarter.svg" alt="Static" />
+          <img className="w-1/3 flex justify-center items-center" src={`${rootRef}/Compass-quarter.svg`} alt="Static" />
         </div>
         <table className="w-full">
           <colgroup>

@@ -91,9 +91,9 @@ mixin renderKey(key, options = { getFromGa: false, getFromCommon: false })
 
   if docLang === 'GA' || getFromGa
     if getFromCommon
-      +commonGaDb(key)
+      | {ga_IE_common["#{key}"]}
     else
-      +gaDb(key)
+      | {ga_IE["#{key}"]}
   else
     if getFromCommon
       | {commonDb["#{key}"]}

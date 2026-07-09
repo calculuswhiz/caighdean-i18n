@@ -1,11 +1,14 @@
 mixin lineBreakExample(exampleKey)
-  if docLang === "GA"
-    li: +renderKey(exampleKey)
-  else
-    li
-      +renderKey(exampleKey, { getFromGa: true })
-      | #[br]
-      | (#[+renderKey(exampleKey)])
+  LineBreakExample(
+    docLang="{props.docLang}"
+    exampleKey=exampleKey)/
+  //- if docLang === "GA"
+  //-   li: +renderKey(exampleKey)
+  //- else
+  //-   li
+  //-     +renderKey(exampleKey, { getFromGa: true })
+  //-     | #[br]
+  //-     | (#[+renderKey(exampleKey)])
 
 mixin Table7A
   +markedTable(7, "A", "Table7A-caption")
