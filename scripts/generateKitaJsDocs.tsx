@@ -1,5 +1,4 @@
 import * as fs from 'fs/promises';
-import * as path from 'path';
 import { Preface } from '../translation-tsx/Preface/layout';
 import { AdvisoryCommittee } from '../translation-tsx/AdvisoryCommittee/layout';
 import { PrefaceOfFirstEdition } from '../translation-tsx/PrefaceOfFirstEdition/layout';
@@ -17,6 +16,7 @@ import { Chapter10 } from '../translation-tsx/chapter10/layout';
 import { Chapter11 } from '../translation-tsx/chapter11/layout';
 import { TableOfOptions } from '../translation-tsx/TableOfOptions/layout';
 import { BookIndex } from '../translation-tsx/BookIndex/layout';
+import { Index } from '../translation-tsx/Index/layout';
 
 // Add more as needed
 const locales = ["en_US", "ga_IE"] as const;
@@ -26,6 +26,8 @@ async function generateKitaJsDocs() {
   const timeStart = performance.now();
   for (const locale of locales) {
     const targets = {
+      index: <Index docLang={locale} />,
+
       preface: <Preface docLang={locale} />,
       advisoryCommittee: <AdvisoryCommittee docLang={locale} />,
       prefaceOfFirstEdition: <PrefaceOfFirstEdition docLang={locale} />,

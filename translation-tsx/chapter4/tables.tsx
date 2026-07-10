@@ -79,7 +79,6 @@ export const Table4A = (props: {
 export const Table4B = (props: {
   docLang: SupportedLocales;
 }) => {
-  const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
   return <MarkedTable chapter={4} caption={chapterDb["4-2-5-title"]} docLang={props.docLang} tableLetter="B">
@@ -149,7 +148,6 @@ export const Table4B = (props: {
 export const Table4C = (props: {
   docLang: SupportedLocales;
 }) => {
-  const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
   return <MarkedTable chapter={4} caption={chapterDb["4-4-4-title"]} docLang={props.docLang} tableLetter="C">
@@ -271,7 +269,6 @@ export const Table4C = (props: {
 export const Table4D = (props: {
   docLang: SupportedLocales;
 }) => {
-  const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
   return <MarkedTable chapter={4} caption={chapterDb["Table4D-caption"]} docLang={props.docLang} tableLetter="D">
@@ -367,7 +364,6 @@ export const Table4D = (props: {
 export const Table4E = (props: {
   docLang: SupportedLocales;
 }) => {
-  const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
   return <MarkedTable chapter={4} caption={chapterDb["Table4E-caption"]} docLang={props.docLang} tableLetter="E">
@@ -463,7 +459,6 @@ export const Table4E = (props: {
 export const Table4F = (props: {
   docLang: SupportedLocales;
 }) => {
-  const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
   return <MarkedTable chapter={4} caption={chapterDb["Table4F-caption"]} docLang={props.docLang} tableLetter="F">
@@ -559,7 +554,6 @@ export const Table4F = (props: {
 export const Table4G = (props: {
   docLang: SupportedLocales;
 }) => {
-  const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
   return <MarkedTable chapter={4} caption={chapterDb["Table4G-caption"]} docLang={props.docLang} tableLetter="G">

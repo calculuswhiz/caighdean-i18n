@@ -1,4 +1,3 @@
-import { en_US as en_US_Common } from "../../common/en-US";
 import { InlineTl } from "../../bodyMatter";
 
 const Tl = (props: { tlText: string }) =>

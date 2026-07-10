@@ -42,17 +42,17 @@ For those interested, the following base will be used:
 
 - Tailwind for CSS
 - Vite for bundling
-- Pug for layout and translation
-- Various node.js scripts for quicker text processing (index+layout)
+- TSX for layout and translation
+- Bun for running scripts and bundling
 
 The architecture is as follows:
-- translation-pug - Root folder for pug-based files.
+- translation-tsx - Root folder for tsx-based files.
   - Some library files are at this root
   - Each chapter has a folder
-    - The **dbs** folder contains the databases for translation lookups for that chapter. They are implemented as pug mixins.
-      - The per-language translation files are located in the correspondingly named **pug** files.
-    - The **layout.pug** dictates the layout of the chapter
-    - Any table mixins will be extracted into **tables.pug** for easier editing and readability.
+    - The **dbs** folder contains the databases for translation lookups for that chapter. They are implemented as tsx components.
+      - The per-language translation files are located in the correspondingly named **tsx** files.
+    - The **layout.tsx** dictates the layout of the chapter
+    - Any table mixins will be extracted into **tables.tsx** for easier editing and readability.
   - The **common** folder contains the common databases for translation lookups. It is the only folder that is not a chapter
 
 # Contributing

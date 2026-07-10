@@ -1,4 +1,4 @@
-import { AutoColGroup, getCommonTranslator, MarkedTable, type SupportedLocales } from "../bodyMatter";
+import { AutoColGroup, MarkedTable, type SupportedLocales } from "../bodyMatter";
 import { ga_IE } from "./dbs/ga-IE";
 import { range } from "../util";
 import { getChapterTranslator } from "./layout";

@@ -62,7 +62,6 @@ export const ArrowSampleBox = (props: {
 export const Table11A = (props: {
   docLang: SupportedLocales;
 }) => {
-  const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
   return <MarkedTable chapter={11} caption={chapterDb["Table11A-caption"]} docLang={props.docLang} tableLetter="A">
@@ -114,7 +113,6 @@ export const Table11A = (props: {
 export const Table11B = (props: {
   docLang: SupportedLocales;
 }) => {
-  const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
   return <MarkedTable chapter={11} caption={chapterDb["Table11B-caption"]} docLang={props.docLang} tableLetter="B">
@@ -166,7 +164,6 @@ export const Table11B = (props: {
 export const Table11C = (props: {
   docLang: SupportedLocales;
 }) => {
-  const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
   return <MarkedTable chapter={11} caption={chapterDb["Table11C-caption"]} docLang={props.docLang} tableLetter="C">
@@ -221,7 +218,6 @@ export const Table11C = (props: {
 export const Table11D = (props: {
   docLang: SupportedLocales;
 }) => {
-  const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
   return <MarkedTable chapter={11} caption={chapterDb["Table11D-caption"]} docLang={props.docLang} tableLetter="D">
@@ -273,7 +269,6 @@ export const Table11D = (props: {
 export const Table11E = (props: {
   docLang: SupportedLocales;
 }) => {
-  const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
   return <MarkedTable chapter={11} caption={chapterDb["Table11E-caption"]} docLang={props.docLang} tableLetter="E">
@@ -330,7 +325,6 @@ export const Table11E = (props: {
 export const Table11F = (props: {
   docLang: SupportedLocales;
 }) => {
-  const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
   return <MarkedTable chapter={11} caption={chapterDb["Table11F-caption"]} docLang={props.docLang} tableLetter="F">
