@@ -57,11 +57,11 @@ export const Index = (props: {
           <div className="flex flex-col flex-wrap border-1 border-dashed border-black mb-1" id="chapter-select">
             <LinkContainer className="bg-purple-800 text-white" href="./preface.html">{chapterDb["prefaceTitle"]}
             </LinkContainer>
-            <LinkContainer className="bg-purple-800 text-white" href="./advisorycommittee.html">{chapterDb["advisoryCommittee"]}
+            <LinkContainer className="bg-purple-800 text-white" href="./advisoryCommittee.html">{chapterDb["advisoryCommittee"]}
             </LinkContainer>
-            <LinkContainer className="bg-purple-800 text-white" href="./prefaceoffirstedition.html">{chapterDb["preface1stEd"]}
+            <LinkContainer className="bg-purple-800 text-white" href="./prefaceOfFirstEdition.html">{chapterDb["preface1stEd"]}
             </LinkContainer>
-            <LinkContainer className="bg-purple-800 text-white" href="./grammarnotes.html">{chapterDb["abbrevAndGrammarTitle"]}
+            <LinkContainer className="bg-purple-800 text-white" href="./grammarNotes.html">{chapterDb["abbrevAndGrammarTitle"]}
             </LinkContainer>
             <LinkContainer className="bg-blue-950 text-white" href="./chapter1.html">{chapterDb["Chapter1"]}
             </LinkContainer>
@@ -85,9 +85,9 @@ export const Index = (props: {
             </LinkContainer>
             <LinkContainer className="bg-blue-950 text-white" href="./chapter11.html">{chapterDb["Chapter11"]}
             </LinkContainer>
-            <LinkContainer className="bg-purple-800 text-white" href="./tableofoptions.html">{chapterDb["tableOfOptions"]}
+            <LinkContainer className="bg-purple-800 text-white" href="./tableOfOptions.html">{chapterDb["tableOfOptions"]}
             </LinkContainer>
-            <LinkContainer className="bg-purple-800 text-white" href="./bookindex.html">{chapterDb["index"]}
+            <LinkContainer className="bg-purple-800 text-white" href="./bookIndex.html">{chapterDb["index"]}
             </LinkContainer>
           </div>
           <footer className="fixed bottom-0 w-[100%] p-2 border-y-1 border-black bg-white">{commonDb["footerDisclaimer"]}
