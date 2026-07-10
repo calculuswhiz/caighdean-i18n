@@ -4,7 +4,6 @@ import { getChapterTranslator } from "./layout";
 export const Table9A = (props: {
   docLang: SupportedLocales;
 }) => {
-  const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
   return <MarkedTable chapter={9} caption={chapterDb["Table9A-caption"]} docLang={props.docLang} tableLetter="A">
@@ -33,7 +32,6 @@ export const Table9A = (props: {
 export const Table9B = (props: {
   docLang: SupportedLocales;
 }) => {
-  const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
   return <MarkedTable chapter={9} caption={chapterDb["Table9B-caption"]} docLang={props.docLang} tableLetter="B">
@@ -75,7 +73,6 @@ export const Table9B = (props: {
 export const Table9C = (props: {
   docLang: SupportedLocales;
 }) => {
-  const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
   return <MarkedTable chapter={9} caption={chapterDb["Table9C-caption"]} docLang={props.docLang} tableLetter="C">
@@ -117,7 +114,6 @@ export const Table9C = (props: {
 export const Table9D = (props: {
   docLang: SupportedLocales;
 }) => {
-  const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
   return <MarkedTable chapter={9} caption={chapterDb["Table9D-caption"]} docLang={props.docLang} tableLetter="D">
@@ -207,7 +203,6 @@ export const Table9D = (props: {
 export const Table9E = (props: {
   docLang: SupportedLocales;
 }) => {
-  const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
   return <MarkedTable chapter={9} caption={chapterDb["Table9E-caption"]} docLang={props.docLang} tableLetter="E">
@@ -274,7 +269,6 @@ export const Table9E = (props: {
 export const Table9F = (props: {
   docLang: SupportedLocales;
 }) => {
-  const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
   return <MarkedTable chapter={9} caption={chapterDb["Table9F-caption"]} docLang={props.docLang} tableLetter="F">
@@ -425,7 +419,6 @@ export const Table9G = (props: {
 export const Table9H = (props: {
   docLang: SupportedLocales;
 }) => {
-  const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
   return <MarkedTable chapter={9} caption={chapterDb["Table9H-caption"]} docLang={props.docLang} tableLetter="H">
@@ -501,7 +494,6 @@ export const Table9H = (props: {
 export const Table9I = (props: {
   docLang: SupportedLocales;
 }) => {
-  const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
   return <MarkedTable chapter={9} caption={chapterDb["Table9I-caption"]} docLang={props.docLang} tableLetter="I">
@@ -577,7 +569,6 @@ export const Table9I = (props: {
 export const Table9J = (props: {
   docLang: SupportedLocales;
 }) => {
-  const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
   return <MarkedTable chapter={9} caption={chapterDb["Table9J-caption"]} docLang={props.docLang} tableLetter="J">
@@ -655,7 +646,6 @@ export const Table9J = (props: {
 export const Table9K = (props: {
   docLang: SupportedLocales;
 }) => {
-  const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
   return <MarkedTable chapter={9} caption={chapterDb["Table9K-caption"]} docLang={props.docLang} tableLetter="K">
@@ -731,7 +721,6 @@ export const Table9K = (props: {
 export const Table9L = (props: {
   docLang: SupportedLocales;
 }) => {
-  const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
   return <MarkedTable chapter={9} caption={chapterDb["Table9L-caption"]} docLang={props.docLang} tableLetter="L">
@@ -807,7 +796,6 @@ export const Table9L = (props: {
 export const Table9M = (props: {
   docLang: SupportedLocales;
 }) => {
-  const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
   return <MarkedTable chapter={9} caption={chapterDb["Table9M-caption"]} docLang={props.docLang} tableLetter="M">
@@ -876,7 +864,6 @@ export const Table9M = (props: {
 export const Table9N = (props: {
   docLang: SupportedLocales;
 }) => {
-  const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
   return <MarkedTable chapter={9} caption={chapterDb["Table9N-caption"]} docLang={props.docLang} tableLetter="N">
@@ -941,7 +928,6 @@ export const Table9N = (props: {
 export const Table9O = (props: {
   docLang: SupportedLocales;
 }) => {
-  const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
   return <MarkedTable chapter={9} caption={chapterDb["Table9O-caption"]} docLang={props.docLang} tableLetter="O">
@@ -996,7 +982,6 @@ export const Table9O = (props: {
 export const Table9P = (props: {
   docLang: SupportedLocales;
 }) => {
-  const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
   return <MarkedTable chapter={9} caption={chapterDb["Table9P-caption"]} docLang={props.docLang} tableLetter="P">
@@ -1066,7 +1051,6 @@ export const Table9P = (props: {
 export const Table9Q = (props: {
   docLang: SupportedLocales;
 }) => {
-  const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
   return <MarkedTable chapter={9} caption={chapterDb["Table9Q-caption"]} docLang={props.docLang} tableLetter="Q">
@@ -1120,7 +1104,6 @@ export const Table9Q = (props: {
 export const Table9R = (props: {
   docLang: SupportedLocales;
 }) => {
-  const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
   return <MarkedTable chapter={9} caption={chapterDb["Table9R-caption"]} docLang={props.docLang} tableLetter="R">
@@ -1201,7 +1184,6 @@ export const Table9R = (props: {
 export const Table9S = (props: {
   docLang: SupportedLocales;
 }) => {
-  const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
   return <MarkedTable chapter={9} caption={chapterDb["Table9S-caption"]} docLang={props.docLang} tableLetter="S">
@@ -1282,7 +1264,6 @@ export const Table9S = (props: {
 export const Table9T = (props: {
   docLang: SupportedLocales;
 }) => {
-  const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
   return <MarkedTable chapter={9} caption={chapterDb["Table9T-caption"]} docLang={props.docLang} tableLetter="T">
@@ -1363,7 +1344,6 @@ export const Table9T = (props: {
 export const Table9U = (props: {
   docLang: SupportedLocales;
 }) => {
-  const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
   return <MarkedTable chapter={9} caption={chapterDb["Table9U-caption"]} docLang={props.docLang} tableLetter="U">
@@ -1488,7 +1468,6 @@ export const Table9U = (props: {
 export const Table9V = (props: {
   docLang: SupportedLocales;
 }) => {
-  const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
   return <MarkedTable chapter={9} caption={chapterDb["Table9V-caption"]} docLang={props.docLang} tableLetter="V">
@@ -1606,7 +1585,6 @@ export const Table9V = (props: {
 export const Table9W = (props: {
   docLang: SupportedLocales;
 }) => {
-  const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
   return <MarkedTable chapter={9} caption={chapterDb["Table9W-caption"]} docLang={props.docLang} tableLetter="W">
@@ -1660,7 +1638,6 @@ export const Table9W = (props: {
 export const Table9X = (props: {
   docLang: SupportedLocales;
 }) => {
-  const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
   return <MarkedTable chapter={9} caption={chapterDb["Table9X-caption"]} docLang={props.docLang} tableLetter="X">
@@ -1696,7 +1673,6 @@ export const Table9X = (props: {
 export const Table9Y = (props: {
   docLang: SupportedLocales;
 }) => {
-  const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
   return <MarkedTable chapter={9} caption={chapterDb["Table9Y-caption"]} docLang={props.docLang} tableLetter="Y">
@@ -1791,7 +1767,6 @@ export const Table9Y = (props: {
 export const Table9Z = (props: {
   docLang: SupportedLocales;
 }) => {
-  const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
   return <MarkedTable chapter={9} caption={chapterDb["Table9Z-caption"]} docLang={props.docLang} tableLetter="Z">
@@ -1846,7 +1821,6 @@ export const Table9Z = (props: {
 export const Table9AA = (props: {
   docLang: SupportedLocales;
 }) => {
-  const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
   return <MarkedTable chapter={9} caption={chapterDb["Table9AA-caption"]} docLang={props.docLang} tableLetter="AA">
@@ -1923,7 +1897,6 @@ export const Table9AA = (props: {
 export const Table9BB = (props: {
   docLang: SupportedLocales;
 }) => {
-  const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
   return <MarkedTable chapter={9} caption={chapterDb["Table9BB-caption"]} docLang={props.docLang} tableLetter="BB">
@@ -1966,7 +1939,6 @@ export const Table9BB = (props: {
 export const Table9CC = (props: {
   docLang: SupportedLocales;
 }) => {
-  const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
   return <MarkedTable chapter={9} caption={chapterDb["Table9CC-caption"]} docLang={props.docLang} tableLetter="CC">
@@ -2014,7 +1986,6 @@ export const Table9CC = (props: {
 export const Table9DD = (props: {
   docLang: SupportedLocales;
 }) => {
-  const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
   return <MarkedTable chapter={9} caption={chapterDb["Table9DD-caption"]} docLang={props.docLang} tableLetter="DD">
@@ -2057,7 +2028,6 @@ export const Table9DD = (props: {
 export const Table9EE = (props: {
   docLang: SupportedLocales;
 }) => {
-  const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
   return <MarkedTable chapter={9} caption={chapterDb["Table9EE-caption"]} docLang={props.docLang} tableLetter="EE">
@@ -2172,7 +2142,6 @@ export const Table9EE = (props: {
 export const Table9FF = (props: {
   docLang: SupportedLocales;
 }) => {
-  const commonDb = getCommonTranslator(props.docLang);
   const chapterDb = getChapterTranslator(props.docLang);
 
   return <MarkedTable chapter={9} caption={chapterDb["Table9FF-caption"]} docLang={props.docLang} tableLetter="FF">

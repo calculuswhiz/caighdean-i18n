@@ -1,28 +1,9 @@
 mixin arrowSampleBox(samplePrefix, sampleCount, startAt = 1)
-  table.samplebox(class="my-1")
-    tbody
-      each row in range(startAt, startAt + sampleCount - 1)
-        tr
-          if docLang === "GA"
-            td(class="bg-stone-100 border-1 border-[rgba(0,0,0,0.1)] p-1")
-              +renderKey(`${samplePrefix}${row}a`)
-          else
-            td(class="bg-stone-100 border-1 border-[rgba(0,0,0,0.1)] p-1")
-              +renderKey(`${samplePrefix}${row}a`, { getFromGa: true })
-            td(class="bg-stone-100 border-1 border-[rgba(0,0,0,0.1)] p-1")
-              +renderKey(`${samplePrefix}${row}a`)
-        tr
-          if docLang === "GA"
-            td(class="bg-stone-100 border-1 border-[rgba(0,0,0,0.1)] p-1")
-              | &rarr;&nbsp;
-              +renderKey(`${samplePrefix}${row}b`)
-          else
-            td(class="bg-stone-100 border-1 border-[rgba(0,0,0,0.1)] p-1")
-              | &rarr;&nbsp;
-              +renderKey(`${samplePrefix}${row}b`, { getFromGa: true })
-            td(class="bg-stone-100 border-1 border-[rgba(0,0,0,0.1)] p-1")
-              | &rarr;&nbsp;
-              +renderKey(`${samplePrefix}${row}b`)
+  ArrowSampleBox(
+    samplePrefix=samplePrefix,
+    sampleCount=sampleCount,
+    startAt=startAt,
+    docLang="{props.docLang}")/
 
 mixin Table11A
   +markedTable(11, "A", "Table11A-caption")
