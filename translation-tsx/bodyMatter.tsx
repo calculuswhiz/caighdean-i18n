@@ -158,6 +158,7 @@ export const MarkedTable = (props: {
 export const HX = (props: {
   level: 1 | 2 | 3 | 4 | 5;
   navText: string;
+  hideNavText?: boolean;
   title?: string | React.JSX.Element;
   children: React.ReactNode;
 }) => {
@@ -177,6 +178,7 @@ export const HX = (props: {
       <span className="heading-title">
         {props.level > 1
           && !isSectionGrouping
+          && !props.hideNavText
           && <span className="section-number">{props.navText}</span>}
         {(props.navText ?? "") !== ""
           && !isSectionGrouping
