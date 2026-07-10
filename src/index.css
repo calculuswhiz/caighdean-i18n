@@ -295,6 +295,10 @@
   .book-index {
     & li {
       @apply font-bold;
+      
+      & div {
+        @apply flex flex-wrap;
+      }
 
       & a {
         @apply font-normal ml-4;

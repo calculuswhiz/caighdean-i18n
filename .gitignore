@@ -138,3 +138,6 @@ vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .DS_Store
 scripts/temp.txt
+
+_reroute/**/*
+Helpers.md
