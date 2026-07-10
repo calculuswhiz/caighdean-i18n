@@ -8,6 +8,7 @@ import { Chapter5 } from '../translation-tsx/chapter5/layout';
 import { Chapter6 } from '../translation-tsx/chapter6/layout';
 import { Chapter7 } from '../translation-tsx/chapter7/layout';
 import { Chapter8 } from '../translation-tsx/chapter8/layout';
+import { Chapter9 } from '../translation-tsx/chapter9/layout';
 
 // Add more as needed
 const locales = ["en_US", "ga_IE"] as const;
@@ -25,6 +26,7 @@ async function generateKitaJsDocs() {
       chapter6: <Chapter6 docLang={locale} devMode={devMode} />,
       chapter7: <Chapter7 docLang={locale} />,
       chapter8: <Chapter8 docLang={locale} />,
+      chapter9: <Chapter9 docLang={locale} />,
     };
     for (const [key, target] of Object.entries(targets)) {
       await fs.writeFile(
