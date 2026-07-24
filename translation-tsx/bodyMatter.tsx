@@ -134,19 +134,21 @@ export const MarkedTable = (props: {
       ?? key;
   };
 
-  return <table
-    className={`chapter-${props.chapter} ${props.className ?? ''}`}
-    id={`table${props.chapter}${props.tableLetter}`}
-  >
-    <caption>
-      <b className="pr-2">
-        {renderCommon('Tábla')}
-        &nbsp;{props.chapter}{props.tableLetter}
-      </b>
-      {props.caption}
-    </caption>
-    {props.children}
-  </table>;
+  return <div className="overflow-x-auto max-w-full">
+    <table
+      className={`chapter-${props.chapter} ${props.className ?? ''}`}
+      id={`table${props.chapter}${props.tableLetter}`}
+    >
+      <caption>
+        <b className="pr-2">
+          {renderCommon('Tábla')}
+          &nbsp;{props.chapter}{props.tableLetter}
+        </b>
+        {props.caption}
+      </caption>
+      {props.children}
+    </table>
+  </div>;
 };
 
 /** Generates heading element. Comes with id, anchor link
@@ -173,7 +175,7 @@ export const HX = (props: {
     <tag of={tagName} id={id}>
       {/* Anchor links */}
       <a href={`#${id}`}
-        className="mx-2 text-blue-400 hover:text-blue-600 cursor-pointer select-none"
+        className="mx-0.5 sm:mx-2 text-blue-400 hover:text-blue-600 cursor-pointer select-none"
       >#</a>
       <span className="heading-title">
         {props.level > 1

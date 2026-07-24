@@ -8,6 +8,7 @@ export const Table2A = (props: {
   const chapterDb = getChapterTranslator(props.docLang);
 
   return <MarkedTable
+    className="overflow-x-auto max-w-full"
     chapter={2}
     tableLetter="A"
     caption={chapterDb["Table2A-Title"]}
@@ -22,7 +23,7 @@ export const Table2A = (props: {
     </colgroup>
     <thead>
       <tr>
-        <th className="text-center text-xl" rowSpan={2}>{chapterDb["Table2A-CornerHeading"]}
+        <th className="text-center" rowSpan={2}>{chapterDb["Table2A-CornerHeading"]}
         </th>
         <th className="text-center" colSpan={2}>{commonDb["Uatha"]}
         </th>
@@ -236,7 +237,7 @@ export const Table2D = (props: {
     </colgroup>
     <thead>
       <tr>
-        <th className="text-center text-xl" rowSpan={2}>{chapterDb["Table2A-CornerHeading"]}
+        <th className="text-center" rowSpan={2}>{chapterDb["Table2A-CornerHeading"]}
         </th>
         <th className="text-center" colSpan={2}>{commonDb["Uatha"]}
         </th>
@@ -597,7 +598,7 @@ export const Table2F = (props: {
     </colgroup>
     <thead>
       <tr>
-        <th className="text-center text-xl" rowSpan={2}>{chapterDb["Table2F-CornerHeading"]}
+        <th className="text-center" rowSpan={2}>{chapterDb["Table2F-CornerHeading"]}
         </th>
         <th className="text-center" colSpan={2}>{commonDb["Uatha"]}
         </th>
@@ -808,7 +809,7 @@ export const Table2G = (props: {
     </colgroup>
     <thead>
       <tr>
-        <th className="text-center text-xl" rowSpan={2}>{chapterDb["Table2G-CornerHeading"]}
+        <th className="text-center" rowSpan={2}>{chapterDb["Table2G-CornerHeading"]}
         </th>
         <th className="text-center" colSpan={2}>{commonDb["Uatha"]}
         </th>
@@ -899,7 +900,7 @@ export const Table2H = (props: {
     </colgroup>
     <thead>
       <tr>
-        <th className="text-center text-xl" rowSpan={2}>{chapterDb["Table2H-CornerHeading"]}
+        <th className="text-center" rowSpan={2}>{chapterDb["Table2H-CornerHeading"]}
         </th>
         <th className="text-center" colSpan={2}>{commonDb["Uatha"]}
         </th>
@@ -1103,7 +1104,7 @@ export const Table2I = (props: {
     </colgroup>
     <thead>
       <tr>
-        <th className="text-center text-xl" rowSpan={2}>{chapterDb["Table2I-CornerHeading"]}
+        <th className="text-center" rowSpan={2}>{chapterDb["Table2I-CornerHeading"]}
         </th>
         <th className="text-center" colSpan={2}>{commonDb["Uatha"]}
         </th>
@@ -1232,7 +1233,7 @@ export const Table2J = (props: {
     </colgroup>
     <thead>
       <tr>
-        <th className="text-center text-xl" rowSpan={2}>{chapterDb["Table2J-CornerHeading"]}
+        <th className="text-center" rowSpan={2}>{chapterDb["Table2J-CornerHeading"]}
         </th>
         <th className="text-center" colSpan={2}>{commonDb["Uatha"]}
         </th>
@@ -1447,7 +1448,7 @@ export const Table2K = (props: {
     </colgroup>
     <thead>
       <tr>
-        <th className="text-center text-xl" rowSpan={2}>{chapterDb["Table2K-CornerHeading"]}
+        <th className="text-center" rowSpan={2}>{chapterDb["Table2K-CornerHeading"]}
         </th>
         <th className="text-center" colSpan={2}>{commonDb["Uatha"]}
         </th>
@@ -1519,7 +1520,7 @@ export const Table2L = (props: {
     </colgroup>
     <thead>
       <tr>
-        <th className="text-center text-xl" rowSpan={2}>{chapterDb["Table2L-CornerHeading"]}
+        <th className="text-center" rowSpan={2}>{chapterDb["Table2L-CornerHeading"]}
         </th>
         <th className="text-center" colSpan={2}>{commonDb["Uatha"]}
         </th>
@@ -1739,7 +1740,7 @@ export const Table2M = (props: {
     docLang={props.docLang}>
     <thead>
       <tr>
-        <th className="text-center text-xl" rowSpan={2}>{chapterDb["Table2M-CornerHeading"]}
+        <th className="text-center" rowSpan={2}>{chapterDb["Table2M-CornerHeading"]}
         </th>
         <th className="text-center" colSpan={2}>{commonDb["Uatha"]}
         </th>
@@ -1963,9 +1964,9 @@ export const Table2N = (props: {
     </colgroup>
     <thead>
       <tr>
-        <th className="text-xl" colSpan={2}>{commonDb["Uatha"]}
+        <th className="" colSpan={2}>{commonDb["Uatha"]}
         </th>
-        <th className="text-xl">{commonDb["Iolra"]}
+        <th className="">{commonDb["Iolra"]}
         </th>
       </tr>
       <tr>

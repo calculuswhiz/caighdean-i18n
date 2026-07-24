@@ -22,6 +22,8 @@ import { Index } from '../translation-tsx/Index/layout';
 const locales = ["en_US", "ga_IE"] as const;
 const devMode = process.argv.includes("--dev");
 
+console.log(`Generating docs in ${devMode ? "dev" : "prod"} mode...`);
+
 async function generateKitaJsDocs() {
   const timeStart = performance.now();
   for (const locale of locales) {

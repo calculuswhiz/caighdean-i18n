@@ -274,7 +274,7 @@ export const Table4D = (props: {
   return <MarkedTable chapter={4} caption={chapterDb["Table4D-caption"]} docLang={props.docLang} tableLetter="D">
     <thead>
       <tr>
-        <th className="text-xl" colSpan={4}>{chapterDb["Table4D-title"]}
+        <th colSpan={4}>{chapterDb["Table4D-title"]}
         </th>
       </tr>
       <tr>
@@ -369,7 +369,7 @@ export const Table4E = (props: {
   return <MarkedTable chapter={4} caption={chapterDb["Table4E-caption"]} docLang={props.docLang} tableLetter="E">
     <thead>
       <tr>
-        <th className="text-xl" colSpan={4}>{chapterDb["Table4E-title"]}
+        <th colSpan={4}>{chapterDb["Table4E-title"]}
         </th>
       </tr>
       <tr>
@@ -464,7 +464,7 @@ export const Table4F = (props: {
   return <MarkedTable chapter={4} caption={chapterDb["Table4F-caption"]} docLang={props.docLang} tableLetter="F">
     <thead>
       <tr>
-        <th className="text-xl" colSpan={4}>{chapterDb["Table4F-title"]}
+        <th colSpan={4}>{chapterDb["Table4F-title"]}
         </th>
       </tr>
       <tr>
@@ -559,7 +559,7 @@ export const Table4G = (props: {
   return <MarkedTable chapter={4} caption={chapterDb["Table4G-caption"]} docLang={props.docLang} tableLetter="G">
     <thead>
       <tr>
-        <th className="text-xl" colSpan={4}>{chapterDb["Table4G-title"]}
+        <th colSpan={4}>{chapterDb["Table4G-title"]}
         </th>
       </tr>
       <tr>

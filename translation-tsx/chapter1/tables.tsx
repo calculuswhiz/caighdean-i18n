@@ -25,7 +25,7 @@ export const Table1A = (props: {
             </colgroup>
             <thead>
               <tr>
-                <th colSpan={5} className="text-2xl">
+                <th colSpan={5}>
                   {commonDb.Firinscneach}
                 </th>
               </tr>
@@ -104,7 +104,7 @@ export const Table1A = (props: {
             </colgroup>
             <thead>
               <tr>
-                <th colSpan={5} className="text-2xl">
+                <th colSpan={5}>
                   {commonDb.Baininscneach}
                 </th>
               </tr>
@@ -209,7 +209,7 @@ export const Table1B = (props: {
   return <MarkedTable chapter={1} tableLetter="B" caption={chapterDb['Table1B-caption']} docLang={props.docLang}>
     <thead>
       <tr>
-        <th colSpan={2} className="text-2xl px-4 py-2">
+        <th colSpan={2} className="px-4 py-2">
           {chapterDb['Table1B-header']}
         </th>
       </tr>
@@ -304,7 +304,7 @@ export const Table1C = (props: {
   return <MarkedTable chapter={1} tableLetter="C" caption={chapterDb['Table1C-caption']} docLang={props.docLang}>
     <thead>
       <tr>
-        <th colSpan={2} className="text-2xl px-4 py-2">
+        <th colSpan={2} className="px-4 py-2">
           {chapterDb['Table1C-header']}
         </th>
       </tr>
@@ -395,7 +395,7 @@ export const Table1D = (props: {
   return <MarkedTable chapter={1} tableLetter="D" caption={chapterDb['Table1D-caption']} docLang={props.docLang}>
     <thead>
       <tr>
-        <th colSpan={2} className="text-2xl px-4 py-2">
+        <th colSpan={2} className="px-4 py-2">
           {chapterDb['Table1D-header']}
         </th>
       </tr>
@@ -446,7 +446,7 @@ export const Table1E = (props: {
   return <MarkedTable chapter={1} tableLetter="E" caption={chapterDb['Table1E-caption']} docLang={props.docLang}>
     <thead>
       <tr>
-        <th colSpan={2} className="text-2xl px-4 py-2">
+        <th colSpan={2} className="px-4 py-2">
           {chapterDb['Table1E-header']}
         </th>
       </tr>
@@ -512,7 +512,7 @@ export const Table1F = (props: {
             </colgroup>
             <thead>
               <tr>
-                <th colSpan={5} className="text-2xl px-4 py-2">
+                <th colSpan={5} className="px-4 py-2">
                   {commonDb['Firinscneach']}
                 </th>
               </tr>
@@ -591,7 +591,7 @@ export const Table1F = (props: {
             </colgroup>
             <thead>
               <tr>
-                <th colSpan={5} className="text-2xl px-4 py-2">
+                <th colSpan={5} className="px-4 py-2">
                   {commonDb['Baininscneach']}
                 </th>
               </tr>
@@ -655,7 +655,7 @@ export const Table1G = (props: {
     </colgroup>
     <thead>
       <tr>
-        <th colSpan={4} className="text-2xl px-4 py-2">
+        <th colSpan={4} className="px-4 py-2">
           {commonDb['FirAgusBain']}
         </th>
       </tr>
@@ -718,7 +718,7 @@ export const Table1H = (props: {
     </colgroup>
     <thead>
       <tr>
-        <th colSpan={4} className="text-2xl px-4 py-2">
+        <th colSpan={4} className="px-4 py-2">
           {commonDb['FirAgusBain']}
         </th>
       </tr>
@@ -801,7 +801,7 @@ export const Table1I = (props: {
     </colgroup>
     <thead>
       <tr>
-        <th colSpan={4} className="text-2xl px-4 py-2">
+        <th colSpan={4} className="px-4 py-2">
           {commonDb['FirAgusBain']}
         </th>
       </tr>
@@ -858,7 +858,7 @@ export const Table1J = (props: {
     </colgroup>
     <thead>
       <tr>
-        <th colSpan={2} className="text-2xl px-4 py-2">
+        <th colSpan={2} className="px-4 py-2">
           {chapterDb['Table1J-header']}
         </th>
       </tr>
@@ -957,7 +957,7 @@ export const Table1K = (props: {
     </colgroup>
     <thead>
       <tr>
-        <th colSpan={2} className="text-2xl px-4 py-2">
+        <th colSpan={2} className="px-4 py-2">
           {chapterDb['Table1K-header']}
         </th>
       </tr>
@@ -1051,7 +1051,7 @@ export const Table1L = (props: {
     </colgroup>
     <thead>
       <tr>
-        <th colSpan={2} className="text-2xl px-4 py-2">
+        <th colSpan={2} className="px-4 py-2">
           {chapterDb['Table1L-header']}
         </th>
       </tr>
@@ -1106,7 +1106,7 @@ export const Table1M = (props: {
     </colgroup>
     <thead>
       <tr>
-        <th colSpan={2} className="text-2xl px-4 py-2">
+        <th colSpan={2} className="px-4 py-2">
           {chapterDb['Table1M-header']}
         </th>
       </tr>

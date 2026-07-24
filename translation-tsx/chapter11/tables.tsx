@@ -67,7 +67,7 @@ export const Table11A = (props: {
   return <MarkedTable chapter={11} caption={chapterDb["Table11A-caption"]} docLang={props.docLang} tableLetter="A">
     <thead>
       <tr>
-        <th className="text-xl py-2" colSpan={2}>{chapterDb["Table11A-header"]}
+        <th className="py-2" colSpan={2}>{chapterDb["Table11A-header"]}
         </th>
       </tr>
       <tr>
@@ -118,7 +118,7 @@ export const Table11B = (props: {
   return <MarkedTable chapter={11} caption={chapterDb["Table11B-caption"]} docLang={props.docLang} tableLetter="B">
     <thead>
       <tr>
-        <th className="text-xl py-2" colSpan={2}>{chapterDb["Table11B-header"]}
+        <th className="py-2" colSpan={2}>{chapterDb["Table11B-header"]}
         </th>
       </tr>
       <tr>

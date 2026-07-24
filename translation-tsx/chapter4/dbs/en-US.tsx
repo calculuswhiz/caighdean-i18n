@@ -462,7 +462,7 @@ export const en_US = {
     return "Genitive";
   },
   get "Table4D-footnote"() {
-    return "*But see 1.7 The Lenition System";
+    return "But see 1.7 The Lenition System";
   },
   get "Table4E-title"() {
     return "Feminine Singular Noun";

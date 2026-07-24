@@ -6,6 +6,7 @@
   "scripts": {
     "check-links": "bun run ./scripts/linkScan.ts",
     "dev": "bunx --bun vite",
+    "regen-docs": "bun --watch run ./scripts/generateKitaJsDocs.tsx --dev",
     "build": "bun run ./scripts/generateKitaJsDocs.tsx && bunx --bun vite build",
     "lint": "eslint .",
     "preview": "vite preview"

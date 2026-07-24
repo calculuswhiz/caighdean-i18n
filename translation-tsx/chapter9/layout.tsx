@@ -543,7 +543,7 @@ export const Chapter9 = (props: {
             <p>{chapterDb["9-6-1-e-p"]}
             </p>
             <ol className="list-[lower-roman]">
-              <li className="border-purple-500 border-1 bg-yellow-50" id="sec_9_6_1_e_i">{chapterDb["9-6-1-e-i-p"]}
+              <li className="border-purple-500 border-1 bg-yellow-50 p-0.5" id="sec_9_6_1_e_i">{chapterDb["9-6-1-e-i-p"]}
               </li>
               <li id="sec_9_6_1_e_ii">{chapterDb["9-6-1-e-ii-p"]}
               </li>

@@ -1,6 +1,10 @@
 @import "tailwindcss";
 
 @layer base {
+  html {
+    @apply text-sm sm:text-base;
+  }
+
   body {
     @apply p-1 max-w-[8.5in] mb-[50vh];
   }
@@ -27,7 +31,7 @@
   }
 
   aside {
-    @apply bg-gray-100 p-4 my-4 border-l-4 border-gray-400;
+    @apply bg-gray-100 p-1 sm:p-4 my-0 sm:my-4 border-l-4 border-gray-400;
   }
 
   p {
@@ -69,6 +73,8 @@
   }
 
   table {
+    @apply text-sm sm:text-base;
+
     & caption {
       @apply caption-bottom pb-2;
     }
@@ -104,7 +110,7 @@
   ol,
   ul {
     & > li {
-      @apply list-outside ml-6 pb-1 pl-1;
+      @apply list-outside pl-0 ml-4 pb-0 sm:pl-1 sm:ml-6 sm:pb-1;
     }
   }
 
@@ -194,7 +200,7 @@
     }
 
     & .primary-header-row th {
-      @apply bg-orange-800 text-white text-2xl p-1 text-left;
+      @apply bg-orange-800 text-white p-1 text-left text-lg sm:text-xl;
     }
 
     & .secondary-header-row th {
@@ -246,7 +252,7 @@
 
   .chapter-9 {
     & thead tr:first-child th {
-      @apply bg-fuchsia-900 text-white text-xl;
+      @apply bg-fuchsia-900 text-white text-lg sm:text-xl;
     }
 
     & thead tr:nth-of-type(2) th {
@@ -295,7 +301,7 @@
   .book-index {
     & li {
       @apply font-bold;
-      
+
       & div {
         @apply flex flex-wrap;
       }

@@ -9,7 +9,7 @@ export const Table10A = (props: {
   return <MarkedTable chapter={10} caption={chapterDb["Table10A-caption"]} docLang={props.docLang} tableLetter="A">
     <thead>
       <tr>
-        <th className="text-xl py-2" colSpan={2}>{chapterDb["Table10A-header"]}
+        <th className="py-2" colSpan={2}>{chapterDb["Table10A-header"]}
         </th>
       </tr>
     </thead>
@@ -134,7 +134,7 @@ export const Table10B = (props: {
   return <MarkedTable chapter={10} caption={chapterDb["Table10B-caption"]} docLang={props.docLang} tableLetter="B">
     <thead>
       <tr>
-        <th className="text-xl py-2" colSpan={2}>{chapterDb["Table10B-header"]}
+        <th className="py-2" colSpan={2}>{chapterDb["Table10B-header"]}
         </th>
       </tr>
     </thead>
@@ -195,7 +195,7 @@ export const Table10C = (props: {
   return <MarkedTable chapter={10} caption={chapterDb["Table10C-caption"]} docLang={props.docLang} tableLetter="C">
     <thead>
       <tr>
-        <th className="text-xl py-2" colSpan={2}>{chapterDb["Table10C-header"]}
+        <th className="py-2" colSpan={2}>{chapterDb["Table10C-header"]}
         </th>
       </tr>
     </thead>
@@ -220,7 +220,7 @@ export const Table10D = (props: {
   return <MarkedTable chapter={10} caption={chapterDb["Table10D-caption"]} docLang={props.docLang} tableLetter="D">
     <thead>
       <tr>
-        <th className="text-xl py-2" colSpan={2}>{chapterDb["Table10D-header"]}
+        <th className="py-2" colSpan={2}>{chapterDb["Table10D-header"]}
         </th>
       </tr>
     </thead>
@@ -245,7 +245,7 @@ export const Table10E = (props: {
   return <MarkedTable chapter={10} caption={chapterDb["Table10E-caption"]} docLang={props.docLang} tableLetter="E">
     <thead>
       <tr>
-        <th className="text-xl py-2" colSpan={2}>{chapterDb["Table10E-header"]}
+        <th className="py-2" colSpan={2}>{chapterDb["Table10E-header"]}
         </th>
       </tr>
     </thead>
@@ -342,7 +342,7 @@ export const Table10F = (props: {
   return <MarkedTable chapter={10} caption={chapterDb["Table10F-caption"]} docLang={props.docLang} tableLetter="F">
     <thead>
       <tr>
-        <th className="text-xl py-2" colSpan={2}>{chapterDb["Table10F-header"]}
+        <th className="py-2" colSpan={2}>{chapterDb["Table10F-header"]}
         </th>
       </tr>
     </thead>

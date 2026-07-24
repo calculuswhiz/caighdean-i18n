@@ -203,40 +203,42 @@ export const Chapter5 = (props: {
             </li>
             <li id="sec_5_2_1_d">
               <p>{chapterDb["5-2-1-d-p"]}</p>
-              <table className="chapter-5">
-                <thead>
-                  <tr>
-                    <th></th>
-                    <th colSpan={2}>{chapterDb["EndsWith"]}&nbsp;<i>-bh</i>
-                    </th>
-                    <th colSpan={2}>{chapterDb["EndsWith"]}&nbsp;<i>-mh</i>
-                    </th>
-                    <th colSpan={2}>{chapterDb["EndsWith"]}&nbsp;<i>-th</i>
-                    </th>
-                  </tr>
-                  <tr>
-                    <th className="bg-stone-300 text-black"></th>
-                    <th className="bg-stone-300 text-black">-bh + f-</th>
-                    <th className="bg-stone-300 text-black">-bhf-</th>
-                    <th className="bg-stone-300 text-black">-mh + f-</th>
-                    <th className="bg-stone-300 text-black">-mhf-</th>
-                    <th className="bg-stone-300 text-black">-th + f-</th>
-                    <th className="bg-stone-300 text-black">-thf-</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th className="font-bold">{chapterDb["ConditionalMood"]}
-                    </th>
-                    <td>scríobh + fá</td>
-                    <td>scríobhfá</td>
-                    <td>ríomh + fá</td>
-                    <td>ríomhfá</td>
-                    <td>chaith + fí</td>
-                    <td>chaithfí</td>
-                  </tr>
-                </tbody>
-              </table>
+              <div className="overflow-x-auto max-w-full">
+                <table className="chapter-5">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th colSpan={2}>{chapterDb["EndsWith"]}&nbsp;<i>-bh</i>
+                      </th>
+                      <th colSpan={2}>{chapterDb["EndsWith"]}&nbsp;<i>-mh</i>
+                      </th>
+                      <th colSpan={2}>{chapterDb["EndsWith"]}&nbsp;<i>-th</i>
+                      </th>
+                    </tr>
+                    <tr>
+                      <th className="bg-stone-300 text-black"></th>
+                      <th className="bg-stone-300 text-black">-bh + f-</th>
+                      <th className="bg-stone-300 text-black">-bhf-</th>
+                      <th className="bg-stone-300 text-black">-mh + f-</th>
+                      <th className="bg-stone-300 text-black">-mhf-</th>
+                      <th className="bg-stone-300 text-black">-th + f-</th>
+                      <th className="bg-stone-300 text-black">-thf-</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th className="font-bold">{chapterDb["ConditionalMood"]}
+                      </th>
+                      <td>scríobh + fá</td>
+                      <td>scríobhfá</td>
+                      <td>ríomh + fá</td>
+                      <td>ríomhfá</td>
+                      <td>chaith + fí</td>
+                      <td>chaithfí</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </li>
           </ol>
         </HX>
@@ -294,58 +296,60 @@ export const Chapter5 = (props: {
               </table>
             </li>
             <li id="sec_5_2_2_b">{chapterDb["5-2-2-b-p"]}
-              <table className="chapter-5">
-                <thead>
-                  <tr>
-                    <th>{chapterDb["5-2-2-tables-col1"]}
-                    </th>
-                    <th>{chapterDb["5-2-2-tables-col2"]}
-                    </th>
-                    <th>{chapterDb["5-2-2-tables-col3"]}
-                    </th>
-                    <th>{chapterDb["5-2-2-tables-col4"]}
-                    </th>
-                    {props.docLang !== "ga_IE" && <th>{commonDb["SaBhrí-title"]}</th>}
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>adhair</td>
-                    <td>adhraim</td>
-                    <td>adhradh</td>
-                    <td>adhartha</td>
-                    {props.docLang !== "ga_IE" && <td><InlineTl lang={props.docLang}>{chapterDb["briathar-adhair"]}</InlineTl></td>}
-                  </tr>
-                  <tr>
-                    <td>adhlaic</td>
-                    <td>adhlacaim</td>
-                    <td>adhlacadh</td>
-                    <td>adhlactha</td>
-                    {props.docLang !== "ga_IE" && <td><InlineTl lang={props.docLang}>{chapterDb["briathar-adhlaic"]}</InlineTl></td>}
-                  </tr>
-                  <tr>
-                    <td>ceiliúir</td>
-                    <td>ceiliúraim</td>
-                    <td>ceiliúradh</td>
-                    <td>ceiliúrtha</td>
-                    {props.docLang !== "ga_IE" && <td><InlineTl lang={props.docLang}>{chapterDb["briathar-ceiliúir"]}</InlineTl></td>}
-                  </tr>
-                  <tr>
-                    <td>seachaid</td>
-                    <td>seachadaim</td>
-                    <td>seachadadh</td>
-                    <td>seachadta</td>
-                    {props.docLang !== "ga_IE" && <td><InlineTl lang={props.docLang}>{chapterDb["briathar-seachaid"]}</InlineTl></td>}
-                  </tr>
-                  <tr>
-                    <td>tionóil</td>
-                    <td>tionólaim</td>
-                    <td>tionól</td>
-                    <td>tionólta</td>
-                    {props.docLang !== "ga_IE" && <td><InlineTl lang={props.docLang}>{chapterDb["briathar-tionóil"]}</InlineTl></td>}
-                  </tr>
-                </tbody>
-              </table>
+              <div className="overflow-x-auto max-w-full">
+                <table className="chapter-5">
+                  <thead>
+                    <tr>
+                      <th>{chapterDb["5-2-2-tables-col1"]}
+                      </th>
+                      <th>{chapterDb["5-2-2-tables-col2"]}
+                      </th>
+                      <th>{chapterDb["5-2-2-tables-col3"]}
+                      </th>
+                      <th>{chapterDb["5-2-2-tables-col4"]}
+                      </th>
+                      {props.docLang !== "ga_IE" && <th>{commonDb["SaBhrí-title"]}</th>}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>adhair</td>
+                      <td>adhraim</td>
+                      <td>adhradh</td>
+                      <td>adhartha</td>
+                      {props.docLang !== "ga_IE" && <td><InlineTl lang={props.docLang}>{chapterDb["briathar-adhair"]}</InlineTl></td>}
+                    </tr>
+                    <tr>
+                      <td>adhlaic</td>
+                      <td>adhlacaim</td>
+                      <td>adhlacadh</td>
+                      <td>adhlactha</td>
+                      {props.docLang !== "ga_IE" && <td><InlineTl lang={props.docLang}>{chapterDb["briathar-adhlaic"]}</InlineTl></td>}
+                    </tr>
+                    <tr>
+                      <td>ceiliúir</td>
+                      <td>ceiliúraim</td>
+                      <td>ceiliúradh</td>
+                      <td>ceiliúrtha</td>
+                      {props.docLang !== "ga_IE" && <td><InlineTl lang={props.docLang}>{chapterDb["briathar-ceiliúir"]}</InlineTl></td>}
+                    </tr>
+                    <tr>
+                      <td>seachaid</td>
+                      <td>seachadaim</td>
+                      <td>seachadadh</td>
+                      <td>seachadta</td>
+                      {props.docLang !== "ga_IE" && <td><InlineTl lang={props.docLang}>{chapterDb["briathar-seachaid"]}</InlineTl></td>}
+                    </tr>
+                    <tr>
+                      <td>tionóil</td>
+                      <td>tionólaim</td>
+                      <td>tionól</td>
+                      <td>tionólta</td>
+                      {props.docLang !== "ga_IE" && <td><InlineTl lang={props.docLang}>{chapterDb["briathar-tionóil"]}</InlineTl></td>}
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </li>
             <li id="sec_5_2_2_c">{chapterDb["5-2-2-c-p"]}
               <table className="chapter-5">
@@ -819,58 +823,60 @@ export const Chapter5 = (props: {
           <ol className="list-[lower-alpha]">
             <li id="sec_5_3_2_a">
               <p>{chapterDb["5-3-2-a-p"]}</p>
-              <table className="chapter-5">
-                <thead>
-                  <tr>
-                    <th>{chapterDb["5-2-2-tables-col1"]}
-                    </th>
-                    <th>{chapterDb["5-2-2-tables-col2"]}
-                    </th>
-                    <th>{chapterDb["5-2-2-tables-col3"]}
-                    </th>
-                    <th>{chapterDb["5-2-2-tables-col4"]}
-                    </th>
-                    {props.docLang !== "ga_IE" && <th>{commonDb["SaBhrí-title"]}</th>}
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>codail</td>
-                    <td>codlaím</td>
-                    <td>codladh</td>
-                    <td>codalta</td>
-                    {props.docLang !== "ga_IE" && <td><InlineTl lang={props.docLang}>{chapterDb["briathar-codail"]}</InlineTl></td>}
-                  </tr>
-                  <tr>
-                    <td>fógair</td>
-                    <td>fógraím</td>
-                    <td>fógairt</td>
-                    <td>fógartha</td>
-                    {props.docLang !== "ga_IE" && <td><InlineTl lang={props.docLang}>{chapterDb["briathar-fógair"]}</InlineTl></td>}
-                  </tr>
-                  <tr>
-                    <td>labhair</td>
-                    <td>labhraím</td>
-                    <td>labhairt</td>
-                    <td>labhartha</td>
-                    {props.docLang !== "ga_IE" && <td><InlineTl lang={props.docLang}>{chapterDb["briathar-labhair"]}</InlineTl></td>}
-                  </tr>
-                  <tr>
-                    <td>oscail</td>
-                    <td>osclaím</td>
-                    <td>oscailt</td>
-                    <td>oscailte</td>
-                    {props.docLang !== "ga_IE" && <td><InlineTl lang={props.docLang}>{chapterDb["briathar-oscail"]}</InlineTl></td>}
-                  </tr>
-                  <tr>
-                    <td>tionscain</td>
-                    <td>tionscnaím</td>
-                    <td>tionscnamh</td>
-                    <td>tionscanta</td>
-                    {props.docLang !== "ga_IE" && <td><InlineTl lang={props.docLang}>{chapterDb["briathar-tionscain"]}</InlineTl></td>}
-                  </tr>
-                </tbody>
-              </table>
+              <div className="overflow-x-auto max-w-full">
+                <table className="chapter-5">
+                  <thead>
+                    <tr>
+                      <th>{chapterDb["5-2-2-tables-col1"]}
+                      </th>
+                      <th>{chapterDb["5-2-2-tables-col2"]}
+                      </th>
+                      <th>{chapterDb["5-2-2-tables-col3"]}
+                      </th>
+                      <th>{chapterDb["5-2-2-tables-col4"]}
+                      </th>
+                      {props.docLang !== "ga_IE" && <th>{commonDb["SaBhrí-title"]}</th>}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>codail</td>
+                      <td>codlaím</td>
+                      <td>codladh</td>
+                      <td>codalta</td>
+                      {props.docLang !== "ga_IE" && <td><InlineTl lang={props.docLang}>{chapterDb["briathar-codail"]}</InlineTl></td>}
+                    </tr>
+                    <tr>
+                      <td>fógair</td>
+                      <td>fógraím</td>
+                      <td>fógairt</td>
+                      <td>fógartha</td>
+                      {props.docLang !== "ga_IE" && <td><InlineTl lang={props.docLang}>{chapterDb["briathar-fógair"]}</InlineTl></td>}
+                    </tr>
+                    <tr>
+                      <td>labhair</td>
+                      <td>labhraím</td>
+                      <td>labhairt</td>
+                      <td>labhartha</td>
+                      {props.docLang !== "ga_IE" && <td><InlineTl lang={props.docLang}>{chapterDb["briathar-labhair"]}</InlineTl></td>}
+                    </tr>
+                    <tr>
+                      <td>oscail</td>
+                      <td>osclaím</td>
+                      <td>oscailt</td>
+                      <td>oscailte</td>
+                      {props.docLang !== "ga_IE" && <td><InlineTl lang={props.docLang}>{chapterDb["briathar-oscail"]}</InlineTl></td>}
+                    </tr>
+                    <tr>
+                      <td>tionscain</td>
+                      <td>tionscnaím</td>
+                      <td>tionscnamh</td>
+                      <td>tionscanta</td>
+                      {props.docLang !== "ga_IE" && <td><InlineTl lang={props.docLang}>{chapterDb["briathar-tionscain"]}</InlineTl></td>}
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </li>
             <li id="sec_5_3_2_b">
               <p>{chapterDb["5-3-2-b-p"]}</p>

@@ -20,7 +20,7 @@ export const Chapter6 = (props: {
   devMode?: boolean;
 }) => {
   const chapterDb = getChapterTranslator(props.docLang);
-  const rootRef = props.devMode ? "/" : "/caighdean-i18n/";
+  const rootRef = props.devMode ? "" : "/caighdean-i18n/";
 
   return <ChapterTemplate
     title={chapterDb["6-title"]}

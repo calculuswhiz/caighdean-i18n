@@ -32,7 +32,7 @@ export const Table7A = (props: {
     </colgroup>
     <thead>
       <tr>
-        <th className="text-xl py-2" colSpan={3}>{chapterDb["Table7A-header"]}
+        <th className="py-2" colSpan={3}>{chapterDb["Table7A-header"]}
         </th>
       </tr>
       <tr>
@@ -102,7 +102,7 @@ export const Table7B = (props: {
     </colgroup>
     <thead>
       <tr>
-        <th className="text-xl py-2" colSpan={3}>{chapterDb["Table7B-header"]}
+        <th className="py-2" colSpan={3}>{chapterDb["Table7B-header"]}
         </th>
       </tr>
       <tr>
@@ -155,7 +155,7 @@ export const Table7C = (props: {
   return <MarkedTable chapter={7} caption={chapterDb["Table7C-caption"]} docLang={props.docLang} tableLetter="C">
     <thead>
       <tr>
-        <th className="text-xl py-2" colSpan={5}>{chapterDb["Table7C-header"]}
+        <th className="py-2" colSpan={5}>{chapterDb["Table7C-header"]}
         </th>
       </tr>
       <tr>
@@ -233,7 +233,7 @@ export const Table7D = (props: {
     </colgroup>
     <thead>
       <tr>
-        <th className="text-xl py-2" colSpan={4}>{chapterDb["Table7D-header"]}
+        <th className="py-2" colSpan={4}>{chapterDb["Table7D-header"]}
         </th>
       </tr>
       <tr>
@@ -303,7 +303,7 @@ export const Table7E = (props: {
   return <MarkedTable chapter={7} caption={chapterDb["Table7E-caption"]} docLang={props.docLang} tableLetter="E">
     <thead>
       <tr>
-        <th className="text-xl py-2" colSpan={3}>{chapterDb["Table7E-header"]}
+        <th className="py-2" colSpan={3}>{chapterDb["Table7E-header"]}
         </th>
       </tr>
       <tr>
@@ -349,7 +349,7 @@ export const Table7F = (props: {
   return <MarkedTable chapter={7} caption={chapterDb["Table7F-caption"]} docLang={props.docLang} tableLetter="F">
     <thead>
       <tr>
-        <th className="text-xl py-2" colSpan={3}>{chapterDb["Table7F-header"]}
+        <th className="py-2" colSpan={3}>{chapterDb["Table7F-header"]}
         </th>
       </tr>
       <tr>
@@ -394,7 +394,7 @@ export const Table7G = (props: {
   return <MarkedTable chapter={7} caption={chapterDb["Table7G-caption"]} docLang={props.docLang} tableLetter="G">
     <thead>
       <tr>
-        <th className="text-xl py-2" colSpan={3}>{chapterDb["Table7G-header"]}
+        <th className="py-2" colSpan={3}>{chapterDb["Table7G-header"]}
         </th>
       </tr>
       <tr>
@@ -439,7 +439,7 @@ export const Table7H = (props: {
   return <MarkedTable chapter={7} caption={chapterDb["Table7H-caption"]} docLang={props.docLang} tableLetter="H">
     <thead>
       <tr>
-        <th className="text-xl py-2" colSpan={3}>{chapterDb["Table7H-header"]}
+        <th className="py-2" colSpan={3}>{chapterDb["Table7H-header"]}
         </th>
       </tr>
       <tr>
@@ -482,7 +482,7 @@ export const Table7I = (props: {
   return <MarkedTable chapter={7} caption={chapterDb["Table7I-caption"]} docLang={props.docLang} tableLetter="I">
     <thead>
       <tr>
-        <th className="text-xl py-2" colSpan={5}>{chapterDb["Table7I-header"]}
+        <th className="py-2" colSpan={5}>{chapterDb["Table7I-header"]}
         </th>
       </tr>
       <tr>
@@ -542,7 +542,7 @@ export const Table7J = (props: {
   return <MarkedTable chapter={7} caption={chapterDb["Table7J-caption"]} docLang={props.docLang} tableLetter="J">
     <thead>
       <tr>
-        <th className="text-xl py-2" colSpan={5}>{chapterDb["Table7J-header"]}
+        <th className="py-2" colSpan={5}>{chapterDb["Table7J-header"]}
         </th>
       </tr>
       <tr>
@@ -602,7 +602,7 @@ export const Table7K = (props: {
   return <MarkedTable chapter={7} caption={chapterDb["Table7K-caption"]} docLang={props.docLang} tableLetter="K">
     <thead>
       <tr>
-        <th className="text-xl py-2" colSpan={5}>{chapterDb["Table7K-header"]}
+        <th className="py-2" colSpan={5}>{chapterDb["Table7K-header"]}
         </th>
       </tr>
       <tr>
@@ -662,7 +662,7 @@ export const Table7L = (props: {
     </colgroup>
     <thead>
       <tr>
-        <th className="text-xl py-2" colSpan={2}>{chapterDb["Table7L-header"]}
+        <th className="py-2" colSpan={2}>{chapterDb["Table7L-header"]}
         </th>
       </tr>
       <tr>
@@ -718,7 +718,7 @@ export const Table7M = (props: {
   return <MarkedTable chapter={7} caption={chapterDb["Table7M-caption"]} docLang={props.docLang} tableLetter="M">
     <thead>
       <tr>
-        <th className="text-xl py-2" colSpan={3}>{chapterDb["Table7M-header"]}
+        <th className="py-2" colSpan={3}>{chapterDb["Table7M-header"]}
         </th>
       </tr>
       <tr>
@@ -768,7 +768,7 @@ export const Table7N = (props: {
   return <MarkedTable chapter={7} caption={chapterDb["Table7N-caption"]} docLang={props.docLang} tableLetter="N">
     <thead>
       <tr>
-        <th className="text-xl py-2" colSpan={3}>{chapterDb["Table7N-header"]}
+        <th className="py-2" colSpan={3}>{chapterDb["Table7N-header"]}
         </th>
       </tr>
       <tr>
@@ -818,7 +818,7 @@ export const Table7O = (props: {
   return <MarkedTable chapter={7} caption={chapterDb["Table7O-caption"]} docLang={props.docLang} tableLetter="O">
     <thead>
       <tr>
-        <th className="text-xl py-2" colSpan={3}>{chapterDb["Table7O-header"]}
+        <th className="py-2" colSpan={3}>{chapterDb["Table7O-header"]}
         </th>
       </tr>
       <tr>
@@ -921,7 +921,7 @@ export const Table7P = (props: {
   return <MarkedTable chapter={7} caption={chapterDb["Table7P-caption"]} docLang={props.docLang} tableLetter="P">
     <thead>
       <tr>
-        <th className="text-xl py-2" colSpan={3}>{chapterDb["Table7P-header"]}
+        <th className="py-2" colSpan={3}>{chapterDb["Table7P-header"]}
         </th>
       </tr>
       <tr>
@@ -1023,7 +1023,7 @@ export const Table7Q = (props: {
   return <MarkedTable chapter={7} caption={chapterDb["Table7Q-caption"]} docLang={props.docLang} tableLetter="Q">
     <thead>
       <tr>
-        <th className="text-xl py-2" colSpan={3}>{chapterDb["Table7Q-header"]}
+        <th className="py-2" colSpan={3}>{chapterDb["Table7Q-header"]}
         </th>
       </tr>
       <tr>
@@ -1073,7 +1073,7 @@ export const Table7R = (props: {
   return <MarkedTable chapter={7} caption={chapterDb["Table7R-caption"]} docLang={props.docLang} tableLetter="R">
     <thead>
       <tr>
-        <th className="text-xl py-2" colSpan={3}>{chapterDb["Table7R-header"]}
+        <th className="py-2" colSpan={3}>{chapterDb["Table7R-header"]}
         </th>
       </tr>
       <tr>
@@ -1123,7 +1123,7 @@ export const Table7S = (props: {
   return <MarkedTable chapter={7} caption={chapterDb["Table7S-caption"]} docLang={props.docLang} tableLetter="S">
     <thead>
       <tr>
-        <th className="text-xl py-2" colSpan={5}>{chapterDb["Table7S-header"]}
+        <th className="py-2" colSpan={5}>{chapterDb["Table7S-header"]}
         </th>
       </tr>
       <tr>
@@ -1183,7 +1183,7 @@ export const Table7T = (props: {
   return <MarkedTable chapter={7} caption={chapterDb["Table7T-caption"]} docLang={props.docLang} tableLetter="T">
     <thead>
       <tr>
-        <th className="text-xl py-2" colSpan={4}>{chapterDb["Table7T-header"]}
+        <th className="py-2" colSpan={4}>{chapterDb["Table7T-header"]}
         </th>
       </tr>
       <tr>
@@ -1254,7 +1254,7 @@ export const Table7U = (props: {
   return <MarkedTable chapter={7} caption={chapterDb["Table7U-caption"]} docLang={props.docLang} tableLetter="U">
     <thead>
       <tr>
-        <th className="text-xl py-2" colSpan={4}>{chapterDb["Table7U-header"]}
+        <th className="py-2" colSpan={4}>{chapterDb["Table7U-header"]}
         </th>
       </tr>
       <tr>
@@ -1286,7 +1286,7 @@ export const Table7V = (props: {
   return <MarkedTable chapter={7} caption={chapterDb["Table7V-caption"]} docLang={props.docLang} tableLetter="V">
     <thead>
       <tr>
-        <th className="text-xl py-2" colSpan={5}>{chapterDb["Table7V-header"]}
+        <th className="py-2" colSpan={5}>{chapterDb["Table7V-header"]}
         </th>
       </tr>
       <tr>

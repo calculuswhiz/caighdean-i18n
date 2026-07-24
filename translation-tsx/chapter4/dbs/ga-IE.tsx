@@ -306,7 +306,7 @@ export const ga_IE = {
   },get "Table4D-case4"(){
     return "Ginideach";
   },get "Table4D-footnote"(){
-    return "*Ach féach 1.7 Córas an tSéimhithe";
+    return "Ach féach 1.7 Córas an tSéimhithe";
   },get "Table4E-title"(){
     return "Ainmfhocal Baininscneach Uatha";
   },get "Table4E-caption"(){
